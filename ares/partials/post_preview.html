@@ -1,0 +1,42 @@
+    
+<div class="post-preview">
+
+    <div class="title">
+        <a href="{{url}}">{{title}}</a>
+    </div>
+    
+  <div class="cover">
+      <a href="{{url}}">
+  {{# preview_image }}
+      <img src="{{urls.production_url}}{{urls.media}}/postpics/{{ . }}"/>
+  {{/ preview_image }}
+
+  {{^ preview_image }}
+      <img src="{{urls.production_url}}{{urls.media}}/default-preview.png"/>
+  {{/ preview_image }}
+</a>
+
+      </div>  
+          
+  <div class="post-metadata">
+      {{date}} by <a href="/about">{{author}}</a> in 
+      {{# tags }}
+      {{> tags_list_item }}
+      {{/ tags }}
+  </div>
+  <div class="teaser">
+      {{# teaser }}
+      {{{ teaser }}}
+      {{/ teaser }}
+      
+      {{^ teaser }}
+      {{{ summary }}}
+      {{/ teaser }}
+      
+      <p> <a href="{{url}}">Read More...</a></p>
+  </div>
+   
+  
+   
+</div>
+    
