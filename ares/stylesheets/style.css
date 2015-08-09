@@ -269,6 +269,8 @@ a:active {color:#0B5141;}  /* selected link */
 
 #navbar { 
     float: right;
+    position:absolute;
+    right: 50px;
     background-color: #000;
     display: none;
     color: #eee;
@@ -277,6 +279,10 @@ a:active {color:#0B5141;}  /* selected link */
     border: 1px solid #fff;
 }
 
+.nav ul {
+    position: absolute;
+    z-index: 1999;
+}
 .nav { 
     padding: 0px;
 }
@@ -289,6 +295,7 @@ a:active {color:#0B5141;}  /* selected link */
 
 .nav li {
     list-style-type: none;
+    clear: right;
     
 }
 
@@ -407,12 +414,15 @@ h3, h4, h5, h6
     float: left;
     padding: 10px;
     text-align: center;
+    height: 350px;
 }
 
 .gallery img {
     width: 200px;
-    height: 150px;
-    border: 1px dotted #CF895D;
+    height: 200px;
+    border-radius: 100px;
+    	-webkit-border-radius: 100px;
+    	-moz-border-radius: 100px;
 }
 
 .gallery p {
@@ -518,6 +528,21 @@ img.prettyImage-image {
     display: block;
        margin-left: auto;
        margin-right: auto;
+}
+
+.caption { 
+
+max-width: 90%;
+margin-top:10px;
+margin-bottom:25px;
+display: block;
+   margin-left: auto;
+   margin-right: auto;
+   font-style: italic;
+   text-align: center;
+}
+li {
+    margin-top: .5em;
 }
 
 .footer {
@@ -695,7 +720,7 @@ pre.prettyprint {
 
 
 /* Specify class=linenums on a pre to get line numbering */
-ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE; background: #444;}
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE; background: #000;}
 li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9
 {
     list-style-type: decimal;

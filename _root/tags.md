@@ -4,9 +4,10 @@ description:
 layout: page
 ---
 
-{{# posts.tags.all }}
+{{# _root.tags.all }}
   <h3 id="{{name}}-ref">{{name}}</h3>
-  {{# posts?to_posts }}
+  {{# _root?to__root }}
     <li><a href="{{url}}">{{title}}</a></li>
-  {{/ posts?to_posts }}
-{{/ posts.tags.all }} 
+  {{/ _root?to__root }}
+{{/ _root.tags.all }} 
+

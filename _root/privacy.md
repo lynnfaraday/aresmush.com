@@ -14,7 +14,7 @@ AresMUSH stores a lot of information, but the things that are particularly relev
 
 * Email address (if you provide one)
 * Friends lists 
-* Characters linked to your [OOC Player Handle](/features/handles).  
+* Characters linked to your [OOC Player Handle](/handles).  
 * IP addresses that you connect from. 
 
 ## What We Do With It

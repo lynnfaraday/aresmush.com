@@ -2,6 +2,8 @@
 title: Ares for Admins
 description:
 layout: page
+tags: 
+- features
 ---
 
 While AresMUSH tries to preserve the player experience from PennMUSH and TinyMUX, the admin experience is something entirely different.

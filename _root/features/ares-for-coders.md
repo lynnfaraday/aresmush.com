@@ -2,6 +2,8 @@
 title: Ares for Coders
 description:
 layout: page
+tags: 
+- features
 ---
 
 AresMUSH leaves behind the softcode legacy of Penn and Tiny and provides a radically new coding experience. 

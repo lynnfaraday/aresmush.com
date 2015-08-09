@@ -2,6 +2,10 @@
 title: Plugins
 description:
 layout: page
+tags: 
+- features
+- code
+- plugin
 ---
 
 Unlike in Penn and Tiny, standard functionality is not a part of the engine.  Every system is implemented as a **Plugin**.  You can add, modify or replace any plugin. 

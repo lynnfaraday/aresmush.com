@@ -2,6 +2,28 @@
 layout : page
 ---
 
-{{> install_ares_navbar }}
-
     {{{ content }}}
+
+<div class="tutorial-nav">
+    This article is part of the <a href="/install-ares">Installing AresMUSH</a> tutorial.
+    
+    <div class="pagination">
+        <ul>
+            {{# page.prevstep }}
+            <li><a href="/install-ares/{{page.prevstep}}"> &larr; Previous</a></li>
+            {{/ page.prevstep}}
+            {{^ page.prevstep }}
+            <li class="link-disabled"><a>&larr; Previous</a></li>
+            {{/ page.prevstep }}
+            
+            {{# page.nextstep }}
+            <li><a href="/install-ares/{{page.nextstep}}">Next &rarr; </a></li>
+            {{/ page.nextstep }}
+            {{^ page.nextstep }}
+            <li class="link-disabled"><a>Next &rarr;</a></li>
+            {{/ page.nextstep }}
+        </ul>
+    </div>
+    
+    <br/>
+</div>

@@ -1,14 +1,17 @@
 ---
-title: Getting Started With MongoDB
+title: Getting Started With MongoLab
 description:
 layout: install-ares
 prevstep: install-db
 nextstep: install-game
+tags: 
+- install
+- database
 ---
 
 Here are step-by-step instructions for setting up Ares with [MongoLab](https://mongolab.com/), a cloud hosting service for MongoDB.
 
-> Note:  These instructions and screenshots were current as of the time of this writing, but MongoLab can change their interface at any time.  If you find these instructions are incorrect, plase [let me know](/feedback)!
+> Note:  These instructions were current as of the time of this writing, but MongoLab can change their screens at any time.  If you find these instructions are incorrect, plase [let me know](/feedback)!
 
 1. Create a MongoLab account.  
 2. Click 'Create New' to create a new db.

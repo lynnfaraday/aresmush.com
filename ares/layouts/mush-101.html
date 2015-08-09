@@ -1,23 +1,31 @@
+---
+layout : page
+---
+
+    {{{ content }}}
+
 <div class="tutorial-nav">
-    This article is part of the <a href="/install-ares">Installing AresMUSH</a> tutorial.
+    This article is part of the <a href="/mush-101">MUSH-101</a> tutorial.
     
     <div class="pagination">
         <ul>
             {{# page.prevstep }}
-            <li><a href="/install-ares/{{page.prevstep}}"> &larr; Previous</a></li>
+            <li><a href="/mush-101/{{page.prevstep}}"> &larr; Previous</a></li>
             {{/ page.prevstep}}
             {{^ page.prevstep }}
             <li class="link-disabled"><a>&larr; Previous</a></li>
             {{/ page.prevstep }}
             
+            <li><a href="/mush-101">Index</a> </li>
+            
             {{# page.nextstep }}
-            <li><a href="/install-ares/{{page.nextstep}}">Next &rarr; </a></li>
+            <li><a href="/mush-101/{{page.nextstep}}">Next &rarr; </a></li>
             {{/ page.nextstep }}
             {{^ page.nextstep }}
             <li class="link-disabled"><a>Next &rarr;</a></li>
             {{/ page.nextstep }}
         </ul>
     </div>
-    
-    <br/>
+        <br/>
 </div>
+

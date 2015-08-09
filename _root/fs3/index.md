@@ -2,6 +2,12 @@
 title: FS3
 description:
 layout: page
+tags: 
+- fs3
+- combat
+- skills
+- luck
+- xp
 ---
 
 FS3 is a generic roleplaying game skills system, specifically designed and optimized for online text-based RPGs (MUSHes).  In Ares, FS3 is implemented as a family of plugins which all interact with and depend on each other.

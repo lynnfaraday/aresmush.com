@@ -6,7 +6,9 @@ layout: page
 
 More tutorials coming soon!
 
-* **[Installing AresMUSH](/install-ares)** - A primer for getting AresMUSH up and running.
 * **[MUSH 101](/mush-101)** - An introduction to MUSHing.
+* **[Ares for Vets](/ares-for-vets)** - Overview of Ares for veteran MU\* players.
+* **[Player Handles](/handles)** - Learn all about Ares' player identity system.
+* **More Coming Soon**
 
 </ul>
