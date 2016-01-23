@@ -24,10 +24,12 @@ The [Chargen](https://github.com/lynnfaraday/aresmush/tree/master/game/plugins/c
 
 What makes FS3 different from other skill systems? 
 
-* Differentiating between action skills and background skills, to highlight skills that are relevant to gameplay.
-* Dice rolls that are optimized for MUSH play.
-* A roleplay-friendly combat system.
+* A lean skill list. Most skill systems offer a bewildering array of skills, making character creation a chore. FS3 focuses on the skills that are truly relevant to the game.  Character creation is fast and easy.
+* A streamlined dice system. The FS3 dice system is designed for MUSHing. On the whole, characters succeed more often than they do in other systems.
+* A roleplay-friendly combat system. The FS3 combat system is designed to be fast and flexible, providing some colorful tactical options without bogging roleplay down in a lot of mechanics.
 
 ## Copyright and License
 
-The FS3 system is copyright 2007 by Linda Naughton (aka Faraday). All rights reserved.  You may reproduce and distribute part or all of these rules and create derivative works (games using FS3) providing a) You don't make any money from it, and b) You include this FS3 copyright and license notice in the distribution.
+The FS3 system is copyright 2007 by Linda Naughton (aka Faraday).
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br/><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">The FS3 System</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.aresmush.com" property="cc:attributionName" rel="cc:attributionURL">Linda Naughton</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.

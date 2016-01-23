@@ -3,7 +3,7 @@ title: MUSH 101 - Connecting and Communicating
 description:
 layout: mush-101
 prevstep: game-of-words
-nextstep: joining-the-cast
+nextstep: finding-a-game
 tags: 
 - commands
 ---

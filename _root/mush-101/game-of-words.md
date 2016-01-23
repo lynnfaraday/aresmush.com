@@ -26,13 +26,13 @@ A **MUSH** is a multi-player online game that blends creative writing, improv ac
 
 This isn't an excerpt from a western novel, though you'd be forgiven for thinking so.  It's a transcript of gameplay from  [*Sweetwater Crossing MUSH*](http://sweetwatercrossingmush.wikidot.com/), an online game set in 1860's Nebraska Territory.  
 
-*Sweetwater* is closed now, but it ran for two years, involved dozens of players, and generated over 500 scenes like the one above.  They combined to tell a collaborative story about the townsfolk of Sweetwater Crossing – ranchers and outlaws, shopkeepers and schoolteachers.
+*Sweetwater* is closed now, but it ran for over two years, involved dozens of players, and generated more than 500 scenes like the one above.  They combined to tell a collaborative story about the townsfolk of Sweetwater Crossing – ranchers and outlaws, shopkeepers and schoolteachers.
 
 {{#pretty-image}}/assets/media/postpics/cowboys.jpg{{/pretty-image}}
 
 There are MUSHes for virtually any setting you can imagine:  science fiction, fantasy, historical, supernatural, superheroes and more.  Many are based on popular books and TV shows.  Others are wholly original.
 
-It may look more like a novel than a game, but a MUSH does have rules to keep things fun and fair for everyone involved. Everybody wins when they work together to tell a story.
+It may look more like a novel than a game, but a MUSH does have rules to keep things fun and fair for everyone involved. Even though it's a game, everybody wins when they work together to tell a story.
 
 ## Virtual Worlds
 
@@ -57,12 +57,9 @@ In a MUSH scene, you and the other players take turns, round-robin style, each w
 
 The catch is – this all happens "live" in real-time, and the story isn't decided in advance.  You start with a rough idea for a scene, based on whoever happens to be online at that moment, and just run with it.   Being forced to come up with plot and dialogue on the spot is a great way to hone your writing skills, and it can be fun to write a story collaboratively.
 
-Some MUSHes, like *Sweetwater*, run for years.  Players come and go.  Characters develop their own personal story arcs, growing and changing.  It's a very dynamic environment. 
+Some MUSHes, like *Sweetwater*, run for years.  Players come and go.  Characters develop their own personal story arcs, growing and changing.  It's a very dynamic environment.  Here's a summary of my character Emma's storyline from *Sweetwater*.  Yes, MUSH can be a bit like soap operas at times.  It is fantasy, after all.
 
 {{#pretty-image}}/assets/media/postpics/character-page.png{{/pretty-image}}
-<div class="caption">My character Emma's story from Sweetwater.</div>
-
-Yes, MUSH can be a bit like soap operas at times.  It is fantasy, after all.
 
 ## Next Steps
 

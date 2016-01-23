@@ -20,7 +20,7 @@ These are some articles related to MUSHing.
 
 * [IC vs RL Time](/articles/ic-vs-rl-time) - Comparison of various time ratios.
 * [Building the Perfect MUSH](/articles/building-the-perfect-mush) - Tips and things to consider when creating a MUSH.
-
+* [FS3 vs Other Systems](/articles/fs3-vs-other-systems) - Comparison of FS3 and other RPGs.
 
 ## BSP Articles
 * [Battlestar Pacifica - Lessons Learned](/articles/battlestar-pacifica-lessons-learned) - A retrospective on running a game based on the Battlestar Galactica theme.

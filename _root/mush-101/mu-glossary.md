@@ -19,6 +19,8 @@ Here are some important MUSH terms you might encounter.
 
 **Backscene** - A scene that takes place in the past.  Players will often arrange backscenes to roleplay important events that were missed because the players couldn't be online at the appropriate time.  See also IC Time.
 
+**Command** - The text you send to a MUSH to make it do something.  Posing, connecting, seeing who's online - these are all commands.  See [Important Commands](/mush-101/important-commands) for useful command syntax.
+
 **Consent**	- Whether other characters can do things to your character without your permission.  This is usually in reference to bad things like illness, injury or death. Most games strive for a happy middle ground between pure consent and non-consent, encouraging players to cooperate while also providing rules to help players resolve conflicts fairly (and not necessarily with your consent).   See also ICA=ICC.
 
 **Fade To Black (FTB)** - Used to end a scene with a 'fade out' like one would see in a TV show or movie.   It is often used to gloss over activities that are unsuitable for the game's rating.   See also TS.
@@ -47,6 +49,6 @@ Here are some important MUSH terms you might encounter.
 
 **Tinyplot (TP)** - A plotline in the game's story. 
 
-**Tinysex (TS)** - The act of roleplaying scenes of a pornographic nature. An alternative for games that do not permit such activity or players who do not wish to engage in it is to cut the scene off at the point where it ceases to be PG-rated (fade to black).  See also Fade to Black.
+**Tinysex (TS)** - The act of roleplaying scenes of an explicit nature. An alternative for games that do not permit such activity or players who do not wish to engage in it is to cut the scene off at the point where it ceases to be PG-rated (fade to black).  See also Fade to Black.
 
 **Experience Points (XP)** - Your character may earn these as a way to improve their skills and stats over time.

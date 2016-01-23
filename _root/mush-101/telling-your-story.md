@@ -53,7 +53,7 @@ How do you find locations?  When you first create your character, they're usuall
 
 > Why would you log into a game and not play?   MUSHes are social communities.  Sometimes you just want to have the game open like a chat window while you're working or watching TV.   Or maybe you've made plans to do a specific scene with someone when they log in later, or you're doing some behind-the-scenes activities.  Whatever the reason, not everyone who's online is available for roleplay.
 
-To get to the actual virtual world – the Onstage (or IC – In Character) area of the game, you use the `ic` or `onstage` command.   Once you're there, you can navigate around the game world until you find a place to set your scene.  This video shows you how to navigate around a MUSH.
+To get to the actual virtual world – the Onstage (or IC – In Character) area of the game, you use the `+ic` or `onstage` command.   Once you're there, you can navigate around the game world until you find a place to set your scene.  This video shows you how to navigate around a MUSH.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gkDVL3ld7GA" frameborder="0" allowfullscreen></iframe>
 

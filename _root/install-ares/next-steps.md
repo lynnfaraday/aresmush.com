@@ -22,9 +22,9 @@ Ares comes with a "headwiz" character, akin to the "God" character on Penn and T
 
 ## Customization
 
-Ares works out of the box, but there's a lot you can customize to get things just the way you like. Once you're logged in with Headwiz, run the customization tutorial in-game:
+Ares works out of the box, but there's a lot you can customize to get things just the way you like. 
 
-    tutorial/start Customize
+    TODO:  Reference proper tutorial
 
 
 ## Handling Restarts

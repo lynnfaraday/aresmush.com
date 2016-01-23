@@ -28,9 +28,18 @@ Find a missing shortcut?  Give [Feedback](/feedback)!
 
 ## Multi-Page Commands
 
-Commands that show multiple pages of data will have a **"page 1 of 4"** style footer at the bottom telling you there are more pages available.  You can access those pages simply by putting the page number after the commands (without a space).
+Commands that show multiple pages of data will have a **"page 1 of x"** style footer at the bottom telling you there are more pages available.  You can access those pages simply by putting the page number after the commands (without a space).
 
-For example:   actors, actors2, actors3, etc.
+    ==============================================================================
+    Actors
+    
+    Amber                     Mila Kunis
+    ...
+    Georgia                   Rachel Mcadams
+    --------------------------------(page 1 of 3)---------------------------------
+    ==============================================================================
+
+For example:   actors, actors2, actors3 will access the various pages of the actors command.
 
 ## Channels
 
@@ -42,6 +51,18 @@ The Ares channel system attempts to support both Penn and Tiny command syntax as
 The default channel alias is the first 2 and 3 characters, so "Chat" would be cha <msg> and ch <msg>.  
 
 You can change your alias for a given channel at any time using `channel/alias <name>=<new alias>`.
+
+## Connections
+
+By default, the game will tell you when people have connected, so you don't need to subscribe to channels just to see the connection messages:
+
+    Faraday has connected.
+
+There's a slightly different message if they connect *in your room*:
+
+    Faraday has connected here.
+
+If you don't like the game-wide connection messages, you can use the `watch` command to disable them entirely, or show them only for your friends.
 
 ## Mail
 
