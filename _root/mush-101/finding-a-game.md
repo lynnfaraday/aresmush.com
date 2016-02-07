@@ -24,7 +24,6 @@ Here are a number of MUSHes in different genres.  Hopefully one of them might ap
 * [Serenity](http://wiki.serenitymush.com/wiki/index.php/Main_Page) - Firefly
 * [Witchcraft and Wizardry](http://wandw.wikidot.com/) - Harry Potter
 * [No Return](http://noreturn.closetgamers.com/) - Post-Apocalyptic Zombies
-* [Chicago](http://chicagomush.com/) - Roaring 20's Historical
 
 If you don't see anything that grabs you in the list above, you have a couple of options:
 

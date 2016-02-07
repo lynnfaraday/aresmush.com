@@ -1,0 +1,16 @@
+<div class="pagination">
+
+{{#posts.paginator_navigation}}
+
+{{#is_active_page}}
+{{name}}
+{{/is_active_page}}
+
+
+{{^is_active_page}}
+<a href="{{url}}">{{name}}</a>
+{{/is_active_page}}
+
+{{/posts.paginator_navigation}}
+
+</div>

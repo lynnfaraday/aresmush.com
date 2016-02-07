@@ -11,7 +11,7 @@ AresMUSH is a new kind of server for MUSH games.  Don't know what a MUSH is?  It
 
 From a player's perspective, AresMUSH is a sibling of [PennMUSH](http://www.pennmush.org/) and [TinyMUX](http://www.tinymux.org/). From an admin's perspective, it is something completely different.
 
-> **Status:**  AresMUSH is still in development.  We have started early Alpha testing.  You can see Ares in action at [AresCentral](/arescentral).
+> **Status:**  AresMUSH is still in development.  We have started early Alpha testing but it's not yet ready for public consumption.  You can see Ares in action at [AresCentral](/arescentral).
 
 Here are a few things to get you started:
 
@@ -33,8 +33,8 @@ Here are a few things to get you started:
 </li>
 
         <li>
-                        <a href="http://aresmush.wordpress.com"><img src="/assets/media/mars2.jpg"></a>
-<h2><a href="http://aresmush.wordpress.com">Blog</a></h2>
+                        <a href="/blog"><img src="/assets/media/mars2.jpg"></a>
+<h2><a href="/blog">Blog</a></h2>
 <p>Get news and tips from the developer's blog.</p>
 </li>
 

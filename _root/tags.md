@@ -4,10 +4,20 @@ description:
 layout: page
 ---
 
-{{# _root.tags.all }}
+
+<ul class="tag_box inline">
+{{# posts.tags.all }}
+  {{> tags_list }}
+{{/ posts.tags.all }}
+</ul>
+
+{{# posts.tags.all }}
   <h3 id="{{name}}-ref">{{name}}</h3>
-  {{# _root?to__root }}
+  <ul>
+  {{# posts?to_posts }}
     <li><a href="{{url}}">{{title}}</a></li>
-  {{/ _root?to__root }}
-{{/ _root.tags.all }} 
+  {{/ posts?to_posts }}
+</ul>
+{{/ posts.tags.all }} 
+
 

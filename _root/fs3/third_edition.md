@@ -11,16 +11,25 @@ layout: page
 Here's a summary of what's new in FS3 3rd Edition.
 
 * Ratings go from 1-5 instead of 1-12.
-* Attributes have been replaced by Aptitudes, which give you bonuses to certain rolls.
+* Attributes have been replaced by Aptitudes, which give you bonuses when rolling related skills.
 * Background Skills have been split into Expertise (for things you're good at) and Interests (for things you dabble in).  Both are unrated, like Languages.
-* Advantages are new, to reflect special things the game wants you to spend points on.
+* Advantages are new, to reflect special things the game wants you to spend points on, like powers or, well, advantages.
 * Quirks are gone, replaced by RP Hooks and Goals.
+* The dice have also undergone an overhaul, but it’s still fundamentally a roll-and-count-successes system.
+
+# What's behind the changes?  
+
+The two biggest headaches for players in 2nd edition were Quirks and Background Skills. Quirks straddled an awkward middle ground between traditional advantages/disadvantages and personality traits. Background skills, likewise, caused no end of confusion, with people unsure what skills to take and how to rate them.
+
+It takes a little getting used to, but it’s part of a philosophy of de-emphasizing points and simplifying Chargen. Why stress over whether your “Baseball” hobby should be a 2 or a 3? Does it matter? Why waste time juggling skill points between the skills that are important and the fluffy skills that will probably never be rolled?
+
+I suppose someone can find an example where a background skill made the difference between life and death, but I think such scenarios are few and far between.
 
 # Abilities
 
 There are several kinds of abilities in FS3 that each work a little differently.
 
-**Aptitudes** represent your natural strengths and weaknesses.   These are not skills, but represent your 'knack' for certain things.
+**Aptitudes** represent your natural strengths and weaknesses.   These are not skills, but represent your 'knack' for certain things.  You can use them for defaulting when you don't have a skill.
 
 > Examples:  Athletics, Tech, Personality, etc.
 
@@ -34,7 +43,7 @@ There are several kinds of abilities in FS3 that each work a little differently.
 
 **Interests** represent hobbies and things your character dabbles in but isn't particularly skilled at.
 
-> Examples:  A sport, a hobby, playing a musical instrument, or some other special interest.
+> Examples:  A sport, a hobby, playing a musical instrument, or some other special interest.  If you're a professional musician or athlete, you would pick an Expertise instead.
 
 **Advantages** are used on some games for things that aren't skills.  Some games won't use advantages at all.
 
@@ -55,27 +64,11 @@ Most things in FS3 are rated on a scale from 1-5, where the ratings have the fol
 | 4 | Expert / Great | A veteran in your field with lots of experience.  You can pull through even in dire circumstances. |
 | 5 | Elite / Awesome | You have mastered your field.  Few can compare to your ability. |
 
-> Note:  Elite doesn't mean "best of all time".   To use a sports analogy, Elite would mean an All-Star quality player, not necessarily the greatest player who ever lived.
-
-# Ability Rolls
-
-Abilities help you flesh out your character, but sometimes you'll need to use them to resolve conflicts.  Ability Rolls are used to determine the outcome of a character’s action, whether it’s shooting a gun or jumping a chasm.
-
-> **The Golden Rule of Ability Rolls:**  As long as there are no objections from anyone involved in the scene, it is perfectly acceptable to just assume success or failure based on roleplay.
-
-Action Skills, Expertise, Interests and Advantages can all be rolled if you have a rating in the ability.  You can apply a + or - modifier to adjust your rating for special conditions.
-
-> `roll Firearms` to shoot a gun  
-> `roll Firearms-1` to shoot at something really far away
-
-Your rating determines how many dice you get to roll, and modifiers simply add or take away dice.  If you really want to know the details, see Dice Mechanics.
-
-## Aptitudes and Defaulting
-
-You can **default** to an Aptitude when you don't have a rating in an appropriate ability **as long as** your character would reasonably have a shot at it.  You can't do brain surgery without training, but you could default to your Athletic aptitude to run a footrace.
-
-> **Note!** If the task is covered by an Action Skill, you can't default to an Aptitude.  Roll the skill even if you don't have it.  So if you pick up a gun without training, you roll Firearms, not Reactive.  The system will make an Untrained roll with a small chance of success.
-
+> Notes:  
+>
+> Elite doesn't mean "best of all time".   To use a sports analogy, Elite would mean an All-Star quality player, not necessarily the greatest player who ever lived.
+>
+> Beyond Competent, higher ability ratings don't necessarily mean you succeed more often. They mostly give you an edge in contested rolls and adverse situations.
 
 # Character Creation
 
@@ -96,7 +89,7 @@ Action skills are rated from 1-5, and cost **1 point per rating**.
 
 ## Expertise
 
-Expertise skills cost **2 points each**.  They have no rating, but when you roll them, they are treated as a rating 4.
+Expertise skills cost **2 points each**.  They have no rating, but if you ever roll them, they are treated as a rating 4.
 
 > Note:  You don't need to be awesome at something to have an Expertise, but if it's just something you dabble in, it should probably be an Interest instead.
 
@@ -120,9 +113,6 @@ In addition to the stats above, in chargen you also have to set:
 
 * At least one **RP Hook**, which is something that might give other players a way to interact with you.  This could be something from your past, or something unusual or interesting about your character that might draw attention.
 * At least one **Goal** your character wants to achieve.
-* Your **Description**.
-* Your **Demographics** (age, height, hair color, etc.).
-* Your **Background** - a short (couple paragraphs max) description of who your character is and how they came to be here.
 
 # Sample BSG Ability List
 
@@ -152,6 +142,8 @@ Sample ability list for a Battlestar game:
 
 # Dice Mechanics
 
+Your skill and aptitude rating determine how many dice you roll.  You can **default** to an Aptitude when you don't have a rating in an appropriate ability **as long as** your character would reasonably have a shot at it.  You can't do brain surgery without training, but you could default to your Athletic aptitude to run a footrace.
+
 FS3 uses 10 sided dice, rolled against a target number of 8.
 
 Number of Dice to Roll:  **twice** the skill rating, plus a modifier for the related aptitude.
@@ -167,7 +159,7 @@ When rolling an expertise, use a skill rating of 4.
 
 When rolling an interest, use a skill rating of 2.
 
-When defaulting to an aptitude, use a rating based on the related aptitude.  The aptitude modifier is not counted in when defaulting.
+When defaulting to an aptitude, use a rating based on the related aptitude.  The aptitude modifier is not double-counted when defaulting.
 
 | Aptitude | Default Rating |
 | ---- | |
@@ -178,7 +170,6 @@ When defaulting to an aptitude, use a rating based on the related aptitude.  The
 
 
 ## Dice Rolled
-
 
 
 | Related Aptitude | Aptitude Only | Action 1 | Action 2 / Interest | Action 3 | Action 4 / Expertise | Action 5
@@ -205,13 +196,8 @@ Here's your rough chance of success given the number of dice rolled.   Modifiers
 | 9 | 95% | Average Action 4 / Expertise |
 | 10+ | 98% |  |
 
-> Note:  Above 10 dice, having more dice doesn't really increase your success chance, but it does protect you against negative modifiers.  In other words, someone with 12 dice can stand to lose 2 and still have a 98% chance of success.  Someone with only 10 dice who loses 2 drops to 94%.
-
-# Sample Characters
-
-See some [sample characters](/fs3/samples).
+> Note:  Above 10 dice, having more dice doesn't appreciably increase your success chance, but it does protect you against negative modifiers.  In other words, someone with 12 dice can stand to lose 2 and still have a 98% chance of success.  Someone with only 10 dice who loses 2 drops to 94%.
 
 # Credits
 
 I also just wanted to give a special shout-out to PirateSpice and Boo for their help crafting the 3rd edition and the crew of their sandbox game for being my guinea pigs.
-

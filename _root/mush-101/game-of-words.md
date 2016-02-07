@@ -24,7 +24,7 @@ A **MUSH** is a multi-player online game that blends creative writing, improv ac
 > 
 > "All I want is my boy you got in there, and we'll be on our merry way. Ain't no need for anybody else to die today," Kelly says, with a quirk of a grin despite the serious situation.
 
-This isn't an excerpt from a western novel, though you'd be forgiven for thinking so.  It's a transcript of gameplay from  [*Sweetwater Crossing MUSH*](http://sweetwatercrossingmush.wikidot.com/), an online game set in 1860's Nebraska Territory.  
+This isn't an excerpt from a western novel, though you'd be forgiven for thinking so.  It's a transcript of gameplay from  *Sweetwater Crossing MUSH*, an online game set in 1860's Nebraska Territory.  
 
 *Sweetwater* is closed now, but it ran for over two years, involved dozens of players, and generated more than 500 scenes like the one above.  They combined to tell a collaborative story about the townsfolk of Sweetwater Crossing – ranchers and outlaws, shopkeepers and schoolteachers.
 

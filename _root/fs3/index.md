@@ -12,13 +12,19 @@ tags:
 
 FS3 is a generic roleplaying game skills system, specifically designed and optimized for online text-based RPGs (MUSHes).  In Ares, FS3 is implemented as a family of plugins which all interact with and depend on each other.
 
-* [Skills](https://github.com/lynnfaraday/aresmush/tree/master/game/plugins/fs3skills)
-* [Character Sheet](https://github.com/lynnfaraday/aresmush/tree/master/game/plugins/fs3sheet)
-* [Experience (XP)](https://github.com/lynnfaraday/aresmush/tree/master/game/plugins/fs3xp)
-* [Combat](https://github.com/lynnfaraday/aresmush/tree/master/game/plugins/fs3combat) 
-* [Luck](https://github.com/lynnfaraday/aresmush/tree/master/game/plugins/fs3luck)
+* Skills
+* Character Sheet
+* Experience (XP)
+* Combat
+* Luck
 
-The [Chargen](https://github.com/lynnfaraday/aresmush/tree/master/game/plugins/chargen) plugin is also related, though it is general enough that it can apply to systems other than FS3.
+The Chargen plugin is also related, though it is general enough that it can apply to systems other than FS3.
+
+# Player Guides
+
+* [First Edition](https://github.com/lynnfaraday/MUSH/tree/master/farasoftcode/Docs/FS3.1)
+* [Second Edition](https://github.com/lynnfaraday/MUSH/tree/master/farasoftcode/Docs/FS3.2)
+* Third Edition coming soon.  Read the [notes](http://aresmush.com/fs3/third_edition/) here.
 
 ## Why FS3?
 
