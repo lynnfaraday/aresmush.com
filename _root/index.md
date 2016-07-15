@@ -33,8 +33,8 @@ Here are a few things to get you started:
 </li>
 
         <li>
-                        <a href="/blog"><img src="/assets/media/mars2.jpg"></a>
-<h2><a href="/blog">Blog</a></h2>
+                        <a href="http://aresmush.wordpress.com"><img src="/assets/media/mars2.jpg"></a>
+<h2><a href="http://aresmush.wordpress.com">Blog</a></h2>
 <p>Get news and tips from the developer's blog.</p>
 </li>
 

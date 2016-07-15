@@ -43,10 +43,12 @@ For example:   actors, actors2, actors3 will access the various pages of the act
 
 ## Channels
 
-The Ares channel system attempts to support both Penn and Tiny command syntax as much as possible.  So you can use:
+The Ares channel system attempts to support both Penn and Tiny command syntax as much as possible.  So you can use either set of commands:
 
-`chan/who <name>` or `<alias> who`  
-`chan/join <name>` or `addcom <name>=<alias>` 
+`chan/who <name>`
+`chan/join <name>`
+`<alias> who`  
+`addcom <name>=<alias>` 
 
 The default channel alias is the first 2 and 3 characters, so "Chat" would be cha <msg> and ch <msg>.  
 

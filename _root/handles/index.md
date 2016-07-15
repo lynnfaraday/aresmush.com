@@ -33,21 +33,9 @@ To create a handle, connect to AresCentral and make a character with the name yo
 
 ## How do I link characters?
 
- To protect your security, linking is a three-step process so we know that you're you on both ends.  This prevents someone from linking characters to your handle without your permission.
+To protect your security, linking is a multi-step process requiring you to log in on both AresCentral and the game you want to link from. This prevents someone from linking characters to your handle without your permission.
 
-1) On your local game, log in with the character you want to link and find your character ID.
-
-    handle/id
-
-2) On AresCentral, use the character ID from step 1 to generate a one-time use link code specific to that character.
-
-    handle/linkcode <character id>
-    
-3) Back on the local game, use your one-time link code from step 2 to link the character to your handle.
-
-    handle/link <handle name>=<link code>
-
-Tada!  That character is now linked to your handle.   You can unlink characters on AresCentral.  See `help handles`.
+For detailed instructions, see [Handle Linking](/handles/link).
 
 ## General Features
 
@@ -101,64 +89,10 @@ Some handle features behave differently depending on your privacy settings.
 
 On a public alt, the connection between the alt and your handle is obvious.
 
-#### On Channels
-
-When you talk on a channel, it shows your handle name:
-
-    <Chat> Cate (@Faraday) says, "Hi everyone."
-
-#### In Handle Profiles
-
-When **anyone** looks at your handle profile, they'll see this character listed under the alts list.
-
-<pre class="prettyprint">
-    <span class="nocode">
-    > profile @Faraday
-    
-    +==~~~~~====~~~~====~~~~====~~~~=====~~~~=====~~~~====~~~~====~~~~====~~~~~==+
-                              -~- @Faraday -~-                           
-    ------------------------------------------------------------------------------
-    Profile
-    Faraday is the creator of AresMUSH.  http://www.aresmush.com
-    ------------------------------------------------------------------------------
-    Alts(*)
-    ------------------------------------------------------------------------------
-    SomeBSGGame
-        Cate
-    
-    (*) Alt visibility is based on the player's privacy settings.  
-        Do not share this info with others.
-    +==~~~~~====~~~~====~~~~====~~~~=====~~~~=====~~~~====~~~~====~~~~====~~~~~==+
-</span>
-</pre>
-
-#### In Character Profiles
-
-When **anyone** looks at your character's profile, it shows your handle and public alts (on that game).
-
-<pre class="prettyprint">
-    <span class="nocode">
-    > profile Cate
-    
-    ==============================================================================
-                           -~- Cate@SomeBSGGame -~-                        
-
-    Status:     Not Yet Approved
-    Last On:    Sun Aug 09, 2015  9:10am
-    Location:   OOC - Character Creation
-    Timezone:   America/New_York
-    Played By:  None Set
-    Handle:     @Faraday
-    Alts (*):   Faraday, Cate
-
-    (*) Alt visibility is based on the player's privacy settings.  Do not share this info with others.
-    ==============================================================================
-</span>
-</pre>
-
-#### In Friends Lists
-
-When **anyone** adds your handle as a friend, this character will show up on their friends list as explained in the General Features above.
+* When you talk on a channel, it shows your handle name.
+* When **anyone** looks at your handle profile, they'll see this character listed under the alts list.
+* When **anyone** looks at your character's profile (on that game), it shows your handle and public alts on that game.
+* When **anyone** adds your handle as a friend, this character will show up on their friends list.
 
 > You can also add regular old characters as friends too - but that only applies on that particular game.
 
@@ -170,8 +104,6 @@ On a friends-only alt, the connection between the alt and your handle is only vi
 * When *one of your friends* looks at your alt's profile, it also shows your handle profile.
 * When *one of your friends* looks at your handle profile, they'll see this alt listed under the alts list.
 * When *one of your friends* adds your handle as a friend, this alt will show up on their friends list.
-
-See the Public Alt section for more information about each of those features.
 
 ### Private(*) Alt
 

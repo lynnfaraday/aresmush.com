@@ -114,32 +114,6 @@ In addition to the stats above, in chargen you also have to set:
 * At least one **RP Hook**, which is something that might give other players a way to interact with you.  This could be something from your past, or something unusual or interesting about your character that might draw attention.
 * At least one **Goal** your character wants to achieve.
 
-# Sample BSG Ability List
-
-Sample ability list for a Battlestar game:
-
-## Aptitudes
-
-* Athletics - A knack for things involving strength and agility.
-* Reaction - A knack for things involving hand-eye coordination and reflexes.
-* Intellect - A knack for logic and reasoning.
-* Tech - A knack for things blending knowledge and craftsmanship.
-* Creativity - A knack for artistic expression and imagination.
-* Willpower - A knack for presence and fortitude.
-
-## Action Skills
-
-* Alertness - Noticing things and being aware of your surroundings.
-* Demolitions - Blowing stuff up.
-* Comms - Ship sensors, countermeasures and communications (ECO and CIC type duties).
-* Firearms - Shooting guns.
-* First Aid - Patching people up outside of a hospital.  Docs should have a medical expertise.
-* Gunnery - Ship and vehicle weapons.
-* Melee - Fighting with fists, knives, and hand-to-hand weapons.
-* Piloting - Flying Vipers, Raptors and other airborne vehicles.
-* Stealth - Being sneaky.
-* Tinkering - Mechanical/electrical repair and tinkering.
-
 # Dice Mechanics
 
 Your skill and aptitude rating determine how many dice you roll.  You can **default** to an Aptitude when you don't have a rating in an appropriate ability **as long as** your character would reasonably have a shot at it.  You can't do brain surgery without training, but you could default to your Athletic aptitude to run a footrace.
@@ -197,6 +171,52 @@ Here's your rough chance of success given the number of dice rolled.   Modifiers
 | 10+ | 98% |  |
 
 > Note:  Above 10 dice, having more dice doesn't appreciably increase your success chance, but it does protect you against negative modifiers.  In other words, someone with 12 dice can stand to lose 2 and still have a 98% chance of success.  Someone with only 10 dice who loses 2 drops to 94%.
+
+# Sample BSG Game Configuration
+
+Sample ability list and XP config for a Battlestar game:
+
+## Aptitudes
+
+* Athletics - A knack for things involving strength and agility.
+* Reaction - A knack for things involving hand-eye coordination and reflexes.
+* Intellect - A knack for logic and reasoning.
+* Tech - A knack for things blending knowledge and craftsmanship.
+* Creativity - A knack for artistic expression and imagination.
+* Willpower - A knack for presence and fortitude.
+
+## Action Skills
+
+* Alertness - Noticing things and being aware of your surroundings.
+* Demolitions - Blowing stuff up.
+* Comms - Ship sensors, countermeasures and communications (ECO and CIC type duties).
+* Firearms - Shooting guns.
+* First Aid - Patching people up outside of a hospital.  Docs should have a medical expertise.
+* Gunnery - Ship and vehicle weapons.
+* Melee - Fighting with fists, knives, and hand-to-hand weapons.
+* Piloting - Flying Vipers, Raptors and other airborne vehicles.
+* Stealth - Being sneaky.
+* Tinkering - Mechanical/electrical repair and tinkering.
+
+## XP
+
+This XP configuration is geared toward slower, more realistic advancement.  It takes time to get really good at things.
+
+XP awarded per week: 0.5
+
+Cost to add a language: 5
+Cost to add an interest: 5
+
+Cost for skill levels:
+|  1 |    2 |
+|  2 |    8 |
+|  3 |    12 |
+|  4 |    16 |
+|  5 |    20 |
+
+Maximum XP you can save: 20
+
+Days between XP spending: 7
 
 # Credits
 

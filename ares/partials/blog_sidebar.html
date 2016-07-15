@@ -25,9 +25,21 @@ Got <a href="/feedback">questions or feedback</a>?  We'd love to hear from you.
                   
                   
 
-                  <div class="sidebar-title">Blog</div>
+                  <div class="sidebar-title">Recent Blog Posts</div>
+                          <ul>
+                              {{# posts.latest }}
+                              <li>
+                                  <a href="{{url}}">{{date}} {{title}}</a>
+                              </li>
+                              {{/ posts.latest }}
+                              
+                              <li>
+                                  <a href="/blog">~ View Blog ~</a>
+                              </li>
+                          </ul>
+        
                           
-                          Visit the <a href="http://aresmush.wordpress.com">Developer's Blog</a> for the latest updates.                 
+                  
                   
                   </div>
                   
