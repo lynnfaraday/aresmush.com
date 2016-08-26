@@ -25,13 +25,19 @@ FS3 Core is the game configuration that comes with the default FS3 installation.
 |Demolitions |Wits |Blowing stuff up. |
 |Firearms |Reflexes |Shooting guns. | 
 |Gunnery |Reflexes |Vehicle and heavy weapons. |
-|Medicine |Wits |Tending to the ill and injured.|
+|Medicine <i class="fa fa-cog" aria-hidden="true"></i> |Wits |Tending to the ill and injured.|
 |Melee |Brawn |Fighting with fists, knives, and hand-to-hand weapons.|
-|Piloting |Reflexes |Flying air and spacecraft.|
-|Tinkering |Wits |Mechanical/electrical tinkering and repair.|
+|Piloting <i class="fa fa-cog" aria-hidden="true"></i> |Reflexes |Flying air and spacecraft.|
+|Technician <i class="fa fa-cog" aria-hidden="true"></i>|Wits |Mechanical/electrical tinkering and repair.|
 |Stealth |Reflexes |Being sneaky.|
 
-> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** In FS3 Core, Action Skills are deliberately broad to simplify chargen.  You should always roleplay appropriately to your character's specialties, and apply negative modifers if deviating beyond them.
+<i class="fa fa-cog" aria-hidden="true"> -- Specialty Required
+
+### Specialties
+
+* Medicine - Paramedic, Nurse, a doctor's specialty (emergency med, trauma surgeon, psychiatrist, etc.)
+* Piloting - Fixed-Wing, Rotary-Wing
+* Technician - Electronics, Mechanics, Programming
 
 ## Background Skills
 
