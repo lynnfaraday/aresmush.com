@@ -24,7 +24,7 @@ The Chargen plugin is also related, though it is general enough that it can appl
 
 * [First Edition](https://github.com/lynnfaraday/MUSH/tree/master/farasoftcode/Docs/FS3.1)
 * [Second Edition](https://github.com/lynnfaraday/MUSH/tree/master/farasoftcode/Docs/FS3.2)
-* Third Edition coming soon.  Read the [notes](http://aresmush.com/fs3/third_edition/) here.
+* Third Edition coming soon.  Read the [notes](/fs3/fs3-3/) here.
 
 ## Why FS3?
 

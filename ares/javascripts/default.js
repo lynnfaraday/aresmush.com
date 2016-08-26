@@ -27,7 +27,7 @@ $(document).ready(function(){
     
  
     $(function() {
-        $( "#menubutton" ).click(function() {
+        $( "a#menubutton" ).click(function() {
             $("#navbar").toggle( "slide", { direction: "right" }, 500 );
 
         });

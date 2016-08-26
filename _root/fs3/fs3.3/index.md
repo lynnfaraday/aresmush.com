@@ -30,13 +30,12 @@ Since FS3 is designed for MUSHes, it is provided as a complete codebase.  FS3.3 
 
 # What's New in Third Edition?
 
-* Instead of a fixed number of chargen points, characters are assigned a Power Level to reflect the relative power of their abilities.
-* Skill Ratings go from 1-8 instead of 1-12, with better descriptions of what the different levels represent.
-* Attributes have been replaced by Talents, which give you bonus dice when rolling related skills.
-* Traits are a new type of Ability that reflect miscellanous characteristics that don't fit as skills.
+* Skill Ratings go from 0-8 instead of 1-12, with better descriptions of what the different levels represent.
+* Attributes have been expanded, and are no longer locked after chargen.
 * Background Skills are now unrated, like Languages.
 * Quirks are gone, replaced by RP Hooks.
-* Various other tweaks to the dice, XP costs and gain, and more.
+* Dice now go against a TN6 instead of TN7, increasing successes.  Defaulting to an attribute works differently.
+* Various other tweaks to the dice, XP, and more.
 
 # Copyright and License
 

@@ -20,7 +20,7 @@ FS3 works well with historical settings back to about the 1800's, modern setting
 
 You can do a fantasy setting in FS3, but it's like trying to fit a square peg into a round hole.   Melee tactics, mounted combat, hodgepodge armor (chain vest + leather arms, for instance) and different weapon skills do not fit well in FS3.
 
-Similarly, FS3 is not really geared for superhero/supernatural games.  It simply has no concept of "powers", and the rating system is not designed to accommodate superhuman abilities.
+Similarly, FS3 is not really geared for superhero/supernatural games.  It simply has no concept of "powers", and the rating system is not designed to accommodate superhuman abilities.  You can do it, but it's not a great fit.
 
 # Lightly-Coded
 

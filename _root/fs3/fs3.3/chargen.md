@@ -8,106 +8,201 @@ Character creation in FS3 is meant to be quick and easy.
 
 > <i class="fa fa-codepen" aria-hidden="true"></i> **Code Tip:**  In-game, use the `sheet` command to view all of your character's abilities, and the `app` command to review your sheet for problems.  The `app` command is the same one that staff will use when reviewing your character, so it's a good way to get a heads-up about what they might object to.
 
+# Web App
+
+Try out the <a href="https://fs3chargen.herokuapp.com/">FS3 Character Generator</a> web app.  (In Alpha Testing)
+
+<a name="background"/>
+
 # Background
 
 **Who are you?**  This is the most important question when designing a FS3 character.  It drives every Ability you take.  A disconnect between your background and your skills is the fastest way to raise a red flag when your character is reviewed.
 
-# Demographics
+Part of character creation involves writing a short background, or mini-biography, for your character.  It doesn't need to bes a novel, just 2-3 paragraphs describing the character’s backstory. In particular, your background should cover:
 
-You will need to set some basic demographic information about your character, such as their age, rank, faction, etc. 
+* Who is your character?
+* Why/how did they get here?
+* Anything else important/noteworthy/unusual about your character that might explain your abilities or be good for staff to be aware of.
 
-# Power Level
+<a name="ability-points"/>
 
-In FS3, not all characters are equally “powerful”.  A Navy SEAL might exist alongside an 18-year-old marine fresh out of boot camp, or a master alongside an apprentice.  FS3 represents this by assigning each character a Power Level (PL).
+# Ability Points
 
-## Calculating Power Level
+**Ability Points (AP)** are a way of measuring the sum total of your character's abilities.  Every ability you pick and every rating you choose contributes toward your total AP rating.
 
-Rather than being given a fixed number of points to spend in character creation, your character is assigned a Power Level based on the total number of Chargen (CG) Points you spend.  Different kinds of Abilities cost different CG points, as explained in **Choosing Abilities**, below.
+Different kinds of abilities cost different number of AP, as explained in **Choosing Abilities** below.  Action-oriented things are given more weight than background things, simply because they're far more likely to come up during the course of the game.
 
-| CG Points | Power Level | 
-| ---- | 
-| TBD | Inexperienced |
-| TBD | Normal |
-| TBD | Expert |
-| TBD | Larger than Life |
+## Point Restrictions
 
-## Why Play an Lower-Powered Character?
+You don't start off with a fixed pool of AP.  Instead, the system counts **up** how much you've spent to give you an AP total.  A game may restrict the maximum allowable AP by alt, by faction or any other criteria.  Consult your local game policies for details.
 
-Dice are fun, but *story* is the most important thing.  Maybe you really want to tell the story of the young recruit.  And John McClane in *Die Hard* wasn't particularly powerful, but he's one of the most badass action heroes ever.  Teamwork, mentoring, niche skills, or just being in the right place at the right time can give even the lowest-powered character a chance to shine.   
+> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** If your character uses too many AP, ask staff for help.  They may be able to help you adjust your points or re-work your concept to one that better fits the theme.  Avoid shaving essential skills just to save points.  A character missing essential skills is as much of a red flag as an overpowered character.
 
-Also, lower PL characters get a bonus when gaining [experience points](/fs3/fs3-3/xp) during the game.
+## AP Disparities
 
-## Power Level Restrictions
+Some characters will have higher AP totals than others.   Is that fair?  Sure it is, as long you realize that it's the player's choice.  Characters in FS3 have equal *opportunity*, but ultimately you get to pick which position you want to play.   A Navy SEAL shouldn't have the same number of action-oriented skills as a fresh-from-boot-camp recruit or a galley cook (unless the cook is also Stephen Segal).  A master shouldn't be on even footing with his apprentice, nor a superhero with his sidekick.  
 
-A game may restrict higher power levels by alt, by faction or any other criteria.  Some PLs may be off-limits completely.  Consult your local game policies for details.
+But why would you want to play a lower-powered character in the first place?   Why not maximize your allowable AP rating?
 
-> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** If your character is too powerful, ask staff for guidance.  They may be able to help you adjust your points or re-work your concept to one that better fits the theme.  Avoid shaving essential skills just to save points.  A Navy SEAL without the right skills is as much of a red flag as an overpowered character.
+Dice are fun, but *story* is the most important thing.  Telling a story about a wide-eyed young recruit or sidekick can be fun.   And John McClane in *Die Hard* wasn't particularly powerful, but he's one of the most badass action heroes ever.  In the right story, everyone can have a chance to shine.
 
 # Choosing Abilities
 
 The following sections will guide you in determining your Abilities.
 
-> <i class="fa fa-codepen" aria-hidden="true"></i> **Code Tip:**  The system will automatically assign you some starting Abilities based on your character's faction/position.  These are generally skills that everyone should know, so be sure to have a good reason before lowering a skill below its starting rating.  Even these starting Abilities count towards your Power Level.
+> <i class="fa fa-codepen" aria-hidden="true"></i> **Code Tip:**  Use the `abilities` command in-game to see a list of availabile abilities.  The system will automatically assign you some starting Abilities based on your character's faction/position.  These are generally skills that everyone should know, so be sure to have a good reason before lowering a skill below its starting rating.  Even these starting Abilities count towards your Power Level.
 
-## What Are Abilities?
+<a name="attributes"/>
 
-Be sure to read the [System Basics](/fs3/fs3-3/basics) document for an overview of the different kinds of abilities and what they represent.
+## Attributes
 
-## Talents
+Attributes represent basic abilities that everyone has to some extent.  Attributes can be used when no skill directly applies.  They can also boost related skills.  See [Conflict Resolution](/fs3/fs3-3/conflict) for details.
 
-Allocate Talent Dice to the areas you think represent your greatest talents.  Remember, a talent of 0 doesn't mean you suck; it just means you don't gain a bonus to your skill rating for those sorts of skills.
+The specific list of Attributes will vary from game to game.  For an example, see **[FS3 Core](/fs3/fs3-3/core)**.
 
-Each Talent die costs **2 CG Points**.
+### Attribute Ratings
 
-You may have at most **6 Talent Dice**.
+Attributes are rated from 1-5.
+
+| Rating | Summary | Description |
+| ---- |
+|1|Poor|You are below average.  (less than 40th percentile)|
+|2|Average |You are about average.  (40-60th percentile)|
+|3|Good|You’re better than average.   (60-75th percentile)|
+|4|Great|You are considerably above average.  (75-90th percentile)|
+|5|Exceptional|You’re truly remarkable. (more than 90th percentile)|
+
+### Buying Attributes
+
+You receive *Average* in all Attributes for free.  Each additional rating costs **2 APs**.
+
+You may spend at most **12 APs** on Attributes, and may not have more than **1 Attribute rated 5**.
+
+> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** You don't gain any points for taking a rating 1 in an Attribute.  It costs the same as rating 2.  Rating 1 is there solely for roleplay flavor if you want to denote a disadvantage.
+
+<a name="action-skills"/>
 
 ## Action Skills
 
-All characters must have a rating in all Action Skills; you don't just get to leave some off your sheet.
+Action Skills represent your training/knowledge in areas that are likely to come up in action/conflict situations during the game. 
 
-A recommended way to approach Action Skills is simply to go down the list one by one and ask:  **What level bests describes my character?**  If the descriptions in the rating table above aren't clear, you can use the [Detailed Ratings](/fs3/fs3-3/detailed-ratings) as a guide.  
+The specific list of Action Skills will vary from game to game.  For an example, see **[FS3 Core](/fs3/fs3-3/core)**.
 
-Higher skill ratings cost more than lower ones.  Generally, ratings 4 or higher are professional-level skills, and should only be taken if your character is truly good enough to do this for a living.
+### Action Skill Ratings
 
-| Rating | CG Point Cost |
+Action Skills are rated from 0 to 8, based on your training and experience.
+
+| Rating | Summary | Description |
 | ---- |
-| 1-2 | Free | 
-| 3-5 | 1 CG Point Each |
-| 6-8 | 2 CG Points Each |
+|0 |Unskilled|You lack even basic capabilities in this area.|
+|1 |Everyman|You know what the average inhabitant of the game world would know.   |
+|2 |Amateur / Mediocre|You are a hobbyist or student with some basic training.  |
+|3 |Rookie / Fair|You're a junior professional, trained but lacking experience.|
+|4 |Professional / Good|You are a thoroughly competent professional.  |
+|5 |Veteran / Great|You are a seasoned professional with a fair bit of experience. |
+|6 |Expert / Superb|You have significant experience to draw upon and are well-regarded in your field. |
+|7 |Elite / Exceptional|You are one of the top people in your field, like an All Star athlete or a world-renowned doctor.|   
+|8 |Legend / Legendary|You are one of the best that’s ever lived.|
 
-You may have at most **3 Action Skills rated 6+**.  Nobody can be awesome at everything.
+If the descriptions in the rating table above aren't enough, you can use the [Detailed Ratings](/fs3/fs3-3/detailed-ratings) as a guide.  
 
-> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** Why don't you get anything for taking a rating 1?  This is to discourage min/maxing.  A rating 1 is unusual.  It means that the character lacks even the basic knowledge that the average person in the game world has.  Such a decision should not be made lightly just to shave a point here and there.
+### Specialties
+
+Abilities in FS3 are deliberately broad to simplify chargen, but some games require you to choose *Specialties* in certain skills to narrow your character's focus.  You can have more than one specialty in a skill, but each additional specialty beyond the first costs **1 AP**.
+
+If you use a specialized skill outside of your specialties, you are at a disadvantage. See [Conflict Resolution](/fs3/fs3-3/conflict) for more information.
+
+### Linked Attributes
+
+Every Action Skill is linked to a particular Attribute by default.  Unless you specify otherwise during a roll, this is the Attribute that will boost your skill rating when you roll that skill.  The linked Attribute is shown in the skill list, and on your character sheet.
+
+### Buying Action Skills
+
+You automatically get the *Everyman* rating in each Action Skill for free.  Each additional rating costs **1 AP**.
+
+You may have at most **3 Action Skills rated 5+**.
+
+A few tips for selecting Action Skills:
+
+* The rating name should generally match your professional experience.  While some variation is allowed for talent (or lack thereof), be careful not to stray too far.  A brand-new pilot with an Elite piloting skill isn't going to fly (pun intended).
+* Ratings 3 or higher imply you're is good enough to do this for a living.  Hobbies don't need to be that high unless you're really serious about them.
+* Rating 1 (Everyman) is a special rating.  It reflects what the average inhabitant of the game world would be capable of.  What tasks you can even conceivably attempt with Everyman will vary from skill to skill.  
+
+For more details about using skills, see [Conflict Resolution](/fs3/fs3-3/conflict).
+
+> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** You don't gain any points for taking a rating 0 in an Action Skill.  It costs the same as rating 1.  Rating 0 is there solely for roleplay flavor if you want to denote a disadvantage.  
+
+<a name="background-skills"/>
 
 ## Background Skills
 
-Background Skills are free-form, so there is no specific list.  You can pick anything from Singing to Underwater Basketweaving.  See the [System Basics](/fs3/fs3-3/basics) document for some ideas.
+Background Skills represent arts, sports, hobbies, professions and any other skills not covered by Action Skills. 
 
-> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** You are assumed to have the **Everyman** rating in any Background Skill not listed on your character sheet. So even if you don't take the "football" skill, you've still probably played it a few times in gym class in school, watched it on TV, etc.  You are, of course, free to roll Unskilled if your character has never picked up a football in his/her life.
+The specific list of Background Skills will vary from game to game.  For an example, see **[FS3 Core](/fs3/fs3-3/core)**.
+
+### Background Skill Ratings
+
+Background Skills exist for RP flavor and character depth more than conflict resolution.  Because of that, they are *described*, not rated.   Just give a short sentence or so describing what your character knows and why.  Here are a few examples:
+
+* Journalism - Hannah is a cub reporter for the Colonial Broadcasting Network.
+* Pyramid - Marua played Pyramid in college.  She might have gone pro had she not joined the Navy.
+* Surgery - Viktor is a world-class trauma surgeon with a lot of battlefield experience.
+
+> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** You are assumed to have basic common knowledge (equivalent to the Everyman rating) in any Background Skill not listed on your character sheet. So even if you don't take the "football" skill, you've still probably played it a few times in gym class in school, watched it on TV, etc.  Even though background skills don't have ratings, you can still roll them as described in [Conflict Resolution](/fs3/fs3-3/conflict).
+
+### Linked Attributes
+
+Background Skills are linked to Wits by default.  Unless you specify otherwise, this is the Attribute that will boost your skill rating when you roll that skill.
+
+> <i class="fa fa-codepen" aria-hidden="true"></i> **Code Tip:**  You can use the `linkedattr` command in-game to set up a different default Attribute for each of your Background Skills.  For instance, you might tie a performance skill to Presence.  That way you don't have to remember to specify the right Attribute when you roll.
+
+### Buying Background Skills
 
 You must take **at least 1** Background Skill, and can take **up to 3 for free**.
 
-Additional Background Skills cost **1 CG Point** each.
+Additional Background Skills cost **1 AP** each.
+
+<a name="languages"/>
 
 ## Languages
 
-Your first language is free.   Any additional languages cost **1 CG Point** each.
+Languages represent the languages that your character can speak and/or read.   
 
-## Traits
+The specific list of Languages will vary from game to game.
 
-All characters must have a rating in all Traits; you don't just get to leave some off your sheet.
+### Language Ratings
 
-| Rating | CG Point Cost |
-| ---- |
-| 1-2 | Free | 
-| 3-4 | 1 CG Point Each |
-| 5 | 2 CG Points |
+Like Background Skills, Languages have no ratings.   If you have a Language, you’re assumed to be fluent and literate.  You can always RP a lower degree of proficiency if appropriate to your background.
 
-> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** As with Action Skills, rating 1 costs the same as rating 2 to discourage min/maxing.  If you really want to be bad at something, that should be a roleplay choice not a rollplay choice.
+### Buying Languages
+
+Your first language is free.   Any additional languages cost **1 AP** each.
+
+<a name="advantages"/>
+
+## Advantages
+
+Advantages are a way for games to expand FS3 to incorporate different kinds of Abilities.  They could be used for anything from superpowers to characteristics like rank and resources.  
+
+The specific list of Advantages will vary from game to game.  For an example, see **[FS3 Core](/fs3/fs3-3/core)**.
+
+### Advantage Ratings
+
+Advantages are rated from 0-5 like Attributes.
+
+The specific ratings may have special meanings from game to game.  For example, rating 1 in a Rank Advantage may mean something in particular.
+
+<a name="rp-hooks"/>
+
+### Linked Attributes
+
+Advantages, like Action Skills, are linked to particular Attributes.
 
 # RP Hooks
 
-The final step in character creation is to set at least one **RP Hook**.  This is something interesting about your character that others can leverage for RP ideas.   Do you have a short temper?  Is your family famous so that someone might recognize you?   Do you love (or hate) dogs or small children?   Just about any personality trait, quirk or background tidbit can be a RP Hook.
+The final step in character creation is to set at least one **RP Hook**.  This is something interesting about your character that others can leverage for RP ideas.   Do you have a short temper?  Is your family so famous that someone might recognize you?   Do you love (or hate) dogs or small children?   Just about any personality trait, quirk or background tidbit can be a RP Hook.
+
+<a name="review"/>
 
 # Review
 
