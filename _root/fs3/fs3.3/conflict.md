@@ -30,7 +30,7 @@ The only exception to this is if the storyteller decides to allow a "Hail Mary" 
 
 # What to Roll
 
-Before rolling, you need to figure out which Skill or Advantage applies best to the task at hand.  When more than one applies equally well, you can choose the one with the highest rating.  If you don't have an applicable Skill/Advantage, you can make a *Default Roll* using an Attribute, as explained in the next section.
+Before rolling, you need to figure out which Skill or Advantage applies best to the task at hand.  When more than one applies equally well, you can choose the one with the highest rating.  If you don't have an applicable Skill/Advantage, you can make a *Default Roll* as explained in the next section.
 
 FS3 uses 8-sided dice.  You roll a number of (virtual) dice equal to the Ability Rating plus the linked Attribute.  You can gain or lose dice through special Modifiers.
 
@@ -46,7 +46,7 @@ You won't normally be rolling unrated abilities like Languages and Background Sk
 
 If a task does not fall under an ability listed on your character sheet, you may have the chance to make a Default Roll (see *Limitations and Hail Mary Rolls* above for some caveats).   You have two options:
 
-* Use a semi-related skill with a negative modifier (typically -2).  For instance, if you lack a Vet skill you could default to Medicine to treat a hurt animal.
+* Use a semi-related skill with a negative modifier (typically -2).  For instance, if you lack a Vet skill you could default to Medicine-2 to treat a hurt dog.
 * Use the Everyman rating to fall back on 'common knowledge'.
 
 > <i class="fa fa-codepen" aria-hidden="true"></i> **Code Tip:** You can make a default roll just by rolling the appropriate Attribute.  For example `roll Brawn` will make an Everyman roll linked to your Brawn attribute, effectively rolling Brawn+1.
@@ -55,13 +55,7 @@ If a task does not fall under an ability listed on your character sheet, you may
 
 # Specialties
 
-Abilities in FS3 are deliberately broad to simplify chargen, but some games require you to choose Specialties in certain skills to narrow your character's focus.  
-
-If you use a specialized skill outside of the specialty, you are at a disadvantage.  Usually this means applying a negative modifier depending on how closely the task is related to one of your specialties.  There will often be house rules on a game to cover this, but here are some guidelines:
-
-* Closely Related - -1 modifier (e.g. using Pilot/Jet when flying a single-seat plane, since single-seaters would've been part of basic fighter pilot training)
-* Loosely Related - -2 modifier (e.g. using Melee/Knife when wielding a quarterstaff.  They're kinda similar, but very different styles)
-* Not Related - Don't roll, it's silly.  (e.g. using Medicine/Paramedic to perform brain surgery, or Pilot/Helicopter to fly a space shuttle)
+Specialties aren't codified in FS3, but players are still expected to roleplay in accordance with what their character knows.  If you use a skill outside of your comfort zone, you should apply a negative modifier as if you were defaulting.  If the task is too far outside your specialty (like a paramedic attempting surgery or a helicopter pilot trying to fly a space shuttle), then it's more of a Hail Mary situation.  See **Limitations and Hail Mary Rolls** for more information.
 
 <a name="success-level"/>
 
@@ -71,13 +65,14 @@ When you roll your ability dice, any die that is a 6 or higher is counted as a s
 
 | Rating | Description |
 | ---- |
+|*|Embarrassing Failure|
 |0|Failure|
 |1|Success|
 |2-3|Good Success|
 |4-5|Great Success|
 |6+|Amazing Success|
 
-An Embarrassing Failure happens when you get no successes and more than half your dice are 1’s.   You don’t just fail, you fail is a spectacular and embarrassing fashion - like shooting your friend or falling flat on your face.
+An Embarrassing Failure happens when more than half your dice are 1’s - even if you got some successes.   You don’t just fail, you fail is a spectacular and embarrassing fashion - like shooting your friend or falling flat on your face.
 
 <a name="modifiers"/>
 

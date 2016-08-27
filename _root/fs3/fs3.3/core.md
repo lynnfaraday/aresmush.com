@@ -10,34 +10,30 @@ FS3 Core is the game configuration that comes with the default FS3 installation.
 
 | Attribute | Description |
 | ---- |
-| Brawn | Physical strength and toughness. |
-| Perception | Noticing things and being aware of your surroundings. |
-| Composure | Cooless under pressure.  Willpower. |
 | Reflexes | Reflexes, dexterity, and hand-eye coordination. |
+| Brawn | Physical strength and toughness. |
 | Wits | Practical intelligence, inventiveness and creativity. |
-| Presence | Poise and charisma. |
+| Grit | Willpower and determination. |
+| Perception | Noticing things and being aware of your surroundings. |
+| Presence | Charisma and beauty. |
 
 ## Action Skills
 
 | Action Skill | Linked Attribute | Description |
 | ---- |
+|Alertness|Perception|Noticing things and being aware of your surroundings|
 |Athletics|Brawn|General running, jumping, climbing, etc.|
+|Composure|Grit|Coolness under pressure.|
 |Demolitions |Wits |Blowing stuff up. |
 |Firearms |Reflexes |Shooting guns. | 
 |Gunnery |Reflexes |Vehicle and heavy weapons. |
-|Medicine <i class="fa fa-cog" aria-hidden="true"></i> |Wits |Tending to the ill and injured.|
+|Medicine|Wits |Tending to the ill and injured.|
 |Melee |Brawn |Fighting with fists, knives, and hand-to-hand weapons.|
-|Piloting <i class="fa fa-cog" aria-hidden="true"></i> |Reflexes |Flying air and spacecraft.|
-|Technician <i class="fa fa-cog" aria-hidden="true"></i>|Wits |Mechanical/electrical tinkering and repair.|
+|Piloting|Reflexes |Flying air and spacecraft.|
+|Technician|Wits|Mechanics, electronics and computers.|
 |Stealth |Reflexes |Being sneaky.|
 
-<i class="fa fa-cog" aria-hidden="true"> -- Specialty Required
-
-### Specialties
-
-* Medicine - Paramedic, Nurse, a doctor's specialty (emergency med, trauma surgeon, psychiatrist, etc.)
-* Piloting - Fixed-Wing, Rotary-Wing
-* Technician - Electronics, Mechanics, Programming
+> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:**  Abilities in FS3 are deliberately broad to simplify chargen, but chances are your character isn't great at *every single thing* covered by a given skill.  For example, Medicine covers a lot, but a paramedic can't do brain surgery, and a brain surgeon or psychiatrist would suck trying to splint a broken leg.  RP appropriately according to your background, and apply appropriate modifiers (described in [Specialties](/fs3/fs3-3/conflict#specialties) when going out of your comfort zone.
 
 ## Background Skills
 
@@ -93,10 +89,6 @@ You cannot raise an attribute above 4 through XP.  This is simply a game-balance
 ###  Background Skills
 
 You can add or update a background skill at a cost of 2XP.  However, you may not progress beyond a professional level of competence (on par with rating 4) with XP.
-
-### Specialties
-
-Adding a specialty to an Action Skill costs 4XP.
 
 ### Languages
 

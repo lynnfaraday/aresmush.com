@@ -106,11 +106,7 @@ Action Skills are rated from 0 to 8, based on your training and experience.
 
 If the descriptions in the rating table above aren't enough, you can use the [Detailed Ratings](/fs3/fs3-3/detailed-ratings) as a guide.  
 
-### Specialties
-
-Abilities in FS3 are deliberately broad to simplify chargen, but some games require you to choose *Specialties* in certain skills to narrow your character's focus.  You can have more than one specialty in a skill, but each additional specialty beyond the first costs **1 AP**.
-
-If you use a specialized skill outside of your specialties, you are at a disadvantage. See [Conflict Resolution](/fs3/fs3-3/conflict) for more information.
+> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:**  Abilities in FS3 are deliberately broad to simplify chargen, but chances are your character isn't great at *every single thing* covered by a given skill.  For example, Medicine covers a lot, but a paramedic can't do brain surgery, and a brain surgeon or psychiatrist would suck trying to splint a broken leg.  RP appropriately according to your background, and apply appropriate modifiers (described in [Specialties](/fs3/fs3-3/conflict#specialties) when going out of your comfort zone.
 
 ### Linked Attributes
 
