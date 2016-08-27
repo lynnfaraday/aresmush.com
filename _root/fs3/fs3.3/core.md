@@ -55,10 +55,6 @@ Background Skills are free-form, so there is no specific list.  You can pick any
 
 In FS3 Core, languages are free-form.  The specific list of Languages will vary from game to game.
 
-## Advantages
-
-There are no Advantages in FS3 Core.
-
 ## Experience
 
 You gain 2XP per week.

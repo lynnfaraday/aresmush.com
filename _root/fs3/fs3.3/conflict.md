@@ -30,11 +30,11 @@ The only exception to this is if the storyteller decides to allow a "Hail Mary" 
 
 # What to Roll
 
-Before rolling, you need to figure out which Skill or Advantage applies best to the task at hand.  When more than one applies equally well, you can choose the one with the highest rating.  If you don't have an applicable Skill/Advantage, you can make a *Default Roll* as explained in the next section.
+Before rolling, you need to figure out which Skill applies best to the task at hand.  When more than one applies equally well, you can choose the one with the highest rating.  If you don't have an applicable Skill, you can make a *Default Roll* as explained in the next section.
 
-FS3 uses 8-sided dice.  You roll a number of (virtual) dice equal to the Ability Rating plus the linked Attribute.  You can gain or lose dice through special Modifiers.
+FS3 uses 8-sided dice.  You roll a number of (virtual) dice equal to the Skill Rating plus the linked Attribute.  You can gain or lose dice through special Modifiers.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i>  **Roll Tip:** Dice to Roll = 1 + Ability Rating + Linked Attribute +/- Modifiers
+> <i class="fa fa-cubes" aria-hidden="true"></i>  **Roll Tip:** Dice to Roll = 1 + Skill Rating + Linked Attribute +/- Modifiers
 
 You won't normally be rolling unrated abilities like Languages and Background Skills.  Those are mostly for RP flavor.  If you do roll them, the code will use a rating of Expert for languages (assuming fluency) and Amateur for Background Skills (assuming a hobby/interest).  You can add an appropriate modifier (explained below) if your character is more or less skilled.
 

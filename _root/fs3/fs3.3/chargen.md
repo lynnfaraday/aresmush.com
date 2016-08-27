@@ -174,25 +174,7 @@ Like Background Skills, Languages have no ratings.   If you have a Language, you
 
 Your first language is free.   Any additional languages cost **1 AP** each.
 
-<a name="advantages"/>
-
-## Advantages
-
-Advantages are a way for games to expand FS3 to incorporate different kinds of Abilities.  They could be used for anything from superpowers to characteristics like rank and resources.  
-
-The specific list of Advantages will vary from game to game.  For an example, see **[FS3 Core](/fs3/fs3-3/core)**.
-
-### Advantage Ratings
-
-Advantages are rated from 0-5 like Attributes.
-
-The specific ratings may have special meanings from game to game.  For example, rating 1 in a Rank Advantage may mean something in particular.
-
 <a name="rp-hooks"/>
-
-### Linked Attributes
-
-Advantages, like Action Skills, are linked to particular Attributes.
 
 # RP Hooks
 
