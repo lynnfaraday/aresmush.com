@@ -33,16 +33,19 @@ Since FS3 is designed for MUSHes, it is provided as a complete codebase.  FS3.3 
 ## Skill Changes
 
 * Skill Ratings go from 0-8 instead of 1-12, with better descriptions of what the different levels represent.
-* Dice now go against a TN6 instead of TN7, increasing successes.  Defaulting to an attribute works differently.
+* Dice now go against a TN6 instead of TN7, increasing successes.  
 * Attributes have been expanded, and are no longer locked after chargen.
-* Background Skills are now unrated, like Languages.
+* Background and Language skills now have more descriptive ratings.
 * Quirks are gone, replaced by RP Hooks.
+* Defaulting works differently.  You no longer use the Attribute by itself, but roll the skill at the special new "Everyman" rating to reflect common knowledge.  This becomes Attribute+1.  With the target number change, this actually gives you a better chance of success than previously rolling 2x the attribute.
 
 ## Combat Changes
 
 * Combat wounds have different names and effects.  Healing has been tweaked accordingly.
 * NPCs no longer have specific ratings but general classes:  Goon, Henchman, Boss.
-* Various other mechanics tweaks to stances, explosions and hit locations.
+* Certain hit locations (like hand and neck) will no longer come up as random hitlocs but can still be targeted with called shots.
+* Armor can now have different protection ratings in different areas, representing weak spots and mixed armor.
+* Other minor mechanics tweaks.
 
 # Credits
 
@@ -52,7 +55,7 @@ Thanks to the following people for their contributions to FS3:
 * The cast and crew of Battlestar Pacifica, where +combat originated.
 * Cags and David and my dad for input for the original edition of FS3.  
 * SeanCee and Boo and the crew of Aftermath for initial beta testing on 3rd edition.
-* Orion, Draco, Andromeda and the crew of The 100 for some cool house rules I stole and general feedback.
+* Orion, Andromeda, Draco and the crew of The 100 for some cool house rules I stole and general feedback.
 
 # Copyright and License
 

@@ -90,11 +90,21 @@ You cannot raise an attribute above 4 through XP.  This is simply a game-balance
 
 ###  Background Skills
 
-You can add or update a background skill at a cost of 2XP.  However, you may not progress beyond a professional level of competence (on par with rating 4) with XP.
+| Current Rating | Cost |
+| ---- |
+| None | 2 XP |
+| Interest | 8 XP |
 
-### Languages
+You cannot raise a skill above 2 through XP for the same reasons as Action Skills.
 
-Learning a language costs 16XP.
+###  Language Skills
+
+| Current Rating | Cost |
+| ---- |
+| None | 4 XP |
+| Beginner | 16 XP |
+
+You cannot raise a skill above 2 through XP for the same reasons as Action Skills.
 
 ## Luck
 

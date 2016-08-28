@@ -126,19 +126,20 @@ All modifiers are cumulative, and are added to the percentile roll to give a fin
 
 # Hit Location
 
-FS3 uses a custom hit location system.  First choose a hit location you're aiming at.  Typically this is the center of mass (chest for humans) unless you're doing a called shot.
-
-Imagine an archery target with rings superimposed over this hit location.  If you hit, you get somewhere on the target. 
+FS3 uses a custom hit location system.  First choose a hit location you're aiming at.  Typically this is the center of mass (chest for humans) unless you're doing a called shot.  Imagine an archery target with rings superimposed over this hit location.
 
 {{#pretty-image}}/assets/media/hitloc_chest.jpg{{/pretty-image}}
-
-When you target a hit location other than the center of mass, some of the archery target will fall on dead air.  This is termed a "Near Miss", meaning close but no cigar.  It would've been a hit if you hadn't done a called shot.  The more difficult an area is to hit, the more of it will result in a Near Miss.
 
 {{#pretty-image}}/assets/media/hitloc_head.jpg{{/pretty-image}}
 
 {{#pretty-image}}/assets/media/hitloc_hand.jpg{{/pretty-image}}
 
-Mechanics-wise, each hit location is assigned a list of 15 places where a hit might land.   The first five correspond to the red zones in the archery target example, some of which may be a near miss if the location is very hard to hit.  The second five correspond to the yellow zones - close to the intended target but not quite.  And the third five should always be the desired hit location.
+The better you roll, the closer you'll get to the bullseye.
+
+When you target a hit location *other than the center of mass*, some of the results reflect the parts of the archery target that fall on dead air.  This is termed a "Near Miss", meaning close but no cigar.  It would've been a hit if you hadn't done a called shot.  The more difficult an area is to hit, the more of it will result in a Near Miss.
+
+
+Mechanics-wise, each hit location is assigned a list of 15 places where a hit might land.   The first five correspond to the green zones in the archery target example, some of which may be a near miss if the location is very hard to hit.  The second five correspond to the yellow zones - close to the intended target but not quite.  And the third five should always be the desired hit location.
 
 Hit location is determined by rolling a random number from 1-15, then adding the attacker's net successes.  So the more successes, the closer you'll get to the bullseye.
 
@@ -146,7 +147,7 @@ Example Chest: `LeftLeg LeftLeg RightLeg RightLeg LeftArm LeftArm RightArm Right
 
 Example Neck: `MISS MISS MISS MISS RightArm LeftArm Chest Chest Chest Head Neck Neck Neck Neck Neck`
 
-Notice the extra MISS locations on Neck to reflect a Near Miss.
+Notice the extra MISS locations on Neck to reflect a Near Miss.  There are never Near Miss locations on the default/center of mass hit location chart.  These are a penalty for called shots.
 
 <a name="vehicles">
 

@@ -76,7 +76,7 @@ Attributes are rated from 1-5.
 
 You receive *Average* in all Attributes for free.  Each additional rating costs **2 APs**.
 
-You may spend at most **16 APs** on Attributes, and may not have more than **1 Attribute rated 5** and no more than **2 Attributes rated 4 or higher**.
+You may spend at most **16 APs** on Attributes.  You may not have more than **1 Attribute rated 5** and no more than **2 Attributes rated 4 or higher**.
 
 > <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** You don't gain any points for taking a rating 1 in an Attribute.  It costs the same as rating 2.  Rating 1 is there solely for roleplay flavor if you want to denote a disadvantage.
 
@@ -132,31 +132,30 @@ For more details about using skills, see [Conflict Resolution](/fs3/fs3-3/confli
 
 ## Background Skills
 
-Background Skills represent arts, sports, hobbies, professions and any other skills not covered by Action Skills. 
+Background Skills represent arts, sports, hobbies, professions and any other skills not covered by Action Skills.  
 
 The specific list of Background Skills will vary from game to game.  For an example, see **[FS3 Core](/fs3/fs3-3/core)**.
 
 ### Background Skill Ratings
 
-Background Skills exist for RP flavor and character depth more than conflict resolution.  Because of that, they are *described*, not rated.   Just give a short sentence or so describing what your character knows and why.  Here are a few examples:
+Background Skills are rated differently than Action Skills in a more descriptive fashion:
 
-* Journalism - Hannah is a cub reporter for the Colonial Broadcasting Network.
-* Pyramid - Marua played Pyramid in college.  She might have gone pro had she not joined the Navy.
-* Surgery - Viktor is a world-class trauma surgeon with a lot of battlefield experience.
+* **Interest** - A casual hobby or interest.  Rolled as rating 2.
+* **Profession** - A profession or very serious hobby.  Rolled as rating 4.
+* **Expertise** - An area of significant knowledge or expertise.   Rolled as rating 6.
 
-> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** You are assumed to have basic common knowledge (equivalent to the Everyman rating) in any Background Skill not listed on your character sheet. So even if you don't take the "football" skill, you've still probably played it a few times in gym class in school, watched it on TV, etc.  You won't normally roll Background Skills.  Those are mostly for RP flavor.  If you do roll them, the system defaults to rolling a hobby (Amateur/2).  You can add +2 if your background skill is a profession and +4 if it's an expertise.
+A few tips for selecting Background Skills:
+
+* You are assumed to have the equivalent of Everyman rating in any Background Skill not listed on your character sheet.  Don't feel obliged to list every single thing your character has ever done - focus on the things that are important to you.
+* Like Action Skills, Background Skills are deliberately broad.  In RL, an engineer might have to take Calculus, Physics, Engineering and various other courses as part of their degree, but those can all be summed up generally as a single Background Skill of "Electrical Engineer".  Strive for a middle ground somewhere between listing each topic individually and lumping too much together (like a single skill of "Science" - that's too big.)
 
 ### Linked Attributes
 
-Background Skills are linked to Wits by default.  Unless you specify otherwise, this is the Attribute that will boost your skill rating when you roll that skill.
-
-> <i class="fa fa-codepen" aria-hidden="true"></i> **Code Tip:**  You can use the `linkedattr` command in-game to set up a different default Attribute for each of your Background Skills.  For instance, you might tie a performance skill to Presence.  That way you don't have to remember to specify the right Attribute when you roll.
+Background Skills are linked to Wits by default, but you can always specify a different one when you roll.  For example, when rolling Acting you might roll Acting+Performance.
 
 ### Buying Background Skills
 
-You must take **at least 1** Background Skill, and can take **up to 3 for free**.
-
-Additional Background Skills cost **1 AP** each.
+You get **3 Interests** for free, and must take **at least 1** Background Skill.  Any additional Background Skills cost **1 AP** per rating.
 
 <a name="languages"/>
 
@@ -168,11 +167,21 @@ The specific list of Languages will vary from game to game.
 
 ### Language Ratings
 
-Like Background Skills, Languages have no ratings.   If you have a Language, you’re assumed to be fluent and literate.  You can always RP a lower degree of proficiency if appropriate to your background.
+Like Background Skills, Language Skills have more descriptive ratings.  
+
+* **Beginner** - You know tourist-level common phrases like "my name is" and "where's the bathroom".  Rolled as rating 2.
+* **Conversational** - You can get by, but your phrasing is sometimes awkward and your vocabulary incomplete.  Rolled as rating 4.
+* **Fluent** - You are fully fluent in the language.  Rolled as rating 6.
+
+Your reading level is assumed to be on par with your speaking level, unless otherwise specified by staff.
 
 ### Buying Languages
 
-Your first language is free.   Any additional languages cost **1 AP** each.
+You start as **Fluent** in whatever the common game language is for free.  If a particular culture/faction is multi-lingual, a game may allow fluency in a second language for free too.  Any additional languages cost **1 AP** per rating.
+
+### Linked Attributes
+
+Language Skills are linked to Wits.
 
 <a name="rp-hooks"/>
 

@@ -42,11 +42,9 @@ The only exception to this is if the storyteller decides to allow a "Hail Mary" 
 
 Before rolling, you need to figure out which Skill applies best to the task at hand.  When more than one applies equally well, you can choose the one with the highest rating.  If you don't have an applicable Skill, you can make a *Default Roll* as explained in the next section.
 
-FS3 uses 8-sided dice.  You roll a number of (virtual) dice equal to the Skill Rating plus the linked Attribute.  You can gain or lose dice through special Modifiers.
+FS3 uses 8-sided dice.  You roll a number of (virtual) dice equal to the Skill Rating plus the linked Attribute.  You can gain or lose dice through special Modifiers.   Languages and Background Skills don't have numerical ratings, but their descriptive ratings have numerical equivalents as described in [Character Generation](/fs3/fs3-3/chargen).  For example, an "Interest" Background Skill is rolled as rating 2.
 
 > <i class="fa fa-cubes" aria-hidden="true"></i>  **Roll Tip:** Dice to Roll = 1 + Skill Rating + Linked Attribute +/- Modifiers
-
-You won't normally be rolling unrated abilities like Languages and Background Skills.  Those are mostly for RP flavor.  If you do roll them, the system defaults to rolling a hobby (Amateur/2).  You can add +2 if your background skill is a profession and +4 if it's an expertise.
 
 > <i class="fa fa-codepen" aria-hidden="true"></i> **Code Tip:** The `roll` command accepts a variety of options.  For instance:  `roll Melee` or `roll Melee+Wits-1`.   You can even specify a number of dice (handy for NPCs) like `roll 4`. 
 
