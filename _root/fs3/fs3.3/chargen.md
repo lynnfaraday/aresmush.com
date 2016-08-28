@@ -40,7 +40,7 @@ You don't start off with a fixed pool of AP.  Instead, the system counts **up** 
 
 ## AP Disparities
 
-Some characters will have higher AP totals than others.   Is that fair?  Sure it is, as long you realize that it's the player's choice.  Characters in FS3 have equal *opportunity*, but ultimately you get to pick which position you want to play.   A Navy SEAL shouldn't have the same number of action-oriented skills as a fresh-from-boot-camp recruit or a galley cook (unless the cook is also Stephen Segal).  A master shouldn't be on even footing with his apprentice, nor a superhero with his sidekick.  
+Some characters will have higher AP totals than others.   Is that fair?  Sure it is, as long you realize that it's the player's choice.  Characters in FS3 have equal *opportunity*, but ultimately you get to pick which you want to play.   A Navy SEAL shouldn't have the same number of action-oriented skills as a fresh-from-boot-camp recruit or a galley cook (unless the cook is also Stephen Seagal).  A master shouldn't be on even footing with his apprentice, nor a superhero with his sidekick.  
 
 But why would you want to play a lower-powered character in the first place?   Why not maximize your allowable AP rating?
 
@@ -76,7 +76,7 @@ Attributes are rated from 1-5.
 
 You receive *Average* in all Attributes for free.  Each additional rating costs **2 APs**.
 
-You may spend at most **12 APs** on Attributes, and may not have more than **1 Attribute rated 5**.
+You may spend at most **16 APs** on Attributes, and may not have more than **1 Attribute rated 5** and no more than **2 Attributes rated 4 or higher**.
 
 > <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** You don't gain any points for taking a rating 1 in an Attribute.  It costs the same as rating 2.  Rating 1 is there solely for roleplay flavor if you want to denote a disadvantage.
 
@@ -116,7 +116,7 @@ Every Action Skill is linked to a particular Attribute by default.  Unless you s
 
 You automatically get the *Everyman* rating in each Action Skill for free.  Each additional rating costs **1 AP**.
 
-You may have at most **3 Action Skills rated 5+**.
+You may have at most **3 Action Skills rated 5+** and at most **1 rated 7+**.
 
 A few tips for selecting Action Skills:
 
@@ -144,7 +144,7 @@ Background Skills exist for RP flavor and character depth more than conflict res
 * Pyramid - Marua played Pyramid in college.  She might have gone pro had she not joined the Navy.
 * Surgery - Viktor is a world-class trauma surgeon with a lot of battlefield experience.
 
-> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** You are assumed to have basic common knowledge (equivalent to the Everyman rating) in any Background Skill not listed on your character sheet. So even if you don't take the "football" skill, you've still probably played it a few times in gym class in school, watched it on TV, etc.  Even though background skills don't have ratings, you can still roll them as described in [Conflict Resolution](/fs3/fs3-3/conflict).
+> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** You are assumed to have basic common knowledge (equivalent to the Everyman rating) in any Background Skill not listed on your character sheet. So even if you don't take the "football" skill, you've still probably played it a few times in gym class in school, watched it on TV, etc.  You won't normally roll Background Skills.  Those are mostly for RP flavor.  If you do roll them, the system defaults to rolling a hobby (Amateur/2).  You can add +2 if your background skill is a profession and +4 if it's an expertise.
 
 ### Linked Attributes
 

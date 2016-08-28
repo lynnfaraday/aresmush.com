@@ -10,9 +10,19 @@ An Ability Roll is used when you want to know if you succeed or fail at a given 
 
 # When to Roll
 
-You don’t need to roll for every little thing.  Ability rolls are intended for challenging situations or direct opposition.  Driving to the grocery store would not normally require an ability roll, unless maybe you’re racing someone there or driving up an icy hill during a blizzard.  
+Ability Rolls should be used judiciously; it is unnecessary (and silly) to roll for every little thing. RPGs are about *role*play not *roll*play.
 
 > <i class="fa fa-cubes" aria-hidden="true"></i>  **Roll Tip:** Players are always free to skip rolls and negotiate a resolution as befits the story, as long as everyone agrees.
+
+For example: If someone does a good job roleplaying their way through bluffing a guard, it probably ought to work. Likewise, if someone attempts to schmooze the princess with the worst pickup line ever, it probably shouldn’t work, no matter what you roll.
+
+Some situations where you should consider using an Ability Roll:
+
+* The character is under stress.
+* Characters are in conflict with one another.
+* There are exceptional circumstances that might affect the outcome.
+
+For example, you probably wouldn’t roll Athletics to swim under normal circumstances. But if you were trying to save someone from drowning or stay afloat in stormy seas with your clothes on, an Ability Roll would be appropriate.
 
 <a name="hail-mary"/>
 
@@ -36,7 +46,7 @@ FS3 uses 8-sided dice.  You roll a number of (virtual) dice equal to the Skill R
 
 > <i class="fa fa-cubes" aria-hidden="true"></i>  **Roll Tip:** Dice to Roll = 1 + Skill Rating + Linked Attribute +/- Modifiers
 
-You won't normally be rolling unrated abilities like Languages and Background Skills.  Those are mostly for RP flavor.  If you do roll them, the code will use a rating of Expert for languages (assuming fluency) and Amateur for Background Skills (assuming a hobby/interest).  You can add an appropriate modifier (explained below) if your character is more or less skilled.
+You won't normally be rolling unrated abilities like Languages and Background Skills.  Those are mostly for RP flavor.  If you do roll them, the system defaults to rolling a hobby (Amateur/2).  You can add +2 if your background skill is a profession and +4 if it's an expertise.
 
 > <i class="fa fa-codepen" aria-hidden="true"></i> **Code Tip:** The `roll` command accepts a variety of options.  For instance:  `roll Melee` or `roll Melee+Wits-1`.   You can even specify a number of dice (handy for NPCs) like `roll 4`. 
 
@@ -74,17 +84,25 @@ When you roll your ability dice, any die that is a 6 or higher is counted as a s
 
 An Embarrassing Failure happens when more than half your dice are 1’s - even if you got some successes.   You don’t just fail, you fail is a spectacular and embarrassing fashion - like shooting your friend or falling flat on your face.
 
+Please bear in mind that even an Amazing Success doesn't mean you solved world hunger or created a silk purse out of a sow's ear. You are still limited by your capabilities.
+
 <a name="modifiers"/>
 
 # Modifiers
 
-Modifiers can boost or reduce your Ability Rating, making the task easier or harder than usual.
+Modifiers can boost or reduce your Ability Rating, making the task easier or harder than usual.  When considering modifiers, bear in mind that 3 rating points is the difference between a beginner and a professional, so a modifier of +/-3 is a pretty dramatic impact.
 
 | Modifier | Description |
 | ---- |
 |+/- 1|Modest boost or challenge|
-|+/- 2|Significant boost or challenge|
-|+/- 3|Extreme boost or challenge|
+|+/- 2|Significant boost or challenge.|
+|+/- 3|Extreme boost or challenge.|
+
+A couple special situations:
+
+* Spending a [Luck point](/fs3/fs3-3/luck) gives a +3 modifier.
+* Defaulting gives a -2 modifier.
+* Carefully taking your time (assuming there's no immediate danger/stress) or having special preparations gives a +2 modifier.
 
 Here are some sample modifiers for a climbing roll:
 
@@ -101,7 +119,7 @@ Here are some sample modifiers for a climbing roll:
 
 # Linked Attributes
 
-Each Action Skill is linked to a particular Attribute, but there may be times when another Attribute is better suited.  For example, Firearms is normally a Reflexes skill, but Wits might be more appropriate when trying to identify the caliber from a bullet wound.
+Each Action Skill is linked to a particular Attribute, but there may be times when another Attribute is better suited.  For example, Firearms is normally a Reflexes skill, but Wits might be more appropriate when trying to identify the caliber from a bullet wound.  When you specify an attribute in the roll, it replaces the one that would normally be used.
 
 > <i class="fa fa-codepen" aria-hidden="true"></i> **Code Tip:** The system will automatically use the Attribute linked to a Skill.  If you want to use a different one, you can specify it in the roll command.  `roll <skill>+<attribute>`
 
@@ -119,7 +137,7 @@ Each contestant makes a roll as normal, and the one with the most successes wins
 | ---- |
 |0|Draw|
 |1|Marginal Victory|
-|2|Victory|
+|2|Solid Victory|
 |3+|Crushing Victory|
 
 > Example: Nemesis and Mavros are sparring.  They both roll Melee.  Nemesis gets 2 successes (Good Success) and Mavros gets 1 success.  Nemesis has a net of 1 success, giving her a Marginal Victory.

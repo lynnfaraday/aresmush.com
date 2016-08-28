@@ -6,6 +6,10 @@ layout: fs3
 
 FS3 Core is the game configuration that comes with the default FS3 installation.  It is intended for near-future sci-fi combat games, such as Batlestar Galactica.  See [Tweaking FS3](/fs3/fs3-3/tweaking-fs3) for help adapting it to other settings.
 
+## AP Limits
+
+Maximum: 40 AP
+
 ## Attributes
 
 | Attribute | Description |
@@ -14,7 +18,7 @@ FS3 Core is the game configuration that comes with the default FS3 installation.
 | Brawn | Physical strength and toughness. |
 | Wits | Practical intelligence, inventiveness and creativity. |
 | Grit | Willpower and determination. |
-| Perception | Noticing things and being aware of your surroundings. |
+| Perception | Senses and general awareness. |
 | Presence | Charisma and beauty. |
 
 ## Action Skills
@@ -65,7 +69,8 @@ Raising abilities costs a different amount of XP depending on the type and level
 
 ###  Action Skills
 
-|~ Current Rating |~ Cost |
+| Current Rating | Cost |
+| ---- |
 | 0 | 2 XP |
 | 1 | 4 XP |
 | 2 | 8 XP |
@@ -75,7 +80,8 @@ You cannot raise a skill above 4 through XP.  Why?  Because becoming awesome at 
 
 ### Attributes
 
-|~ Current Rating |~ Cost |
+| Current Rating | Cost |
+| ---- |
 | 1 | 8 XP |
 | 2 | 16 XP |
 | 3 | 32 XP |
@@ -94,5 +100,3 @@ Learning a language costs 16XP.
 
 Everyone starts with 1 Luck Point.  You gain more from other players through the cookie RP reward system.  Every cookie translates into a fraction of a luck point.
 
-
-TODO - Coming Soon - combat and gear

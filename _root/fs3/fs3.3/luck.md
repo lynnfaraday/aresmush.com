@@ -19,11 +19,7 @@ Only one Luck Point can apply to a given roll, so you can’t give yourself a bo
 
 ## Combat
 
-You can spend a Luck Point to:
-
-* Modify attack, defense or initiative Ability Rolls. Note: You may only modify one roll per combat turn.
-* Recover from a Knockout.
-* Move an injury from one hit location to another. Note: This must be done immediately after the injury, and does not affect the damage done; it is purely for cosmetic/roleplay reasons.
+You can spend a Luck Point for special effects.  See **[Combat](/fs3/fs3-3/combat#luck)**.
 
 ## Plot Points
 

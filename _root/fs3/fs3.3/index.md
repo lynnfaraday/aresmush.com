@@ -6,7 +6,7 @@ layout: fs3
 
 # What is FS3?
 
-FS3 is RPG system designed for MUSHes.  While inspired by traditional tabletop RPGs, it has some important differences.   These are the hallmarks of FS3:
+FS3 (Faraday's Simple Skill System) is RPG system designed for MUSHes.  While inspired by traditional tabletop RPGs, it has some important differences.   These are the hallmarks of FS3:
 
 * **Fast and Easy Chargen** - FS3 takes a simple approach to abilities and highlights skills that are relevant to gameplay.  The goal is to get you through Chargen and reviewed as fast as possible.
 
@@ -30,12 +30,29 @@ Since FS3 is designed for MUSHes, it is provided as a complete codebase.  FS3.3 
 
 # What's New in Third Edition?
 
+## Skill Changes
+
 * Skill Ratings go from 0-8 instead of 1-12, with better descriptions of what the different levels represent.
+* Dice now go against a TN6 instead of TN7, increasing successes.  Defaulting to an attribute works differently.
 * Attributes have been expanded, and are no longer locked after chargen.
 * Background Skills are now unrated, like Languages.
 * Quirks are gone, replaced by RP Hooks.
-* Dice now go against a TN6 instead of TN7, increasing successes.  Defaulting to an attribute works differently.
-* Various other tweaks to the dice, XP, and more.
+
+## Combat Changes
+
+* Combat wounds have different names and effects.  Healing has been tweaked accordingly.
+* NPCs no longer have specific ratings but general classes:  Goon, Henchman, Boss.
+* Various other mechanics tweaks to stances, explosions and hit locations.
+
+# Credits
+
+Thanks to the following people for their contributions to FS3:
+
+* The designers of FUDGE and FATE, which inspired FS3.
+* The cast and crew of Battlestar Pacifica, where +combat originated.
+* Cags and David and my dad for input for the original edition of FS3.  
+* SeanCee and Boo and the crew of Aftermath for initial beta testing on 3rd edition.
+* Orion, Draco, Andromeda and the crew of The 100 for some cool house rules I stole and general feedback.
 
 # Copyright and License
 

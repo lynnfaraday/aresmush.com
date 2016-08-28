@@ -14,8 +14,7 @@ There are several kinds of Abilities, summarized below.  For more details, see [
 * **Action Skills** represent training/knowledge in areas that are likely to come up in action/conflict situations during the game. 
 * **Background Skills** are ancillary skills (such as hobbies and professions) that are important to your character, but not related to the central game action.
 * **Languages** are the languages that your character can speak and/or read. 
-* **Advantages** are a catch-all for any other sort of ability or characteristic that is not an attribute or skill.  Not all games use Advantages.
 
 When conflicts arise, you can make an **Ability Roll** with virtual dice to determine the result.  Ability Rolls use a "count successes" system like nWoD or Shadowrun 4 where you roll a bunch of dice against a fixed target number and count how many of the dice are "successes".  For more details see [Conflict Resolution](/fs3/fs3-3/conflict).
 
-TODO - Luck, XP and Combat Stuff
+FS3 also has a fully-featured [Combat System](/fs3/fs3-3/combat) for automating large combat scenes.
