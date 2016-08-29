@@ -96,17 +96,23 @@ Action Skills are rated from 0 to 8, based on your training and experience.
 | ---- |
 |0 |Unskilled|You lack even basic capabilities in this area.|
 |1 |Everyman|You know what the average inhabitant of the game world would know.   |
-|2 |Amateur / Mediocre|You are a hobbyist or student with some basic training.  |
-|3 |Rookie / Fair|You're a junior professional, trained but lacking experience.|
-|4 |Professional / Good|You are a thoroughly competent professional.  |
-|5 |Veteran / Great|You are a seasoned professional with a fair bit of experience. |
-|6 |Expert / Superb|You have significant experience to draw upon and are well-regarded in your field. |
-|7 |Elite / Exceptional|You are one of the top people in your field, like an All Star athlete or a world-renowned doctor.|   
-|8 |Legend / Legendary|You are one of the best that’s ever lived.|
+|2 |Amateur|You've still got a lot to learn, but you can handle easy stuff. |
+|3 |Fair|You have competence at a junior-professional level, but lack finesse or experience.|
+|4 |Good|You are thoroughly competent at a general professional level. |
+|5 |Great|You understand nuances and shortcuts, and can handle even challenging situations with ease. |
+|6 |Expert|You are an expert, and can pull through even in dire circumstances. |
+|7 |Elite|You have mastered your field and few can compare. Example: an All Star athlete or world-renowned scientist.|   
+|8 |Legendary|You are one of the best that’s ever lived.  Example: Einstein or Beethoven. |
 
 If the descriptions in the rating table above aren't enough, you can use the [Detailed Ratings](/fs3/fs3-3/detailed-ratings) as a guide.  
 
-> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:**  Abilities in FS3 are deliberately broad to simplify chargen, but chances are your character isn't great at *every single thing* covered by a given skill.  For example, Medicine covers a lot, but a paramedic can't do brain surgery, and a brain surgeon or psychiatrist would suck trying to splint a broken leg.  RP appropriately according to your background, and apply appropriate modifiers (described in [Specialties](/fs3/fs3-3/conflict#specialties) when going out of your comfort zone.
+A few tips about Action Skills:
+
+* Fair/Good/Great are professional skill levels, so most of your job-related skills should be in this range.
+* You don't have to be an Expert to succeed in FS3.  Ratings 6+ should be reserved for people who are truly experts in their field.
+* Your skills should generally match your professional experience.  While some variation is allowed for talent (or lack thereof), be careful not to stray too far.  A brand-new pilot with an Elite piloting skill isn't going to fly (pun intended), nor is a casual bar-league ball player with Expert Athletics.
+* Abilities in FS3 are deliberately broad to simplify chargen, but chances are your character isn't great at *every single thing* covered by a given skill.  For example, Medicine covers a lot, but a paramedic can't do brain surgery, and a brain surgeon or psychiatrist would suck trying to splint a broken leg.  RP appropriately according to your background, and apply appropriate modifiers (described in [Specialties](/fs3/fs3-3/conflict#specialties) when going out of your comfort zone.
+* Everyman is a special rating.  It reflects what the average inhabitant of the game world would be capable of.  What tasks you can even conceivably attempt with Everyman will vary from skill to skill.  
 
 ### Linked Attributes
 
@@ -117,12 +123,6 @@ Every Action Skill is linked to a particular Attribute by default.  Unless you s
 You automatically get the *Everyman* rating in each Action Skill for free.  Each additional rating costs **1 AP**.
 
 You may have at most **3 Action Skills rated 5+** and at most **1 rated 7+**.
-
-A few tips for selecting Action Skills:
-
-* The rating name should generally match your professional experience.  While some variation is allowed for talent (or lack thereof), be careful not to stray too far.  A brand-new pilot with an Elite piloting skill isn't going to fly (pun intended).
-* Ratings 3 or higher imply you're is good enough to do this for a living.  Hobbies don't need to be that high unless you're really serious about them.
-* Rating 1 (Everyman) is a special rating.  It reflects what the average inhabitant of the game world would be capable of.  What tasks you can even conceivably attempt with Everyman will vary from skill to skill.  
 
 For more details about using skills, see [Conflict Resolution](/fs3/fs3-3/conflict).
 
@@ -155,7 +155,7 @@ Background Skills are linked to Wits by default, but you can always specify a di
 
 ### Buying Background Skills
 
-You get **3 Interests** for free, and must take **at least 1** Background Skill.  Any additional Background Skills cost **1 AP** per rating.
+You must take **at least 1** Background Skill.  You can have up to **5 rating points** of Background Skills for free.  Additional Background Skills cost **1 AP** each.
 
 <a name="languages"/>
 
@@ -177,7 +177,7 @@ Your reading level is assumed to be on par with your speaking level, unless othe
 
 ### Buying Languages
 
-You start as **Fluent** in whatever the common game language is for free.  If a particular culture/faction is multi-lingual, a game may allow fluency in a second language for free too.  Any additional languages cost **1 AP** per rating.
+You start as **Fluent** in whatever the common game language is for free.   Any additional languages cost **1 AP** per rating.
 
 ### Linked Attributes
 

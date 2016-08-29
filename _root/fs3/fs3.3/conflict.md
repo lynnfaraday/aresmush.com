@@ -30,7 +30,7 @@ For example, you probably wouldn’t roll Athletics to swim under normal circums
 
 Rolling dice is fun and all, but it's also important to consider what your character *actually knows* and can *reasonably have a chance to accomplish*.  
 
-This is particularly important for Abilities rated *Everyman* or even *Amateur*.  Running a footrace or shooting a pistol?  Sure.  But trying to take off a fighter jet with Everyman Piloting or perform brain surgery with Everyman Medicine?  No.  That's just ridiculous.
+This is particularly important for Abilities rated *Everyman* or *Amateur*.  Running a footrace or shooting a pistol?  Sure.  But trying to take off a fighter jet with Everyman Piloting or perform brain surgery with Everyman Medicine?  No.  That's just ridiculous.
 
 But the same logic applies to higher skills too.  You can't turn a cow's ear into a silk purse or leap a tall building no matter how well you roll.  Some things just *aren't possible*.
 

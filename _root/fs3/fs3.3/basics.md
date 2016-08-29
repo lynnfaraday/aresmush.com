@@ -4,8 +4,6 @@ description:
 layout: fs3
 ---
 
-This chapter provides a very brief overview of FS3.
-
 Characters in FS3 have **Abilities** to describe what they know and what they can do.  **Ability Ratings** are numbers that quantify the character's capabilities.  
 
 There are several kinds of Abilities, summarized below.  For more details, see [Character Creation](/fs3/fs3-3/chargen) 
