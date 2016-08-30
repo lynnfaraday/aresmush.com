@@ -18,7 +18,7 @@ The most important rule when running combats is to know when to ignore the rules
 
 Code cannot possibly accommodate every possible scenario.   If a bound prisoner has a gun to their head and is being shot execution-style, just remove them from combat.  Don't force an attack roll, or a damage roll.  Just get rid of them.   If the combat results say that you're hit in the leg but you're buried hip-deep in sand, just ignore it and pretend it hit somewhere else.
 
-> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** Code is no substitute for common sense.
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** Code is no substitute for common sense.
 
 # Pacing
 
@@ -28,7 +28,7 @@ A hallmark of FS3 combat is that the system spits out all the results at once, s
 
 As the organizer, the combat system will notify you when everyone has posed and entered their actions into the system. You can check the `slackers` command to see who's snoozing. You can then choose to poke them, enter an action on their behalf, or simply skip over them. 
 
-> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** 15 minutes per combat round is usually plenty of time for everyone to pose and enter an action.
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** 15 minutes per combat round is usually plenty of time for everyone to pose and enter an action.
 
 # NPCs in Combat
 
@@ -42,15 +42,15 @@ NPCs don't have the same sort of varied ability ratings that PCs do.  Instead th
 | Henchman | Attack: 6, Defense: 5, Knockout: 4 |
 | Boss | Attack: 7, Defense: 6, Knockout: 5 |
 
-> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** When you start the first turn, NPCs will automatically pick random targets.  Therefore, if you want to assign them to specific targets, be sure to do so **after** you start the first new turn.
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** When you start the first turn, NPCs will automatically pick random targets.  Therefore, if you want to assign them to specific targets, be sure to do so **after** you start the first new turn.
 
 Someone must be responsible for posing for the NPC and entering their actions into the combat system.  This could be the organizer, another player who's PC is involved in the combat, or just someone who's there solely to run that particular NPC. 
  
-> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** If you are only joining combat to run NPCs, you should join using the "NPCMaster" type so you're not accidentally targeted by people.
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** If you are only joining combat to run NPCs, you should join using the "NPCMaster" type so you're not accidentally targeted by people.
  
 NPCs and PCs are treated fundamentally the same in combat. You target a NPC just by using his name, and there are versions of every combat command that allow you to specify a NPC as the actor. Only one exception: KO’d NPCs are immediately removed from the combat. They cannot be treated, rallied, or revived with a hero roll. 
  
-> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** The NPC versions of commands also work on PCs too, in case someone is AFK or disconnected and you need to set their action for them.
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** The NPC versions of commands also work on PCs too, in case someone is AFK or disconnected and you need to set their action for them.
 
 # Teams and Targets
 

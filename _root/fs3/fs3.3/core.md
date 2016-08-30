@@ -37,7 +37,7 @@ Maximum: 40 AP
 |Technician|Wits|Mechanics, electronics and computers.|
 |Stealth |Reflexes |Being sneaky.|
 
-> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:**  Abilities in FS3 are deliberately broad to simplify chargen, but chances are your character isn't great at *every single thing* covered by a given skill.  For example, Medicine covers a lot, but a paramedic can't do brain surgery, and a brain surgeon or psychiatrist would suck trying to splint a broken leg.  RP appropriately according to your background, and apply appropriate modifiers (described in [Specialties](/fs3/fs3-3/conflict#specialties) when going out of your comfort zone.
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:**  Abilities in FS3 are deliberately broad to simplify chargen, but chances are your character isn't great at *every single thing* covered by a given skill.  For example, Medicine covers a lot, but a paramedic can't do brain surgery, and a brain surgeon or psychiatrist would suck trying to splint a broken leg.  RP appropriately according to your background, and apply appropriate modifiers (described in [Specialties](/fs3/fs3-3/conflict#specialties) when going out of your comfort zone.
 
 ## Background Skills
 
@@ -53,7 +53,7 @@ Background Skills are free-form, so there is no specific list.  You can pick any
 * A **craft or hobby** - gardening, basketweaving, knitting, etc.
 * An **unusual interest** - detective novels, game show hosts, etc.
 
-> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** You are assumed to have basic common knowledge (equivalent to the Everyman rating) in any Background Skill not listed on your character sheet. So even if you don't take the "football" skill, you've still probably played it a few times in gym class in school, watched it on TV, etc.
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** You are assumed to have basic common knowledge (equivalent to the Everyman rating) in any Background Skill not listed on your character sheet. So even if you don't take the "football" skill, you've still probably played it a few times in gym class in school, watched it on TV, etc.
 
 ## Language Skills
 
@@ -65,7 +65,9 @@ You gain 2XP per week.
 
 You can only raise one ability each week.
 
-Raising abilities costs a different amount of XP depending on the type and level, as explained below.
+Raising abilities costs a different amount of XP depending on the type and level, as explained below.  
+
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** These XP costs are tuned for the "Realistic Progression" model of character advancement, as explained in [Tweaking FS3]](/fs3/fs3-3/tweaking-fs3).  There are many other possible models, and these costs are fully configurable.
 
 ###  Action Skills
 

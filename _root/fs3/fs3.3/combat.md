@@ -8,7 +8,7 @@ Any combat situation could be resolved either through consent or a set of simple
 
 If combat scenes are a regular occurrence, or if you have combat scenes involving large numbers of players, it helps to have a system to quickly, fairly, and consistently determine the outcome of the combat. The FS3 combat system is intended to fill that need.
 
-> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** Always remember that the purpose of a MUSH is to roleplay. The combat system is designed to support roleplay, not replace it.  If the combat system spits out stupid results - ignore them!
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** Always remember that the purpose of a MUSH is to roleplay. The combat system is designed to support roleplay, not replace it.  If the combat system spits out stupid results - ignore them!
 
 <a name="turns"/>
 
@@ -91,7 +91,7 @@ Many combat actions result in an “attack” of some sort. The basic steps for 
 
 In general, all attacks are resolved using simple ability rolls. The attacker rolls his weapon’s attack skill. The defender rolls a defense skill based on his weapon and the attacker's weapon.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i>  **Roll Tip:** Because there's no real skill in dodging bullets, FS3 allocates everyone the same dice for a defense roll against firearms.  Your stance has the most impact for defending yourself.
+> <i class="fa fa-cubes" aria-hidden="true"></i>  **Tip:** Because there's no real skill in dodging bullets, FS3 allocates everyone the same dice for a defense roll against firearms.  Your stance has the most impact for defending yourself.
 
 There may be modifiers to either roll based on wounds, the weapon itself, the attacker and defender’s stance, or other special situations.
 
@@ -189,6 +189,8 @@ Normally you gain 1 healing point per day.  You get a bonus point if you're in a
 
 Some weapons do "stun" damage, which heals three times as fast as regular damage.
 
-Long-term effects from an Incapacitating wound are left up to the player/storyteller.  The damage system does not model these effects, so it's up to you to incorporate them appropriately into your RP and rolls.  If you say that an Incapacitating wound to the arm results in a broken arm, then you should RP being in a cast with an appropriate wound modifier even after the system says you're healed.
+Once a wound begins healing, the Wound Modifier is reduced by 1/3rd.
 
-> <i class="fa fa-codepen" aria-hidden="true"></i> **Code Tip:** Once a wound begins healing, the Wound Modifier is reduced by 1/3rd.
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** Long-term effects from an Incapacitating wound are left up to the player/storyteller.  The damage system does not model these effects, so it's up to you to incorporate them appropriately into your RP and rolls.  If you say that an Incapacitating wound to the arm results in a broken arm, then you should RP being in a cast with an appropriate wound modifier even after the system says you're healed.
+
+

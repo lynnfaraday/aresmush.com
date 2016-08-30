@@ -12,7 +12,7 @@ An Ability Roll is used when you want to know if you succeed or fail at a given 
 
 Ability Rolls should be used judiciously; it is unnecessary (and silly) to roll for every little thing. RPGs are about *role*play not *roll*play.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i>  **Roll Tip:** Players are always free to skip rolls and negotiate a resolution as befits the story, as long as everyone agrees.
+> <i class="fa fa-cubes" aria-hidden="true"></i>  **Tip:** Players are always free to skip rolls and negotiate a resolution as befits the story, as long as everyone agrees.
 
 For example: If someone does a good job roleplaying their way through bluffing a guard, it probably ought to work. Likewise, if someone attempts to schmooze the princess with the worst pickup line ever, it probably shouldn’t work, no matter what you roll.
 
@@ -44,9 +44,7 @@ Before rolling, you need to figure out which Skill applies best to the task at h
 
 FS3 uses 8-sided dice.  You roll a number of (virtual) dice equal to the Skill Rating plus the linked Attribute.  You can gain or lose dice through special Modifiers.   Languages and Background Skills don't have numerical ratings, but their descriptive ratings have numerical equivalents as described in [Character Generation](/fs3/fs3-3/chargen).  For example, an "Interest" Background Skill is rolled as rating 2.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i>  **Roll Tip:** Dice to Roll = 1 + Skill Rating + Linked Attribute +/- Modifiers
-
-> <i class="fa fa-codepen" aria-hidden="true"></i> **Code Tip:** The `roll` command accepts a variety of options.  For instance:  `roll Melee` or `roll Melee+Wits-1`.   You can even specify a number of dice (handy for NPCs) like `roll 4`. 
+> <i class="fa fa-cubes" aria-hidden="true"></i>  **Tip:** Dice to Roll = 1 + Skill Rating + Linked Attribute +/- Modifiers
 
 <a name="defaulting"/>
 
@@ -55,9 +53,7 @@ FS3 uses 8-sided dice.  You roll a number of (virtual) dice equal to the Skill R
 If a task does not fall under an ability listed on your character sheet, you may have the chance to make a Default Roll (see *Limitations and Hail Mary Rolls* above for some caveats).   You have two options:
 
 * Use a semi-related skill with a negative modifier (typically -2).  For instance, if you lack a Vet skill you could default to Medicine-2 to treat a hurt dog.
-* Use the Everyman rating to fall back on 'common knowledge'.
-
-> <i class="fa fa-codepen" aria-hidden="true"></i> **Code Tip:** You can make a default roll just by rolling the appropriate Attribute.  For example `roll Brawn` will make an Everyman roll linked to your Brawn attribute, effectively rolling Brawn+1.
+* Use the Everyman rating to fall back on 'common knowledge'.  This effectively rolls Attribute + 1.
 
 <a name="specialties"/>
 
@@ -111,15 +107,11 @@ Here are some sample modifiers for a climbing roll:
 |-2|Climbing a challenging mountain.|
 |-3|Remember Tom Cruise in Mission Impossible 2?|
 
-> <i class="fa fa-codepen" aria-hidden="true"></i> **Code Tip:** To make an Ability Roll with a modifier, use the command `roll <ability>+/-<modifier>`.
-
 <a name="linked-attributes"/>
 
 # Linked Attributes
 
 Each Action Skill is linked to a particular Attribute, but there may be times when another Attribute is better suited.  For example, Firearms is normally a Reflexes skill, but Wits might be more appropriate when trying to identify the caliber from a bullet wound.  When you specify an attribute in the roll, it replaces the one that would normally be used.
-
-> <i class="fa fa-codepen" aria-hidden="true"></i> **Code Tip:** The system will automatically use the Attribute linked to a Skill.  If you want to use a different one, you can specify it in the roll command.  `roll <skill>+<attribute>`
 
 <a name="opposed-rolls"/>
 
@@ -129,7 +121,7 @@ When someone is directly opposing you, you don’t just need to do well, you nee
 
 Each contestant makes a roll as normal, and the one with the most successes wins.   It is also possible that nobody gets any successes and they both fail.  To determine how well the winner did, you look at the "net" successes:
 
-> <i class="fa fa-cubes" aria-hidden="true"></i>  **Roll Tip:** Net Successes = Winner’s Successes - Loser’s Successes
+> <i class="fa fa-cubes" aria-hidden="true"></i>  **Tip:** Net Successes = Winner’s Successes - Loser’s Successes
 
 | Net Successes | Description |
 | ---- |

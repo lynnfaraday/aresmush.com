@@ -6,8 +6,6 @@ layout: fs3
 
 Character creation in FS3 is meant to be quick and easy.
 
-> <i class="fa fa-codepen" aria-hidden="true"></i> **Code Tip:**  In-game, use the `sheet` command to view all of your character's abilities, and the `app` command to review your sheet for problems.  The `app` command is the same one that staff will use when reviewing your character, so it's a good way to get a heads-up about what they might object to.
-
 # Web App
 
 Try out the <a href="https://fs3chargen.herokuapp.com/">FS3 Character Generator</a> web app.  (In Alpha Testing)
@@ -36,7 +34,7 @@ Different kinds of abilities cost different number of AP, as explained in **Choo
 
 You don't start off with a fixed pool of AP.  Instead, the system counts **up** how much you've spent to give you an AP total.  A game may restrict the maximum allowable AP by alt, by faction or any other criteria.  Consult your local game policies for details.
 
-> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** If your character uses too many AP, ask staff for help.  They may be able to help you adjust your points or re-work your concept to one that better fits the theme.  Avoid shaving essential skills just to save points.  A character missing essential skills is as much of a red flag as an overpowered character.
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** If your character uses too many AP, ask staff for help.  They may be able to help you adjust your points or re-work your concept to one that better fits the theme.  Avoid shaving essential skills just to save points.  A character missing essential skills is as much of a red flag as an overpowered character.
 
 ## AP Disparities
 
@@ -49,8 +47,6 @@ Dice are fun, but *story* is the most important thing.  Telling a story about a 
 # Choosing Abilities
 
 The following sections will guide you in determining your Abilities.
-
-> <i class="fa fa-codepen" aria-hidden="true"></i> **Code Tip:**  Use the `abilities` command in-game to see a list of availabile abilities.  The system will automatically assign you some starting Abilities based on your character's faction/position.  These are generally skills that everyone should know, so be sure to have a good reason before lowering a skill below its starting rating.  Even these starting Abilities count towards your Power Level.
 
 <a name="attributes"/>
 
@@ -78,7 +74,7 @@ You receive *Average* in all Attributes for free.  Each additional rating costs 
 
 You may spend at most **16 APs** on Attributes.  You may not have more than **1 Attribute rated 5** and no more than **2 Attributes rated 4 or higher**.
 
-> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** You don't gain any points for taking a rating 1 in an Attribute.  It costs the same as rating 2.  Rating 1 is there solely for roleplay flavor if you want to denote a disadvantage.
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** You don't gain any points for taking a rating 1 in an Attribute.  It costs the same as rating 2.  Rating 1 is there solely for roleplay flavor if you want to denote a disadvantage.
 
 <a name="action-skills"/>
 
@@ -126,7 +122,7 @@ You may have at most **3 Action Skills rated 5+** and at most **1 rated 7+**.
 
 For more details about using skills, see [Conflict Resolution](/fs3/fs3-3/conflict).
 
-> <i class="fa fa-info-circle" aria-hidden="true"></i> **Tip:** You don't gain any points for taking a rating 0 in an Action Skill.  It costs the same as rating 1.  Rating 0 is there solely for roleplay flavor if you want to denote a disadvantage.  
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** You don't gain any points for taking a rating 0 in an Action Skill.  It costs the same as rating 1.  Rating 0 is there solely for roleplay flavor if you want to denote a disadvantage.  
 
 <a name="background-skills"/>
 
