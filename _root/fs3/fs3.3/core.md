@@ -61,52 +61,7 @@ In FS3 Core, languages are free-form.  The specific list of Languages will vary 
 
 ## Experience
 
-You gain 2XP per week.
-
-You can only raise one ability each week.
-
-Raising abilities costs a different amount of XP depending on the type and level, as explained below.  
-
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** These XP costs are tuned for the "Realistic Progression" model of character advancement, as explained in [Tweaking FS3]](/fs3/fs3-3/tweaking-fs3).  There are many other possible models, and these costs are fully configurable.
-
-###  Action Skills
-
-| Current Rating | Cost |
-| ---- |
-| 0 | 2 XP |
-| 1 | 4 XP |
-| 2 | 8 XP |
-| 3 | 16 XP |
-
-You cannot raise a skill above 4 through XP.  Why?  Because becoming awesome at something takes **years** and games just don't run that long.
-
-### Attributes
-
-| Current Rating | Cost |
-| ---- |
-| 1 | 8 XP |
-| 2 | 16 XP |
-| 3 | 32 XP |
-
-You cannot raise an attribute above 4 through XP.  This is simply a game-balance issue.
-
-###  Background Skills
-
-| Current Rating | Cost |
-| ---- |
-| None | 2 XP |
-| Interest | 8 XP |
-
-You cannot raise a skill above 2 through XP for the same reasons as Action Skills.
-
-###  Language Skills
-
-| Current Rating | Cost |
-| ---- |
-| None | 4 XP |
-| Beginner | 16 XP |
-
-You cannot raise a skill above 2 through XP for the same reasons as Action Skills.
+TBD
 
 ## Luck
 
