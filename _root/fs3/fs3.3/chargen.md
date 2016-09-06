@@ -136,9 +136,9 @@ The specific list of Background Skills will vary from game to game.  For an exam
 
 Background Skills are rated differently than Action Skills in a more descriptive fashion:
 
-* **Interest** - A casual hobby or interest.  Rolled as rating 2.
-* **Profession** - A profession or very serious hobby.  Rolled as rating 4.
-* **Expertise** - An area of significant knowledge or expertise.   Rolled as rating 6.
+* **Interest** - A casual hobby or interest.  Rolled as rating 3.
+* **Profession** - A profession or very serious hobby.  Rolled as rating 5.
+* **Expertise** - An area of significant knowledge or expertise.   Rolled as rating 7.
 
 A few tips for selecting Background Skills:
 
@@ -165,9 +165,9 @@ The specific list of Languages will vary from game to game.
 
 Like Background Skills, Language Skills have more descriptive ratings.  
 
-* **Beginner** - You know tourist-level common phrases like "my name is" and "where's the bathroom".  Rolled as rating 2.
-* **Conversational** - You can get by, but your phrasing is sometimes awkward and your vocabulary incomplete.  Rolled as rating 4.
-* **Fluent** - You are fully fluent in the language.  Rolled as rating 6.
+* **Beginner** - You know tourist-level common phrases like "my name is" and "where's the bathroom".  Rolled as rating 3.
+* **Conversational** - You can get by, but your phrasing is sometimes awkward and your vocabulary incomplete.  Rolled as rating 5.
+* **Fluent** - You are fully fluent in the language.  Rolled as rating 7.
 
 Your reading level is assumed to be on par with your speaking level, unless otherwise specified by staff.
 
