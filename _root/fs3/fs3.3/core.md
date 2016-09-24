@@ -31,13 +31,11 @@ Maximum: 40 AP
 |Demolitions |Wits |Blowing stuff up. |
 |Firearms |Reflexes |Shooting guns. | 
 |Gunnery |Reflexes |Vehicle and heavy weapons. |
-|Medicine|Wits |Tending to the ill and injured.|
+|Medicine|Wits |Tending to the ill and injured.  Requires Specialty:  Doctor, Surgeon, Nurse, Medic, Other|
 |Melee |Brawn |Fighting with fists, knives, and hand-to-hand weapons.|
-|Piloting|Reflexes |Flying air and spacecraft.|
-|Technician|Wits|Mechanics, electronics and computers.|
+|Piloting|Reflexes |Flying air and spacecraft.  Requires Specialty:  Viper, Raptor, Shuttle|
+|Technician|Wits|Mechanics, electronics and computers.  Requires Specialty: Electronics, Mechanics, Sensors|
 |Stealth |Reflexes |Being sneaky.|
-
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:**  Abilities in FS3 are deliberately broad to simplify chargen, but chances are your character isn't great at *every single thing* covered by a given skill.  For example, Medicine covers a lot, but a paramedic can't do brain surgery, and a brain surgeon or psychiatrist would suck trying to splint a broken leg.  RP appropriately according to your background, and apply appropriate modifiers (described in [Specialties](/fs3/fs3-3/conflict#specialties) when going out of your comfort zone.
 
 ## Background Skills
 
@@ -69,6 +67,7 @@ Raising Abilities costs the following:
 * Languages - 4 XP
 * Action Skills - 4 XP
 * Attributes - 8 XP
+* Adding a new specialty: 4XP, which freezes the 'parent' skill.
 
 You may only save up to 8 XP.
 

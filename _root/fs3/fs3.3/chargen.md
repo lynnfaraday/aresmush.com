@@ -76,7 +76,7 @@ You may spend at most **16 APs** on Attributes.  You may not have more than **1 
 
 ## Action Skills
 
-Action Skills represent your training/knowledge in areas that are likely to come up in action/conflict situations during the game. 
+Action Skills represent your training/knowledge in areas that are likely to come up in action/conflict situations during the game.  For more details about using skills, see [Conflict Resolution](/fs3/fs3-3/conflict).
 
 The specific list of Action Skills will vary from game to game.  For an example, see **[FS3 Core](/fs3/fs3-3/core)**.
 
@@ -103,7 +103,10 @@ A few tips about Action Skills:
 * Fair/Good/Great are professional skill levels, so most of your job-related skills should be in this range.
 * You don't have to be an Expert to succeed in FS3.  Ratings 6+ are exceptional.
 * Your skills should generally match your professional experience.  While some variation is allowed for talent (or lack thereof), be careful not to stray too far.  A brand-new pilot with an Elite piloting skill isn't going to fly (pun intended).
-* Abilities in FS3 are deliberately broad to simplify chargen, but chances are your character isn't great at *every single thing* covered by a given skill.  For example, Medicine covers a lot, but a paramedic can't do brain surgery, and a brain surgeon or psychiatrist would suck trying to splint a broken leg.  RP appropriately according to your background, and apply appropriate modifiers (described in [Specialties](/fs3/fs3-3/conflict#specialties) when going out of your comfort zone.
+
+### Specialties
+
+Some Action Skills are so broad that you need to pick a specialty.  For instance, your paramedic's "Medicine" skill might be really good, but it doesn't cover brain surgery.  If you take a specialized ability higher than Everyman, you must choose a specialty.
 
 ### Buying Action Skills
 
@@ -111,7 +114,7 @@ You automatically get the *Everyman* rating in each Action Skill for free.  Each
 
 You may have at most **3 Action Skills rated 5+** and at most **1 rated 7+**.
 
-For more details about using skills, see [Conflict Resolution](/fs3/fs3-3/conflict).
+If you have a specialized ability higher than Everyman, you must choose a specialty.  The first one is free.  Every additional specialty costs **1 AP**.
 
 > <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** You don't gain any points for taking a rating 0 in an Action Skill.  It costs the same as rating 1.  Rating 0 is there solely for roleplay flavor if you want to denote a disadvantage.  
 

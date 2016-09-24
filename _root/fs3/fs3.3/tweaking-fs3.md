@@ -24,17 +24,11 @@ Attributes aren't meant to be rolled by themselves; only in conjunction with a s
 
 # Specialties
 
-FS3 works best with broad Action Skills, because otherwise you end up with a gazillion of them.  Of course there are specialties within every Action Skill.  Firing a pistol is really not quite the same as using a rifle, nor is wielding a sword the same as wielding an axe.  These are lumped together for simplicity.  Remember - FS3 is "**Simple** Skill System".   Players are afforded a degree of trust to ensure that their characters are RPing appropriately, and not having their paramedic char perform brain surgery even though they have Medicine 5.
+FS3 works best with broad Action Skills, because otherwise you end up with a gazillion of them.  Of course there are specialties within every Action Skill.  Firing a pistol is really not quite the same as using a rifle, nor is wielding a sword the same as wielding an axe.  These are lumped together for simplicity.  Remember - FS3 is "**Simple** Skill System".   
 
-But if you *really really want* to enforce specialties, here's the recommended way to do it:
-
-* List specialties for each Action Skill on the chargen list.  For example, Melee might have Blades, Blunt, Unarmed, Thrown.
-* Characters get 1 specialty for free when they buy the skill in Chargen.
-* Additional specialties cost either 1AP in chargen or 8XP after chargen.
+Don't add specialties for every skill or it gets silly.  Reserve them for the ones that truly need some degree of oversight.  On a BSG game it might be important to know whether your pilot knows Vipers, Raptors or both.  On a modern game, does it really matter what kinds of planes they can fly?  Probably not.
 
 If you want to limit specialties further, you can say that they can't buy a second specialty until their skill is at 4 (Professional) and can't buy a third one until their skill is at 6 (Expert).
-
-If you're using a skill outside one of your specialties, it is effectively the same as defaulting and you should apply a -2 modifier.  But if the specialties aren't related at all (like using Pilot/Helicopter to fly a space shuttle) a Hail Mary roll is more appropriate.
 
 # Ability Point Limits
 

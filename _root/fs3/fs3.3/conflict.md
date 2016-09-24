@@ -54,7 +54,9 @@ If a task does not fall under an ability listed on your character sheet, you may
 
 # Specialties
 
-Specialties aren't codified in FS3, but players are still expected to roleplay in accordance with what their character knows.  If you use a skill outside of your comfort zone, you should apply a negative modifier as if you were defaulting.  If the task is too far outside your specialty (like a paramedic attempting surgery or a helicopter pilot trying to fly a space shuttle), then it's more of a Hail Mary situation.
+Specialties restrict what your character can do with an ability.  If you use a skill outside of one of your specialized ares, apply a -3 modifier the same as if you were defaulting.  
+
+If the task is too far outside your specialty (like a paramedic attempting brain surgery or a helicopter pilot trying to fly a space shuttle), then you shouldn't roll at all unless the Storyteller is allowing a Hail Mary.
 
 <a name="success-level"/>
 
