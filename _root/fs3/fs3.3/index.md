@@ -8,13 +8,11 @@ layout: fs3
 
 FS3 (Faraday's Simple Skill System) is RPG system designed for MUSHes.  While inspired by traditional tabletop RPGs, it has some important differences.   These are the hallmarks of FS3:
 
-* **Fast and Easy Chargen** - FS3 takes a simple approach to abilities and highlights skills that are relevant to gameplay.  The goal is to get you through Chargen and reviewed as fast as possible.
+* **Fast and Easy** - FS3 takes a simple approach to abilities and highlights skills that are relevant to gameplay.  The goal is to get you through Chargen and reviewed as fast as possible.
 
-* **Flexible Power Levels** - FS3 is designed for games with disparate power levels, where a young Marine recruit might be playing alongside a Navy SEAL or a master alongside an apprentice.   It doesn't punish people for being good at what they do.
+* **Predictable** - FS3 dice mechanics are less random than many other game systems.  Chance is still a factor, of course, but fluke results are less common.
 
-* **More Predictability** - FS3 dice mechanics are less random than many other game systems.  Chance is still a factor, but the outcomes are generally more predictable and fluke results less common.
-
-* **Roleplay-Friendly Combat System** - FS3 has a lightweight conflict resolution and combat system that leaves a lot open to player interpretation.  This frees you to focus on the story, not the dice.
+* **Roleplay-Friendly** - FS3 has a lightweight conflict resolution and combat system that leaves a lot open to player interpretation.  This frees you to focus on the story, not the dice.
 
 ## FS3 as a Framework
 
@@ -36,6 +34,7 @@ Since FS3 is designed for MUSHes, it is provided as a complete codebase.  FS3.3 
 * Dice now go against a TN6 instead of TN7, increasing successes.  
 * Attributes have been expanded, and are no longer locked after chargen.
 * Background and Language skills now have more descriptive ratings.
+* New XP system, making it easier to raise other skills while waiting for a big raise.
 * Quirks are gone, replaced by RP Hooks.
 * Defaulting works differently.  You no longer use the Attribute by itself, but roll the skill at the special new "Everyman" rating to reflect common knowledge.  This becomes Attribute+1.  With the target number change, this actually gives you a better chance of success than previously rolling 2x the attribute.
 
@@ -54,11 +53,11 @@ Thanks to the following people for their contributions to FS3:
 * The designers of FUDGE and FATE, which inspired FS3.
 * The cast and crew of Battlestar Pacifica, where +combat originated.
 * Cags and David and my dad for input for the original edition of FS3.  
-* SeanCee and Boo and the crew of Aftermath for initial beta testing on 3rd edition.
+* SeanCee and Boo and the crew of Aftermath for initial alpha testing on 3rd edition.
 * Orion, Andromeda, Draco and the crew of The 100 for some cool house rules I stole and general feedback.
 
 # Copyright and License
 
-<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">The FS3 System</span>  Copyright 2007 by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.aresmush.com" property="cc:attributionName" rel="cc:attributionURL">Linda Naughton (aka Faraday)</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">The FS3 System</span>  Copyright 2007 by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.aresmush.com" property="cc:attributionName" rel="cc:attributionURL">Linda Naughton (aka Faraday)</a> and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>

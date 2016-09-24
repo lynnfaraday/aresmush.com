@@ -4,7 +4,7 @@ description:
 layout: fs3
 ---
 
-Here are some example descriptions for the skill ratings of some common Action Skills.
+Skill ratings in FS3 are deliberately broad.  What exactly is "Good" or "Great"?  It's impossible to pin down precisely, but here are some example descriptions for the skill ratings of some common Action Skills to give you a better idea of what's meant by each rating.
 
 # Firearms
 

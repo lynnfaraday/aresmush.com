@@ -665,18 +665,24 @@ li {
 }
 
 .fs3-sidebar {
-    padding-right: 10px;
+    padding-left: 20px;
     padding-top: 20px;
+    border-left: 1px dotted #CF895D;;
+    border-bottom: 1px dotted #CF895D;
+    margin: 10px;  
 }
+
 
 .fs3-sidebar h2 {
     font-size: 1em;
     border-bottom:1px solid #CF895D;
 }
 
-
+.fs3-shortcut {
+    display: none;
+}
 /*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 /*    .nav li:before { content: " \25C6"; } 
     .nav li { list-style-type: none; padding: 5px;}*
 	/* .col {  margin: 1% 0 1% 0%; } */ 
@@ -687,6 +693,11 @@ li {
     img.prettyImage-image { max-width: 80%; }
     .title-words { padding: 2px; font-size: 18px; }
     .post-metadata { margin-right: 0px; height: auto;}
+    .fs3-sidebar {
+        border-top: 1px dotted #CF895D;;
+        border-left: none;
+    }
+    .fs3-shortcut { display: block; }
 
 }
 

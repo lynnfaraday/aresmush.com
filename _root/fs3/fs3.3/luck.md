@@ -4,18 +4,16 @@ description:
 layout: fs3
 ---
 
-Luck Points in FS3 are a way to give your character a "quirk of fate" edge. They can be used in different ways.
+Luck Points in FS3 are a way to give your character an edge from luck or fate.
 
 ## Ability Rolls
 
 You can spend Luck Points in various ways to help your ability rolls.
 
 * Before your own roll, spend a point to receive a +3 modifier.
-* Before someone else’s roll (friend or enemy), spend a point to apply a +3 or -3 modifier to their roll.
 * Immediately after your own roll, spend a point to get a re-roll and choose the better of the two rolls.
-* Spend a point to cancel a luck point used against you (for example: if someone gave you a modifier you can spend a luck point to avoid it).
 
-Only one Luck Point can apply to a given roll, so you can’t give yourself a bonus and someone else a penalty in the same Opposed Roll.	Also, you can’t have multiple people all spending luck to help the same person.
+Only one Luck Point can apply to a given task, so you can’t give yourself a bonus and then also re-roll the result.
 
 ## Combat
 

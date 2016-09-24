@@ -61,9 +61,35 @@ In FS3 Core, languages are free-form.  The specific list of Languages will vary 
 
 ## Experience
 
-TBD
+Every week you get 1 XP.
+
+Raising Abilities costs the following:
+
+* Background Skills - 2 XP
+* Languages - 4 XP
+* Action Skills - 4 XP
+* Attributes - 8 XP
+
+You may only save up to 8 XP.
+
+Ability freezes are as follows:
+
+| Current Rating | Freeze Time |
+|----|
+| Action Skills ratings 0-1, Attribute rating 1, New Background/Lanaguage| 3 weeks |
+| Action Skills ratings 2-3, Attribute rating 2, Background Interests, Language Beginner | 2 months |
+| Action Skills ratings 4-5, Attribute rating 3, Background Profession, Language Conversational | 4 months |
+| Action Skills ratings 6+, Attribute rating 4 | 8 months | 
 
 ## Luck
 
 Everyone starts with 1 Luck Point.  You gain more from other players through the cookie RP reward system.  Every cookie translates into a fraction of a luck point.
 
+
+## Combat
+
+Initiative: Composure
+
+Knockout:  Composure + Grit + Brawn
+
+Healing: Brawn

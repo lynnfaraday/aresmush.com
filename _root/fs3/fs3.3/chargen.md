@@ -12,15 +12,9 @@ Try out the <a href="https://fs3chargen.herokuapp.com/">FS3 Character Generator<
 
 <a name="background"/>
 
-# Background
+# Concept
 
-**Who are you?**  This is the most important question when designing a FS3 character.  It drives every Ability you take.  A disconnect between your background and your skills is the fastest way to raise a red flag when your character is reviewed.
-
-Part of character creation involves writing a short background, or mini-biography, for your character.  It doesn't need to bes a novel, just 2-3 paragraphs describing the character’s backstory. In particular, your background should cover:
-
-* Who is your character?
-* Why/how did they get here?
-* Anything else important/noteworthy/unusual about your character that might explain your abilities or be good for staff to be aware of.
+**Who are you?**  This is the most important question when designing a FS3 character.  It drives every Ability you take.  A disconnect between your concept and your skills is the fastest way to raise a red flag when your character is reviewed.
 
 <a name="ability-points"/>
 
@@ -32,7 +26,9 @@ Different kinds of abilities cost different number of AP, as explained in **Choo
 
 ## Point Restrictions
 
-You don't start off with a fixed pool of AP.  Instead, the system counts **up** how much you've spent to give you an AP total.  A game may restrict the maximum allowable AP by alt, by faction or any other criteria.  Consult your local game policies for details.
+You don't start off with a fixed pool of AP.  Instead, the system counts **up** how much you've spent to give you an AP total.  
+
+A game may restrict the maximum allowable AP by alt, by faction or any other criteria.  Consult your local game policies for details.
 
 > <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** If your character uses too many AP, ask staff for help.  They may be able to help you adjust your points or re-work your concept to one that better fits the theme.  Avoid shaving essential skills just to save points.  A character missing essential skills is as much of a red flag as an overpowered character.
 
@@ -52,7 +48,7 @@ The following sections will guide you in determining your Abilities.
 
 ## Attributes
 
-Attributes represent basic abilities that everyone has to some extent.  Attributes can be used when no skill directly applies.  They can also boost related skills.  See [Conflict Resolution](/fs3/fs3-3/conflict) for details.
+Attributes represent basic abilities that everyone has to some extent.  Attributes boost related skills, and come into play when no skill directly applies.  See [Conflict Resolution](/fs3/fs3-3/conflict) for details.
 
 The specific list of Attributes will vary from game to game.  For an example, see **[FS3 Core](/fs3/fs3-3/core)**.
 
@@ -105,14 +101,9 @@ If the descriptions in the rating table above aren't enough, you can use the [De
 A few tips about Action Skills:
 
 * Fair/Good/Great are professional skill levels, so most of your job-related skills should be in this range.
-* You don't have to be an Expert to succeed in FS3.  Ratings 6+ should be reserved for people who are truly experts in their field.
-* Your skills should generally match your professional experience.  While some variation is allowed for talent (or lack thereof), be careful not to stray too far.  A brand-new pilot with an Elite piloting skill isn't going to fly (pun intended), nor is a casual bar-league ball player with Expert Athletics.
+* You don't have to be an Expert to succeed in FS3.  Ratings 6+ are exceptional.
+* Your skills should generally match your professional experience.  While some variation is allowed for talent (or lack thereof), be careful not to stray too far.  A brand-new pilot with an Elite piloting skill isn't going to fly (pun intended).
 * Abilities in FS3 are deliberately broad to simplify chargen, but chances are your character isn't great at *every single thing* covered by a given skill.  For example, Medicine covers a lot, but a paramedic can't do brain surgery, and a brain surgeon or psychiatrist would suck trying to splint a broken leg.  RP appropriately according to your background, and apply appropriate modifiers (described in [Specialties](/fs3/fs3-3/conflict#specialties) when going out of your comfort zone.
-* Everyman is a special rating.  It reflects what the average inhabitant of the game world would be capable of.  What tasks you can even conceivably attempt with Everyman will vary from skill to skill.  
-
-### Linked Attributes
-
-Every Action Skill is linked to a particular Attribute by default.  Unless you specify otherwise during a roll, this is the Attribute that will boost your skill rating when you roll that skill.  The linked Attribute is shown in the skill list, and on your character sheet.
 
 ### Buying Action Skills
 
@@ -136,38 +127,32 @@ The specific list of Background Skills will vary from game to game.  For an exam
 
 Background Skills are rated differently than Action Skills in a more descriptive fashion:
 
-* **Interest** - A casual hobby or interest.  Rolled as rating 3.
-* **Profession** - A profession or very serious hobby.  Rolled as rating 5.
-* **Expertise** - An area of significant knowledge or expertise.   Rolled as rating 7.
+* **Interest** - A casual hobby or interest.  Rolled as rating 2.
+* **Proficiency** - A profession or very serious hobby.  Rolled as rating 4.
+* **Expertise** - An area of significant knowledge or expertise.   Rolled as rating 6.
 
 A few tips for selecting Background Skills:
 
 * You are assumed to have the equivalent of Everyman rating in any Background Skill not listed on your character sheet.  Don't feel obliged to list every single thing your character has ever done - focus on the things that are important to you.
-* Like Action Skills, Background Skills are deliberately broad.  In RL, an engineer might have to take Calculus, Physics, Engineering and various other courses as part of their degree, but those can all be summed up generally as a single Background Skill of "Electrical Engineer".  Strive for a middle ground somewhere between listing each topic individually and lumping too much together (like a single skill of "Science" - that's too big.)
-
-### Linked Attributes
-
-Background Skills are linked to Wits by default, but you can always specify a different one when you roll.  For example, when rolling Acting you might roll Acting+Performance.
+* Background Skills can be broad, within reason.  "Electrical Engineering" is sufficient for a degree in engineering; you don't need to take individual skills for Math, Physics, Statistics, etc.  Just avoid super-broad things like "Art" or "Science".
 
 ### Buying Background Skills
 
-You must take **at least 1** Background Skill.  You can have up to **5 rating points** of Background Skills for free.  Additional Background Skills cost **1 AP** each.
+You must take **at least 1** Background Skill.  You can have up to **6 rating points** of Background Skills for free.  Additional Background Skills cost **1 AP** each.
 
 <a name="languages"/>
 
 ## Languages
 
-Languages represent the languages that your character can speak and/or read.   
-
-The specific list of Languages will vary from game to game.
+Languages represent the languages that your character can speak and/or read.   The specific list of Languages will vary from game to game.
 
 ### Language Ratings
 
 Like Background Skills, Language Skills have more descriptive ratings.  
 
-* **Beginner** - You know tourist-level common phrases like "my name is" and "where's the bathroom".  Rolled as rating 3.
-* **Conversational** - You can get by, but your phrasing is sometimes awkward and your vocabulary incomplete.  Rolled as rating 5.
-* **Fluent** - You are fully fluent in the language.  Rolled as rating 7.
+* **Beginner** - You know tourist-level common phrases like "my name is" and "where's the bathroom".  Rolled as rating 2.
+* **Conversational** - You can get by, but your phrasing is sometimes awkward and your vocabulary incomplete.  Rolled as rating 4.
+* **Fluent** - You are fully fluent in the language.  Rolled as rating 6.
 
 Your reading level is assumed to be on par with your speaking level, unless otherwise specified by staff.
 
@@ -175,18 +160,8 @@ Your reading level is assumed to be on par with your speaking level, unless othe
 
 You start as **Fluent** in whatever the common game language is for free.   Any additional languages cost **1 AP** per rating.
 
-### Linked Attributes
-
-Language Skills are linked to Wits.
-
 <a name="rp-hooks"/>
 
 # RP Hooks
 
 The final step in character creation is to set at least one **RP Hook**.  This is something interesting about your character that others can leverage for RP ideas.   Do you have a short temper?  Is your family so famous that someone might recognize you?   Do you love (or hate) dogs or small children?   Just about any personality trait, quirk or background tidbit can be a RP Hook.
-
-<a name="review"/>
-
-# Review
-
-Once you have finished your character, they will be reviewed by the application staff to ensure there are no problems.  Then you'll be able to hit the grid and play.
