@@ -156,7 +156,7 @@ Instead of attacking, you can bide your time and take careful aim.  This will gi
 
 `combat/treat <name>`
 
-Treat tends to a wounded character's wounds, and rally attempts to rouse a KO'd character without first aid.
+Treat tends to a a wounded character.  You can treat one wound per action.  The system chooses the worst one automatically.  A treated wound has less of a wound modifier, and has a chance to awaken a knocked out character.   Rally also attempts to rouse a KO'd character, but without first aid.
 
 
 ### Misc

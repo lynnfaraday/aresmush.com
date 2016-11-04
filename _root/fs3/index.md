@@ -10,7 +10,17 @@ tags:
 - xp
 ---
 
-FS3 is a generic roleplaying game skills system, specifically designed and optimized for online text-based RPGs (MUSHes).  In Ares, FS3 is implemented as a family of plugins which all interact with and depend on each other.
+FS3 (Faraday's Simple Skill System) is RPG system designed for MUSHes.  While inspired by traditional tabletop RPGs, it has some important differences.   These are the hallmarks of FS3:
+
+* **Fast and Easy** - FS3 takes a simple approach to abilities and highlights skills that are relevant to gameplay.  The goal is to get you through Chargen and reviewed as fast as possible.
+
+* **Predictable** - FS3 dice mechanics are less random than many other game systems.  Chance is still a factor, of course, but fluke results are less common.
+
+* **Roleplay-Friendly** - FS3 has a lightweight conflict resolution and combat system that leaves a lot open to player interpretation.  This frees you to focus on the story, not the dice.
+
+# FS3 and Ares
+
+FS3 comes standard in AresMUSH.  It is implemented as a family of plugins which all interact with and depend on each other.
 
 * Skills
 * Character Sheet
@@ -22,17 +32,13 @@ The Chargen plugin is also related, though it is general enough that it can appl
 
 # Player Guides
 
+**[Third Edition](/fs3/fs3-3/)** is the current version of FS3.  The documentation is web-based.
+
+Earlier editions had PDF or wiki-based documentation.
+
 * [First Edition](https://github.com/lynnfaraday/MUSH/tree/master/farasoftcode/Docs/FS3.1)
 * [Second Edition](https://github.com/lynnfaraday/MUSH/tree/master/farasoftcode/Docs/FS3.2)
-* Third Edition coming soon.  Read the [notes](/fs3/fs3-3/) here.
 
-## Why FS3?
-
-What makes FS3 different from other skill systems? 
-
-* A lean skill list. Most skill systems offer a bewildering array of skills, making character creation a chore. FS3 focuses on the skills that are truly relevant to the game.  Character creation is fast and easy.
-* A streamlined dice system. The FS3 dice system is designed for MUSHing. On the whole, characters succeed more often than they do in other systems.
-* A roleplay-friendly combat system. The FS3 combat system is designed to be fast and flexible, providing some colorful tactical options without bogging roleplay down in a lot of mechanics.
 
 ## Copyright and License
 

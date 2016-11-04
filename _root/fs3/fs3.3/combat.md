@@ -45,7 +45,7 @@ Each turn, you can take a single action.
 ## Supportive Actions
 
 * **Rally** – You can attempt to rally a knocked out character, giving them a chance at getting back into the fight. This can reflect anything from a big speech to a "snap out of it!" slap to the face.
-* **Treat** – You can treat an injured person during combat to reduce their wound modifiers.  You can do this with vehicles too, to represent jury-rigged workarounds.  Treating a knocked-out player has a chance of undo-ing the knockout.
+* **Treat** – You can treat an injured person during combat.  You can treat one wound per action.  The system chooses the worst one automatically.  A treated wound has less of a wound modifier, and treating a knocked-out character has a chance of undo-ing the knockout.
 * **Pass** - Use this if you're not doing anything.
 
 Both treat and rally should only be used when appropriate.  You can't treat someone who's wrestling with another character or up a tree, for instance.
