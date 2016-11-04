@@ -52,7 +52,7 @@ The Ares channel system attempts to support both Penn and Tiny command syntax as
 
 The default channel alias is the first 2 and 3 characters, so "Chat" would be cha <msg> and ch <msg>.  
 
-You can change your alias for a given channel at any time using `channel/alias <name>=<new alias>`.
+You can change your alias for a given channel at any time using `channel/alias <name>=<new alias>`.  The `channels` command by itself will give you a rundown on what channels you are on and what aliases talk on them.
 
 ## Connections
 
@@ -81,9 +81,7 @@ The [Handles](/handles) system lets you set up a player identity that can follow
 
 ## Game Directory
 
-The Ares game directory contains a list of all Ares games (help games).  This is currently only available on [AresCentral](/arescentral), the main AresMUSH social hub.  Someday it will be accessible elsewhere too.
-
-Cross-game features are in their infancy.  It is hoped that over time they will expand.
+The Ares game directory contains a list of all Ares games, available on [AresCentral](/arescentral).
 
 ## Editing
 
@@ -106,3 +104,5 @@ Other things you might use objects for, like weapons, are simply handled with co
 Your IC/OOC status is controlled solely by what room you're in.  To get between the IC and OOC areas, you use the `onstage` and `offstage` commands.
 
 AFK status is just a flag; you can set it no matter where you are and it doesn't take you to a special room or anything.  You can also set a custom AFK message, which shows up in room descs and also in pages.  `afk Getting dinner - be back around 8pm EST`.  
+
+There's an automatically notice sent in pages if someone pages you while you're many hours idle.

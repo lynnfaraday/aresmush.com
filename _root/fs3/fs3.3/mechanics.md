@@ -8,7 +8,9 @@ For those who care about the nitty-gritty about what the Ability Ratings actuall
 
 ## Base Mechanic
 
-The basic FS3 mechanic is Attribute + Skill number of 8-sided dice against a target number of 6.
+The basic FS3 mechanic is Attribute + (Skill * 1.5) number of 8-sided dice against a target number of 7.
+
+The 1.5 multipler accounts for the fact that the skill rating scale was compressed between FS3 2.0 and 3.0.  It also gives a little more wiggle room for modifiers.
 
 ## Routine Roll
 

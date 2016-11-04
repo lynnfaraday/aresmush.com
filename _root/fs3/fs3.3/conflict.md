@@ -10,7 +10,7 @@ An Ability Roll is used when you want to know if you succeed or fail at a given 
 
 # When to Roll
 
-Ability Rolls should be used judiciously; it is unnecessary (and silly) to roll for every little thing. RPGs are about *role*play not *roll*play.
+Ability Rolls should be used judiciously. RPGs are about *role*play not *roll*play.
 
 > <i class="fa fa-cubes" aria-hidden="true"></i>  **Tip:** Players are always free to skip rolls and negotiate a resolution as befits the story, as long as everyone agrees.
 
@@ -21,7 +21,7 @@ You should consider using an ability roll if the character is **under significan
 
 <a name="hail-mary"/>
 
-# When NOT to Roll
+# Hail Mary Rolls
 
 Rolling dice is fun and all, but it's also important to consider what your character *actually knows* and can *reasonably have a chance to accomplish*.  
 
@@ -39,7 +39,7 @@ Before rolling, you need to figure out which Skill applies best to the task at h
 
 FS3 uses 8-sided dice.  You roll a number of (virtual) dice equal to the Skill Rating plus the linked Attribute.  You can gain or lose dice through special Modifiers.   Languages and Background Skills don't have numerical ratings, but their descriptive ratings have numerical equivalents as described in [Character Generation](/fs3/fs3-3/chargen).  For example, an "Interest" Background Skill is rolled as rating 2.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i>  **Tip:** Dice to Roll = 1 + Skill Rating + Linked Attribute +/- Modifiers
+> <i class="fa fa-cubes" aria-hidden="true"></i>  **Tip:** Dice to Roll = (Skill Rating * 1.5) + Linked Attribute +/- Modifiers
 
 <a name="defaulting"/>
 
@@ -62,16 +62,16 @@ If the task is too far outside your specialty (like a paramedic attempting brain
 
 # Success Level
 
-When you roll your ability dice, any die that is a 6 or higher is counted as a success.   It only takes one success to accomplish what you set out to do.  Extra successes mean you did really well.   You can think of success levels like letter grades on a school exam.  Did you scrape by with a passing grade or score top marks?
+When you roll your ability dice, any die that is a 7 or higher is counted as a success.   It only takes one success to accomplish what you set out to do.  Extra successes mean you did really well.   You can think of success levels like letter grades on a school exam.  Did you scrape by with a passing grade or score top marks?
 
 | Rating | Description |
 | ---- |
 |*|Embarrassing Failure|
 |0|Failure|
-|1|Success|
-|2-3|Good Success|
-|4-5|Great Success|
-|6+|Amazing Success|
+|1-2|Success|
+|3-4|Good Success|
+|5-6|Great Success|
+|7+|Amazing Success|
 
 An Embarrassing Failure happens when more than half your dice are 1’s - even if you got some successes.   You don’t just fail, you fail is a spectacular and embarrassing fashion - like shooting your friend or falling flat on your face.
 

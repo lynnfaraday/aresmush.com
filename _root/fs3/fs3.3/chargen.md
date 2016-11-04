@@ -34,7 +34,9 @@ A game may restrict the maximum allowable AP by alt, by faction or any other cri
 
 ## AP Disparities
 
-Some characters will have higher AP totals than others.   Is that fair?  Sure it is, as long you realize that it's the player's choice.  Characters in FS3 have equal *opportunity*, but ultimately you get to pick which you want to play.   A Navy SEAL shouldn't have the same number of action-oriented skills as a fresh-from-boot-camp recruit or a galley cook (unless the cook is also Stephen Seagal).  A master shouldn't be on even footing with his apprentice, nor a superhero with his sidekick.  
+Some characters will have higher AP totals than others.   Is that fair?  Sure it is, as long you realize that it's the player's choice.  Characters in FS3 have equal *opportunity*, but ultimately you pick what you want to play.   
+
+The system is designed so that abilities central to the game's "action" cost more than other abilities.  A Navy SEAL will obviously have more action-oriented skills than a master cook (unless the cook is also Stephen Seagal).  They're both great at what they do - one just needs more AP to get there.
 
 But why would you want to play a lower-powered character in the first place?   Why not maximize your allowable AP rating?
 

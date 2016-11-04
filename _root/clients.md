@@ -35,7 +35,7 @@ UTF-8 is backwards-compatible with ASCII, so you can safely make it your client'
 4. Find the 'Starting Encoding' dropdown.
 5. Select 'UTF-8'.
 
-> You can also adjust this setting on a per-world basis in your Address Book.  Select the desired world and look under the 'Connection' section.  You may need to do this for any existing worlds.
+> **Note!**   This setting will take effect for any new worlds.  For existing worlds, you'll have to adjust the same setting under Address Book -> Edit World -> Connection -> Starting Encoding.
 
 ### Character Encoding in MUSHClient
 

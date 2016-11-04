@@ -33,9 +33,9 @@ Maximum: 40 AP
 |Gunnery |Reflexes |Vehicle and heavy weapons. |
 |Medicine|Wits |Tending to the ill and injured.  Requires Specialty:  Doctor, Surgeon, Nurse, Medic, Other|
 |Melee |Brawn |Fighting with fists, knives, and hand-to-hand weapons.|
-|Piloting|Reflexes |Flying air and spacecraft.  Requires Specialty:  Viper, Raptor, Shuttle|
-|Technician|Wits|Mechanics, electronics and computers.  Requires Specialty: Electronics, Mechanics, Sensors|
+|Piloting|Reflexes |Flying air and spacecraft.  Requires Specialty:  Viper, Raptor, Freigher, Other|
 |Stealth |Reflexes |Being sneaky.|
+|Technician|Wits|General mechanics/electronics and fixing things.|
 
 ## Background Skills
 
@@ -87,8 +87,8 @@ Everyone starts with 1 Luck Point.  You gain more from other players through the
 
 ## Combat
 
-Initiative: Composure
+Initiative: Alertness
 
-Knockout:  Composure + Grit + Brawn
+Knockout and Stress:  Composure
 
-Healing: Brawn
+Recovery: Athletics

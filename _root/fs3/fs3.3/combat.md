@@ -67,7 +67,7 @@ Don't feel restricted by the combat system.  If what you want to do isn't precis
 
 # Initiative
 
-Actions within a turn are resolved in order based on an Ability Roll for initiative. The game determines which ability is used for initiative.  In **[FS3 Core](/fs3/fs3-3/core)**, it's Composure.  The number of Successes determines the order of actions, with higher results going first.
+Actions within a turn are resolved in order based on an Ability Roll for initiative. The game determines which ability is used for initiative.  For an example, see **[FS3 Core](/fs3/fs3-3/core)**.  The number of Successes determines the order of actions, with higher results going first.
 
 Wound modifiers take effect as soon as they happen, but Knockout rolls (see **Knockout** below) are done at the end. This means that a character still gets a chance for a dying gasp even as he’s being taken out.
 
@@ -159,7 +159,7 @@ There is no death in FS3, except at the admin or player’s discretion. The wors
 
 Knockout does **not** literally mean you are knocked unconscious, although that is an easy interpretation.  You could be out cold, writhing in pain, subdued, panicked, sitting in a disabled vehicle, killed, or any other appropriate result – as long as you’re no longer fighting.
 
-At the end of any turn in which you took damage and your total Wound Modifier is 1 or more, you must make a Knockout Roll, modified by your total wound modifier.  Each game determines which ability is used for the Knockout Roll.  In **[FS3 Core](/fs3/fs3-3/core)**, it's Composure, with an added bonus from Brawn.
+At the end of any turn in which you took damage and your total Wound Modifier is 1 or more, you must make a Knockout Roll, modified by your total wound modifier.  Each game determines which ability is used for the Knockout Roll.  For an example, see **[FS3 Core](/fs3/fs3-3/core)**.
 
 <a name="luck"/>
 
@@ -192,7 +192,9 @@ Lesser wounds heal pretty quickly, but Incapacitating lay you up for awhile.  Ea
 | Impairing | 14 |
 | Incapacitating | 30 |
 
-Normally you gain 1 healing point per day.  You get a bonus point if you're in a hospital or under the care of a PC doctor (via the `heal` command).  You may gain an additional 0.5 healing points by making a successful Recovery Roll.  In **[FS3 Core](/fs3/fs3-3/core)**, Brawn is used for recovery.  So normally an Incapacitating wound would take about 2 months to heal completely, but with a hospital/doctor and some successful healing rolls, it could be as quickly as three weeks.
+Normally you gain 1 healing point per day.  You get a bonus point if you're in a hospital or under the care of a PC doctor (via the `heal` command) or make a successful Recovery Roll.  Each game will configure the ability used for Recovery.  For an example, see **[FS3 Core](/fs3/fs3-3/core)**.  
+
+So normally an Incapacitating wound would take about 2 months to heal completely, but with a hospital/doctor and some successful recovery rolls, it could be as quickly as three weeks.
 
 Some weapons do "stun" damage, which heals three times as fast as regular damage.
 

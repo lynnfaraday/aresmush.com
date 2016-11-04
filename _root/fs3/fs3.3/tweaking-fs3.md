@@ -156,8 +156,6 @@ Each hit location chart has a number of stats you can adjust:
 
 FS3 uses a somewhat unique hit location system.  See **[How Hit Location Works](/fs3/fs3-3/combat-mechanics#hit-location)** for more info on how it works and some examples of how to set up the target locations.
 
-Don't use "MISS" on the default hit location; reserve that for places that are called shots.
-
 # Customizing Combatant Types
 
 The system lets you specify custom combatant types beyond the standard "soldier", "pilot", "passenger".  Each custom type can be assigned a default weapon, hit location chart, armor type and vehicle type.   You can use this for different kinds of troops (e.g. Archer vs Spearman) or for creatures and alients (e.g. Centurion or CylonRaider).  

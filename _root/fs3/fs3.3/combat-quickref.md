@@ -102,22 +102,30 @@ When everyone has posed and chosen their actions, the organizer will trigger a n
 
 ### Attack 
 
-`combat/attack <list of targets>`
+`combat/attack <target>`
 
-`combat/attack <target>/called=<location>`
+`combat/attack <target>/called:<location>`
 
 `combat/attack <target>/burst`
+    
+`combat/attack <target>/mod:<attack modifier>`
 
-`combat/attack <target>/crew`
+The basic attack makes a single strike with your equipped weapon.  You can do a called shot to a particular hit location, or fire a short burst (3 rounds).
 
-The basic attack makes a single strike with your equipped weapon.  You can do a called shot to a particular hit location, or fire a short burst (3 rounds) at a single target.
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:**  You can combine multiple attack options with commas (e.g. combat/attack Bob=mod:2,burst).  You cannnot combine a called shot and a burst.
 
-To attack multiple targets, you need either an explosive weapon or a fully automatic one (using an 8 round burst).
+### Full-Auto
 
-Attacks against someone in a vehicle are treated as an attack on the vehicle itself unless you specify the `crew` option.  Then it's an attack on the person.
+`combat/fullauto <list of targets>`
 
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:**  You can combine multiple attack options with commas (e.g. combat/attack Bob=crew,burst).
- 
+If your weapon supports full-auto fire, you can attack up to three targets with an 8-round burst.
+
+### Explosions
+
+`combat/explode <list of targets>`
+
+Explosive weapons can hit multiple targets with shrapnel.
+
 ### Suppress
 
 `combat/suppress <list of targets>`

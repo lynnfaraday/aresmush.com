@@ -34,19 +34,19 @@ As the organizer, the combat system will notify you when everyone has posed and 
 
 Combat is designed to handle PCs and NPC opponents.  NPCs exist only as long as they are in combat, and their damage is wiped as soon as they leave.  For important/permanent NPCs, it is suggested that you actually create a player for them like a PC and give them some skills.
 
-NPCs don't have the same sort of varied ability ratings that PCs do.  Instead they have an overall "class" that determines their broad ability scores.  Games can define their own classes too:
+NPCs don't have the same sort of varied ability ratings that PCs do.  Instead they have an overall "level" that determines their broad ability scores.  NPCs default to Goon but you can adjust that.
 
-| NPC Class | Abilities  |
+| NPC Level | Abilities  |
 | ---- |
-| Goon | Attack: 5, Defense: 4, Knockout: 3 |
-| Henchman | Attack: 6, Defense: 5, Knockout: 4 |
-| Boss | Attack: 7, Defense: 6, Knockout: 5 |
+| Goon | 4 |
+| Henchman | 6 |
+| Boss | 8 |
 
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** When you start the first turn, NPCs will automatically pick random targets.  Therefore, if you want to assign them to specific targets, be sure to do so **after** you start the first new turn.
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** When you start the first turn, NPCs will automatically pick random targets.
 
 Someone must be responsible for posing for the NPC and entering their actions into the combat system.  This could be the organizer, another player who's PC is involved in the combat, or just someone who's there solely to run that particular NPC. 
  
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** If you are only joining combat to run NPCs, you should join using the "NPCMaster" type so you're not accidentally targeted by people.
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** If you are only joining combat to run NPCs, you should join using the "Observer" type so you're not accidentally targeted by people.
  
 NPCs and PCs are treated fundamentally the same in combat. You target a NPC just by using his name, and there are versions of every combat command that allow you to specify a NPC as the actor. Only one exception: KO’d NPCs are immediately removed from the combat. They cannot be treated, rallied, or revived with a hero roll. 
  
@@ -60,7 +60,7 @@ PCs pick their targets when they aim or attack. NPCs do so automatically. By def
 
 # Modifiers
 
-Organizers may apply situational modifiers to characters based on things like darkness, rain, or what-have-you. A modifier is just like a skill roll modifier - a +/- number of dice.  Damage modifiers are factored in automatically.  Use `combat/mod <char>=<modifier>`.
+Organizers may apply situational modifiers to characters based on things like darkness, rain, or what-have-you. A modifier is just like a skill roll modifier - a +/- number of dice.  Damage modifiers are factored in automatically.  Use `combat/attackmod <char>=<modifier>`.  There's also a defensemod and lethalmod command to apply damage or defense mods.  Note:  The damage mod applies to damage TAKEN.
 
 # Special Combat Situations
 
@@ -70,7 +70,7 @@ Combat can be designated as 'mock' or 'real'. Mock combat represents training, s
 
 ## Ambushes
 
-If a character is caught unawares, they shouldn't get an attack and should have a -3 modifier to defense.  You can make them take the **pass** action and apply the modifier using `combat/mod`.  Just remember to change the modifier back to 0 after the first turn.
+If a character is caught unawares, they shouldn't get an attack and should have a -3 modifier to defense.  You can simulate this by making them take the **pass** action and giving the attacker the aggressive stance.
 
 ## Booby Traps and Unmanned Vehicles
 
@@ -87,6 +87,6 @@ Lopsided combats are generally not much fun for either side, and sometimes may b
  
 Another way to balance combat is to simply apply a modifier. Badguys kicking your players' butts and you don't want them to? Give a few of them a -3 modifier and watch the tables turn. 
  
-You can also give someone a lethality modifier, which applies to weapon damage. This is also a percentage, just like the weapon's lethality rating. So if you really want to take someone out, set their opponent to have a huge to-hit modifier and lethality modifier.
+You can also give someone a lethality modifier, which applies to weapon damage. This is also a percentage, just like the weapon's lethality rating. So if you really want to take someone out, set them up with a huge lethality modifier.
  
 Is this cheating?  Some would argue yes. But just as a gamemaster in a tabletop game sometimes rolls behind a screen and ignores the results to further the plot, MUSH Storytellers should be allowed the same flexibility. These commands let you “stack the deck” for dramatic effect.  It is up to you to use them responsibly.
