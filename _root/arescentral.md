@@ -8,6 +8,6 @@ layout: page
 
 <a href="http://arescentral.aresmush.com">http://arescentral.aresmush.com</a>
 
-You can also see AresMUSH in action on our test server:
+You can also see AresMUSH in action on our flagship server.  Look for me there as Faraday:
 
 <a href="telnet://telnet:mush.aresmush.com:7206">mush.aresmush.com:7206</a>

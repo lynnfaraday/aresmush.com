@@ -32,6 +32,7 @@ Here is what you do to create your own Ares version.
     You are now the proud owner of your own version of AresMUSH.  You can tell that you're on your version by looking at the repository name near the upper left.  The main Ares code is **lynnfaraday/aresmush**.  Yours will be something like  **YOURUSERNAME/aresmush**.    
 
 <a name="clone-url">
+
 ## Get the Clone URL
 
 On the right, you should see a 'clone URL'. Click on the "HTTPS" button to get the HTTP clone URL. You will need it when you [install the game](/install-ares/install-game).

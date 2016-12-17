@@ -16,7 +16,7 @@ All Ares code uses a standard high-level language: Ruby.  Ruby is a lot easier t
 Ares uses a central engine to handle basic infrastructure, like configuration and connections.  You probably won't ever have to touch the engine code; it's the backbone that makes Ares work.
 
 ## Plugins
-Unlike in Penn and Tiny, standard functionality is not a part of the engine.  Every system is implemented as a **Plugin**.  Here are just a few of the plugins that come with every Ares install:
+Unlike in Penn and Tiny, standard functionality is not a part of the engine.  Every system is implemented as a [Plugin](/plugins).  Here are just a few of the plugins that come with every Ares install:
 
 * Posing and Pages
 * Rooms and Movement

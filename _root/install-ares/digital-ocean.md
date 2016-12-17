@@ -23,51 +23,17 @@ Digital Ocean's pricing may be confusing, because they list both an hourly and a
 
 ## Create a Droplet
 
-A "droplet" is just what DO calls a server.  You'll only need one droplet, even if you want to have multiple Ares games.   
+A "droplet" is just what DO calls a server.   To create a new droplet, log into your account and click **Create Droplet**.  
 
-To create a new droplet, log into your account and click **Create Droplet**.  
-
-1. Enter a hostname, like 'myares'.
-2. Select a size.  The $5/month droplet size meets all of Ares' [System Requirements](/install-ares/system-requirements), but you'll want to get the $10/month droplet size if you also plan on running a website or multiple games.
-3. Select a region close to you.
-4. Select an image.  Click the "Applications" tab and select "Ruby on Rails".
+1. Select an image.  Click the "One-Click Apps" tab and select the "Redis" app (for example, it is currently "Redis 3.2.1 on 14.04" but the numbers may change over time).
 {{#pretty-image}}{{urls.media}}/install-ares/droplet.png{{/pretty-image}}
-5. Ignore the Available Settings.  You don't need any of that.
-6. Only add a SSH key if you're already familiar with connecting using SSH clients or wish to learn.  Connecting with SSH is beyond the scope of this tutorial.  See Digital Ocean's article on [SSH Keys](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-putty-on-digitalocean-droplets-windows-users) for more information.
- 
-<a name="connect-to-droplet">
-
-## Connect To Your Droplet
-
-You can connect directly to your droplet using the Digital Ocean control panel.  
-
-1. Log into your Digital Ocean account and select "Droplets" from the top menu.
-2. Select your droplet.
-3. Click "Console Access".
-{{#pretty-image}}{{urls.media}}/install-ares/droplet-connect.png{{/pretty-image}}
-4. Login using the username "root" and the password that was emailed to you.
-
-> Note: Digital Ocean doesn't send you the root password if you set up a SSH key.  You'll have to connect using an SSH client or else click "Reset Root Password" on the droplet control panel to get a new root password emailed to you.
-
-Now you have a console prompt.  This is called the **server shell**.
-
-
-## Install Git
-
-You'll need the 'git' source control program to get the Ares code.  Connect to your droplet console and type:
-
-    sudo apt-get install git
-
-## Create a User
-
-The root user has special superpowers, so you don't want to be using it for everyday stuff.  You should create an AresMUSH user.   Connect to your droplet console and type:
-
-    adduser ares
-
-It will prompt to choose a password. 
-
-> From now on, use this ares user whenever you're logging into the console, unless the instructions tell you to do something as 'root'.
+2. Select a size.  The $5/month droplet size meets all of Ares' [System Requirements](/install-ares/system-requirements), but you'll want to get the $10/month droplet size if you also plan on running a website or other things on the server.
+3. Don't add block storage.
+4. Select a region close to you.
+5. Don't add additional options.
+6. If you're familiar with SSH and wish to connect using a SSH client, see Digital Ocean's article on [SSH Keys](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-putty-on-digitalocean-droplets-windows-users).  Setting up a SSH key is beyond the scope of this tutorial.
+7. Select 1 droplet, and enter a name for it (like 'ares').
 
 ## Website
 
-FYI - your droplet can run a website too.  Setting it up is outside the scope of this tutorial, especially since most MUSHes use a wiki.  Check out the Digital Ocean support section for details if you're interested.
+The Ares installation scripts will set up the Nginx web server.  You can add web files to the `/usr/share/nginx/html` directory.

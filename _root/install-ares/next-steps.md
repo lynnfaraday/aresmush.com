@@ -2,31 +2,35 @@
 title: Next Steps
 description:
 layout: install-ares
-prevstep: run-game
+prevstep: basic-config
 tags: 
 - install
 - customization
 - headwiz
 ---
 
-Congratulations! Your AresMUSH game should now be up and running, and fully functional.
+Congratulations! Your AresMUSH game should now be up and running.
 
-Here are a few places you can go from here.
+Try connecting to it via your favorite MUSH client. Use the same hostname and port number you used in the server info configuration (e.g. mygame.somehost.com 4201).
 
-## Headwiz Character
+## Troubleshooting
+
+If you can't connect to the game, review the database.yml and server.yml files in `game/config` to ensure they're correct and check the log files in `game/log` for any error messages.  If none of that helps, see [Getting Help](/feedback).
+
+## Default Characters
 
 Ares comes with a "headwiz" character, akin to the "God" character on Penn and Tiny. 
 
     Username: Headwiz
     Password: change_me!
 
+There's also a "builder" character:
+
+    Username: Builder
+    Password: change_me!
+
+You can rename them if you like.
+
 ## Customization
 
-Ares works out of the box, but there's a lot you can customize to get things just the way you like. 
-
-    TODO:  Reference proper tutorial
-
-
-## Handling Restarts
-
-You probably want to make sure your game restarts if the server ever reboots. See [Restart After Reboot](/manage/restart-after-reboot).
+Ares works out of the box, but there's a lot you can customize to get things just the way you like.  See [Customizing AresMUSH](/customize-ares).

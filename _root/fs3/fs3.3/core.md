@@ -61,24 +61,17 @@ In FS3 Core, languages are free-form.  The specific list of Languages will vary 
 
 Every week you get 1 XP.
 
-Raising Abilities costs the following:
-
-* Background Skills - 2 XP
-* Languages - 4 XP
-* Action Skills - 4 XP
-* Attributes - 8 XP
-* Adding a new specialty: 4XP, which freezes the 'parent' skill.
-
-You may only save up to 8 XP.
+You may only save up to 2 XP.
 
 Ability freezes are as follows:
 
-| Current Rating | Freeze Time |
+| Current Rating | XP Cost |
 |----|
-| Action Skills ratings 0-1, Attribute rating 1, New Background/Lanaguage| 3 weeks |
-| Action Skills ratings 2-3, Attribute rating 2, Background Interests, Language Beginner | 2 months |
-| Action Skills ratings 4-5, Attribute rating 3, Background Profession, Language Conversational | 4 months |
-| Action Skills ratings 6+, Attribute rating 4 | 8 months | 
+| None | 1 |
+| Action Skills ratings Everyman, Attribute rating Poor| 1 XP |
+| Action Skills ratings Amateur, Attribute rating Average | 2 XP |
+| Action Skills ratings Fair-Good, Attribute rating Good, Background Interest, Language Beginner | 4 XP |
+| Action Skills ratings Great+, Attribute rating Great, Background Proficiency, Language Conversational  | 12 XP |
 
 ## Luck
 

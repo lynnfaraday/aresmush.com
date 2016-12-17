@@ -20,7 +20,7 @@ This article details the system requirements to help you find the right VPS and 
 
 AresMUSH runs best on a Unix-like operating system, such as Linux or MacOSX.  If you have no other preference, choose **Ubuntu Linux** because that's what I use and I'll be able to help you better.
 
-> AresMUSH _can_ run on Windows, but all Ares scripts and instructions are geared towards Unix-like environments.  If you want to run it on Windows, it will require some gymnastics.  [Contact me](/feedback) for help.
+> AresMUSH _can_ run on Windows, but all Ares scripts and instructions are geared towards Unix-like environments.  If you want to run it on Windows, it will require some gymnastics.  It is not officially supported, but you can [contact me](/feedback) and I'll help if I can.
 
 ### RAM
 
@@ -42,44 +42,6 @@ For the database, it will depend on the size of your game, but it's pretty insig
 
 ## Software Packages
 
-There are several software packages that Ares requires.  Installing these packages will require root access (i.e. admin permissions) on the server.   For your convenience, the instructions to install these packages on Ubuntu Linux are given below.
+There are several software packages that Ares requires, including Ruby, Git and a Redis database. 
 
-### Curl
-
-The Ruby installation requires the Curl file transfer package.
-
-    sudo apt-get install curl
-
-### Ruby
-
-The best way to install Ruby is using the Ruby version Manager.  Use the "stable with ruby" option.  At the time of this writing, the command you need is below, but refer to [Installing RVM](https://rvm.io/rvm/install) for the latest instructions.
-
-    \curl -sSL https://get.rvm.io | bash -s stable --ruby
-
-Once RVM is installed, you can install and use a particular version of ruby:
-
-    rvm install 2.2.1
-    rvm use 2.2.1
-
-### Bundler
-
-Bundler is a ruby utility that makes sure you have the right versions of everything your application depends on.
-
-    gem install bundler
-
-### Git
-
-The Git version control client can be installed as a package.
-
-    sudo apt-get install git
-
-
-### Create a User
-
-Your VPS will come with a root user, but you don't want to be using that for everyday stuff because it has special superpowers.  You should create an AresMUSH user.   
-
-    adduser ares
-
-It will prompt to choose a password. 
-
-> From now on, use this ares user whenever you're logging into the console, unless the instructions tell you to do something as 'root'.
+Installing these packages will require root access (i.e. admin permissions) on the server.   In the [AresMUSH Code](https://github.com/lynnfaraday/aresmush/) there are two scripts in the 'bin' directory (install\_ares1 and install\_ares2) that will install what you need.

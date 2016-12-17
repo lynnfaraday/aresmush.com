@@ -12,4 +12,4 @@ A MUSH needs to be hosted on a server - in other words, installed on a computer 
 
 I recommend [Digital Ocean](http://www.digitalocean.com/?refcode=5c07173bc1f2).  It's what I use for [AresCentral](/arescentral).  See **[Getting Started with Digital Ocean](/install-ares/digital-ocean)** for step-by-step instructions on setting up your game there.
 
-If you want to find your own host, check out the [System Requirements](/install-ares/system-requirements).
+If you prefer to find your own host, check out the [System Requirements](/install-ares/system-requirements).

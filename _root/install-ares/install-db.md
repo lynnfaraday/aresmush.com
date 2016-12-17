@@ -3,14 +3,14 @@ title: Install the Database
 description:
 layout: install-ares
 prevstep: getting-a-hostname
-nextstep: mongolab
+nextstep: install-game
 tags: 
 - install
 - database
 ---
 
-Penn and Tiny store their data in a single text file, but Ares uses a full database: [MongoDB](https://www.mongodb.com/). You're probably familiar with SQL databases. MongoDB is similar, but without the SQL.
+Penn and Tiny store their data in a single text file, but Ares uses a full database: [Redis](http://redis.io/).  You may already be familiar with SQL databases. Redis is similar, but without the SQL.
 
-The database is separate from the game.  Although they *can* live on the same server, I recommend using the cloud Mongo service MongoLab.  It's simple and free, and instead of using clunky command line tools you get a nice graphical interface for managing your database.  See **[Getting Started with MongoLab](/install-ares/mongolab)** for step-by-step instructions.
+If you used the [Digital Ocean](/install-ares/digital-ocean) setup instructions, Redis will already be set up for you and running on port 6379.
 
-If you prefer to run MongoDB locally on your MUSH server, see [Installing MongoDB Locally](install-mongodb).
+If you are doing your own custom server install, you will need to install Redis yourself.  The [Redis Quickstart Guide](http://redis.io/topics/quickstart) can help.

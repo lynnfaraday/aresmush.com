@@ -9,12 +9,17 @@ These are some articles related to MUSHing.
 ## RP Articles
 
 * [MUSHing 101](/mush-101) - An introduction to MUSHing.
-* [Advanced Guide to RP](/articles/advanced-guide-to-rp) - A guide to adding depth to your roleplay.
-* [Give Your RP Sparkle](/articles/give-your-rp-sparkle) - Delivering RP that sparkles.
 * [Creating MUSH Characters](/articles/creating-mush-characters) - A guide to help you flesh out your MUSH characters.
-* [Joys of Tinyplotting](/articles/joys-of-tinyplotting) - How to run a MUSH plot.
 * [Suspension of Disbelief](/articles/suspension-of-disbelief) - Reality and MUSHing.
 * [It's Only a Flesh Wound](/articles/it-s-only-a-flesh-wound) - Commentary on injuries and MUSHes.
+
+## Other People's RP Articles
+
+*These are not mine.  I have them archived here because they're awesome and sometimes they disappear on the Internet.*
+
+* [Advanced Guide to RP](/articles/advanced-guide-to-rp) - A guide to adding depth to your roleplay.
+* [Give Your RP Sparkle](/articles/give-your-rp-sparkle) - Delivering RP that sparkles.
+* [Joys of Tinyplotting](/articles/joys-of-tinyplotting) - How to run a MUSH plot.
 
 ## Admin Articles
 

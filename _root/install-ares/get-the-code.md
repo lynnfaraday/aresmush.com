@@ -10,12 +10,10 @@ tags:
 - git
 ---
 
-Log into your MUSH server shell and type this command to get the code.
+AresMUSH code lives in the [GitHub](https://github.com/lynnfaraday/aresmush) version control system.  Version control helps you track and undo changes, coordinate multiple coders, and even serves as a backup system.  If you're not familiar with the idea of version control, here's a [great tutorial](https://betterexplained.com/articles/a-visual-guide-to-version-control/) explaining why it's awesome.
 
-> **Note:** If you created your own personal fork of Ares, you should use your own clone URL instead of the main one.  It will be something like https://github.com/YOURUSERNAME/aresmush.git.  The clone URL can be found on your repository screen as explained in [Forking Ares](/code/fork-the-code#clone-url)
+If you want to use version control for your own game code, GitHub makes it easy to create your own independent version (called a "fork") of the Ares code that you can then modify to your heart's content.  It only takes a few extra minutes now, and could save you a lot of headaches in the future.
 
-    git clone https://github.com/lynnfaraday/aresmush.git
+> Forking the code is **strongly recommended** if you plan on making any big code modifications (like using a different skills system or adding economy code)
 
-The game will be put into a directory named "aresmush".  Any time you want to mess around with ares, you'll need to change into that directory on the server shell:
-
-    cd aresmush
+If you want to use GitHub for your game's version control, follow the instructions to [create your fork](/code/fork-the-code) and then come back here.

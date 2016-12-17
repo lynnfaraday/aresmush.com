@@ -6,22 +6,20 @@ layout: fs3
 
 Experience is the way a character grows and changes over time.  
 
-Experience has been completely changed in Third Edition, making it easier to raise to skills in parallel.  So it will still take a long time to raise your Firearms from 6 to 7, but your character's development isn't completely frozen in the mean time.
+Experience has been completely changed in Third Edition, making it easier to learn to skills in parallel.  It will still take a long time to raise higher skills, but your character's development in other areas isn't frozen while you're waiting.
 
 ## Experience Points
 
-Experience Points (XP) are gained periodically to reflect what your character has been learning and/or practicing during that time.  You spend them to improve your abilities.
+Experience Points (XP) are gained periodically to reflect what your character has been learning and/or practicing during that time.  You spend them to improve your abilities.  The number of XP needed to reach the next rating depends on the current rating, so higher skills take longer to learn.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:**  XP should always be spent in a way that makes sense ICly, and should be supported by RP.  Your character shouldn't just wake up one day and be a basketweaving expert.
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:**  XP should always be spent in a way that makes sense ICly, and should be supported by RP.  Your character shouldn't just wake up one day and be a basketweaving expert, or learn Swahilli with no books or people to teach it to him.
 
-XP awards and costs vary from game to game.  For an example, see **[FS3 Core](/fs3/fs3-3/core)**.
+## Spending XP
 
-## Ability Freeze
+XP represents incremental learning or practice.  You spend XP as you get it, so it's not like you save them up for months and then all of a sudden decide to learn or improve something.  You're allowed to store up a few XP just in case you forget to spend them, but ideally they should be spent weekly.
 
-Abilities are frozen for some time immediately after you exit chargen, and any time you raise them.  You cannot raise them while they're frozen.  
+## Limits on Learning
 
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** While one ability is frozen, you can still raise others.
-> 
-> For example, Dorian comes out of chargen with Medicine 5.  On her game, rating 5 is frozen for 4 months.  It only takes her 1 month to save up enough XP to raise it, but she still has to wait the full 4 months until the ability is un-frozen.  During that time, she is free to learn other things.
+Right after chargen, and after spending XP to learn an ability, you have to wait some time before you can spend XP on that ability again.  You can still spend XP on other abilities while you're waiting.
 
-Freeze times vary from game to game.  For an example, see **[FS3 Core](/fs3/fs3-3/core)**.
+XP awards, limits and costs vary from game to game.  For an example, see **[FS3 Core](/fs3/fs3-3/core)**.

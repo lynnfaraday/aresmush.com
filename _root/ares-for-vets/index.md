@@ -22,7 +22,9 @@ Ares commands have no prefix.  The who command is simply `who`. The combat comma
 
 An attempt has been made to name Ares commands consistently and intuitively to make it more approachable to new players.  For example, the player profile command is `profile` (not finger) and the build command is `build` (not dig).  
 
-At the same time, **Shortcuts** exist so veterans can use the command names you're used to.  Finger is just a shortcut for profile, and dig is a shortcut for build.  
+> **Oh no, not another set of commands!**
+>
+> Don’t worry. Thanks to the shortcuts system, you’ll find that the command names you know and love should work just fine. `finger` is just a shortcut for `profile` and `dig` is a shortcut for `build`.  In fact, Ares does its best to support **both** Penn and MUX syntax for common commands. So whether you like `@chan/join` or `addcom`, hopefully you’ll be content.  
 
 Find a missing shortcut?  Give [Feedback](/feedback)!
 
@@ -45,10 +47,8 @@ For example:   actors, actors2, actors3 will access the various pages of the act
 
 The Ares channel system attempts to support both Penn and Tiny command syntax as much as possible.  So you can use either set of commands:
 
-`chan/who <name>`
-`chan/join <name>`
-`<alias> who`  
-`addcom <name>=<alias>` 
+    chan/who <name> or <alias> who
+    chan/join <name> or addcom <name>=<alias>
 
 The default channel alias is the first 2 and 3 characters, so "Chat" would be cha <msg> and ch <msg>.  
 
@@ -56,7 +56,7 @@ You can change your alias for a given channel at any time using `channel/alias <
 
 ## Connections
 
-By default, the game will tell you when people have connected, so you don't need to subscribe to channels just to see the connection messages:
+The game can tell you when people have connected, so you don't need to subscribe to channels just to see the connection messages:
 
     Faraday has connected.
 

@@ -19,11 +19,11 @@ So what's a new player to do?
 
 Here are a number of MUSHes in different genres.  Hopefully one of them might appeal to you.  These are established games with sizeable player bases, and I have friends who recommend each of them.   
 
+* [Battlestar: Unification](http://bsgunificationmush.wikidot.com/) - Battlestar Galactica
 * [Game of Bones](http://gobmush.wikidot.com/) - Game of Thrones
 * [Star Wars: Omens](http://www.sw-omens.org/index.php?title=Main_Page) - Star Wars
 * [Serenity](http://wiki.serenitymush.com/wiki/index.php/Main_Page) - Firefly
 * [Witchcraft and Wizardry](http://wandw.wikidot.com/) - Harry Potter
-* [No Return](http://noreturn.closetgamers.com/) - Post-Apocalyptic Zombies
 
 If you don't see anything that grabs you in the list above, you have a couple of options:
 
@@ -50,7 +50,7 @@ Assuming the game looks interesting, the next step is to log in and have a look 
 
 Just as we did in the [previous tutorial](/mush-101/connecting-and-commo), we'll use a Guest character.   Logging in as a Guest is a good way to get a feel for the game's community.   Check out the "who" list.  Are there many people to play with?  Does anyone greet you when you log in?  Are they friendly?
 
-Let's check out *No Return*, the Zombie game.  Here's a short video illustrating the process:
+Let's check out *No Return*, a Zombie game that's now closed.  Here's a short video illustrating the process:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TvLEPmZaIwk" frameborder="0" allowfullscreen></iframe>
 

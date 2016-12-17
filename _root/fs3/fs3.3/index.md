@@ -52,9 +52,9 @@ Thanks to the following people for their contributions to FS3:
 
 * The designers of FUDGE and FATE, which inspired FS3.
 * The cast and crew of Battlestar Pacifica, where +combat originated.
-* Cags and David and my dad for input for the original edition of FS3.  
-* SeanCee and Boo and the crew of Aftermath for initial alpha testing on 3rd edition.
-* Orion, Andromeda, Draco and the crew of The 100 for some cool house rules I stole and general feedback.
+* @Bunting and Limmer@BSP and my dad for input for the original edition of FS3.  
+* PirateSpice and @Boo and the crew of Aftermath for initial alpha testing on 3rd edition.
+* @Roadspike, @Blu, @Avarice and the crew of The 100 for some cool house rules I stole and general feedback.
 
 # Copyright and License
 

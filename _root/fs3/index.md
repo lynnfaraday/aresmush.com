@@ -34,6 +34,9 @@ The Chargen plugin is also related, though it is general enough that it can appl
 
 **[Third Edition](/fs3/fs3-3/)** is the current version of FS3.  The documentation is web-based.
 
+
+# Old Player Guides
+
 Earlier editions had PDF or wiki-based documentation.
 
 * [First Edition](https://github.com/lynnfaraday/MUSH/tree/master/farasoftcode/Docs/FS3.1)

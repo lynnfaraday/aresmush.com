@@ -83,7 +83,7 @@ As a free action, a character may change their Stance. Stance reflects your gene
 * **Aggressive** - You are attacking aggressively with little regard for your own safety.  You get a +3 to attack, but everyone else gets a +3 to attack *you*.
 * **Defensive** - You are focusing more on *not* being hit.  Serpentine!  You get a -3 to attack, but everyone else gets a -3 to attack *you*.
 * **Cover** - You are attacking from behind hard cover, like a tree or wall.  There is no modifier to attack, but hits aimed at you have a chance of hitting the cover instead.
-* **Hidden** - You are out of sight, but can still attack as normal.  This stance just exists so that NPCs don't auto-target you when they can't see you.  It is mostly used for snipers.
+* **Hidden** - You are out of sight, but can still attack as normal. This stance just exists so that NPCs don't auto-target you when they can't see you. It is mostly used for snipers.
 
 > <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:**  Always be sure that your RP mirrors your stance.  You can't be defensive while sitting in a car, or take cover on an open plain.  Use common sense. 
 

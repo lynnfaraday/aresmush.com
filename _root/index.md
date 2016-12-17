@@ -1,10 +1,8 @@
 ---
 title: AresMUSH
 description: A New Breed of MUSH Server
-layout: default
+layout: page
 ---
-
-# AresMUSH
 
 AresMUSH is a new kind of server for MUSH games.  Don't know what a MUSH is?  It's a unique style of text-based online gaming that blends role-playing games and collaborative writing.  Check out our [MUSH 101 Tutorial](/mush-101) to learn more.
 
