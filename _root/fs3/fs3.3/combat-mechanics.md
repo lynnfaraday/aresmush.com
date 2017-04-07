@@ -72,7 +72,7 @@ Some characters may wear body armor to protect them from damage. Most armor will
 
 Armor is handled as an opposed roll between the weapon's Penetration value and the armor's Protection value, augmented by the net successes on the attack roll.
 
-> For example:  Bob is firing an Assault Rifle (penetration 4) against Harry.  It hits Harry in the chest, which is protected by his flak jacket (protection 4).   Bob got 2 net successes on the attack roll.   The system will make an opposed roll with 4 dice (Protection) versus 4 dice (Penetration + Net Successes).
+> For example:  Bob is firing an Assault Rifle (penetration 4) against Harry.  It hits Harry in the chest, which is protected by his flak jacket (protection 4).   Bob got 2 net successes on the attack roll.   The system will make an opposed roll with 4 dice (Protection) versus 6 dice (Penetration + Net Successes).
 
 Use the table below to determine the armor result:
 
@@ -136,9 +136,9 @@ All modifiers are cumulative, and are added to the percentile roll to give a fin
 
 | Roll | Result |
 | ---- |
-| 30 or less| Graze |
-| 31 - 70 | FleshWound |
-| 71 - 100 | Impaired |
+| 20 or less| Graze |
+| 21 - 60 | FleshWound |
+| 61 - 100 | Impaired |
 | 101 or higher | Incapacitated |
 
 
@@ -170,8 +170,8 @@ Notice that more of the bullseye now falls on dead air, increasing the chance of
 
 | Attacker Net Successes | Location |
 | ---- |
-| > 2 | Exactly Where Aimed |
-| 1-2 | Random roll with the bullseye centered on a different location  |
+| > 3 | Exactly Where Aimed |
+| 1-3 | Random roll with the bullseye centered on a different location  |
 | 0 (tie) | Near Miss |
 
 So each location has its own hit location chart for use in called shots. 

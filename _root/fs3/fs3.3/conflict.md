@@ -16,7 +16,11 @@ Ability Rolls should be used judiciously. RPGs are about *role*play not *roll*pl
 
 For example: If someone does a good job roleplaying their way through bluffing a guard, it probably ought to work. Likewise, if someone attempts to schmooze the princess with the worst pickup line ever, it probably shouldn’t work, no matter what you roll.
 
-You should consider using an ability roll if the character is **under significant stress**, **facing challenging circumstances** or **in conflict with another character**.
+You should consider using an ability roll if the character is: 
+
+* Under significant stress.
+* Facing challenging circumstances.
+* In conflict with another character.
 
 
 <a name="hail-mary"/>
@@ -29,7 +33,7 @@ You cannot do brain surgery with *Everyman* Medicine or fly a space shuttle with
 
 > <i class="fa fa-cubes" aria-hidden="true"></i>  **Tip:** Common sense should always trump die results.
 
-The only exception to this is if the storyteller decides to allow a "Hail Mary" roll.  If so, you can spend one or more [Luck Points](/fs3-3/luck) (at the storyteller's discretion) to get a roll out of blind luck even when one would not normally be allowed.
+A storyteller may allow you to spend one or more [Luck Points](/fs3-3/luck) to get a "Hail Mary" roll out of blind luck even when one would not normally be allowed.
 
 <a name="what-to-roll"/>
 
@@ -37,15 +41,15 @@ The only exception to this is if the storyteller decides to allow a "Hail Mary" 
 
 Before rolling, you need to figure out which Skill applies best to the task at hand.  When more than one applies equally well, you can choose the one with the highest rating.  If you don't have an applicable Skill, you can make a *Default Roll* as explained in the next section.
 
-FS3 uses 8-sided dice.  You roll a number of (virtual) dice equal to the Skill Rating plus the linked Attribute.  You can gain or lose dice through special Modifiers.   Languages and Background Skills don't have numerical ratings, but their descriptive ratings have numerical equivalents as described in [Character Generation](/fs3/fs3-3/chargen).  For example, an "Interest" Background Skill is rolled as rating 2.
+FS3 uses 8-sided dice.  You roll a number of (virtual) dice equal to the Skill Rating plus the linked Attribute.  You can gain or lose dice through special Modifiers.   Languages and Background Skills aren't normally rolled.  If you really need to, their descriptive ratings have numerical equivalents as described in [Character Generation](/fs3/fs3-3/chargen).  For example, an "Interest" Background Skill is rolled as rating 2.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i>  **Tip:** Dice to Roll = (Skill Rating * 1.5) + Linked Attribute +/- Modifiers
+> <i class="fa fa-cubes" aria-hidden="true"></i>  **Tip:** Dice to Roll = Skill Rating + Linked Attribute +/- Modifiers
 
 <a name="defaulting"/>
 
 # Defaulting
 
-If a task does not fall under an ability listed on your character sheet, you may have the chance to make a Default Roll (if it makes sense - see *When NOT to roll* above for some caveats).   You have two options:
+If a task does not fall under an ability listed on your character sheet, you may still attempt a Default Roll if the task would fall under common knowledge or is somewhat related to a skill you do have.  You have two options:
 
 * Use a semi-related skill at -3.  For instance, if you lack a Vet skill you could default to Medicine-3 to treat a hurt dog.
 * Use the Everyman rating to fall back on 'common knowledge'.  This effectively rolls Attribute + 1.
@@ -62,7 +66,7 @@ If the task is too far outside your specialty (like a paramedic attempting brain
 
 # Success Level
 
-When you roll your ability dice, any die that is a 7 or higher is counted as a success.   It only takes one success to accomplish what you set out to do.  Extra successes mean you did really well.   You can think of success levels like letter grades on a school exam.  Did you scrape by with a passing grade or score top marks?
+When you roll your ability dice, any die that is a 6 or higher is counted as a success.   It only takes one success to accomplish what you set out to do.  Extra successes mean you did really well.   You can think of success levels like letter grades on a school exam.  Did you scrape by with a passing grade or score top marks?
 
 | Rating | Description |
 | ---- |
@@ -115,8 +119,6 @@ Each Action Skill is linked to a particular Attribute, but there may be times wh
 When someone is directly opposing you, you don’t just need to do well, you need to do *better* than the opponent.  That’s where Opposed Rolls come in.
 
 Each contestant makes a roll as normal, and the one with the most successes wins.   It is also possible that nobody gets any successes and they both fail.  To determine how well the winner did, you look at the "net" successes:
-
-> <i class="fa fa-cubes" aria-hidden="true"></i>  **Tip:** Net Successes = Winner’s Successes - Loser’s Successes
 
 | Net Successes | Description |
 | ---- |

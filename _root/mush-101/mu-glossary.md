@@ -2,14 +2,14 @@
 title: MUSH 101 - MUSH Glossary
 description:
 layout: mush-101
-prevstep: important-commands
+prevstep: telling-your-story
 nextstep: learn-more
 tags: 
 - roleplay
 - characters
 ---
 
-Here are some important MUSH terms you might encounter.
+Here are some MUSH terms you might encounter.
 
 **Admin** - The administrators who run the game.  They are like the producers and directors of a TV show.   Also known as Wizards or Staff.
 

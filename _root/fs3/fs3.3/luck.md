@@ -21,7 +21,7 @@ You can spend a Luck Point for special effects.  See **[Combat](/fs3/fs3-3/comba
 
 ## Plot Points
 
-You can also spend Luck Points to affect the outcome of plots. For example: you might spend a point to have the prosecutor lose key evidence in a trial, or to get a lucky break finding a missing witness. This is entirely at the Storyteller’s discretion, and the number of points required will vary based on how much you’re pushing your luck.
+You can also spend Luck Points to affect the outcome of plots. For example: you might spend a point to have the prosecutor lose key evidence in a trial, or to get a lucky break finding a missing witness. This is entirely at the storyteller’s discretion, and the number of points required will vary based on how much you’re pushing your luck.
 
 ## Getting Lucky
 

@@ -41,7 +41,7 @@ Commands that show multiple pages of data will have a **"page 1 of x"** style fo
     --------------------------------(page 1 of 3)---------------------------------
     ==============================================================================
 
-For example:   actors, actors2, actors3 will access the various pages of the actors command.
+For example:   actors, actors2, actors3 will access the various pages of the actors command.  This works with commands that have switches too, so you can do requests2/all.
 
 ## Channels
 
@@ -58,11 +58,11 @@ You can change your alias for a given channel at any time using `channel/alias <
 
 The game can tell you when people have connected, so you don't need to subscribe to channels just to see the connection messages:
 
-    Faraday has connected.
+    %% Faraday has connected.
 
 There's a slightly different message if they connect *in your room*:
 
-    Faraday has connected here.
+    %% Faraday has connected here.
 
 If you don't like the game-wide connection messages, you can use the `watch` command to disable them entirely, or show them only for your friends.
 
@@ -75,23 +75,19 @@ So you can use:
 `mail <to>=<subject>/<message>` (Penn style) or  
 `mail <to>=<subject>` then `- <message>` composition (MUX style).
 
+## Special Characters
+
+Ares supports international languages with UTF-8, a Unicode character set that includes all sorts of accented and special characters.  You may need to [configure your client](/clients) to make this work properly, otherwise you'll see substitute boxes or other gibberish when other people try to use those special characters.
+
 ## Handles
 
 The [Handles](/handles) system lets you set up a player identity that can follow you across games and help you stay in touch with friends.  Handles have an "@" sign in front of them, like @Faraday.
 
-## Game Directory
-
-The Ares game directory contains a list of all Ares games, available on [AresCentral](/arescentral).
-
 ## Editing
 
-Ares does not have an @decompile like Penn and Tiny, but there are other tools you can use instead.
+Ares does not have an @decompile like Penn and Tiny, but there are other tools you can use instead.  Many commands take a /edit switch, which will grab the contents into your client's input buffer in the same way that @dec/tf or /grab would on Penn/Tiny.
 
-For character backups there's the `backup` command, which will dump out your character sheet, background, description and multi-desc outfits.  You can log this to a file. There's a separate `mail/backup` command for your mail.
-
-Want to make a change to your desc?  Use `desc/edit` to grab a copy of your current desc into your client's input buffer (the place where you type).  This only works on some clients and may require configuration - see `help edit` for details.  Many other commands also support a /edit mode.
-
-Editing not working in your client?  Give [Feedback](/feedback)!
+For example, want to make a change to your desc?  Use `desc/edit`.  You may need to [configure your client](/clients) to make this work properly.
 
 ## Objects and Details
 

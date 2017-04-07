@@ -11,7 +11,7 @@ One of the coolest things about MUSHes, IMHO, is the fact that time passes. Thin
 
 Most MUSHes I've seen use a 1-to-1 time scale. In 1-to-1, it's easy to remember the current IC dates and times. There's a certain symmetry, for example, in celebrating Christmas ICly when it's December RL and you're in the holiday spirit (if you don't celebrate Christmas, insert the holiday of your choice). Last but not least, it's a little easier to keep track of when things happened because you can match RL dates and IC dates and figure out, "Oh yeah, this happened 3 years ago."
 
-Of course, there are always downsides. The 1-to-1 passage of time may be too quick for roleplaying out some scenes. Like 4-to-1, you might end up doing a decent bit of retro-RP.You can also get locked into always RPing certain times. Like if you always log in during the evenings, it will always be evening for your character.
+Of course, there are always downsides. The 1-to-1 passage of time may be too quick for roleplaying out some scenes since people can't be around 24/7.  Things that take a long time in real life (pregnancies, training) take a long time in-game too, which can be frustrating.
 
 Still, 1-to-1 is a comfortable middle-ground, familiar and common.
 

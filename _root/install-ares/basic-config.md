@@ -15,11 +15,11 @@ Log into your [Server Shell](/install-ares/server-shell) with the **'ares' user*
 
 Copy/paste the following commands into the shell to run them.  If you created a [custom fork](/install-ares/get-the-code) of the AresMUSH code in the previous step, use the clone URL for your fork.  Otherwise use `https://github.com/lynnfaraday/aresmush.git`.
 
-    curl https://raw.githubusercontent.com/lynnfaraday/aresmush/master/bin/install_ares2 > install_ares2
+    curl https://raw.githubusercontent.com/lynnfaraday/aresmush/master/bin/install > install
     
-    chmod +x install_ares2
+    chmod +x install
     
-    ./install_ares2 YOUR_CLONE_URL_GOES_HERE
+    ./install YOUR_CLONE_URL_GOES_HERE
 
 This will prompt you for a few pieces of information about your game:
 
@@ -32,4 +32,4 @@ This will prompt you for a few pieces of information about your game:
 * **Website** - URL for your game (optional).
 * **Category** - Pick which category best describes your MUSH for the Ares games directory.
 
-> You can change this information later by editing the text files in the `aresmush/game/config` directory, or by running the `bin/configure` sript.
+> You can change this information later using the game's Web Portal, or by editing the text files in the `aresmush/game/config` directory.

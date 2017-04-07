@@ -27,5 +27,3 @@ If you used the [Digital Ocean](/install-ares/digital-ocean) setup instructions,
 ## Connecting through a Client
 
 You can also connect to your server using a telnet client like [PuTTY](http://www.putty.org/) for Windows or the terminal 'telnet' command on Mac/Linux.
-
-If you want to connect securely with a SSH client, see Digital Ocean's article on [SSH Keys](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-putty-on-digitalocean-droplets-windows-users).

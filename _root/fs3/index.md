@@ -10,38 +10,19 @@ tags:
 - xp
 ---
 
-FS3 (Faraday's Simple Skill System) is RPG system designed for MUSHes.  While inspired by traditional tabletop RPGs, it has some important differences.   These are the hallmarks of FS3:
+FS3 (Faraday's Simple Skill System) is RPG system designed for MUSHes.  FS3 is:
 
 * **Fast and Easy** - FS3 takes a simple approach to abilities and highlights skills that are relevant to gameplay.  The goal is to get you through Chargen and reviewed as fast as possible.
-
-* **Predictable** - FS3 dice mechanics are less random than many other game systems.  Chance is still a factor, of course, but fluke results are less common.
 
 * **Roleplay-Friendly** - FS3 has a lightweight conflict resolution and combat system that leaves a lot open to player interpretation.  This frees you to focus on the story, not the dice.
 
 # FS3 and Ares
 
-FS3 comes standard in AresMUSH.  It is implemented as a family of plugins which all interact with and depend on each other.
-
-* Skills
-* Character Sheet
-* Experience (XP)
-* Combat
-* Luck
-
-The Chargen plugin is also related, though it is general enough that it can apply to systems other than FS3.
+FS3 comes standard in AresMUSH, implemented in the FS3Skills and FS3Combat plugins.
 
 # Player Guides
 
-**[Third Edition](/fs3/fs3-3/)** is the current version of FS3.  The documentation is web-based.
-
-
-# Old Player Guides
-
-Earlier editions had PDF or wiki-based documentation.
-
-* [First Edition](https://github.com/lynnfaraday/MUSH/tree/master/farasoftcode/Docs/FS3.1)
-* [Second Edition](https://github.com/lynnfaraday/MUSH/tree/master/farasoftcode/Docs/FS3.2)
-
+**[Third Edition](/fs3/fs3-3/)** is the current version of FS3.  You can view its documentation [on the web](/fs3/fs3-3/).
 
 ## Copyright and License
 

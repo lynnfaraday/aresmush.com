@@ -15,6 +15,8 @@ dark red: 411300
 
 */
 
+
+
 body {
     color: #000;    
     background-color: #000;
@@ -24,8 +26,10 @@ body {
 
 .page-block {
     background-color: #fff;
-    margin: 0% 5% 0% 5%;
-    padding: 1%;
+    margin: 0% 2% 0% 2%;
+    padding: 0 0 0 1%;
+    min-height: 100%;
+    
 /*   border-top: 2px solid #CF895D;  */
 
 }
@@ -33,6 +37,7 @@ body {
 
 .page {
     background-color: #fff;
+    
 /*    padding: 0px 25px 25px 25px; */
    /* margin: 0px 25px 25px 0px; */
 }
@@ -61,7 +66,7 @@ body {
 
 .cover {
     text-align: center;
-    background-color: #eee;
+    background-color: #FFFCF6;
     
 }
 .cover img {
@@ -71,7 +76,7 @@ body {
 
 
 .post-metadata {
-    background-color: #eee;
+    background-color: #FFFCF6;
     text-align: center;  
 }
 
@@ -218,11 +223,13 @@ a:active {color:#0B5141;}  /* selected link */
 }
 
 .sidebar {
-    margin: 15px 0px 15px 40px;
-    background: #eee;   
-     border-radius: 7px; 
+    margin: 0px 0px 0px 10px;
+    background: #FFFCF6;   
+     /*border-radius: 7px; */
      border: 1px dotted #CF895D;
      padding: 10px;
+     min-height: 100vh;
+     height: 100%;
 }
 
 .sidebar-title {
@@ -273,7 +280,7 @@ a:active {color:#0B5141;}  /* selected link */
     right: 50px;
     background-color: #000;
     display: none;
-    color: #eee;
+    color: #FFFCF6;
     padding: 5px 25px 5px 25px;
     margin: 5px;
     border: 1px solid #fff;
@@ -290,7 +297,7 @@ a:active {color:#0B5141;}  /* selected link */
 
 .nav-section {
     margin-top: 20px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #FFFCF6;
     color: #ccc;
 }
 
@@ -475,8 +482,11 @@ border: 1px solid #300000;
 border: 1px solid #001D1D;
 border-radius: 10px;
 background-color: #ddd;
-*/
-background-color: #eee;
+
+background-color: #FFFCF6;
+    */
+    background-color: #FFFCF6;
+    color: #;
 border: 0px;
 border-left: 1px solid #CF895D;
   -webkit-margin-before: 1em;
@@ -594,6 +604,7 @@ li {
 }
 
 
+
 /* ------------------------
    REACTIVE DESIGN
    ------------------------
@@ -669,7 +680,7 @@ li {
     padding-top: 20px;
     border-left: 1px dotted #CF895D;;
     border-bottom: 1px dotted #CF895D;
-    margin: 10px;  
+/*    margin: 10px;   */
 }
 
 

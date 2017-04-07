@@ -28,8 +28,6 @@ FS3 works best with broad Action Skills, because otherwise you end up with a gaz
 
 Don't add specialties for every skill or it gets silly.  Reserve them for the ones that truly need some degree of oversight.  On a BSG game it might be important to know whether your pilot knows Vipers, Raptors or both.  On a modern game, does it really matter what kinds of planes they can fly?  Probably not.
 
-If you want to limit specialties further, you can say that they can't buy a second specialty until their skill is at 4 (Professional) and can't buy a third one until their skill is at 6 (Expert).
-
 # Ability Point Limits
 
 One of the common criticisms of FS3 is that it encourages min/max-ing in chargen.  In large part this is due to people not having enough points in chargen to make the character they want to make.  So they have to shave points in chargen and buy them up later with XP.
@@ -38,11 +36,12 @@ This is silly.  If you're not going to allow enough points to support a particul
 
 ## Setting Limits
 
-The default limit of 40 AP in FS3 Core is designed around these factors:
+The default limit of 45 AP in FS3 Core is designed around these factors:
 
 * 8 AP to raise a few attributes to above-average levels.
-* 6 AP to get the 3 "everybody has them" abilities (Athletics, Composure, Alertness) to at least rookie level.
-* 8 AP to get 2 profession-specific action skills to veteran level.  For example, a marine would have Firearms and Melee.  A pilot would have Piloting and Gunnery.
+* 6 AP to get the 3 "everybody has them" abilities (Athletics, Composure, Alertness) to at least amateur level.
+* 5 AP to cover the 'basic training' military skills that everyone has.
+* 8 AP to get two profession-specific action skills to professional levels.
 * 18 AP to spread around other things to make you cool.
 
 If you have substantially more "everybody has them" abilities or more than two profession-specific skills, you should consider raising the bar accordingly.
@@ -57,9 +56,9 @@ Side note about age:  I'm not a fan of flat age brackets.  You end up with a lot
 
 Games are encouraged to use the full range of ability levels, with the exception of the **Legendary** skill level, which is truly meant to reflect epic levels of awesomeness.
 
-Too often, games curtail people.  For example, refusing to approve rookie pilots with, y'know, the Rookie skill level or veteran pilots with high skills.  When you do that, you effectively take a game that's tuned for dice ranges from 2-12 and smush it down into 4-9.  Everyone starts to blend together.
+Too often, games curtail people.  For example, refusing to approve rookie pilots with low skills or veteran pilots with high skills.  When you do that, you effectively take a game that's tuned for dice ranges from 2-12 and smush it down into 4-9.  Everyone starts to blend together.
 
-There's really not a huge advantage between higher skill levels once you get above 5.  Don't be too worried that you're going to hugely unbalance the game by allowing a couple 6's or even 7's.
+There's really not a huge advantage between higher skill levels once you get above 5.  Don't be too worried that you're going to hugely unbalance the game by allowing a couple 6's.
 
 # Experience / Advancement
 
@@ -77,6 +76,8 @@ There is no right or wrong here; it is a question of style and preference.  But 
 * It's a bit jarring to restrict starting levels in chargen ("sorry, you don't have enough experience to justify a rating 6 in that skill") and then let characters advance to level 6 in a few months of game play.
 * Carrot on a stick model works best when people start off at low levels (as MMOs/tabletop RPGs do).  When you let people start as experts and *still* expect continuous advancement, you can quicly reach godlike power levels.  It can also lead to some glaring disparities between veteran characters and people fresh out of chargen.
 * Reward-based advancement can lead to OOC sour grapes if people are unable/unwilling to do certain things due to time/temperment/etc.  It can also create a have/have-not splintering of power levels.
+
+All of these reasons are why FS3 Core takes an approach of giving you lots of points to start off cool if you want to be an expert, but then has slow advancement thereafter.
 
 # Combat Abilities
 

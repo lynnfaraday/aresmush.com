@@ -10,4 +10,4 @@ Information you give to Ares Central is used to enable AresMUSH features, such a
 
 We will not disclose your OOC information to a third-party (including other players) without your consent, except as required by law.  We will not use it to spam or hassle you.
 
-> **Important!** We have no control over what individual AresMUSH game staff does with data on their games.  Anything you type into a game window could potentially be stored.  You should consult the privacy policy of your games for more information.
+> **Important!** We have no control over what individual game staff does with data on their own games.   Anything you type into a game window could potentially be stored.  You should consult the privacy policy of your games for more information.  If they don't have one, be wary.

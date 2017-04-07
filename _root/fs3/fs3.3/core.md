@@ -8,7 +8,7 @@ FS3 Core is the game configuration that comes with the default FS3 installation.
 
 ## AP Limits
 
-Maximum: 40 AP
+Maximum: 45 AP
 
 ## Attributes
 
@@ -33,7 +33,7 @@ Maximum: 40 AP
 |Gunnery |Reflexes |Vehicle and heavy weapons. |
 |Medicine|Wits |Tending to the ill and injured.  Requires Specialty:  Doctor, Surgeon, Nurse, Medic, Other|
 |Melee |Brawn |Fighting with fists, knives, and hand-to-hand weapons.|
-|Piloting|Reflexes |Flying air and spacecraft.  Requires Specialty:  Viper, Raptor, Freigher, Other|
+|Piloting|Reflexes |Flying aircraft.|
 |Stealth |Reflexes |Being sneaky.|
 |Technician|Wits|General mechanics/electronics and fixing things.|
 

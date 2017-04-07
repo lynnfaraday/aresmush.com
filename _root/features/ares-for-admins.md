@@ -15,19 +15,22 @@ The basic Ares installation includes not only the server itself (like Penn and T
 
 ## Easy Configuration
 
-No need to mess around with attributes and objects to configure your game.  Everything is done through plain-text configuration, accessible through the game's website.  And the tutorials will walk you through everything you need to do.
-
-_Note: If you need to do something highly specialized, you will probably need to dive into the code.  But don't worry - [coding for Ares](/features/ares-for-coders) is fun._
+There's no need to mess around with coded attributes and objects to configure your game.  Everything is configurable through the game's web interface, and the tutorials will guide you through the process.
 
 ## FS3
 
-AresMUSH comes with the [FS3 Skills and Combat System](/fs3) built in, but the plugins system enables you to strip that out and code your own system instead.
+AresMUSH comes with the [FS3 Skills and Combat System](/fs3/fs3-3) built in, providing a complete character creation and conflict resolution system.   You can take this out and substitute your own skills system instead, but that will require coding effort.
 
 ## A Real Database
+
 Ares uses Redis, an up-and-coming database system. Using a standard database makes it easy to get at your data, make backups, or even integrate it  with a website.
 
 ## Built-In Advertising
-No need to log into a bunch of other games to post ads for your MUSH.  With the AresCentral game directory, your game's information will be available to everyone.  
+
+No more spamming ads on bulletin boards.  With the AresCentral game directory, your game's information will be available to everyone.  
 
 ## International Support
-Ares is designed with international games in mind, supporting translations and Unicode characters. Currently the game is only translated into English, but you can add your own translations.  If you are interested in sharing your translations, please [contact us](/feedback).
+
+Ares is designed with international games in mind, supporting translations and special characters (Unicode). Currently the game is only translated into English, but you can add your own translations.  
+
+If you are interested in sharing your translations, please [contact us](/feedback).

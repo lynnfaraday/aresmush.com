@@ -6,6 +6,10 @@ layout: page
 
 These are some articles related to MUSHing.
 
+## Tutorials
+
+For AresMUSH tutorials, see the [Tutorials](/tutorials) page.
+
 ## RP Articles
 
 * [MUSHing 101](/mush-101) - An introduction to MUSHing.

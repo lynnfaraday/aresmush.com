@@ -48,9 +48,13 @@ Someone must be responsible for posing for the NPC and entering their actions in
  
 > <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** If you are only joining combat to run NPCs, you should join using the "Observer" type so you're not accidentally targeted by people.
  
-NPCs and PCs are treated fundamentally the same in combat. You target a NPC just by using his name, and there are versions of every combat command that allow you to specify a NPC as the actor. Only one exception: KO’d NPCs are immediately removed from the combat. They cannot be treated, rallied, or revived with a hero roll. 
+NPCs and PCs are treated fundamentally the same in combat. You target a NPC just by using his name, and there are versions of every combat command that allow you to specify a NPC as the actor. 
+
+All combat commands can take a NPC name and equal sign in front to control a NPC.  For instance, `combat/pass MyNPC=` or `combat/attack MyNPC=Target`.
  
 > <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** The NPC versions of commands also work on PCs too, in case someone is AFK or disconnected and you need to set their action for them.
+
+KO’d NPCs are immediately removed from the combat. They cannot be treated, rallied, or revived with a hero roll. 
 
 # Teams and Targets
 

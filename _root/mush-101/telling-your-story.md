@@ -2,16 +2,36 @@
 title: MUSH 101 - Telling Your Story
 description:
 layout: mush-101
-prevstep: joining-the-cast
-nextstep: important-commands
+prevstep: connecting-and-commo
+nextstep: mu-glossary
 tags: 
 - roleplay
 - plots
 ---
 
-In this part of the MUSH 101 tutorial, we will cover how to join the ongoing story with your character.  
+In this part of the MUSH 101 tutorial, we will cover how to create a character and start telling stories.
 
-## What to Play
+## Joining the Cast
+
+So far we've used a guest character to log in and chat with people.  But to play the game fully, you'll need a character of your own.  First, you'll need a name.  MUSH character names are usually the character's first name, but sometimes people use a last name or a nickname.  Be consistent with the game's setting (e.g. don't be Lancelot on a zombie game or Bob in a fantasy one) and avoid picking names that come directly from books and movies (e.g. no Skywalkers).
+
+{{#pretty-image}}/assets/media/postpics/genre-mixup.jpg{{/pretty-image}}
+<div class="caption">Some themes just don't go together.</div>
+
+Once you've got your name in mind, make your character using these steps:
+
+
+1. Quit the game by clicking 'disconnect' in your MUSH client.
+2. Click 'reconnect' to connect again.  
+3. Instead of connecting to an existing character this time, type `create <name> <password>` to make a new one.
+
+Congratulations – you have your very first MUSH character!
+
+## Chargen
+
+Many games require you to flesh out your character in a process called Character Generation (Chargen for short).  You'll often choose some **Skills** to quantify what your character is good at, write a **Description** so other players know what they look like, and possibly even a short **Background Profile** (like a mini biography).  These details will be reviewed by the game's administrators to make sure that the character is a good fit for the game.  Once you're reviewed and approved, you'll be able to play.
+
+## Stories of All Shapes and Sizes
 
 A MUSH will have plots of different shapes and sizes, just like a TV show.
 
@@ -24,8 +44,7 @@ A lot of scenes are just **fluff**, filling the time between plotlines.  Fluff s
 {{#pretty-image}}/assets/media/postpics/bar-scene.jpg{{/pretty-image}}
 <div class="caption">Bars are popular hangouts on MUSHes, just like in real life.</div>
 
-
-## Anatomy of a Scene
+## Starting a Scene
 
 The primary storytelling element on a MUSH is the scene.  It's just like a scene in a novel or a TV show – a snapshot of the characters' lives.   There are several steps toward making a scene a successful.
 
@@ -48,14 +67,6 @@ Figuring out what to play can be the hardest part.  Sometimes it will be obvious
 A MUSH has an entire virtual world available.  Where is your scene going to be set?  The hospital?  The bar?  The woods outside of town? 
 
 The easiest scene to do on any MUSH is a 'meet and greet' at a public place, like a bar, a park, or the town square.  Once you get familiar with a MUSH, you'll learn where the popular hangouts are.   When you're new, don't be afraid to ask.
-
-How do you find locations?  When you first create your character, they're usually in the Offstage (or OOC – Out of Character) area of the game.   This is where players hang out when they're not actually playing.  
-
-> Why would you log into a game and not play?   MUSHes are social communities.  Sometimes you just want to have the game open like a chat window while you're working or watching TV.   Or maybe you've made plans to do a specific scene with someone when they log in later, or you're doing some behind-the-scenes activities.  Whatever the reason, not everyone who's online is available for roleplay.
-
-To get to the actual virtual world – the Onstage (or IC – In Character) area of the game, you use the `+ic` or `onstage` command.   Once you're there, you can navigate around the game world until you find a place to set your scene.  This video shows you how to navigate around a MUSH.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gkDVL3ld7GA" frameborder="0" allowfullscreen></iframe>
 
 ### Set the Scene
 
@@ -109,7 +120,3 @@ Once you've gotten the basics down, I highly recommend reading the article [Give
 Whether a scene has reached its natural conclusion, or it must be cut short due to pesky thing called real life, all good scenes must come to an end.  Here's how that motorcycle scene ended, after a little chat by the runway.
 
 > Cate smiles a little, "I'll see you," she yells back over the motor. She watches him drive away for a few moments before tucking the earbuds back in her ears and returning to her chilling out.  
-
-## Next Steps
-
-Now you know how to run a scene.  Keep reading for the next part of the tutorial: [Important Commands](/mush-101/important-commands).

@@ -6,11 +6,9 @@ layout: fs3
 
 # What is FS3?
 
-FS3 (Faraday's Simple Skill System) is RPG system designed for MUSHes.  While inspired by traditional tabletop RPGs, it has some important differences.   These are the hallmarks of FS3:
+FS3 (Faraday's Simple Skill System) is RPG system designed for MUSHes.  FS3 is:
 
 * **Fast and Easy** - FS3 takes a simple approach to abilities and highlights skills that are relevant to gameplay.  The goal is to get you through Chargen and reviewed as fast as possible.
-
-* **Predictable** - FS3 dice mechanics are less random than many other game systems.  Chance is still a factor, of course, but fluke results are less common.
 
 * **Roleplay-Friendly** - FS3 has a lightweight conflict resolution and combat system that leaves a lot open to player interpretation.  This frees you to focus on the story, not the dice.
 
@@ -18,7 +16,7 @@ FS3 (Faraday's Simple Skill System) is RPG system designed for MUSHes.  While in
 
 With just a few tweaks to the skill and weapons lists to make them fit the setting, FS3 can be used for anything from Wild West to Battlestar.  In this way, it is similar to generic RPG frameworks like D20 or FATE.
 
-However, FS3 is designed with near-modern cooperative games in mind.  Before trying to adapt it to a different kind of game, consider the advice in [Choosing FS3](/fs3/fs3-3/choosing-fs3).
+However, FS3 is designed with **near-modern cooperative** games in mind.  Before trying to adapt it to a different kind of game, consider the advice in [Choosing FS3](/fs3/fs3-3/choosing-fs3).
 
 As with any RPG system, be aware that different games will have their own "house rules".
 
@@ -33,8 +31,8 @@ Since FS3 is designed for MUSHes, it is provided as a complete codebase.  FS3.3 
 * Skill Ratings go from 0-8 instead of 1-12, with better descriptions of what the different levels represent.
 * Changed the dice mechanic slightly, increasing successes.  
 * Attributes have been expanded, and you can now raise them with XP.
-* Background and Language skills now have more descriptive ratings.
-* New XP system, making it easier to raise other skills while waiting for a big raise.
+* Background and Language skills now have a condensed, descriptive rating scale.
+* A XP system makes it easier to raise other skills while waiting for a big raise.
 * Quirks are gone, replaced by RP Hooks.
 * Defaulting works differently.  You no longer use the Attribute by itself, but roll the skill at the special new "Everyman" rating to reflect common knowledge.  This becomes Attribute+1.  With the target number change, this actually gives you a better chance of success than previously rolling 2x the attribute.
 
@@ -55,6 +53,8 @@ Thanks to the following people for their contributions to FS3:
 * @Bunting and Limmer@BSP and my dad for input for the original edition of FS3.  
 * PirateSpice and @Boo and the crew of Aftermath for initial alpha testing on 3rd edition.
 * @Roadspike, @Blu, @Avarice and the crew of The 100 for some cool house rules I stole and general feedback.
+
+Documents for earlier editions are archived on [GitHub](https://github.com/lynnfaraday/MUSH/tree/master/farasoftcode/Docs).
 
 # Copyright and License
 

@@ -52,7 +52,7 @@ Both treat and rally should only be used when appropriate.  You can't treat some
 
 ## Creative Actions
 
-Don't feel restricted by the combat system.  If what you want to do isn't precisely reflected by the available actions, you can get creative - like using Subdue to model a disarm, or Suppress to see if you can distract an enemy who's attacking your buddy.  If nothing fits at all, just use a **Pass** action and let the storyteller figure out the results manually.
+Don't feel restricted by the combat system.  If what you want to do isn't precisely reflected by the available actions, you can get creative - like using Subdue to model a disarm, or Suppress to see if you can distract an enemy who's attacking your buddy.  If nothing fits at all, just use a **Pass** action and figure out the results manually.
   
 ## Free Actions
 

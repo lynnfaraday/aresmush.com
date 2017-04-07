@@ -29,7 +29,7 @@ There's also a "builder" character:
     Username: Builder
     Password: change_me!
 
-You can rename them if you like.
+You can rename them if you like.  Be sure to log them in and change their passwords!
 
 ## Customization
 

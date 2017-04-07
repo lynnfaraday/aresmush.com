@@ -19,7 +19,7 @@ First you'll need to [sign up](http://www.digitalocean.com/?refcode=5c07173bc1f2
 
 > **Full Disclosure:** I get a referral bonus from DO if you sign up using [this referral link](www.digitalocean.com/?refcode=5c07173bc1f2), but so do you!  You get $10 in credit, and the referral bonus helps keep the doors at [AresCentral](/arescentral) open.
 
-Digital Ocean's pricing may be confusing, because they list both an hourly and a monthly cost.  The monthly rate just assumes that your server is running 24/7 for the whole month, which is what a MUSH does.
+Digital Ocean's pricing lists both an hourly and a monthly cost.  The monthly rate just assumes that your server is running 24/7 for the whole month, which is what a MUSH does.
 
 ## Create a Droplet
 
@@ -27,13 +27,9 @@ A "droplet" is just what DO calls a server.   To create a new droplet, log into 
 
 1. Select an image.  Click the "One-Click Apps" tab and select the "Redis" app (for example, it is currently "Redis 3.2.1 on 14.04" but the numbers may change over time).
 {{#pretty-image}}{{urls.media}}/install-ares/droplet.png{{/pretty-image}}
-2. Select a size.  The $5/month droplet size meets all of Ares' [System Requirements](/install-ares/system-requirements), but you'll want to get the $10/month droplet size if you also plan on running a website or other things on the server.
+2. Select a size.  The $5/month droplet size meets all of Ares' [System Requirements](/install-ares/system-requirements), but the $10/month droplet will give you more horsepower to run other apps and better performance.
 3. Don't add block storage.
 4. Select a region close to you.
 5. Don't add additional options.
 6. If you're familiar with SSH and wish to connect using a SSH client, see Digital Ocean's article on [SSH Keys](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-putty-on-digitalocean-droplets-windows-users).  Setting up a SSH key is beyond the scope of this tutorial.
 7. Select 1 droplet, and enter a name for it (like 'ares').
-
-## Website
-
-The Ares installation scripts will set up the Nginx web server.  You can add web files to the `/usr/share/nginx/html` directory.

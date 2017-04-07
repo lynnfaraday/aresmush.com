@@ -6,11 +6,7 @@ layout: fs3
 
 Character creation in FS3 is meant to be quick and easy.
 
-# Web App
-
-Try out the <a href="https://fs3chargen.herokuapp.com/">FS3 Character Generator</a> web app.  (In Alpha Testing)
-
-<a name="background"/>
+<a name="concept"/>
 
 # Concept
 
@@ -108,7 +104,7 @@ A few tips about Action Skills:
 
 ### Specialties
 
-Some Action Skills are so broad that you need to pick a specialty.  For instance, your paramedic's "Medicine" skill might be really good, but it doesn't cover brain surgery.  If you take a specialized ability higher than Everyman, you must choose a specialty.
+Some Action Skills are so broad that you need to pick a specialty.  For instance, your paramedic's "Medicine" skill might be really good, but it doesn't cover brain surgery.  If you take a specialized ability higher than Amateur, you must choose a specialty.
 
 ### Buying Action Skills
 
@@ -159,7 +155,7 @@ Like Background Skills, Language Skills have more descriptive ratings.
 * **Conversational** - You can get by, but your phrasing is sometimes awkward and your vocabulary incomplete.  Rolled as rating 4.
 * **Fluent** - You are fully fluent in the language.  Rolled as rating 6.
 
-Your reading level is assumed to be on par with your speaking level, unless otherwise specified by staff.
+Your reading level is assumed to be on par with your speaking level, unless otherwise specified.
 
 ### Buying Languages
 

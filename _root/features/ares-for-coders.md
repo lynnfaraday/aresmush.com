@@ -10,13 +10,11 @@ AresMUSH leaves behind the softcode legacy of Penn and Tiny and provides a radic
 
 ## Ruby
 
-All Ares code uses a standard high-level language: Ruby.  Ruby is a lot easier to learn than traditional MUSH softcode. There are a lot more Ruby programmers than softcode programmers, as well as books and references on the subject.
-
-## Engine
-Ares uses a central engine to handle basic infrastructure, like configuration and connections.  You probably won't ever have to touch the engine code; it's the backbone that makes Ares work.
+All Ares code uses a mainstream high-level language: Ruby.  Ruby is a lot easier to learn and decipher than traditional MUSH softcode. There are a lot more Ruby programmers than softcode programmers, as well as books and references on the subject.  You can get an interactive 15-minute intro to Ruby at [tryruby.org](http://tryruby.org/levels/1/challenges/0).
 
 ## Plugins
-Unlike in Penn and Tiny, standard functionality is not a part of the engine.  Every system is implemented as a [Plugin](/plugins).  Here are just a few of the plugins that come with every Ares install:
+
+Every major system is implemented as a [Plugin](/plugins).  Here are just a few of the plugins that come with every Ares install:
 
 * Posing and Pages
 * Rooms and Movement

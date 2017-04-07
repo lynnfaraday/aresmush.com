@@ -10,7 +10,7 @@ AresMUSH is designed with three goals in mind:
 
 ## Make it Easier to Create a Game
 
-There’s an old saying for folks wanting to create a MUSH: “Step 1: Find a coder.” It’s true, but silly. Coding should be an afterthought, not your primary concern. The ultimate goal for Ares is to provide a complete MUSH in a box that can be installed and configured by people with no prior code experience.  Ares includes:
+Existing MUSH clients effectively require you to have a coder on board before you can make a game.  Coding should be an afterthought, not your primary concern. Ares provides a complete MUSH-in-a-box that can be installed and configured by people with no prior code experience.
 
 Learn more at [Ares for Admins](/features/ares-for-admins).
 
@@ -22,6 +22,6 @@ Learn more at [Ares for Players](/features/ares-for-players).
 
 ## Make it Easier to Code
 
-Some games will need advanced customizations or theme-specific code. Traditional MUSH softcode is hard to learn and work with, and the server hardcode is difficult or impossible to change. Ares uses a high-level programming language (Ruby), and a plugin system to make coding easier, more flexible, and more pleasant.
+Some games will need advanced customizations or theme-specific code. Traditional MUSH softcode is hard to learn and work with, and the server hardcode is difficult or impossible to change. Ares uses a mainstream programming language (Ruby), and a plugin system to make coding easier, more flexible, and more pleasant.
 
 Learn more at [Ares for Coders](/features/ares-for-coders).

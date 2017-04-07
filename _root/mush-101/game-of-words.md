@@ -13,8 +13,6 @@ Virtual reality and 3D games may be the next big thing, but for almost thirty ye
 
 A **MUSH** is a multi-player online game that blends creative writing, improv acting and role-playing into a unique interactive storytelling experience.
 
-> Fun Fact:  MUSH isn't really an acronym, even though it looks like one.  The name is a nod to an older kind of online game called a MUD (Multi-User Dungeon), but the "SH" doesn't mean anything.
-
 ## A Story and a Game in One
 
 
@@ -36,7 +34,7 @@ It may look more like a novel than a game, but a MUSH does have rules to keep th
 
 ## Virtual Worlds
 
-Like a video game, a MUSH provides a virtual world for the characters to inhabit.  The main difference is that it uses text instead of graphics to describe the locations.  For example:
+Like a video game, a MUSH provides a virtual world for the characters to inhabit.  The main difference is that it uses text instead of graphics to describe the locations.
 
 {{#pretty-image}}/assets/media/postpics/mush-room.png{{/pretty-image}}
 <div class="caption">A MUSH room description.</div>
@@ -57,10 +55,6 @@ In a MUSH scene, you and the other players take turns, round-robin style, each w
 
 The catch is – this all happens "live" in real-time, and the story isn't decided in advance.  You start with a rough idea for a scene, based on whoever happens to be online at that moment, and just run with it.   Being forced to come up with plot and dialogue on the spot is a great way to hone your writing skills, and it can be fun to write a story collaboratively.
 
-Some MUSHes, like *Sweetwater*, run for years.  Players come and go.  Characters develop their own personal story arcs, growing and changing.  It's a very dynamic environment.  Here's a summary of my character Emma's storyline from *Sweetwater*.  Yes, MUSH can be a bit like soap operas at times.  It is fantasy, after all.
+Some MUSHes, like *Sweetwater*, run for years.  Players come and go.  Characters develop their own personal story arcs, growing and changing.
 
-{{#pretty-image}}/assets/media/postpics/character-page.png{{/pretty-image}}
-
-## Next Steps
-
-With MUSHes in every genre, there's something out there for everyone.  All it takes to play is an Internet connection and some imagination.  To get started, check out the next part of this tutorial: [Connecting and Communicating](/mush-101/connecting-and-commo).
+With MUSHes in every genre, there's something out there for everyone.  All it takes to play is an Internet connection and some imagination.

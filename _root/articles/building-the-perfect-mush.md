@@ -5,25 +5,25 @@ layout: story
 author: Linda Naughton ("Faraday")
 ---
 
-## THE PERFECT MUSH
+## The Perfect MUSH
 
 So what's the ultimate solution for the 'Perfect MUSH'? I don't think it exists. In any game, there will always be tradeoffs - tradeoffs between reality and fun, between speed and complexity, etc. People like different things. One person will say, "This combat system is great! I don't have to worry about all these minute details!", while another person is carefully composing a list of the minute details you've "overlooked" which he hopes will be added in the near future. You can't please everyone, but you can often shoot for compromises.
 
 When creating a MUSH, there are a lot of things to consider. This document is meant to highlight certain issues/problems with MUSHes in general, and makes some recommendations on each. I'll say one thing up front -- these ideas won't work for everybody and there are some cases where things mentioned here don't fit at all. To each his own. But hopefully this document might allow you to see some alternate viewpoints so you can come up with YOUR own solutions for your own MUSH.
 
-## MAN THIS JOINT IS JUMPING
+## Man This Joint Is Jumping
 
 It doesn’t really matter which theme you choose, as long as the plot is dynamic. Things have to HAPPEN in the mush, be it an invasion, plague, a band of outlaws raiding the town, a power outage, a food shortage, a natural disaster or what. The exact dynamic aspects are drawn from the theme of the game itself, but some themes find it easier to incorporate the dynamics than others. The key is having staff-guided TPs every once in a while to keep the game moving along.
 
 One big TP every two or three months should be enough to appease the masses without getting carried away and swamping the staff with work.
 
-## IN LOVE AND WAR
+## In Love and War
 
 You put a war into the game and you’ve got instant dynamics. In some settings the war is the focus (like on Star Wars), but it doesn’t have to be in order to create dynamics. The war back home is a significant issue; how it affects peoples' lives as loved ones go off to fight in the conflict, or are killed, or are decorated for heroics, etc. Supply rationing, spies, propaganda, blackouts, bombing raids - all are sources of TPs or just general RP in a war-driven society.
 
 If the war plays a main role, then opportunities for folks playing soldiers is a biggie to consider. Will they be able to actually RP out their jobs (be it commando raids or starfighter duels) or will they be doomed to forever idle in the command center?
 
-## WE DON’T NEED ANOTHER HERO
+## We Don't Need Another Hero
 
 A vast majority of players on a MUSH wants to be the hero. They want the chance to affect the world in which their characters live, and not just sit back and watch the world go by. Playing an everyday person is rather boring. We all do it in our regular lives, and one shouldn’t be forced to do it on a MUSH as well. There are only so many times you can meet someone on the street and talk about the weather in the IC world before you’re about ready to scream. Yet many MUSHes force the characters to be average everyday folks, and just about all of them *encourage* it.
 
@@ -33,7 +33,7 @@ The trick is to create a MUSH where it makes *sense* for everybody to be a poten
 
 It’s all a matter of focus. It’s impossible to please everybody entirely, but if you choose a focus that will allow the greatest majority of the people an opportunity to be someone "special" then you’re going to have much happier players.
 
-## BUT I WANNA BE A PILOT!
+## But I Wanna Be a Pilot
 
 Go to almost any MUSH and you'll hear the same things: "All our pilot slots are filled." "There can only be 4 Vampires in this clan and we've got four." "We don’t need any more shadowrunners, sorry."
 
@@ -45,7 +45,7 @@ Instead of focusing on the lives of the everyday folks, this theoretical MUSH wo
 
 There is one caveat on this section. I have no objection to limiting player positions on the basis of *theme*. If there are only 12 fighter pilots on the MUSH's main cruiser, or if there are only 10 Vampires in a given clan (with no possible room for expansion) then it's ok to limit the number of positions. The main point is to look at whether you're limiting the positions because it makes sense in the theme, or because you just don't want the players to change the focus of the MUSH by having too many of one type of character.
 
-## FASTER THAN A SPEEDING BULLET!
+## Faster Than a Speeding Bullet
 
 While I believe in giving players the freedom to choose their occupation without so many limits (see "But I wanna be a pilot" above), not everyone is a super-genius super-leader super-strong master-of-all-trades hero type. If there are 500 pilots in the theme, then it doesn't make sense to restrict players so that only 12 players can RP pilots. On the other hand, if there are only 10 people in the universe with "ExtremelyHigh" Charisma, you don’t want to allow everybody to have it.
 
@@ -60,7 +60,7 @@ A skills/stats system in my mind has three main purposes.
 
 Folks take it better if the judge says "Ok.. make an athletics check to see if you fall off the cliff" and the numbers say "Joe is VeryUnsuccessful on his Athletics Check!", instead of the judge just deciding arbitrarily.
 
-## ASHES TO ASHES
+## Ashes to Ashes
 
 Which brings me incidentally to another point: Character death. People die. Especially in times of war, or conflict, or if you go and do something stupid like getting caught for committing a capitol crime. But it truly, truly sucks to see a character who you’ve put so much time and effort into (and who, for some players, is their own alter-ego) get killed. So for that reason, I think that it’s important to treat character death very carefully.
 
@@ -70,7 +70,7 @@ There are situations where character death cannot logically be avoided, but ther
 
 One idea I’ve always liked is from the Top Secret: SI game system. Characters were given "Luck Points" which they could spend to save their butt. A similar idea to Force Points in the Star Wars RPG, but more powerful. When spent, they’d give your character an ‘out’ of some sort. It doesn’t have to be something that gets them off the hook completely, but when dealing with character death (which includes pseudo forms of death like life imprisonment or brainwashing) - it's usually best to show some compassion.
 
-## IT’S ONLY A FLESH WOUND!
+## It's Only a Flesh Wound!
 
 Related to the topic of character death is character injury. I have no qualms about hurting a character, and no qualms about forcing someone to spend a week laid up in Medlab. As long as they’ll get over it, they’re fair game. But in my experience, players are rarely going to hurt their characters seriously, and when they do, they’re often going to skimp on recovery times.
 
@@ -80,7 +80,7 @@ Then put all those characters in the hospital and see the average time before th
 
 So the point of all this is that you have to have some way to tell the character *fairly* that "No, you’re not ready to leave Medlab yet" or "Sorry.. you’ve just been stabbed in the chest. You’re not going to be running after the criminal!" Sure, a judge can just arbitrarily make such decisions, but as I mentioned back a few pages, characters are much less likely take a coded combat/damage system personally than they would be a judge’s arbitrary ruling, however impartial and impersonal it may be.
 
-## THE ART OF WAR
+## The Art of War
 
 ... Which brings me to my little ramble on combat. No combat system short of one with artificial intelligence is going to be able to realistically model and take into account all the variables one might run into in a combat situation. The easy solution to this: leave the details up to the humans behind the monitors and just give them guidelines.
 
@@ -104,7 +104,7 @@ Let's take an example: El-Bozo has just gotten his spiffy new Heavy Blaster Pist
 * El-Bozo can’t come up with any better reason than "Cause I wanted to..." so the judge rules that the action was unwarranted (and stupid) and never happened. El is given a warning, and if it ever happens again refer to the previous bulleted option.
 * Somehow El-Bozo’s action could be worked into a bigger plot. Maybe someone is after Joe and tried to kill him. You can take a bad situation and turn it into something positive. This works real well if El-Bozo dies tragically at the hands of the police (so he’s not around to contradict any guesses about why this happened) or if he’s just misguided (rather than a jerk) and is eager for a chance to mend his ways.
 
-## SPACE: THE FINAL FRONTIER
+## Space: The Final Frontier
 
 Here’s a topic that seems to start a flame-war every time it’s brought up. The coders are all trying to out-do each other by coming up with a newer and cooler space system than the last one. Meanwhile the non-coding staff is sitting back saying, "Why space? All it does is attract code-hungry jerks!" - an argument which seems to be supported by the endless line of folks on any sci-fi MUSH lining up clambering, "I want to be a fighter pilot!" or "I want my own ship like Han Solo!" Face it, space pilots on MUSHes seem to inherently get a bad rap, and it’s not something we’re all making up.
 
@@ -122,7 +122,7 @@ A few misc thoughts on space travel:
 * One must be careful about travel times. While I’m all for realism, to be stuck alone on a ship for hours on end truly SUCKS! Especially if you’re limited in connect time.
 * Never, ever, make it so a player could get stuck on a world and not be able to get off. Whether this means a coded starliner system of some sort that makes regular jaunts, or simply a policy that a PC could RP with a staffer instead of another PC pilot to arrange for passage off-planet; it doesn’t matter.. just so long as there’s some way out of that trap.
 
-## WHERE DID EVERYBODY GO? ....MAYBE IT WAS SOMETHING WE SAID!
+## Where Did Everybody Go?
 
 Too many MUSHes seem to fall into the trap of: "Let’s try to please everybody" and wind up with their players scattered all over creation. Planets that have nobody on them; station sectors that are never visited; various neighborhoods sprawled out all over the city - it doesn’t matter what the theme is, I’ve seen the same phenomena. In an effort to appease those handful of folks who might want to play on Mars the whole planet is @dug.
 
@@ -130,7 +130,7 @@ What you usually end up with is that same handful of players bored to tears beca
 
 To me the biggest consideration is to limit the geographic/faction scope of the MUSH. Choose a focus, and try to make sure that most folks will not be at a loss for RP. I suppose it would be possible to go overboard in the other direction and have people constantly packed into rooms like cattle, but I’ve never seen that happen.  (Addendum:  OK, I did eventually see that happen on TGG, where the entire playerbase was living in a single one-room cabin during the Finnish Winter War :)  But even that had its advantages... you were *never* at a loss for RP.)
 
-## THE BUCK STOPS HERE
+## The Buck Stops Here
 
 Most MUSH economy systems SUCK! They tend to suffer from one of these inherent drawbacks:
 
@@ -145,7 +145,7 @@ Also, many MUSHes seem to forget about normal every-day facets of economy like b
  
 I've always thought that a good compromise on an econ system is one with a generic "Lifestyle" rating that you choose for your character. Give the players guidelines as to what items they can afford with their lifestyle, and leave it at that. It's simple, and in my opinion far better than a half-baked econ system that bears no resemblance to your in-game reality.
 
-## IT’S MY MUSH AND I’LL CRY IF I WANNA
+## It's My MUSH and I'll Cry if I Want To
 
 My basic philosophy in MUSHes is that if you give the players a set of guidelines to go by and then leave them to their own devices, that most of the time, things will sort themselves out. The staff’s job on a MUSH, in my mind, is to provide an environment where the players can have *fun*, and then step in as needed to help out, police the theme or settle disputes as needed.
 
@@ -155,6 +155,6 @@ MUSHes like these tend to have strict application processes for everything the s
 
 Invariably that sort of place becomes a sort of "clique" MUSH. If you know the staffers, and they know you’re not a power player, you can get away with a lot more and can get special approval that they’d NEVER in a million years give to someone off the street who just applied for it. And while I don’t care if people want to run their MUSH this way, it just doesn’t seem very fair to me. I tend to not like playing on places like these, personally.
 
-## PRETENDY FUN-TIME GAMES
+## Pretendy Fun-Time Games
 
 Whatever kind of MUSH you decide to make, I hope that this document helped you think a little about the possible pitfalls, and perhaps gave some ideas you hadn't previously thought of. The most important thing, I think, is to always remember that it's just a game. Ultimately the purpose is to have fun, and every decision you make about the MUSH should keep that in mind.

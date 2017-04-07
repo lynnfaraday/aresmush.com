@@ -183,4 +183,4 @@ You can spend luck to get a single-turn bonus on attack, defense or initiative. 
 
 If you want to watch combat, or you're just there to emit some NPCs, you can join combat as an **Observer**.
 
-All combat commands can take a NPC name in front to control a NPC.  For instance, `combat/pass MyNPC` or `combat/attack MyNPC=Target`.
+All combat commands can take a NPC name and equal sign in front to control a NPC.  For instance, `combat/pass MyNPC=` or `combat/attack MyNPC=Target`.
