@@ -1,8 +1,10 @@
 <div class="tags-cloud">
     
         <div class="tags-box">
+            <ul class="tags-box inline">
             {{# _root.tags.all }}
-            {{> tags_list_item }}
+            <li><a href="/tags#{{name}}">{{ name }}</a></li>
             {{/ _root.tags.all }}
+            </ul>
         </div>
 </div>

@@ -10,7 +10,7 @@ FS3 (Faraday's Simple Skill System) is RPG system designed for MUSHes.  FS3 is:
 
 * **Fast and Easy** - FS3 takes a simple approach to abilities and highlights skills that are relevant to gameplay.  The goal is to get you through Chargen and reviewed as fast as possible.
 
-* **Roleplay-Friendly** - FS3 has a lightweight conflict resolution and combat system that leaves a lot open to player interpretation.  This frees you to focus on the story, not the dice.
+* **Roleplay-Friendly** - FS3 has a lightweight conflict resolution and combat system.  This frees you to focus on the story, not the dice.
 
 ## FS3 as a Framework
 
@@ -24,6 +24,8 @@ As with any RPG system, be aware that different games will have their own "house
 
 Since FS3 is designed for MUSHes, it is provided as a complete codebase.  FS3.3 is currently only available for AresMUSH.  Earlier versions were available for PennMUSH.
 
+<a name="whatsnew" />
+
 # What's New in Third Edition?
 
 ## Skill Changes
@@ -32,6 +34,7 @@ Since FS3 is designed for MUSHes, it is provided as a complete codebase.  FS3.3 
 * Changed the dice mechanic slightly, increasing successes.  
 * Attributes have been expanded, and you can now raise them with XP.
 * Background and Language skills now have a condensed, descriptive rating scale.
+* Background skills are chaper - you get several for free.
 * A XP system makes it easier to raise other skills while waiting for a big raise.
 * Quirks are gone, replaced by RP Hooks.
 * Defaulting works differently.  You no longer use the Attribute by itself, but roll the skill at the special new "Everyman" rating to reflect common knowledge.  This becomes Attribute+1.  With the target number change, this actually gives you a better chance of success than previously rolling 2x the attribute.

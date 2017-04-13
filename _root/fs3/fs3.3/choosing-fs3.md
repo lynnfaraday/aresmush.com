@@ -14,13 +14,13 @@ FS3 also has very "soft" mechanics.  It is a lightweight conflict resolution sys
 
 # Near-Modern
 
-The combat system is very much geared towards a near-modern technology level.  Ballistic weapons are the focus, and melee combat is an afterthought.  Explosives, vehicles and armor are all designed with near-modern tech in mind too.
+The combat system is very much geared towards a near-modern technology level.  Ballistic weapons are the focus.  Explosives, vehicles and armor are all designed with near-modern tech in mind too.
 
 FS3 works well with historical settings back to about the 1800's, modern settings and low-tech sci-fi.  Higher sci-fi tech levels can work too, as long as you don't want blasters/lasers to work too differently than ballistic guns.  
 
-You can do a fantasy setting in FS3, but it's like trying to fit a square peg into a round hole.   Melee tactics, mounted combat, hodgepodge armor (chain vest + leather arms, for instance) and different weapon skills do not fit well in FS3.
+You can do a fantasy setting in FS3, but it's not a natural fit.  FS3 is not geared for things like mounted combat, hodgepodge armor (chain vest + leather arms, for instance) and different melee weapon skills.
 
-Similarly, FS3 is not really geared for superhero/supernatural games.  It simply has no concept of "powers", and the rating system is not designed to accommodate superhuman abilities.  You can do it, but it's not a great fit.
+Similarly, FS3 is not designed for superhero/supernatural games.  It simply has no concept of "powers", and the rating system is not designed to accommodate superhuman abilities.  You can do it, but it will require tweaking.
 
 # Lightly-Coded
 

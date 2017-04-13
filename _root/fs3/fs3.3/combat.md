@@ -16,7 +16,7 @@ It helps to have a system to quickly, fairly, and consistently determine the out
 
 Combat is organized into turns. Turns generally represent about 5-10 seconds.  Each turn, everyone involved gets to pose and act. The general flow of combat is: 
  
-1. Pose the results of what happened *last* turn and what you are going to do *this* turn.
+1. **Pose** the results of what happened *last* turn and what you are going to do *this* turn.
 2. Enter your action for this turn into the combat system.
 3. When everyone has posed and selected their action, the organizer triggers a new turn. 
 4. The system rolls the necessary (virtual) dice to figure out what happened, and spits out a summary.
@@ -32,7 +32,7 @@ Each turn, you can take a single action.
 
 ## Attack Actions
 
-* **Attack** – Use a weapon.  The basic attack command hits at a single target with your currently equipped weapon. Special options to the basic attack command allow you to execute a short (3-round) or fullauto burst if the weapon allows or make a called shot.  A called shot has a greater chance of hitting your intended hit location, but also has a higher chance of missing completely.
+* **Attack** – Use a weapon.  The basic attack command hits at a single target with your currently equipped weapon. Special options to the basic attack command allow you to shoot a burst (if the weapon allows) or make a called shot.  A called shot has a greater chance of hitting your intended hit location, but also has a higher chance of missing completely.
 * **Aim** – Take careful aim at a target to increase your chance to hit next turn. Aiming with a melee weapon is allowed; it represents sizing up your opponent and waiting for your opening.
 * **Suppress** – You can perform suppressive fire to keep a target’s head down.  You won't hit them, but you'll impose a greater suppression modifier upon them than if you just targeted them directly.  Fully automatic weapons can suppress multiple targets at once.   Some electronic weapons (like the ECM system on a BSG Raptor) can also suppress targets.  Suppression with a melee weapon is allowed; it represents feints or other distracting moves to keep someone occupied.
 * **Reload** – Reload a weapon that has run out of ammo.  Some weapons may take multiple turns to reload. 
@@ -100,8 +100,6 @@ Many combat actions result in an “attack” of some sort. The basic steps for 
 
 In general, all attacks are resolved using simple ability rolls. The attacker rolls his weapon’s attack skill. The defender rolls a defense skill based on his weapon and the attacker's weapon.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i>  **Tip:** Because there's no real skill in dodging bullets, FS3 allocates everyone the same dice for a defense roll against firearms.  Your stance has the most impact for defending yourself.
-
 There may be modifiers to either roll based on wounds, the weapon itself, the attacker and defender’s stance, or other special situations.
 
 Use the table below to determine the outcome of the attack based on the result of both the attack and defense rolls.
@@ -138,7 +136,7 @@ Both cover and armor have a chance of reducing the damage done by an attack.  Yo
 
 # Damage
 
-There are no hit points in FS3. Wounds are tracked individually, and each wound's *Wound Modifier* contributes to a total modifier  applied to all skill rolls.  So the more seriously hurt you are, the less effective you become until finally you are knocked out of the fight completely.
+There are no hit points in FS3. Wounds are tracked individually, and each wound's *Wound Modifier* contributes to a total modifier  applied to all skill rolls.  The more seriously hurt you are, the less effective you become until finally you are knocked out of the fight completely.
 
 | Damage Level | Wound Modifier | Example |
 | ---- |

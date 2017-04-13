@@ -10,13 +10,13 @@ This article gives some tips to game designers for customizing and tweaking FS3.
 
 The six attributes are designed to cover the basic aspects of a character.  There are two for physical strength/finesse (Brawn and Reflexes), two for mental strength/finesse (Grit and Wits), and two that are a blend of physical and mental (Perception and Presence). 
 
-When changing attributes, consider that every skill - even a Background Skill - needs to be tied to an attribute.  That's why Presence exists even though it isn't relevant to Action Skills in FS3 Core.  It's there so you have something to link Background Skills like Acting or Seduction to.
+When changing attributes, consider that every skill - even a Background Skill - needs to be tied to an attribute.  That's why Presence exists even though it isn't relevant to Action Skills in FS3 Core.  It's there so you have something to link Background Skills like Acting or Singing to.
 
 # Action Skills
 
 One of the hallmarks of FS3 is the distinction between Action Skills, which are relevant to the conflict in the game, and Background Skills, which are fluff skills to promote character depth. Another hallmark is a fast, easy character creation experience because the skill list is limited.
 
-The most important thing with Action Skills is to keep the list reasonably small.  10-12 skills is ideal.  More than that, and you're going to end up with people min/maxing excessively or getting overwhelmed trying to figure out what skills they need.  Fewer than that, and you won't have much differentiation between characters.
+To stay true to these basic principles, it's important to keep the skill list reasonably small.  10-12 skills is ideal.  More than that, and you're going to end up with people min/maxing excessively or getting overwhelmed trying to figure out what skills they need.  Fewer than that, and you won't have much differentiation between characters.
 
 Limit Action Skills to what is **important** to your game and likely to come up in **conflict** situations.  Sure, Survival and Driving and Riding are all potential Action Skills.  But are there really going to be a lot of challenging horseback rides or car chases in your theme?  Are people going to be stranded out in the woods a lot?   If it's not important, leave it to a Background Skill.
 
@@ -26,7 +26,7 @@ Attributes aren't meant to be rolled by themselves; only in conjunction with a s
 
 FS3 works best with broad Action Skills, because otherwise you end up with a gazillion of them.  Of course there are specialties within every Action Skill.  Firing a pistol is really not quite the same as using a rifle, nor is wielding a sword the same as wielding an axe.  These are lumped together for simplicity.  Remember - FS3 is "**Simple** Skill System".   
 
-Don't add specialties for every skill or it gets silly.  Reserve them for the ones that truly need some degree of oversight.  On a BSG game it might be important to know whether your pilot knows Vipers, Raptors or both.  On a modern game, does it really matter what kinds of planes they can fly?  Probably not.
+Specialties are there when it's really important to divide up a skill.  Don't add specialties for every skill or it gets silly.  Reserve them for the ones that truly need some degree of oversight.  On a BSG game it might be important to know whether your pilot knows Vipers, Raptors or both.  On a modern game, does it really matter what kinds of planes they can fly?  Probably not.
 
 # Ability Point Limits
 
@@ -50,7 +50,9 @@ Don't be afraid to allow different levels of Ability Points based on faction, po
 
 ## Points and Age
 
-Side note about age:  I'm not a fan of flat age brackets.  You end up with a lot of people who min/max their age to get points instead of picking the age that's appropriate to their concept.  And age doesn't always equal experience.  Should a 50-year-old cook really have as many Action Skills as a 22-year-old marine combat veteran?  No.  But should a 40-year-old Navy SEAL veteran of five tours have more Action Skills than an 18-year-old marine fresh out of boot?  Absolutely.
+Side note about age:  I'm not a fan of flat age brackets.  You end up with a lot of people who min/max their age to get points instead of picking the age that's appropriate to their concept.  And age doesn't always equal experience.  Should a 50-year-old cook really have as many Action Skills as a 22-year-old marine combat veteran?  No.
+
+Personally, I use age to guide what levels are appropriate rather than giving more or fewer points.  A kid fresh out of boot camp probably shouldn't be an Expert in anything, unless they've got a really unusual background.
 
 # Ratings
 
@@ -69,7 +71,9 @@ There is no universal approach to character advancement.  It varies a great deal
 * **Reward-Based** - If you do things that the staff approves of, you will advance faster.
 * **Realistic** - Learning takes time.  Lots of time.  You may pick up a new hobby here or there, but in the IC timespan covered by a typical MUSH at a 1:1 time ratio, character skills aren't going to meaningfully change.
 
-There is no right or wrong here; it is a question of style and preference.  But there are a few caveats:
+The default config in FS3 Core is geared toward a Realistic advancement.  You get lots of points in chargen to start off cool if you want to be an expert, but don't expect dramatic changes during the game.
+
+There is no right or wrong here; it is a question of style and preference.  But there are a few caveats if you're going to change the system:
 
 * Characters who start out as newbie/apprentice type characters are going to be very frustrated if they're expecting the Hero's Journey and you're enforcing a more realistic rate of advancement.  Talk to these players ahead of time to set appropriate expectations.
 * If you limit chargen points too much *and* enforce a slow progression model, you're basically begging people to min/max their skills in chargen.
@@ -77,7 +81,6 @@ There is no right or wrong here; it is a question of style and preference.  But 
 * Carrot on a stick model works best when people start off at low levels (as MMOs/tabletop RPGs do).  When you let people start as experts and *still* expect continuous advancement, you can quicly reach godlike power levels.  It can also lead to some glaring disparities between veteran characters and people fresh out of chargen.
 * Reward-based advancement can lead to OOC sour grapes if people are unable/unwilling to do certain things due to time/temperment/etc.  It can also create a have/have-not splintering of power levels.
 
-All of these reasons are why FS3 Core takes an approach of giving you lots of points to start off cool if you want to be an expert, but then has slow advancement thereafter.
 
 # Combat Abilities
 

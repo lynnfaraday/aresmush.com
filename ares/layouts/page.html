@@ -10,6 +10,14 @@ layout : default
                                
              <div class="page">
                  {{{ content }}}
+                 
+                 <ul class="tags-box inline">
+                     <li>Tags:</li>
+                 {{# page.tags }}
+                 <li><a href="/tags#{{name}}">[{{ name }}]</a></li>
+                 {{/ page.tags }}
+                 </ul>
+                 
              </div>             
                            </div>
               

@@ -122,7 +122,7 @@ If you have a specialized ability higher than Everyman, you must choose a specia
 
 Background Skills represent arts, sports, hobbies, professions and any other skills not covered by Action Skills.  
 
-The specific list of Background Skills will vary from game to game.  For an example, see **[FS3 Core](/fs3/fs3-3/core)**.
+Valid Background Skills will vary from game to game.  For an example, see **[FS3 Core](/fs3/fs3-3/core)**.
 
 ### Background Skill Ratings
 

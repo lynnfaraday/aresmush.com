@@ -3,21 +3,22 @@ title: Tags
 description:
 layout: page
 ---
-
-
-<ul class="tag_box inline">
-{{# posts.tags.all }}
-  {{> tags_list }}
-{{/ posts.tags.all }}
+  
+<ul class="tags-box inline">
+{{# _root.tags.all }}
+<li><a href="#{{name}}">{{ name }}(<span>{{ count }}</span>)</a></li>
+{{/ _root.tags.all }}
 </ul>
 
-{{# posts.tags.all }}
-  <h3 id="{{name}}-ref">{{name}}</h3>
-  <ul>
-  {{# posts?to_posts }}
-    <li><a href="{{url}}">{{title}}</a></li>
-  {{/ posts?to_posts }}
+{{# _root.tags.all }}
+<a name="{{ name }}"></a>
+
+<h3>{{name}}</h3>
+<ul>
+{{# _root?to__root }}
+  <li><a href="{{ url }}">{{ title }}</a></li>
+{{/ _root?to__root }}
 </ul>
-{{/ posts.tags.all }} 
+{{/ _root.tags.all }}
 
 

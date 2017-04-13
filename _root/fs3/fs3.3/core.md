@@ -55,15 +55,13 @@ Background Skills are free-form, so there is no specific list.  You can pick any
 
 ## Language Skills
 
-In FS3 Core, languages are free-form.  The specific list of Languages will vary from game to game.
+The specific list of Languages will vary from game to game.
 
 ## Experience
 
 Every week you get 1 XP.
 
 You may only save up to 2 XP.
-
-Ability freezes are as follows:
 
 | Current Rating | XP Cost |
 |----|

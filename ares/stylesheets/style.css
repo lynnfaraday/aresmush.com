@@ -262,6 +262,14 @@ a:active {color:#0B5141;}  /* selected link */
     text-decoration: none; 
 }
 
+ul.tags-box {
+    list-style-type: none;
+}
+
+ul.tags-box li {
+    display: inline;
+}
+
 /* ------------------------
    NAVBAR
    ------------------------

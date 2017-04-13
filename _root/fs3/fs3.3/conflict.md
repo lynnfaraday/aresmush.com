@@ -10,13 +10,7 @@ An Ability Roll is used when you want to know if you succeed or fail at a given 
 
 # When to Roll
 
-Ability Rolls should be used judiciously. RPGs are about *role*play not *roll*play.
-
-> <i class="fa fa-cubes" aria-hidden="true"></i>  **Tip:** Players are always free to skip rolls and negotiate a resolution as befits the story, as long as everyone agrees.
-
-For example: If someone does a good job roleplaying their way through bluffing a guard, it probably ought to work. Likewise, if someone attempts to schmooze the princess with the worst pickup line ever, it probably shouldn’t work, no matter what you roll.
-
-You should consider using an ability roll if the character is: 
+Ability Rolls should be used judiciously. RPGs are about *role*play not *roll*play.  It is not necessary to roll for every single thing.  You should consider using an ability roll if the character is: 
 
 * Under significant stress.
 * Facing challenging circumstances.
@@ -41,9 +35,11 @@ A storyteller may allow you to spend one or more [Luck Points](/fs3-3/luck) to g
 
 Before rolling, you need to figure out which Skill applies best to the task at hand.  When more than one applies equally well, you can choose the one with the highest rating.  If you don't have an applicable Skill, you can make a *Default Roll* as explained in the next section.
 
-FS3 uses 8-sided dice.  You roll a number of (virtual) dice equal to the Skill Rating plus the linked Attribute.  You can gain or lose dice through special Modifiers.   Languages and Background Skills aren't normally rolled.  If you really need to, their descriptive ratings have numerical equivalents as described in [Character Generation](/fs3/fs3-3/chargen).  For example, an "Interest" Background Skill is rolled as rating 2.
+FS3 uses 8-sided dice.  You roll a number of (virtual) dice equal to the Skill Rating plus the linked Attribute.  You can gain or lose dice through special Modifiers.   
 
 > <i class="fa fa-cubes" aria-hidden="true"></i>  **Tip:** Dice to Roll = Skill Rating + Linked Attribute +/- Modifiers
+
+Languages and Background Skills aren't normally rolled.  If you really need to, their descriptive ratings have numerical equivalents as described in [Character Generation](/fs3/fs3-3/chargen).  For example, an "Interest" Background Skill is rolled as rating 2.
 
 <a name="defaulting"/>
 
@@ -118,7 +114,7 @@ Each Action Skill is linked to a particular Attribute, but there may be times wh
 
 When someone is directly opposing you, you don’t just need to do well, you need to do *better* than the opponent.  That’s where Opposed Rolls come in.
 
-Each contestant makes a roll as normal, and the one with the most successes wins.   It is also possible that nobody gets any successes and they both fail.  To determine how well the winner did, you look at the "net" successes:
+Each contestant makes a roll as normal, and the one with the most successes wins.   It is also possible that nobody gets any successes and they both fail.  To determine how well the winner did, you look at the "net" successes - the *difference* between the winner and the loser:
 
 | Net Successes | Description |
 | ---- |
@@ -145,6 +141,6 @@ Up to three characters can combine their efforts toward a single task.   One cha
 
 The modifiers for the Assist Rolls are added together and applied to the leader's Group Roll.  The maximum total modifier for the Group Roll is +4, no matter how well everyone succeeds.
 
-> Example: Elodie and Zoe are assisting Tug with a Repair roll. Elodie and Zoe each roll Repair first, and get a Good Success (+2) and a Success Success (+1).  This lets Tug roll Repair+3 for the Group Roll.
+> Example: Elodie and Zoe are assisting Tug with a Repair roll. Elodie and Zoe each roll Repair first, and get a Good Success (+2) and a regular Success (+1).  This lets Tug roll Repair+3 for the Group Roll.
 
 

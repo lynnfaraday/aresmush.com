@@ -34,7 +34,7 @@ As the organizer, the combat system will notify you when everyone has posed and 
 
 Combat is designed to handle PCs and NPC opponents.  NPCs exist only as long as they are in combat, and their damage is wiped as soon as they leave.  For important/permanent NPCs, it is suggested that you actually create a player for them like a PC and give them some skills.
 
-NPCs don't have the same sort of varied ability ratings that PCs do.  Instead they have an overall "level" that determines their broad ability scores.  NPCs default to Goon but you can adjust that.
+NPCs are assigned a broad ability level that gives them a pack of skills.  The skill levels vary, but here are some rough guides:
 
 | NPC Level | Abilities  |
 | ---- |
@@ -60,11 +60,13 @@ KO’d NPCs are immediately removed from the combat. They cannot be treated, ral
 
 Teams are a convenient way of organizing combatants into smaller groups when they split up. PCs are automatically assigned to Team 1 and NPCs to Team 2.  Use `combat/team <name>=<team>` to switch teams.
 
-PCs pick their targets when they aim or attack. NPCs do so automatically. By default, NPCs on Team 1 will aim at Team 2, Team 2 will aim at Team 1, and NPCs on other teams will aim at anyone not on their team. 
+PCs pick their targets when they aim or attack. NPCs do so automatically. By default, NPCs on Team 1 will aim at Team 2, Team 2 will aim at Team 1, and NPCs on other teams will aim at anyone not on their team.   You can assign specific team targets with the `combat/target` command.
 
 # Modifiers
 
-Organizers may apply situational modifiers to characters based on things like darkness, rain, or what-have-you. A modifier is just like a skill roll modifier - a +/- number of dice.  Damage modifiers are factored in automatically.  Use `combat/attackmod <char>=<modifier>`.  There's also a defensemod and lethalmod command to apply damage or defense mods.  Note:  The damage mod applies to damage TAKEN.
+Organizers may apply situational modifiers to characters based on things like darkness, rain, or what-have-you. A modifier is just like a skill roll modifier - a +/- number of dice.  Damage modifiers are factored in automatically.  Use `combat/attackmod <char>=<modifier>`.  There's also a `defensemod` and `lethalmod` command to apply damage or defense mods.  
+
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** The damage mod applies to damage TAKEN.  It is most handy when combat is dragging on too long and you want to make sure the next shot takes out a bad guy.
 
 # Special Combat Situations
 
@@ -78,7 +80,7 @@ If a character is caught unawares, they shouldn't get an attack and should have 
 
 ## Booby Traps and Unmanned Vehicles
 
-It is possible that someday you may have a situation where there is an "unmanned" attacker or defender, be it a booby trapped grenade or an empty vehicle. The combat system doesn’t handle these situations, so you have two choices: 
+You may have a situation where there is an "unmanned" attacker or defender, be it a booby trapped grenade or an empty vehicle. The combat system doesn’t handle these situations, so you have two choices: 
  
 1. Just RP it. Have folks make some appropriate rolls and wing it. You can even manually inflict the damage using `damage/inflict` if it's important that it be in the combat system. 
 2. Put in a dummy NPC to reflect the thing.
@@ -93,4 +95,4 @@ Another way to balance combat is to simply apply a modifier. Badguys kicking you
  
 You can also give someone a lethality modifier, which applies to weapon damage. This is also a percentage, just like the weapon's lethality rating. So if you really want to take someone out, set them up with a huge lethality modifier.
  
-Is this cheating?  Some would argue yes. But just as a gamemaster in a tabletop game sometimes rolls behind a screen and ignores the results to further the plot, MUSH Storytellers should be allowed the same flexibility. These commands let you “stack the deck” for dramatic effect.  It is up to you to use them responsibly.
+Just as a gamemaster in a tabletop game sometimes rolls behind a screen and ignores the results to further the plot, MUSH Storytellers should be allowed the same flexibility. These commands let you “stack the deck” for dramatic effect.  It is up to you to use them responsibly.
