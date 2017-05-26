@@ -24,6 +24,10 @@ FS3 comes standard in AresMUSH, implemented in the FS3Skills and FS3Combat plugi
 
 **[Third Edition](/fs3/fs3-3/)** is the current version of FS3.  You can view its documentation [on the web](/fs3/fs3-3/).
 
+# Prior Editions
+
+Documents for earlier editions are archived [here](/fs3/old-editions).
+
 ## Copyright and License
 
 The FS3 system is copyright 2007 by Linda Naughton (aka Faraday).

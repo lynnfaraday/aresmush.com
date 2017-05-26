@@ -30,7 +30,7 @@ This isn't an excerpt from a western novel, though you'd be forgiven for thinkin
 
 There are MUSHes for virtually any setting you can imagine:  science fiction, fantasy, historical, supernatural, superheroes and more.  Many are based on popular books and TV shows.  Others are wholly original.
 
-It may look more like a novel than a game, but a MUSH does have rules to keep things fun and fair for everyone involved. Even though it's a game, everybody wins when they work together to tell a story.
+It may look more like a novel than a game, but a MUSH does have rules to keep things fun and fair for everyone involved. Everybody wins when they work together to tell a story.
 
 ## Virtual Worlds
 
@@ -45,7 +45,7 @@ You connect to the game using a special app called a **MUSH client**, which show
 
 Without players, the game world is nothing but a ghost town – a movie set with no actors.  As a player, you're the actor.  You take on the role of a character in the story.  You define your character: their appearance, their personality, their skills and backstory.  
 
-As you explore the game world, you see things through your character's eyes and react to things as your character would. You write their actions, thoughts and dialogue.  Nobody else can write for your character but you. 
+As you explore the game world, you see things through your character's eyes and react to things as your character would. You write their actions, thoughts and dialogue.  Nobody else can write for your character but you, although other characters' actions can impact your character. 
 
 The fun part is interacting with other characters played by other players.  MUSH scenes can involve two characters or twenty.  They can be dramatic (like the jailbreak) or light-hearted (like a barn dance).  Most games have a blend of interpersonal drama and adventure, not unlike a primetime TV drama.
 

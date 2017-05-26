@@ -6,7 +6,7 @@ class Ruhoh
       end
       def self.convert(content)
         require 'kramdown'
-        Kramdown::Document.new(content).to_html
+        Kramdown::Document.new(content, :input => "GFM").to_html
       end
     end
   end

@@ -16,7 +16,7 @@ Experience Points (XP) are gained periodically to reflect what your character ha
 
 ## Spending XP
 
-XP represents incremental learning or practice.  You spend XP as you get it, so it's not like you save them up for months and then all of a sudden decide to learn or improve something.  You're allowed to store up a few XP just in case you forget to spend them, but ideally they should be spent weekly.
+XP represents incremental learning or practice.  You spend XP as you get it, resulting in a slow progression toward the next rating.  You're allowed to store up a few XP just in case you forget to spend them, but you don't save up a bunch to spend all at once.
 
 ## Limits on Learning
 

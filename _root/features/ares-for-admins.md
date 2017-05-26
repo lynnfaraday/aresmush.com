@@ -15,15 +15,19 @@ The basic Ares installation includes not only the server itself (like Penn and T
 
 ## Easy Configuration
 
-There's no need to mess around with coded attributes and objects to configure your game.  Everything is configurable through the game's web interface, and the tutorials will guide you through the process.
+There's no need to mess around with coded attributes and objects to configure your game.  Everything is configurable through the game's Web Portal, and the tutorials will guide you through the process.
+
+## Web Portal
+
+The AresMUSH Web Portal lets you configure your game, view logs, and perform other common admin tasks with a nice web UI.
 
 ## FS3
 
-AresMUSH comes with the [FS3 Skills and Combat System](/fs3/fs3-3) built in, providing a complete character creation and conflict resolution system.   You can take this out and substitute your own skills system instead, but that will require coding effort.
+AresMUSH comes with the [FS3 Skills and Combat System](/fs3/fs3-3) built in, providing a complete character creation and conflict resolution system.   The plugin system makes it easy to remove FS3, but of course you'd then have to code your own skills system.
 
 ## A Real Database
 
-Ares uses Redis, an up-and-coming database system. Using a standard database makes it easy to get at your data, make backups, or even integrate it  with a website.
+Ares uses Redis, an up-and-coming database system. Using a standard database makes it easy to get at your data, make backups and integrate with the Web Portal.
 
 ## Built-In Advertising
 

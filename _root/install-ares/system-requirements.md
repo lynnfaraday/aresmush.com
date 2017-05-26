@@ -20,7 +20,7 @@ This article details the system requirements to help you find the right VPS and 
 
 AresMUSH runs best on a Unix-like operating system, such as Linux or MacOSX.  If you have no other preference, choose **Ubuntu Linux** because that's what I use and I'll be able to help you better.
 
-> AresMUSH _can_ run on Windows, but all Ares scripts and instructions are geared towards Unix-like environments.  If you want to run it on Windows, it will require some gymnastics.  It is not officially supported, but you can [contact me](/feedback) and I'll help if I can.
+> AresMUSH _can_ run on Windows, but all Ares scripts and instructions are geared towards Unix-like environments.  If you want to run it on Windows, it will require some gymnastics.  It is not officially supported, but it can work.
 
 ### RAM
 
@@ -45,3 +45,5 @@ For the database, it will depend on the size of your game, but it's pretty insig
 There are several software packages that Ares requires, including Ruby, Git and a Redis database. 
 
 Installing these packages will require root access (i.e. admin permissions) on the server.   In the [AresMUSH Code](https://github.com/lynnfaraday/aresmush/) there are two scripts in the 'bin' directory (install\_ares1 and install\_ares2) that will install what you need.
+
+> The install scripts reqiure root/sudo access.  If you don't have that, you'll need to figure out how to work around it step by step.  For example, one of the steps involves installing git using apt-get.  If you don't have root/sudo, you can't do that, but git may already be installed or you may be able to get the server admin to do it for you.

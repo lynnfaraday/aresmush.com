@@ -23,8 +23,11 @@ layout: page
 
 ## Managing Ares
 
-* [Restarting the Game](/tutorials/manage/run-game)
+* [Connect to the Server Shell](/install-ares/server-shell)
+* [Starting the Game](/tutorials/manage/start)
+* [Shutting Down the Game](/tutorials/manage/shutdown)
+* [Auto-Restart After Server Reboot](/tutorials/manage/restart-after-reboot)
+* [Resetting the Headwiz Password](/tutorials/manage/forgot-headwiz-pw)
 * [Editing the Database](/tutorials/manage/edit-database)
 * [Wiping out the Database](/tutorials/manage/init-db)
-* [Game Doesn't Restart After Server Reboots](/tutorials/manage/restart-after-reboot)
 

@@ -20,13 +20,13 @@ The "Ares Way" is to use admin commands for these sorts of things.  Need to edit
 
 # Tinkering
 
-But because Ares is still in its infancy, sometimes you won't find an admin command to do what you need.  (Feel free to provide [feedback](/feedback) when this happens.)
-
-The easiest way to change something when no admin command exists is to use the `tinker` command.  See the [Tinkering](/manage/tinker) tutorial.
+Sometimes there won't be an admin command for what you need.  In those cases you can use the `tinker` command.  See the [Tinkering](/manage/tinker) tutorial.
 
 # Manual Database Access
 
-But sometimes even tinkering won't cut it, and you'll just have to roll up your sleeves and dive into the database itself.  Log into your [Server Shell](/install-ares/server-shell) and run the following commands to open up a database command prompt:
+It's rare when you can't do what you need with tinkering.  After all - tinkering can do everything the code can do.  
+
+But if you ever get into that situation, it's time to roll up your sleeves and dive into the database itself.  Log into your [Server Shell](/install-ares/server-shell) and run the following commands to open up a database command prompt:
 
     redis-cli
     auth YOUR_DATABASE_PASSWORD

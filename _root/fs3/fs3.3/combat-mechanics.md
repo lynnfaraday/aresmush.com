@@ -14,13 +14,19 @@ For those who care about the nitty-gritty about how the combat system works, thi
 
 Aiming givs a +3 bonus to attack the next turn. Spending more than one turn aiming does not increase the modifier, and the modifier is lost if you switch targets.
 
-## Suppress
+## Suppress and Distract
 
-Suppression is resolved by making an attack roll as normal, with a defense of a Composure Roll instead of the normal defense skill. If the attack “hits”, no damage is done but it applies a number of stress points equal to 2 plus the difference between the attacker and defender’s roll results.
+Suppression and distraction are both resolved by making an attack roll as normal, with a defense of a Composure Roll instead of the normal defense skill. If the attack “hits”, no damage is done but a penalty is applied.
+
+For suppression, the penalty applies a number of stress points equal to 2 plus the difference between the attacker and defender’s roll results. 
 
 For example: Bruno fires his pistol to suppress Tom. Bruno rolls a 3 Hits and Tom rolls 1, giving a difference of 2. This inflicts 4 stress points on Tom.
 
 A fully automatic or explosive weapon can suppress up to 3 targets in a single turn. Each target requires a separate attack and defense roll.
+
+For distraction, there's a distract penalty (separate from suppression) equal to the difference between the attacker and defender’s roll results. 
+
+Suppression penalties apply to attacks only.  Distraction penalties apply to both attacks _and_ defense. 
 
 ## Subdue and Escape
 
@@ -127,7 +133,7 @@ The damage severity of a wound is based on a percentile dice roll modified by:
 
 * The weapon’s lethality statistic.
 * +30 if you're a NPC, because you're not a hero and you get badly wounded more easily.
-* +20 if the hit location was deemed a "Critical" one on the hit location chart.
+* +30 if the hit location was deemed a "Critical" one on the hit location chart.
 * +0 if the hit location was deemed a "Vital" one on the hit location chart.
 * -10 if the hit location is neither Critical nor Vital on the hit location chart.
 * armor, if it applies
@@ -170,8 +176,8 @@ Notice that more of the bullseye now falls on dead air, increasing the chance of
 
 | Attacker Net Successes | Location |
 | ---- |
-| > 3 | Exactly Where Aimed |
-| 1-3 | Random roll with the bullseye centered on a different location  |
+| >= 3 | Exactly Where Aimed |
+| 1-2 | Random roll with the bullseye centered on a different location  |
 | 0 (tie) | Near Miss |
 
 So each location has its own hit location chart for use in called shots. 

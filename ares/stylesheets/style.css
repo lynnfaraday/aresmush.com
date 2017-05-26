@@ -27,7 +27,7 @@ body {
 .page-block {
     background-color: #fff;
     margin: 0% 2% 0% 2%;
-    padding: 0 0 0 1%;
+    padding: 15px;
     min-height: 100%;
     
 /*   border-top: 2px solid #CF895D;  */
@@ -484,6 +484,7 @@ blockquote{
 	margin: 0.4em 0;
         width: 80%;
 	padding: 10px;
+    font-size: 1em;
 	/* background-color: #8CAEAE; 
 color: white;
 border: 1px solid #300000;

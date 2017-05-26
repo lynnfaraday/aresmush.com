@@ -82,17 +82,6 @@ There is no right or wrong here; it is a question of style and preference.  But 
 * Reward-based advancement can lead to OOC sour grapes if people are unable/unwilling to do certain things due to time/temperment/etc.  It can also create a have/have-not splintering of power levels.
 
 
-# Combat Abilities
-
-The combat rules require you to determine which abilities are used for the following rolls:
-
-- Knockout (default = Composure)
-- Recovery, aka natural healing (default = Athletics)
-- Medicine (default = Medicine)
-- First Aid (default = Medicine)
-- Repair (default = Technician)
-- Initiative (default = Composure)
-
 # Dodge
 
 This is a pet peeve of mine, so take it with a grain of salt :)
@@ -104,62 +93,3 @@ The main reason people end up adding it is because they break up Melee into mult
 First off, question whether you really need to break up Melee in the first place.  Go back to the advice on Action Skills and keeping the number down. 
 
 But if you really must, just make a small tweak to the defense skill code.  Make a small change to the "determine defense skill" function in the code so that melee weapons defend with a skill appropriate to the weapon the attacker is wielding.
-
-# Customizing Weapons
-
-Creating a weapons list is obviously important for the game. Consider whether you really want to make up different models of weapons (M16 Assault Rifle, AK47 Assault Rifle, etc.) or just lump everything into a generic category (Assault Rifle). It can be tedious creating all the statistics, and having too many weapons to pick from can either be overwhelming or cool depending on your player base.
-
-Most of the weapon statistics are pretty self-explanatory, A few bear special mention:
-
-| Weapon Stat |  Notes|
-| ---- |
-| Weapon Type | May be melee, ranged, explosive or suppressive (used for ECM/jamming weapons or things like flash or smoke grenades). |
-| Attack Skill | The skill used for attack rolls. |
-| Defense Skill | The skill used for defense rolls.  For firearms, it is recommended that you use a raw ability level of “3” rather than any specific skill. Stance reflects your defensive choices, and nobody is really any better at dodging bullets than anybody else.  |
-| Lethality | Lethality is a % increase to weapon damage.  |
-| Penetration | How effective the weapon is at penetrating armor. See **Armor** below. |
-| Damage Type | Stun or Physical.  Stun wounds are for bruises and shocks that don't last long. |
-| Ammo | How many times a weapon can fire before it has to be reloaded. |
-| Auto Fire | Whether the weapon is capable of burst fire. |
-| Recoil | If the weapon does burst fire, what is the modifier for each bullet after the first.  1 is a good number for modern rifles. 2 for SMGs or weapons with worse recoil. |
-|Shrapnel|Whether the weapon does shrapnel damage.  Anti-vehicle weapons are typically armor piercing and do not do shrapnel damage. Anti-personnel weapons usually have shrapnel. |
-
-# Customizing Armor
-
-The key to selecting armor values is to keep protection values balanced relative to the weapon penetration values. Evenly-matched penetration/protection values mean that there's about a 50/50 chance of the weapon getting through.
-
-| Armor Stat |  Notes|
-| ---- |
-| Protection | This is a list of hit locations and protection values.  Armor can have different protection in different areas, to reflect weak spots. |
-
-See **[How Armor Works](/fs3/fs3-3/combat-mechanics#armor)** for more info.
-
-# Customizing Vehicles
-
-Here is a guide for customizing vehicle stats:
-
-| Vehicle Stat |  Notes|
-| ---- |
-| Piloting Skill | The skill used to pilot the vehicle. Has no game effect; it’s just for reference. |
-| Toughness | Use the same scale as personal ability levels (2-13).  Used for knockout rolls. |
-| Armor | Specify which type of armor (from the armor list) applies to this vehicle. |
-| Hit Location Chart | Specify which hit location chart (from the hit location chart list) applies to this vehicle. |
-| Weapons | Standard weapons loadout for the vehicle. This is just a guide, not a restriction, since there may legitimately be multiple weapons loadouts. |
-| Defense Bonus | A modifier applied to defense rolls while piloting the vehicle. May be a penalty if negative. Set values from +3 to -3 to reflect nimble or lumbering craft.|
-
-# Customizing Hit Locations
-
-Each hit location chart has a number of stats you can adjust:
-
-| Hit Location Stat |  Notes|
-| ---- |
-| Lethality | A list of hit locations and lethality bonuses for each location.  For instance, an arm might have a negative lethality, making flesh wounds more likely in that location. |
-| Crew Areas | For a vehicle hit chart, these are the locations that have a potential for inflicting crew damage. |
-| Default Target | The default hit location, usually the center of mass. |
-| Targets | See below. |
-
-FS3 uses a somewhat unique hit location system.  See **[How Hit Location Works](/fs3/fs3-3/combat-mechanics#hit-location)** for more info on how it works and some examples of how to set up the target locations.
-
-# Customizing Combatant Types
-
-The system lets you specify custom combatant types beyond the standard "soldier", "pilot", "passenger".  Each custom type can be assigned a default weapon, hit location chart, armor type and vehicle type.   You can use this for different kinds of troops (e.g. Archer vs Spearman) or for creatures and alients (e.g. Centurion or CylonRaider).  

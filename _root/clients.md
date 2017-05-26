@@ -29,6 +29,8 @@ Here are instructions for setting up your favorite MUSH client to work with Ares
 
 ### Character Encoding
 
+If you have Atlantis set to do character encoding auto-detection, it should automatically work with Ares.  If that doesn't work, try this:
+
 1. Select the 'Options' menu.
 2. Select 'Configure Program Settings'.
 3. Select 'Connection'.
@@ -48,6 +50,8 @@ You shouldn't need to set up anything to make editing work in Potato.
 [Download Atlantis](http://www.riverdark.net/atlantis/) for Mac.
 
 ### Character Encoding
+
+If you have Atlantis set to do character encoding auto-detection, it should automatically work with Ares.  If that doesn't work, try this:
 
 1. Open the Atlantis 'Preferences' menu (Atlantis -> Preferences)
 2. Select 'World Defaults'

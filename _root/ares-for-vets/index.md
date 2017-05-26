@@ -12,9 +12,9 @@ If you have any questions or suggestions, feel free to [contact me](/feedback).
 
 ## Getting Help
 
-Ares doesn't have a separate +help system - there's just `help`.   Help files are organized by category rather than by name, hopefully making it easier to find what you're looking for.  
+Ares doesn't have a separate +help system - there's just `help`.   Help files are organized by category rather than by name, hopefully making it easier to find what you're looking for.   Admin and builder help are built into the same system, so no more looking for help in multiple places.
 
-There are separate help commands for admins (ahelp) and builders (bhelp). 
+Ares help files are optimized for viewing on the game's Web Portal, but you can see them in-game too.
 
 ## Commands
 
@@ -54,18 +54,6 @@ The default channel alias is the first 2 and 3 characters, so "Chat" would be ch
 
 You can change your alias for a given channel at any time using `channel/alias <name>=<new alias>`.  The `channels` command by itself will give you a rundown on what channels you are on and what aliases talk on them.
 
-## Connections
-
-The game can tell you when people have connected, so you don't need to subscribe to channels just to see the connection messages:
-
-    %% Faraday has connected.
-
-There's a slightly different message if they connect *in your room*:
-
-    %% Faraday has connected here.
-
-If you don't like the game-wide connection messages, you can use the `watch` command to disable them entirely, or show them only for your friends.
-
 ## Mail
 
 Like channels, mail attempts to support both Penn and Tiny command syntax.
@@ -81,13 +69,18 @@ Ares supports international languages with UTF-8, a Unicode character set that i
 
 ## Handles
 
-The [Handles](/handles) system lets you set up a player identity that can follow you across games and help you stay in touch with friends.  Handles have an "@" sign in front of them, like @Faraday.
+The [Handles](/handles) system lets you set up a player identity that can follow you across games and help you stay in touch with friends.  Handles have an "@" sign in front of them, like @Faraday.  Mostly you'll see handles on channels:
 
-## Editing
+    <Public> Cate (@Faraday) says, "Hi!"
 
-Ares does not have an @decompile like Penn and Tiny, but there are other tools you can use instead.  Many commands take a /edit switch, which will grab the contents into your client's input buffer in the same way that @dec/tf or /grab would on Penn/Tiny.
+## Editing/Decompile/Examine
 
-For example, want to make a change to your desc?  Use `desc/edit`.  You may need to [configure your client](/clients) to make this work properly.
+Ares does not have an @decompile like Penn and Tiny, but there are other tools you can use instead.  
+
+* Many commands take a /edit switch, which will grab the contents into your client's input buffer in the same way that @dec/tf or /grab would on Penn/Tiny.   For example, want to make a change to your desc?  Use `desc/edit`.  You may need to [configure your client](/clients) to make this work properly.
+* There's a `backup` command that works similarly to decompile to let you log a backup of your character.
+* There's an in-game `notes` command that lets you save notes for yourself.
+
 
 ## Objects and Details
 

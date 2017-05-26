@@ -4,7 +4,11 @@ description:
 layout: fs3
 ---
 
-This is a quick-reference help file for FS3 combat commands.
+This is a quick-reference help file for FS3 combat commands.  For full details on the combat system, see the [FS3 Combat Player's Guide](/fs3/fs3-3/combat).
+
+## Interactive Tutorial
+
+An interactive tutorial to introduce you to the basic combat commands is available [here](/fs3/fs3-3/combat-walkthrough).
 
 ## Starting Combat
 
@@ -37,24 +41,19 @@ The combat Heads-Up Display is your summary of the combat status.
 <pre class="prettyprint">
     <span class="nocode">
     +==~~~~~====~~~~====~~~~====~~~~=====~~~~=====~~~~====~~~~====~~~~====~~~~~==+
-    Combat 1                                                  Organized by Faraday
+    Combat 8                                                  Organized by Faraday
     ------------------------------------------------------------------------------
-    Combatant         Damage  Weapon(ammo/specials)     Action(stance)
-    ---- Team 1 ----
-    Bob               ----    Kew                       Attack Harv 
-    Foobar2           ----    Rifle (20)                ---- 
-    ---- Team 2 ----
-    Harv              ----    Rifle (20)                Attack Bob 
-    Jane              ----    Ecm                       ---- 
-    Npc1              ----    Lmg (100, Tripod)         ---- 
-    Npc2              ----    Lmg (100, Tripod)         ---- 
-    ------------------------------------------------------------------------------
-    Vehicles            Pilot            Passengers
-    Raptor-WQ7908       Jane             Harv
-    Viper-ER9530        Bob              
+    Combatant      Damage  Weapon(ammo)   Vehicle          Action(stance)
+    -- Team 1 --
+    Cate           X---    Cannon         Fighter-D2(Plt)  ---- 
+    -- Team 2 --
+    Bob            ----    Rifle (15)                      Attack Cate  (COV)
     ------------------------------------------------------------------------------
     Observers
     Faraday
+
+    Vehicle List
+    Fighter-D2
     +==~~~~~====~~~~====~~~~====~~~~=====~~~~=====~~~~====~~~~====~~~~====~~~~~==+
          </span>  
 </pre>
@@ -109,8 +108,10 @@ When everyone has posed and chosen their actions, the organizer will trigger a n
 `combat/attack <target>/burst`
     
 `combat/attack <target>/mod:<attack modifier>`
+    
+`combat/attack <target>/crew`
 
-The basic attack makes a single strike with your equipped weapon.  You can do a called shot to a particular hit location, or fire a short burst (3 rounds).
+The basic attack makes a single strike with your equipped weapon.  You can do a called shot to a particular hit location, fire a short burst (3 rounds), inflict a modifier on the roll, or target a crew member inside a vehicle instead of the vehicle itself.
 
 > <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:**  You can combine multiple attack options with commas (e.g. combat/attack Bob=mod:2,burst).  You cannnot combine a called shot and a burst.
 
@@ -126,13 +127,17 @@ If your weapon supports full-auto fire, you can attack up to three targets with 
 
 Explosive weapons can hit multiple targets with shrapnel.
 
-### Suppress
+### Suppress / Distract
 
 `combat/suppress <list of targets>`
 
-Suppressive fire does no damage, but can keep someone's head down and applies negative modifiers to their attacks.
+`combat/distract <target>`
 
-To attack multiple targets, you need either an explosive weapon or a fully automatic one (using an 8 round burst).
+Both suppression and distract do no damage, but instead reduce the opponent's effectiveness.  
+
+Suppressive fire keeps the target's heads down and applies negative modifiers to their attacks.  To attack multiple targets, you need either an explosive weapon or a fully automatic one (using an 8 round burst).
+
+Distractions can disorient a target.  This action applies less of a modifier than suppression, but it uses no ammo and applies to _both_ attacks and defense.
 
 
 ### Subdue / Escape

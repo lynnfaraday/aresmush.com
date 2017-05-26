@@ -87,6 +87,14 @@ As a free action, a character may change their Stance. Stance reflects your gene
 
 > <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:**  Always be sure that your RP mirrors your stance.  You can't be defensive while sitting in a car, or take cover on an open plain.  Use common sense. 
 
+<a name="vehicles"/>
+
+# Vehicles
+
+The combat system supports characters in vehicles.  A character can join a vehicle as either a **Pilot** or a **Passenger**.  Any time someone in a vehicle is targeted, the vehicle itself takes the damage.  Vehicles have different hit locations than people.  If a passenger compartment is hit, the people inside may take damage too.
+
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:**  If you use the "crew" special option on your attack, you can target a crew member inside a vehicle directly (e.g. shooting through a window).  Otherwise an atack against either the pilot or a passenger is considered to be an attack against the vehicle.
+
 <a name="attack-resolution"/>
 
 # Attack Resolution
@@ -141,13 +149,13 @@ There are no hit points in FS3. Wounds are tracked individually, and each wound'
 | Damage Level | Wound Modifier | Example |
 | ---- |
 | Graze | 0 | Just a scratch!  No big deal. |
-| Flesh Wound | 0.25 | It's just a flesh wound! Gonna hurt tomorrow, but doesn't affect your ability to fight too much. |
-| Impairing | 1 | Ouch!  Somewhat impairs your use of the affected area for awhile, and will probably leve a scar. |
-| Incapacitating | 4 | That's going to leave a mark!  Seriously impairs your use of the affected area for awhile, and may have long-term effects. (See **Healing** below.)|
+| Flesh Wound | 0.25 | It's just a flesh wound! Hurts enough to be annoying, but doesn't really slow you down. |
+| Impaired | 1 | Ouch!  Has an impact on daily use.  May need stitches, a sling or a brace.  Will probably leve a scar. |
+| Incapacitated | 4 | That's going to leave a mark!  You can't use that body part effectively until healed down to Impaired.  May need surgery, and may have long-term effects. (See **Healing** below.)|
 
 Characters are free to roleplay wounds creatively; they are deliberately vague to give freedom for interpretation based on the circumstances at hand.
 
-Incapacitating wounds are relatively rare, but are meant to be just that - incapacitating.  While you may be able to keep fighting, you're going to suffer some serious impariment in that body part and should roleplay accordingly.  For example, you could be dizzy or blinded by blood in your eyes from a head wound, or be unable to use an incapacitated arm or bear weight on an incapacitated leg. 
+Incapacitating wounds are relatively rare, but are meant to be just that - incapacitating.  While you may be able to keep fighting, you can't really use that affected body part and should roleplay accordingly.  For example, you could be dizzy or blinded by blood in your eyes from a head wound, or be unable to use an incapacitated arm or bear weight on an incapacitated leg. 
 
 <a name="knockout"/>
 
@@ -186,9 +194,9 @@ Lesser wounds heal pretty quickly, but Incapacitating lay you up for awhile.  Ea
 | Damage Level | Healing Points  |
 | ---- |
 | Graze | 3 |
-| FleshWound | 10 |
-| Impairing | 14 |
-| Incapacitating | 30 |
+| FleshWound | 7 |
+| Impairing | 10 |
+| Incapacitating | 20 |
 
 Normally you gain 1 healing point per day.  You get a bonus point if you're in a hospital or under the care of a PC doctor (via the `heal` command) or make a successful Recovery Roll.  Each game will configure the ability used for Recovery.  For an example, see **[FS3 Core](/fs3/fs3-3/core)**.  
 

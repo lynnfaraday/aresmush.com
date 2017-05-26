@@ -28,15 +28,13 @@ Here are a number of MUSHes in different genres.  Hopefully one of them might ap
 
 * [Battlestar: Unification](http://bsgunificationmush.wikidot.com/) - Battlestar Galactica
 * [Game of Bones](http://gobmush.wikidot.com/) - Game of Thrones
-* [Star Wars: Omens](http://www.sw-omens.org/index.php?title=Main_Page) - Star Wars
-* [Serenity](http://wiki.serenitymush.com/wiki/index.php/Main_Page) - Firefly
-* [Witchcraft and Wizardry](http://wandw.wikidot.com/) - Harry Potter
+* [Star Wars: Fires of Hope](http://firesofhope.wikidot.com/home) - Star Wars
+* [Arx: After the Reckoning](http://play.arxmush.org/) - Original Fantasy
 
 If you don't see anything that grabs you in the list above, you have a couple of options:
 
 * Try doing web searches for your favorite themes (like "Star Trek MUSH").  
 * Visit one of the games above (or [AresCentral](/arescentral)) and see if there are any advertisements for other games.
-* Check out the advertisements posted on [MU* Soapbox](http://musoapbox.net/).
 
 # Connecting to a Game
 
