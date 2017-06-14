@@ -16,15 +16,15 @@ FS3 (Faraday's Simple Skill System) is RPG system designed for MUSHes.  FS3 is:
 
 * **Roleplay-Friendly** - FS3 has a lightweight conflict resolution and combat system that leaves a lot open to player interpretation.  This frees you to focus on the story, not the dice.
 
-# FS3 and Ares
+## FS3 and Ares
 
 FS3 comes standard in AresMUSH, implemented in the FS3Skills and FS3Combat plugins.
 
-# Player Guides
+## Player Guides
 
 **[Third Edition](/fs3/fs3-3/)** is the current version of FS3.  You can view its documentation [on the web](/fs3/fs3-3/).
 
-# Prior Editions
+## Prior Editions
 
 Documents for earlier editions are archived [here](/fs3/old-editions).
 

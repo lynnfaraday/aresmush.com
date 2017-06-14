@@ -544,7 +544,7 @@ code {
 img.prettyImage-image {
 	max-width: 90%;
 	max-height: 300px;
-	border: 2px solid #CF895D;
+	border: 1px dotted #CF895D;
 
 	margin-top:10px;
 	margin-bottom:10px;

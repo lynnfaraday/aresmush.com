@@ -9,7 +9,7 @@ tags:
 
 AresMUSH is ready to go out of the box with a default configuration based on a Battlestar Galactica game.  Most games will want to customize Ares to their own theme and preferences.
 
-You can view the configuration instructions through the online help, either through the game itself or here in the [Online Help Archive](/plugins).
+You can view the configuration instructions through the online help, either through the game itself or here in the [Online Help Archive](/help).
 
 # Configuing via the Web Portal
 

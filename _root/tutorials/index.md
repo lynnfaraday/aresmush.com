@@ -16,7 +16,7 @@ layout: page
 ## Installing Ares
 
 * [Installing Ares](/install-ares)
-* [Customizing Ares](/customize-ares)
+* [Customizing Ares](/tutorials/customize-ares)
 
 ## Managing Ares
 
@@ -28,7 +28,7 @@ layout: page
 * [Editing the Database](/tutorials/manage/edit-database)
 * [Wiping out the Database](/tutorials/manage/init-db)
 
-## Code
+## Coding for Ares
 
 * [Configuring Cron Jobs](/tutorials/code/configuring-cron)
 * [Tinkering](/tutorials/code/tinker)
@@ -38,3 +38,6 @@ layout: page
 * [Templates](/tutorials/code/templates)
 * [Locale Strings](/tutorials/code/locale)
 
+## Online Help Files
+
+See [Online Help](/help).
