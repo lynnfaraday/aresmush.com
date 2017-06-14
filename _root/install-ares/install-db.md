@@ -11,6 +11,4 @@ tags:
 
 Penn and Tiny store their data in a single text file, but Ares uses a full database: [Redis](http://redis.io/).  You may already be familiar with SQL databases. Redis is similar, but without the SQL.
 
-If you used the [Digital Ocean](/install-ares/digital-ocean) setup instructions, Redis will already be set up for you and running on port 6379.
-
-If you are doing your own custom server install, you will need to install Redis yourself.  The [Redis Quickstart Guide](http://redis.io/topics/quickstart) can help.
+If you used the [Digital Ocean](/install-ares/digital-ocean) setup instructions, Redis will already be set up for you and running on port 6379.  If not, see the [System Requirements](/install-ares/system-requirements).

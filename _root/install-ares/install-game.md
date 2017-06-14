@@ -3,7 +3,7 @@ title: Install the Game
 description:
 layout: install-ares
 prevstep: install-db
-nextstep: get-the-code
+nextstep: basic-config
 tags: 
 - install
 - code

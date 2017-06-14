@@ -6,7 +6,7 @@ layout: page
 
 There are a variety of ways to stay connected with Ares.
 
-<i class="fa fa-comment-o fa-2x" aria-hidden="true"></i> Ask questions, report problems or discuss Ares on the [Discussion Forums](https://groups.google.com/forum/#!forum/aresmush).
+<i class="fa fa-comment-o fa-2x" aria-hidden="true"></i> Ask questions, report problems or discuss Ares on the Discussion Forums (coming soon).
 
 <i class="fa fa-facebook fa-2x" aria-hidden="true"></i> Follow us on Facebook for updates.
 

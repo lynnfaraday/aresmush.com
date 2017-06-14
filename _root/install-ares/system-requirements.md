@@ -42,8 +42,10 @@ For the database, it will depend on the size of your game, but it's pretty insig
 
 ## Software Packages
 
-There are several software packages that Ares requires, including Ruby, Git and a Redis database. 
+There are several software packages that Ares requires:
 
-Installing these packages will require root access (i.e. admin permissions) on the server.   In the [AresMUSH Code](https://github.com/lynnfaraday/aresmush/) there are two scripts in the 'bin' directory (install\_ares1 and install\_ares2) that will install what you need.
+* [Ruby](/https://rvm.io/rvm/install)
+* [Redis database]((http://redis.io/topics/quickstart))
+* [Git version control](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-> The install scripts reqiure root/sudo access.  If you don't have that, you'll need to figure out how to work around it step by step.  For example, one of the steps involves installing git using apt-get.  If you don't have root/sudo, you can't do that, but git may already be installed or you may be able to get the server admin to do it for you.
+If you use the [Digital Ocean](/install-ares/digital-ocean) instructions, these will automatically be installed for you.  Otherwise you'll have to set them up on your own.  Doing so is outside the scope of this tutorial.

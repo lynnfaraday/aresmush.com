@@ -4,10 +4,16 @@ description:
 layout: page
 ---
 
-Your privacy is important to us. 
+**Your privacy is extremely important to us.**
 
-Information you give to Ares Central is used to enable AresMUSH features, such as registration and admin commands.  For more information about how your handle information and friends lists are used, see [Player Handles](/handles).
+Private AresCentral account information is only accessible by AresCentral technical staff (which at the moment is just Faraday).  Private information includes:
 
-We will not disclose your OOC information to a third-party (including other players) without your consent, except as required by law.  We will not use it to spam or hassle you.
+* Email
+* Security questions (e.g. "Most memorable MU")
+* IP Addresses used to access your AresCentral account.
 
-> **Important!** We have no control over what individual game staff does with data on their own games.   Anything you type into a game window could potentially be stored.  You should consult the privacy policy of your games for more information.  If they don't have one, be wary.
+We will never disclose your private information to a third-party or to other players or games without your consent, except as required by law.  We will not use it to spam or hassle you.  It will *only* be used to enable AresMUSH and AresCentral features, such as sending a verification email for your forum account (a defense against bots and spammers) and resetting your password if you lose it.
+
+Public account information (your public profile, friends list, linked characters and game preferences) will appear on the AresCentral website and be sent to individual AresMUSH games to enable game features.
+
+> **Important!**   We have no control over what individual AresMUSH games do with information you enter *on their game*.  Game staff can see your IP address and all information you type when you connect to their game server.  We can only guard the information on AresCentral itself.  

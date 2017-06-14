@@ -254,16 +254,18 @@ a:active {color:#0B5141;}  /* selected link */
     text-decoration: none;
 }
 
-.tags-box {
+div.tags-box {
+    font-size: .9em;
+    color: #888;
 }
 
 .tags-box a {
-    padding: 3px;
     text-decoration: none; 
 }
 
 ul.tags-box {
     list-style-type: none;
+    padding: 0;
 }
 
 ul.tags-box li {

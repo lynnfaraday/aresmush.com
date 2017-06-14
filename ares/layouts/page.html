@@ -7,17 +7,17 @@ layout : default
                            <div class="col span_3_of_4">   
 
 <h1>{{{page.title}}}</h1>
-                               
-             <div class="page">
-                 {{{ content }}}
-                 
-                 <ul class="tags-box inline">
-                     <li>Tags:</li>
+
+    <div class="tags-box">
+                 <ul class="tags-box">
                  {{# page.tags }}
                  <li><a href="/tags#{{name}}">[{{ name }}]</a></li>
                  {{/ page.tags }}
                  </ul>
-                 
+    </div>
+                               
+             <div class="page">
+                 {{{ content }}}
              </div>             
                            </div>
               

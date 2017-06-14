@@ -74,44 +74,15 @@ You automatically recover 1 stress point every turn.  You can recover additional
 
 # Armor
 
+Armor reduces the lethality of damage for wounds to protected locations.
+
 Some characters may wear body armor to protect them from damage. Most armor will only protect certain body parts, so the first step is using the hit location to determine whether the armor even comes into play.   Next, some areas are protected better than others, so figure out the Protection value of the location struck.
 
-Armor is handled as an opposed roll between the weapon's Penetration value and the armor's Protection value, augmented by the net successes on the attack roll.
+To determine the effectiveness of armor, first the defender rolls the armor's protection value.  The number of successes gives a base armor effectiveness based on `(number of successes + 1) * 30`.
 
-> For example:  Bob is firing an Assault Rifle (penetration 4) against Harry.  It hits Harry in the chest, which is protected by his flak jacket (protection 4).   Bob got 2 net successes on the attack roll.   The system will make an opposed roll with 4 dice (Protection) versus 6 dice (Penetration + Net Successes).
+Next the attacker rolls the weapon's penetration value plus any net successes on the attack roll.  Factoring in the attack roll allows the attacker to find weak points in the armor.  The number of successes *reduces* the armor effectiveness based on `(number of successes) * 15`
 
-Use the table below to determine the armor result:
-
-| Roll | Result |
-| ---- |
-| Weapon gets a Solid Victory or higher. | Attack found a weak spot; armor doesn't apply. |
-| Weapon gets a Marginal Victory or Draw. | Armor applies a random lethality penalty from 1-100, reducing damage. |
-| Armor gets a Solid Victory or higher. | Armor stops the attack completely; no damage is done.|
-
-The table below shows some suggested protection and penetration based on the modern world.
-  
-| Weapon / Armor| Penetration / Protection Value | 
-| ---- |
-|Interior wall (drywall / plaster)|1|
-|Knife|2| 
-|Solid wood furniture|3|
-|Anti-Personnel Shrapnel|3|
-|Light body armor (undershirt vest)|3|
-|Light small arms (pistols, SMGs)|3|
-|Military body armor (kevlar vest)|4|
-|Medium small arms (rifles)|4|
-|Car door|4|
-|Brick wall|5|
-|Light Truck|5|
-|Fighter Jet|5|
-|Heavy small arms (12.5mm/.50cal)|8|
-|Cargo aircraft / Bomber|8|
-|Anti-Aircraft Missile|10|
-|Light cannon (20mm)|10|
-|Armored Personnel Carrier (APC)|10|
-|Medium cannon (40mm)|15|
-|Tank|20|
-|Anti-Tank Missile|20|
+> For example:  Bob is firing an Assault Rifle (penetration 4) against Harry.  It hits Harry in the chest, which is protected by his flak jacket (protection 3).   Bob got 2 net successes on the attack roll.   Harry rolls 3 dice for his armor and gets 2 successes, giving him an armor effectiveness of 90.  Bob then rolls 6 dice (penetration + net successes) and gets 2 successes, reducing the armor effectiveness by 30.  The final armor effectiveness is 60.
 
 <a name="cover">
 

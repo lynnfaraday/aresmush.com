@@ -39,7 +39,7 @@ FS3 uses 8-sided dice.  You roll a number of (virtual) dice equal to the Skill R
 
 > <i class="fa fa-cubes" aria-hidden="true"></i>  **Tip:** Dice to Roll = Skill Rating + Linked Attribute +/- Modifiers
 
-Languages and Background Skills aren't normally rolled.  If you really need to, their descriptive ratings have numerical equivalents as described in [Character Generation](/fs3/fs3-3/chargen).  For example, an "Interest" Background Skill is rolled as rating 2.
+Languages and Background Skills aren't normally rolled.  If you really need to, they have rating equivalents as described in [Character Generation](/fs3/fs3-3/chargen).
 
 <a name="defaulting"/>
 

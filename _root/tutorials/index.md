@@ -16,10 +16,7 @@ layout: page
 ## Installing Ares
 
 * [Installing Ares](/install-ares)
-
-## Configuring Ares
-
-* [Configuring Cron Jobs](/tutorials/configuring-cron)
+* [Customizing Ares](/customize-ares)
 
 ## Managing Ares
 
@@ -30,4 +27,14 @@ layout: page
 * [Resetting the Headwiz Password](/tutorials/manage/forgot-headwiz-pw)
 * [Editing the Database](/tutorials/manage/edit-database)
 * [Wiping out the Database](/tutorials/manage/init-db)
+
+## Code
+
+* [Configuring Cron Jobs](/tutorials/code/configuring-cron)
+* [Tinkering](/tutorials/code/tinker)
+* [Forking the Code](/tutorials/code/fork-the-code)
+* [Understanding YAML](/tutorials/code/yaml)
+* [Configuration Files](/tutorials/code/configuration)
+* [Templates](/tutorials/code/templates)
+* [Locale Strings](/tutorials/code/locale)
 

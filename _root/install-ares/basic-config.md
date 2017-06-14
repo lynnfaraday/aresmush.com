@@ -2,7 +2,7 @@
 title: Configure the Game
 description:
 layout: install-ares
-prevstep: get-the-code
+prevstep: install-game
 nextstep: next-steps
 tags: 
 - install
@@ -13,13 +13,13 @@ Log into your [Server Shell](/install-ares/server-shell) with the **'ares' user*
 
 > Note: You should use the 'ares' user for almost everything from now on.  Only a few special server operations require the root user's special privileges.
 
-Copy/paste the following commands into the shell to run them.  If you created a [custom fork](/install-ares/get-the-code) of the AresMUSH code in the previous step, use the clone URL for your fork.  Otherwise use `https://github.com/lynnfaraday/aresmush.git`.
+Copy/paste the following commands into the shell to run them.
 
     curl https://raw.githubusercontent.com/lynnfaraday/aresmush/master/bin/install > install
     
     chmod +x install
     
-    ./install YOUR_CLONE_URL_GOES_HERE
+    ./install https://github.com/lynnfaraday/aresmush.git
 
 This will prompt you for a few pieces of information about your game:
 

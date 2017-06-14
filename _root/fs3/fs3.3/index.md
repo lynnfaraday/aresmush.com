@@ -57,7 +57,7 @@ Thanks to the following people for their contributions to FS3:
 * PirateSpice and @Boo and the crew of Aftermath for initial alpha testing on 3rd edition.
 * @Roadspike, @Blu, @Avarice and the crew of The 100 for some cool house rules I stole and general feedback.
 
-# Prior Editions
+### Prior Editions
 
 Documents for earlier editions are archived [here](/fs3/old-editions).
 

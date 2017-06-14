@@ -21,6 +21,5 @@ If at any point you run into trouble, see [Getting Help](/feedback).
 * [Connecting to the Server Shell](/install-ares/server-shell)
 * [Install the Database](/install-ares/install-db)
 * [Install the Game](/install-ares/install-game)
-* [Get the Code](/install-ares/get-the-code)
 * [Configure the Game](/install-ares/basic-config)
 * [Next Steps](/install-ares/next-steps)

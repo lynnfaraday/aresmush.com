@@ -128,9 +128,9 @@ Valid Background Skills will vary from game to game.  For an example, see **[FS3
 
 Background Skills are rated differently than Action Skills in a more descriptive fashion:
 
-* **Interest** - A casual hobby or interest.  Rolled as rating 2.
-* **Proficiency** - A profession or very serious hobby.  Rolled as rating 4.
-* **Expertise** - An area of significant knowledge or expertise.   Rolled as rating 6.
+* **Interest** - Interests and casual studies.  For example: playing in a bar league, a hobby, some college or equivalent study that never went anywhere.  Rolled as Amateur (2).
+* **Proficiency** - Professional or semi-professional competentence.  For example: a minor league or college athlete, a serious hobbyist, a college degree with some professional experience.  Rolled as Good (4).
+* **Expertise** - Notable expertise in your field.  For example: a Major league athlete, an advanced degree, a renowned expert.  Rolled as Expert (6).
 
 A few tips for selecting Background Skills:
 
@@ -151,9 +151,9 @@ Languages represent the languages that your character can speak and/or read.   T
 
 Like Background Skills, Language Skills have more descriptive ratings.  
 
-* **Beginner** - You know tourist-level common phrases like "my name is" and "where's the bathroom".  Rolled as rating 2.
-* **Conversational** - You can get by, but your phrasing is sometimes awkward and your vocabulary incomplete.  Rolled as rating 4.
-* **Fluent** - You are fully fluent in the language.  Rolled as rating 6.
+* **Beginner** - You know tourist-level common phrases like "my name is" and "where's the bathroom".  Rolled as Amateur (2).
+* **Conversational** - You can get by, but your phrasing is sometimes awkward and your vocabulary incomplete.  Rolled as Good (4).
+* **Fluent** - You are fully fluent in the language.  Rolled as Expert (6).
 
 Your reading level is assumed to be on par with your speaking level, unless otherwise specified.
 

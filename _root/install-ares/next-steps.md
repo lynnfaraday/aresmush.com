@@ -33,4 +33,4 @@ You can rename them if you like.  Be sure to log them in and change their passwo
 
 ## Customization
 
-Ares works out of the box, but there's a lot you can customize to get things just the way you like.  See [Customizing AresMUSH](/customize-ares).
+Ares works out of the box, but there's a lot you can customize to get things just the way you like.  See [Customizing AresMUSH](/tutorials/customize-ares).
