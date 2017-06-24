@@ -78,11 +78,16 @@ Armor reduces the lethality of damage for wounds to protected locations.
 
 Some characters may wear body armor to protect them from damage. Most armor will only protect certain body parts, so the first step is using the hit location to determine whether the armor even comes into play.   Next, some areas are protected better than others, so figure out the Protection value of the location struck.
 
-To determine the effectiveness of armor, first the defender rolls the armor's protection value.  The number of successes gives a base armor effectiveness based on `(number of successes + 1) * 30`.
+To determine the effectiveness of armor, first determine if the shot went clean through.  This is done by comparing the protection value of the armor to the penetration value of the weapon:
 
-Next the attacker rolls the weapon's penetration value plus any net successes on the attack roll.  Factoring in the attack roll allows the attacker to find weak points in the armor.  The number of successes *reduces* the armor effectiveness based on `(number of successes) * 15`
+    chance to get clean through = (penetration value - protection value)*10% + (net successes * 10%)
+    minimum chance: 10%
 
-> For example:  Bob is firing an Assault Rifle (penetration 4) against Harry.  It hits Harry in the chest, which is protected by his flak jacket (protection 3).   Bob got 2 net successes on the attack roll.   Harry rolls 3 dice for his armor and gets 2 successes, giving him an armor effectiveness of 90.  Bob then rolls 6 dice (penetration + net successes) and gets 2 successes, reducing the armor effectiveness by 30.  The final armor effectiveness is 60.
+> For example:  Bob is firing an Assault Rifle (penetration 6) against Harry.  It hits Harry in the head, which is protected by his flak jacket (protection 4).   Bob got 2 net successes on the attack roll.   Bob has a 40% chance of bypassing the armor completely (20% penetration + 20% net success).
+
+If the shot got clean through, armor doesn't apply at all.   Otherwise, armor reduces damage by a random value from 0 to (protection value * 5%).
+
+> For example:  Jane's KEW hit Tom's Viper in the Body (Armor 6) and didn't get clean through the armor.  The armor may reduce lethality by 0-60% (a random roll).
 
 <a name="cover">
 

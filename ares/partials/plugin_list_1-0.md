@@ -1,11 +1,10 @@
-*AresMUSH version 1.0*
+*AresMUSH version 1-0*
 
 * [AresCentral](/help_1-0/arescentral)
 * [Bbs](/help_1-0/bbs)
 * [Channels](/help_1-0/channels)
 * [Chargen](/help_1-0/chargen)
 * [Cookies](/help_1-0/cookies)
-* [Custom](/help_1-0/custom)
 * [Demographics](/help_1-0/demographics)
 * [Describe](/help_1-0/describe)
 * [Events](/help_1-0/events)

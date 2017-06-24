@@ -9,6 +9,12 @@ aliases:
 
 This game uses the FS3 skills system, Third Edition.  The complete rulebook can be found online: [FS3 Player's Guide](http://www.aresmush.com/fs3/fs3-3).  This is a quick reference for the commands for setting and using your character's abilities.
 
+## Quick Reference - Common Commands
+
+`abilities` - Lists available abilities.
+`sheet` - Views your character sheet.
+`roll <ability>` - Makes an ability roll.
+
 ## Topics
 
 [Abilities](/help/fs3skills/abilities)
@@ -22,11 +28,6 @@ This game uses the FS3 skills system, Third Edition.  The complete rulebook can 
 ## Admin Topics
 
 [Managing Abilities](/help/fs3skills/admin)
-
-[Configuring FS3 - Skill List](/help/fs3skills/config_skills)
-[Configuring FS3 - Chargen](/help/fs3skills/config_chargen)
-[Configuring FS3 - Experience (XP)](/help/fs3skills/config_xp)
-[Configuring FS3 - Luck and Miscellaneous](/help/fs3skills/config_misc)
 
 ## Copyright
 

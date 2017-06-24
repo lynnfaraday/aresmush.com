@@ -14,6 +14,7 @@ aliases:
 - age
 - reputation
 - actors
+- icon
 ---
 # Demographics
 
@@ -29,8 +30,13 @@ Demographics commands are used to set your basic character info.  Some items may
 `eyes <eye color>`
 `skin <complexion>`
 `birthdate <mm/dd/yyyy>` or `age <years>`
-`callsign <name>` - Callsign for pilots and other military chars.
-`actor/set <name>` - Set your actor.  You can see taken actors using the `actors` command.
+`callsign <name>` - Callsign for pilots.  Non-pilots may leave blank or enter a nickname.
+`actor/set <name>` - Set your actor.  Leave blank to clear it.
+
+`actors` - Show taken actors.
+`actors/search <name>` - Search the actors list.
+
+`icon <url>` - URL to your log icon (after it's been created).
 
 ## Topics
 

@@ -151,6 +151,36 @@ a:active {color:#0B5141;}  /* selected link */
        color: #D9D9DF;
 }
 
+ul.nav a:hover {  !important; 
+    background-color: #CF895D;
+    color: #FFF;
+}
+
+ul.nav a:active, 
+ul.nav a:focus, 
+.nav .open>a, 
+.nav .open>a:focus, 
+.nav .open>a:hover
+{  !important; 
+    background-color: #CF895D;
+    color: #FFF;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;   
+}
+.nav a:visited {color:#fff;}    
+.nav a:hover {color:#fff;}      
+.nav a:active {color:#fff;}    
+.nav a:link {color:#fff;}     
+
+.dropdown-menu {
+    background: black;
+}
+
+
+
 /* ------------------------
    BLOG TITLE
    ------------------------
@@ -163,7 +193,7 @@ a:active {color:#0B5141;}  /* selected link */
     background-image: url('/assets/media/logo3.jpg') ;
     background-repeat: no-repeat;
     background-size: 100% 100%;    
-    height: 250px;
+    height: 150px;
     
 }
 
@@ -284,6 +314,7 @@ ul.tags-box li {
     margin: 5px;
 }
 
+/*
 #navbar { 
     float: right;
     position:absolute;
@@ -297,6 +328,9 @@ ul.tags-box li {
     z-index: 2;
 }
 
+.nav>li>a {
+    padding: 5px;
+}
 .nav ul {
     position: absolute;
     z-index: 1999;
@@ -317,17 +351,6 @@ ul.tags-box li {
     
 }
 
-.nav a {
-    text-decoration: none;
-    color: #fff;   
-}
-.nav a:visited {color:#fff;}    
-.nav a:hover {color:#fff;}      
-.nav a:active {color:#fff;}    
-.nav a:link {color:#fff;}      /* unvisited link */
-
-
-/*
 
 .navbar {
     text-align: center; 

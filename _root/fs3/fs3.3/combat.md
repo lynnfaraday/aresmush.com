@@ -196,7 +196,7 @@ Lesser wounds heal pretty quickly, but Incapacitating lay you up for awhile.  Ea
 | Graze | 3 |
 | FleshWound | 7 |
 | Impairing | 10 |
-| Incapacitating | 20 |
+| Incapacitating | 10 |
 
 Normally you gain 1 healing point per day.  You get a bonus point if you're in a hospital or under the care of a PC doctor (via the `heal` command) or make a successful Recovery Roll.  Each game will configure the ability used for Recovery.  For an example, see **[FS3 Core](/fs3/fs3-3/core)**.  
 

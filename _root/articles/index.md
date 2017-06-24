@@ -19,7 +19,7 @@ For AresMUSH tutorials, see the [Tutorials](/tutorials) page.
 
 ## Other People's RP Articles
 
-*These are not mine.  I have them archived here because they're awesome and sometimes they disappear on the Internet.*
+> *These are not mine.  I have them archived here because they're awesome and sometimes they disappear on the Internet.*
 
 * [Advanced Guide to RP](/articles/advanced-guide-to-rp) - A guide to adding depth to your roleplay.
 * [Give Your RP Sparkle](/articles/give-your-rp-sparkle) - Delivering RP that sparkles.
