@@ -46,6 +46,43 @@ To set up automatic backups, you'll need:
 
 You'll need to follow the Amazon tutorials, particularly [Getting Started With S3](http://docs.aws.amazon.com/AmazonS3/latest/gsg/AmazonS3Basics.html) and [Managing Access to S3](http://docs.aws.amazon.com/AmazonS3/latest/dev/intro-managing-access-s3-resources.html).
 
-Once you have these three bits of information, see the web portal help file on "Configuring Backups" for what to do with them.
-
 > **Important:** Even if you use S3 for other things, create a separate bucket just for your AresMUSH backups.  Ares will delete older files to make room for new backups, and you don't want it to accidentally delete anything important!
+
+### Configuring the Game to Use S3
+
+Once you have an S3 account, you'll need to configure the game to use it.
+
+1. Go to the Web Portal's Admin screen.  
+2. Select Secret Codes.
+3. Scroll down to 'AWS'.
+
+You'll need your AWS access key, bucket name and the code for the region your bucket is in.  You can find the AWS region codes [here](http://docs.aws.amazon.com/general/latest/gr/rande.html#apigateway_region).
+
+### Test the Backup
+
+There are many moving parts in the backup process.  Once you have it all set up, we recommend that you test it once using the manual `dbbackup` command.  Make sure that the database file ends up in your S3 bucket successfully before relying on the automatic daily backups.
+
+### Other Backup Preferences
+
+There are a few other backup preferences you can configure.
+
+1. Go to the Web Portal's Admin screen.  
+2. Select 'Advanced Config'.
+3. Select `config_manage.yml`.
+
+#### Number of Backups
+
+You can configure the number of backups the game keeps.  By default this is 5.  Older backups are automatically deleted.
+
+#### Backup Cron Job
+
+You can also configure when backups are done.  By default it's early morning, after peak MU* times.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/code/configuring-cron) for help if you want to change this.
+
+#### Database File Path
+
+If you performed a custom installation, you may also need to configure a different path for where the database dump file lives.  
+
+1. Go to the Web Portal's Admin screen.  
+2. Select 'Advanced Config'.
+3. Select `database.yml`.
+4. Enter the path to redis' dump file.

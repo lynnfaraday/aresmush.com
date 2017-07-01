@@ -111,18 +111,17 @@ The damage severity of a wound is based on a percentile dice roll modified by:
 * +30 if you're a NPC, because you're not a hero and you get badly wounded more easily.
 * +30 if the hit location was deemed a "Critical" one on the hit location chart.
 * +0 if the hit location was deemed a "Vital" one on the hit location chart.
-* -10 if the hit location is neither Critical nor Vital on the hit location chart.
+* -30 if the hit location is neither Critical nor Vital on the hit location chart.
 * armor, if it applies
 
-All modifiers are cumulative, and are added to the percentile roll to give a final result.
+All modifiers are cumulative, and are added to the percentile roll to give a final result based on the damage table.  The damage table is configurable by each game.  Here is the standard one:
 
 | Roll | Result |
 | ---- |
-| 20 or less| Graze |
-| 21 - 60 | FleshWound |
-| 61 - 100 | Impaired |
-| 101 or higher | Incapacitated |
-
+| 19 or less| Graze |
+| 20 - 69 | FleshWound |
+| 70 - 94 | Impaired |
+| 95 or higher | Incapacitated |
 
 Knockout is based on a composure roll, offset by the damage modifier.  PCs receive an automatic +3 bonus to the knockout roll.
 

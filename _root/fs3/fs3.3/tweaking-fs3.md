@@ -78,7 +78,7 @@ There is no right or wrong here; it is a question of style and preference.  But 
 * Characters who start out as newbie/apprentice type characters are going to be very frustrated if they're expecting the Hero's Journey and you're enforcing a more realistic rate of advancement.  Talk to these players ahead of time to set appropriate expectations.
 * If you limit chargen points too much *and* enforce a slow progression model, you're basically begging people to min/max their skills in chargen.
 * It's a bit jarring to restrict starting levels in chargen ("sorry, you don't have enough experience to justify a rating 6 in that skill") and then let characters advance to level 6 in a few months of game play.
-* Carrot on a stick model works best when people start off at low levels (as MMOs/tabletop RPGs do).  When you let people start as experts and *still* expect continuous advancement, you can quicly reach godlike power levels.  It can also lead to some glaring disparities between veteran characters and people fresh out of chargen.
+* Carrot on a stick model works best when people start off at low levels (as MMOs/tabletop RPGs do).  When you let people start as experts and *still* expect continuous advancement, you can quicly reach godlike power levels.  It can also lead to some glaring disparities between veteran characters and people fresh out of chargen. (the "dino effect")
 * Reward-based advancement can lead to OOC sour grapes if people are unable/unwilling to do certain things due to time/temperment/etc.  It can also create a have/have-not splintering of power levels.
 
 
@@ -88,8 +88,10 @@ This is a pet peeve of mine, so take it with a grain of salt :)
 
 Please don't add a Dodge skill.  For one, it makes warriors now need to buy *one more skill*, which just causes more min/maxing and silliness in chargen.  Secondly, nobody ever goes into a martial arts dojo just to learn "Dodge".  Splitting out dodge makes about as much sense as splitting out punching or kicking.  It also doesn't account for parries/blocks very well.
 
-The main reason people end up adding it is because they break up Melee into multiple skills.  Since weapons have a single defense skill, you get into a jam when you've got a guy with a sword attacking a guy with an axe.  
+Some people added a Dodge skill in 2nd Edition because of the way melee weapons were defended.  In 3rd edition that's no longer necessary.   If you've got a Sword, and someone's attacking with an Axe, you defend with your Sword skill.
 
-First off, question whether you really need to break up Melee in the first place.  Go back to the advice on Action Skills and keeping the number down. 
+# Combat Without Armor
 
-But if you really must, just make a small tweak to the defense skill code.  Make a small change to the "determine defense skill" function in the code so that melee weapons defend with a skill appropriate to the weapon the attacker is wielding.
+FS3 is designed for near-modern military combat with vehicles or ground troops will be wearing body armor.  If you don't have armor in your theme (e.g. a Wild West game) you'll probably find that combat is too lethal.  You can adjust the lethality levels in that case.
+
+You may also want to do this in a post-apoc or low-tech environment where healing is in short supply, since otherwise it might be hard to explain people surviving terrible wounds.

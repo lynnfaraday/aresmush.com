@@ -16,7 +16,7 @@ layout: page
 ## Installing Ares
 
 * [Installing Ares](/install-ares)
-* [Customizing Ares](/tutorials/customize-ares)
+* [Configuring Ares](/tutorials/config)
 
 ## Managing Ares
 
@@ -25,6 +25,7 @@ layout: page
 * [Shutting Down the Game](/tutorials/manage/shutdown)
 * [Auto-Restart After Server Reboot](/tutorials/manage/restart-after-reboot)
 * [Resetting the Headwiz Password](/tutorials/manage/forgot-headwiz-pw)
+* [Backing Up the Game](/tutorials/manage/backups)
 * [Editing the Database](/tutorials/manage/edit-database)
 * [Wiping out the Database](/tutorials/manage/init-db)
 
