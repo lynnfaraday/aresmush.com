@@ -74,20 +74,42 @@ You automatically recover 1 stress point every turn.  You can recover additional
 
 # Armor
 
-Armor reduces the lethality of damage for wounds to protected locations.
+Some characters may wear body armor to protect them from damage. Most armor will only protect certain body parts, so the first step is using the hit location to determine whether the armor even comes into play. Next, some areas are protected better than others, so figure out the Protection value of the location struck.
 
-Some characters may wear body armor to protect them from damage. Most armor will only protect certain body parts, so the first step is using the hit location to determine whether the armor even comes into play.   Next, some areas are protected better than others, so figure out the Protection value of the location struck.
+Armor is handled as an opposed roll between the weapon's Penetration value and the armor's Protection value, augmented by the net successes on the attack roll.
 
-To determine the effectiveness of armor, first determine if the shot went clean through.  This is done by comparing the protection value of the armor to the penetration value of the weapon:
+For example: Bob is firing an Assault Rifle (penetration 4) against Harry. It hits Harry in the chest, which is protected by his flak jacket (protection 4). Bob got 2 net successes on the attack roll. The system will make an opposed roll with 4 dice (Protection) versus 6 dice (Penetration + Net Successes).
+Use the table below to determine the armor result:
 
-    chance to get clean through = (penetration value - protection value)*10% + (net successes * 10%)
-    minimum chance: 10%
+| Roll | Result | 
+| ---- | 
+| Weapon gets a Solid Victory or higher. | Attack found a weak spot; armor doesn't apply. | 
+| Weapon gets a Marginal Victory or Draw. | Armor applies a random lethality penalty from 1-100, reducing damage. | 
+| Armor gets a Solid Victory or higher. | Armor stops the attack completely; no damage is done.|
 
-> For example:  Bob is firing an Assault Rifle (penetration 6) against Harry.  It hits Harry in the head, which is protected by his flak jacket (protection 4).   Bob got 2 net successes on the attack roll.   Bob has a 40% chance of bypassing the armor completely (20% penetration + 20% net success).
+The table below shows some suggested protection and penetration based on the modern world.
 
-If the shot got clean through, armor doesn't apply at all.   Otherwise, armor reduces damage by a random value from 0 to (protection value * 5%).
-
-> For example:  Jane's KEW hit Tom's Viper in the Body (Armor 6) and didn't get clean through the armor.  The armor may reduce lethality by 0-60% (a random roll).
+| Weapon / Armor| Penetration / Protection Value | 
+| ---- | 
+|Interior wall (drywall / plaster)|1| 
+|Knife|2| 
+|Solid wood furniture|3| 
+|Anti-Personnel Shrapnel|3| 
+|Light body armor (undershirt vest)|3| 
+|Light small arms (pistols, SMGs)|3| 
+|Military body armor (kevlar vest)|4| 
+|Medium small arms (rifles)|4| 
+|Car door|4| |Brick wall|5| 
+|Light Truck|5| 
+|Fighter Jet|5| 
+|Heavy small arms (12.5mm/.50cal)|8| 
+|Cargo aircraft / Bomber|8| 
+|Anti-Aircraft Missile|10| 
+|Light cannon (20mm)|10| 
+|Armored Personnel Carrier (APC)|10| 
+|Medium cannon (40mm)|15| 
+|Tank|20| 
+|Anti-Tank Missile|20|
 
 <a name="cover">
 
