@@ -83,33 +83,37 @@ Use the table below to determine the armor result:
 
 | Roll | Result | 
 | ---- | 
-| Weapon gets a Solid Victory or higher. | Attack found a weak spot; armor doesn't apply. | 
-| Weapon gets a Marginal Victory or Draw. | Armor applies a random lethality penalty from 1-100, reducing damage. | 
+| Weapon gets a Crushing Victory | Attack found a spot not covered by armor.  Protection 0. |
+| Weapon gets a Solid Victory. | Attack found a weak spot.  Protection 1-25. | 
+| Weapon gets a Marginal Victory or Draw. | Armor slows some. Protection 26-50. | 
+| Armor gets a Marginal Victory or Victory. | Armor slows considerably. Protection 51-99. | 
 | Armor gets a Solid Victory or higher. | Armor stops the attack completely; no damage is done.|
 
 The table below shows some suggested protection and penetration based on the modern world.
 
 | Weapon / Armor| Penetration / Protection Value | 
 | ---- | 
-|Interior wall (drywall / plaster)|1| 
-|Knife|2| 
-|Solid wood furniture|3| 
-|Anti-Personnel Shrapnel|3| 
-|Light body armor (undershirt vest)|3| 
-|Light small arms (pistols, SMGs)|3| 
-|Military body armor (kevlar vest)|4| 
-|Medium small arms (rifles)|4| 
-|Car door|4| |Brick wall|5| 
-|Light Truck|5| 
-|Fighter Jet|5| 
+|Interior wall (drywall / plaster)|3| 
+|Knife|4| 
+|Solid wood furniture|5| 
+|Anti-Personnel Shrapnel|5| 
+|Light body armor (undershirt vest)|5| 
+|Light small arms (pistols, SMGs)|5| 
+|Military body armor (kevlar vest)|6| 
+|Medium small arms (rifles)|6| 
+|Car door|4| 
+|Brick wall|7| 
+|Light Truck|7| 
+|Fighter Jet|7| 
 |Heavy small arms (12.5mm/.50cal)|8| 
-|Cargo aircraft / Bomber|8| 
-|Anti-Aircraft Missile|10| 
 |Light cannon (20mm)|10| 
-|Armored Personnel Carrier (APC)|10| 
-|Medium cannon (40mm)|15| 
-|Tank|20| 
-|Anti-Tank Missile|20|
+|Cargo aircraft / Bomber|10|
+|Anti-Aircraft Missile|12| 
+|Armored Personnel Carrier (APC)|12| 
+|Medium cannon (40mm)|17| 
+|Tank|22| 
+|Tank cannon|23|
+|Anti-Tank Missile|25|
 
 <a name="cover">
 

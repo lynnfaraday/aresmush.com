@@ -48,6 +48,7 @@ Most plugins have various configuration settings you can customize.
 * [Configuring the Status System](/tutorials/config/status)
 * [Configuring the Weather System](/tutorials/config/weather)
 * [Configuring the Website](/tutorials/config/website)
+* [Configuring the Wikidot Integration](/tutorials/config/wikidot)
 
 ### FS3 Skills Config
 
