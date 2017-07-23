@@ -4,7 +4,7 @@ description:
 layout: page
 ---
 
-Ares is designed to offer a familiar experience to both Penn and TinyMUX players, so experienced players will feel right at home. At the same time, it tries make the commands more approachable to new players, and offers a number of player-centric features to make life easier.
+Ares is designed to offer a familiar experience to both Penn and TinyMUX players, so veteran players will feel right at home. At the same time, it tries make the commands more approachable to new players, and offers a number of player-centric features to make life easier.
 
 This tutorial will go over the major differences between Ares and Penn/Tiny.
 

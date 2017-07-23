@@ -80,8 +80,10 @@ Wound modifiers take effect as soon as they happen, but Knockout rolls (see **Kn
 As a free action, a character may change their Stance. Stance reflects your general attitude and behavior in the combat. Most stances offer modifiers to attack and defense rolls. 
 
 * **Normal** - The default stance.
-* **Aggressive** - You are attacking aggressively with little regard for your own safety.  You get a +3 to attack, but everyone else gets a +3 to attack *you*.
-* **Defensive** - You are focusing more on *not* being hit.  Serpentine!  You get a -3 to attack, but everyone else gets a -3 to attack *you*.
+* **Reckless** - You are going all-out with no regard for your own safety.  You get a +4 to attack, but everyone else gets a +4 to attack *you*.
+* **Aggressive** - You are attacking aggressively with less regard for your own safety.  You get a +2 to attack, but everyone else gets a +2 to attack *you*.
+* **Defensive** - You are focusing more on *not* being hit.  You get a -2 to attack, but everyone else gets a -2 to attack *you*.
+* **Evasive** - Serpentine!  You're doing everything to dodge and not caring whether you can strike back.  You get a -4 to attack, but everyone else gets a -4 to attack *you*.
 * **Cover** - You are attacking from behind hard cover, like a tree or wall.  There is no modifier to attack, but hits aimed at you have a chance of hitting the cover instead.
 * **Hidden** - You are out of sight, but can still attack as normal. This stance just exists so that NPCs don't auto-target you when they can't see you. It is mostly used for snipers.
 
@@ -148,14 +150,14 @@ There are no hit points in FS3. Wounds are tracked individually, and each wound'
 
 | Damage Level | Wound Modifier | Example |
 | ---- |
-| Graze | 0 | Just a scratch!  No big deal. |
-| Flesh Wound | 0.25 | It's just a flesh wound! Hurts enough to be annoying, but doesn't really slow you down. |
-| Impaired | 1 | Ouch!  Has an impact on daily use.  May need stitches, a sling or a brace.  Will probably leve a scar. |
-| Incapacitated | 4 | That's going to leave a mark!  You can't use that body part effectively until healed down to Impaired.  May need surgery, and may have long-term effects. (See **Healing** below.)|
+| Graze | 0 | Graze wounds are not tracked on the damage display.  They are just a RP effect - a torn sleeve, a glancing blow or a scratch. |
+| Flesh Wound | 0.25 | A typical Hollywood flesh wound.  Hurts but doesn't slow you down. |
+| Impaired | 2 | Hurts badly enough to affect your use of that body part, but still not a big deal. May need stitches, a sling or a brace for a few days. |
+| Incapacitated | 7 | Hurts badly enough to keep you from using that body part effectively for a few days. |
 
 Characters are free to roleplay wounds creatively; they are deliberately vague to give freedom for interpretation based on the circumstances at hand.
 
-Incapacitating wounds are relatively rare, but are meant to be just that - incapacitating.  While you may be able to keep fighting, you can't really use that affected body part and should roleplay accordingly.  For example, you could be dizzy or blinded by blood in your eyes from a head wound, or be unable to use an incapacitated arm or bear weight on an incapacitated leg. 
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** The system assumes that there are no long-term effects from damage; no broken bones, severed arteries or internal organs damaged.  If you're going to impose more serious effects, you'll need to manually adjust your [Healing](/fs3/fs3-3/combat#healing).
 
 <a name="knockout"/>
 
@@ -189,23 +191,20 @@ You can also spend a luck point to recover immediately from a Knockout using the
 
 In the real world, combat injuries are often devastating and disabling, but most players don't find it fun to be laid up for weeks after an injury and then spend months in physical therapy.  Combat damage results are deliberately Hollywood-ized.
 
-Lesser wounds heal pretty quickly, but Incapacitating lay you up for awhile.  Each day you accumulate **Healing Points**.  When you have enough, your wound is reduced to the next lower level.
+Some weapons do "stun" damage, which heals overnight.
+
+For physical wounds, each day you accumulate **Healing Points**.  When you have enough, your wound is reduced to the next lower level.
 
 | Damage Level | Healing Points  |
 | ---- |
-| Graze | 3 |
 | FleshWound | 7 |
-| Impairing | 10 |
-| Incapacitating | 10 |
+| Impaired | 10 |
+| Incapacitated | 5 |
 
-Normally you gain 1 healing point per day.  You get a bonus point if you're in a hospital or under the care of a PC doctor (via the `heal` command) or make a successful Recovery Roll.  Each game will configure the ability used for Recovery.  For an example, see **[FS3 Core](/fs3/fs3-3/core)**.  
-
-So normally an Incapacitating wound would take about 2 months to heal completely, but with a hospital/doctor and some successful recovery rolls, it could be as quickly as three weeks.
-
-Some weapons do "stun" damage, which heals three times as fast as regular damage.
+Normally you gain 1 healing point per day.  You get a bonus point if you're in a hospital **or** under the care of a PC doctor (via the `heal` command) **or** make a successful Recovery Roll.  Each game will configure the ability used for Recovery.  For an example, see **[FS3 Core](/fs3/fs3-3/core)**.  
 
 Once a wound begins healing, the Wound Modifier is reduced by 1/3rd.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** Long-term effects from an Incapacitating wound are left up to the player/storyteller.  The damage system does not model these effects, so it's up to you to incorporate them appropriately into your RP and rolls.  If you say that an Incapacitating wound to the arm results in a broken arm, then you should RP being in a cast with an appropriate wound modifier even after the system says you're healed.
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** The system assumes that there are no long-term effects from damage; no broken bones, severed arteries or internal organs damaged.  If you're going to impose more serious effects, you'll need to take that into account manually.  For example, if you assume you've got a broken arm, the system may tell you that you're "healed" in a week but you'd still need a cast for a month or so after that.
 
 

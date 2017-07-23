@@ -3,7 +3,6 @@ toc: Scenes
 summary: Creating and Joining scenes.
 aliases:
 - scene join
-- scene joining
 - scene stop
 - scene end
 - scene privacy
@@ -11,24 +10,32 @@ aliases:
 
 # Creating and Joining a Scene
 
-When you start a scene, it takes you to a new room exclusively for that scene.
+When you start a scene, you can create a temporary room or start one in the room you're in.  Temp rooms are automatically recycled when the scene ends.
 
-`scene/start <title>[=<private/public>]` - Starts a scene.
-`scene/stop [<#>]` - Stops a scene and recycles the room.
+`scene/start` - Starts a scene in your current room.
+`scene/start [<area>/]<location name>=<private/public>` - Starts a scene in a temp room.
 
-The title can be temporary until you think of a good one.
+> **Tip:** If your location name matches a grid location, the desc will be copied over.  You can use Area/Room for the location name to distinguish between rooms with the same name in different areas.
+
+## Stopping a Scene
+
+You should stop a scene when it's over.  Scenes with empty rooms will be stopped automatically at some point.
+
+`scene/stop [<#>]` - Stops a scene and recycles the room (if it was a temporary one).
 
 > **Tip:** Admins and characters with the `manage_scenes` permission can stop other people's scenes.
 
+## Scene Privacy
+
+A scene can either be public (anyone's invited) or private.  Scenes on the grid are public by default.  Scenes in RP rooms are private.  The scene's organizer can change the privacy setting. 
+
+`scene/privacy [<#>=]<private/public>` - Changes the privacy level.
+
+> **Tip:** It's rude to create a private scene in a public room on the main grid. Use a RP room or temp room instead.
+
 ## Joining Scenes
 
-To join a public scene, you can use the scene/join command.  To join a public scene, you'll need a meetme (see [Meetme](/help/rooms/meetme).
+To join a public scene, you can use the scene/join command.  To join a private scene, you'll need a meetme (see [Meetme](/help/rooms/meetme).
 
 `scenes` - Lists scenes.
 `scene/join <#>` - Joins a scene.
-
-## Scene Privacy
-
-Scenes are public by default.  The scene's organizer can change the privacy setting. 
-
-`scene/privacy [<#>=]<private/public>` - Changes the privacy level.

@@ -28,6 +28,7 @@ FS3 lets you set up as many weapon types as you want.  FS3 weapons have the foll
             ammo: 20
             recoil: 1
             damage_type: Physical
+            init_mod: 0
             accuracy: 0
             has_shrapnel: false
             allowed_specials: 
@@ -95,6 +96,10 @@ The weapon's accuracy value gives the attacker a bonus (or penalty, if accuracy 
 ### Shrapnel
 
 You can control whether an explosive weapon does additional shrapnel damage.  Anti-vehicle weapons typically do not generate shrapnel.
+
+### Initiative Modifier
+
+You can configure certain weapons to have a bonus (or penalty) to initiative. The modifier is a number of dice to the wielder's initiative roll, so +1 is minor, +3 is significant.  This modifier is most relevant in fantasy settings where some weapons were much more cumbersome to use than others.
 
 ### Specials
 

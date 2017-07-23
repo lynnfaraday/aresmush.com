@@ -66,7 +66,7 @@ Attributes are rated from 1-5.
 
 You receive *Average* in all Attributes for free.  Each additional rating costs **2 APs**.
 
-You may spend at most **16 APs** on Attributes.  You may not have more than **1 Attribute rated 5** and no more than **2 Attributes rated 4 or higher**.
+You may spend at most **16 APs** on Attributes.  You may not have more than **1 Attribute rated 5** and no more than **2 Attributes rated 4 or higher**.  These limits apply to the total number of attributes, so if you have a 4 and a 5, that counts as both 2 at 4+ and 1 at 5.
 
 > <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** You don't gain any points for taking a rating 1 in an Attribute.  It costs the same as rating 2.  Rating 1 is there solely for roleplay flavor if you want to denote a disadvantage.
 
@@ -110,11 +110,11 @@ Some Action Skills are so broad that you need to pick a specialty.  For instance
 
 You automatically get the *Everyman* rating in each Action Skill for free.  Each additional rating costs **1 AP**.
 
-You may have at most **3 Action Skills rated 5+** and at most **1 rated 7+**.
+You may have at most **3 Action Skills rated 5+**, **2 rated 6+** and **1 rated 7+**.  These limits apply to the total number of skills, so if you have a 6 and a 7, that counts as both 1 at 7+ and 2 at 6+.
 
-If you have a specialized ability higher than Everyman, you must choose a specialty.  The first one is free.  Every additional specialty costs **1 AP**.
+If you have a specialized ability higher than Amateur, you must choose a specialty.  The first one is free.  Every additional specialty costs **1 AP**.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** You don't gain any points for taking a rating 0 in an Action Skill.  It costs the same as rating 1.  Rating 0 is there solely for roleplay flavor if you want to denote a disadvantage.  
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** You don't gain any points for taking a rating 0 in an Action Skill.  It costs the same as rating 1.  Rating 0 is there solely for roleplay flavor if you want to denote a disadvantage.  Bear in mind that this disadvantage is significant.  "Everyman" represents your average person.  For example - Everyman in piloting is someone who maybe saw some movies and played a flight sim game.  Lower than that would be pretty low indeed.
 
 <a name="background-skills"/>
 

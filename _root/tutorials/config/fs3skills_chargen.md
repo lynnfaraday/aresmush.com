@@ -40,10 +40,20 @@ You can configure various limits to what skills and attributes a character can h
 
 * **max\_ap**: Total Ability Points (not counting free skills).
 * **max\_attributes**: Total points in Attributes.
-* **max\_skills\_above_4**: Number of distinct skills rated 5+.
-* **max\_skills\_above_6**: Number of distinct skills rated 7+.
-* **max\_attr\_above_3**: Number of distinct attributes rated 4+.
-* **max\_attr\_above_4**: Number of distinct atributes rated 5.
+
+### Max Skills/Attributes At
+
+You can set break points for attributes and skills to limit how many a character can have at or above a given level. 
+
+    max_skills_at_or_above:
+        6: 2
+        7: 1
+    
+    max_attrs_at_or_above: 
+        4: 2
+        5: 1
+
+> **Tip:** The limits are totals.  In the example above, a character could have only 2 skills at 6+, and only one of them could be a 7.  They could also have only 1 attribute at 4+, and only one of them could be a 5.
 
 ## Starting Skills
 

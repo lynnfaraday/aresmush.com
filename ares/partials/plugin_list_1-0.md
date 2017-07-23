@@ -34,3 +34,4 @@
 * [Weather](/help_1-0/weather)
 * [Website](/help_1-0/website)
 * [Who](/help_1-0/who)
+* [Wikidot](/help_1-0/wikidot)

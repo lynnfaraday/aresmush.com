@@ -70,7 +70,7 @@ The system will pick default gear for you, but you can change it if you need to.
 
 `combat/stance <stance>`
 
-[Stances](/fs3/fs3-3/combat#stance) affect your character's general attitude and behavior in combat, and give attack/defense penalties.  Available stances are **Normal**, **Aggressive**, **Defensive**, and **Cover**.  Always be sure that your RP mirrors your stance.
+[Stances](/fs3/fs3-3/combat#stance) affect your character's general attitude and behavior in combat, and give attack/defense penalties.  Available stances are **Normal**, **Reckless**, **Aggressive**, **Defensive**, **Evasive**, **Cover** and **Hidden**.  Always be sure that your RP mirrors your stance.
 
 ## Choosing Vehicles
 

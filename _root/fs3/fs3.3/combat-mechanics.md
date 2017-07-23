@@ -74,20 +74,24 @@ You automatically recover 1 stress point every turn.  You can recover additional
 
 # Armor
 
-Some characters may wear body armor to protect them from damage. Most armor will only protect certain body parts, so the first step is using the hit location to determine whether the armor even comes into play. Next, some areas are protected better than others, so figure out the Protection value of the location struck.
+Some characters may wear body armor to protect them from damage. Most armor will only protect certain body parts, so the first step is using the hit location to determine whether the armor even comes into play. Some areas are protected better than others, so hit location determines the armor's protection value.
 
-Armor is handled as an opposed roll between the weapon's Penetration value and the armor's Protection value, augmented by the net successes on the attack roll.
+Some weapons get through armor better than others, too.  This is represented by the weapon's penetration value.  Net successes on the attack roll can help the attacker find a weak spot in the armor, boosting the weapon's penetration value.
 
-For example: Bob is firing an Assault Rifle (penetration 4) against Harry. It hits Harry in the chest, which is protected by his flak jacket (protection 4). Bob got 2 net successes on the attack roll. The system will make an opposed roll with 4 dice (Protection) versus 6 dice (Penetration + Net Successes).
-Use the table below to determine the armor result:
+Armor is determined as follows:
+
+    roll = 1d8 + attacker net successes + weapon penetration - armor protection
+
+Look up the roll value on the following table to determine the result:
+
 
 | Roll | Result | 
 | ---- | 
-| Weapon gets a Crushing Victory | Attack found a spot not covered by armor.  Protection 0. |
-| Weapon gets a Solid Victory. | Attack found a weak spot.  Protection 1-25. | 
-| Weapon gets a Marginal Victory or Draw. | Armor slows some. Protection 26-50. | 
-| Armor gets a Marginal Victory or Victory. | Armor slows considerably. Protection 51-99. | 
-| Armor gets a Solid Victory or higher. | Armor stops the attack completely; no damage is done.|
+| 8+ | Attack found a spot not covered by armor; armor has no effect. |
+| 6-7 | Attack found a weak spot.  Armor reduces damage lethality by 1-24. | 
+| 4-5 | Armor slows some. Armor reduces damage lethality by 25-49. | 
+| 2-3 | Armor slows considerably. Armor reduces damage lethality by 50-99. | 
+| <1 | Armor stops the attack completely; no damage is done.|
 
 The table below shows some suggested protection and penetration based on the modern world.
 

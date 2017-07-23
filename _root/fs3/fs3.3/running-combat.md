@@ -50,7 +50,7 @@ Someone must be responsible for posing for the NPC and entering their actions in
  
 NPCs and PCs are treated fundamentally the same in combat. You target a NPC just by using his name, and there are versions of every combat command that allow you to specify a NPC as the actor. 
 
-All combat commands can take a NPC name and equal sign in front to control a NPC.  For instance, `combat/pass MyNPC=` or `combat/attack MyNPC=Target`.
+All combat commands can take a NPC name and equal sign in front to control a NPC.  For instance, `combat/pass MyNPC=` or `combat/attack MyNPC=Target`.   Most of them also support multiple names, e.g. `combat/attack A B=C`.
  
 > <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** The NPC versions of commands also work on PCs too, in case someone is AFK or disconnected and you need to set their action for them.
 
@@ -76,7 +76,7 @@ Combat can be designated as 'mock' or 'real'. Mock combat represents training, s
 
 ## Ambushes
 
-If a character is caught unawares, they shouldn't get an attack and should have a -3 modifier to defense.  You can simulate this by making them take the **pass** action and giving the attacker the aggressive stance.
+If a character is caught unawares, they shouldn't get an attack and should have a negative modifier to defense.  You can simulate this by making them take the **pass** action and giving the attacker the reckless stance.
 
 ## Booby Traps and Unmanned Vehicles
 
