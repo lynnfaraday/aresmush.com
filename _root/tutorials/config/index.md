@@ -23,6 +23,7 @@ There are several basic game settings that pretty much every game will want to c
 * [Configuring Restricted Names](/tutorials/config/names)
 * [Configuring Secret Codes](/tutorials/config/secrets)
 * [Configuring the Game Skin (Lines)](/tutorials/config/skin)
+* [Configuring Banned and Suspect Sites](/tutorials/config/ban)
 
 ### Feature Config
 

@@ -23,7 +23,7 @@ Ability Rolls should be used judiciously. RPGs are about *role*play not *roll*pl
 
 Rolling dice is fun and all, but it's also important to consider what your character *actually knows* and can *reasonably have a chance to accomplish*.  
 
-You cannot do brain surgery with *Everyman* Medicine or fly a space shuttle with *Amateur* Piloting.  You cannot turn a cow's ear into a silk purse or leap a giant chasm no matter how well you roll.
+You cannot do brain surgery with *Everyman* Medicine or fly a space shuttle with *Everyman* Piloting.  You cannot turn a cow's ear into a silk purse or leap a giant chasm no matter how well you roll.
 
 > <i class="fa fa-cubes" aria-hidden="true"></i>  **Tip:** Common sense should always trump die results.
 

@@ -150,7 +150,7 @@ There are no hit points in FS3. Wounds are tracked individually, and each wound'
 
 | Damage Level | Wound Modifier | Example |
 | ---- |
-| Graze | 0 | Graze wounds are not tracked on the damage display.  They are just a RP effect - a torn sleeve, a glancing blow or a scratch. |
+| Graze | 0 | Graze wounds are not tracked on the damage display.  They are just a RP effect - a glancing blow, a scratch, or a bruise through armor. |
 | Flesh Wound | 0.25 | A typical Hollywood flesh wound.  Hurts but doesn't slow you down. |
 | Impaired | 2 | Hurts badly enough to affect your use of that body part, but still not a big deal. May need stitches, a sling or a brace for a few days. |
 | Incapacitated | 7 | Hurts badly enough to keep you from using that body part effectively for a few days. |

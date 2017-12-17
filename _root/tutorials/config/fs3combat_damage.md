@@ -14,7 +14,7 @@ To configure the FS3 damage system:
 
 You can configure the wound modifiers for each damage level to make combat either more realistic (higher modifiers) or more Hollywood-ish (lower modifiers).  Fractional modifiers are allowed, so small wounds can add up.
 
-For context, remember that -3 is a very significant modifier - it can take a Great person down to an Amateur level.
+For context, remember that -3 is a very significant modifier - it can take a Great person down to an Fair level.
 
 ## Lethality Tuning
 
@@ -25,10 +25,6 @@ There are several settings you can adjust to control how lethal damage is.
 You can configure a bonus to give PCs on their knockout rolls.  Make this 0 if PCs have no advantage over NPCs.  
 
 > **Tip:** Be careful making this too high.  PCs are already harder to knock out in combat because they (generally) have higher composure scores and have luck points to burn.  Give them too much of a bonus and you can make them nigh-invincible.
-
-### NPC Lethality Mod
-
-You can assign an automatic modifier to make NPC damage more lethal.  This is added to the lethality modifier for all attacks against NPCs.
 
 ### Damage Table
 

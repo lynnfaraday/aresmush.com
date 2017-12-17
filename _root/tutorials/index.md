@@ -4,7 +4,7 @@ description:
 layout: page
 ---
 
-*Under Construction*  More tutorials coming soon!
+*Under Construction*  Many of these tutorials are incomplete, but having a robust suite of tutorials is a critical part of the first official release of Ares!  Stay tuned.
 
 ## Playing Ares
 
@@ -12,14 +12,20 @@ layout: page
 * [Ares for Vets](/ares-for-vets) - Overview of Ares for veteran MU\* players.
 * [Client Setup](/clients) - Setting up your MUSH client to work with Ares.
 * [Player Handles](/handles) - Learn all about Ares' player identity system.
+* [Dealing with Trolls](/tutorials/manage/trolls) - Tools for trolls and harassment.
 
 ## Installing Ares
 
-* [Installing Ares](/install-ares)
-* [Configuring Ares](/tutorials/config)
+See [Installing Ares](/install-ares).
+
+
+## Configuring Ares
+
+See [Configuring Ares](/tutorials/config).
 
 ## Managing Ares
 
+* [Dealing with Trolls](/tutorials/manage/trolls)
 * [Connect to the Server Shell](/install-ares/server-shell)
 * [Starting the Game](/tutorials/manage/start)
 * [Shutting Down the Game](/tutorials/manage/shutdown)

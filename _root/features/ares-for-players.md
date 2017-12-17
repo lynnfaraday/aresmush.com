@@ -10,9 +10,17 @@ AresMUSH is designed for players familiar with PennMUSH and TinyMUX.  Virtually 
 
 The [Ares for Vets](/ares-for-vets) tutorial gives a run-down on some of the differences between AresMUSH and Penn/Tiny.
 
+## Web Portal
+
+AresMUSH features a fully-integrated [web portal](/web_portal) that allows you to interact with the game from a web browser.  Far from just a telnet window embedded in the browser, the web portal offers a rich experience and can fully replace (and enhance!) traditional game wikis.
+
 ## Commands
 
 Commands in Ares are designed to be simpler and more approachable to new players, while at the same time preserving shortcuts for experienced players used to commands working a certain way.  Where possible, it supports both Tiny and Penn syntax for things like mail and channels.
+
+## FS3 Third Edition
+
+Ares features a [new edition](/fs3/fs3-3) of the FS3 skills and combat system, that streamlines skills, adds new combat options, and offers various other improvements over prior editions.
 
 ## Handles
 

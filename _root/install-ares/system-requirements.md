@@ -18,15 +18,13 @@ This article details the system requirements to help you find the right VPS and 
 
 ### Operating System
 
-AresMUSH runs best on a Unix-like operating system, such as Linux or MacOSX.  If you have no other preference, choose **Ubuntu Linux** because that's what I use and I'll be able to help you better.
+AresMUSH runs best on a Unix-like operating system, such as Linux or MacOSX.  The Ares install scripts and tutorials are geared toward **Ubuntu Linux**.
 
-> AresMUSH _can_ run on Windows, but all Ares scripts and instructions are geared towards Unix-like environments.  If you want to run it on Windows, it will require some gymnastics.  It is not officially supported, but it can work.
+> AresMUSH _can_ run on Windows, but it will require some gymnastics and is not officially supported.
 
 ### RAM
 
-I wouldn’t recommend anything less than 500MB. In testing, Ares RAM usage has been about 70MB-80MB with up to a dozen players connected, but you also need RAM for the OS itself and any other utilities you want to be running. 
-
-Most VPS servers will give you at least 500MB, so that shouldn’t be a problem.
+For just the telnet portal, you can get away with 500MB of RAM for a modestly-sized game.  The web portal requires 1GB of RAM to run decently.
 
 ### CPU
 

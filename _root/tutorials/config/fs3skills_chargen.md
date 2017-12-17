@@ -100,7 +100,7 @@ Sometimes you may want to prompt the player with a note about their skills.  You
 
 All Action Skills start at the "Everyman" rating by default, which represents the basic skills all average people in the game world have.  You don't have to do anything special for this.
 
-In some settings, you may want everyone to start better than average in some things.  To do this, use the special "Everyone" group.   For example, to make everyone start with Melee 2 (Amateur) in a military setting:
+In some settings, you may want everyone to start better than average in some things.  To do this, use the special "Everyone" group.   For example, to make everyone start with Melee 2 (Fair) in a military setting:
 
         Everyone:
             skills:

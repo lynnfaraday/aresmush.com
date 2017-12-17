@@ -8,6 +8,12 @@ For those who care about the nitty-gritty about how the combat system works, thi
 
 <a name="attacks">
 
+# Initiative
+
+Initiative is a based on a simple roll of whatever is configured as the initiative stat (Alertness by default, which represents situational awareness).   Most successes goes first.  Ties are broken by a random die roll. 
+
+You can get 3 extra initiative dice by spending luck.   You also get 3 dice for subdue, suppress or distract actions.  Since their main effects expire at the end of the turn, this initiative bonus helps them to be more relevant.
+
 # Attacks
 
 ## Aim
@@ -62,7 +68,23 @@ Third edition has done away with the different target ranges for explosive attac
 
 In addition to the regular attack, explosive weapons with shrapnel have a chance of doing 0-5 shrapnel wounds to each target in the blast.
 
-<a name="armor">
+<a name="defense">
+
+# Defense
+
+The defense skill used against an attack is determined by the following chart:
+
+| Defender in vehicle | Use vehicle pilot's piloting skill  |
+| Defender and attacker both have melee weapons | Use the skill for the *defender's* weapon. |
+| Otherwise | Use the "defense" skill for the defender's combatant type. |
+
+For example:  Erson is fighting Britt.  Erson has a sword (skill: Blades) and Britt has a staff (skill: Staves).  Erson uses the Blades skill for attack, but Britt uses her Staves skill for defense.   When it's Britt's turn, she attacks with Staves and Erson defens with Blades.
+
+Another example:  This time Gray is attacking Britt.  He has a rifle and she has her staff.  Even though Britt has a melee weapon, she doesn't get to use it against a firearm.  She defends with the base defense skill (typically Reflexes).  He also uses the base defense skill when she attacks him back.
+
+Note: No matter which passenger in a vehicle is targeted, the defense roll is always based on the *pilot's* piloting skill.
+
+<a name="stress">
 
 # Stress
 
@@ -71,6 +93,8 @@ Stress accumulates in combat as your character is attacked, making you less effe
 Every attack - even if it does no damage - inflicts 1 stress point, up to a maximum of 5.  The suppress attack inflicts more stress than normal - see that attack description for details.
 
 You automatically recover 1 stress point every turn.  You can recover additional stress by making a successful Composure roll - 1 extra point per success.
+
+<a name="armor">
 
 # Armor
 
@@ -138,11 +162,14 @@ If a target is in cover, the attack has a chance of being stopped by cover inste
 The damage severity of a wound is based on a percentile dice roll modified by:
 
 * The weapon’s lethality statistic.
-* +30 if you're a NPC, because you're not a hero and you get badly wounded more easily.
+* +30 if the target is a NPC, because they're not a hero and get badly wounded more easily.
 * +30 if the hit location was deemed a "Critical" one on the hit location chart.
 * +0 if the hit location was deemed a "Vital" one on the hit location chart.
 * -30 if the hit location is neither Critical nor Vital on the hit location chart.
 * armor, if it applies
+* +30 if the attacker spent luck on attack
+* -30 if the defender spent luck on defense
+* +5 for every net success the attacker gets beyond the first.
 
 All modifiers are cumulative, and are added to the percentile roll to give a final result based on the damage table.  The damage table is configurable by each game.  Here is the standard one:
 

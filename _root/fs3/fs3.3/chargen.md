@@ -84,14 +84,13 @@ Action Skills are rated from 0 to 8, based on your training and experience.
 
 | Rating | Summary | Description |
 | ---- |
-|0 |Unskilled|You lack even basic capabilities in this area.|
 |1 |Everyman|You know what the average inhabitant of the game world would know.   |
-|2 |Amateur|You've still got a lot to learn, but you can handle easy stuff. |
-|3 |Fair|You have competence at a junior-professional level, but lack finesse or experience.|
+|2 |Fair|You've still got a lot to learn, but you can handle easy stuff. |
+|3 |Competent|You have competence at a junior-professional level, but lack finesse or experience.|
 |4 |Good|You are thoroughly competent at a general professional level. |
 |5 |Great|You understand nuances and shortcuts, and can handle even challenging situations with ease. |
-|6 |Expert|You are an expert, and can pull through even in dire circumstances. |
-|7 |Elite|You have mastered your field and few can compare. Example: an All Star athlete or world-renowned scientist.|   
+|6 |Extraordinary|You are an expert, and can pull through even in dire circumstances. |
+|7 |Amazing|You have mastered your field and few can compare. Example: an All Star athlete or world-renowned scientist.|   
 |8 |Legendary|You are one of the best that’s ever lived.  Example: Einstein or Beethoven. |
 
 If the descriptions in the rating table above aren't enough, you can use the [Detailed Ratings](/fs3/fs3-3/detailed-ratings) as a guide.  
@@ -99,12 +98,12 @@ If the descriptions in the rating table above aren't enough, you can use the [De
 A few tips about Action Skills:
 
 * Fair/Good/Great are professional skill levels, so most of your job-related skills should be in this range.
-* You don't have to be an Expert to succeed in FS3.  Ratings 6+ are exceptional.
-* Your skills should generally match your professional experience.  While some variation is allowed for talent (or lack thereof), be careful not to stray too far.  A brand-new pilot with an Elite piloting skill isn't going to fly (pun intended).
+* You don't have to be amazing to succeed in FS3.  Ratings 6+ are exceptional.
+* Your skills should generally match your professional experience.  While some variation is allowed for talent (or lack thereof), be careful not to stray too far.  A brand-new pilot with an Amazing piloting skill isn't going to fly (pun intended).
 
 ### Specialties
 
-Some Action Skills are so broad that you need to pick a specialty.  For instance, your paramedic's "Medicine" skill might be really good, but it doesn't cover brain surgery.  If you take a specialized ability higher than Amateur, you must choose a specialty.
+Some Action Skills are so broad that you need to pick a specialty.  For instance, your paramedic's "Medicine" skill might be really good, but it doesn't cover brain surgery.  If you take a specialized ability higher than Fair, you must choose a specialty.
 
 ### Buying Action Skills
 
@@ -112,7 +111,7 @@ You automatically get the *Everyman* rating in each Action Skill for free.  Each
 
 You may have at most **3 Action Skills rated 5+**, **2 rated 6+** and **1 rated 7+**.  These limits apply to the total number of skills, so if you have a 6 and a 7, that counts as both 1 at 7+ and 2 at 6+.
 
-If you have a specialized ability higher than Amateur, you must choose a specialty.  The first one is free.  Every additional specialty costs **1 AP**.
+If you have a specialized ability higher than Fair, you must choose a specialty.  The first one is free.  Every additional specialty costs **1 AP**.
 
 > <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** You don't gain any points for taking a rating 0 in an Action Skill.  It costs the same as rating 1.  Rating 0 is there solely for roleplay flavor if you want to denote a disadvantage.  Bear in mind that this disadvantage is significant.  "Everyman" represents your average person.  For example - Everyman in piloting is someone who maybe saw some movies and played a flight sim game.  Lower than that would be pretty low indeed.
 
@@ -126,11 +125,11 @@ Valid Background Skills will vary from game to game.  For an example, see **[FS3
 
 ### Background Skill Ratings
 
-Background Skills are rated differently than Action Skills in a more descriptive fashion:
+Background Skills have a compressed rating system, because it isn't necessary to fret over whether your baseball hobby is at a 2 or a 3:
 
-* **Interest** - Interests and casual studies.  For example: playing in a bar league, a hobby, some college or equivalent study that never went anywhere.  Rolled as Amateur (2).
-* **Proficiency** - Professional or semi-professional competentence.  For example: a minor league or college athlete, a serious hobbyist, a college degree with some professional experience.  Rolled as Good (4).
-* **Expertise** - Notable expertise in your field.  For example: a Major league athlete, an advanced degree, a renowned expert.  Rolled as Expert (6).
+* **Fair** - Interests and casual studies.  For example: playing in a bar league, a hobby, some college or equivalent study that never went anywhere.
+* **Good** - Professional or semi-professional competentence.  For example: a minor league or college athlete, a serious hobbyist, a college degree with some professional experience.
+* **Exceptional** - Notable expertise in your field.  For example: a Major league athlete, an advanced degree, a renowned expert.
 
 A few tips for selecting Background Skills:
 
@@ -151,9 +150,9 @@ Languages represent the languages that your character can speak and/or read.   T
 
 Like Background Skills, Language Skills have more descriptive ratings.  
 
-* **Beginner** - You know tourist-level common phrases like "my name is" and "where's the bathroom".  Rolled as Amateur (2).
+* **Beginner** - You know tourist-level common phrases like "my name is" and "where's the bathroom".  Rolled as Fair (2).
 * **Conversational** - You can get by, but your phrasing is sometimes awkward and your vocabulary incomplete.  Rolled as Good (4).
-* **Fluent** - You are fully fluent in the language.  Rolled as Expert (6).
+* **Fluent** - You are fully fluent in the language.  Rolled as Exceptional (6).
 
 Your reading level is assumed to be on par with your speaking level, unless otherwise specified.
 

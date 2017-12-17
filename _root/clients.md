@@ -19,6 +19,7 @@ Here are instructions for setting up your favorite MUSH client to work with Ares
 * [Atlantis](/clients#atlantis)
 * [MUSHClient](/clients#mushclient)
 * [SimpleMU](/clients#simplemu)
+* [DuckClient](/clients#duckclient)
 * [Other](/clients#other)
 
 <a name="potato" />
@@ -106,6 +107,15 @@ SimpleMU does not support international characters.
 ### Editing
 
 You shouldn't need to set up anything to make editing work in SimpleMU.
+
+<a name="duckclient" />
+
+## Setting up DuckClient
+
+DuckClient really doesn't like Ares' keepalive feature.  The effects can vary depending on your operating system, and can include extra lines being spammed or lines not coming through occasionally.  
+
+1. In the AresMUSH game, type `keepalive off` to disable the keepalive feature.
+
 
 <a name="other" />
 

@@ -639,6 +639,33 @@ li {
 
 
 
+.fs3-sidebar {
+    padding-left: 20px;
+    padding-top: 20px;
+    border-left: 1px dotted #CF895D;;
+    border-bottom: 1px dotted #CF895D;
+/*    margin: 10px;   */
+}
+
+
+.fs3-sidebar h2 {
+    font-size: 1em;
+    border-bottom:1px solid #CF895D;
+}
+
+.fs3-shortcut {
+    display: none;
+}
+
+
+.help-version {
+    color: #CF895D;
+    font-size: 200%;
+    font-style: italic;
+}
+
+
+
 /* ------------------------
    REACTIVE DESIGN
    ------------------------
@@ -709,23 +736,7 @@ li {
     padding: 10px;
 }
 
-.fs3-sidebar {
-    padding-left: 20px;
-    padding-top: 20px;
-    border-left: 1px dotted #CF895D;;
-    border-bottom: 1px dotted #CF895D;
-/*    margin: 10px;   */
-}
 
-
-.fs3-sidebar h2 {
-    font-size: 1em;
-    border-bottom:1px solid #CF895D;
-}
-
-.fs3-shortcut {
-    display: none;
-}
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 800px) {
 /*    .nav li:before { content: " \25C6"; } 

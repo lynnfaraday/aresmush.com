@@ -76,22 +76,21 @@ You may only save up to 2 XP.  Remember you spend XP as you get it, resulting in
 
 | Current Rating | XP Cost |
 |----|
-| Unskilled | 1 XP |
 | Everyman | 1 XP |
-| Amateur | 2 XP |
-| Fair | 3 XP |
+| Fair | 2 XP |
+| Competent | 3 XP |
 | Good | 4 XP |
 | Great  | 12 XP |
-| Expert | 12 XP |
-| Elite | 12 XP |
+| Extraordinary | 12 XP |
+| Amazing | 12 XP |
 
 ### Background/Language Skill Costs
 
 | Current Rating | XP Cost |
 |----|
 | None (Everyman) | 1 |
-| Interest / Beginner | 4 XP |
-| Proficiency / Conversational  | 12 XP |
+| Fair / Beginner | 4 XP |
+| Good / Conversational  | 12 XP |
 
 
 ## Luck

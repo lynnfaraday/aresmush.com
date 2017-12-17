@@ -24,10 +24,22 @@ The jobs system comes with a set of default categories, but you can add more.
 * PLOT - Plot related.
 * REQ - Player request.
 * RP - General RP related.
+* ALERT - Trouble alerts.
+
+### Category Color
+
+You can also set a color for each category.  For example, REQ jobs are magenta by default:
+
+        REQ:
+            color: "\%xm"
 
 ### Request Category
 
-This is the category used for player requests.
+You can set the category used for player requests.  By default it's the REQ category.
+
+### Trouble Job Category
+
+You can also configure which job category is used when the system creates a job for a suspect or boot alert.  By default it's the ALERT category.
 
 ## Status
 

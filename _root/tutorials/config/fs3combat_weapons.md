@@ -114,7 +114,7 @@ In addition to specifying the base weapon types, you can define "specials", whic
 * Sparring gear
 * Machinegun bipods
 
-Specials can provide a bonus or penalty (if the value is negative) to lethality, penetration, ammo, recoil or accuracy.  The special's value is simply added to/subtracted from the weapon's base stat.
+Specials can provide a bonus or penalty (if the value is negative) to numeric weapon values like lethality, penetration, ammo, recoil, accuracy, etc.  The special's value is simply added to/subtracted from the weapon's base stat.
 
 For example, a machinegun bipod with recoil -2 would reduce a weapon's recoil stat by 2.
 

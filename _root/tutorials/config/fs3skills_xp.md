@@ -43,7 +43,7 @@ Consider the following example configuration:
 
 Raising a Language from 1 (Beginner) to 2 (Conversational) costs 4 XP and going from 2 (Conversational) to 3 (Fluent) costs 12 XP.  Since you can only spend 1 XP on the skill each month because of the cooldown, it will take at least 4 months to become Conversational and 12 to become Fluent.
 
-Raising an Action Skill in that example is much easier.  It takes only 1 XP to go from 1 (Everyman) to 2 (Amateur) and 2 XP to go from 2 (Amateur) to 3 (Fair).  After that, though, the costs go up rapidly.  
+Raising an Action Skill in that example is much easier.  It takes only 1 XP to go from 1 (Everyman) to 2 (Fair) and 2 XP to go from 2 (Fair) to 3 (Competent).  After that, though, the costs go up rapidly.  
 
 ## XP Hoard
 

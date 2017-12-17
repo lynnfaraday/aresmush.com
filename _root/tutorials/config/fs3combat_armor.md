@@ -16,7 +16,14 @@ Read **[How Armor Works](http://aresmush.com/fs3/fs3-3/combat-mechanics#armor)**
 
 ## Armor Types
 
-You can define as many kinds of armor as you want.  FS3 armor types have the following stats:
+You can define as many kinds of armor as you want.  FS3 armor types have the following stats, explained below:
+
+        Police:
+            description: Light ballistic vest.
+            protection: 
+                Chest: 6 
+                Abdomen: 5
+            defense: 0
 
 ### Description
 
@@ -24,16 +31,30 @@ The description is just ree-form text describing the armor.  It's best to use do
 
 ### Protection Values
 
-You can specify different protection values for different locations, making weak spots or skipping areas that are completely uncovered. For example, a simple kevlar vest might protect the chest and abdomen but nowhere else:
+You can specify different protection values for different locations, making weak spots or skipping areas that are completely uncovered. For example, the simple kevlar vest shown in the example above protects the chest and abdomen but nowhere else.
 
-        Police:
-            protection: 
-                Chest: 6 
-                Abdomen: 5
+### Defense
 
-## Mixing Armor
+Armor can impact defense compared to an un-armored person.  Clunky platemail might give a defense penalty, while agile power armor might give a defense bonus.
 
-A character can only wear one kind of armor at a time; you can't mix and match.  If armor has different configurations, you'll need to set them up as separate armor types.  For example, you might have armor types for both "Tactical Vest" (for just the vest) and "Tactical Full" (for vest + helmet).
+
+## Armor Specials
+
+Like weapon specials, armor specials allow you to define 'extras' that can augment armor.  Common specials might be helmets or shields.  
+
+Specials can provide a bonus or penalty (if the value is negative) to protection or defense.  This value is added to the armor's base value.  In the examples below, a helmet provides armor to the head while a shield provides armor to the arm and a defense bonus.
+
+        Helmet:
+            description: "A helmet"
+            protection:
+                Head: 4
+        
+        Shield:
+            description: "Simpler buckler."
+            defense: 2
+            protection:
+                Right Arm: 2
+
 
 ## Vehicle Armor
 

@@ -51,28 +51,6 @@ By default, players can create characters from the web portal.  This assumes tha
 
 You can disable the terms of service completely by setting `use_terms_of_service` to false.
 
-### Suspects and Bans
-
-You can register certain IPs or hostnames as "suspect" and you'll be alerted (via a job) when a new character is created from one of these sites.  Banned sites work similarly but they actually prevent the character from logging in at all.
-
-Use `findsite <name>` to find a character's IP and host information.
-
-> **Tip:** You can use part of a hostname - often only the last bit is meaningful - but be careful about making it too broad.  Blocking a generic verizon or comcast host could end up blocking an entire region of players. 
-
-Here is an example:
-
-    banned_sites:
-        - 192.168.1.1
-    suspect_sites:
-        - abc123.verizon.net
-        - def456.comcast.net
-
-To remove a ban or suspect site, just remove it from the list.
-
-### Trouble Job Category
-
-You can also configure which job category is used when the system creates a job for a suspect or boot alert.  By default it's the MISC category.
-
 ### Guest Role
 
 The system looks for characters with the role set in `guest_role` when finding a guest character.  If for some reason you change that role, you need to update this configuration option.

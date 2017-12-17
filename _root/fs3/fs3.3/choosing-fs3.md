@@ -18,12 +18,14 @@ The combat system is very much geared towards a near-modern technology level.  B
 
 FS3 works well with historical settings back to about the 1800's, modern settings and low-tech sci-fi.  Higher sci-fi tech levels can work too, as long as you don't want blasters/lasers to work too differently than ballistic guns.  
 
-You can do a fantasy setting in FS3, but it's not a natural fit.  FS3 is not geared for things like mounted combat, hodgepodge armor (chain vest + leather arms, for instance) and different melee weapon skills.
+You can do a fantasy setting in FS3, but it's not a natural fit.  FS3 is not geared for things like mounted combat, hodgepodge armor (chain vest + leather arms, for instance), shields, and things like that.
 
-Similarly, FS3 is not designed for superhero/supernatural games.  It simply has no concept of "powers", and the rating system is not designed to accommodate superhuman abilities.  You can do it, but it will require tweaking.
+Similarly, FS3 is not designed for superhero/supernatural games.  It simply has no concept of "powers", and the rating system is not designed to accommodate superhuman abilities. 
 
 # Lightly-Coded
 
 It may seem ironic to say that a coded skills/combat system is intended for "lightly-coded" game, but it's true.  As mentioned previously, FS3 is a "soft" system.  Since Background Skills are free-form, any skill that the code relies on would need to be an Action Skill.  
 
 For instance, if you wanted a coded crafting system, all your craft skills would be Action Skills.  Coded economy?  Now your business/professional skills need to be, too.   Pretty soon you end up subverting the very idea of Action Skills, ballooning the skill list, and throwing monkey wrenches into the streamlined Chargen process.
+
+So FS3 works best when you have a very narrow focus of what "action" mechanics need to be automated.

@@ -38,13 +38,13 @@ This will prompt you for a few pieces of information about your game:
 
 ## Ports
 
-Whereas the old MUSH servers you might be useful have only one port (mush.somewhere.com port 1234) Ares actually uses three.
+Whereas the old MUSH servers you might be useful have only one port (mush.somewhere.com port 1234) Ares actually uses several.
 
 The **Telnet Port** is the general one that regular MU clients connect to.  
 
-The **Websocket Port** is a behind-the-scenes port that the Ares web portal uses to communicate with the game.
+The **Websocket Port** and **Engine API Port** are behind-the-scenes ports that the Ares web portal uses to communicate with the game.
 
-The **Web Server Port** is where your web server is running.  For instance, if it's 8081 then the website will be running on http://mush.somewhere.com:8081.
+The **Web Portal Port** is where your web portal is running.  For instance, if it's 8081 then the website will be running on http://mush.somewhere.com:8081.  Use port 80 the web portal is the only port running on the game.
 
 
 ### Picking Ports

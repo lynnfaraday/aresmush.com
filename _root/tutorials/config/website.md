@@ -7,34 +7,47 @@ aliases:
 ---
 # Configuring the Web Portal
 
+## Basic Configuration
+
 The web portal has a number of configuration options.  To set them:
 
 1. Go to the Web Portal's admin screen.
-2. Select 'Website'.
+2. Look for the section titled 'Web Portal Setup'. 
+3. Select one of the options.
 
-## Web Portal Search
+### Search Box
 
-Ares doesn't come with a search feature for the web portal, but you can set one up easily using [Google Custom  Search Engine](https://cse.google.com/cse/all).  Just log in with your Google account and add your site, and it will give you the HTML code.  Paste this into the 'search code' box on the admin configuration screen.
+Ares doesn't come with a search feature for the web portal, but you can set one up easily using [Google Custom  Search Engine](https://cse.google.com/cse/all).  Just log in with your Google account and add your site, and it will give you the HTML code.  Paste this into the search config box.
 
-## Markdown
+### Changing the Colors
 
-Many of the web portal pages allow players to enter [Markdown](https://daringfireball.net/projects/markdown/syntax).  By default, Ares allows HTML in its Markdown text.  This gives players a great deal of flexibility for embedding images, youtube videos, or custom styles.  However, it *could* be used to run malicious or annoying javascript code.  If you're worried about this, you can tell Ares to run Markdown in safe mode by disabling HTML.
+The Ares web portal uses [SCSS](http://sass-lang.com/guide), which is an enhanced version of CSS that - among other things - lets you set up variables so you can change a color in one spot and have it take effect in many styles.  For example, the colors stylesheet lets you set up colors like so:
 
-## File Uploads
+    $primary-color: #6B0C22;
+    $background-color: #fff;
 
-You can configure the maximum file upload size.  By default it is 5000 kB (5 MB).
+Changing the primary color will affect both headings and table headers, for example.
 
-## CSS Style
+* Primary color - Headings and table headers.
+* Primary outline color - Border around the primary headings.
+* Primary words color - The words inside something that uses the primary color.
+* Secondary color - Links and contrast colors.
+* Background color - The main page background.
+* Gutter color - The gutter borders on the left and right side of the page.
+* Border color - Boxes and lines around things.
+* Faded text color - Hints and subtle headings, like the sidebar.
 
-The custom stylesheet for the game web portal is located in `game/plugins/website/web/public/custom_style.css`.   You can customize your website style there.
+### CSS Style
+
+Beyond the colors, you can add custom CSS styles that will override the web portal style to your heart's content.
 
 It's also worth noting that the AresMUSH web portal uses the [Bootstrap](http://getbootstrap.com/) website layout system, so all standard Boostrap styles are available.   It also includes [FontAwesome](http://fontawesome.io/icons/) icons and [JQuery UI](https://jqueryui.com/) styles.
 
-## Home Page
+### Home Page
 
 You can configure the tag line and welcome text on the Web Portal's home page.
 
-## Images
+### Images
 
 There are three main images used by the website.  They are stored in the `game/plugins/website/web/public` directory, but you can upload new versions on the website admin page.
 
@@ -42,9 +55,27 @@ There are three main images used by the website.  They are stored in the `game/p
 * box-bg.png - Used as a background behind the character and log pages.
 * jumbotron.png - Home page image.
 
+## Advanced Options
+
+The web portal has a number of configuration options.  To set them:
+
+1. Go to the Web Portal's admin screen.
+2. Look for the section titled 'Web Portal Setup'. 
+3. Select one of the options.
+
+### Markdown
+
+Many of the web portal pages allow players to enter [Markdown](https://daringfireball.net/projects/markdown/syntax).  By default, Ares allows HTML in its Markdown text.  This gives players a great deal of flexibility for embedding images, youtube videos, or custom styles.  However, it *could* be used to run malicious or annoying javascript code.  If you're worried about this, you can tell Ares to run Markdown in safe mode by disabling HTML.
+
+### File Uploads
+
+You can configure the maximum file upload size.  By default it is 5000 kB (5 MB).
+
 ## Configuring Recaptca
 
-The game website uses Google's [Recaptcha](https://www.google.com/recaptcha/intro/) to keep bots from creating accounts.  Sign up for your own key by clicking "Get Recaptcha" from that website.
+You can use Google's [Recaptcha](https://www.google.com/recaptcha/intro/) to keep bots from creating accounts.  This is optional - if you don't set it up, the web portal will just let anyone sign up.
+
+Sign up for your own Recaptcha key by clicking "Get Recaptcha" from that website.
 
 1. Create a new "Recaptcha v2" key.
 2. List your game's website domain under the domains list.  You can also list 'localhost' if you're doing local testing.
@@ -68,17 +99,3 @@ To configure the recaptcha information:
 2. Select 'Secret Codes'.
 3. Scroll down to 'Recaptcha'.
 4. Enter your secret and site ids.
-
-## Server Configuration
-
-The website's server configuration (how it talks to your game) should be updated automatically whenever you change the game config.  However, it can still be useful to understand how it works.
-
-In the `game/plugins/website/web/public` directory is a file named `config.js`.  This javascript file contains the configuration information that the web client uses to talk to your game.
-
-    var config = {
-        port: '4202',
-        mu_name: 'AresMUSH',
-        host: 'localhost'
-    }
-
-The port name and host must match the websocket_port and hostname from your server configuration.   The MUSH name should match the MU name from your game configuration.

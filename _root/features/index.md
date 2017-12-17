@@ -8,17 +8,17 @@ tags:
 
 AresMUSH is designed with three goals in mind:
 
+## Make it Easier to Play
+
+Ares is designed to offer a familiar experience to both Penn and TinyMUX players, so experienced players will feel right at home. At the same time, a fully-integrated [web portal](/web_portal) and streamlined commands make the game easier to play for new players and old alike.
+
+Learn more at [Ares for Players](/features/ares-for-players).
+
 ## Make it Easier to Create a Game
 
 Existing MUSH clients effectively require you to have a coder on board before you can make a game.  Coding should be an afterthought, not your primary concern. Ares provides a complete MUSH-in-a-box that can be installed and configured by people with no prior code experience.
 
 Learn more at [Ares for Admins](/features/ares-for-admins).
-
-## Make it Easier to Play
-
-Ares is designed to offer a familiar experience to both Penn and TinyMUX players, so experienced players will feel right at home. At the same time, it tries make the commands more approachable to new players and old alike.
-
-Learn more at [Ares for Players](/features/ares-for-players).
 
 ## Make it Easier to Code
 

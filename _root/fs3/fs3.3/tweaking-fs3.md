@@ -39,7 +39,7 @@ This is silly.  If you're not going to allow enough points to support a particul
 The default limit of 45 AP in FS3 Core is designed around these factors:
 
 * 8 AP to raise a few attributes to above-average levels.
-* 6 AP to get the 3 "everybody has them" abilities (Athletics, Composure, Alertness) to at least amateur level.
+* 6 AP to get the 3 "everybody has them" abilities (Athletics, Composure, Alertness) to at least fair level.
 * 5 AP to cover the 'basic training' military skills that everyone has.
 * 8 AP to get two profession-specific action skills to professional levels.
 * 18 AP to spread around other things to make you cool.

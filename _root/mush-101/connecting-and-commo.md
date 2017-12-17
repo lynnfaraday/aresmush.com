@@ -27,8 +27,6 @@ So what's a new player to do?
 Here are a number of MUSHes in different genres.  Hopefully one of them might appeal to you.  These are established games with sizeable player bases, and I have friends who recommend each of them.   
 
 * [Battlestar: Unification](http://bsgunificationmush.wikidot.com/) - Battlestar Galactica
-* [Game of Bones](http://gobmush.wikidot.com/) - Game of Thrones
-* [Star Wars: Fires of Hope](http://firesofhope.wikidot.com/home) - Star Wars
 * [Arx: After the Reckoning](http://play.arxmush.org/) - Original Fantasy
 
 If you don't see anything that grabs you in the list above, you have a couple of options:
