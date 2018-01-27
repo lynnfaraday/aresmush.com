@@ -13,7 +13,7 @@ Ares needs a few things installed on the server.   For your convenience, a set o
 
 Log into your [Server Shell](/tutorials/install/server-shell) and copy/paste the following commands to run them:  
    
-    curl https://raw.githubusercontent.com/lynnfaraday/aresmush/master/bin/setup_server > setup_server  
+    curl https://raw.githubusercontent.com/aresmush/aresmush/master/bin/setup_server > setup_server  
     
     chmod +x setup_server
     

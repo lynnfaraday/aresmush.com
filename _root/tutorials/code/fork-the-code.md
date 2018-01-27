@@ -27,11 +27,11 @@ Forking Ares a few extra steps to start, but it gives you several benefits:
 Here is what you do to create your own Ares version.
 
 1. Create an account on [Github](https://www.github.com).
-2. Browse to the main [AresMUSH repository](https://github.com/lynnfaraday/aresmush).
+2. Browse to the main [AresMUSH repository](https://github.com/aresmush/aresmush).
     {{#pretty-image}}{{urls.media}}/code/git.png{{/pretty-image}}
 3. Click the "Fork" button (near the top right).
 
-    You are now the proud owner of your own version of AresMUSH.  You can tell that you're on your version by looking at the repository name near the upper left.  The main Ares code is **lynnfaraday/aresmush**.  Yours will be something like  **YOURUSERNAME/aresmush**.    
+    You are now the proud owner of your own version of AresMUSH.  You can tell that you're on your version by looking at the repository name near the upper left.  The main Ares code is **aresmush/aresmush**.  Yours will be something like  **YOURUSERNAME/aresmush**.    
 
 <a name="clone-url">
 

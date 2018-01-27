@@ -15,11 +15,11 @@ Log into your [Server Shell](/tutorials/install/server-shell) with the **'ares' 
 
 Copy/paste the following commands into the shell to run them.
 
-    curl https://raw.githubusercontent.com/lynnfaraday/aresmush/master/bin/install > install
+    curl https://raw.githubusercontent.com/aresmush/aresmush/master/bin/install > install
     
     chmod +x install
     
-    ./install https://github.com/lynnfaraday/aresmush.git
+    ./install https://github.com/aresmush/aresmush.git
 
 This will prompt you for a few pieces of information about your game:
 
