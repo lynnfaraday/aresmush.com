@@ -8,9 +8,9 @@ To configure the Channels plugin:
 
 1. Go to the Web Portal's Admin screen.  
 2. Select Advanced Config.
-3. Edit `config_channels.yml`
+3. Edit `channels.yml`
 
-## Start and End Markers
+## start_marker and end_marker
 
 You can configure the characters that appears at the beginning and end of the channel name.  This lets you alter the appearance to do things like:
 
@@ -19,7 +19,7 @@ You can configure the characters that appears at the beginning and end of the ch
 
 Start and end markers can include ansi color and other formatting codes.
 
-## Default Channels
+## default_channels
 
 You can configure which channels new characters join by default when they are first created.  This should be a list.  For example:
 

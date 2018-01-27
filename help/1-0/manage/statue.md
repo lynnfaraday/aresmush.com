@@ -6,11 +6,12 @@ summary: Turning trolls to statues.
 aliases:
 - toad
 - medusa
+- fubar
 ---
 
 # Turning Trolls to Statues
 
-Sometimes a troll's goal in life is to be sitebanned, and you can frustrate them by turning them into a statue instead.  Characters who have been turned to a statue cannot execute any game commands - not even to quit.
+The statue command, similar to RHost's FUBAR flag or Penn's @toad, can deter trolls whose goal is to be sitebanned.   When you turn a player into a statue, they will be unable to use any commands at all - not even to quit.
 
 `statue <name>=<reason>`
 

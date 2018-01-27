@@ -13,8 +13,8 @@ If you ever need to stop your game, the best way is to use the `shutdown` comman
 If that doesn't work, you can:
 
 1. Log into the Web Portal with an admin character.
-2. Go to Admin -> Admin Tasks.
-3. Click "Hard Shutdown".
+2. Go to Admin -> Manage.
+3. Click "Shutdown".
 
 Once the game is shut down, see [Starting the Game](/tutorials/manage/start) to restart it.
 
@@ -22,7 +22,7 @@ Once the game is shut down, see [Starting the Game](/tutorials/manage/start) to 
 
 As a last resort, if none of the above steps work, you can kill the server process.  
 
-1. Log into your [Server Shell](/install-ares/server-shell).
+1. Log into your [Server Shell](/tutorials/install/server-shell).
 2. Change into the aresmush directory using `cd aresmush`.
 3. Run the kill script: `bin/killares`.
 

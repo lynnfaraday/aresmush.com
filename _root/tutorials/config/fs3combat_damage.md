@@ -8,25 +8,21 @@ To configure the FS3 damage system:
 
 1. Go to the Web Portal's Admin screen.
 2. Select 'Advanced Configuration'.
-3. Edit `config_fs3combat_damage.yml`
+3. Edit `fs3combat_damage.yml`
 
-## Wound Modifiers
+## damage_mods
 
 You can configure the wound modifiers for each damage level to make combat either more realistic (higher modifiers) or more Hollywood-ish (lower modifiers).  Fractional modifiers are allowed, so small wounds can add up.
 
 For context, remember that -3 is a very significant modifier - it can take a Great person down to an Fair level.
 
-## Lethality Tuning
-
-There are several settings you can adjust to control how lethal damage is.
-
-### PC Knockout Bonus
+## pc_knockout_bonus
 
 You can configure a bonus to give PCs on their knockout rolls.  Make this 0 if PCs have no advantage over NPCs.  
 
 > **Tip:** Be careful making this too high.  PCs are already harder to knock out in combat because they (generally) have higher composure scores and have luck points to burn.  Give them too much of a bonus and you can make them nigh-invincible.
 
-### Damage Table
+## damage_table
 
 The base damage level (before being modified by things like luck or armor) is determined by a simple percentage roll.  You can configure the chance of each wound level coming up on this roll by adjusting the damage table.  
 
@@ -46,14 +42,14 @@ If you wanted to make incap wounds more rare and grazes more common, you might m
         FLESH: 60
         IMPAIR: 100
 
-Now 0-39 is a graze, 40-59 is flesh, 60-99 is impaired, and 100+ is incap.
+Now 0-39 is a graze, 40-59 is flesh, 60-99 is impaired, and 100+ is incap.  This means you'd never get an incap wound through a random roll alone; you'd need a damage modifier.
 
-## Healing Points
+## healing_points
 
-You can configure the number of healing points required to lower a wound to make damage either more realistic (higher numbers, slower healing) or more Hollywood-ish (lower numbers, higher healing).
+You can configure the number of healing points required to lower a wound to the next damage level.  You can make damage either more realistic (higher numbers, slower healing) or more Hollywood-ish (lower numbers, faster healing).
 
-A character gets 1 healing point per day by default, and 2 if they're in a hospital, under a doctor's care, or make a healing roll.  So if you set the healing time for IMPAIR to 7, it means that the character will heal from Impaired down to Flesh Wound in 3-7 days.
+A character gets 1 healing point per day by default, and 2 if they're in a hospital, under a doctor's care, or successfully make a healing roll.  So if you set the healing time for IMPAIR to 7, it means that the character will heal from Impaired down to Flesh Wound in 4-7 days.
 
-## Healing Cron Job
+## healing_cron
 
 You can configure when the healing code runs.  By default it runs daily after midnight.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/code/configuring-cron) for help if you want to change this.

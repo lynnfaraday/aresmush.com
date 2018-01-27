@@ -53,9 +53,8 @@ Some abilities require specialization.  You can add or remove a specialty:
 
 ## Adding RP Hooks
 
-RP Hooks are interesting things about your character that others can "hook" into for RP. This could be an odd personality quirk, a reputation your character has, or anything else that might inspire someone to connect with you.  Looking around at other character's sheets can be a good way to get inspiration for RP Hooks.
+See [Hooks](/help/1-0/chargen/hooks).
 
-`hook/add <title>=<description>` and `hook/remove <title>`
 
 ## Finding Other People With Skills
 

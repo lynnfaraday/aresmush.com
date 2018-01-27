@@ -8,17 +8,17 @@ To configure the Cookies plugin:
 
 1. Go to the Web Portal's Admin screen.  
 2. Select Advanced Config.
-3. Edit `config_cookies.yml`
+3. Edit `cookies.yml`
 
-## Cookie Award Cron Job
+## cookie_award_cron
 
 The game will periodically tally and award cookies.  There is a cron job to control when this happens.  By default it does this every Friday night.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/code/configuring-cron) for help if you want to change this.
 
-## Cookie Board
+## cookie_board
 
 The system will post the top cookie earners to the BBS system.  You can configure which BBS board this posts to.  If you don't want the cookie awards posted, just remove or comment out the board configuration.
 
-## Cookies Per Luck Point
+## cookies_per_luck
 
 You can configure how many cookies it takes to get a luck point.
 

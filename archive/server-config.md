@@ -9,13 +9,13 @@ tags:
 - config
 ---
 
-This article helps you determine what configuration information to use when performing the [Basic Game Configuration](/install-ares/basic-config).
+This article helps you determine what configuration information to use when performing the [Basic Game Configuration](/tutorials/install/basic-config).
 
 ## Database Host
 
 If you are using MongoLab, you can find your host and port by logging into your account and looking at your dashboard. It will be shown in a connection string like this: host:port/database_name. For example: ds059170.mongolab.com:51970/footest
 
-{{#pretty-image}}{{urls.media}}/install-ares/mongo5.png{{/pretty-image}}
+{{#pretty-image}}{{urls.media}}/tutorials/install/mongo5.png{{/pretty-image}}
 
 If you installed Mongo yourself, you'll need to know the server it's running on.
 
@@ -33,7 +33,7 @@ This is **not** the same as your MongoLab username and password - it's for the c
 
 ## Server Hostname
 
-You can use the game's IP address, or if you registered a custom [host name](/install-ares/getting-a-hostname), you can use that.
+You can use the game's IP address, or if you registered a custom [host name](/tutorials/install/getting-a-hostname), you can use that.
 
 > This is the address that people will use when connecting to your game.
 

@@ -9,7 +9,7 @@ tags:
 
 If the game is ever stopped, you'll need to restart it. 
 
-1. Log into your [Server Shell](/install-ares/server-shell).
+1. Log into your [Server Shell](/tutorials/install/server-shell).
 2. Type `cd aresmush`.
 3. Type `bin/startares`.
 

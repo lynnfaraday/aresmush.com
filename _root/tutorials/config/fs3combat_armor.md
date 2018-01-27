@@ -8,7 +8,7 @@ To configure the FS3 armor types:
 
 1. Go to the Web Portal's Admin screen.
 2. Select 'Advanced Configuration'.
-3. Edit `config_fs3combat_armor.yml`
+3. Edit `fs3combat_armor.yml`
 
 ## Before You Start
 
@@ -18,6 +18,7 @@ Read **[How Armor Works](http://aresmush.com/fs3/fs3-3/combat-mechanics#armor)**
 
 You can define as many kinds of armor as you want.  FS3 armor types have the following stats, explained below:
 
+    armor
         Police:
             description: Light ballistic vest.
             protection: 
@@ -31,12 +32,11 @@ The description is just ree-form text describing the armor.  It's best to use do
 
 ### Protection Values
 
-You can specify different protection values for different locations, making weak spots or skipping areas that are completely uncovered. For example, the simple kevlar vest shown in the example above protects the chest and abdomen but nowhere else.
+You can specify different protection values for different locations, making weak spots or skipping areas that are completely uncovered. For example, the simple kevlar vest shown in the example above protects the chest and abdomen but nowhere else.  It protects the chest slightly more due to the heart-protector plate.
 
 ### Defense
 
 Armor can impact defense compared to an un-armored person.  Clunky platemail might give a defense penalty, while agile power armor might give a defense bonus.
-
 
 ## Armor Specials
 

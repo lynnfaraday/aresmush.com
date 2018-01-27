@@ -8,7 +8,7 @@ tags:
 
 AresMUSH is designed for players familiar with PennMUSH and TinyMUX.  Virtually all of the commands you're familiar with will work just as you expect.  
 
-The [Ares for Vets](/ares-for-vets) tutorial gives a run-down on some of the differences between AresMUSH and Penn/Tiny.
+The [Ares for Vets](/tutorials/play/ares-for-vets) tutorial gives a run-down on some of the differences between AresMUSH and Penn/Tiny.
 
 ## Web Portal
 

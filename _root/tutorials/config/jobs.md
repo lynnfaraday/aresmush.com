@@ -8,9 +8,9 @@ To configure the Idle plugin:
 
 1. Go to the Web Portal's Admin screen.  
 2. Select Advanced Config.
-3. Edit `config_jobs.yml`
+3. Edit `jobs.yml`
 
-## Job Categories
+## categories
 
 The jobs system comes with a set of default categories, but you can add more.
 
@@ -26,22 +26,24 @@ The jobs system comes with a set of default categories, but you can add more.
 * RP - General RP related.
 * ALERT - Trouble alerts.
 
-### Category Color
-
 You can also set a color for each category.  For example, REQ jobs are magenta by default:
 
         REQ:
             color: "\%xm"
 
-### Request Category
+### request_category
 
 You can set the category used for player requests.  By default it's the REQ category.
 
-### Trouble Job Category
+### trouble_category
 
 You can also configure which job category is used when the system creates a job for a suspect or boot alert.  By default it's the ALERT category.
 
-## Status
+## system_category
+
+You can set the job category used for various system jobs, like XP notices.
+
+## status
 
 The status values define your workflow.  The default workflow is:
 
@@ -50,8 +52,6 @@ NEW -> OPEN -> HOLD (if necessary to pause a job) -> DONE
 You can add more status steps to your workflow.
 
 > **Important!** Adding new status values is fine.  If you change or delete existing status values, you need to check to see if any code is using the old status.  For example, the chargen system allows you to configure which status a job goes to when an application is rejected or re-submitted.
-
-### Status Color
 
 You can also set a color for each job.  This can be changed at will.  For example, NEW jobs are green by default:
 

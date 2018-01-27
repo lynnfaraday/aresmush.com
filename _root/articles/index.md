@@ -4,11 +4,7 @@ description:
 layout: page
 ---
 
-These are some articles related to MUSHing.
-
-## Tutorials
-
-For AresMUSH tutorials, see the [Tutorials](/tutorials) page.
+These are some general articles related to MUSHing.
 
 ## RP Articles
 

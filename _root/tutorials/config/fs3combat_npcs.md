@@ -8,13 +8,17 @@ You can configure the skill levels used by NPCs in FS3 combat.
 
 1. Go to the Web Portal's Admin screen.
 2. Select 'Advanced Configuration'.
-3. Edit `config_fs3combat_npcs.yml`
+3. Edit `fs3combat_npcs.yml`
 
-FS3 has three NPC types: Goon, Henchman and Boss.  
+## npc_types
 
-## Default Die Rating
+You can define the NPC types available in your game.  The standard ones are Goon, Henchman, Miniboss and Boss.
 
-The simplest configuration is just to assign each of them a die rating:
+### default
+
+The default rating is what the NPC rolls for skills by default.
+
+> **Tip:** This is a total dice pool, encompassing skill plus attribute.  So if you want a boss to be equivalent to an "Expert" PC with a "Good" attribute, you need to give them a die pool of 9 (6+3).
 
     npc_types:
         Goon:
@@ -24,11 +28,9 @@ The simplest configuration is just to assign each of them a die rating:
         Boss:
             Default: 8
 
-> **Tip:** This is a dice pool.  So if you want a boss to be equivalent to an "Expert" PC with a "Good" attribute, you need to give them a die pool of 9 (6+3).
+### Fine-Tuning Skills
 
-## Specific Skills
-
-However, you can also fine-tune their specific skills.  This is helpful if you want to make a Boss tough to take down without making them extraordinarily deadly (or vice-versa).
+You can also fine-tune dice pools for specific skills.  This is helpful if you want to make a Boss tough to take down without making them extraordinarily deadly (or vice-versa).  You can also make specialist NPCs who are good with some weapons but not others.
 
     npc_types:
         Goon:
@@ -43,7 +45,7 @@ However, you can also fine-tune their specific skills.  This is helpful if you w
 
 Any skills not expressly listed will use the 'Default' value.
 
-## Wound Modifier
+## wounds
 
 Finally, there is a setting for 'Wounds' which is a lethality bonus (or penalty) added to all damage they **take**. To make goons easier to damage and bosses harder, you could do:
 

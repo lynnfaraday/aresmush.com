@@ -97,7 +97,7 @@ If the descriptions in the rating table above aren't enough, you can use the [De
 
 A few tips about Action Skills:
 
-* Fair/Good/Great are professional skill levels, so most of your job-related skills should be in this range.
+* Competent/Good/Great are professional skill levels, so most of your job-related skills should be in this range.
 * You don't have to be amazing to succeed in FS3.  Ratings 6+ are exceptional.
 * Your skills should generally match your professional experience.  While some variation is allowed for talent (or lack thereof), be careful not to stray too far.  A brand-new pilot with an Amazing piloting skill isn't going to fly (pun intended).
 

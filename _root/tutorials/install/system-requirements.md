@@ -12,7 +12,7 @@ Because AresMUSH has different needs than Penn or Tiny, most dedicated "MUSH Hos
 
 This article details the system requirements to help you find the right VPS and get everything set up.
 
-> I recommend [Digital Ocean](http://www.digitalocean.com/?refcode=5c07173bc1f2).  It's what I use for [AresCentral](/arescentral).  If you want to use that, hop on over to [Getting Started with Digital Ocean](/install-ares/digital-ocean) for step-by-step instructions on setting up your game there.
+> I recommend [Digital Ocean](http://www.digitalocean.com/?refcode=5c07173bc1f2).  It's what I use for [AresCentral](/arescentral).  If you want to use that, hop on over to [Getting Started with Digital Ocean](/tutorials/install/digital-ocean) for step-by-step instructions on setting up your game there.
 
 ## VPS Specs
 
@@ -46,4 +46,4 @@ There are several software packages that Ares requires:
 * [Redis database]((http://redis.io/topics/quickstart))
 * [Git version control](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-If you use the [Digital Ocean](/install-ares/digital-ocean) instructions, these will automatically be installed for you.  Otherwise you'll have to set them up on your own.  Doing so is outside the scope of this tutorial.
+If you use the [Digital Ocean](/tutorials/install/digital-ocean) instructions, these will automatically be installed for you.  Otherwise you'll have to set them up on your own.  Doing so is outside the scope of this tutorial.

@@ -8,22 +8,22 @@ To configure the IC Time plugin:
 
 1. Go to the Web Portal's Admin screen.  
 2. Select Advanced Config.
-3. Edit `config_ictime.yml`
+3. Edit `ictime.yml`
 
-## Time Offset
+## year_offset
 
-The IC time system follows RL time at a 1:1 ratio, but you can shift it by a number of years and days.
+The IC time system follows RL time at a 1:1 ratio, but you can shift it by a number of years.
 
-For example, assume it's currently 2017 in RL.
-
-If you want a game set in 1817 with the date the same as the RL month, you could do:
+For example, assume it's currently 2017 in RL.  To make it 1817 you would set the `year_offset` to -200.  June 1, 2017 would then become June 1, 1817.
 
     year_offset: -200
     day_offset: 0
 
-June 1, 2017 would then become June 1, 1817.
+## day_offset
 
-If you wanted a game set in 2217 where it was 6 months ahead of RL, you could do:
+You can also shift the game to be a number of days ahead of or behind RL.
+
+For example, if it's June 1, 2017 and you want the date to be 200 years and 6 months ahead of RL, you can do:
 
     year_offset: 200
     day_offset: 180

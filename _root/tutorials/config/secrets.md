@@ -11,7 +11,7 @@ To configure the game secrets:
 1. Go to the Web Portal's Admin screen.  
 2. Select 'Secret Codes'.
 
-For more information about configuring the Teamup Calendar, see [Configuring the Events System](/tutorials/config/events).
+For more information about configuring the Database see [Configuring the Database System](/tutorials/config/db).
 
 For more information about configuring Recaptcha, see [Configuring the Website](/tutorials/config/website).
 

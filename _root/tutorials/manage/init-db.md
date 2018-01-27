@@ -11,7 +11,7 @@ You can restore your game to the default database.
 
 > **SUPER IMPORTANT! This will wipe out anything that's already in the database - rooms, characters, bbposts, mail, everything.  Be sure before you run it.**
 
-Log into your [Server Shell](/install-ares/server-shell) and run the following commands:
+Log into your [Server Shell](/tutorials/install/server-shell) and run the following commands:
 
     cd aresmush
     bin/wipedb

@@ -3,7 +3,7 @@ layout: help_1-0
 version: 1.0
 toc: ~admin~ Managing the Game
 summary: Viewing player site information.
-----
+---
 
 # Finding Player Site Info
 

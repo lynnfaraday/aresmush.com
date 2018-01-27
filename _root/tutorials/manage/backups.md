@@ -16,7 +16,7 @@ The Redis database already periodically dumps your database to a file on the ser
 
 ### Where's My Database File?
 
-If you're using Digital Ocean, it will prompt you with the location of your dump file when you log into the [Server Shell](/install-ares/server-shell).  
+If you're using Digital Ocean, it will prompt you with the location of your dump file when you log into the [Server Shell](/tutorials/install/server-shell).  
 
 For example, it will tell you:  `Data dir: /var/lib/redis/1234`   
 
@@ -68,7 +68,7 @@ There are a few other backup preferences you can configure.
 
 1. Go to the Web Portal's Admin screen.  
 2. Select 'Advanced Config'.
-3. Select `config_manage.yml`.
+3. Select `manage.yml`.
 
 #### Number of Backups
 

@@ -5,6 +5,7 @@ toc: ~admin~ Managing the Game
 summary: Managing bulletin boards.
 aliases:
 - bbwiz
+- bbs manage
 ---
 # BBS - Managing Boards
 

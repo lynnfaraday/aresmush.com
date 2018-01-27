@@ -8,12 +8,12 @@ To change the other Events plugin configuration:
 
 1. Go to the Web Portal's Admin screen.  
 2. Select Advanced Config.
-3. Edit `config_events.yml`
+3. Edit `events.yml`
 
-### Calendar Timezone
+### calendar_timezone
 
-You can change your calendar's timezone on the Teamup website by visiting the admin URL and selecting Settings -> Date and Time -> Timezone.  You need to also then tell Ares what that timezone is.  The default is EST.
+Event dates and times are stored in the server's timezone, so it's helpful to tell the players what that is.
 
-### Events Refresh Cron Job
+### event_alert_cron
 
-The game will periodically alert players when events are about to start.  There is a cron job to control when this happens.  By default it does this every hour.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/code/configuring-cron) for help if you want to change this.
+The game will periodically alert players when events are about to start.  There is a cron job to control when this happens.  By default it does this every quarter hour.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/code/configuring-cron) for help if you want to change this.

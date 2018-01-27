@@ -37,4 +37,4 @@ Here is what you do to create your own Ares version.
 
 ## Get the Clone URL
 
-On the right, you should see a 'clone URL'. Click on the "HTTPS" button to get the HTTP clone URL. You will need it when you [install the game](/install-ares/install-game).
+On the right, you should see a 'clone URL'. Click on the "HTTPS" button to get the HTTP clone URL. You will need it when you [install the game](/tutorials/install/install-game).

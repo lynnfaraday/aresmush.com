@@ -103,7 +103,7 @@ Channels save a history of the last twenty-five messages.  You can review them u
 
 `channel/recall <channel>[=<num messages>]` - Shows the last few messages on a channel.
 
-## Recall Report
+## Reporting Abuse
 
 If someone is behaving badly on channel, you can bring it to the game admin's attention - along with an automatic, verified log of the channel recall buffer.  
 

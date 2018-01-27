@@ -9,7 +9,7 @@ tags:
 - config
 ---
 
-Log into your [Server Shell](/install-ares/server-shell) with the **'ares' user**.
+Log into your [Server Shell](/tutorials/install/server-shell) with the **'ares' user**.
 
 > Note: You should use the 'ares' user for almost everything from now on.  Only a few special server operations require the root user's special privileges.
 
@@ -25,7 +25,7 @@ This will prompt you for a few pieces of information about your game:
 
 * **Database URL** - Where the database server lives.  If you followed the Digital Ocean setup, it's `127.0.0.1:6379`
 * **Database Password** - Create a password for accessing your database.
-* **Server Hostname** - The the game's [host name](/install-ares/getting-a-hostname) or IP Address.
+* **Server Hostname** - The the game's [host name](/tutorials/install/getting-a-hostname) or IP Address.
 * **Server Telnet Port** - See ports, below.
 * **Server Websocket Port** - See ports, below.
 * **Server Website Port** - See ports, below.

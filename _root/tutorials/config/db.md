@@ -14,3 +14,15 @@ To configure the database:
 4. Shut down and restart the game.  (See the tutorials at [aresmush.com](http://www.aresmush.com) if you need help doing this.)
 
 > **Important!** Database configuration changes will not take effect until the game is restarted.
+
+## url
+
+This is the URL and port number to access the database.
+
+## path
+
+Redis stores its data in a file on disk, usually named `dumb.rdb`.  This is the path to that file.
+
+## password
+
+In the `secrets.yml` configuration is the database password.

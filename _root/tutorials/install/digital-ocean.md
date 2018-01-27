@@ -26,8 +26,8 @@ Digital Ocean's pricing lists both an hourly and a monthly cost.  The monthly ra
 A "droplet" is just what DO calls a server.   To create a new droplet, log into your account and click **Create Droplet**.  
 
 1. Select the latest UBuntu distribution image.
-{{#pretty-image}}{{urls.media}}/install-ares/droplet.png{{/pretty-image}}
-2. Select a size.  The 1GB droplet meets all of Ares' [System Requirements](/install-ares/system-requirements), including the web portal.
+{{#pretty-image}}{{urls.media}}/tutorials/install/droplet.png{{/pretty-image}}
+2. Select a size.  The 1GB droplet meets all of Ares' [System Requirements](/tutorials/install/system-requirements), including the web portal.
 3. Don't add block storage.
 4. Select a region close to you.
 5. Don't add additional options.

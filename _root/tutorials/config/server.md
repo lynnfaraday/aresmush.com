@@ -6,7 +6,7 @@ title: Configuring the server.
 
 Your server host and port information are set up during installation.  If they ever change, you'll need to update the configuration.
 
-For more info on server configuration options, see [Basic Configuration](/install-ares/basic-config).
+For more info on server configuration options, see [Basic Configuration](/tutorials/install/basic-config).
 
 To configure the server:
 

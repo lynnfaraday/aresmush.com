@@ -18,10 +18,13 @@ You can configure the border lines that are used in almost every command.  Ares 
 
 You can access the border lines using special control codes \%lh, \%lf, \%ld, \%lp (also \%l1).
 
+Here's an example of how the lines would be used:
+
+
     HEADER: +==~~~~~====~~~~====~~~~====~~~~=====~~~~=====~~~~====~~~~====~~~~====~~~~~==+
     Location                            People
     DIVIDER: ------------------------------------------------------------------------------
     Offstage - Faraday's Corner         Faraday
-    ------------------------------------------------------------------------------    
+    DIVIDER: ------------------------------------------------------------------------------    
              1 Online                    0 IC                   34 Record        
     FOOTER: +==~~~~~====~~~~====~~~~====~~~~=====~~~~=====~~~~====~~~~====~~~~====~~~~~==+

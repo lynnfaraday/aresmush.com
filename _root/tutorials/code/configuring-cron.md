@@ -9,7 +9,7 @@ tags:
 
 Cron Jobs are game events that run on a set schedule, such as daily healing or weekly cookie awards.
 
-All of the built-in cron jobs allow you to configure when they run.  For example, in `config_cookies.yml` is the following configuration option:
+All of the built-in cron jobs allow you to configure when they run.  For example, in `cookies.yml` is the following configuration option:
 
     cron:
         # date:
@@ -34,6 +34,12 @@ Each item is a list, so you can have a job that runs on Tuesdays and Thursdays, 
 If you don't care about a component, you can delete it or comment it out.  
 
 Some common examples are shown below.
+
+## Disabling a Task
+
+If you want the task to never run, you can delete it entirely or make it an empty hash:
+
+    cron: {}
 
 ## Monthly Task
 

@@ -19,6 +19,10 @@ The web portal has a number of configuration options.  To set them:
 
 Ares doesn't come with a search feature for the web portal, but you can set one up easily using [Google Custom  Search Engine](https://cse.google.com/cse/all).  Just log in with your Google account and add your site, and it will give you the HTML code.  Paste this into the search config box.
 
+### Home Page Text
+
+You can configure the tag line and welcome text on the Web Portal's home page.
+
 ### Changing the Colors
 
 The Ares web portal uses [SCSS](http://sass-lang.com/guide), which is an enhanced version of CSS that - among other things - lets you set up variables so you can change a color in one spot and have it take effect in many styles.  For example, the colors stylesheet lets you set up colors like so:
@@ -43,13 +47,9 @@ Beyond the colors, you can add custom CSS styles that will override the web port
 
 It's also worth noting that the AresMUSH web portal uses the [Bootstrap](http://getbootstrap.com/) website layout system, so all standard Boostrap styles are available.   It also includes [FontAwesome](http://fontawesome.io/icons/) icons and [JQuery UI](https://jqueryui.com/) styles.
 
-### Home Page
-
-You can configure the tag line and welcome text on the Web Portal's home page.
-
 ### Images
 
-There are three main images used by the website.  They are stored in the `game/plugins/website/web/public` directory, but you can upload new versions on the website admin page.
+There are three main images used by the website.  They are stored in the `game/theme_images` directory, but you can upload new versions on the website admin page.
 
 * background.png - Used as a background image across the page title area.
 * box-bg.png - Used as a background behind the character and log pages.
@@ -63,13 +63,17 @@ The web portal has a number of configuration options.  To set them:
 2. Look for the section titled 'Web Portal Setup'. 
 3. Select one of the options.
 
-### Markdown
+### allow_html_in_markdown
 
 Many of the web portal pages allow players to enter [Markdown](https://daringfireball.net/projects/markdown/syntax).  By default, Ares allows HTML in its Markdown text.  This gives players a great deal of flexibility for embedding images, youtube videos, or custom styles.  However, it *could* be used to run malicious or annoying javascript code.  If you're worried about this, you can tell Ares to run Markdown in safe mode by disabling HTML.
 
-### File Uploads
+### max_upload_size_kb
 
 You can configure the maximum file upload size.  By default it is 5000 kB (5 MB).
+
+## character_gallery_group and character_gallery_subgroup
+
+By default, the character gallery page shows characters organized into tabs by Faction and then into sub-groups by Position.  You can change this by editing the two character gallery settings to be any two groups.   For example, on BSG:U the gallery was organized by Department then Position.
 
 ## Configuring Recaptca
 

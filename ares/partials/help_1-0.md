@@ -1,5 +1,5 @@
 *AresMUSH version 1.0*
-[Home](/help/1-0/)
+[Version 1.0 Home](/help/1-0/)
 
 ## 1 - Getting Started
 
@@ -19,6 +19,7 @@
 * [Backgrounds](/help/1-0/chargen/backgrounds)
 * [Demographics](/help/1-0/demographics/demographics)
 * [Groups](/help/1-0/demographics/groups)
+* [Hooks](/help/1-0/chargen/hooks)
 * [Idle Out](/help/1-0/idle/idle_out)
 * [Names](/help/1-0/login/names)
 * [Ranks](/help/1-0/ranks/ranks)
@@ -93,13 +94,13 @@
 
 ## Scenes
 
-* [Posing](/help/1-0/pose/posing)
+* [Posing](/help/1-0/scenes/posing)
 * [Scenes](/help/1-0/scenes/scenes)
 * [Logging](/help/1-0/scenes/logging)
-* [Ooc](/help/1-0/pose/ooc)
+* [Ooc](/help/1-0/scenes/ooc)
 * [Places](/help/1-0/places/places)
-* [Pose Format](/help/1-0/pose/pose_format)
-* [Pose Order](/help/1-0/pose/pose_order)
+* [Pose Format](/help/1-0/scenes/pose_format)
+* [Pose Order](/help/1-0/scenes/pose_order)
 * [Weather](/help/1-0/weather/weather)
 
 ## Time
@@ -137,6 +138,7 @@
 * [Config](/help/1-0/utils/config)
 * [Database](/help/1-0/manage/database)
 * [Duty](/help/1-0/status/duty)
+* [Findsite](/help/1-0/manage/findsite)
 * [Idle Sweep](/help/1-0/idle/idle_sweep)
 * [Jobs](/help/1-0/jobs/jobs)
 * [Manage Apps](/help/1-0/chargen/manage_apps)

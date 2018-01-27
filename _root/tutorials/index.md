@@ -4,49 +4,14 @@ description:
 layout: page
 ---
 
-*Under Construction*  Many of these tutorials are incomplete, but having a robust suite of tutorials is a critical part of the first official release of Ares!  Stay tuned.
+AresMUSH has a variety of tutorials to help you setup, play, and run a game.
 
-## Playing Ares
-
-* [MUSH 101](/mush-101) - An introduction to MUSHing.
-* [Ares for Vets](/ares-for-vets) - Overview of Ares for veteran MU\* players.
-* [Client Setup](/clients) - Setting up your MUSH client to work with Ares.
-* [Player Handles](/handles) - Learn all about Ares' player identity system.
-* [Dealing with Trolls](/tutorials/manage/trolls) - Tools for trolls and harassment.
-
-## Installing Ares
-
-See [Installing Ares](/install-ares).
-
-
-## Configuring Ares
-
-See [Configuring Ares](/tutorials/config).
-
-## Managing Ares
-
-* [Dealing with Trolls](/tutorials/manage/trolls)
-* [Connect to the Server Shell](/install-ares/server-shell)
-* [Starting the Game](/tutorials/manage/start)
-* [Shutting Down the Game](/tutorials/manage/shutdown)
-* [Auto-Restart After Server Reboot](/tutorials/manage/restart-after-reboot)
-* [Resetting the Headwiz Password](/tutorials/manage/forgot-headwiz-pw)
-* [Backing Up the Game](/tutorials/manage/backups)
-* [Editing the Database](/tutorials/manage/edit-database)
-* [Wiping out the Database](/tutorials/manage/init-db)
-
-## Coding for Ares
-
-* [Configuring Cron Jobs](/tutorials/code/configuring-cron)
-* [Tinkering](/tutorials/code/tinker)
-* [Forking the Code](/tutorials/code/fork-the-code)
-* [Using Git](/tutorials/code/git)
-* [Understanding YAML](/tutorials/code/yaml)
-* [Troubleshooting YAML](/tutorials/code/troubleshooting-yaml)
-* [Configuration Files](/tutorials/code/configuration)
-* [Templates](/tutorials/code/templates)
-* [Locale Strings](/tutorials/code/locale)
-
-## Online Help Files
-
-See [Online Help](/help).
+<ul>
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+          <li><a href="/help">Online Help Archive</a></li>
+      </ul>
