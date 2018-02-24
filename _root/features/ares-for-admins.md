@@ -27,7 +27,7 @@ AresMUSH comes with the [FS3 Skills and Combat System](/fs3/fs3-3) built in, pro
 
 ## A Real Database
 
-Ares uses Redis, an up-and-coming database system. Using a standard database makes it easy to get at your data, make backups and integrate with the Web Portal.
+Ares uses Redis, a fast and lightweight database system. Using a standard database makes it easy to get at your data, make backups and integrate with the Web Portal.
 
 ## Built-In Advertising
 
@@ -35,6 +35,8 @@ No more spamming ads on bulletin boards.  With the AresCentral game directory, y
 
 ## International Support
 
-Ares is designed with international games in mind, supporting translations and special characters (Unicode). Currently the game is only translated into English, but you can add your own translations.  
+Ares is designed with international games in mind, supporting translations and special characters (Unicode). Currently the game is only translated into English, but you can add your own translations and command aliases.
 
 If you are interested in sharing your translations, please [contact us](/feedback).
+
+> Note: The web portal is not fully localized, but if there's sufficient interest it will be considered.

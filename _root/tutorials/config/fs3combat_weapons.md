@@ -6,9 +6,8 @@ title: Configuring FS3 Combat weapons.
 
 To configure the FS3 Weapons List:
 
-1. Go to the Web Portal's Admin screen.
-2. Select 'Advanced Configuration'.
-3. Edit `fs3combat_weapons.yml`
+1. Select Admin -> Setup.
+2. Edit `fs3combat_weapons.yml`
 
 ## Before You Start
 

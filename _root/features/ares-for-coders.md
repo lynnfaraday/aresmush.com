@@ -22,7 +22,7 @@ Every major system is implemented as a [Plugin](/tutorials/code/plugins).  Here 
 * Bulletin Boards
 * Channels
 * FS3 Skills, Chargen and Combat
-* and [more](/help_1-0)
+* and more
 
 The real power of plugins is that you can add, modify or replace any plugin. For example: A war MUSH might swap out the movement plugin for one that restricts movement based on action points during combat. A fantasy MUSH might swap out the description system with one that limits character descriptions based on what clothing items they had purchased. These changes replace the standard plugins, so you don’t end up with a hardcoded “who” and a softcoded “+who” on top of it.
 

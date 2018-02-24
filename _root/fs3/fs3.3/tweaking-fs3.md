@@ -30,21 +30,15 @@ Specialties are there when it's really important to divide up a skill.  Don't ad
 
 # Ability Point Limits
 
-One of the common criticisms of FS3 is that it encourages min/max-ing in chargen.  In large part this is due to people not having enough points in chargen to make the character they want to make.  So they have to shave points in chargen and buy them up later with XP.
+One of the common criticisms of FS3 is that it encourages min/max-ing in chargen.  In large part this is due to people not having enough points in chargen to make the character they want to make.  They have to shave points in chargen and buy them up later with XP.
 
 This is silly.  If you're not going to allow enough points to support a particular concept, then **don't allow that concept**.  There's nothing wrong with telling people to start off at "level 1" - MMOs and tabletop RPGs have been doing it for ages.  But "level 1" characters should have an appropriate "level 1" background.  It makes no sense to allow a Navy SEAL or superhero character and then nerf their skills.
 
 ## Setting Limits
 
-The default limit of 45 AP in FS3 Core is designed around these factors:
+The default limit of 45 AP in FS3 Core is designed to give you the "everybody has them" skills at fair levels, a couple skills at professional levels, a handful of above-average attributes, and a few more skills to spread around to make yourself stand out.
 
-* 8 AP to raise a few attributes to above-average levels.
-* 6 AP to get the 3 "everybody has them" abilities (Athletics, Composure, Alertness) to at least fair level.
-* 5 AP to cover the 'basic training' military skills that everyone has.
-* 8 AP to get two profession-specific action skills to professional levels.
-* 18 AP to spread around other things to make you cool.
-
-If you have substantially more "everybody has them" abilities or more than two profession-specific skills, you should consider raising the bar accordingly.
+If you have more skills or want people to start off more awesome, you should consider raising the bar accordingly.
 
 Don't be afraid to allow different levels of Ability Points based on faction, position, or some other criteria that makes sense in your game.  In 3rd Edition, Action Skills account for **way** more of the Ability Point total.  So action-oriented characters need more points than supporting characters.
 
@@ -52,7 +46,7 @@ Don't be afraid to allow different levels of Ability Points based on faction, po
 
 Side note about age:  I'm not a fan of flat age brackets.  You end up with a lot of people who min/max their age to get points instead of picking the age that's appropriate to their concept.  And age doesn't always equal experience.  Should a 50-year-old cook really have as many Action Skills as a 22-year-old marine combat veteran?  No.
 
-Personally, I use age to guide what levels are appropriate rather than giving more or fewer points.  A kid fresh out of boot camp probably shouldn't be an Expert in anything, unless they've got a really unusual background.
+Personally, I use age to guide what levels are appropriate rather than giving more or fewer points.  A kid fresh out of boot camp probably shouldn't be an expert in anything, unless they've got a really unusual background.
 
 # Ratings
 
@@ -60,7 +54,7 @@ Games are encouraged to use the full range of ability levels, with the exception
 
 Too often, games curtail people.  For example, refusing to approve rookie pilots with low skills or veteran pilots with high skills.  When you do that, you effectively take a game that's tuned for dice ranges from 2-12 and smush it down into 4-9.  Everyone starts to blend together.
 
-There's really not a huge advantage between higher skill levels once you get above 5.  Don't be too worried that you're going to hugely unbalance the game by allowing a couple 6's.
+There's really not a huge advantage between higher skill levels once you get above 5.  Don't be too worried that you're going to hugely unbalance the game by allowing a couple 6's or 7's.
 
 # Experience / Advancement
 
@@ -69,7 +63,7 @@ There is no universal approach to character advancement.  It varies a great deal
 * **Carrot on a Stick** - You feed people a continual stream of adancement as an incentive to keep playing.   This is what you find in many traditional RPGs and MMOs.
 * **Hero's Journey** - Characters get really good really quick because they're heroes.  The hero begins the journey as a farmer/apprentice/etc. and by the end of the (typically very short) journey they're a legend.
 * **Reward-Based** - If you do things that the staff approves of, you will advance faster.
-* **Realistic** - Learning takes time.  Lots of time.  You may pick up a new hobby here or there, but in the IC timespan covered by a typical MUSH at a 1:1 time ratio, character skills aren't going to meaningfully change.
+* **Realistic** - Learning takes lots of time.  You may pick up a new skill here or there, but in the IC timespan covered by a typical MUSH at a 1:1 time ratio, character skills aren't going to meaningfully change.
 
 The default config in FS3 Core is geared toward a Realistic advancement.  You get lots of points in chargen to start off cool if you want to be an expert, but don't expect dramatic changes during the game.
 
@@ -77,7 +71,7 @@ There is no right or wrong here; it is a question of style and preference.  But 
 
 * Characters who start out as newbie/apprentice type characters are going to be very frustrated if they're expecting the Hero's Journey and you're enforcing a more realistic rate of advancement.  Talk to these players ahead of time to set appropriate expectations.
 * If you limit chargen points too much *and* enforce a slow progression model, you're basically begging people to min/max their skills in chargen.
-* It's a bit jarring to restrict starting levels in chargen ("sorry, you don't have enough experience to justify a rating 6 in that skill") and then let characters advance to level 6 in a few months of game play.
+* It's a bit jarring to restrict starting levels in chargen ("sorry, you don't have enough background experience to justify a rating 6 in that skill") and then let characters advance to level 6 in a few months of game play.
 * Carrot on a stick model works best when people start off at low levels (as MMOs/tabletop RPGs do).  When you let people start as experts and *still* expect continuous advancement, you can quicly reach godlike power levels.  It can also lead to some glaring disparities between veteran characters and people fresh out of chargen. (the "dino effect")
 * Reward-based advancement can lead to OOC sour grapes if people are unable/unwilling to do certain things due to time/temperment/etc.  It can also create a have/have-not splintering of power levels.
 
@@ -92,6 +86,6 @@ Some people added a Dodge skill in 2nd Edition because of the way melee weapons 
 
 # Combat Without Armor
 
-FS3 is designed for near-modern military combat with vehicles or ground troops will be wearing body armor.  If you don't have armor in your theme (e.g. a Wild West game) you'll probably find that combat is too lethal.  You can adjust the lethality levels in that case.
+The default FS3 configuration is balanced for near-modern military combat with vehicles or ground troops will be wearing body armor most of the time.  If you don't have armor in your theme (e.g. a Wild West game) you'll probably find that combat is too lethal.  You can adjust the lethality levels in that case.
 
 You may also want to do this in a post-apoc or low-tech environment where healing is in short supply, since otherwise it might be hard to explain people surviving terrible wounds.

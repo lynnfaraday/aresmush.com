@@ -6,9 +6,8 @@ title: Configuring the ranks system.
 
 To configure the Ranks plugin:
 
-1. Go to the Web Portal's Admin screen.  
-2. Select Advanced Config.
-3. Edit `ranks.yml`
+1. Select Admin -> Setup.
+2. Edit `ranks.yml`
 
 ## rank_group
 
@@ -20,18 +19,18 @@ You list the ranks for each group in order of seniority (least senior to most se
 
 You can define different types within a group - typically this would be for Officer/Enlisted ranks.  Types are just used for display purposes in the ranks list, and have no functional use.
 
-        Navy:
-            Officer:
-                Ensign: true
-                Lieutenant JG: true
-                ...
-                Admiral: false
-                
-            Enlisted:
-                Crewman Recruit: true
-                Crewman Apprentice: true
-                ...
-                Chief Petty Officer: false
+    Navy:
+        Officer:
+            Ensign: true
+            Lieutenant JG: true
+            ...
+            Admiral: false
+            
+        Enlisted:
+            Crewman Recruit: true
+            Crewman Apprentice: true
+            ...
+            Chief Petty Officer: false
 
 ## Ranks Template
 
@@ -39,9 +38,9 @@ The default template for the ranks display (`military_ranks.erb`) shows a side-b
 
 If your game is different, there's also a more generic ranks template (`ranks.erb`).  To use this one, modify the `ranks_template.rb` file's initialize method.  You'll see code like this:
 
-        # There are two built-in rank templates - a generic one and one that shows 
-        # officer/enlisted ranks side by side
-        super File.dirname(__FILE__) + "/military_ranks.erb"
-        #super File.dirname(__FILE__) + "/ranks.erb"
+    # There are two built-in rank templates - a generic one and one that shows 
+    # officer/enlisted ranks side by side
+    super File.dirname(__FILE__) + "/military_ranks.erb"
+    #super File.dirname(__FILE__) + "/ranks.erb"
 
-Just un-comment the template you want to use, and comment out the other.
+Just un-comment the template you want to use, and comment out the other, then reload the ranks plugin.

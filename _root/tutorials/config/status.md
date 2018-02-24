@@ -6,9 +6,8 @@ title: Configuring the status system.
 
 To configure the Status plugin:
 
-1. Go to the Web Portal's Admin screen.  
-2. Select Advanced Config.
-3. Edit `status.yml`
+1. Select Admin -> Setup.
+2. Edit `status.yml`
 
 ## minutes_before_idle and minutes_before_idle_disconnect
 
@@ -20,13 +19,12 @@ You can disable either or both of these timers by commenting out or removing the
 
 You can configure which colors are used to display different status values in the who list and other systems.  For example, the following configuration uses red for IC and highlighted blue for OOC.
 
-    colors:
-        IC: "\%xr"
-        OOC: "\%xh\%xb"
+    IC: "%xr"
+    OOC: "%xh%xb"
 
 ## afk_cron
 
-The game will periodically check for idle players and mark them AFK automatically.  There is a cron job to control when this happens.  By default it does this every hour.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/code/configuring-cron) for help if you want to change this or turn it off.
+The game will periodically check for idle players and mark them AFK automatically.  There is a cron job to control when this happens.  By default it does this every hour.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/config/configuring-cron) for help if you want to change this or turn it off.
 
 
 

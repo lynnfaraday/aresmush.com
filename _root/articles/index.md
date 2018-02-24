@@ -1,10 +1,8 @@
 ---
-title: Articles
+title: Article Archive
 description:
 layout: page
 ---
-
-These are some general articles related to MUSHing.
 
 ## RP Articles
 

@@ -68,6 +68,8 @@ A MUSH has an entire virtual world available.  Where is your scene going to be s
 
 The easiest scene to do on any MUSH is a 'meet and greet' at a public place, like a bar, a park, or the town square.  Once you get familiar with a MUSH, you'll learn where the popular hangouts are.   When you're new, don't be afraid to ask.
 
+Most games have a 'meetme' command that will help you get to a place where other players are - you just need to ask for a lift.  Sometimes you have to use virtual walk commands to move from one location to another until you find the place you want to play.
+
 ### Set the Scene
 
 Once you've gotten the characters together, the next step is for someone to **set the scene** by writing a paragraph to establish a few key things:

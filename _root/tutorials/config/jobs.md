@@ -6,9 +6,8 @@ title: Configuring the jobs system.
 
 To configure the Idle plugin:
 
-1. Go to the Web Portal's Admin screen.  
-2. Select Advanced Config.
-3. Edit `jobs.yml`
+1. Select Admin -> Setup.
+2. Edit `jobs.yml`
 
 ## categories
 
@@ -26,10 +25,23 @@ The jobs system comes with a set of default categories, but you can add more.
 * RP - General RP related.
 * ALERT - Trouble alerts.
 
+### Category Color
+
 You can also set a color for each category.  For example, REQ jobs are magenta by default:
 
         REQ:
-            color: "\%xm"
+            color: "%xm"
+
+### Category Roles
+
+Characters with the 'admin' role have access to all job categories.  Even if you give the `access_jobs` permission to a role, you also need to add that role to the categories you want them to have access to.
+
+Read the [roles](/tutorials/manage/roles) tutorial to find out how AresMUSH uses roles and permissions work.
+
+        APP:
+            color: "%xc"
+            roles: 
+                - apps_staff
 
 ### request_category
 

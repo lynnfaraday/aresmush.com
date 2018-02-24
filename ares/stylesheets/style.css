@@ -538,7 +538,7 @@ border-radius: 5px;
 	font-family: "Lucida Console", Monaco, 'Andale Mono', 'Courier New', Courier, monospace;
         font-size: 14px; 
 	margin: 0.4em 0;
-        width: 700px;
+        max-width: 90%;
         padding: 10px;
 	overflow: auto;
  word-wrap: break-word;
@@ -567,10 +567,10 @@ code {
 img.prettyImage-image {
 	max-width: 90%;
 	max-height: 300px;
-	border: 1px dotted #CF895D;
-
-	margin-top:10px;
-	margin-bottom:10px;
+	border: 1px solid #CF895D;
+    padding: 5px;
+	margin-top:15px;
+	margin-bottom:15px;
     display: block;
        margin-left: auto;
        margin-right: auto;
@@ -619,11 +619,11 @@ li {
    ------------------------
 */
 
-.pagination {
+.pagination-block {
     margin: 10px;
 }
 
-.pagination ul {
+.pagination-block ul {
     list-style-type: none;
     -webkit-margin-before: 1px;
     -webkit-margin-after: 1px;
@@ -632,7 +632,7 @@ li {
     -webkit-padding-start: 1px;
 }
 
-.pagination li {
+.pagination-block li {
     float:left;
     padding-left: 12%;
 }

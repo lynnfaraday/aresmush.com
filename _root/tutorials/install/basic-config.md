@@ -9,23 +9,40 @@ tags:
 - config
 ---
 
-Log into your [Server Shell](/tutorials/install/server-shell) with the **'ares' user**.
+Next we'll configure some basic information about your game.  These settings determine how you connect to the game.  When your game opens, the MU* description, website, etc. will appear in the AresMUSH games directory.
 
-> Note: You should use the 'ares' user for almost everything from now on.  Only a few special server operations require the root user's special privileges.
+> Note: You should use the 'ares' user for everything from now on, reserving the root user for rare server admin operations requiring root access.
 
-Copy/paste the following commands into the shell to run them.
+1. Log into your [Server Shell](/tutorials/install/server-shell) with the **'ares' user**.
 
-    curl https://raw.githubusercontent.com/aresmush/aresmush/master/bin/install > install
+2. Copy/paste the following commands into the shell to run them.
+
+        curl https://raw.githubusercontent.com/aresmush/aresmush/master/bin/install > install
     
-    chmod +x install
+        chmod +x install
     
-    ./install https://github.com/aresmush/aresmush.git
+        ./install
 
-This will prompt you for a few pieces of information about your game:
+        Note:  If you already have a GitHub clone, you can pass the HTTPS clone urls to the install script:
+               ./install <game code clone URL> <web portal clone URL>
+               If you don't know what this means, don't worry about it!  It doesn't apply to you.
 
-* **Database URL** - Where the database server lives.  If you followed the Digital Ocean setup, it's `127.0.0.1:6379`
-* **Database Password** - Create a password for accessing your database.
-* **Server Hostname** - The the game's [host name](/tutorials/install/getting-a-hostname) or IP Address.
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
+
+
+3.  Enter your ares password when prompted.
+
+4.  Enter the information about your game, as explained below.
+
+This will take several minutes.  There will be a lot of spam, but eventually it will say it's done.
+
+## Game Settings
+
+These are the basic settings you'll need to enter:
+
+* **Database URL** - Where the database server lives.  If you're using the standard setup scripts, it's `127.0.0.1:6379`
+* **Server Hostname** - The the game's [host name](/tutorials/install/getting-a-hostname) or IP Address.  Use the actual IP or host name, not just "localhost".
 * **Server Telnet Port** - See ports, below.
 * **Server Websocket Port** - See ports, below.
 * **Server Website Port** - See ports, below.
@@ -34,23 +51,12 @@ This will prompt you for a few pieces of information about your game:
 * **Website** - URL for your game (optional).
 * **Category** - Pick which category best describes your MUSH for the Ares games directory.
 
-> You can change this information later using the game's Web Portal, or by editing the text files in the `aresmush/game/config` directory.
+### Ports
 
-## Ports
+Whereas the old MUSH servers you might be useful have only one port (mush.somewhere.com port 1234) Ares actually uses several.  On a VPS you can use any port number you want, as long as it isn't being used by something else.
 
-Whereas the old MUSH servers you might be useful have only one port (mush.somewhere.com port 1234) Ares actually uses several.
+The **Telnet Port** is the general one that regular MU clients connect to.  (default 4201)
 
-The **Telnet Port** is the general one that regular MU clients connect to.  
+The **Websocket Port** and **Engine API Port** are behind-the-scenes ports that the Ares web portal uses to communicate with the game. (default 420 and 4203)
 
-The **Websocket Port** and **Engine API Port** are behind-the-scenes ports that the Ares web portal uses to communicate with the game.
-
-The **Web Portal Port** is where your web portal is running.  For instance, if it's 8081 then the website will be running on http://mush.somewhere.com:8081.  Use port 80 the web portal is the only port running on the game.
-
-
-### Picking Ports
-
-Some MUSH hosts will assign you a port number.  If you're using Digital Ocean or another VPN you can pretty much pick any port you want as long as it's not being used by something else.  
-
-4201 has traditionally been the default MUSH port number.  A common choice is to use 4201 for the telnet port and 4202 for the websocket port.
-
-For the web server port, you can use port 80 if there are no other websites running on the server.  Otherwise you'll need to pick a different HTTP port.  8181 is a common choice.
+The **Web Portal Port** is where your web portal is running. (default 80)  '80' works if the web portal is the only website running on the server.  Otherwise you'll need to pick a custom port and access the web portal through a URL like http://mush.somewhere.com:8081.

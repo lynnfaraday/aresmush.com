@@ -6,25 +6,26 @@ title: Configuring the weather system.
 
 To configure the Weather plugin:
 
-1. Go to the Web Portal's Admin screen.  
-2. Select Advanced Config.
-3. Edit `weather.yml`
+1. Select Admin -> Setup.
+2. Edit `weather.yml`
 
 ## How Weather Works
 
 Ares has a fairly simplistic weather system.  You can define **climates** with different weather patterns available by **season**.  Each weather pattern consists of a **temperature** and a **condition**.
 
-For example:
+The temperature and condition combine to a weather report like:  "It is a hot spring morning.  The skies are clear."
 
-        temperate:
-            summer:
-                temperature: hot hot hot hot hot warm warm warm cool cool
-                condition:  clear clear clear fair fair fair drizzling drizzling overcast raining
-                stability: 70
-            spring:
-                temperature: cool cool cool cool cool warm warm warm warm warm
-                condition:  clear clear clear fair fair fair drizzling drizzling overcast raining
-                stability: 70
+Here's what a sample climate might look like.
+
+    temperate:
+        summer:
+            temperature: hot hot hot hot hot warm warm warm cool cool
+            condition:  clear clear clear fair fair fair drizzling drizzling overcast raining
+            stability: 70
+        spring:
+            temperature: cool cool cool cool cool warm warm warm warm warm
+            condition:  clear clear clear fair fair fair drizzling drizzling overcast raining
+            stability: 70
 
 Every time the weather cron job runs, there's a chance the weather will change.  That chance is determined by the **stability** of the weather.  If the stability is 70, that means there's a 30% chance of the weather changing.  In other words, the weather will shift roughly once every 8 hours.
 
@@ -36,7 +37,7 @@ Seasons follow the RL northern hemisphere dates based on the IC time.  In other 
 
 ## climate_for_area and default_climate
 
-The weather system lets you configure a climate for each room **area**.  For all areas that are not specified, the weather system will use the `default_climate`.  You can use 'none' to disable the weather system for that area.
+The weather system lets you configure a climate for each room **area**.  You can use 'none' to disable the weather system for an area.  For all areas that are not specified, the weather system will use the `default_climate`.  
 
 For example, the following config will use the polar climate for the North area and disable weather in the offstage area.  Any other areas will use the temperate climate.
 
@@ -50,7 +51,7 @@ To disable weather completely, you can just make the default_climate 'none'.
 
 ## temperatures and conditions
 
-These lists control what temperatures and weather conditions are available for your use.  If you want temperatures and conditions beyond the default ones, you'll have to change the code - specifically, the weather translations file.
+The 'temperatures' and 'conditions' lists show what temperatures and weather conditions are available for your use in weather patterns.  You can add more, but you'll also have to change the code - specifically, the weather translations file.
 
 Each weather condition has a locale entry like so:
 
@@ -70,5 +71,5 @@ For more information on how locale files work, see the [Locales Tutorial](http:/
 
 ## weather_cron
 
-The game will periodically change the weather.  There is a cron job to control when this happens.  By default it does this every hour.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/code/configuring-cron) for help if you want to change this or turn it off.
+The game will periodically change the weather.  There is a cron job to control when this happens.  By default it does this every hour.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/config/configuring-cron) for help if you want to change this or turn it off.
 

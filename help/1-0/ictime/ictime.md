@@ -1,9 +1,0 @@
----
-layout: help_1-0
-version: 1.0
-toc: Time
-summary: Viewing the IC date/time.
----
-# IC Time
-
-The `ictime` command gives you information about what date/time it is in the game world.

@@ -8,7 +8,17 @@ tags:
 - headwiz
 ---
 
-An admin can change anyone's password except Headwiz. If you forget your Headwiz password, you'll need to use the [tinker command](/tutorials/code/tinker) to reset it through code.
+An admin can change anyone's password except Headwiz. If you forget your Headwiz password, there's a special tool to reset it. are a few ways to change it.
+
+## Shell Method
+
+Log into the server shell and change into the aresmush directory.  Run the following script with the desired new password:
+
+    bin/upgrade reset_headwiz_password,somenewpassword
+
+## Tinker Method
+
+If you have access to an admin with tinker privileges, use the [tinker command](/tutorials/code/tinker) to reset it through code.
 
 Change the tinker handler method to be:
 
@@ -17,6 +27,4 @@ Change the tinker handler method to be:
        headwiz.change_password("somenewpassword")
     end
 
-Then with any regular admin character you can just type `tinker` and it will reset the password.
-
-If you don't have an admin character with tinker access, [ask for help](/feedback).
+Then you can just type `tinker` and it will reset the password.

@@ -8,7 +8,14 @@ You can configure character names that are off-limits.  For example, if your the
 
 To configure restricted names:
 
-1. Go to the Web Portal's Admin screen.  
-2. Select 'Restricted Names'.
+1. Select Admin -> Setup
+2. Edit `names.yml`.
 
-Simply list the names one per line.  Capitalization doesn't matter.  Entering 'Yoda' will prevent yoda, yODa, YODA, and so forth.
+List the names one per line with dashes at the front.  For example:  
+
+    - me
+    - here
+
+Capitalization doesn't matter.  Entering 'Yoda' will prevent yoda, yODa, YODA, and so forth.
+
+To make the list empty, enter empty brackets, like so:  `[]`

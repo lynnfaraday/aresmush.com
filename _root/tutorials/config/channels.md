@@ -6,9 +6,8 @@ title: Configuring channels.
 
 To configure the Channels plugin:
 
-1. Go to the Web Portal's Admin screen.  
-2. Select Advanced Config.
-3. Edit `channels.yml`
+1. Select Admin -> Setup.
+2. Edit `channels.yml`
 
 ## start_marker and end_marker
 
@@ -19,10 +18,11 @@ You can configure the characters that appears at the beginning and end of the ch
 
 Start and end markers can include ansi color and other formatting codes.
 
+> Note:  Since < and > are reserved HTML characters, be sure to put them in quotes in the configuration.
+
 ## default_channels
 
 You can configure which channels new characters join by default when they are first created.  This should be a list.  For example:
 
-    default_channels:
-        - Questions
-        - Chat
+    - Questions
+    - Chat

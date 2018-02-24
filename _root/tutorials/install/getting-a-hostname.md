@@ -9,13 +9,13 @@ tags:
 - hosting
 ---
 
-Host names are optional - you can always connect to a game using its IP address.  But it's nice to have a host name so people can remember your game address more easily.
+Host names are optional - you can always connect to a game using its IP address.  But it's nice to have a host name (like yourmush.somemuhost.com) so people can remember your game address more easily.
 
-Some MUSH hosts may give you a host name (like yourmush.somemuhost.com) but Digital Ocean doesn't.  If you want a name, you'll have to set it up.
+Most VPS servers don't include a host name. If you want a name, you'll have to set it up.
 
 ## AresMUSH Domain
 
-You can also request an AresMUSH sub-domain (yourmush.aresmush.com) by [contacting me directly](/feedback).  AresMUSH sub-domains are given out at my sole discretion, and at no charge.
+You can request an AresMUSH sub-domain (yourmush.aresmush.com) by [contacting me directly](/feedback).  AresMUSH sub-domains are given out at my sole discretion, and at no charge.
 
 ## Custom Domain
 

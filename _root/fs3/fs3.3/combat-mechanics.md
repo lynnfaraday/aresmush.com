@@ -226,3 +226,13 @@ If a vehicle is hit in a crew compartment, each passenger may receive shrapnel w
 | Flesh | 0-1  |
 | Impair | 0-2 |
 | Incap | 0-4 |
+
+<a name="mounts">
+
+# Mounts
+
+Mounts are similar to vehicles, but simpler.  The game configuration defines types of mounts (e.g. Horse, War Horse, Elephant).  Each type of mount provides a bonus to attack against unmounted opponents.  When an unmounted opponent attacks the rider, that bonus is _subtracted from_ the attack roll (making it harder for someone on the ground to hit a mounted rider).
+
+When a mounted opponent is hit, there's a chance the hit will hit the mount instead of the rider.   If the attacker gets 3+ net successes, he automatically hits the rider.  Otherwise, there's a 20% chance of hitting the mount if the attacker is also mounted, and 40% if he's unmounted.  You can also target the mount specifically, giving you a 90% chance of hitting the mount.
+
+Every time a mount is hit, it gets a knockout roll with a number of dice equal to the mount's toughness rating.  You can use toughness to reflect the mount's size and/or armor.   If a mount fails it's KO roll, it's taken out and the rider becomes unmounted and takes some fall damage.  Otherwise the mount is only injured.  This is just a RP effect; damage isn't tracked for mounts.

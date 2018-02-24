@@ -103,15 +103,17 @@ When everyone has posed and chosen their actions, the organizer will trigger a n
 
 `combat/attack <target>`
 
-`combat/attack <target>/called:<location>`
+`combat/attack <target>/called:<location>` - Called shot to a particular hit location.
 
-`combat/attack <target>/burst`
+`combat/attack <target>/burst` - Fires a short burst (3 rounds) if the weapon allows.
     
-`combat/attack <target>/mod:<attack modifier>`
+`combat/attack <target>/mod:<attack modifier>` - Imposes a modiifer, positive or negative, on the roll.
     
-`combat/attack <target>/crew`
+`combat/attack <target>/crew` - Targets the crew instead of the vehicle.
+    
+`combat/attack <target>/mount` - Targets the mount instead of the rider.
 
-The basic attack makes a single strike with your equipped weapon.  You can do a called shot to a particular hit location, fire a short burst (3 rounds), inflict a modifier on the roll, or target a crew member inside a vehicle instead of the vehicle itself.
+The basic attack makes a single strike with your equipped weapon.
 
 > <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:**  You can combine multiple attack options with commas (e.g. combat/attack Bob=mod:2,burst).  You cannnot combine a called shot and a burst.
 

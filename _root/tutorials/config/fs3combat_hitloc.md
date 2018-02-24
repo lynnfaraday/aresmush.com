@@ -6,9 +6,8 @@ title: Configuring FS3 combat damage.
 
 To configure the FS3 hit location tables:
 
-1. Go to the Web Portal's Admin screen.
-2. Select 'Advanced Configuration'.
-3. Edit `fs3combat_hitloc.yml`
+1. Select Admin -> Setup.
+2. Edit `fs3combat_hitloc.yml`
 
 ## Before You Start
 

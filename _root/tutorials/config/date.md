@@ -8,8 +8,8 @@ The game shows dates and times in various places.  You can configure how these a
 
 To configure the date and time preferencse:
 
-1. Go to the Web Portal's Admin screen.  
-2. Select 'Date/Time Formats'.
+1. Select Admin -> Setup
+2. Edit `datetime.yml`
  
 ## Date Formats
 
@@ -20,14 +20,17 @@ The game supports several different types of formats, each of which may be confi
 * `time_format` - This is just the time by itself, like 5:45pm.
 * `date_and_time_entry_format` - This is used for parsing date/time strings (e.g. when inputting event start times like 12/25/2016 2:45pm).
 
-|~ Format | American | European |
+Here are some common examples:
+
+| Format | American | European |
+| ---- | ---- | ---- |
 | Short Date | %m/%d/%Y | %d-%m-%Y |
 | Long Date | %a %b %d, %Y %l:%M%P  |  %d-%m-%Y %k%M |
 | Time | %l:%M%P  | %k%M |
 | Date and Time Entry | %m/%d/%Y %H:%M%p | %d-%m-%Y %k%M |
 
 
-You have complete control over each format.  You can change it use hyphens, put the month first or second, use two-digit years instead of four-digit years, use 12 or 24-hour time, etc.  Some common examples:
+You have complete control over each format.  You can change it use hyphens, put the month first or second, use two-digit years instead of four-digit years, use 12 or 24-hour time, etc.  Some common format codes:
 
     %d - Day of month
     %m - Month number

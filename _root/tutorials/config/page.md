@@ -6,10 +6,9 @@ title: Configuring the page system.
 
 To configure the Page plugin:
 
-1. Go to the Web Portal's Admin screen.  
-2. Select Advanced Config.
-3. Edit `page.yml`
+1. Select Admin -> Setup.
+2. Edit `page.yml`
 
 ## page_color
 
-You can configure the default page color.  Players can customize this either in-game or through their handle profiles.  You can use multiple color codes.  For example: \%xh\%xc
+You can configure the default page color.  Players can customize this either in-game or through their handle profiles.  You can use multiple color codes.  For example: %xh%xc

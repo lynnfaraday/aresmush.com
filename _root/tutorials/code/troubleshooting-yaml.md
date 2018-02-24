@@ -31,11 +31,11 @@ One common error is forgetting to put quotes around strings with special charact
 
 Looking at the line of text mentioned in the error message, you might see something like this:
 
-    cookie_board: Foo:Bar
+    cookie_forum: Foo:Bar
 
 Oops!  If there are special characters inside a string, you need to put quotes around it.  Change it to:
 
-    cookie_board: "Foo:Bar"
+    cookie_forum: "Foo:Bar"
 
 ### Indentation Errors
 

@@ -16,6 +16,8 @@ If that doesn't work, you can:
 2. Go to Admin -> Manage.
 3. Click "Shutdown".
 
+## Restarting the Game
+
 Once the game is shut down, see [Starting the Game](/tutorials/manage/start) to restart it.
 
 ## Hard Kill

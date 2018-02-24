@@ -15,7 +15,7 @@ To configure the Connect Screen:
 1. Go to the Web Portal's Admin screen.  
 2. Select 'Connect Screen'.
 
-The connect screen can contain all the usual MUSH formatting codes (including color!), but you don't need to put in \%r for linebreaks or \%b for spaces.  The game will respect what's in the file as it appears.
+The connect screen can contain all the usual MUSH formatting codes (including color!), but you don't need to put in %r for linebreaks or %b for spaces.  The game will respect what's in the file as it appears.
 
 ## Terms of Service
 
@@ -28,7 +28,7 @@ To configure the Terms of Service:
 1. Go to the Web Portal's Admin screen.  
 2. Select 'Terms of Service'.
 
-The TOS can contain all the usual MUSH formatting codes, but you don't need to put in \%r for linebreaks.  The game will respect what's in the file.
+The TOS can contain all the usual MUSH formatting codes, but you don't need to put in %r for linebreaks.  The game will respect what's in the file.
 
 > **Tip:** If you ever make important changes to the terms of service, you probably want to force existing characters to read them again.  To do this, use the `tos/reset` command in-game.  Everyone will be forced to acknowledge the new terms of service the next time they log in.
 
@@ -36,14 +36,9 @@ The TOS can contain all the usual MUSH formatting codes, but you don't need to p
 
 To configure the rest of the Login plugin:
 
-1. Go to the Web Portal's Admin screen.  
-2. Select Advanced Config.
-3. Edit `login.yml`
+1. Select Admin -> Setup.
+2. Edit `login.yml`
 
-
-### allow_web_registration
-
-By default, players can create characters from the web portal.  This assumes that you've got Recaptcha enabled to prevent bots, and that you're not being routinely trolled.   If you wish to lock this down, you can set `allow_web_registration` to 'false'.
 
 ### use_terms_of_service
 

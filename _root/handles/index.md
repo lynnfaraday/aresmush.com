@@ -31,7 +31,7 @@ Handles are optional.  If you're really worried about privacy, simply don't crea
 
 You decide which characters are linked.  Don't want anyone knowing you're playing on KinkyMUSH?  Just don't link that character to your handle.
 
-> As of right now, all linked characters are publicly visible.  Think of them them as cross-game public alts.   All friendships are also publicly visible, like on Facebook.
+> All linked characters are publicly visible.  Think of them them as cross-game public alts.   All friendships are also publicly visible, like on Facebook.
 
 ## How do I link characters?
 
@@ -86,4 +86,4 @@ When you log in with one alt, the game will let you know if your other alts (on 
 
 ### Future Features
 
-The handle system is in its infancy right now.  We've already mentioned some of the planned future features for fine-tuned privacy control and using handle identity in pages and other OOC forms of communication.  Even further down the road, handles could be used for cross-game communication (anybody remember MudBot?) and other cool things.
+The handle system is in its infancy right now.  Further down the road, handles could be used for cross-game communication (anybody remember MudBot?) and other cool things.

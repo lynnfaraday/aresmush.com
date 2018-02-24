@@ -6,9 +6,8 @@ title: Configuring the idle system.
 
 To configure the Idle plugin:
 
-1. Go to the Web Portal's Admin screen.  
-2. Select Advanced Config.
-3. Edit `idle.yml`
+1. Select Admin -> Setup.
+2. Edit `idle.yml`
 
 ## use_roster
 
@@ -22,18 +21,21 @@ You can configure how long someone has to be idle (e.g. not logged in) before th
 
 Since special characters may not log in often, you can exempt certain roles from the idle sweep.  There are two ways to do this.  The first way is to list a number of roles.  For example, this would make everyone with the builder, admin or guest role exempt from the idle sweep:
 
-    idle_exempt_roles:
-        - admin
-        - builder
-        - guest
+    - admin
+    - builder
+    - guest
 
 If you want more fine-tuned control - e.g. only exempting certain admins and not all of them, you could create a special `idle_exempt` role and assign it only to specific people who are exempt from the idle policy.
+
+## idle_category
+
+When characters are idled out, an annnouncement is posted to the forum.  You can configure which category they go to.  Making it a forum that doesn't exist will effectively disable the welcome post.
 
 ## Idle Sweep Reminder
 
 Since idle sweeps must be done manually, the idle system will periodically create a staff job to remind you to do it.  There are several settings related to this reminder:
 
-`monthly_reminder_cron` - This cron job controls when the reminder happens.  By default it's monthly.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/code/configuring-cron) for help if you want to change this.
+`monthly_reminder_cron` - This cron job controls when the reminder happens.  By default it's monthly.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/config/configuring-cron) for help if you want to change this.
 
 `monthly_reminder_title` - The reminder's job title.
 
@@ -41,17 +43,13 @@ Since idle sweeps must be done manually, the idle system will periodically creat
 
 `reminder_category` - The job category that the reminder will be put into.
 
-## idle_board
+## Roster Announcement
 
-When characters are idled out, an annnouncement is posted to the BBS system.  You can configure which board they go to.  If you don't want this annoucement posted, you can remove the entry or make it a non-existent board.
+When characters are taken off the roster, an arrival announcement is also posted to the forum.  
 
-## Roster BBS Announcement
+### arrivals_category
 
-When characters are taken off the roster, an arrival announcement is also posted to the BBS board.  
-
-### arrivals_board
-
-You can configure which board this goes to by setting `arrivals_board`.  As with the Idle BBS Announcement, you can remove the entry or make it a non-existent board.  
+You can configure which category this goes to by setting `arrivals_category`.  As with the Idle announcement, you can make it a non-existent forum to disable the post.
 
 ### roster_welcome_msg
 

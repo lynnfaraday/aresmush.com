@@ -97,6 +97,12 @@ The combat system supports characters in vehicles.  A character can join a vehic
 
 > <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:**  If you use the "crew" special option on your attack, you can target a crew member inside a vehicle directly (e.g. shooting through a window).  Otherwise an atack against either the pilot or a passenger is considered to be an attack against the vehicle.
 
+# Mounts
+ 
+In addition to vehicles, the system supports mounts.  A character can specify their type of mount, which can give them certain bonuses against unmounted targets.  When someone attacks a rider, there's a chance of hitting the mount instead.  An injured mount has no game effect; it's just for RP purposes.  If your mount is taken out, though, you'll become dismounted and suffer fall damage.
+
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:**  If you use the "mount" special option on your attack, you can target the mount instead of the rider.
+
 <a name="attack-resolution"/>
 
 # Attack Resolution

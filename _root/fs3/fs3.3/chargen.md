@@ -84,6 +84,7 @@ Action Skills are rated from 0 to 8, based on your training and experience.
 
 | Rating | Summary | Description |
 | ---- |
+|0 |Unskilled|You grew up in a cave or something and know absolutely nothing about this. |
 |1 |Everyman|You know what the average inhabitant of the game world would know.   |
 |2 |Fair|You've still got a lot to learn, but you can handle easy stuff. |
 |3 |Competent|You have competence at a junior-professional level, but lack finesse or experience.|
@@ -100,6 +101,16 @@ A few tips about Action Skills:
 * Competent/Good/Great are professional skill levels, so most of your job-related skills should be in this range.
 * You don't have to be amazing to succeed in FS3.  Ratings 6+ are exceptional.
 * Your skills should generally match your professional experience.  While some variation is allowed for talent (or lack thereof), be careful not to stray too far.  A brand-new pilot with an Amazing piloting skill isn't going to fly (pun intended).
+
+<a name="unskilled"/>
+
+### Everyman vs. Unskilled
+
+The 'Everyman' rating covers the average layperson's ability.  Even for a specialty skill like medicine or piloting, that's going to mean _some_ amount of knowledge.   Someone with Everyman piloting probably knows to pull back on the stick to make the plane go up.  Everyman medicine means knowing to put ice on a bruise and how much aspirin to take.
+
+Unskilled is when you're really hopeless - worse that average.    For example, in the 100 universe there are people from a space station interacting with people from a post-apocalyptic Earth.  The Grounders know nothing about technology, so it would make sense for them to have Unskilled in tech skills and firearms.  Similarly, most of the Arkers from the space station are Unskilled in Earth-based survival skills.
+
+Most settings will not need to distinguish between Unskilled and Everyman.
 
 ### Specialties
 
@@ -159,9 +170,3 @@ Your reading level is assumed to be on par with your speaking level, unless othe
 ### Buying Languages
 
 You start as **Fluent** in whatever the common game language is for free.   Any additional languages cost **1 AP** per rating.
-
-<a name="rp-hooks"/>
-
-# RP Hooks
-
-The final step in character creation is to set at least one **RP Hook**.  This is something interesting about your character that others can leverage for RP ideas.   Do you have a short temper?  Is your family so famous that someone might recognize you?   Do you love (or hate) dogs or small children?   Just about any personality trait, quirk or background tidbit can be a RP Hook.

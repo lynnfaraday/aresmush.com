@@ -6,17 +6,12 @@ title: Configuring FS3 experience.
 
 To configure the FS3 Skills List:
 
-1. Go to the Web Portal's Admin screen.
-2. Select 'Advanced Configuration'.
-3. Edit `fs3skills_xp.yml`
+1. Select Admin -> Setup.
+2. Edit `fs3skills_xp.yml`
 
 ## Before You Start
 
 You should read the article [Tweaking FS3](http://aresmush.com/fs3/fs3-3/tweaking-fs3/), which contains important information to help guide you in customizing your game.
-
-## xp_cron
-
-The game will periodically award all approved/active characters XP.  By default this happens weekly on Saturday evenings.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/code/configuring-cron) for help if you want to change this.
 
 ## periodic_xp
 
@@ -55,3 +50,6 @@ Raising a Language from 1 (Beginner) to 2 (Conversational) costs 4 XP and going 
 
 Raising an Action Skill in that example is much easier.  It takes only 1 XP to go from 1 (Everyman) to 2 (Fair) and 2 XP to go from 2 (Fair) to 3 (Competent).  After that, though, the costs go up rapidly.  
 
+## xp_cron
+
+The game will periodically award all approved/active characters XP.  By default this happens weekly on Saturday evenings.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/config/configuring-cron) for help if you want to change this.

@@ -6,9 +6,8 @@ title: Configuring IC Time.
 
 To configure the IC Time plugin:
 
-1. Go to the Web Portal's Admin screen.  
-2. Select Advanced Config.
-3. Edit `ictime.yml`
+1. Select Admin -> Setup.
+2. Edit `ictime.yml`
 
 ## year_offset
 

@@ -40,7 +40,7 @@ The [statue](/help/1-0/manage/statue/) command, similar to RHost's FUBAR flag or
 
 ### Unapproving Trolls
 
-Most game-altering commands (building, posting to bulletin boards, sending mails, starting scenes) are locked to approved characters by default.  This inherently protects you against malicious guests and characters fresh off the login screen.  If an already-approved character causes mischief, you can [unapprove](/help/1-0/chargen/manage_apps/) them to deny them access to these commands.
+Most game-altering commands (building, posting to forums, sending mails, starting scenes) are locked to approved characters by default.  This inherently protects you against malicious guests and characters fresh off the login screen.  If an already-approved character causes mischief, you can [unapprove](/help/1-0/chargen/manage_apps/) them to deny them access to these commands.
 
 ### Banning Trolls
 

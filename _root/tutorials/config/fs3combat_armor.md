@@ -6,9 +6,8 @@ title: Configuring FS3 combat armor.
 
 To configure the FS3 armor types:
 
-1. Go to the Web Portal's Admin screen.
-2. Select 'Advanced Configuration'.
-3. Edit `fs3combat_armor.yml`
+1. Select Admin -> Setup.
+2. Edit `fs3combat_armor.yml`
 
 ## Before You Start
 
@@ -18,13 +17,12 @@ Read **[How Armor Works](http://aresmush.com/fs3/fs3-3/combat-mechanics#armor)**
 
 You can define as many kinds of armor as you want.  FS3 armor types have the following stats, explained below:
 
-    armor
-        Police:
-            description: Light ballistic vest.
-            protection: 
-                Chest: 6 
-                Abdomen: 5
-            defense: 0
+    Police:
+        description: Light ballistic vest.
+        protection: 
+            Chest: 6 
+            Abdomen: 5
+        defense: 0
 
 ### Description
 
@@ -44,16 +42,16 @@ Like weapon specials, armor specials allow you to define 'extras' that can augme
 
 Specials can provide a bonus or penalty (if the value is negative) to protection or defense.  This value is added to the armor's base value.  In the examples below, a helmet provides armor to the head while a shield provides armor to the arm and a defense bonus.
 
-        Helmet:
-            description: "A helmet"
-            protection:
-                Head: 4
-        
-        Shield:
-            description: "Simpler buckler."
-            defense: 2
-            protection:
-                Right Arm: 2
+    Helmet:
+        description: "A helmet"
+        protection:
+            Head: 4
+    
+    Shield:
+        description: "Simpler buckler."
+        defense: 2
+        protection:
+            Right Arm: 2
 
 
 ## Vehicle Armor

@@ -6,9 +6,8 @@ title: Configuring FS3 chargen.
 
 To configure the FS3 Chargen Limits:
 
-1. Go to the Web Portal's Admin screen.
-2. Select 'Advanced Configuration'.
-3. Edit `fs3skills_chargen.yml`
+1. Select Admin -> Setup.
+2. Edit `fs3skills_chargen.yml`
 
 ## Before You Start
 
@@ -28,6 +27,10 @@ You can require how many Background Skills (distinct skills, not points) a chara
 ## max_skill_rating and max_attr_rating
 
 FS3 Attributes are rated from 1-5 (with 5 being Exceptional) and Skills are rated from 1-8 (with 8 being Legendary).  Some games may not want to allow characters at the top end of the spectrum by setting these values lower than the maximum possible ratings.
+
+## allow_unskilled_action_skills
+
+The Unskilled level might not be necessary in every setting.  See [everyman vs. unskilled](/fs3/fs3-3/chargen#unskilled) for details.  To avoid confusion in chargen, the 'Unskilled' level is disabled by default.  You can enable it by setting this setting to true.
 
 ## Guiding Maximums
 
@@ -57,10 +60,10 @@ You can set break points for attributes and skills to limit how many a character
 
 Remember that these limits are at *or above*.  So given the max skills example above:
 
-    1 at 6, 1 at 7 --> OK
-    2 at 6 --> OK
-    2 at 7 --> *NOT* OK  (even though you can have 2 above 6, only 1 of them may be at or above 7)
-    2 at 6, 1 at 7 --> *NOT* OK (you can only have 2 skills total at or above 6)
+> 1 at 6, 1 at 7 --> OK
+> 2 at 6 --> OK
+> 2 at 7 --> *NOT* OK  (even though you can have 2 above 6, only 1 of them may be at or above 7)
+> 2 at 6, 1 at 7 --> *NOT* OK (you can only have 2 skills total at or above 6)
 
 ## starting_skills
 
@@ -72,26 +75,25 @@ FS3 lets you assign starting skills and specialties for different groups.  For e
 
 Starting skills are group-based, so you'll see multiple entries for different groups in the list.  You can list skills and also specialties.  Here is an example:
 
-    starting_skills:
-        Faction:
-            Navy:
-                skills:
-                    Swimming: 2
-            Marines:
-                skills:
-                    Melee: 2
-        Position:
-            Pilot:
-                skills:
-                    Piloting: 3
-                specialties:
-                    Piloting:
-                        - Viper
-                        - Raptor
-            Rifleman:
-                skills:
-                    Firearms: 3
-                    Melee: 3
+    Faction:
+        Navy:
+            skills:
+                Swimming: 2
+        Marines:
+            skills:
+                Melee: 2
+    Position:
+        Pilot:
+            skills:
+                Piloting: 3
+            specialties:
+                Piloting:
+                    - Viper
+                    - Raptor
+        Rifleman:
+            skills:
+                Firearms: 3
+                Melee: 3
 
 A Navy Pilot would start with Swimming: 2 and Piloting: 3, whereas a Marine Pilot would start with Melee: 2 and Piloting: 3.  The system will take the highest rating out of all applicable groups, so a Marine Rifleman would start with Melee: 3 and Firearms: 3.
 
@@ -99,20 +101,23 @@ A Navy Pilot would start with Swimming: 2 and Piloting: 3, whereas a Marine Pilo
 
 Sometimes you may want to prompt the player with a note about their skills.  You can do this with the optional 'notes' field.  For example, the following configuration will give a Combat Engineer Demolitions: 2 and prompt them to either raise it to 3 or add Technician at 3.
 
-            Combat Engineer:
-                notes: "A combat engineer should also take a 3 or higher in either Demo or Tech."
-                skills:
-                    Demolitions: 2
-                    Firearms: 3
+    Combat Engineer:
+        notes: "A combat engineer should also take a 3 or higher in either Demo or Tech."
+        skills:
+            Demolitions: 2
+            Firearms: 3
 
 ### Everyone Skills
 
 Sometimes you may want to give a skill to everybody.  Instead of duplicating the information in each group, you can use the special "Everyone" group.   For example, to make everyone start with Alertness 2:
 
-        Everyone:
-            skills:
-                Alertness: 2
+    Everyone:
+        skills:
+            Alertness: 2
 
 ## unusual_skills
 
 You can mark certain skills as unusual in your setting.  Characters with those skills above Fair will receive a warning prompting them to have a good reason.
+
+    - Celtan
+    - Demolitions

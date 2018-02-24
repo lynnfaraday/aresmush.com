@@ -26,8 +26,8 @@
 
 ## Communicating
 
-* [Bulletin Boards](/help/1-0/bbs/bulletin_boards)
 * [Channels](/help/1-0/channels/channels)
+* [Forum](/help/1-0/forum/forum)
 * [Mail](/help/1-0/mail/mail)
 * [Page](/help/1-0/page/page)
 
@@ -142,9 +142,9 @@
 * [Idle Sweep](/help/1-0/idle/idle_sweep)
 * [Jobs](/help/1-0/jobs/jobs)
 * [Manage Apps](/help/1-0/chargen/manage_apps)
-* [Manage Boards](/help/1-0/bbs/manage_boards)
 * [Manage Channels](/help/1-0/channels/manage_channels)
 * [Manage Demographics](/help/1-0/demographics/manage_demographics)
+* [Manage Forum](/help/1-0/forum/manage_forum)
 * [Manage Login](/help/1-0/login/manage_login)
 * [Manage Maps](/help/1-0/maps/manage_maps)
 * [Manage Roles](/help/1-0/roles/manage_roles)

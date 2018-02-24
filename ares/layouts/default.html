@@ -8,14 +8,14 @@
 <!-- Twitter Card data -->
 <!-- Open Graph data -->
 
-    <title>{{ data.title }} | {{ page.title }}</title>
-    <meta property="og:title" content="{{ data.title }} | {{ page.title }}">
-    <meta name="twitter:title" content="{{ data.title }} | {{ page.title }}">
-    <meta itemprop="name" content="{{ data.title }} | {{ page.title }}">
+    <title>{{ page.title }} - {{ data.title }}</title>
+    <meta property="og:title" content="{{ page.title }} - {{ data.title }}">
+    <meta name="twitter:title" content="{{ page.title }} - {{ data.title }}">
+    <meta itemprop="name" content="{{ page.title }} - {{ data.title }}">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="{{ data.author.name }}">
-    <meta property="og:site_name" content="{{ data.title}}" >
+    <meta property="og:site_name" content="{{ page.title}}" >
     <meta property="og:url" content="{{urls.production_url}}{{page.url}}" >
     
   {{# page.description }}

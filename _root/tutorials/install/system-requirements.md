@@ -18,13 +18,13 @@ This article details the system requirements to help you find the right VPS and 
 
 ### Operating System
 
-AresMUSH runs best on a Unix-like operating system, such as Linux or MacOSX.  The Ares install scripts and tutorials are geared toward **Ubuntu Linux**.
+AresMUSH runs best on a linux operating system.  The Ares install scripts and tutorials are designed for **Ubuntu Linux**.
 
-> AresMUSH _can_ run on Windows, but it will require some gymnastics and is not officially supported.
+> You _can_ run AresMUSH on other operating systems, including OSX and Windows, but you're on your own for server-side support.
 
 ### RAM
 
-For just the telnet portal, you can get away with 500MB of RAM for a modestly-sized game.  The web portal requires 1GB of RAM to run decently.
+You can scrape by with 500MB of RAM but 1GB is the recommended minimum value for decent performance.
 
 ### CPU
 
@@ -36,14 +36,14 @@ Any VPS should have more than enough disk space.
 
 The code itself is small, less than 50MB, but you'll also need room for the OS and tools.
 
-For the database, it will depend on the size of your game, but it's pretty insignificant.  In testing, a database with 1000 rooms, exits and characters was about 2MB in size.
+For the database, it will depend on the size of your game, but it's pretty insignificant.  In testing, a database with 1000 rooms, exits and characters was about 2MB in size.  Considering most VPS' have multiple GB, that's nothing.
 
 ## Software Packages
 
-There are several software packages that Ares requires:
+There are several software packages that Ares requires, including:
 
 * [Ruby](/https://rvm.io/rvm/install)
 * [Redis database]((http://redis.io/topics/quickstart))
 * [Git version control](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-If you use the [Digital Ocean](/tutorials/install/digital-ocean) instructions, these will automatically be installed for you.  Otherwise you'll have to set them up on your own.  Doing so is outside the scope of this tutorial.
+If you use the [Digital Ocean](/tutorials/install/digital-ocean) environment, the official install scripts will set up everything you need.  Otherwise you'll have to set them up on your own.  You can use the install scripts as a guide.

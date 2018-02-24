@@ -14,10 +14,31 @@ tags:
 Here is a snippet from the "Cookies" module configuration file:
 
     cookies:
-        cookie_board: "Cookie Awards"
+        cookie_forum: "Cookie Awards"
         cookies_per_luck: 10
 
-This defines a configuration section (`cookies`) and two settings (`cookie_board` and `cookies_per_luck`).  The setting names are called **keys**.
+This defines a configuration section (`cookies`) and two settings (`cookie_forum` and `cookies_per_luck`).  The setting names are called **keys**.   
+
+## Key Naming
+
+Underscores and spaces are the only permitted special characters in key names.  For example: "cookie_forum" and "Viper Pilot" are valid key names.  Ares uses the underscore version for most things, and separate words for things like gear and skill lists that are displayed to players.
+
+When values are displayed to or used by the players (like skills, gear or faction names), capitalization matters.  Unless otherwise specified, it's best to put everything in "titlecase" - first letter of each word capitalized, remaining letters lowercase. 
+
+> Good:  Viper Pilot
+> Bad:  Viper pilot
+>
+> Good: Eco
+> Bad: ECO
+
+## Editing YAML Config
+
+There are two ways to edit the game's configuration files.  The first is to edit the code directly by changing the config files on disk.  Your coder may prefer this option.  All game configuration files reside in the `aresmush/game/config` directory on the server.
+
+The second option, intended for most game admins, is to use the web portal.  Go to Admin -> Setup and choose the configuration file you want to edit.  You'll be presented with a simple editor screen.   You don't have to worry about the config keys in the web editor, only their values.
+
+{{#pretty-image}}/assets/media/web_portal/config.png{{/pretty-image}}
+
 
 ## Data Types
 
@@ -27,8 +48,8 @@ YAML supports a variety of data types.
 
 Strings are specifed as `key:value`.  Quotes around the value are optional as long as there are no special characters inside the string.
 
-    cookie_board: Cookie Awards     # No special characters; no quotes needed.
-    cookie_board: "Foo:Bar"         # Quotes are needed because of the ':'.
+    cookie_forum: Cookie Awards     # No special characters; no quotes needed.
+    cookie_forum: "Foo:Bar"         # Quotes are needed because of the ':'.
 
 
 ### Numbers
@@ -57,7 +78,7 @@ The array syntax is necessary if you want it to be an empty list.
 
 For more complex configuration data, you can use a Ruby hash.  Each level of indentation makes a new key in the hash.  Each level of the hash can include strings, numbers, lists, and even other hashes.  Just be sure to keep all the levels lined up with each other.
 
-Here is an example of the combat stance configuration:
+Here is an example of the combat stance configuration, defining two stances with different attack and defense mods:
 
     stances:
         Aggressive:

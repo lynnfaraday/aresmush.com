@@ -8,8 +8,8 @@ Passwords and other secret codes used by the game are stored in a special file s
 
 To configure the game secrets:
 
-1. Go to the Web Portal's Admin screen.  
-2. Select 'Secret Codes'.
+1. Select Admin -> Setup
+2. Edit `secrets.yml` 
 
 For more information about configuring the Database see [Configuring the Database System](/tutorials/config/db).
 
