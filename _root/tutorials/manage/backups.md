@@ -95,7 +95,7 @@ You can configure the number of backups the game keeps.  By default this is 5.  
 
 #### Backup Cron Job
 
-You can configure when backups are done.  By default it's early morning, after peak MU* times.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/config/configuring-cron) for help if you want to change this.
+You can configure when backups are done.  By default it's early morning, after peak MU* times.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/config/cron) for help if you want to change this.
 
 #### Database File Location
 

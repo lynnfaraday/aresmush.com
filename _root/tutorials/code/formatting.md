@@ -1,11 +1,24 @@
 ---
-title: Using Ansi Color Codes
+title: Using Formatting Codes
 description:
 layout: page
 tags: 
 - ansi
 - colors
 ---
+
+Ares provides a number of formatting codes, which can be used pretty much anywhere: templates, poses, descriptions, and more.  
+
+## Format Codes
+
+    %r - A linebreak
+    %b - A single blank space
+    %t - Five blank spaces (like a tab)
+    %lh, %lf, %ld, %la - One of the border lines - header, footer, divider, alt-divider
+
+%x or %c are used for ansi color.  See below.
+
+## Ansi Color
 
 Ares allows the use of ansi color codes in virtually all text.  The game supports the FANSI 256 color standard, and colors will be converted back to standard ansi for players who indicate they don't want FANSI.  
 

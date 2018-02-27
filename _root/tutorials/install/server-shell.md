@@ -27,4 +27,4 @@ If you used the [Digital Ocean](/tutorials/install/digital-ocean) setup instruct
 
 ## Connecting through a Client
 
-You can also connect to your server using a telnet client like [PuTTY](http://www.putty.org/) for Windows or the terminal 'telnet' command on Mac/Linux.
+You can also connect to your server using a telnet client like [PuTTY](http://www.putty.org/) for Windows or the [PuTTY for Mac](https://www.ssh.com/ssh/putty/mac/) client for Mac.

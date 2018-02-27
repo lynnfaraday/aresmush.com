@@ -35,7 +35,7 @@ When characters are idled out, an annnouncement is posted to the forum.  You can
 
 Since idle sweeps must be done manually, the idle system will periodically create a staff job to remind you to do it.  There are several settings related to this reminder:
 
-`monthly_reminder_cron` - This cron job controls when the reminder happens.  By default it's monthly.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/config/configuring-cron) for help if you want to change this.
+`monthly_reminder_cron` - This cron job controls when the reminder happens.  By default it's monthly.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/config/cron) for help if you want to change this.
 
 `monthly_reminder_title` - The reminder's job title.
 

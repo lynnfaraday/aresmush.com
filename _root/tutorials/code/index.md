@@ -13,15 +13,66 @@ These articles will introduce you to coding for AresMUSH.
 * [Ares Architecture](/tutorials/code/architecture) - All the moving parts that make up an Ares game.
 * [Basic Concepts](/tutorials/code/concepts) - Important general concepts.
 * [Coding for Ares](/tutorials/code/overview) - General overview of how to change Ares code.
-* [Tinkering](/tutorials/code/tinker) - Quick one-off code snippets.
 
-## Reference Guides
+## Quickstart Tutorial
 
-* [Using Ansi Color Codes](/tutorials/code/colors) - Formatting text with color.
-* [Reloading Code](/tutorials/code/reload) - Understanding the live reload feature.
-* [Understanding YAML](/tutorials/code/yaml) - All about YAML configuration files.
-* [Troubleshooting YAML](/tutorials/code/troubleshooting-yaml) - Dealing with YAML configuration problems.
-* [Editing the Database](/tutorials/code/edit-database) - Manually modifying database fields.
+The Quickstart Tutorial is a series of coding exercises that will introduce you to the key Ares code concepts.  Even if you don't do the exercises, these articles introduce key concepts and provide useful code examples.
+
+* [Quickstart Overview](/tutorials/code/quickstart)
+{{>quickstart_tutorial}}
+
+## Creating a Plugin Tutorial
+
+This tutorial will walk you through creating your very own plugin from start to finish.
+
+## Ruby Resources
+
+* [Learning Ruby](/tutorials/code/ruby)
+
+## Advanced Topics
+
+### General
+
+* [Tinkering](/tutorials/code/tinker)
+* [Using Formatting Codes](/tutorials/code/formatting)
+* [Using Log Files](/tutorials/code/logs)
+
+### Configuration
+
+* [Shortcuts](/tutorials/code/shortcuts)
+* [Understanding YAML](/tutorials/code/yaml)
+* [Troubleshooting YAML](/tutorials/code/troubleshooting-yaml)
+
+### Engine
+
+* [Command Dispatching](/tutorials/code/dispatcher)
+* [Cron](/tutorials/code/cron)
+* [Events](/tutorials/code/events)
+* [Globals](/tutorials/code/globals)
+* [Help](/tutorials/code/help)
+* [Localization](/tutorials/code/localization)
+
+### Database
+
+* [Database](/tutorials/code/database)
+* [Editing the Database](/tutorials/code/edit-database)
+* [Removing a Database Field](/tutorials/code/remove-field)
+
+### Plugins and Commands
+
+* [Plugins](/tutorials/code/plugins)
+* [Custom Code](/tutorials/code/custom)
+* [Reloading Code](/tutorials/code/reload)
+
+### Utilities
+
+* [Arg Parsers](/tutorials/code/arg-parsers)
+* [Formatters](/tutorials/code/formatters)
+* [Templates](/tutorials/code/templates)
+
+### Web Portal
+
+* [Web Portal](/tutorials/code/web-portal)
 
 ## Git and Coding Locally
 
@@ -33,16 +84,3 @@ These articles will introduce you to coding for AresMUSH.
 
 * [Extras](/tutorials/code/extras) - Community plugins and utilities.
 * [Chopping Block](/tutorials/code/chopping-block) - Code that didn't make the cut.
-
-
-
-
-
-TODO
-
-
-
-
-* [Templates](/tutorials/code/templates)
-* [Changing Game Text (Locale)](/tutorials/code/locale)
-* [Custom Code](/tutorials/code/custom)

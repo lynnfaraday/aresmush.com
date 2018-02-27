@@ -105,6 +105,6 @@ These configuration options will probably not need to be changed unless your ser
 
 ## General Config Topics
 
-* [Configuring Cron Jobs](/tutorials/config/configuring-cron) - Setting up tasks to run periodically.
+* [Configuring Cron Jobs](/tutorials/config/cron) - Setting up tasks to run periodically.
 * [Understanding YAML](/tutorials/code/yaml) - All about YAML configuration files.
 * [Troubleshooting YAML](/tutorials/code/troubleshooting-yaml) - Dealing with YAML configuration problems.

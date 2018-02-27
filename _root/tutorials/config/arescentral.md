@@ -13,7 +13,7 @@ To configure the AresCentral plugin:
 
 ## directory_update_cron
 
-The game will periodically contact AresCentral to update its status and game directory info.  There is a cron job to control when this happens.  By default it does this daily during off-hours.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/config/configuring-cron) for help if you want to change this.
+The game will periodically contact AresCentral to update its status and game directory info.  There is a cron job to control when this happens.  By default it does this daily during off-hours.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/config/cron) for help if you want to change this.
 
 ## arescentral_url
 

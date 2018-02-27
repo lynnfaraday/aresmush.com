@@ -86,7 +86,7 @@ end
  
 ## Changing the Code
 
-There are three main ways to edit the code, in order from least-recommended/complex to most-recommended/complex.
+The [Tinker](/tutorials/code/tinker) command is an easy way to do quick, one-off code tasks.  But for anything more involved, you'll need to change the code on the server side.   There are three main ways to edit the code, in order from least-recommended/complex to most-recommended/complex.
 
 * Live Edit
 * FTP Upload

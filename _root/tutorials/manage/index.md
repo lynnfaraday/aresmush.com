@@ -8,12 +8,12 @@ These articles will help you administer/manage an Ares game.  It assumes your ga
 
 {{>tutorial_warning}}
 
-
 ## Game Administration
 
 * [Building the Grid](/tutorials/manage/building) - Setting up the game's locations.
 * [Using Roles and Permissions](/tutorisl/manage/roles) - Fine-tuning what staff can do.
 * [Dealing with Trolls](/tutorials/manage/trolls) - Tools for handling trolls and harassment.
+* [Setting up Guests](/tutorials/manage/guests) - Adding/changing guest characters.
 
 ## Database Tools
 

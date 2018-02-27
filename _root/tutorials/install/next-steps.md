@@ -29,6 +29,17 @@ There's also a "builder" character:
 
 You can rename them if you like.  Be sure to log them in and change their passwords.
 
+## Your Own Admin
+
+The Headwiz character is special, and should be reserved for special occasions.  You should create your own personal admin character to use for everyday game activities.
+
+1. Create a character from the login screen.
+2. Log in and accept the terms of service.
+3. Log in with Headwiz in another window.
+4. Use `role/add <your character>=admin` to grant your character admin privileges.
+
+> **Tip:** You can also grant the 'coder' role to let someone access the tinker command to change the code.  Just be careful, because there's no limit to what someone can do once you give them access to the code (and thus the database).  See the [roles tutorial](/tutorials/manage/roles) for more information.
+
 ## Customization
 
 Ares works out of the box, but there are a lot of configuration settings you can customize to get things just the way you like.  See [Configuring AresMUSH](/tutorials/config).

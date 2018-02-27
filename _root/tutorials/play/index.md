@@ -13,7 +13,7 @@ These articles will help you learn how to play AresMUSH.  If you're brand new to
 * [Client Setup](/clients) - Setting up your MUSH client to work with Ares.
 * [Player Handles](/handles) - Learn all about Ares' player identity system.
 * [Dealing with Trolls](/tutorials/manage/trolls) - Tools for handling trolls and harassment.
-* [Using Ansi Color Codes](/tutorials/code/colors) - Formatting text with color.
+* [Using Formatting Codes](/tutorials/code/formatting) - Formatting text with ANSI color and other embellishments.
 
 ## Roleplay Guides
 
