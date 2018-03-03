@@ -4,6 +4,7 @@ description:
 layout: page
 tags: 
 - code
+- engine
 - localization
 ---
 
@@ -22,6 +23,8 @@ A locale file looks something like this:
         db:
             object_not_found: Nothing found with that name.
 
+> **Tip:** Like all YAML files, translation files require quotes around strings with special characters in them.  When in doubt, use quotes.
+
 ## Translation Keys
 
 A translation key is in the form `section.key_name`.  For example:  `dispatcher.huh` or `db.object_not_found`.   You can use translation keys in the globally-available translate method `t()` to get the actual text for that key in the current language.
@@ -32,7 +35,7 @@ For example:  `t('dispatcher.huh')` would return "Huh?  Unrecognized command." i
  
 ## Backup Locale
 
-The localization system supports a fallback if a string can't be found in the current language.  For example - if there's no translation for "dispatcher.huh" in the German locale files, it will fall back to the English version.
+The localization system supports a fallback if a string can't be found in the current language.  For example - if the game's set to German and there's no translation for "dispatcher.huh" in the German locale files, it will fall back to the English version.
 
 ## Translation Parameters
 
@@ -40,7 +43,7 @@ Many translations change depending on the situation, and the words may appear in
 
     website_address: "Visit %{portal} to access the game's Web Portal."
 
-The URL for the web portal must be passed in via the `t()` method.
+The URL for the Web Portal must be passed in via the `t()` method.
 
     t('webportal.website_address', :portal => 'http://www.aresmush.com')
 
@@ -48,4 +51,10 @@ This will result in the final string:  "Visit http://www.aresmush.com to access 
 
 ## Command Names
 
-Localization doesn't apply to command names. This generally seems to be the standard in the gaming industry, but your mileage may vary. The "who" command will always be "who" no matter the language. You can create localized [shortcut](/tutorials/code/shortcuts) if you want to alias a command to a different name, but once you start adding in switches and other options, that's probably going to get unwieldy. If you are running an international game and find that this is a dealbreaker, please provide [Feedback](/feedback).
+Localization doesn't apply to command names. This generally seems to be the standard in the gaming industry, but your mileage may vary. The "who" command will always be "who" no matter the language. You can create localized [shortcut](/tutorials/code/shortcuts) if you want to alias a command to a different name, but once you start adding in switches and other options, that's probably going to get unwieldy.
+
+## Web Portal Localization
+
+The Web Portal is only partially localized.  Strings that come from the game will be translated, but strings that appear directly in the portal templates will not.
+
+If international games actually do take off and translations become available, I don't mind adding localization support to the Web Portal templates too.  Please submit [feedback](/feedback) if this is something you would be interested in.

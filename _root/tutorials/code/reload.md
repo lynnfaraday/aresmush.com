@@ -64,7 +64,7 @@ Database models don't belong to a plugin module - they're always part of the roo
       end
     end
 
-Because the database models aren't part of the plugin module, they won't be *unloaded* before being reloaded.  You can **add** things to database models through a reload, but you can't remove things.
+Since the database models aren't part of the plugin module, they won't be *unloaded* before being reloaded.  Because of this, you can **add** things to database models through a reload, but you can't remove things.
 
 ### Module Mix-Ups
 
@@ -77,13 +77,13 @@ Sometimes you'll accidentally put code in the wrong module.  For example:
 
 You wanted `TinkerCmd` to be in the Tinker module, but instead it ended up in the Chargen module. 
 
-Reloading the Tinker module (after fixing the code) will add the `AresMUSH::Tinker::TinkerCmd` class correctly.  But the one in Chargen is still there unless you also reload the Chargen module.
+Reloading the Tinker module (after fixing the code) will add the `AresMUSH::Tinker::TinkerCmd` class correctly.  But the one in Chargen is still there.
 
-Normally this doesn't do any harm.  Having an extra, unused command laying around the Chargen module doesn't really matter.  But it is possible for code in the wrong module to cause some unxpected errors, so it's good to be aware of.
+Normally this doesn't do any harm.  Having an extra, unused command laying around the Chargen module doesn't really matter.  But if it were a database model or an interface method, it may cause some unexpected behavior.  Just reload the Chargen plugin to fix it.
 
 ### Killing the Manager
 
-The Manage plugin is the one that provides all the code necessary to load other code.  Be extra cautious when making code changes to the Manage plugin.  If anything goes haywire when loading it, you'll find yourself without a Manage plugin ... which means you won't be able to load any other code!   The only way to recover from this is to [shutdown](/tutorials/manage/shutdown) and restart the game.
+The Manage plugin is the one that provides all the code necessary to load other code.  Be extra cautious when making code changes to the Manage plugin.  If anything goes haywire when loading it, you'll find yourself without a Manage plugin ... which means you won't be able to load any other code!   The only way to recover from that is to [shutdown](/tutorials/manage/shutdown) and restart the game.
 
 ## Further Reading
 

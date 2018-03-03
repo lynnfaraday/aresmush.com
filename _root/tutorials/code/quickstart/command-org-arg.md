@@ -15,23 +15,7 @@ In the previous exercise, we created a `handle` method that was doing a couple o
 * Check for errors.
 * Actually handle the command.
 
-<!-- -->
-
-    def handle
-      piggies = integer_arg(cmd.args)
-      if (!piggies)
-        client.emit_failure "You didn't say how many piggies you had."
-        return
-      end
-      
-      if (self.piggies < 5)
-        client.emit_ooc "#{piggies} is a small number of piggies."
-      else
-        client.emit_ooc "#{piggies} is a lot of piggies!"
-      end
-    end
-
-Turns out that those three steps are common to virtually all MUSH commands.  Additionally, there are a lot of common error checks.  If we do a little code reorganization, we can both make our code more readable *and* leverage some utilities for common errors.
+It turns out that those three steps are common to virtually all MUSH commands.  Additionally, there are some common error checks.  If we do a little code reorganization, we can both make our code more readable *and* leverage some utilities for common errors.
 
 ### Using parse_args
 

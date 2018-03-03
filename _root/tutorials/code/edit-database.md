@@ -3,6 +3,7 @@ title: Edit Database Fields
 description:
 layout: page
 tags: 
+- code
 - database
 ---
 
@@ -16,7 +17,7 @@ That doesn't work on Ares because objects and attributes work differently.
 
 The "Ares Way" is to use admin commands for these sorts of things.  Need to edit someone's skills?  Use the `ability` command.  Need to edit someone's actor?  Use the admin `actor` commands.
 
-> See `ahelp` for a complete list of admin commands.
+> See `help` for a complete list of admin commands.
 
 # Tinkering
 
@@ -52,7 +53,10 @@ Also keep in mind that many settings are stored in a child object and referenced
     hget AresMUSH::Character:2 room_id  --> gives '1'
     hget AresMUSH::Room:1 name --> gives 'Welcome Room'
 
-You CAN change things, but be careful.  Formatting matters, and sometimes fields are connected to each other.  For example, setting a character's room ID to a room that doesn't exist would cause an error when the character logged in.
+You can change things with the `hset` command:
 
     hset AresMUSH::Character:9 pose_quote_color "%xr"
+
+> **Important:** Be careful when changing fields manually.  Formatting matters, and because you're bypassing the game's internal error-checking you might set a field to an invalid value.  For example, setting a character's room ID to a room that doesn't exist would cause an error when the character logged in.
+
 

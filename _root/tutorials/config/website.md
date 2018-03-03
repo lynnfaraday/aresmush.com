@@ -1,17 +1,17 @@
 ---
 toc: ~config~ Configuring the Plugins
-title: Configuring the web portal.
+title: Configuring the Web Portal.
 aliases:
 - css
 - recaptcha
 ---
 # Configuring the Web Portal
 
-There are a variety of things you can configure about the web portal.
+There are a variety of things you can configure about the Web Portal.
 
 ## Search Box
 
-Ares doesn't come with a search feature for the web portal, but you can set one up easily using [Google Custom  Search Engine](https://cse.google.com/cse/all).  Just log in with your Google account and add your site.  The GCSE control panel will tell you your search engine ID, which will be a string of numbers and letters like:  `123456:abcdef`. 
+Ares doesn't come with a search feature for the Web Portal, but you can set one up easily using [Google Custom  Search Engine](https://cse.google.com/cse/all).  Just log in with your Google account and add your site.  The GCSE control panel will tell you your search engine ID, which will be a string of numbers and letters like:  `123456:abcdef`. 
   
 1. Select Admin -> Setup
 2. Edit `secrets.yml`.
@@ -29,9 +29,9 @@ The home page text can contain [Markdown formatting](https://daringfireball.net/
 
 ## Changing the Colors
 
-You can configure the colors on the web portal.
+You can configure the colors on the Web Portal.
 
-The web portal uses [SCSS](http://sass-lang.com/guide), which is an enhanced version of CSS that - among other things - lets you set up variables so you can change a color in one spot and have it take effect in many styles.  For example, the colors stylesheet lets you set up colors like so:
+The Web Portal uses [SCSS](http://sass-lang.com/guide), which is an enhanced version of CSS that - among other things - lets you set up variables so you can change a color in one spot and have it take effect in many styles.  For example, the colors stylesheet lets you set up colors like so:
 
     $primary-color: #6B0C22;
     $background-color: #fff;
@@ -95,31 +95,31 @@ Enter the Recaptcha Site and Secret you got from the code snippet above.
 
 ## Advanced CSS Style
 
-Beyond the colors, you can add custom CSS styles that will override the web portal style to your heart's content.
+Beyond the colors, you can add custom CSS styles that will override the Web Portal style to your heart's content.
 
 1. Select Admin -> Setup
 2. Edit `custom_style.scss`.
 
-It's also worth noting that the AresMUSH web portal uses the [Bootstrap](http://getbootstrap.com/) website layout system, so all standard Boostrap styles are available.   It also includes [FontAwesome](http://fontawesome.io/icons/) icons and [JQuery UI](https://jqueryui.com/) styles.
+It's also worth noting that the AresMUSH Web Portal uses the [Bootstrap](http://getbootstrap.com/) website layout system, so all standard Boostrap styles are available.   It also includes [FontAwesome](http://fontawesome.io/icons/) icons and [JQuery UI](https://jqueryui.com/) styles.
 
 ## Advanced Options
 
-The web portal has a number of configuration options.  To set them:
+The Web Portal has a number of configuration options.  To set them:
 
 1. Select Admin -> Setup
 2. Edit `website.yml`.
 
 ### allow_web_registration
 
-By default, players can create characters from the web portal.  If you wish to lock this down, you can set `allow_web_registration` to `false`.   If you allow web registration, be sure to configure Recapta to prevent bots, as explained below.
+By default, players can create characters from the Web Portal.  If you wish to lock this down, you can set `allow_web_registration` to `false`.   If you allow web registration, be sure to configure Recapta to prevent bots, as explained below.
 
 ### portal_requires_registration
 
-Set this to `true` if you want to require people to log in before they can access the web portal at all.  Often coupled with `allow_web_registration` to require people to create a character from the game itself instead of registering on the web portal.
+Set this to `true` if you want to require people to log in before they can access the Web Portal at all.  Often coupled with `allow_web_registration` to require people to create a character from the game itself instead of registering on the Web Portal.
 
 ### allow_html_in_markdown
 
-Many of the web portal pages allow players to enter [Markdown](https://daringfireball.net/projects/markdown/syntax).  By default, Ares allows HTML in its Markdown text.  This gives players a great deal of flexibility for embedding images, youtube videos, or custom styles.  However, it *could* be used to run malicious or annoying javascript code.  If you run into trouble, you can tell Ares to run Markdown in safe mode by disabling HTML.
+Many of the Web Portal pages allow players to enter [Markdown](https://daringfireball.net/projects/markdown/syntax).  By default, Ares allows HTML in its Markdown text.  This gives players a great deal of flexibility for embedding images, youtube videos, or custom styles.  However, it *could* be used to run malicious or annoying javascript code.  If you run into trouble, you can tell Ares to run Markdown in safe mode by disabling HTML.
 
 ### max_upload_size_kb
 

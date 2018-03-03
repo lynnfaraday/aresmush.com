@@ -3,7 +3,7 @@ title: Tinkering
 description:
 layout: code-quickstart
 nextstep: hello-mush
-prevstep: 
+prevstep: try-ruby
 tags: 
 - code
 - code-quickstart

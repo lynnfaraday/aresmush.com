@@ -1,0 +1,29 @@
+---
+layout : page
+---
+
+    {{{ content }}}
+
+<div class="tutorial-nav">
+    <p>This article is part of the <a href="/tutorials/code/create-plugin">Create Plugin</a> tutorial.</p>
+    
+    <div class="pagination-block">
+        <ul>
+            {{# page.prevstep }}
+            <li><a href="/tutorials/code/create-plugin/{{page.prevstep}}"> &larr; Previous</a></li>
+            {{/ page.prevstep}}
+            {{^ page.prevstep }}
+            <li class="link-disabled"><a>&larr; Previous</a></li>
+            {{/ page.prevstep }}
+            
+            {{# page.nextstep }}
+            <li><a href="/tutorials/code/create-plugin/{{page.nextstep}}">Next &rarr; </a></li>
+            {{/ page.nextstep }}
+            {{^ page.nextstep }}
+            <li class="link-disabled"><a>Next &rarr;</a></li>
+            {{/ page.nextstep }}
+        </ul>
+    </div>
+    
+    <br/>
+</div>

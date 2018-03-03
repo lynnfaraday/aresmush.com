@@ -1,8 +1,8 @@
 ---
 title: Code Quickstart Tutorial
 description:
-layout: page
-nextstep: tinker-intro
+layout: code-quickstart
+nextstep: try-ruby
 tags: 
 - code
 - code-quickstart

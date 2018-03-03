@@ -18,13 +18,13 @@ Ares only allows you to have a single exit name, which is shown in room descs ne
     [R] Restaurant
     [O] Town Square
 
-Surely there are some folks who will try to type "town" to go to the town square, but experience on my own PennMUSH games shows that they pretty quickly learn to just use the short names.  Omitting long exit names and aliases simplifies the building commands and the code.
+Yes, there will be some folks who will try to type "town" to go to the town square, but experience on my own PennMUSH games shows that they pretty quickly learn to just use the short names.  Omitting long exit names and aliases simplifies the building commands and the code.
 
 ## Exit Locks
 
 Penn/Tiny exit locks could be infinitely complex.  You could lock an exit so it was only available to people whose name started with "B", or whose position was "Doctor", or even have a lock that was only opened on Tuesdays.
 
-This functionality seems inordinately complex and pretty useless, so it has been ditched from Ares.  Standard exit locks operate based solely on [roles](/tutorials/manage/roles).  There's also a temporary lock feature for privacy that applies to interior locks.   A similar feature could be added for an apartment system, so only people on the lock list could get in.  
+This functionality seems inordinately complex and pretty useless, so it has been ditched from Ares.  Standard exit locks operate based solely on [roles](/tutorials/manage/roles).  There's also a temporary lock feature for privacy that applies to interior locks.   If you built an apartment system, you could add code so only people on the lock list could get in.  
 
 In short: Ares lets you create lock code for specific purposes, rather than attempting to design a super-flexible lock scripting language.
 
@@ -44,7 +44,7 @@ But why should that be necessary?  Wouldn't it be much easier if the teleport co
 
     tel a b c=wherever
 
-Ares commands are designed to work on lists where it makes sense, eliminating the need for dolists.  At least, that's the theory.  If you find something missing, please provide [feebdack](/feedback).
+Ares commands are designed to work on lists where it makes sense, eliminating the need for dolists.  If you find a command that you think should work on lists but doesn't - please provide [feebdack](/feedback).
 
 ## Darkness
 
@@ -54,18 +54,18 @@ If you don't want to be bothered, there's a 'duty' command to mark yourself as o
 
 ## Force
 
-In Ares, admins cannot force players to execute commands, mainly because I think it's creepy.  Admin-only commands should exist to do the things you need to do.  As with dolist, if you find something missing, just provide [feebdack](/feedback).
+In Ares, admins cannot force players to execute commands, again because I think it's creepy and potentially misused.  Admin-only commands should exist to do the things you need to do.  As with dolist, if you find something missing, just provide [feebdack](/feedback).
 
 ## Thing Objects
 
 Ares has no "Thing" object type.  That means no rings, no notepads, no blaster pistols, no Viper fighter craft to climb into, etc.   Why?  All of those things are done in different ways.
 
-Things that were cosmetic have been supplanted by a more robust 'detail' system.  If you want a special desc for your ring or the family photo on your wall, add a detail.
+Things that were cosmetic have been supplanted by a more robust 'detail' system that works on players as well as rooms.  If you want a special desc for your ring or the family photo on your wall, add a detail.
 
-Things that were used for inventory tracking (weapons, armor, etc.) don't exist in the standard codebase because the standard codebase has no code that uses that sort of stuff.  FS3 Combat lets you select whatever weapons and armor you want, and leaves "should I have this" up to the player and combat organizer.   If you wanted to code a different system that kept track of what gear a player had, you'd create specific database fields to track the gear, not generic @created objects.
+Things that were used for inventory tracking (weapons, armor, etc.) don't exist in the standard codebase because FS3 Combat uses a freeform inventory.  It's the combat organizer's job to police characters who arm themselves with nonsensical weapons.  If you wanted to code a different system that kept track of what gear a player had, you'd create specific database fields to track the gear, not generic @created objects.
 
 Things that stored code don't exist because Ares doesn't associate code with objects at all.  Code lives on the server.  There is no player-side code scripting.  Notepad and multi-descer code is built into the game as globals.
 
-Things that were used as vehicles to drive around in don't exist because frankly I find them kind of silly.  If you really needed to model a vehicle or elevator or whatnot, you could utilize a room with movable exits and some custom code to do emits.
+Things that were used as vehicles to drive around in don't exist because frankly I find them kind of useless.  If you really needed to model a vehicle or elevator or whatnot, you could utilize a room with custom code for emits/exits.
 
 If you have trouble philosophically adapating an old-style MUSH system to Ares' Thing-less world, just [ask for help](/feedback).

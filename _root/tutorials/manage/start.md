@@ -17,4 +17,4 @@ If the game is already running and you want to *restart* it, see [Shutting Down 
 
 To ensure the game automatically restarts when the server is rebooted, see [Auto-Restart After Server Reboot](/tutorials/manage/restart-after-reboot).
 
-> Tip:  You can also run `bin/devstart` if you want to start it in debug mode, so you can see log messages 'live' on the console.  In debug mode, the game will stop running if you hit CONTROL-C or close down your connection, so it's only good for short debug sessions.   You must start the web portal separately in debug mode using `bin/devportal`.
+> Tip:  You can also run `bin/devstart` if you want to start it in debug mode, so you can see log messages 'live' on the console.  In debug mode, the game will stop running if you hit CONTROL-C or close down your connection, so it's only good for short debug sessions.   You must start the Web Portal separately in debug mode using `bin/devportal`.

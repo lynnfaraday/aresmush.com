@@ -20,7 +20,7 @@ The Redis database periodically dumps your database to a file on the server.  If
 
 ### Game Files
 
-Everything in your `aresmush/game` directory is custom for your game.  This includes your connect screen, configuration files, and web portal file uploads.
+Everything in your `aresmush/game` directory is custom for your game.  This includes your connect screen, configuration files, and Web Portal file uploads.
 
 > **Important:** Ares' automated backup tools do not include source code.  It's assumed that you're either using [GitHub](/tutorials/code/git) (which is an awesome way to protect your code that provides other benefits too) or that you're making changes on your local computer and uploading them through FTP.  Making code changes directly through the server shell without version control is not advisable.  If you choose to do so, you'll need to decide on your own backup strategy.
 

@@ -11,7 +11,7 @@ The Ares coding experience is different from what you might be familiar with fro
 
 ## What Ares Code is Like
 
-The Ares game server code is written in Ruby.  The Ares web portal front-end is written in Ember.JS javascript.  These are mainstream languages, so you'll find tons of tutorials, reference guides and community support sites.  It's far easier to find someone with Ruby or Javascript experience than to find someone who knows MUSH softcode.
+The Ares game server code is written in Ruby.  The Ares Web Portal front-end is written in Ember.JS javascript.  These are mainstream languages, so you'll find tons of tutorials, reference guides and community support sites.  It's far easier to find someone with Ruby or Javascript experience than to find someone who knows MUSH softcode.
 
 Many people find Ares code more readable and easier to learn than softcode.   Here is the code for the `cookie` command, which gives a cookie to a list of names.
 
@@ -126,9 +126,9 @@ After you've made your changes, you need the game to recognize them.
 
 If you've only changed **plugins**, you can reload each plugin while the game is still running by using the `load <plugin name>` command in-game. 
 
-If all you've changed are **configuration files**, the `load config` command will read them.   The config is automatically reloaded when using the web portal config editor.
+If all you've changed are **configuration files**, the `load config` command will read them.   The config is automatically reloaded when using the Web Portal config editor.
 
-If you've changed the **web portal**, you'll need to re-deploy it through the Admin -> Manage menu on the web portal or the `website/deploy` command in-game. 
+If you've changed the **Web Portal**, you'll need to re-deploy it through the Admin -> Manage menu on the Web Portal or the `website/deploy` command in-game. 
 
 If you've changed the **engine**, you'll need to actually [shutdown and restart](/tutorials/manage/shutdown) the game before the changes will take effect.   You probably shouldn't be changing the engine, though.
 

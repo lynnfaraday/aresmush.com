@@ -15,8 +15,7 @@ Ares provides a number of formatting codes, which can be used pretty much anywhe
     %b - A single blank space
     %t - Five blank spaces (like a tab)
     %lh, %lf, %ld, %la - One of the border lines - header, footer, divider, alt-divider
-
-%x or %c are used for ansi color.  See below.
+    %x or %c - Ansi color.  See below.
 
 ## Ansi Color
 

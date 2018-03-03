@@ -1,103 +1,104 @@
-TODO!  Coming soon.
+---
+title: Plugins
+description:
+layout: page
+tags: 
+- code
+- plugins
+---
 
+Ares supports a robust **Plugin** system, with its features separated into plugin modules.  Plugins provide all of the player commands - even core functionality like movement, help, descriptions, pages and channels.  They handle game events, responding to things like "character connected" or "game started".
 
-Directory Organization
-Each plugin has its own directory inside the game/plugins directory. The name of the directory is the name of the plugin.
+## Directory Organization
 
-Plugin names ultimately become code names, and may not contain spaces or special characters.
+Each plugin has its own directory inside aresmush/plugins. The name of the directory is the name of the plugin.
 
-The Hello MUSH plugin was extremely simple (only 4 files) so there wasn't really a need to worry about organization within the plugin. But most of the existing plugins are more complicated and follow a consistent directory organization to help you find things:
+> **Important Convention:** The folder name must be one word, all lowercase, with no special characters.
 
-config - Config files go here, named config_<plugin>.yml, help_<plugin>.yml and shortcuts_<plugin>.yml
-help - Help files go here. There need to be sub-directories for each language, with "en" being English.
-interfaces - Code that is used by other plugins goes here. See Understanding Interfaces.
-lib - Most of the code files go here.
-locales - Translation files go here. You probably don't need to worry about this unless you're designing for international audiences.
-templates - Customizable Template files go here.
-template_helpers - Code that drives the templates goes here. See Advanced Templates.
-Plugin Modules
-All plugin code starts with module statements to keep the code organized:
+There's a standard organization to a plugin folder.
 
-module AresMUSH
-   module <Your Module Name>
-   end
-end
-The first module statement makes you part of the AresMUSH family and gives you access to all of the other Ares methods. The second one keeps your code separate from the other Ares code.
+    myplugin
+        - commands (command handlers)
+        - events (event handlers)
+        - help* (help files)
+        - locale* (translation files)
+        - public (models and interfaces used by other plugins)
+        - templates (templates and renderers)
+        - web (web request handlers)
+        myplugin.rb
 
-It is super important that the name you use in your "module" statement match your plugin's folder name. (case is ignored though so usually the module name will be uppercase and the folder lowercase).
+Help and Locale must be in separate folders, but the other folders are optional.  You could lump everything under `myplugin` if you want, but the standard organization will make it easier to find files - particularly in large, complex plugins.
 
-Plugin Class
-All commands need to be in their own class, and that class needs to include the Plugin base.
+## Plugin Modules
+All plugin code lives in its own Ruby module - inside the main AresMUSH module - to keep the code organized and provide clues as to what goes where.
 
-module AresMUSH
-   module <Your Module Name>
-      class <Class Name>
-         include Plugin
+    module AresMUSH
+       module MyPlugin
+       end
+    end
+
+> **Important Conventions:** 
+>
+> 1. The module must be defined in a file matching your plugin folder name, located in the top level of your plugin directory.
+> 
+> 2. The module must be nested within the main AresMUSH module.
+> 
+> 3. The name of the Ruby module must match the name of the plugin folder when converted to lowercase.  In other words, it's okay to have a module FS3Skills and a folder fs3skills.
+
+The plugin module must define a single method:  `plugin_dir` that always returns the current directory.  For example:
+
+    module AresMUSH
+      module MyPlugin
+        def self.plugin_dir
+          File.dirname(__FILE__)
+        end
       end
-   end
-end
-Plugin Methods
-By including the Plugin base module, you're importing a bunch of built-in methods that help you define the behavior of your command.
+    end
 
-want_command?(client, cmd)
-This method tells the command dispatcher whether you're interested in a particular command. Returns 'true' or 'false'.
+There are several other optional methods that plugins can define:
 
-def want_command?(client, cmd)
-   # Wants the mail/new command
-   cmd.root_is?("mail") && cmd.switch_is?("new")
-end
-crack!
-Cracks open the command string to figure out the arguments, usually putting them into class variables (aka attributes). See Commands for more info.
+* `shortcuts` - Returns the plugin's shortcut configuration.  Usually `Global.read_config('myplugin', 'shortcuts')`
+* `load` - Any special actions you want to do when the plugin is loaded.  For example, the help plugin initializes some variables.
+* `get_cmd_handler`, `get_web_request_handler`, `get_event_handler` - Define handlers, as explained below.
 
-attr_accessor :value
-def crack!
-   self.value = cmd.args
-end
-handle
-The handle method is where the 'guts' of your command go. 99% of handle methods will end with an emit to the client.
+## Shared Helpers
 
-def handle
-   # Do something, then...
-   client.emit_success "Something is done."
-end
-You should avoid multiple emits in a single handle method because it's inefficient. It's better to build up a single string and emit it all at once.
-
-log_command
-This method is optional. If you leave it out, Ares will automatically log your command for Troubleshooting purposes. You may wish to override the auto-logging in special cases, to log just general information about a command - or perhaps nothing at all.
-
-Ares overrides and disables logging of commands that include passwords, poses, mail, pages and channel chat for privacy reasons. A local game admin obviously has access to the source code and can un-disable this, but the base Ares configuration does not spy on you.
-
-Shared Plugin Methods
 You might find yourself doing the same thing across multiple commands within your plugin. In this case, you'll probably want to create a shared method to avoid duplicating code.
 
 A shared method doesn't live in any individual command class; instead it lives in the plugin's module. For example:
 
-module AresMUSH
-  module Bbs
-    def self.can_manage_bbs?(actor)
-      return actor.has_any_role?(Global.config["bbs"]["roles"]["can_manage_bbs"])
+    module AresMUSH
+      module Bbs
+        def self.can_manage_bbs?(actor)
+          ...
+        end
+      end
     end
-  end
-end
+
 You access shared methods using the module name.
 
-Bbs.can_manage_bbs?(client.char)
-In the built-in plugins, shared methods will be found in game/plugins/<plugin name>/lib/shared.rb.
+    Bbs.can_manage_bbs?(enactor)
 
+You can place helpers anywhere, but the standard Ares code convention is to put them in the plugin directory and name them `helpers.rb`.
+
+## Plugin Interfaces (APIs)
 
 The plugins talk to each other through database fields and interface methods (api's).
 
-For example, the Scenes plugin provides the interface method `Scenes.add_to_scene()`, which is used by various utilities (like skills and combat) to add system messages to a scene.   The Ranks plugin provides a database model so you can do `character.rank`.
+For example, the Scenes plugin provides the interface method `Scenes.add_to_scene()`, which is used by various utilities (like skills and combat) to add system messages to a scene.   The Ranks plugin provides a database model field so you can do `character.rank`.
 
-If you want to eradicate a plugin completely, you'd need to hunt through the code hunting down all references to its models and interfaces.  You'd also have to remove the fields from the database itself.
+Methods that are intended to be used across plugins are by convention placed in the plugin's `public` directory.
 
+## Adding and Removing Plugins
 
-Although the plugins are designed to be plug-and-play, some of them do depend on one another. Interfaces are the way that plugins talk to one another. If you unplug one of them, or drastically change the shape of its plug, you need to check to make sure you haven't messed up any of the things that depend on it.
+Plugins are designed to plug **in** easily, so you can add new code systems with ease.  They're also designed like puzzle pieces, so you can swap in a different version as long as it's the same basic shape.  In code terms, this means as long as it implements the same **Interfaces** as described above.
 
-All interface methods should be placed into the interfaces directory of the plugin. For example, the Mail plugin defines an interface for sending mail:
+For example:  The mail API provides to main interfaces:  an `unread_mail` count and a `send_mail` method.  You can drop in any mail system you want, and everything will work just fine as long as it provides its own implementation of those methods.
 
-module Mail
-    def self.send_mail(names, subject, body, client)
-    end
-end
-You can implement an entirely different mail system, and everything would be fine as long as you still provided that same interface. If you do change (or delete) the interface, you would need to search through the code for anywhere that used "Mail.send_mail" and update those places too.
+Removing a plugin completely is another story.
+
+Some optional plugins can simply be disabled through the game configuration.  See [Enabling and Disabling Plugins](/tutorials/config/plugins).
+
+For others, though, it takes some code surgery.  You'll need to hunt through the code looking for all references to its models and interfaces.  You'd also have to [remove the fields](/tutorials/code/remove-field) from the database itself.   
+
+This can be a pain, yes, but such is the price for having a fully-integrated MUSH-in-a-box system.

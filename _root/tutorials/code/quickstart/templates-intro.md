@@ -34,25 +34,3 @@ Ares provides a template to make this easy:  `BorderedDisplayTemplate`  Let's gi
       template = BorderedDisplayTemplate.new "Some text to show.", "A Title"
       client.emit template.render
     end
-
-
-## Bordered List Template
-
-There's a similar template called `BorderedListTemplate` when you need just a titled list.
-
-    ------------------------------
-              Title
-    ------------------------------
-    Item 1
-    Item 2
-    ... etc.
-    ------------------------------
-
-Let's modify the tinker code again and give this one a try.
-
-    def handle
-      template = BorderedListTemplate.new [ "A", "B", "C", "D"], "A Title", "A Footer", "A Subtitle"
-      client.emit template.render
-    end
-
-> **Tip:** Everything except the list is optional, so you can customize the display as you see fit.  Just pass `nil` for the ones you don't want.

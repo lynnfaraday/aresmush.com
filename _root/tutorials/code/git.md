@@ -31,13 +31,13 @@ The first step in using GitHub for your own game code is to create your own semi
     You are now the proud owner of your own version of AresMUSH.  You can tell that you're on your version by looking at the repository name near the upper left.  The main Ares code is **aresmush/aresmush**.  Yours will be something like  **YOURUSERNAME/aresmush**.    
 
 4. The **Clone URL** is a URL that you use in the git commands to access your code.  On the right of the repository, you should see a 'clone or download' button.  Click on it to see the clone URL. Click on the **"Use HTTPS"** button to get the HTTP clone URL. 
-5. Repeat the above steps for the [Ares Web Portal Repository](https://github.com/aresmush/ares-webportal) if you also want to create a fork of the web portal code.
+5. Repeat the above steps for the [Ares Web Portal Repository](https://github.com/aresmush/ares-webportal) if you also want to create a fork of the Web Portal code.
 
 ## Making the Game Use the Fork
 
 If you create your fork before you install the code, you can use specify it when you [install the game](/tutorials/install/basic-config).
 
-    ./install <game clone URL> <web portal clone URL>
+    ./install <game clone URL> <Web Portal clone URL>
 
 If you've already installed the game, you just need to make your install point at your new fork instead of the standard AresMUSH repository.  In the server shell, change to the aresmush directory and run the following commands:
 

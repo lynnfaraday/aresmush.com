@@ -12,7 +12,7 @@ The [Ares for Vets](/tutorials/play/ares-for-vets) tutorial gives a run-down on 
 
 ## Web Portal
 
-AresMUSH features a fully-integrated [web portal](/web_portal) that allows you to interact with the game from a web browser.  Far from just a telnet window embedded in the browser, the web portal offers a rich experience and can fully replace (and enhance!) traditional game wikis.
+AresMUSH features a fully-integrated [Web Portal](/web_portal) that allows you to interact with the game from a web browser.  Far from just a telnet window embedded in the browser, the Web Portal offers a rich experience and can fully replace (and enhance!) traditional game wikis.
 
 ## Commands
 

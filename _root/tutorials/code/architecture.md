@@ -44,4 +44,4 @@ The engine maintains several ports.
 
 > **Tip:** WebSockets are sometimes blocked by firewalls or security software, which is why this method is not used for all Web Portal queries.  It's helpful, but don't rely on it too much.
 
-Although the API port and WebSocket port are intended for use by the web portal, it's possible that they could be adapted for next-gen clients in the future.
+Although the API port and WebSocket port are intended for use by the Web Portal, it's possible that they could be adapted for next-gen clients in the future.

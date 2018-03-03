@@ -27,12 +27,14 @@ If the cron event time matches your cron configuration settings, the cron job wi
 
 The `is_cron_match?` utility lets you specify when a cron job is supposed to run.  There are four components of the cron configuration:
 
-* date - What day of the month it runs. 
-* day\_of\_week - What day of the week it runs.  
-* hour - What hour it runs.  **Always specify the minute too**, or it will run every minute for an hour.
-* minute - What minute it runs.
+* date - What day(s) of the month it runs. 
+* day\_of\_week - What day(s) of the week it runs.  
+* hour - What hour(s) it runs.  Uses 24-hour time.
+* minute - What minute(s) of the hour it runs.
 
-> **Tip:** Avoid specifying both date and day of week, or you'll end up with a job that only runs on Tuesdays that happen to fall on the 1st of the month.
+> **Tip:** Avoid specifying both date *and* day of week, or you'll end up with a job that only runs on Tuesdays that happen to fall on the 1st of the month.
+
+> **Tip:** If you specify hour, also specify minute.  Otherwise it will run *every minute* for that entire hour.
 
 Each item is a list, so you can have a job that runs on Tuesdays and Thursdays, or every half-hour, or on the 1st and 15th of the month, etc.
 

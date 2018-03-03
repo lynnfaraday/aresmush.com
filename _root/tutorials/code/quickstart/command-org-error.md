@@ -42,11 +42,7 @@ Error checkers should always return `nil` if everything's OK, and an error messa
 
 ## Universal Error Checkers
 
-There are a couple error checkers so common they're built right into the `CommandHandler` class.  
-
-### Required Arguments Checker
-
-One of them is checking to make sure no required arguments are nil.  All you have to do is tell the code which arguments are required. So we can remove our `check_piggies` method and replace it with:
+There are a couple error checkers so common they're built right into the `CommandHandler` class.  One of them is checking to make sure no required arguments are nil.  All you have to do is tell the code which arguments are required. So we can remove our `check_piggies` method and replace it with:
 
     attr_accessor :piggies
     def parse_args
@@ -66,13 +62,3 @@ One of them is checking to make sure no required arguments are nil.  All you hav
     end
 
 Try it out.  Notice that we no longer get our custom message about the piggies, but a more generic message that refers us to the proper help file.
-
-### Login Checker
-
-The other universal error checker makes sure that the player is logged into a character.  Most commands require this, so it's on by default.  You don't have to do anything.  If you want to allow a command to work on the login screen (like who or help), you need to expressly enable it by adding this to your command handler:
-
-    def allow_without_login
-      true
-    end
-
-We can't try that one out with the tinker command because you need special privileges (and thus need to be logged in no matter what.)  It's just a FYI.

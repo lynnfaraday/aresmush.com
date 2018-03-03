@@ -23,7 +23,7 @@ Ares by default will maintain up to ten log files, switching when each one gets 
 
 ## Reading Log Files
 
-The easiest way to browse log files is from the web portal.  Go to Admin -> Logs.  The newest log file will be at the top of the list.  Log entries are timestamped.  The web portal will show log entries in reverse chronological order, so the newest ones are listed first.
+The easiest way to browse log files is from the Web Portal.  Go to Admin -> Logs.  The newest log file will be at the top of the list.  Log entries are timestamped.  The Web Portal will show log entries in reverse chronological order, so the newest ones are listed first.
 
     2018-02-20 13:08:44 DEBUG - AresMUSH::Who::WhereCmd: ID=229 Enactor=Faraday Cmd=+where 
     2018-02-20 13:08:25 DEBUG - Emptying trash for John. 

@@ -37,7 +37,7 @@ When you're debugging locally, it's easier to run the game in debug mode.
 
 To start the game server in debug mode, run `bin/devstart` from the aresmush directory.
 
-To start the web portal in debug mode, run `bin/devportal` from the ares-webportal directory.
+To start the Web Portal in debug mode, run `bin/devportal` from the ares-webportal directory.
 
 
 As with the setup script in the previous section, these are unix-style shell scripts and may need some adjustment when running on Windows.

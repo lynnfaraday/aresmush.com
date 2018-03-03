@@ -9,14 +9,15 @@ tags:
 
 Ares does not have the ability to execute softcode directly from a MU client.  You can't just whip up a `think iter(switch(...))` off the cuff in your MUSH window.   However, there are times when you just need to do a quick thing - find all characters over 30 years old, or change a database field that doesn't have an associated admin command.  In Ares, you can do these one-off code tasks with the `tinker` command.
 
-> **Tip:** By default, only characters with the `coder` role can access the tinker command.  This is a security feature, because giving someone access to the code essentially gives them the keys to the kingdom.  They could do literally anything with the database.
+> **Tip:** Not all admins can tinker - only characters with the `coder` role.  This is a security feature, because giving someone access to the code essentially gives them the keys to the kingdom.  They could do literally anything with the database.
 
 ## How to Tinker
 
-Tinkering involves two steps:
+Tinkering involves three steps:
 
-1. Go to the web portal and select Admin -> Tinker.  Edit the code to do what you want and save it.
-2. Type `tinker` in-game to run the code.
+1. Log into the Web Portal with a coder character and select Admin -> Tinker.  
+2. Edit the code to do what you want and save it.
+3. Type `tinker` in-game to run the code.
 
 > **Tip:** Coders who prefer to edit code in the server shell can edit `aresmush/plugins/tinker/commands/tinker_cmd.rb` then reload the code using `load tinker` in-game.
 
@@ -110,4 +111,4 @@ Tinkering is set up with the assumption that only one person will be tinkering a
       end
     end
 
-If taking turns editing the tinker file is too much trouble, have your multitude of coders just create their own individual tinker commands in files they can edit separately.
+If taking turns editing the tinker file is too much trouble, have your multitude of coders just create their own individual tinker commands (tinker/faraday, tinker/chaos, etc.) in files they can edit separately.

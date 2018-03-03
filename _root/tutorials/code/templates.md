@@ -52,6 +52,21 @@ To use a template, you simply instantiate the renderer class and call the render
 
 Many renderers expect some parameters passed in - a character, a room, or - in this case - the list of characters who are currently online.  Templates handle _how_ to display data, but other code should figure out _what_ to show.
 
+## Common Templates
+
+Ares provides a few common templates in the Utils plugin that are used everywhere.  The two most common are `BorderedDisplayTemplate` and `BorderedListTemplate`:
+
+    ------------------------------
+              Title
+              SubTitle
+    Text
+    SubFooter
+    ------------------------------
+
+> **Tip:** Everything except the text/list is optional, so you can customize the display as desired.
+
+There's also a table, a line with text in the middle, and a standard page footer for multi-page commands.  See the code in `aresmush/plugins/utils/templates` for details.
+
 ## The One-Line Trick
 
 ERB Templates take linebreaks literally.  If text appears on a different line in the template file, it'll show up on a different line on the screen.

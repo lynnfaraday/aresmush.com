@@ -24,7 +24,7 @@ Next we'll configure some basic information about your game.  These settings det
         ./install
 
         Note:  If you already have a GitHub clone, you can pass the HTTPS clone urls to the install script:
-               ./install <game code clone URL> <web portal clone URL>
+               ./install <game code clone URL> <Web Portal clone URL>
                If you don't know what this means, don't worry about it!  It doesn't apply to you.
 
         export NVM_DIR="$HOME/.nvm"
@@ -57,6 +57,6 @@ Whereas the old MUSH servers you might be useful have only one port (mush.somewh
 
 The **Telnet Port** is the general one that regular MU clients connect to.  (default 4201)
 
-The **Websocket Port** and **Engine API Port** are behind-the-scenes ports that the Ares web portal uses to communicate with the game. (default 420 and 4203)
+The **Websocket Port** and **Engine API Port** are behind-the-scenes ports that the Ares Web Portal uses to communicate with the game. (default 420 and 4203)
 
-The **Web Portal Port** is where your web portal is running. (default 80)  '80' works if the web portal is the only website running on the server.  Otherwise you'll need to pick a custom port and access the web portal through a URL like http://mush.somewhere.com:8081.
+The **Web Portal Port** is where your Web Portal is running. (default 80)  '80' works if the Web Portal is the only website running on the server.  Otherwise you'll need to pick a custom port and access the Web Portal through a URL like http://mush.somewhere.com:8081.

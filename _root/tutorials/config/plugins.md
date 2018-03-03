@@ -7,7 +7,7 @@ title: Enabling and Disabling Plugins
 
 The Ares plugin system allows you to easily plug IN new code modules.  Taking them OUT is trickier because many plugins rely on each other.
 
-A few plugins, however, are designed to be optional.  These can be enabled and disabled in the admin web portal.
+A few plugins, however, are designed to be optional.  These can be enabled and disabled in the admin Web Portal.
 
 > Note: Even if a plugin is not listed as optional, it's still possible to remove or replace it.  It'll just require some [code surgery](/tutorials/code/plugins) rather than a mouse click.  Do not attempt to remove a plugin simply by deleting its code folder.  That will most likely cause unexpected code errors.
 

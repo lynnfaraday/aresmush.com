@@ -32,7 +32,7 @@ Try tinkering with different numbers of piggies and see how the message changes 
 
 ## Arg Parsers
 
-What if we have multiple parts to our arguments, like `tinker <number of piggies>=<names of piggies>`.
+What if we have multiple parts to our arguments, like `tinker <number of piggies>=<names of piggies>`?
 
 Here we can leverage the `ArgParser` helper class.  It has pre-set parsers for a variety of common MUSH command formats, including `arg1_equals_arg2`.  Let's try it.
 

@@ -7,7 +7,7 @@ prevstep: portal-intro
 
 Congratulations!  You've completed the AresMUSH Code Quickstart Tutorial.  
 
-There are many more coding articles available on the [Code Tutorials](/tutorials/code) page, but don't try to read them all at once.  It'll be overwhelming.  Try to learn bits and pieces as you need them.  
+This was the first of three basic tutorials introducing Ares code.  The next is [Creating a Plugin](/tutorials/code/create-plugin).
 
 You may also want to enhance your basic Ruby skills by checking out some of the [Ruby resources](/tutorials/code/ruby).
 

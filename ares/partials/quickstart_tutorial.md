@@ -1,3 +1,5 @@
+* [Overview](/tutorials/code/quickstart/)
+* [Try Ruby](/tutorials/code/quickstart/try-ruby)
 * [Tinkering](/tutorials/code/quickstart/tinker-intro)
 * [Hello MUSH](/tutorials/code/quickstart/hello-mush)
 * [Command Handlers](/tutorials/code/quickstart/command-handlers)

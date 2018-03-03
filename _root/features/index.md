@@ -10,7 +10,7 @@ AresMUSH is designed with three goals in mind:
 
 ## Make it Easier to Play
 
-Ares is designed to offer a familiar experience to both Penn and TinyMUX players, so experienced players will feel right at home. At the same time, a fully-integrated [web portal](/web_portal) and streamlined commands make the game easier to play for new players and old alike.
+Ares is designed to offer a familiar experience to both Penn and TinyMUX players, so experienced players will feel right at home. At the same time, a fully-integrated [Web Portal](/web_portal) and streamlined commands make the game easier to play for new players and old alike.
 
 Learn more at [Ares for Players](/features/ares-for-players).
 

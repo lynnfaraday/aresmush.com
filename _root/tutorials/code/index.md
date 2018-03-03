@@ -4,7 +4,11 @@ description:
 layout: page
 ---
 
-These articles will introduce you to coding for AresMUSH.
+These articles will teach you how to code for AresMUSH.   
+
+Read the Intrudction topics first, as they will introduce key concepts you need to know.  Then it's suggested that you do the three main tutorials.  They're designed to be done in order, as they build off each other.
+
+After you've completed those tutorials, there are a number of advanced topics you can explore.  Try doing them little by little as you need them, because otherwise it may be an overhwelming amount of information.
 
 {{>tutorial_warning}}
 
@@ -16,18 +20,45 @@ These articles will introduce you to coding for AresMUSH.
 
 ## Quickstart Tutorial
 
-The Quickstart Tutorial is a series of coding exercises that will introduce you to the key Ares code concepts.  Even if you don't do the exercises, these articles introduce key concepts and provide useful code examples.
+This tutorial will introduce you to the key Ares code concepts.
 
-* [Quickstart Overview](/tutorials/code/quickstart)
+* [Quickstart Tutorial](/tutorials/code/quickstart)
+
+<button data-toggle="collapse" data-target="#quickstart" class="btn btn-info">Show Exercises</button>
+
+<div id="quickstart" class="collapse">
 {{>quickstart_tutorial}}
+</div>
 
 ## Creating a Plugin Tutorial
 
 This tutorial will walk you through creating your very own plugin from start to finish.
 
-## Ruby Resources
+* [Creating a Plugin Tutorial](/tutorials/code/create-plugin)
+
+<button data-toggle="collapse" data-target="#create-plugin" class="btn btn-info">Show Exercises</button>
+
+<div id="create-plugin" class="collapse">
+{{>create_plugin_tutorial}}
+</div>
+
+## Anatomy of a Web Portal Screen Tutorial
+
+This tutorial will show you the parts that make up a Web Portal screen.
+
+* [Anatomy of a Web Portal Screen Tutorial](/tutorials/code/portal-anatomy)
+
+
+<button data-toggle="collapse" data-target="#portal" class="btn btn-info">Show Exercises</button>
+
+<div id="portal" class="collapse">
+{{>portal_anatomy_tutorial}}
+</div>
+
+## Language Resources
 
 * [Learning Ruby](/tutorials/code/ruby)
+* [Learning EmberJS](/tutorials/code/ember)
 
 ## Advanced Topics
 
@@ -39,28 +70,33 @@ This tutorial will walk you through creating your very own plugin from start to 
 
 ### Configuration
 
-* [Shortcuts](/tutorials/code/shortcuts)
 * [Understanding YAML](/tutorials/code/yaml)
 * [Troubleshooting YAML](/tutorials/code/troubleshooting-yaml)
+* [Shortcuts](/tutorials/code/shortcuts)
 
 ### Engine
 
-* [Command Dispatching](/tutorials/code/dispatcher)
-* [Cron](/tutorials/code/cron)
-* [Events](/tutorials/code/events)
-* [Globals](/tutorials/code/globals)
-* [Help](/tutorials/code/help)
+* [Engine Globals](/tutorials/code/globals)
+* [Client Monitor](/tutorials/code/client-monitor)
+* [Config Reader](/tutorials/code/config-reader)
+* [Cron Jobs](/tutorials/code/cron)
+* [Help System](/tutorials/code/help)
 * [Localization](/tutorials/code/localization)
+* [Notifications](/tutorials/code/notifications)
+* [Dispatcher](/tutorials/code/dispatcher)
 
 ### Database
 
 * [Database](/tutorials/code/database)
 * [Editing the Database](/tutorials/code/edit-database)
 * [Removing a Database Field](/tutorials/code/remove-field)
+* [Database Migrations](/tutorials/code/db-imgration)
 
 ### Plugins and Commands
 
 * [Plugins](/tutorials/code/plugins)
+* [Command Handling](/tutorials/code/commands)
+* [Event Handling](/tutorials/code/events)
 * [Custom Code](/tutorials/code/custom)
 * [Reloading Code](/tutorials/code/reload)
 
@@ -73,6 +109,9 @@ This tutorial will walk you through creating your very own plugin from start to 
 ### Web Portal
 
 * [Web Portal](/tutorials/code/web-portal)
+* [Services](/tutorials/code/web-services)
+* [Game Api](/tutorials/code/web-game-api)
+* [Mixins](/tutorials/code/web-mixins)
 
 ## Git and Coding Locally
 

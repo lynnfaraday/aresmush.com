@@ -21,9 +21,9 @@ This defines a configuration section (`cookies`) and two settings (`cookie_forum
 
 ## Key Naming
 
-Underscores and spaces are the only permitted special characters in key names.  For example: "cookie_forum" and "Viper Pilot" are valid key names.  Ares uses the underscore version for most things, and separate words for things like gear and skill lists that are displayed to players.
+Underscores and spaces are the only permitted special characters in key names.  For example: "cookie_forum" and "Viper Pilot" are valid key names.  Ares uses separate words for things that are displayed to players, and underscores for everything else.
 
-When values are displayed to or used by the players (like skills, gear or faction names), capitalization matters.  Unless otherwise specified, it's best to put everything in "titlecase" - first letter of each word capitalized, remaining letters lowercase. 
+When values are displayed to or used by the players (like skills, gear or faction names), keys shoud be in "titlecase" - first letter of each word capitalized, remaining letters lowercase. 
 
 > Good:  Viper Pilot
 > Bad:  Viper pilot
@@ -31,14 +31,15 @@ When values are displayed to or used by the players (like skills, gear or factio
 > Good: Eco
 > Bad: ECO
 
+> **Note:** Yes, we know that being forced to use "titlecase" is an annoying limitation sometimes, like when you want to have a skill named SCUBA or a weapon named LMG.  It's a tradeoff to reduce coding complexity and configuration errors (which both help with overall game stability).
+
 ## Editing YAML Config
 
-There are two ways to edit the game's configuration files.  The first is to edit the code directly by changing the config files on disk.  Your coder may prefer this option.  All game configuration files reside in the `aresmush/game/config` directory on the server.
-
-The second option, intended for most game admins, is to use the web portal.  Go to Admin -> Setup and choose the configuration file you want to edit.  You'll be presented with a simple editor screen.   You don't have to worry about the config keys in the web editor, only their values.
+You can edit the game's configuration through the Web Portal.  Go to Admin -> Setup and choose the configuration file you want to edit.  You'll be presented with a simple editor screen.   You don't have to worry about the config keys in the web editor, only their values.
 
 {{#pretty-image}}/assets/media/web_portal/config.png{{/pretty-image}}
 
+Coders may also prefer to edit the config files on disk in the server shell.  All game configuration files reside in the `aresmush/game/config` directory on the server.  When editing on disk, you must do `load config` or `load <plugin name>` after changing the configuration so the game recognizes the changes.  This is not necessary when changing configuration in the Web Portal; it does so automatically.
 
 ## Data Types
 
