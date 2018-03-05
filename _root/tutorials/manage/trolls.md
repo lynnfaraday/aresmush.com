@@ -16,31 +16,31 @@ Unfortunately, you will sometimes have troublesome players trolling you or your 
 
 ### Booting Trolls
 
-If someone is causing a ruckus, you can forcibly disconnect them using the [boot](/help/1-0/login/boot/) command.  
+If someone is causing a ruckus, you can forcibly disconnect them using the boot command (help boot).
 
 > It is preferable to let the game admin deal with problem players.  However, the default Ares configuration allows all approved characters to use the boot command.  This helps players protect each other even when an admin is not available. 
 
 ### Reporting Channel Abuse
 
-The [channel/report](/help/1-0/channels/channels) command allows you to report someone being abusive on channel.  It will create an admin job with the channel recall buffer automatically included.
+The channel/report command (help channels) allows you to report someone being abusive on channel.  It will create an admin job with the channel recall buffer automatically included.
 
 ### Monitoring and Reporting Harassing Pages
 
-Individual players can activate a personal log to [monitor pages](/help/1-0/page/page) from a player who's harassing them.  The page/report command can then be used to lodge a complaint, automatically including the logged pages.
+Individual players can activate a personal log to monitor pages (help pages) from a player who's harassing them.  The page/report command can then be used to lodge a complaint, automatically including the logged pages.
 
 ## Admin Commands
 
 ### Booting Trolls
 
-Admins can forcibly disconnect characters using the [boot](/help/1-0/login/boot/) command.  
+Admins can forcibly disconnect characters using the boot command (help boot).  
 
 ### Turning Trolls into Statues
 
-The [statue](/help/1-0/manage/statue/) command, similar to RHost's FUBAR flag or Penn's @toad, can deter trolls whose goal is to be sitebanned.   When you turn a player into a statue, they will be unable to use any commands at all - not even to quit.
+The status command (help statue) similar to RHost's FUBAR flag or Penn's @toad, can deter trolls whose goal is to be sitebanned.   When you turn a player into a statue, they will be unable to use any commands at all - not even to quit.
 
 ### Unapproving Trolls
 
-Most game-altering commands (building, posting to forums, sending mails, starting scenes) are locked to approved characters by default.  This inherently protects you against malicious guests and characters fresh off the login screen.  If an already-approved character causes mischief, you can [unapprove](/help/1-0/chargen/manage_apps/) them to deny them access to these commands.
+Most game-altering commands (building, posting to forums, sending mails, starting scenes) are locked to approved characters by default.  This inherently protects you against malicious guests and characters fresh off the login screen.  If an already-approved character causes mischief, you can unapprove them (help manage apps) to deny them access to these commands.
 
 ### Banning Trolls
 
@@ -50,7 +50,7 @@ Banning a site prevents players from logging in at all from that site.
 
 Marking a site as suspect will alert you (via staff job) any time a new character first logs in for the first time from that site.
 
-The [findsite](/help/1-0/manage/findsite/) command helps you to find the IP and host of a troublesome player so you can add their site to the banned or suspect lists.
+The findsite command (help findsite) helps you to find the IP and host of a troublesome player so you can add their site to the banned or suspect lists.
 
 Only part of a site needs to match, so listing `verizon.net` would block 123.456.pool.verizon.net and 678.901.pool.verizon.net and so forth.
 

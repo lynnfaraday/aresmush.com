@@ -30,12 +30,20 @@ First let's put in the basic scaffolding - a `TraitCmd` in the `AresMUSH::Traits
       end
     end
 
-Now we'll add argument parsing.  The syntax for this command is `trait/set <trait name>=<description>`, so we can use the `arg1_equals_arg2` parser to get our two arguments.  Since we're using the best practic of separating arg parsing from handling, we'll also need two class attributes to store the data.
+### Command Handler Organization
+
+Although in the Quickstart tutorial we just put everything into a single `handle` method, there's a better way to do this.  The [`CommandHandler` utility](/tutorials/code/commands) provides a framework for handling commands that involves multiple methods.  Splitting up the code makes it more readable and lets us take advantage of a few common utilities.
 
 > **Note:** The remaining code snippets should go after `include Command Handler` and before the first end, as shown in the example above.
 
-    attr_accessor :trait_name, :description
+### Arg Parsing
 
+The syntax for this command is `trait/set <trait name>=<description>`, so we can use the `arg1_equals_arg2` parser to get our two arguments.  
+
+Using the CommandHandler framework, we should put the argument parsing into the `parse_args` method.   Since we're going to need these arguments in other methods, we'll need to create class attribute accessors for them too.
+
+    attr_accessor :trait_name, :description
+    
     def parse_args
       args = cmd.parse_args(ArgParser.arg1_equals_arg2)
       self.trait_name = titlecase_arg(args.arg1)
@@ -44,6 +52,8 @@ Now we'll add argument parsing.  The syntax for this command is `trait/set <trai
 
 We use the `titlecase_arg` helper on the trait name to ensure consistency among the names - and in case the player typed something crazy like  "SuPeR STRENGTH".
 
+### Error Checking
+
 Of course we want to make sure the players specifies both parts of the command - otherwise we should show an error message.  We can use the built-in `required_args` error checker to do so.
 
     def required_args
@@ -51,6 +61,8 @@ Of course we want to make sure the players specifies both parts of the command -
     end
 
 If either one of those arguments is omitted, the `CommandHandler` code will alert the player and halt processing.
+
+### Handler
 
 Finally we have the actual `handle` method that does the guts of the command.
 
@@ -62,6 +74,8 @@ Finally we have the actual `handle` method that does the guts of the command.
     end
 
 Setting hash values into the database is a little more complicated than setting a string.  Here we need to set up a local variable (`new_traits`) that initially is set to the enactor's current traits.  It then gets the new trait added on to it.  This will replace a trait if there's already one with the same name.  Then we save `new_traits` back to the database model.
+
+## Try It Again
 
 We also need another command to view the traits.  We'll create another file in the same directory named `traits_cmd.rb`.
 

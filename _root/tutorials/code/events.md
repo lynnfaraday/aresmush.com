@@ -6,22 +6,37 @@ tags:
 - code
 - plugins
 - events
+- dispatcher
 ---
 
-Where command handling is triggered by a player typing something, Events are triggered by the game itself in response to something happening.  Standard events include:
+Where command handling is triggered by a player typing something, Events are triggered by the game itself in response to something happening.  
 
-* CharConnectedEvent - A character has disconnected.
-* CharDisconnectedEvent - A character has connected.
-* CharCreatedEvent - A new character was created.
-* CronEvent - Triggered periodically.  See [Cron Jobs](/tutorials/code/cron).
-* ConfigUpdatedEvent - The game configuration has changed.
-* GameStartedEvent - Triggered on startup.
-* RoleDeletedEvent - A role has been deleted. 
-* RoleChangedEvent - A character's roles has changed.
+When a MU client sends text to the game's telnet port, several things happen:
+
+1. The code triggering the event creates an Event object.
+2. The Event object is added to the [Dispatcher's](/tutorials/code/dispatcher) dispatch queue.  
+3. When it gets to that item in the queue, the Dispatcher will ask each plugin if it's interested in that event.  
+4. If a plugin returns an event handler object, the Dispatcher will call `on_event` in the handler.  It then continues on to the next plugin and does the same.
+5. If no plugins handle the event, the Dispatcher will ignore it.
+
+> **Tip:** Multiple plugins may handle a single event.
+
+## Standard Events
+
+Standard events in the stock Ares code include:
+
+* `CharConnectedEvent` - A character has disconnected.
+* `CharDisconnectedEvent` - A character has connected.
+* `CharCreatedEvent` - A new character was created.
+* `CronEvent` - Triggered periodically.  See [Cron Jobs](/tutorials/code/cron).
+* `ConfigUpdatedEvent` - The game configuration has changed.
+* `GameStartedEvent` - Triggered on startup.
+* `RoleDeletedEvent` - A role has been deleted. 
+* `RoleChangedEvent` - A character's roles has changed.
 
 ## Handling Events
 
-Events may be handled by multiple plugins.  To handle an event, simply implement the `get_event_handler` method in your plugin module and return a handler class for the desired event.  For example:
+If a plugin wants to handle an event, it must implement the `get_event_handler` method in its plugin module.  This method is given an event name (matching the event names shown above) and can return either nil (if the plugin doesn't want the event) or an event handler class (if it does).
 
     module AresMUSH
       module Channels
@@ -30,6 +45,7 @@ Events may be handled by multiple plugins.  To handle an event, simply implement
           when "CharCreatedEvent"
             return CharCreatedEventHandler
           end
+          nil
         end
       end
     end

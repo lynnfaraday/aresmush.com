@@ -6,17 +6,65 @@ tags:
 - code
 - plugins
 - commands
+- dispatcher
 ---
 
 When a MU client sends text to the game's telnet port, several things happen:
 
 1. The text is converted into a `Command` object.
-2. The `Command` object is added to the [Dispatcher's](/tutorials/code/dispatcher) command queue.  
+2. The `Command` object is added to the [Dispatcher's](/tutorials/code/dispatcher) dispatch queue.  
 3. When it gets to that command in the queue, the Dispatcher will ask each plugin if it's interested in that command.  
 4. If a plugin returns a command handler object, the Dispatcher will call `on_command` in the handler and then stop asking other plugins if they want the command.  
 5. If no plugins handle the command, the Dispatcher will emit the default "Huh?" message.
 
 > **Tip:** Only one plugin may handle a command.
+
+## Handling Commands
+
+If a plugin wants to handle and event, it must implement the `get_cmd_handler` method in its plugin module.  This method is given a command object and  and can return either nil (if the plugin doesn't want the event) or an event handler class (if it does).
+
+Most plugins have a case statement based on the root command, and ten a second case statement based on the switch.  For example:
+
+    module AresMUSH
+      module Events
+        def self.get_cmd_handler(client, cmd, enactor)
+          case cmd.root
+          when "event"
+            case cmd.switch
+            when nil
+              if (cmd.args)
+                return EventDetailCmd
+              else
+                return EventsCmd
+              end
+            when "create"
+              return EventCreateCmd
+            ...
+          end
+          nil
+        end
+      end
+    end
+
+> **Tip:** A few commands check the args too, especially commands that use a shortcut to make both singular and plural versions of the commands work the same.  In the example above, there's a shortcut (not shown) that converts events -> event.  So if the command root is `event` and there are no arguments, it uses EventsCmd to show the events list.  If there is an argument, then it assumes you're doing `event 1`.
+
+## Command Class
+
+The `Command` class embodies a player's typed command.  Commands are interpreted based on a standard format:
+
+    [prefix]root[page][/switch] [args]
+
+All components except the root are optional, so valid commands might include:
+
+|input|prefix|root|page|switch|args |
+| ---- |
+|mail Faraday=Subj/Msg||mail|||Faraday=Subj/Msg|
+|actors2||actors|2|||
+|bbs/new||bbs||new||
+|+ch Hiya.|+|ch|||Hiya.|
+|+bbs/post 1=Subj/Msg|+|bbs||post|1=Subj/Msg|
+
+The `Command` class provides easy access to these components through methods like `cmd.root` and `cmd.args`.
 
 ## Command Handler Class
 

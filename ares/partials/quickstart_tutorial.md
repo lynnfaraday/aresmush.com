@@ -8,8 +8,6 @@
 * [Command Switches and Args](/tutorials/code/quickstart/command-args)
 * [Parsing Args](/tutorials/code/quickstart/parsing-args)
 * [Command Error Checking](/tutorials/code/quickstart/command-errors)
-* [Command Organization - Arg Parsing](/tutorials/code/quickstart/command-org-arg)
-* [Command Organization - Error Checking](/tutorials/code/quickstart/command-org-error)
 * [Configuration](/tutorials/code/quickstart/config-intro)
 * [Localization](/tutorials/code/quickstart/localization-intro)
 * [Database Queries and Updates](/tutorials/code/quickstart/db-intro)

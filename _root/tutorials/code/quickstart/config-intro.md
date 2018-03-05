@@ -2,7 +2,7 @@
 title: Configuration
 description:
 layout: code-quickstart
-prevstep: command-org-error
+prevstep: command-errors
 nextstep: localization-intro
 tags: 
 - code

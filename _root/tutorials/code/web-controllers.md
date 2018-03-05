@@ -1,5 +1,5 @@
 ---
-title: Events Controller
+title: Web Portal Controllers
 description:
 layout: portal-anatomy
 prevstep: events-route
@@ -11,11 +11,9 @@ tags:
 
 The final piece of a screen is the **Controller**, which provides display properties and handles screen actions (like button clicks).
 
-The Events controller isn't very interesting, so let's look at a little of the Event controller (for the screen where you're viewing a single event).
-
 ## Controller Actions
 
-The Event screen has a button on it to delete the event, which calls an **action** in the controller:
+The buttons, selectors or other action triggers on a screen are linked to **action** in the controller.   For example, consider the delete action on the Event controller:
 
     actions: {
         delete: function() {
@@ -36,7 +34,7 @@ Like the route's model, the delete action needs to talk to the game using the Ga
 
 ## Controller Properties
 
-Some controllers also have display properties or helpers.  As mentioned previously, the Events controller has an `isApproved` helper to check if a character is logged in and approved.
+Some controllers also have display properties or helpers.  For example, some controllers have an `isApproved` helper to only show buttons or actions if a character is logged in and approved.
 
     session: service(),
     isApproved: function() {

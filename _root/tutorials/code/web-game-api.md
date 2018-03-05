@@ -1,6 +1,17 @@
+---
+title: Game Api
+description:
+layout: page
+tags: 
+- code
+- webportal
+---
+
+`GameApi` is the Web Portal service that talks to the game. 
+
 ## Game Requests
 
-GameApi is the service that talks to the game.  It supports two primary methods: 
+The Game API service supports two primary methods: 
 
 * `requestOne` - Requests a single object or a complex composite object.
 * `requestMany` - Requests a simple list of objects.
@@ -32,3 +43,7 @@ A few routes perform multiple game requests and bundle them together into a sing
            .then((model) => Ember.Object.create(model));
 
 Here the code would wait until both requests completed, then make a single model with `model.types` and `model.census`.
+
+## Request Handling
+
+See [Web Request Handling](/tutorials/code/web-requests) for more information about how this request is handled in the game engine.

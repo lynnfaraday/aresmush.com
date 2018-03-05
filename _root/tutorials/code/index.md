@@ -6,7 +6,7 @@ layout: page
 
 These articles will teach you how to code for AresMUSH.   
 
-Read the Intrudction topics first, as they will introduce key concepts you need to know.  Then it's suggested that you do the three main tutorials.  They're designed to be done in order, as they build off each other.
+Read the Intrudction topics first, as they will introduce key concepts you need to know.  Then it's suggested that you do the two main tutorials.  They're designed to be done in order, as they build off each other.
 
 After you've completed those tutorials, there are a number of advanced topics you can explore.  Try doing them little by little as you need them, because otherwise it may be an overhwelming amount of information.
 
@@ -40,19 +40,6 @@ This tutorial will walk you through creating your very own plugin from start to 
 
 <div id="create-plugin" class="collapse">
 {{>create_plugin_tutorial}}
-</div>
-
-## Anatomy of a Web Portal Screen Tutorial
-
-This tutorial will show you the parts that make up a Web Portal screen.
-
-* [Anatomy of a Web Portal Screen Tutorial](/tutorials/code/portal-anatomy)
-
-
-<button data-toggle="collapse" data-target="#portal" class="btn btn-info">Show Exercises</button>
-
-<div id="portal" class="collapse">
-{{>portal_anatomy_tutorial}}
 </div>
 
 ## Language Resources
@@ -97,6 +84,7 @@ This tutorial will show you the parts that make up a Web Portal screen.
 * [Plugins](/tutorials/code/plugins)
 * [Command Handling](/tutorials/code/commands)
 * [Event Handling](/tutorials/code/events)
+* [Web Request Handling](/tutorials/code/web-requests)
 * [Custom Code](/tutorials/code/custom)
 * [Reloading Code](/tutorials/code/reload)
 
@@ -108,10 +96,14 @@ This tutorial will show you the parts that make up a Web Portal screen.
 
 ### Web Portal
 
-* [Web Portal](/tutorials/code/web-portal)
-* [Services](/tutorials/code/web-services)
+* [Web Portal Overview](/tutorials/code/web-portal)
+* [Web Portal Routes](/tutorials/code/web-routes)
+* [Web Portal Templates](/tutorials/code/web-templates)
+* [Web Portal Controllers](/tutorials/code/web-controllers)
+* [Web Portal Services](/tutorials/code/web-services)
+* [Web Portal Mixins](/tutorials/code/web-mixins)
 * [Game Api](/tutorials/code/web-game-api)
-* [Mixins](/tutorials/code/web-mixins)
+* [Web Request Handling](/tutorials/code/web-requests)
 
 ## Git and Coding Locally
 

@@ -27,6 +27,7 @@ These articles will help you administer/manage an Ares game.  It assumes your ga
 * [Starting the Game](/tutorials/manage/start)
 * [Shutting Down the Game](/tutorials/manage/shutdown)
 * [Setup Auto-Restart After Reboot](/tutorials/manage/restart-after-reboot)
+* [Upgrading the Code](/tutorials/manage/upgrades)
 
 ## Admin Guides
 

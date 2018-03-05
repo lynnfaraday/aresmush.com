@@ -40,7 +40,7 @@ The Web Portal also offers a dedicated web client.  You can connect to your char
 
 ## Game Wiki
 
-The Web Portal includes a fully-featured wiki that offers many of the same [extensions](/help/1-0/website/markdown/) as Wikidot and MediaWiki.  BSG:Unification was able to completely recreate its Wikidot wiki using the Web Portal wiki, with features including:
+The Web Portal includes a fully-featured wiki that offers many of the same [extensions](/tutorials/code/markdown/) as Wikidot and MediaWiki.  BSG:Unification was able to completely recreate its Wikidot wiki using the Web Portal wiki, with features including:
 
 * Markdown editing.
 * Included templates.

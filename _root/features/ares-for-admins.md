@@ -11,7 +11,7 @@ While AresMUSH preserves the player experience from PennMUSH and TinyMUX, the ad
 ## Turnkey Installation
 Setting up an Ares server is designed to be as painless as possible. The tutorials provide step-by-step instructions, assuming no prior server management experience.
 
-The basic Ares installation includes not only the server itself (like Penn and Tiny) but also a rich suite of [Plugins](/help). The standard plugins cover everything from channels to chargen, so you should have everything you need for a typical game.
+The basic Ares installation includes not only the server itself (like Penn and Tiny) but also a rich suite of [Plugins](/features/ares-for-coders). The standard plugins cover everything from channels to chargen, so you should have everything you need for a typical game.
 
 ## Easy Configuration
 
