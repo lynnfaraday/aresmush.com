@@ -36,7 +36,7 @@ The Unskilled level might not be necessary in every setting.  See [everyman vs. 
 
 You can configure various guidelines about what skills and attributes a character can have. 
 
-> **Note:** These are soft limits.  The system will let someone go over them, but a warning will appear in their app command status.  You can choose whether to allow a special exception when approving the character.
+> <i class="fa fa-exclamation-triangle"></i> **Note:** These are soft limits.  The system will let someone go over them, but a warning will appear in their app command status.  You can choose whether to allow a special exception when approving the character.
 
 ### max_ap
 
@@ -69,7 +69,7 @@ Remember that these limits are at *or above*.  So given the max skills example a
 
 FS3 lets you assign starting skills and specialties for different groups.  For example, you may want to ensure that people from a certain colony all start with a particular language, or that people in a certain position start with certain professional skills.
 
-> **Note:** As with the rating limits, these are soft targets.  The app command status will have a warning if any starting skills are missing or too low.
+> <i class="fa fa-exclamation-triangle"></i> **Note:** As with the rating limits, these are soft targets.  The app command status will have a warning if any starting skills are missing or too low.
 
 ### Group Skills
 

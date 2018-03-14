@@ -63,6 +63,9 @@ There are three main images used by the website.  They are stored in the `game/u
 * box-bg.png - Used as a background behind the character and log pages.
 * jumbotron.png - Home page image.
 
+## Changing the Navigation Bars
+
+Due to limitations of the Ember web framework, changing the navigation bars requires a slight change to the website code.  See [Web Navigation](/tutorials/code/web-nav) for details.
 
 ## Configuring Recaptca
 

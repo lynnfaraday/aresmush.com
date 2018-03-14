@@ -103,13 +103,13 @@ Editing directly in the server shell is the simplest option.
 
 There are down-sides to this though.  The server shell editors like Emacs are pretty bare-bones.  If you mess something up, the players in the game are immediately affected.  Template and text file changes take effect as soon as they're saved, so players might catch code in an in-between state.  And it's harder to roll back if you have a problem.
 
-These are the same pitfalls you'd find when editing old MUSH softcode live in the game, so those down-sides might be acceptable to some.  It's just not really thegreatest option.
+These are the same pitfalls you'd find when editing old MUSH softcode live in the game, so those down-sides might be acceptable to some.  It's just not really the greatest option.
 
 ### FTP Upload
 
 A middle ground between the other two options is to change the code on your local PC, and then use a FTP client to upload the changes to the server.  The up-sides of this method:
 
-* You can use a fancier code editor like , making your life easier.
+* You can use a fancier code editor (a few are listed [here](/tutorials/code/local-setup)), making your life easier.
 * You don't upload until you're ready, so the players get all the changes at the right time.
 
 The down-side is that you don't really know if the code *works* before you upload it.

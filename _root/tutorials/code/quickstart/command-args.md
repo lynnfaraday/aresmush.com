@@ -17,7 +17,7 @@ For example:
 
     scene/join 123
 
-> **Tip:** There are some other advanced command options, but for now let's focus on the basics.
+> <i class="fa fa-info-circle"></i> **Tip:** There are some other advanced command options, but for now let's focus on the basics.
 
 ## Accessing Command Parameters
 
@@ -50,7 +50,7 @@ Let's try a switch first.  Edit the tinker code as shown and save it.
 
 Try out the command with different switches:  `tinker/one`, `tinker/two`, `tinker/three`.  Observe how the output changes.
 
-> **Tip:** It's good practice to actually break up different switches into different command handlers living in different files.  Otherwise the `handle` method would get gigantic and overly complicated.  This is similar to the way that MUSH softcode would use different attributes like &CMD-BBS-READ and &CMD-BBS-POST.   For our examples here, we'll keep everything together for simplicity.
+> <i class="fa fa-info-circle"></i> **Tip:** It's good practice to actually break up different switches into different command handlers living in different files.  Otherwise the `handle` method would get gigantic and overly complicated.  This is similar to the way that MUSH softcode would use different attributes like &CMD-BBS-READ and &CMD-BBS-POST.   For our examples here, we'll keep everything together for simplicity.
 
 ## Adding an Argument
 

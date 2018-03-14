@@ -32,7 +32,7 @@ Since FS3 is designed for MUSHes, it is provided as a complete codebase.  FS3.3 
 
 * Skill Ratings go from 0-8 instead of 1-12, with better descriptions of what the different levels represent.
 * Changed the dice mechanic slightly, increasing successes.  
-* Attributes have been expanded, and you can now raise them with XP.
+* Attributes can now be raised with XP.
 * Background and Language skills now have a condensed, descriptive rating scale.
 * Background skills are chaper - you get several for free.
 * A XP system makes it easier to raise other skills while waiting for a big raise.

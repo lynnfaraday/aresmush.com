@@ -20,7 +20,7 @@ Unless you want your cron job to run *every minute*, you'll need some code in th
 
 If the cron event time matches your cron configuration settings, the cron job will run.  Otherwise it will return without doing anything.
 
-> **Tip:** All of the built-in cron jobs allow you to configure when they run.  See the relevant configuration file for details of what the cron jobs do and suggestions of how to set them.
+> <i class="fa fa-info-circle"></i> **Tip:** All of the built-in cron jobs allow you to configure when they run.  See the relevant configuration file for details of what the cron jobs do and suggestions of how to set them.
 
  
 ## Cron Config
@@ -32,9 +32,9 @@ The `is_cron_match?` utility lets you specify when a cron job is supposed to run
 * hour - What hour(s) it runs.  Uses 24-hour time.
 * minute - What minute(s) of the hour it runs.
 
-> **Tip:** Avoid specifying both date *and* day of week, or you'll end up with a job that only runs on Tuesdays that happen to fall on the 1st of the month.
+> <i class="fa fa-info-circle"></i> **Tip:** Avoid specifying both date *and* day of week, or you'll end up with a job that only runs on Tuesdays that happen to fall on the 1st of the month.
 
-> **Tip:** If you specify hour, also specify minute.  Otherwise it will run *every minute* for that entire hour.
+> <i class="fa fa-info-circle"></i> **Tip:** If you specify hour, also specify minute.  Otherwise it will run *every minute* for that entire hour.
 
 Each item is a list, so you can have a job that runs on Tuesdays and Thursdays, or every half-hour, or on the 1st and 15th of the month, etc.
 

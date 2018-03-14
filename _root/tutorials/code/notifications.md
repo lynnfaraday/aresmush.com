@@ -31,7 +31,7 @@ Whereas this version will only notify people who are on the mail message's "to" 
         char && recipients.include?(char) && char != author
       end
 
-> **Tip:** If you're selecting particular characters, it's best to always check `char && ` before your actual selection.  Remember that there can be clients without a character if they're sitting on the login screen or not logged into the Web Portal.   You don't want to get nil exceptions.
+> <i class="fa fa-info-circle"></i> **Tip:** If you're selecting particular characters, it's best to always check `char && ` before your actual selection.  Remember that there can be clients without a character if they're sitting on the login screen or not logged into the Web Portal.   You don't want to get nil exceptions.
 
 ## Event Types
 

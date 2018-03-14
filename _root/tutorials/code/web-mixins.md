@@ -9,7 +9,7 @@ tags:
 
 Like the `include CommandHandler` statement on the game engine side, which allows all Command Handlers to share some common code, **Mixins** in Ember provide common building blocks of functionality.  There are a few common Mixins used throughout the web code.
 
-> **Note:** Instead of `include`, the Ember terminology is to `extend` a Mixin.
+> <i class="fa fa-exclamation-triangle"></i> **Note:** Instead of `include`, the Ember terminology is to `extend` a Mixin.
 
 ## Route Authentication
 

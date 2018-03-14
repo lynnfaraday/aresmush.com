@@ -27,7 +27,7 @@ The default Ares database comes with several roles:
 
 Additionally, there is a special character - the master admin (default name Headwiz).  The master admin has both the admin and coder roles, and is the only one that can assign those roles.
 
-> **Important:** Coders essentially have the keys to the kingdom.  They can do anything to the database, including changing the master admin password.  Make sure you trust your coders!
+> <i class="fa fa-exclamation-triangle"></i> **Important:** Coders essentially have the keys to the kingdom.  They can do anything to the database, including changing the master admin password.  Make sure you trust your coders!
 
 ## Permissions
 
@@ -37,7 +37,7 @@ You cannot assign individual permissions to characters.  Permissions may only be
 
 Characters with the Admin role automatically have access to **all** permissions.
 
-> **Tip:** A list of the default permissions can be found below.
+> <i class="fa fa-info-circle"></i> **Tip:** A list of the default permissions can be found below.
 
 ## Creating a New Role - App Staff
 

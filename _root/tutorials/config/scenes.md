@@ -46,4 +46,4 @@ You can configure how long to wait before deleting unshared scenes.  For example
     unsared_scene_deletion_days: 20
     unshared_scene_warning_days: 13
 
-Whenever the unshared scene cron job runs, it will warn participants in unshared scenes that were completed more than 13 days ago.  It will delete unshared scenes that were 
+Whenever the unshared scene cron job runs, it will warn participants in unshared scenes that were completed more than 13 days ago.  It will delete unshared scenes that were completed more than 20 days ago - effectively giving a 7-day grace period after the warning.

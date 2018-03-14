@@ -25,7 +25,7 @@ Rolling dice is fun and all, but it's also important to consider what your chara
 
 You cannot do brain surgery with *Everyman* Medicine or fly a space shuttle with *Everyman* Piloting.  You cannot turn a cow's ear into a silk purse or leap a giant chasm no matter how well you roll.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i>  **Tip:** Common sense should always trump die results.
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** Common sense should always trump die results.
 
 A storyteller may allow you to spend one or more [Luck Points](/fs3-3/luck) to get a "Hail Mary" roll out of blind luck even when one would not normally be allowed.
 
@@ -37,7 +37,7 @@ Before rolling, you need to figure out which Skill applies best to the task at h
 
 FS3 uses 8-sided dice.  You roll a number of (virtual) dice equal to the Skill Rating plus the linked Attribute.  You can gain or lose dice through special Modifiers.   
 
-> <i class="fa fa-cubes" aria-hidden="true"></i>  **Tip:** Dice to Roll = Skill Rating + Linked Attribute +/- Modifiers
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** Dice to Roll = Skill Rating + Linked Attribute +/- Modifiers
 
 Languages and Background Skills aren't normally rolled.  If you really need to, they have rating equivalents as described in [Character Generation](/fs3/fs3-3/chargen).
 

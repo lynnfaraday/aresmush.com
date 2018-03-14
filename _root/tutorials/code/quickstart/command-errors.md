@@ -52,4 +52,4 @@ We need to do some error checking to make sure that doesn't happen.  Give it a t
 
 Now if we fail to specify an argument, we'll get an error message and the handler will return (aka stop handling the command.)
 
-> **Tip:** It's best to have a separate check method for each thing that can go wrong. This makes troubleshooting easier, and also makes it easier to decipher and test the code.
+> <i class="fa fa-info-circle"></i> **Tip:** It's best to have a separate check method for each thing that can go wrong. This makes troubleshooting easier, and also makes it easier to decipher and test the code.

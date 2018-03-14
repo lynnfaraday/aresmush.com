@@ -19,19 +19,19 @@ If you don't want a limit, just set them to 0 and 99 respectively.
 
 You are able to specify all of the demographics you're going to use.  
 
-> **Tip:** Use all-lowercase names!  These are going to be converted into code variables, and lowercase is important.
+> <i class="fa fa-info-circle"></i> **Tip:** Use all-lowercase names!  These are going to be converted into code variables, and lowercase is important.
  
 ### required_properties
 
 Any demographics you list in `required_properties` are mandatory in chargen.  
 
-> **Tip:** The names here must exactly match the names in the demographics list.
+> <i class="fa fa-info-circle"></i> **Tip:** The names here must exactly match the names in the demographics list.
 
 ### editable_properties
 
 Any demographics you list in `editable_properties` may be changed after chargen.  You want to allow mutable things like hair color to change, but probably not birthdate or eye color.
 
-> **Tip:** The names here must exactly match the names in the demographics list.
+> <i class="fa fa-info-circle"></i> **Tip:** The names here must exactly match the names in the demographics list.
 
 ## groups
 

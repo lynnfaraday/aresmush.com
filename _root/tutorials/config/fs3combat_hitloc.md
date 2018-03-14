@@ -38,7 +38,7 @@ The more times you list an entry, the more likely it'll come up.  Each entry is 
 
 Hit location is shifted to the right based on the success of the to-hit roll, so entries closest to the desired hit location should be at the **end** of the list.  Notice that the Chest hit location table begins further away (the legs) and then gets closer until finally reaching the chest.
 
-> **Tip:** If an area is not listed in the first hit location area (Chest for humans), then it won't be hit unless someone does a called shot.  For example, you'll never hit the foot or neck while aiming for the chest, but you can aim for those locations on purpose.  You may also hit them if you do a called shot nearby and roll poorly (e.g. hitting the foot while aiming for the leg).
+> <i class="fa fa-info-circle"></i> **Tip:** If an area is not listed in the first hit location area (Chest for humans), then it won't be hit unless someone does a called shot.  For example, you'll never hit the foot or neck while aiming for the chest, but you can aim for those locations on purpose.  You may also hit them if you do a called shot nearby and roll poorly (e.g. hitting the foot while aiming for the leg).
 
 ### vital_areas and critical_areas
 

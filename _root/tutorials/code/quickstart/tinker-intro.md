@@ -20,6 +20,6 @@ To change the tinker code:
 
 Once you've changed the tinker code, you can log into the game with a MUSH client and type `tinker`.  You'll see the desired output.
 
-> **Tip:** If you get an error when saving your code, check to make sure you've typed it exactly as indicated.  Usually errors result from misplaced braces `{}` or missing `end` statements.
+> <i class="fa fa-info-circle"></i> **Tip:** If you get an error when saving your code, check to make sure you've typed it exactly as indicated.  Usually errors result from misplaced braces `{}` or missing `end` statements.
 
 There's a more in-depth [Tinkering Tutorial](/tutorials/code/tinker) if you want to learn more about tinkering when you've finished with the Quickstart.

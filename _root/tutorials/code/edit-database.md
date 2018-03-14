@@ -57,6 +57,6 @@ You can change things with the `hset` command:
 
     hset AresMUSH::Character:9 pose_quote_color "%xr"
 
-> **Important:** Be careful when changing fields manually.  Formatting matters, and because you're bypassing the game's internal error-checking you might set a field to an invalid value.  For example, setting a character's room ID to a room that doesn't exist would cause an error when the character logged in.
+> <i class="fa fa-exclamation-triangle"></i> **Important:** Be careful when changing fields manually.  Formatting matters, and because you're bypassing the game's internal error-checking you might set a field to an invalid value.  For example, setting a character's room ID to a room that doesn't exist would cause an error when the character logged in.
 
 

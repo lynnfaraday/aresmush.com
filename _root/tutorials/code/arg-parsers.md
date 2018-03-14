@@ -23,7 +23,7 @@ Arg converters alter the format of the argument string - changing it to a number
 * `trimmed_list_arg` - Splits an argument into an array and strips spaces on each entry like trim_arg.  Splits on spaces by default, but you can pass any delimeter.
 * `titlecase_list_arg` - Splits an argument into an array and strips spaces and formats each entry like a title.  Splits on spaces by default, but you can pass any delimeter.
 
-> **Tip:** All of the arg converters are safe to use even if the arg is `nil`.  They will just return `nil`.
+> <i class="fa fa-info-circle"></i> **Tip:** All of the arg converters are safe to use even if the arg is `nil`.  They will just return `nil`.
 
     def parse_args
       self.value = downcase_arg(cmd.args)
@@ -39,7 +39,7 @@ The `ArgParser` class helps to split up commands that are in more complex format
       self.value = titlecase_arg(args.arg2)
     end
 
-> **Note:** By default, all args will end up as `nil` if the command string doesn't match the intended format.  In the example above, both property and value would be nil if you just passed "set x" instead of "set x=y".   However, some of the arg parsers expressly allow optional args.  Only the optional ones will be nil if missing.
+> <i class="fa fa-exclamation-triangle"></i> **Note:** By default, all args will end up as `nil` if the command string doesn't match the intended format.  In the example above, both property and value would be nil if you just passed "set x" instead of "set x=y".   However, some of the arg parsers expressly allow optional args.  Only the optional ones will be nil if missing.
 
 
 ## arg1_equals_arg2

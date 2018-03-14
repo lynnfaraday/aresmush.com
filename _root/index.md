@@ -8,7 +8,7 @@ AresMUSH is a new kind of server for MUSH games.  Don't know what a MUSH is?  It
 
 From a player's perspective, AresMUSH is a sibling of PennMUSH and TinyMUX.  Many players have mistaken it for a custom version of Penn rather than a completely new server!  From an admin's perspective, it is something completely different.
 
-> <i class="fa fa-exclamation-triangle fa-2x" aria-hidden="true"></i> AresMUSH is still in development and not yet ready for general consumption.  The code is very much still a development sandbox and what's there now may not be compatible with what I do tomorrow.  I know a couple games have chosen to proceed at risk of the code changing out from under them, but I don't really recommend it.  You can see Ares in action at [BSG: Unification](http://bsgu.aresmush.com) and follow updates on the [blog](http://aresmush.wordspress.com) or [forum](http://forum.aresmush.com)
+{{>tutorial_warning}}
 
 Here are a few things to get you started:
 
@@ -31,8 +31,8 @@ Here are a few things to get you started:
 
         <li>
                         <a href="http://aresmush.wordpress.com"><img src="/assets/media/mars2.jpg"></a>
-<h2><a href="http://aresmush.wordpress.com">Blog</a></h2>
-<p>Get news and tips from the developer's blog.</p>
+<h2><a href="http://forum.aresmush.com">Forum</a></h2>
+<p>Join the discussion and get updates on the AresMUSH forum.</p>
 </li>
 
 

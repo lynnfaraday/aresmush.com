@@ -23,10 +23,10 @@ You can restore game configuration files, uploads, and everything else in the `a
 To restore the database:
 
 1. Stop the database service.  In the [server shell](/tutorials/install/server-shell), type `sudo service redis stop`.
-2. Copy the `dump.rdb` file from your back copy into the database data path.  Typically this is `/var/lib/redis/dump.rdb`.
+2. Copy the `dump.rdb` file from your back copy into the database data path.  Typically this is `/var/lib/redis/dump.rdb`.   If you get a permission error, run `sudo chmod g+rwx /var/lib/redis/dump.rdb` from the server shell.  Sometimes redis resets the file permissions.
 3. Restart the database service by typing `sudo service redis start` in the server shell.
 
-> **Note:** If you used a non-standard installation, your database commands and file path may be different than what's shown above.
+> <i class="fa fa-exclamation-triangle"></i> **Note:** If you used a non-standard installation, your database commands and file path may be different than what's shown above.
 
 ## Restoring Code
 

@@ -34,7 +34,7 @@ First let's put in the basic scaffolding - a `TraitCmd` in the `AresMUSH::Traits
 
 Although in the Quickstart tutorial we just put everything into a single `handle` method, there's a better way to do this.  The [`CommandHandler` utility](/tutorials/code/commands) provides a framework for handling commands that involves multiple methods.  Splitting up the code makes it more readable and lets us take advantage of a few common utilities.
 
-> **Note:** The remaining code snippets should go after `include Command Handler` and before the first end, as shown in the example above.
+> <i class="fa fa-exclamation-triangle"></i> **Note:** The remaining code snippets should go after `include Command Handler` and before the first end, as shown in the example above.
 
 ### Arg Parsing
 
@@ -79,7 +79,7 @@ Setting hash values into the database is a little more complicated than setting 
 
 We also need another command to view the traits.  We'll create another file in the same directory named `traits_cmd.rb`.
 
-> **Tip:** It's best practice to store separate commands in separate files for organization and readability.
+> <i class="fa fa-info-circle"></i> **Tip:** It's best practice to store separate commands in separate files for organization and readability.
 
     module AresMUSH
       module Traits

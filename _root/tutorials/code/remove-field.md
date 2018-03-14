@@ -44,7 +44,7 @@ First, we put the missing field back in the database model.  Since database mode
       module Tinker
       ...
 
-> **Tip:** Even if the field was originally a hash or array or something else, make it a regular string for this exercise.
+> <i class="fa fa-info-circle"></i> **Tip:** Even if the field was originally a hash or array or something else, make it a regular string for this exercise.
 
 Next we need to execute a tinker command to wipe out everyone's favorite color.
 

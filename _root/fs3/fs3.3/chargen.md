@@ -52,21 +52,20 @@ The specific list of Attributes will vary from game to game.  For an example, se
 
 ### Attribute Ratings
 
-Attributes are rated from 1-5.
+Attributes are rated from 1-4.
 
 | Rating | Summary | Description |
 | ---- |
 |1|Poor|You are below average.  (less than 40th percentile)|
 |2|Average |You are about average.  (40-60th percentile)|
-|3|Good|You’re better than average.   (60-75th percentile)|
-|4|Great|You are considerably above average.  (75-90th percentile)|
-|5|Exceptional|You’re truly remarkable. (more than 90th percentile)|
+|3|Good|You’re better than average.   (60-80th percentile)|
+|4|Exceptional|You’re considerably above average. (more than 80th percentile)|
 
 ### Buying Attributes
 
 You receive *Average* in all Attributes for free.  Each additional rating costs **2 APs**.
 
-You may spend at most **16 APs** on Attributes.  You may not have more than **1 Attribute rated 5** and no more than **2 Attributes rated 4 or higher**.  These limits apply to the total number of attributes, so if you have a 4 and a 5, that counts as both 2 at 4+ and 1 at 5.
+You may spend at most **14 APs** on Attributes.  You may not have more than **2 Attributes rated 4**.
 
 > <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** You don't gain any points for taking a rating 1 in an Attribute.  It costs the same as rating 2.  Rating 1 is there solely for roleplay flavor if you want to denote a disadvantage.
 

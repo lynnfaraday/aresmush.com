@@ -32,7 +32,7 @@ You can use the `Paginator.paginate` method to figure out which objects (if any)
 
         paginator = Paginator.paginate(full_list, cmd.page, items_per_page)
 
-> **Tip:** Remember that the Ares [Command Format](/tutorials/code/commands) has a built-in way for the user to request multiple pages.  The page number appears after the command root but before the switch.  For example:  actors2 or jobs2/new.
+> <i class="fa fa-info-circle"></i> **Tip:** Remember that the Ares [Command Format](/tutorials/code/commands) has a built-in way for the user to request multiple pages.  The page number appears after the command root but before the switch.  For example:  actors2 or jobs2/new.
 
 You can then call methods like:
 

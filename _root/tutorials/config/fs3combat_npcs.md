@@ -17,7 +17,7 @@ You can define the NPC types available in your game.  The standard ones are Goon
 
 The default rating is what the NPC rolls for skills by default.
 
-> **Tip:** This is a total dice pool, encompassing skill plus attribute.  So if you want a boss to be equivalent to an "Expert" PC with a "Good" attribute, you need to give them a die pool of 9 (6+3).
+> <i class="fa fa-info-circle"></i> **Tip:** This is a total dice pool, encompassing skill plus attribute.  So if you want a boss to be equivalent to an "Expert" PC with a "Good" attribute, you need to give them a die pool of 9 (6+3).
 
     Goon:
         Default: 4

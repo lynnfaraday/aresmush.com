@@ -13,7 +13,7 @@ This topic describes some miscellaneous combat options you can configure.
 
 Combatant types in FS3 let you specify different kinds of soldiers, pilots, aliens, etc.  Each combatant type can have a different weapon, skills and armor.  
 
-> **Note:** The "Observer" type is special and cannot be changed.  The rest can be configured as you desire.  
+> <i class="fa fa-exclamation-triangle"></i> **Note:** The "Observer" type is special and cannot be changed.  The rest can be configured as you desire.  
 
 For example, this BSG config sets up a Soldier type for ground marines and a Viper type for a viper pilot.  The soldier starts with a rifle and armor, and the pilot starts off piloting a Viper.
 
@@ -33,7 +33,7 @@ For example, this BSG config sets up a Soldier type for ground marines and a Vip
 
 (**Required**)  This controls which hit location table (from [Hit Location Config](/tutorials/config/fs3combat_hitloc)) is used for this type.
 
-> **Note:** For combatants with vehicles, hit location is for the pilot, not the vehicle.  Vehicles automatically have their own hit location table.
+> <i class="fa fa-exclamation-triangle"></i> **Note:** For combatants with vehicles, hit location is for the pilot, not the vehicle.  Vehicles automatically have their own hit location table.
 
 ### defense_skill
 
@@ -43,13 +43,13 @@ For example, this BSG config sets up a Soldier type for ground marines and a Vip
 
 (**Optional**) You may give the combatant a weapon and weapon specials.
 
-> **Note:** For combatants with vehicles, they will select the vehicle's default weapon if you don't specify a combatant weapon.
+> <i class="fa fa-exclamation-triangle"></i> **Note:** For combatants with vehicles, they will select the vehicle's default weapon if you don't specify a combatant weapon.
 
 ### armor
 
 (**Optional**) You may give the combatant armor.
 
-> **Note:** For combatants with vehicles, armor is for the pilot, not the vehicle.  Vehicles automatically have their own hit armor.
+> <i class="fa fa-exclamation-triangle"></i> **Note:** For combatants with vehicles, armor is for the pilot, not the vehicle.  Vehicles automatically have their own hit armor.
 
 ### vehicle
 
@@ -64,4 +64,4 @@ You need to specify which of your combatant types is the default if the player d
 
 You can configure what stances are available in combat and the attack/defense modifiers they convey.  
 
-> **Important:** If you change/remove the names of any of the built-in stances, you'll want to check the code too.  Some of the stances have special effects (notably Cover and Hidden) in addition to the stance modifiers.
+> <i class="fa fa-exclamation-triangle"></i> **Important:** If you change/remove the names of any of the built-in stances, you'll want to check the code too.  Some of the stances have special effects (notably Cover and Hidden) in addition to the stance modifiers.

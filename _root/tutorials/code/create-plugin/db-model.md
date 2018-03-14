@@ -20,7 +20,7 @@ You define a database field using the `attribute` method in a database model cla
       attribute :name
     end
 
-> **Tip:** Ruby classes can be spread across multiple files.  This lets you define bits and pieces of the `Character` class across multiple plugins.
+> <i class="fa fa-info-circle"></i> **Tip:** Ruby classes can be spread across multiple files.  This lets you define bits and pieces of the `Character` class across multiple plugins.
 
 Database models can be placed in any folder within the plugin directory, but traditionally they live in the `public` directory because they can be referenced by other plugins.
 
@@ -36,4 +36,4 @@ Create a file named `traits_char.rb` and put it in `aresmush/plugins/traits/publ
 
 This defines an attribute named `traits` with a hash data type.  On new characters created **after** you define the field, it will be given a default value of an empty hash.  On any existing characters, it will be nil.
 
-> **Tip:** It's important to default hashes and arrays to empty values or you can get unexpected errors.  That's not necessary for strings and other data types, because the nil default is appropriate.
+> <i class="fa fa-info-circle"></i> **Tip:** It's important to default hashes and arrays to empty values or you can get unexpected errors.  That's not necessary for strings and other data types, because the nil default is appropriate.

@@ -42,6 +42,6 @@ The engine maintains several ports.
 * The **WebSocket Port** lets the Web Portal establish a two-way [WebSocket](https://www.websocket.org/aboutwebsocket.html) connection between the game and the web browser.  This allows for asynchronous notifications like new activity in a scene or a new mail message arriving.  It is also the basis for the 'Play' screen web client.
 * The **Web Portal Port** is simply the port where the web server (nginx/Apache/etc.) is hosting the website.  Typically this will be the standard HTTP port 80, but you can configure the web server however you want.
 
-> **Tip:** WebSockets are sometimes blocked by firewalls or security software, which is why this method is not used for all Web Portal queries.  It's helpful, but don't rely on it too much.
+> <i class="fa fa-info-circle"></i> **Tip:** WebSockets are sometimes blocked by firewalls or security software, which is why this method is not used for all Web Portal queries.  It's helpful, but don't rely on it too much.
 
 Although the API port and WebSocket port are intended for use by the Web Portal, it's possible that they could be adapted for next-gen clients in the future.

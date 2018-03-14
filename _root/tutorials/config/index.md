@@ -24,7 +24,7 @@ Clicking on any config file will present you with a screen where you can edit th
 
 Ares configuration files use YAML, so you should check out the [Understanding YAML](/tutorials/code/yaml) tutorial before diving into the advanced configuration.
 
-> **Tip:** Coders can also edit the config files in the server shell, but you'll need to ue the `load config` command afterwards to reload the configuration.  The Web Portal automatically reloads the config, so that step is not necessary when using the web editor.
+> <i class="fa fa-info-circle"></i> **Tip:** Coders can also edit the config files in the server shell, but you'll need to ue the `load config` command afterwards to reload the configuration.  The Web Portal automatically reloads the config, so that step is not necessary when using the web editor.
 
 ## Essential Config
 

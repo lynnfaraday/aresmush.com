@@ -24,7 +24,7 @@ For example:
         return aj.requestOne('events');
     },
 
-> **Tip:** Many requests you might think are lists actually use `requestOne` because they get back a composite object.  The events request, for example, returns a model that contains events _and_ the calendar URL.
+> <i class="fa fa-info-circle"></i> **Tip:** Many requests you might think are lists actually use `requestOne` because they get back a composite object.  The events request, for example, returns a model that contains events _and_ the calendar URL.
 
 ## Request Parameters
 

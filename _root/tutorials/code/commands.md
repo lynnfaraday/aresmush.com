@@ -17,7 +17,7 @@ When a MU client sends text to the game's telnet port, several things happen:
 4. If a plugin returns a command handler object, the Dispatcher will call `on_command` in the handler and then stop asking other plugins if they want the command.  
 5. If no plugins handle the command, the Dispatcher will emit the default "Huh?" message.
 
-> **Tip:** Only one plugin may handle a command.
+> <i class="fa fa-info-circle"></i> **Tip:** Only one plugin may handle a command.
 
 ## Handling Commands
 
@@ -46,7 +46,7 @@ Most plugins have a case statement based on the root command, and ten a second c
       end
     end
 
-> **Tip:** A few commands check the args too, especially commands that use a shortcut to make both singular and plural versions of the commands work the same.  In the example above, there's a shortcut (not shown) that converts events -> event.  So if the command root is `event` and there are no arguments, it uses EventsCmd to show the events list.  If there is an argument, then it assumes you're doing `event 1`.
+> <i class="fa fa-info-circle"></i> **Tip:** A few commands check the args too, especially commands that use a shortcut to make both singular and plural versions of the commands work the same.  In the example above, there's a shortcut (not shown) that converts events -> event.  So if the command root is `event` and there are no arguments, it uses EventsCmd to show the events list.  If there is an argument, then it assumes you're doing `event 1`.
 
 ## Command Class
 
@@ -97,7 +97,7 @@ To utilize the `CommandHandler` functionality, just include it in your command c
 
 By default, Ares logs all non-sensitive commands.  This aids in troubleshooting and also is a security safeguard to track who did what.
 
-> **Important:** Ares does not log pages, mails, poses or passwords for privacy reasons.
+> <i class="fa fa-exclamation-triangle"></i> **Important:** Ares does not log pages, mails, poses or passwords for privacy reasons.
 
 For sensitive commands, you can disable logging in your command handler just by overriding the log method.  For example, the mail command just logs the fact that you sent mail - it doesn't log the contents of the message.
 
@@ -160,7 +160,7 @@ The first universal error checker makes sure that all required args are specifie
       [ self.num, self.name ]
     end
 
-> **Tip:** You can have some args be required and others not; just change which ones appear in the required_args list.  If none are required, you may omit `required_args` entirely.
+> <i class="fa fa-info-circle"></i> **Tip:** You can have some args be required and others not; just change which ones appear in the required_args list.  If none are required, you may omit `required_args` entirely.
 
 #### Login Checker
 
@@ -179,6 +179,6 @@ The `handle` method is where the 'guts' of your command go. 99% of handle method
        client.emit_success "Done!"
     end
 
-> **Tip:** If you have multiple pieces of information to send to the player, build up a single string and emit it all at once for efficiency.  You can also use a [Template](/tutorials/code/templates).
+> <i class="fa fa-info-circle"></i> **Tip:** If you have multiple pieces of information to send to the player, build up a single string and emit it all at once for efficiency.  You can also use a [Template](/tutorials/code/templates).
 
 Don't forget that you can emit in multiple ways depending on the type of message.  See [emits](/tutorials/quickstart/emits).

@@ -10,7 +10,7 @@ tags:
 
 At some point there will be a new version of Ares code available and you'll want to upgrade.
 
-> **Note:** The following instructions assume you have not made any custom code changes.  If you have, you may run into conflicts between what you've changed and what's changed in the main codebase.  Sorting that out is beyond the scope of this tutorial.
+> <i class="fa fa-exclamation-triangle"></i> **Note:** The following instructions assume you have not made any custom code changes.  If you have, you may run into conflicts between what you've changed and what's changed in the main codebase.  Sorting that out is beyond the scope of this tutorial.
 
 If you followed the standard installation instructions, your source code will be linked to the AresMUSH GitHub code repository.  You just need to "pull" the latest code from GitHub.
 

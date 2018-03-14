@@ -29,4 +29,4 @@ Let's try another format.  Change the tinker code as shown, save, and run the co
 
 The latter two emits show how a regular emit and a raw emit handle [Formatting Codes](/tutorials/code/formatting).
 
-> **Tip:** It's highly recommended that you use the standard emit_ooc / emit_success / emit_failure methods in any custom code you write.  This provides a consistent look-and-feel for all game commands and enable log editors to easily filter out these messages.
+> <i class="fa fa-info-circle"></i> **Tip:** It's highly recommended that you use the standard emit_ooc / emit_success / emit_failure methods in any custom code you write.  This provides a consistent look-and-feel for all game commands and enable log editors to easily filter out these messages.

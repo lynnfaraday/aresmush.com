@@ -51,6 +51,6 @@ Migrations have names, which include a number to show what order they should be 
 
     bin/upgrade <migration name>
 
-> **Tip:** Don't include the ".rb" file extension when specifying the migration name.
+> <i class="fa fa-info-circle"></i> **Tip:** Don't include the ".rb" file extension when specifying the migration name.
 
-> **Tip:** It's best to run the migration when the game is shut down, so nobody tries to update their character in the midst of a migration running.
+> <i class="fa fa-info-circle"></i> **Tip:** It's best to run the migration when the game is shut down, so nobody tries to update their character in the midst of a migration running.

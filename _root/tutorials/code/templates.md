@@ -63,7 +63,7 @@ Ares provides a few common templates in the Utils plugin that are used everywher
     SubFooter
     ------------------------------
 
-> **Tip:** Everything except the text/list is optional, so you can customize the display as desired.
+> <i class="fa fa-info-circle"></i> **Tip:** Everything except the text/list is optional, so you can customize the display as desired.
 
 There's also a table, a line with text in the middle, and a standard page footer for multi-page commands.  See the code in `aresmush/plugins/utils/templates` for details.
 

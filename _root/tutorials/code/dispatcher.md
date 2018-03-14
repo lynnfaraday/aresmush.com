@@ -35,7 +35,7 @@ For example:
             ... perform backup code ...
         end
 
-> **Important:** Exercise caution when using spawns.  Most Ares code is threadsafe because it's stand-alone helper methods and command classes created on demand, but you can cause weird effects if your spawned task starts changing database fields on a character while other commands are still running.
+> <i class="fa fa-exclamation-triangle"></i> **Important:** Exercise caution when using spawns.  Most Ares code is threadsafe because it's stand-alone helper methods and command classes created on demand, but you can cause weird effects if your spawned task starts changing database fields on a character while other commands are still running.
 
 ## Timers
 
@@ -45,7 +45,7 @@ A timer delays code until some time has elapsed.  The code will be processed in 
           client.emit_success t('login.guest_name', :name => guest.name)
         end
 
-> **Tip:** Ares timers do not have stopwatch precision.  The code will wait for *at least* the specified time, but it may take a little longer depending on how busy the system is.
+> <i class="fa fa-info-circle"></i> **Tip:** Ares timers do not have stopwatch precision.  The code will wait for *at least* the specified time, but it may take a little longer depending on how busy the system is.
 
 ## Queue
 

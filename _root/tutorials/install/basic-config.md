@@ -18,18 +18,15 @@ Next we'll configure some basic information about your game.  These settings det
 2. Copy/paste the following commands into the shell to run them.
 
         curl https://raw.githubusercontent.com/aresmush/aresmush/master/bin/install > install
-    
+        
         chmod +x install
-    
+        
         ./install
-
-        Note:  If you already have a GitHub clone, you can pass the HTTPS clone urls to the install script:
-               ./install <game code clone URL> <Web Portal clone URL>
-               If you don't know what this means, don't worry about it!  It doesn't apply to you.
-
+        
         export NVM_DIR="$HOME/.nvm"
         [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
 
+> <i class="fa fa-exclamation-triangle"></i> **Note:** If you already have a GitHub clone, you can pass the HTTPS clone urls to the install script: `./install <game code clone URL> <Web Portal clone URL>`   If you don't know what this means, don't worry about it!  It doesn't apply to you.
 
 3.  Enter your ares password when prompted.
 

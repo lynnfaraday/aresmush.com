@@ -29,7 +29,7 @@ You can clone the code using [your own GitHub fork](/tutorials/code/git) or use 
 
 You can run the `bin/configure` script in the aresmush directory to set up the game's basic settings.  Use 'localhost' for the host name.
 
-> **Note:** This is a unix-style shell script, and will work best on Linux or Mac operating systems.  On Windows, you can copy/paste the commands from the file into a batch file, or just run them manually.
+> <i class="fa fa-exclamation-triangle"></i> **Note:** This is a unix-style shell script, and will work best on Linux or Mac operating systems.  On Windows, you can copy/paste the commands from the file into a batch file, or just run them manually.
 
 ## Running the Game
 

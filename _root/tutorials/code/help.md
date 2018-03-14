@@ -14,7 +14,7 @@ Ares contains a robust help system that can be accessed from the game (via the `
 
 Help files live in a `help\<language code>` folder under the plugin directory.  This supports having help files in multiple languages, based on the game's locale.
 
-> **Tip:** "en" is the language code for English, so help files will typically be in the `help/en` directory.
+> <i class="fa fa-info-circle"></i> **Tip:** "en" is the language code for English, so help files will typically be in the `help/en` directory.
 
 Help files use [Markdown Text](https://daringfireball.net/projects/markdown/syntax).  This lets you use formatting and hyperlinks that will show up nicely on the Web Portal and also in-game.
 
@@ -29,7 +29,7 @@ Inside the help file, the first few lines are embedded YAML, where you can set v
 * order - If specified, controls the order that help files appear in that section of the table of contents.
 * aliases - Creates aliases for the topic name.  See 'Topic Names' below for more details.
 
-> **Tip:** Table of contents categories are free-form, so you can use anything you like in your help files.  However, it's probably best to look at what already exists so you don't create similar-but-subtly-different categories.
+> <i class="fa fa-info-circle"></i> **Tip:** Table of contents categories are free-form, so you can use anything you like in your help files.  However, it's probably best to look at what already exists so you don't create similar-but-subtly-different categories.
 
 ## Topic Names
 

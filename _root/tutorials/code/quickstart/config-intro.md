@@ -14,7 +14,7 @@ The Ares [config tutorials](/tutorials/config) explain all about how configurati
 
 Go to the Admin -> Setup menu in the Web Portal and edit the `tinker.yml` config file.  You should see a single option named "example" with a value of "%xb".   We're going to use that in our code.  Change the tinker handle method as shown below:
 
-> **Tip:** You can click the Reset button on the tinker screen to put the tinker code back to the default values and remove all the piggy processing we did in prior exercises.
+> <i class="fa fa-info-circle"></i> **Tip:** You can click the Reset button on the tinker screen to put the tinker code back to the default values and remove all the piggy processing we did in prior exercises.
 
     def handle
       color = Global.read_config("tinker", "example")

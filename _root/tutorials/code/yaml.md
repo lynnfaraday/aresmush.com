@@ -9,7 +9,7 @@ tags:
 
 [YAML](http://www.yaml.org/start.html) is the data format used for Ares' configuration files.  It is similar to other formats like JSON and XML, but is designed to be more human-readable.
 
-> **Tip:** Indentation is super-important in YAML files.  Always make sure things are lined up with each other.
+> <i class="fa fa-info-circle"></i> **Tip:** Indentation is super-important in YAML files.  Always make sure things are lined up with each other.
 
 Here is a snippet from the "Cookies" module configuration file:
 
@@ -31,7 +31,7 @@ When values are displayed to or used by the players (like skills, gear or factio
 > Good: Eco
 > Bad: ECO
 
-> **Note:** Yes, we know that being forced to use "titlecase" is an annoying limitation sometimes, like when you want to have a skill named SCUBA or a weapon named LMG.  It's a tradeoff to reduce coding complexity and configuration errors (which both help with overall game stability).
+> <i class="fa fa-exclamation-triangle"></i> **Note:** Yes, we know that being forced to use "titlecase" is an annoying limitation sometimes, like when you want to have a skill named SCUBA or a weapon named LMG.  It's a tradeoff to reduce coding complexity and configuration errors (which both help with overall game stability).
 
 ## Editing YAML Config
 

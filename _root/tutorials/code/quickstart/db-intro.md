@@ -53,5 +53,5 @@ Once you have the database object, you can use the `update` method to change its
       client.emit "Done!"
     end
 
-> **Important:** Just setting the class attribute (like `char.alias = 'guest'`) will change the local copy of the object, but it doesn't update the databse.  Always call `update` to save database changes.
+> <i class="fa fa-exclamation-triangle"></i> **Important:** Just setting the class attribute (like `char.alias = 'guest'`) will change the local copy of the object, but it doesn't update the databse.  Always call `update` to save database changes.
 

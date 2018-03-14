@@ -9,7 +9,7 @@ tags:
 
 Ember templates use [Handlebars](https://guides.emberjs.com/v2.18.0/templates/handlebars-basics/).  Handlebars is extremely similar to the ERB templates used by the Ares game code, only it mixes HTML and dynamic content instead of text and embedded Ruby code.
 
-> **Tip:** The curly braces in Handlebars templates are essentially like the markers in ERB templates.
+> <i class="fa fa-info-circle"></i> **Tip:** The curly braces in Handlebars templates are essentially like the markers in ERB templates.
 
 <pre>
     &#x7b;&#x7b;#each model.events as |event|}}

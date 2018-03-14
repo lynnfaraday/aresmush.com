@@ -19,7 +19,7 @@ When a MU client sends text to the game's telnet port, several things happen:
 4. If a plugin returns an event handler object, the Dispatcher will call `on_event` in the handler.  It then continues on to the next plugin and does the same.
 5. If no plugins handle the event, the Dispatcher will ignore it.
 
-> **Tip:** Multiple plugins may handle a single event.
+> <i class="fa fa-info-circle"></i> **Tip:** Multiple plugins may handle a single event.
 
 ## Standard Events
 
@@ -63,7 +63,7 @@ The handler class must implement the `on_event` method.
       end
     end
 
-> **Tip:** Event objects always pass database **ids**, not actual database objects.  Each event handler must look up the database object independently.  This is necessary because otherwise the first plugin to handle the event may make changes to the database, and the second plugin would be operating on a stale copy of the object.
+> <i class="fa fa-info-circle"></i> **Tip:** Event objects always pass database **ids**, not actual database objects.  Each event handler must look up the database object independently.  This is necessary because otherwise the first plugin to handle the event may make changes to the database, and the second plugin would be operating on a stale copy of the object.
 
 
 

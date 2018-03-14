@@ -17,7 +17,9 @@ The ranks system is designed so that one group setting controls what ranks are a
 
 You list the ranks for each group in order of seniority (least senior to most senior), along with a true/false indicator of whether that rank is available in chargen or not.  Restricted ranks must be set by admins or people with the manage_rank permission.
 
-You can define different types within a group - typically this would be for Officer/Enlisted ranks.  Types are just used for display purposes in the ranks list, and have no functional use.
+There are types within a group - typically this would be for Officer/Enlisted ranks or Patrol/Detective or something like that.  Types are used for display within the ranks list.  Even if you only have one rank type per faction, you still need a subsection.  Just make it "All".
+
+> <i class="fa fa-info-circle"></i> **Tip:** If you aren't using Officer/Enlisted as your types, you'll also need to switch the ranks template as explained in the next section.
 
     Navy:
         Officer:

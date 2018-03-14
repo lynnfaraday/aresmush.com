@@ -30,9 +30,9 @@ This tutorial will introduce you to the key Ares code concepts.
 {{>quickstart_tutorial}}
 </div>
 
-## Creating a Plugin Tutorial
+## Creating a Plugin Tutorial (Traits)
 
-This tutorial will walk you through creating your very own plugin from start to finish.
+This tutorial will walk you through creating your very own plugin from start to finish.  The example uses a very simple traits system, which is a good stepping stone to a larger skills system.
 
 * [Creating a Plugin Tutorial](/tutorials/code/create-plugin)
 
@@ -104,6 +104,7 @@ This tutorial will walk you through creating your very own plugin from start to 
 * [Web Portal Mixins](/tutorials/code/web-mixins)
 * [Game Api](/tutorials/code/web-game-api)
 * [Web Request Handling](/tutorials/code/web-requests)
+* [Navigation](/tutorials/code/web-nav)
 
 ## Git and Coding Locally
 
@@ -113,5 +114,6 @@ This tutorial will walk you through creating your very own plugin from start to 
 
 ## Miscellaneous
 
+* [Replacing FS3](/tutorials/code/replacing-fs3) - Replacing FS3 with your own skills system.
 * [Extras](/tutorials/code/extras) - Community plugins and utilities.
 * [Chopping Block](/tutorials/code/chopping-block) - Code that didn't make the cut.

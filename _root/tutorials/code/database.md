@@ -41,7 +41,7 @@ If your database isn't gigantic, you can also use the Ruby `select` statement to
       client.emit "You found #{names.join(", ")}"
     end
 
-> **Tip:** It is common to use `select` and `map` together like this.  Select will find a bunch of database objects, and map will get just the field you need from them (in this case the name).
+> <i class="fa fa-info-circle"></i> **Tip:** It is common to use `select` and `map` together like this.  Select will find a bunch of database objects, and map will get just the field you need from them (in this case the name).
 
 ### Game Model
 
@@ -68,7 +68,7 @@ Many database properties have specialized update methods because their data stor
     char = Character.find_one_by_name("Bob")
     Demographics.set_group(char, "Faction", "Navy")
 
-> **Important:** Do not attempt to change database properties just by updating the object (e.g. `char.name = "Harry"`)  This changes the property on the **object** but does not actually update the database.   You can legitimately use this method to change multiple properties as a batch, but you have to do `char.save` at the end to commit the changes to the database.
+> <i class="fa fa-exclamation-triangle"></i> **Important:** Do not attempt to change database properties just by updating the object (e.g. `char.name = "Harry"`)  This changes the property on the **object** but does not actually update the database.   You can legitimately use this method to change multiple properties as a batch, but you have to do `char.save` at the end to commit the changes to the database.
 
 ## Finder Helpers
 
