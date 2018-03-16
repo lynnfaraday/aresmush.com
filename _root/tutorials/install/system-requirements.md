@@ -46,4 +46,6 @@ There are several software packages that Ares requires, including:
 * [Redis database]((http://redis.io/topics/quickstart))
 * [Git version control](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-If you use the [Digital Ocean](/tutorials/install/digital-ocean) environment, the official install scripts will set up everything you need.  Otherwise you'll have to set them up on your own.  You can use the install scripts as a guide.
+If you use the [Digital Ocean](/tutorials/install/digital-ocean) environment, the official install scripts will set up everything you need.  Otherwise you'll have to set them up on your own.  
+
+You can use the install scripts as a guide.  There are two install scripts: `setup_server` and `install`.  Find the files corresponding to your AresMUSH version in [GitHub](https://github.com/AresMUSH/aresmush/tree/master/bin).

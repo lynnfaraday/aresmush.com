@@ -38,3 +38,5 @@ Create a file named `traits.md` in the directory `aresmush/plugins/traits/help/e
     `trait/set <trait name>=<trait description>` - Set a trait.
 
 This will create an help topic `help traits` and place an entry for it in the "Character Creation" section of the help files.
+
+> <i class="fa fa-info-circle"></i> **Tip:** Help files use [Markdown Text](https://daringfireball.net/projects/markdown/syntax).  This lets you use formatting and hyperlinks that will show up nicely on the Web Portal and also in-game.  The code markers <pre>`traits`</pre> are used to highlight commands.

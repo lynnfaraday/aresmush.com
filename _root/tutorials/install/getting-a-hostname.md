@@ -19,4 +19,4 @@ You can request an AresMUSH sub-domain (yourmush.aresmush.com) by [contacting me
 
 ## Custom Domain
 
-You can also register a custom domain name (yourmush.com) for just a few dollars a year through sites like [NameCheap](https://www.namecheap.com/).   Once you have the domain registered, use the [Digital Ocean Host Name Tutorial](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-host-name-with-digitalocean) to set up your domain.
+You can also register a custom domain name (yourmush.com) for just a few dollars a year through sites like [NameCheap](https://www.namecheap.com/).

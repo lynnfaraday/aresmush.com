@@ -14,7 +14,8 @@ If at any point you run into trouble, see [Getting Help](/feedback).
 {{>tutorial_warning}}
 
 * [Choosing a Host](/tutorials/install/choosing-a-host)
-    * [Getting Started With Digital Ocean](/tutorials/install/digital-ocean)
+    * [Digital Ocean Easy Mode](/tutorials/install/easy-mode)
+    * [Digital Ocean Self-Install](/tutorials/install/digital-ocean)
     * [System Requirements](/tutorials/install/system-requirements)
 * [Getting a Host Name](/tutorials/install/getting-a-hostname)
 * [Connecting to the Server Shell](/tutorials/install/server-shell)

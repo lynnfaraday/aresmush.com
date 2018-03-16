@@ -7,7 +7,7 @@ prevstep: removing-plugin
 
 Congratulations! You've completed the Create a Plugin tutorial.
 
-This is the second of three basic tutorials introducing Ares code.  The next is [Anatomy of a Portal Screen](/tutorials/code/portal-anatomy).
+This is the final structured tutorial, but there are numerous [Advanced Coding Topics](/tutorials/code/) in the tutorials section.
 
 Don't forget you can always [ask for help](/feedback). 
 

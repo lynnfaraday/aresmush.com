@@ -11,6 +11,8 @@ tags:
 
 All plugins reside within their own Ruby Module, within the main AresMUSH module.  There are special conventions around module names, as explained in [Plugins](/tutorials/code/plugins), but generally it should be a capitalized name of your plugin folder.
 
+The module must include two special methods - one to help the game find the plugin files, and another to tell it the plugin's command shortcuts.
+
 ## Try It
 
 Create a file `traits.rb` in the `aresmush/plugins/traits` directory with the following code:

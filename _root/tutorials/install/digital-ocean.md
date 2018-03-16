@@ -1,5 +1,5 @@
 ---
-title: Getting Started With Digital Ocean
+title: Digital Ocean Self-Install
 description:
 layout: install-ares
 prevstep: choosing-a-host

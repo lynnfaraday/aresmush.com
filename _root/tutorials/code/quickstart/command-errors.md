@@ -30,7 +30,7 @@ Now run the `tinker` command by itself without giving it any arguments?  Give it
 
     Error: "undefined method `<' for nil:NilClass"
 
-This is because `integer_arg`, like all the arg parsers, returns `nil` if the arg is missing or not in the expected format.  You can't use nil in a greater-than/less-than comparison because it's not a number.
+This is because `integer_arg`, like all the arg parsers, returns `nil` if the arg is missing.  You can't use nil in a greater-than/less-than comparison because it's not a number.
 
 ## Adding An Error Check
 
@@ -51,5 +51,3 @@ We need to do some error checking to make sure that doesn't happen.  Give it a t
     end
 
 Now if we fail to specify an argument, we'll get an error message and the handler will return (aka stop handling the command.)
-
-> <i class="fa fa-info-circle"></i> **Tip:** It's best to have a separate check method for each thing that can go wrong. This makes troubleshooting easier, and also makes it easier to decipher and test the code.

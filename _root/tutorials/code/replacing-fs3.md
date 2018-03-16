@@ -20,10 +20,10 @@ Both the FS3 Skills and FS3 Combat plugins are optional plugins that can easily 
 
 ## Customizing Chargen
 
-The Chargen plugin is designed to be generic.  There's nothing FS3-specific about it other than a step in chargen referencing the FS3 "abilities" and "sheet" help files.   You may need to customize the steps of chargen to accommodate your new commands.  See [Customizing the Chargen Plugin](/tutorials/config/chargen) for details.
+The Chargen plugin is designed to be generic.  You'll just need to customize the steps of chargen to remove references to the FS3 help files and add ones for your new commands.  See [Customizing the Chargen Plugin](/tutorials/config/chargen) for details.
 
 ## Creating Your Own System
 
-The real work, of course, is in creating a plugin for your new skill system to replace FS3.  The [Creating a Plugin Tutorial](/tutorials/code/create-plugin) is a good starting point.  It walks you through the creating of a simple 'traits' plugin (similar to what one might find on a comic book game).
+The real work, of course, is in creating a plugin for your new skill system to replace FS3.  The [Creating a Plugin Tutorial](/tutorials/code/create-plugin) is a good starting point.  It walks you through the creating of a simple 'traits' plugin (similar to what one might find on a comic book game).  From there you can build up to something more advanced.
 
 Feel free to [ask for help](/feedback).  I want Ares to enable many kinds of games, not just FS3 ones.
