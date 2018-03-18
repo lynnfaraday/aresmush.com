@@ -97,11 +97,11 @@ The [Tinker](/tutorials/code/tinker) command is an easy way to do quick, one-off
 Editing directly in the server shell is the simplest option. 
 
 1. [Connect to the server shell](/tutorials/manage/server-shell).
-2. Run a code editor command (e.g. `emacs aresmush/plugins/cookies/commands/cookie_cmd.rb`).
+2. Run a code editor command (e.g. `vi aresmush/plugins/cookies/commands/cookie_cmd.rb`).
 3. Edit and save the file.
 4. Reload the plugin in-game (more on this in a moment).
 
-There are down-sides to this though.  The server shell editors like Emacs are pretty bare-bones.  If you mess something up, the players in the game are immediately affected.  Template and text file changes take effect as soon as they're saved, so players might catch code in an in-between state.  And it's harder to roll back if you have a problem.
+There are down-sides to this though.  The server shell editors like Vi are pretty bare-bones.  If you mess something up, the players in the game are immediately affected.  Template and text file changes take effect as soon as they're saved, so players might catch code in an in-between state.  And it's harder to roll back if you have a problem.
 
 These are the same pitfalls you'd find when editing old MUSH softcode live in the game, so those down-sides might be acceptable to some.  It's just not really the greatest option.
 

@@ -112,8 +112,12 @@ This tutorial will walk you through creating your very own plugin from start to 
 * [Setting up Ares Locally](/tutorials/code/local-setup) - Develop code for Ares on your local PC.
 * [Running Tests](/tutorials/code/tests) - Running the automated unit tests.
 
+## FS3
+
+* [FS3 Code Roadmap](/tutorials/code/fs3-roadmap) - Overview of the FS3 code.
+* [Replacing FS3](/tutorials/code/replacing-fs3) - Replacing FS3 with your own skills system.
+
 ## Miscellaneous
 
-* [Replacing FS3](/tutorials/code/replacing-fs3) - Replacing FS3 with your own skills system.
 * [Extras](/tutorials/code/extras) - Community plugins and utilities.
 * [Chopping Block](/tutorials/code/chopping-block) - Code that didn't make the cut.

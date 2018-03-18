@@ -106,3 +106,37 @@ Some database models use **Callbacks** - methods that are triggered in response 
 
 * `before_delete` -  If an object has any references, you may want to delete them before the object itself is deleted.  For example, a room might delete all of its exits when it's getting deleted.
 * `before_save` - If an object has special fields, you may set them before the object is saved.   For example, if you store the uppercase version of the object name for fast lookups, you want to update that to match the object name every time the object is saved.
+
+## Relationships (References and Collections)
+
+Often you'll have relationships between database models - for example, a mail message has a connection to its recipient.  The way Ohm does that is through `references` and `collections`.  You can read all about them in the [Ohm](http://ohm.keyvalue.org/) reference guides.  Here's a quick example:
+
+The MailMessage model has a `reference` to its recipient:
+
+    class MailMessage < Ohm::Model
+      reference :character, "AresMUSH::Character"
+      ... other fields ...
+    end
+
+> <i class="fa fa-info-circle"></i> **Tip:** Notice that you need to specify the class name that the reference refers to, including the full module name, e.g.  `AresMUSH::ModelClassName`.
+
+If you want to be able to easily get all mail for a characer, you also need a corresponding reference on the character model.  Because there can be multiple mail messages for a character, we use a `collection`:
+
+    class Character < Ohm::Model
+      collection :mail, "AresMUSH::MailMessage"
+    end
+
+It's also possible to have a 1:1 relationship between database models.  For example: a Scene has one and only one SceneLog, so its models look like this:
+
+    class Scene < Ohm::Model
+      reference :scene_log, "AresMUSH::SceneLog"
+    end
+    
+    class SceneLog < Ohm::Model
+      reference :scene, "AresMUSH::Scene"
+    end
+
+> <i class="fa fa-info-circle"></i> **Tip:** Collections are linked automatically, so `MailMessage.new(character: some_char)` will automatically add that message to the character's mail collection.  1:1 references must be manually set both ways; e.g.:
+
+    log = SceneLog.new(scene: some_scene)
+    some_scene.update(scene_log: Log)

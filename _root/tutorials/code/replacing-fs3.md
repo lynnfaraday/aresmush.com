@@ -27,3 +27,7 @@ The Chargen plugin is designed to be generic.  You'll just need to customize the
 The real work, of course, is in creating a plugin for your new skill system to replace FS3.  The [Creating a Plugin Tutorial](/tutorials/code/create-plugin) is a good starting point.  It walks you through the creating of a simple 'traits' plugin (similar to what one might find on a comic book game).  From there you can build up to something more advanced.
 
 Feel free to [ask for help](/feedback).  I want Ares to enable many kinds of games, not just FS3 ones.
+
+## FS3 Code Overview
+
+If you're going to make your own system, it can be helpful to use the FS3 code as a guide.  Many skill systems share the same basic building blocks, after all.   The [FS3 Code Roadmap](/tutorials/code/fs3-roadmap) tutorial may help you there.

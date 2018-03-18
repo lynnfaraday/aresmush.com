@@ -29,6 +29,14 @@ This is essentially a 'cooldown' between XP spends on a specific skill.
 
 When transitioning from amateur (rating 2, Fair) and professional (rating 3, Competent) in these skills, the player will be warned that they need some IC training to justify the increase.  This warning does not apply once you cross over into the professional levels.
 
+## dots_beyond_chargen_max
+
+After chargen, `max_points_on_attrs` and `max_points_on_action` still control how many dots above average a character can have in attributes and action skills.  This prevents the dinosaur effect where someone can become awesome at everything given enough time.
+
+You may want to allow characters some room to grow a bit beyond the chargen maximum.  The `dots_beyond_chargen_max` setting is added to the two chargen settings to determine the absolute maximum anyone can achieve, even with XP. 
+
+For example: If `max_points_on_attrs` is set to 12 (6 dots) and `dots_beyond_chargen_max` is set to 2, that means a character can spend XP on attributes up to a max of 8 dots above average.
+
 ## xp_costs
 
 XP in Third Edition works a little differently than you might be used to.  Instead of saving up a ton of XP and spending them all at once, you spend them a little bit at a time to represent improvement over time.  There is a "cooldown" between XP spends on a single skill.

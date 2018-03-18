@@ -68,9 +68,8 @@ You may only save up to 2 XP.  Remember you spend XP as you get it, resulting in
 | Current Rating | XP Cost |
 |----|
 | Poor | 1 XP|
-| Average | 3 XP |
-| Good | 6 XP |
-| Great | 12 XP |
+| Average | 4 XP |
+| Good | 8 XP |
 
 ### Action Skill Costs
 
@@ -80,9 +79,9 @@ You may only save up to 2 XP.  Remember you spend XP as you get it, resulting in
 | Fair | 2 XP |
 | Competent | 3 XP |
 | Good | 4 XP |
-| Great  | 12 XP |
-| Extraordinary | 12 XP |
-| Amazing | 12 XP |
+| Great  | 8 XP |
+| Extraordinary | 8 XP |
+| Amazing | 8 XP |
 
 ### Background/Language Skill Costs
 
@@ -90,7 +89,7 @@ You may only save up to 2 XP.  Remember you spend XP as you get it, resulting in
 |----|
 | None (Everyman) | 1 |
 | Fair / Beginner | 4 XP |
-| Good / Conversational  | 12 XP |
+| Good / Conversational  | 8 XP |
 
 
 ## Luck
