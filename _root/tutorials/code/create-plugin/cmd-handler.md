@@ -12,7 +12,7 @@ tags:
 
 Now that we've set up the plugin basics, it's time to create the traits command.
 
-Commands can live in any folder in your plugin directory, but traditionally they'll be placed in the `commands` folder.
+Commands can live in any folder in your plugin folder, but traditionally they'll be placed in the `commands` folder.
 
 ## Try It
 
@@ -77,7 +77,7 @@ Setting hash values into the database is a little more complicated than setting 
 
 ## Try It Again
 
-We also need another command to view the traits.  We'll create another file in the same directory named `traits_cmd.rb`.
+We also need another command to view the traits.  We'll create another file in the same folder named `traits_cmd.rb`.
 
 > <i class="fa fa-info-circle"></i> **Tip:** It's best practice to store separate commands in separate files for organization and readability.
 

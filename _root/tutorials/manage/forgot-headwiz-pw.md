@@ -12,7 +12,7 @@ An admin can change anyone's password except Headwiz. If you forget your Headwiz
 
 ## Shell Method
 
-Log into the server shell and change into the aresmush directory.  Run the following script with the desired new password:
+Log into the server shell and change into the aresmush folder.  Run the following script with the desired new password:
 
     bin/upgrade reset_headwiz_password,somenewpassword
 

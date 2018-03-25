@@ -12,9 +12,9 @@ tags:
 
 All commands need a help file.  It's useful to make the helpfile first because it lets you think about what the commands are actually supposed to do _before_ you code them.
 
-Help files live in a `help\<language code>` folder under the plugin directory.  This supports having help files in multiple languages, based on the game's locale.
+Help files live in a `help\<language code>` folder under the plugin folder.  This supports having help files in multiple languages, based on the game's locale.
 
-> <i class="fa fa-info-circle"></i> **Tip:** "en" is the language code for English, so help files will typically be in the `help/en` directory.
+> <i class="fa fa-info-circle"></i> **Tip:** "en" is the language code for English, so help files will typically be in the `help/en` folder.
 
 The name of the help file will be the topic name.  For instance, if we name the file `traits.md` then you can type `help traits`.
 
@@ -25,7 +25,7 @@ Inside the help file, the first few lines are embedded YAML, where you can set v
 
 ## Try It
 
-Create a file named `traits.md` in the directory `aresmush/plugins/traits/help/en/`.  Give it the following contents:
+Create a file named `traits.md` in the folder `aresmush/plugins/traits/help/en/`.  Give it the following contents:
 
     ---
     toc: Character Creation

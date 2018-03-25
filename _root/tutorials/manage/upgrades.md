@@ -17,7 +17,7 @@ If you followed the standard installation instructions, your source code will be
 Here's how:
 
 1. [Shut down the game](/tutorials/manage/shutdown).
-2. Connect to the server shell and change to the `aresmush` directory.
+2. Connect to the server shell and change to the `aresmush` folder.
 3. Type `git add -A .` then `git commit -am "Saving before upgrade."`  These two commands will create a local Git checkpoint of your code prior to the upgrade, in case anything goes wrong.
 5. Type `git pull`.  
 6. If you see any warnings about `CONFLICT!` then resolve the conflicts.  See below for details.

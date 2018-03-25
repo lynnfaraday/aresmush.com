@@ -39,7 +39,7 @@ You can edit the game's configuration through the Web Portal.  Go to Admin -> Se
 
 {{#pretty-image}}/assets/media/web_portal/config.png{{/pretty-image}}
 
-Coders may also prefer to edit the config files on disk in the server shell.  All game configuration files reside in the `aresmush/game/config` directory on the server.  When editing on disk, you must do `load config` or `load <plugin name>` after changing the configuration so the game recognizes the changes.  This is not necessary when changing configuration in the Web Portal; it does so automatically.
+Coders may also prefer to edit the config files on disk in the server shell.  All game configuration files reside in the `aresmush/game/config` folder on the server.  When editing on disk, you must do `load config` or `load <plugin name>` after changing the configuration so the game recognizes the changes.  This is not necessary when changing configuration in the Web Portal; it does so automatically.
 
 ## Data Types
 

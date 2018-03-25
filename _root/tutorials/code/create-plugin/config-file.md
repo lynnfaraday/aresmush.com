@@ -12,7 +12,7 @@ tags:
 
 In the previous step, we set up the plugin to read its shortcuts from the game configuration: `Global.read_config("traits", "shortcuts")`.
 
-Now we need to set up that configuration.  All configuration files live in the `aresmush/game/config` directory.  The name doesn't matter, but traditionally they're named the same as the plugin.
+Now we need to set up that configuration.  All configuration files live in the `aresmush/game/config` folder.  The name doesn't matter, but traditionally they're named the same as the plugin.
 
 Configuration files use the [YAML](/tutorials/code/yaml) format, with a series of key/value pairs.  Each plugin has its own top-level configuration section.
 

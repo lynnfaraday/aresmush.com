@@ -9,9 +9,9 @@ tags:
 - config
 ---
 
-Next we'll configure some basic information about your game.  These settings determine how you connect to the game.  When your game opens, the MU* description, website, etc. will appear in the AresMUSH games directory.
+Next we'll configure some basic information about your game.  These settings determine how you connect to the game.  When your game opens, the MU* description, website, etc. will appear in the AresMUSH games folder.
 
-> Note: You should use the 'ares' user for everything from now on, reserving the root user for rare server admin operations requiring root access.
+> <i class="fa fa-exclamation-triangle"></i> **Note:** You should use the 'ares' user for everything from now on, reserving the root user for rare server admin operations requiring root access.
 
 1. Log into your [Server Shell](/tutorials/install/server-shell) with the **'ares' user**.
 
@@ -26,7 +26,7 @@ Next we'll configure some basic information about your game.  These settings det
         export NVM_DIR="$HOME/.nvm"
         [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** If you already have a GitHub clone, you can pass the HTTPS clone urls to the install script: `./install <game code clone URL> <Web Portal clone URL>`   If you don't know what this means, don't worry about it!  It doesn't apply to you.
+> <i class="fa fa-exclamation-triangle"></i> **Note:** If you already have a GitHub fork, you can pass the HTTPS clone urls to the install script: `./install <game code clone URL> <Web Portal clone URL>`   If you don't know what this means, don't worry about it!  It doesn't apply to you.
 
 3.  Enter your ares password when prompted.
 
@@ -46,7 +46,7 @@ These are the basic settings you'll need to enter:
 * **MUSH Name** - Name your game.
 * **MUSH Description** - A short blurb about your game (optional).
 * **Website** - URL for your game (optional).
-* **Category** - Pick which category best describes your MUSH for the Ares games directory.
+* **Category** - Pick which category best describes your MUSH for the Ares games folder.
 
 ### Ports
 

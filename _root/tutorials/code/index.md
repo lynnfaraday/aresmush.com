@@ -106,10 +106,10 @@ This tutorial will walk you through creating your very own plugin from start to 
 * [Web Request Handling](/tutorials/code/web-requests)
 * [Navigation](/tutorials/code/web-nav)
 
-## Git and Coding Locally
+## Git and Coding On Your PC or Mac
 
 * [Using Git](/tutorials/code/git) - Using the GitHub version control system to manage your code.
-* [Setting up Ares Locally](/tutorials/code/local-setup) - Develop code for Ares on your local PC.
+* [Setting up Ares On Your PC/Mac](/tutorials/code/local-setup) - Develop code for Ares on your local PC.
 * [Running Tests](/tutorials/code/tests) - Running the automated unit tests.
 
 ## FS3
@@ -119,5 +119,5 @@ This tutorial will walk you through creating your very own plugin from start to 
 
 ## Miscellaneous
 
-* [Extras](/tutorials/code/extras) - Community plugins and utilities.
+* [Extras](/tutorials/code/extras) - Community plugins and other contributions.
 * [Chopping Block](/tutorials/code/chopping-block) - Code that didn't make the cut.

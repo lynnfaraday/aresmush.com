@@ -9,9 +9,9 @@ tags:
 
 Ares supports a robust **Plugin** system, with its features separated into plugin modules.  Plugins provide all of the player commands - even core functionality like movement, help, descriptions, pages and channels.  They handle game events, responding to things like "character connected" or "game started".
 
-## Directory Organization
+## Folder Organization
 
-Each plugin has its own directory inside aresmush/plugins. The name of the directory is the name of the plugin.
+Each plugin has its own folder inside aresmush/plugins. The name of the folder is the name of the plugin.
 
 > **Important Convention:** The folder name must be one word, all lowercase, with no special characters.
 
@@ -39,13 +39,13 @@ All plugin code lives in its own Ruby module - inside the main AresMUSH module -
 
 > **Important Conventions:** 
 >
-> 1. The module must be defined in a file matching your plugin folder name, located in the top level of your plugin directory.
+> 1. The module must be defined in a file matching your plugin folder name, located in the top level of your plugin folder.
 > 
 > 2. The module must be nested within the main AresMUSH module.
 > 
 > 3. The name of the Ruby module must match the name of the plugin folder when converted to lowercase.  In other words, it's okay to have a module FS3Skills and a folder fs3skills.
 
-The plugin module must define a single method:  `plugin_dir` that always returns the current directory.  For example:
+The plugin module must define a single method:  `plugin_dir` that always returns the current folder.  For example:
 
     module AresMUSH
       module MyPlugin
@@ -79,7 +79,7 @@ You access shared methods using the module name.
 
     Bbs.can_manage_bbs?(enactor)
 
-You can place helpers anywhere, but the standard Ares code convention is to put them in the plugin directory and name them `helpers.rb`.
+You can place helpers anywhere, but the standard Ares code convention is to put them in the plugin folder and name them `helpers.rb`.
 
 ## Plugin Interfaces (APIs)
 
@@ -87,7 +87,7 @@ The plugins talk to each other through database fields and interface methods (ap
 
 For example, the Scenes plugin provides the interface method `Scenes.add_to_scene()`, which is used by various utilities (like skills and combat) to add system messages to a scene.   The Ranks plugin provides a database model field so you can do `character.rank`.
 
-Methods that are intended to be used across plugins are by convention placed in the plugin's `public` directory.
+Methods that are intended to be used across plugins are by convention placed in the plugin's `public` folder.
 
 ## Adding and Removing Plugins
 

@@ -23,7 +23,7 @@ Quite a bit of the standard Ares code comes with unit tests - test code that exe
 
 ## Running Tests
 
-If you're making code changes, it's a good idea to run the unit tests to make sure you didn't accidentally break anything.  Just log into the server shell and run `bin/test` from the aresmush directory.  You'll see a bunch of spam, and hopefully a success message like this:
+If you're making code changes, it's a good idea to run the unit tests to make sure you didn't accidentally break anything.  Just log into the server shell and run `bin/test` from the aresmush folder.  You'll see a bunch of spam, and hopefully a success message like this:
 
     Finished in 0.99797 seconds (files took 2.79 seconds to load)
     1015 examples, 0 failures

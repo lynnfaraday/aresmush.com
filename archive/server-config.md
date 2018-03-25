@@ -47,7 +47,7 @@ Give your MUSH a name.
 
 ## Category
 
-Pick which category best describes your MUSH for the Ares games directory.
+Pick which category best describes your MUSH for the Ares games folder.
 
 ## Description
 

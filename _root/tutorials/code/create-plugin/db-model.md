@@ -22,7 +22,7 @@ You define a database field using the `attribute` method in a database model cla
 
 > <i class="fa fa-info-circle"></i> **Tip:** Ruby classes can be spread across multiple files.  This lets you define bits and pieces of the `Character` class across multiple plugins.
 
-Database models can be placed in any folder within the plugin directory, but traditionally they live in the `public` directory because they can be referenced by other plugins.
+Database models can be placed in any folder within the plugin folder, but traditionally they live in the `public` folder because they can be referenced by other plugins.
 
 ## Try It
 

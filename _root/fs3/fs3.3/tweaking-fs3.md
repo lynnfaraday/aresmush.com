@@ -30,11 +30,7 @@ Specialties are there when it's really important to divide up a skill.  Don't ad
 
 # Ability Point Limits
 
-One of the common criticisms of FS3 is that it encourages min/max-ing in chargen.  In large part this is due to people not having enough points in chargen to make the character they want to make.  They have to shave points in chargen and buy them up later with XP.
-
-This is silly.  If you're not going to allow enough points to support a particular concept, then **don't allow that concept**.  There's nothing wrong with telling people to start off at "level 1" - MMOs and tabletop RPGs have been doing it for ages.  But "level 1" characters should have an appropriate "level 1" background.  It makes no sense to allow a Navy SEAL or superhero character and then nerf their skills.
-
-## Setting Limits
+Be sure to allow enough ability points for the types of concepts you want to support.  There's nothing wrong with telling people to start off at "level 1" - MMOs and tabletop RPGs have been doing it for ages.  But "level 1" characters should have an appropriate "level 1" background.  It makes no sense to allow a Navy SEAL or superhero character and then nerf their skills.
 
 The default limit of 45 AP in FS3 Core is designed to give you the "everybody has them" skills at fair levels, a couple skills at professional levels, a handful of above-average attributes, and a few more skills to spread around to make yourself stand out.
 
@@ -42,9 +38,11 @@ If you have more skills or want people to start off more awesome, you should con
 
 Don't be afraid to allow different levels of Ability Points based on faction, position, or some other criteria that makes sense in your game.  In 3rd Edition, Action Skills account for **way** more of the Ability Point total.  So action-oriented characters need more points than supporting characters.
 
-## Points and Age
+See [Managing Min-Maxing](/fs3/fs3-3/min-maxing) for more information.
 
-Side note about age:  I'm not a fan of flat age brackets.  You end up with a lot of people who min/max their age to get points instead of picking the age that's appropriate to their concept.  And age doesn't always equal experience.  Should a 50-year-old cook really have as many Action Skills as a 22-year-old marine combat veteran?  No.
+### Points and Age
+
+Side note about age:  I'm not a fan of flat age brackets.  You end up with a lot of people who min/max their age to get points instead of picking the age that's appropriate to their concept.  More importantly, age doesn't always equal experience.  Should a 50-year-old cook really have as many Action Skills as a 22-year-old marine combat veteran?  No.  Youth and talent often equals age and wisdom.
 
 Personally, I use age to guide what levels are appropriate rather than giving more or fewer points.  A kid fresh out of boot camp probably shouldn't be an expert in anything, unless they've got a really unusual background.
 

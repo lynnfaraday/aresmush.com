@@ -39,7 +39,7 @@ If you create your fork before you install the code, you can use specify it when
 
     ./install <game clone URL> <Web Portal clone URL>
 
-If you've already installed the game, you just need to make your install point at your new fork instead of the standard AresMUSH repository.  In the server shell, change to the aresmush directory and run the following commands:
+If you've already installed the game, you just need to make your install point at your new fork instead of the standard AresMUSH repository.  In the server shell, change to the aresmush folder and run the following commands:
 
     git remote rm origin
     git remote add origin <your fork's clone URL>
@@ -54,7 +54,7 @@ GitHub stores your code in the cloud.  After you've made some code changes, you 
 
 Let's say you've made some code changes and uploaded them to your server.  Here's how you push those changes to GitHub.
 
-1. Log into the server shell and change into the aresmush directory.
+1. Log into the server shell and change into the aresmush folder.
 2. Type `git add -A .` to add all local changes to the 'staging' list - this is the list of the changes that will be pushed.
 3. Type `git status` to review the staging list and make sure everything you expect is there.
 4. Type `git commit -m "<a description of the changes>"` to create a 'commit', which is a collection of changes.

@@ -18,7 +18,7 @@ You can configure the characters that appears at the beginning and end of the ch
 
 Start and end markers can include ansi color and other formatting codes.
 
-> Note:  Since < and > are reserved HTML characters, be sure to put them in quotes in the configuration.
+> <i class="fa fa-exclamation-triangle"></i> **Note:**  Since < and > are reserved HTML characters, be sure to put them in quotes in the configuration.
 
 ## default_channels
 

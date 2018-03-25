@@ -38,8 +38,8 @@ Now everyone's traits are nil.  If you want to know more about why this is impor
 
 Use the `unload traits` command to unload the plugin.  This doesn't change anything on disk, but removes the commands and help files from the game engine.
 
-## Remove the Directory
+## Remove the Folder
 
-To keep the traits plugin from being automatically re-loaded when the game starts, you'll need to delete the `aresmush/plugin/traits` directory.
+To keep the traits plugin from being automatically re-loaded when the game starts, you'll need to delete the `aresmush/plugin/traits` folder.
 
 

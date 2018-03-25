@@ -12,9 +12,14 @@ Because AresMUSH has different needs than Penn or Tiny, most dedicated "MUSH Hos
 
 This article details the system requirements to help you find the right VPS and get everything set up.
 
-> I recommend [Digital Ocean](http://www.digitalocean.com/?refcode=5c07173bc1f2).  It's what I use for [AresCentral](/arescentral).  If you want to use that, hop on over to [Getting Started with Digital Ocean](/tutorials/install/digital-ocean) for step-by-step instructions on setting up your game there.
+
+## Local Install
+
+If you are trying to install the game on your local computer, see [Setting up Ares On Your PC/Mac](/tutorials/code/local-setup).
 
 ## VPS Specs
+
+> I recommend [Digital Ocean](http://www.digitalocean.com/?refcode=5c07173bc1f2).  It's what I use for [AresCentral](/arescentral).  If you want to use that, hop on over to [Getting Started with Digital Ocean](/tutorials/install/digital-ocean) for step-by-step instructions on setting up your game there.
 
 ### Operating System
 
@@ -24,7 +29,7 @@ AresMUSH runs best on a linux operating system.  The Ares install scripts and tu
 
 ### RAM
 
-You can scrape by with 500MB of RAM but 1GB is the recommended minimum value for decent performance.
+1GB is the recommended minimum value for decent performance.   Modestly-sized games can scrape by with 500MB of RAM but may bog down if your website sees heavy traffic.
 
 ### CPU
 
@@ -38,14 +43,8 @@ The code itself is small, less than 50MB, but you'll also need room for the OS a
 
 For the database, it will depend on the size of your game, but it's pretty insignificant.  In testing, a database with 1000 rooms, exits and characters was about 2MB in size.  Considering most VPS' have multiple GB, that's nothing.
 
-## Software Packages
+### Software Packages
 
-There are several software packages that Ares requires, including:
+There are several software packages that Ares requires.  If you use the [Digital Ocean](/tutorials/install/digital-ocean) environment, the official install scripts will set up everything you need.  Otherwise you'll have to set them up on your own.  
 
-* [Ruby](/https://rvm.io/rvm/install)
-* [Redis database]((http://redis.io/topics/quickstart))
-* [Git version control](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-
-If you use the [Digital Ocean](/tutorials/install/digital-ocean) environment, the official install scripts will set up everything you need.  Otherwise you'll have to set them up on your own.  
-
-You can use the install scripts as a guide.  There are two install scripts: `setup_server` and `install`.  Find the files corresponding to your AresMUSH version in [GitHub](https://github.com/AresMUSH/aresmush/tree/master/bin).
+[Setting up Ares On Your PC/Mac](/tutorials/code/local-setup) may help.  You can also use the install scripts as a guide.  There are two install scripts: `setup_server` and `install`.  Find the files corresponding to your AresMUSH version in [GitHub](https://github.com/AresMUSH/aresmush/tree/master/bin).

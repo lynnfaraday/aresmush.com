@@ -25,7 +25,7 @@ Once the game is shut down, see [Starting the Game](/tutorials/manage/start) to 
 As a last resort, if none of the above steps work, you can kill the server process.  
 
 1. Log into your [Server Shell](/tutorials/install/server-shell).
-2. Change into the aresmush directory using `cd aresmush`.
+2. Change into the aresmush folder using `cd aresmush`.
 3. Run the kill script: `bin/killares`.
 
 If for some reason the process ID isn't there or the kill command doesn't work, you'll need to figure out the game process.  On most servers, you can execute the command `ps -aux | grep startares` and see something like this:

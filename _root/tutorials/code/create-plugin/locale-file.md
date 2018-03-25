@@ -12,7 +12,7 @@ tags:
 
 In the previous step, we created command that utilized some translations:  `t('traits.traits_title')` and `t('traits.trait_set')`.  Now we need to create a locale file to define real strings for those translations.
 
-Locale files need to live in the `locales` directory under your plugin folder.  They need to be named `locale_<language code>.yml`.  'en' is the language code for English.
+Locale files need to live in the `locales` folder under your plugin folder.  They need to be named `locale_<language code>.yml`.  'en' is the language code for English.
 
 Locale files use YAML format just like configuration files.   Each plugin has its own top-level locale section.
 

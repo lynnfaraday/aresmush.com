@@ -47,7 +47,7 @@ Moving fields requires a little trickery in the same way that removing a field d
 
 ## Running Migrations
 
-Migrations have names, which include a number to show what order they should be run in.  For example:  `030-remove-html-cache`.   To run a migration, go to the server shell and change to the aresmush directory.  Then run the command:
+Migrations have names, which include a number to show what order they should be run in.  For example:  `030-remove-html-cache`.   To run a migration, go to the server shell and change to the aresmush folder.  Then run the command:
 
     bin/upgrade <migration name>
 

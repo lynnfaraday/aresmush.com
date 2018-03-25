@@ -15,7 +15,7 @@ The module must include two special methods - one to help the game find the plug
 
 ## Try It
 
-Create a file `traits.rb` in the `aresmush/plugins/traits` directory with the following code:
+Create a file `traits.rb` in the `aresmush/plugins/traits` folder with the following code:
 
     module AresMUSH
       module Traits

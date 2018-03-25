@@ -19,7 +19,7 @@ This writes a statement to the log file.  You can use string interpolation (e.g.
 
 ## Log Files
 
-Ares by default will maintain up to ten log files, switching when each one gets too big.  The log files are numbered sequentially (log1.txt, log2.txt, etc.)   Log files are stored on the server in the `aresmush/game/logs` directory.
+Ares by default will maintain up to ten log files, switching when each one gets too big.  The log files are numbered sequentially (log1.txt, log2.txt, etc.)   Log files are stored on the server in the `aresmush/game/logs` folder.
 
 ## Reading Log Files
 

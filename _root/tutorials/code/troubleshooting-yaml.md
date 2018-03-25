@@ -19,6 +19,12 @@ The information in the error message can help you find the problem.  In the exam
 
 There are several online YAML validator tools.  You copy/paste your YAML into the tool and it tells you if there are any problems.  Here's a good one to use: [YAML Lint](http://www.yamllint.com/).
 
+There are also command-line tools you can install on either your game server or local development PC.  Here are some commands you can run on your server shell to install the tool and run it on every file in your config folder:
+
+    npm install -g yaml-lint
+    cd aresmush/game/config
+    find . -iname '*' -exec yamllint {} \;
+
 ## Common Errors
 
 Here are a few common YAML errors you might encounter.
@@ -57,9 +63,19 @@ Ooops!  The attack and defense mod lines aren't lined up right.  Change it to:
             attack_mod: 4
             defense_mod: -4
 
+### Merge Errors
+
+The final 'common' error happens when you accidentally have two copies of the same configuration file.   Say you've got `chargen.yml` and an emacs autosave file `#chargen.yml#` in your config folder.  You'll get an error like:
+
+    Error reading YAML from chargen.yml# ... undefined method `merge_recursively' for "New Arrivals":String
+
+What's happening here is that the code loaded `#chargen.yml#` and created an entry for the `channels` config.  Then it comes along and tries to read the regular `chargen.yml` and gets mixed up because the configuration already exists.
+
+Just remove the erroneous config file.
+
 ## Weird Errors
 
-Sometimes the error is not quite so straightforward and you'll end up with an unhelpful error like this one:
+Sometimes the error is not quite so straightforward and you'll end up with an error that isn't one of the above:
 
     Error reading YAML from fs3combat.yml ... undefined method `merge_yaml' for 3:Fixnum
 
@@ -74,8 +90,8 @@ If that file is OK, though, sometimes the error is in a file loaded previously. 
     2017-07-04 08:33:53 DEBUG - Loading config from .../fs3combat.yml.
     Error reading YAML from fs3combat.yml
 
-You can be pretty sure that the error is either in config\_fs3combat or in config_friends, since everything was okay before that.
+You can be pretty sure that the error is either in fs3combat.yml or in friends.yml, since everything was okay before that.
 
-If that still doesn't help, you'll just have to go on a scavenger hunt for bad YAML.  Start with files you've changed recently or ones that were touched by a recent code merge (if you're using [git](/tutorials/code/git) for code management).
+If that still doesn't help, you'll just have to go on a scavenger hunt for bad YAML.  Start with files you've changed recently or ones that were touched by a recent code merge (if you're using [git](/tutorials/code/git) for code management).  A YAML validator may help, as explained in the introduction.
 
 If all else fails, you can always [ask for help](/feedback).

@@ -20,7 +20,7 @@ The Redis database periodically dumps your database to a file on the server.  If
 
 ### Game Files
 
-Everything in your `aresmush/game` directory is custom for your game.  This includes your connect screen, configuration files, and Web Portal file uploads.
+Everything in your `aresmush/game` folder is custom for your game.  This includes your connect screen, configuration files, and Web Portal file uploads.
 
 > <i class="fa fa-exclamation-triangle"></i> **Important:** Ares' automated backup tools do not include source code.  It's assumed that you're either using [GitHub](/tutorials/code/git) (which is an awesome way to protect your code that provides other benefits too) or that you're making changes on your local computer and uploading them through FTP.  Making code changes directly through the server shell without version control is not advisable.  If you choose to do so, you'll need to decide on your own backup strategy.
 
@@ -68,9 +68,9 @@ There are many moving parts in the AWS backup process.  Once you have it all set
 
 ### Option 3: Automated Local Backups
 
-AresMUSH will periodically back up your database and game directory to the local server.  This isn't a great backup strategy (since your backups will be toast if anything happens to the server itself) but it's better than nothing.  Edit the backup type (explained below) to 'local' to enable automated local backups.
+AresMUSH will periodically back up your database and game folder to the local server.  This isn't a great backup strategy (since your backups will be toast if anything happens to the server itself) but it's better than nothing.  Edit the backup type (explained below) to 'local' to enable automated local backups.
 
-Backups are stored in your `aresmush/backups` directory.
+Backups are stored in your `aresmush/backups` folder.
 
 ### Option 4: Manual FTP
 

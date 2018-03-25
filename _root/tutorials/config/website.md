@@ -54,7 +54,7 @@ To change the colors:
 
 ## Images
 
-There are three main images used by the website.  They are stored in the `game/uploads/theme_images` directory, but you can upload new versions on the website admin page.
+There are three main images used by the website.  They are stored in the `game/uploads/theme_images` folder, but you can upload new versions on the website admin page.
 
 1. Select Directory -> Files.
 2. Upload new versions for any files in the `theme_images` folder.  This folder is locked to admins.
@@ -130,7 +130,7 @@ You can configure the maximum file upload size.  By default it is 5000 kB (5 MB)
 
 ### website_code_path
 
-By default, Ares assumes that the website will be installed in your home directory in a folder named 'ares-webportal'.  You can change this option if you've installed it in a different location.
+By default, Ares assumes that the website will be installed in your home folder in a folder named 'ares-webportal'.  You can change this option if you've installed it in a different location.
 
 ### character_gallery_group and character_gallery_subgroup
 
