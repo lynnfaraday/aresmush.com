@@ -16,15 +16,9 @@ For example - let's say that you had an attribute named favorite_color on the Ch
       attribute :favorite_color
     end
 
-You even made a `favoritecolor` command to set it.  Some people used that command, so now there are some characters with a `favorite_color` field saved in the database.
+You make some code to set it, and now some characters have a favorite color.  
 
-Now you've decided you don't need favorite color after all.   You remove it from the class:
-
-    class Character < Ohm::Model
-      attribute :favorite_color
-    end
-
-Everything seems fine, until the next time someone logs in, then bam!
+Now you've decided you don't need favorite color after all.   You remove it from the class.  Everything seems fine, until the next time someone logs in, then bam!
 
     undefined method `favorite_color=' for #<AresMUSH::Character:0x007fcca57994f0>
 
@@ -32,28 +26,42 @@ This is happening because you've got data for `favorite_color` in the databse, b
 
 ## Removing Fields Safely
 
-It's annoying when this happens, but fortunately it's pretty easy to fix with the [tinker](/tutorials/code/tinker) command.
+To prevent this from happening, you should set all instances of the field to `nil` in the database **before** removing it from the code.
 
-First, we put the missing field back in the database model.  Since database models can be defined across multiple files, you can just put the definition at the top of the tinker code - in-between `module AresMUSH` and `module Tinker`.
+> <i class="fa fa-exclamation-triangle"></i> **Note:** If the field was originally a special data type (like DateTime or Integer) we need to change it to a string data type first.  Otherwise our nil may be converted to a default value (like 0).
 
-    module AresMUSH
-      class Character < Ohm::Model
-        attribute :favorite_color
-      end
-      
-      module Tinker
-      ...
+For example, assume we have:
 
-> <i class="fa fa-info-circle"></i> **Tip:** Even if the field was originally a hash or array or something else, make it a regular string for this exercise.
-
-Next we need to execute a tinker command to wipe out everyone's favorite color.
-
-    def handle
-      Character.all.each { |c| c.update(favorite_color: nil) }
+    class Character < Ohm::Model
+      attribute :favorite_number, :type => DataType::Integer
     end
 
-Once that tinker is exceuted, we can now remove the attribute permanently from the Character model.
+First we would change the field to a string attribute and then reload the affected plugin:
 
-## Errors During Upgrades
+    class Character < Ohm::Model
+      attribute :favorite_number
+    end
 
-If you get these errors after a code upgrade, it's likely that you just forgot to run a [Database Migration](/tutorials/code/db-migration).
+Then we can use a [tinker](/tutorials/code/tinker) command to reset everyone's colors:
+
+    def handle
+      Character.all.each { |c| c.update(favorite_number: nil) }
+    end
+
+Now it's safe to remove the field from the code.
+
+> <i class="fa fa-info-circle"></i> **Tip:** If you forgot to nil out the field before you removed it from the code, just put it back temporarily.  Run the commands above, then remove it for real.
+
+## Errors During Restart
+
+Sometimes you'll get in a jam when you've shut down the game and it won't restart due to the database error.  You can't use tinker to fix the problem because you can't get onto the game!
+
+When this happens, you can use a database script to help you.
+
+1. Edit the file `aresmush/install/scripts/remove_db_field.rb` to add back the field temporarily and clear it out. The code is basically the same as what you would have used in the tinker example above.  There's some sample code in the file you can modify.
+2. Run the script using `bin/dbscript remove_db_field`.
+3. Restart the game.
+
+## Errors After Upgrades
+
+If you get these errors after a code upgrade, it's likely that you just forgot to run a database migration during a [code upgrade](/tutorials/manage/upgrades).

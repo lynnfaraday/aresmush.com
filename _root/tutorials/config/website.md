@@ -9,18 +9,9 @@ aliases:
 
 There are a variety of things you can configure about the Web Portal.
 
-## Search Box
-
-Ares doesn't come with a search feature for the Web Portal, but you can set one up easily using [Google Custom  Search Engine](https://cse.google.com/cse/all).  Just log in with your Google account and add your site.  The GCSE control panel will tell you your search engine ID, which will be a string of numbers and letters like:  `123456:abcdef`. 
-  
-1. Select Admin -> Setup
-2. Edit `secrets.yml`.
-
-Enter your search engine ID under the gcse option.
-
 ## Home Page Text
 
-You can configure the tag line and welcome text on the Web Portal's home page.
+You can configure the welcome text on the Web Portal's home page.
 
 1. Select Admin -> Setup
 2. Edit `website.txt` 
@@ -31,41 +22,63 @@ The home page text can contain [Markdown formatting](https://daringfireball.net/
 
 You can configure the colors on the Web Portal.
 
-The Web Portal uses [SCSS](http://sass-lang.com/guide), which is an enhanced version of CSS that - among other things - lets you set up variables so you can change a color in one spot and have it take effect in many styles.  For example, the colors stylesheet lets you set up colors like so:
+The Web Portal uses SCSS, which is an enhanced version of CSS that - among other things - lets you set up variables so you can change a color in one spot and have it take effect in many styles.  
 
-    $primary-color: #6B0C22;
-    $background-color: #fff;
+Changing the primary color will affect both headings and table headers, for example.  Here are the available colors:
 
-Changing the primary color will affect both headings and table headers, for example.
-
+* Background color - The main page background.
+* Text color - The main text color.
 * Primary color - Headings and table headers.
 * Primary outline color - Border around the primary headings.
 * Primary words color - The words inside something that uses the primary color.
 * Secondary color - Links and contrast colors.
-* Background color - The main page background.
 * Gutter color - The gutter borders on the left and right side of the page.
 * Border color - Boxes and lines around things.
-* Faded text color - Hints and subtle headings, like the sidebar.
+* Faded text color - Hints and subtle headings, like the sidebar headings.
 
 To change the colors:
 
 1. Select Admin -> Setup
 2. Edit `colors.scss`.
 
+For example, the colors stylesheet lets you set up colors like so:
+
+    $primary-color: #6B0C22;
+    $background-color: #fff;
+
+You can use any [HTML color code](https://htmlcolorcodes.com/) (like #6B0C22) or a limited set of pre-defined HTML color names (like darkorange or salmon).
+
 ## Images
 
-There are three main images used by the website.  They are stored in the `game/uploads/theme_images` folder, but you can upload new versions on the website admin page.
+There are three main images used by the website.  You can upload new versions on the website admin page.
 
 1. Select Directory -> Files.
 2. Upload new versions for any files in the `theme_images` folder.  This folder is locked to admins.
 
-* background.png - Used as a background image across the page title area.
+* background.png - Used as a background image across the page title/header area.
 * box-bg.png - Used as a background behind the character and log pages.
 * jumbotron.png - Home page image.
 
+> <i class="fa fa-info-circle"></i> **Tip:** The default header background style makes it *centered* in the available space - 200px high and as wide as the browser window.   It works best when you have a wide but short background image - something like 1600x400 works pretty well.  Be sure to test it at different browser window sizes, including mobile.  You can also adjust the `header-wrap` CSS style if you want to adjust the formatting to something more suited to your particular header image.
+
 ## Changing the Navigation Bars
 
-Due to limitations of the Ember web framework, changing the navigation bars requires a slight change to the website code.  See [Web Navigation](/tutorials/code/web-nav) for details.
+A few of the navigation bar settings are configurable, described in Advanced Configuration below.
+
+* Whether the sidebar appears on the left or right.
+* Wiki pages to show under the Wiki menu.
+
+Beyond that, changing the navigation bars requires a slight change to the website code.  See [Web Navigation](/tutorials/code/web-nav) for details.
+
+
+## Setting up the Search Box
+
+Ares doesn't come with a search feature for the Web Portal, but you can set one up easily using [Google Custom  Search Engine](https://cse.google.com/cse/all).  Just log in with your Google account and add your site.  The GCSE control panel will tell you your search engine ID, which will be a string of numbers and letters like:  `123456:abcdef`. 
+  
+1. Select Admin -> Setup
+2. Edit `secrets.yml`.
+
+Enter your search engine ID under the gcse option.
 
 ## Configuring Recaptca
 
@@ -96,14 +109,28 @@ To configure the recaptcha information:
 
 Enter the Recaptcha Site and Secret you got from the code snippet above.
 
-## Advanced CSS Style
+## Custom CSS Style
 
 Beyond the colors, you can add custom CSS styles that will override the Web Portal style to your heart's content.
 
 1. Select Admin -> Setup
 2. Edit `custom_style.scss`.
 
-It's also worth noting that the AresMUSH Web Portal uses the [Bootstrap](http://getbootstrap.com/) website layout system, so all standard Boostrap styles are available.   It also includes [FontAwesome](http://fontawesome.io/icons/) icons and [JQuery UI](https://jqueryui.com/) styles.
+### Advanced Color Variables
+
+The web portal uses the [Bootstrap](hhttps://getbootstrap.com/docs/3.3/css/#less) website layout and the [Ember Power Select](http://ember-power-select.com/docs/styles) addon for dropdown menus.  Although you _can_ style these things with regular CSS by modifying `custom_style.scss`, it might be easier to use their own built-in variable names.  
+
+> <i class="fa fa-exclamation-triangle"></i> **Note:** Bootstrap and Power Select variables are **not** editable through the Ares `colors.scss` file.  You have to modify the code file `ares-webportal/app/styles/advanced-colors.scss` and then re-deploy the portal.
+
+Here are some examples of how you can set Bootstrap and Power Select styles:
+
+    $ember-power-select-border-color: orange;
+    $state-info-bg:  yellow;
+    $brand-success: blue;
+
+### Icons
+
+[FontAwesome](http://fontawesome.io/icons/) icons are used throughout the site and available for your use in custom HTML.
 
 ## Advanced Options
 
@@ -135,3 +162,15 @@ By default, Ares assumes that the website will be installed in your home folder 
 ### character_gallery_group and character_gallery_subgroup
 
 By default, the character gallery page shows characters organized into tabs by Faction and then into sub-groups by Position.  You can change this by editing the two character gallery settings to be any two groups.   For example, on BSG:U the gallery was organized by Department then Position.
+
+### left_sidebar
+
+If set to true, the sidebar appears on the left instead of the default right.
+
+### wiki_nav
+
+You can provide a list of wiki pages to show in the Wiki dropdown menu.  Just give the page names one by one as a list.  For example:
+
+    - Home
+    - Getting Started
+    - Policies

@@ -51,23 +51,23 @@ To disable weather completely, you can just make the default_climate 'none'.
 
 ## temperatures and conditions
 
-The 'temperatures' and 'conditions' lists show what temperatures and weather conditions are available for your use in weather patterns.  You can add more, but you'll also have to change the code - specifically, the weather translations file.
+The 'temperatures' and 'conditions' lists control what temperatures and weather conditions are available for your use in weather patterns.  
 
-Each weather condition has a locale entry like so:
+If you add new ones, you may want to add them to the weather descriptions config, described below.
 
-    en:
-        weather:
-            clear: "The skies are clear."
-            fair: "The weather is fair."
+## descriptions
 
-Also, each combination of season, temperature and weather must have a locale entry like so:
+The `descriptions` configuration can override the default (lame) weather descriptions.
 
-    en:
-        weather:
-            hot_spring_morning: It is a hot spring morning.
-            hot_spring_day: It is a hot spring day.
+The condition description is simply the current condition:
 
-For more information on how locale files work, see the [Locales Tutorial](http://aresmush.com/tutorials/code/localization) on aresmush.com.
+    clear: The skies are clear.
+    misty: There's a mist in the air.
+
+The temperature description is a combination of the actual temperature, the season, and the time of day (morning, day, evening, night): 
+
+    hot_spring_morning: It is a hot spring morning.
+    warm_summer_day: It is a warm summer day.
 
 ## weather_cron
 

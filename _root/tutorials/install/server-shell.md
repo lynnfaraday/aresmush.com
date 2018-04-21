@@ -28,3 +28,11 @@ If you used the [Digital Ocean](/tutorials/install/digital-ocean) setup instruct
 ## Connecting through a Client
 
 You can also connect to your server using a telnet client like [PuTTY](http://www.putty.org/) for Windows or the [PuTTY for Mac](https://www.ssh.com/ssh/putty/mac/) client for Mac.   Use SSH with the username 'root'.
+
+## Changing Directories
+
+Once in the server shell, you'll need to change to the folder where the Ares code lives.  You do this through the change directory command - `cd`.
+
+    cd - Goes to your home folder.
+    cd aresmush - From your home folder, changes to the game folder.
+    cd ares-webportal - From your home folder, changes to the web folder.

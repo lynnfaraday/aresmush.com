@@ -17,7 +17,7 @@ The information in the error message can help you find the problem.  In the exam
 
 ## Validator
 
-There are several online YAML validator tools.  You copy/paste your YAML into the tool and it tells you if there are any problems.  Here's a good one to use: [YAML Lint](http://www.yamllint.com/).
+There are several online YAML validator tools.  You copy/paste your YAML (from the Advanced Editor mode or the raw YML file) into the tool and it tells you if there are any problems.  Here's a good one to use: [YAML Lint](http://www.yamllint.com/).
 
 There are also command-line tools you can install on either your game server or local development PC.  Here are some commands you can run on your server shell to install the tool and run it on every file in your config folder:
 
@@ -62,6 +62,21 @@ Ooops!  The attack and defense mod lines aren't lined up right.  Change it to:
         Reckless:
             attack_mod: 4
             defense_mod: -4
+
+### Number Type Errors
+
+Sometimes the code expects a number, like the maximum number of ability points or the number of cookies per week.  If you accidentally put a string instead of a number in the config file, you'll get a type mismatch error:
+
+    Error: "comparison of Integer with String failed"
+    Error: "comparison of Fixnum with String failed"
+
+The solution is to change the affected parameter to a number.
+
+    Correct (a number):
+    max_ap: 40
+    
+    Incorrect (a string):
+    max_ap: '40'
 
 ### Merge Errors
 

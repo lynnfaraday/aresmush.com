@@ -33,6 +33,13 @@ Any demographics you list in `editable_properties` may be changed after chargen.
 
 > <i class="fa fa-info-circle"></i> **Tip:** The names here must exactly match the names in the demographics list.
 
+## help_text
+
+Since demographics are so flexible, the help file refers players to the `demographics` command to list the available demographic commands.  If you want more detailed instructions, you can configure it as shown below.  Any demographics not listed will show the standard help (e.g. `hair <value>`).
+
+    help_text:
+        physique: '%xcphysique <build/body type>%xn - athletic, wiry, slim, pudgy, etc.'
+
 ## groups
 
 The groups list is where you set up your game's groups.  Each group has a description and a list of possible values.  Each value has a name and a description.
@@ -45,11 +52,12 @@ If you omit the values, the group will be freeform, allowing the player to speci
             Navy: "Join the fleet, see the worlds."
             Marines: "Semper fi."
 
-## Group Shortcuts
+## Shortcuts
 
-The official Ares command for getting/setting groups is the 'group' command (e.g. `group faction`).  But most MUSHers are used to individual commands, like `factions`.  You can create shortcuts for your groups to make it easier for your players to look things up.  Edit the `shortcuts` setting in the demographics config:
+Ares will automatically create shortcuts for your group names - a singular one to set the group (e.g. `faction <value>` for `group/set <value>`) and a plural one to list the values (e.g. `factions` for `group faction`).  If you have irregularly-spelled groups, you can add a custom value to the `shortcuts` setting in the demographics config:
 
-        "factions": "group faction"
-        "faction": "group/set faction="
-        "positions": "group position"
-        "position": "group/set position="
+        "colonies": "group colony"
+
+Similarly, Ares will create shortcuts for your demographics (e.g. `hair <value>` for `demographics/set hair=<value>`).
+
+In the unlikely event that you don't want these auto-shortcuts, you can disable them by setting `disable_auto_shortcuts` to true.  Then you'll be responsible for setting your own shortcuts.  

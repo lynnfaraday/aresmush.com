@@ -25,3 +25,5 @@ Learn more at [Ares for Admins](/features/ares-for-admins).
 Some games will need advanced customizations or theme-specific code. Traditional MUSH softcode is hard to learn and work with, and the server hardcode is difficult or impossible to change. Ares uses a mainstream programming language (Ruby), and a plugin system to make coding easier, more flexible, and more pleasant.
 
 Learn more at [Ares for Coders](/features/ares-for-coders).
+
+You can also see a detailed comparison of Ares and other MU servers in [Server Roundup](/features/server-roundup).

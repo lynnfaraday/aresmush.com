@@ -16,7 +16,7 @@ After you've completed those tutorials, there are a number of advanced topics yo
 
 * [Ares Architecture](/tutorials/code/architecture) - All the moving parts that make up an Ares game.
 * [Basic Concepts](/tutorials/code/concepts) - Important general concepts.
-* [Coding for Ares](/tutorials/code/overview) - General overview of how to change Ares code.
+* [Coding for Ares](/tutorials/code/overview) - General overview of how coding for Ares works.
 
 ## Quickstart Tutorial
 
@@ -51,12 +51,14 @@ This tutorial will walk you through creating your very own plugin from start to 
 
 ### General
 
+* [Editing the Code](/tutorials/code/editing)
 * [Tinkering](/tutorials/code/tinker)
 * [Using Formatting Codes](/tutorials/code/formatting)
 * [Using Log Files](/tutorials/code/logs)
 
 ### Configuration
 
+* [Enabling and Disabling Plugins](/tutorials/config/plugins)
 * [Understanding YAML](/tutorials/code/yaml)
 * [Troubleshooting YAML](/tutorials/code/troubleshooting-yaml)
 * [Shortcuts](/tutorials/code/shortcuts)
@@ -105,6 +107,10 @@ This tutorial will walk you through creating your very own plugin from start to 
 * [Game Api](/tutorials/code/web-game-api)
 * [Web Request Handling](/tutorials/code/web-requests)
 * [Navigation](/tutorials/code/web-nav)
+
+### Troubleshooting
+
+* [Troubleshooting Issues](/tutorials/code/troubleshooting)
 
 ## Git and Coding On Your PC or Mac
 

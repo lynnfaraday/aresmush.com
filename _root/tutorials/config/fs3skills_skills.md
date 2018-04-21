@@ -64,3 +64,26 @@ You can specify the languages that everyone should start the game Fluent at.  Li
     - Standard
 
 > <i class="fa fa-info-circle"></i> **Tip:** Make sure you allocate enough free language points in chargen to cover rating 3 (Fluent) in each starting language, otherwise the languages will count towards a character's Ability Point total.
+
+## Removing an Ability
+
+If you remove an Action Skill, Attribute or Language from the game configuration while people have that ability, you'll get errors or weird results.
+
+    Error: "Error in skills configuration -- action skill Archery not found."
+
+If your game is still in development and you've just got characters in chargen, having them do a 'reset' to wipe their abilities will fix this.
+
+Otherwise, **before** removing an ability from the game configuration, you must first run a [Tinker snippet](/tutorials/code/tinker) to remove that ability everyone's character sheet.  You can also do special handling, like refunding them some XP or transferring it to a background skill or something.  
+
+For example, if we wanted to remove the Archery action skill, we would modify the tinker command to do:
+
+      def handle
+        FS3ActionSkill.all.each do |a|
+           if (a.name == 'Archery')
+             client.emit "Deleting Archery from #{a.character.name} -- was at rating #{a.rating}."
+             a.delete
+           end
+        end
+      end
+
+After you have successfully removed the ability from everyone's sheet, *then* it is safe to remove the ability from the config file.

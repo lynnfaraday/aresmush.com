@@ -23,6 +23,7 @@ These articles will help you administer/manage an Ares game.  It assumes your ga
 
 ## Server Management
 
+* [Troubleshooting Issues](/tutorials/code/troubleshooting)
 * [Connect to the Server Shell](/tutorials/install/server-shell)
 * [Starting the Game](/tutorials/manage/start)
 * [Shutting Down the Game](/tutorials/manage/shutdown)

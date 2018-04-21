@@ -8,7 +8,7 @@ One of the common complaints with FS3 is that it encourages min-maxing because i
 
 ## Why is FS3 This Way?
 
-I've studied RPG systems for decades, and FS3 embodies elements from my favorite systems.  Two big things that my favorite systems have in common:
+I've studied RPG systems for decades, and FS3 embodies elements from my favorite systems.  Two things that my favorite systems have in common:
 
 **They don't punish you for being good.** I don't want to play the teenage adventurer just starting out in life, or the one-dimensional ace fighter jock.  I want a system that lets me play someone who's good *and* decently well-rounded.
 
@@ -18,7 +18,7 @@ I've studied RPG systems for decades, and FS3 embodies elements from my favorite
 
 Of course you *could* do it differently.  Any number of systems do, by having tiered skill costs, or skill costs tied to attribute ratings, or whatever.  But each of those systems runs contrary to the two goals stated above.
 
-Why not make XP also 1-1?  Slow XP gain combats the MU "dino effect" where veterans end up way ahead of new characters.  Also, if you allow people to start out awesome *and* advance quickly, they'll rapidly achieve untouchable levels, making it harder to invent challenges for them.
+Why not make XP also 1-1 to make it "fair"?  Slow XP gain combats the MU "dino effect" where veterans end up way ahead of new characters.  Also, if you allow people to start out awesome *and* advance quickly, they'll rapidly achieve untouchable levels, making it harder to invent challenges for them.
 
 ## Why Do People Think This is a Problem?
 
@@ -43,25 +43,27 @@ Fast-forward six months.  Mary has been pumping XP into Firearms and Melee, but 
 
 **Some people think this is terrible.**  They think that Mary is being "punished" for trying to make a more balanced character.  They think that it's hideously unfair that Bob has such an advantage over Mary.
 
-## Embrace the Madness
+## Method to the Madness
 
-The first thing to realize here is that the Bob/Mary example is working exactly as designed.   "Wait, what?" you might say.  "That's crazy!"  But it's true.
-
-> <i class="fa fa-key" aria-hidden="true"></i> **Key Point:** FS3 does not strive for power balance between characters.  Some may be more "powerful" than others depending on how they spent their points.  
+The first thing to realize here is that the Bob/Mary example is working exactly as designed.   "Wait, what?" you might say.  But it's true.
 
 If FS3 were a level-based game, the admin of the Bob/Mary example basically allowed Bob to start off at level 5 while Mary was still back at level 2.   It doesn't matter how Bob and Mary spend their XP.  If they're earning XP at the same rate **Mary will never catch up to Bob** because she started behind him from the get-go.
 
-Why on earth would you want to allow unbalanced characters?  FS3 is intended for **co-operative PVE games**.  It's a system that allows the grizzled combat veteran to co-exist with the fresh-faced yet talented new recruit - a sidekick alongside a hero - a cook alongside a figher pilot.
+> <i class="fa fa-key" aria-hidden="true"></i> **Key Point:** FS3 does not strive for power balance between characters.  Some may be more "powerful" than others depending on how they spent their points.
 
-> <i class="fa fa-key" aria-hidden="true"></i> **Key Point:** Characters are not created equal.  If a game admin wants balance, **they** need to enforce balance.
+Why does FS3 allow unbalanced characters?  It is intended for **co-operative PVE games**.  It's a system that allows the grizzled combat veteran to co-exist with the fresh-faced yet talented new recruit -- a cook alongside a figher pilot.  Everyone has equal **opportunity** to make a powerful character.  Whether or not they do, though, is up to them.
+
+FS3 relies on game admins to keep players from going to extremes and making up stupid, one-dimensional, maxxed-to-the-gills caricatures.
 
 So how can you, as a game admin or as app staff, enforce balance?
 
 ## Setting Limits
 
-You can choose how powerful you allow characters to be.  You can force them to be well-rounded by *making* them take points in secondary action skills and background skills.  You can limit the maximum ratings and total point expenditures, preventing somebody from dumping all their points into just one or two skills.  You can set a total point cap, to prevent somebody from being good at everything no matter how many XP they eventually accumulate.
+You can choose how powerful you allow characters to be.  You can force them to be well-rounded by *making* them take points in secondary action skills and background skills.  You can set a total point cap, to prevent somebody from being good at everything no matter how many XP they eventually accumulate.  
 
-The FS3 Ares code has a number of built-in "dials" you can adjust to limit chargen and XP spending.  By adjusting these limits, you can essentially cap the amount of min-maxing that's possible.  Here are a few examples of the available limits.  For more information, see [Configuring FS3 Chargen](/tutorials/config/fs3skills_chargen) and [Configuring FS3 XP](/tutorials/config/fs3skills_xp).
+By adjusting these limits, you effectively limit how much min-maxing is even possible.  There will still be characters who min-max to the maximum allowable extent, but your limits ensure that even that maximum is tolerable.
+
+Here are a few examples of the available limits built into the AresMUSH FS3 code.  For more information, see [Configuring FS3 Chargen](/tutorials/config/fs3skills_chargen) and [Configuring FS3 XP](/tutorials/config/fs3skills_xp).
 
 * **Total Attributes / Action Points** - Setting a maximum number of attributes / action points keeps characters from being good at everything.
 * **Ability Limits** - Cap the maximum starting ratings and give them room to grow.

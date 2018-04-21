@@ -46,4 +46,4 @@ Ares works out of the box, but there are a lot of configuration settings you can
 
 ## Game Directory
 
-The game information you entered will not show up in the [AresCentral Game Directory](http://arescentral.aresmush.com/games) until you mark your game as open.  See [Configuring the Game Directory](http://localhost:9292/tutorials/config/game_dir) to do that.
+The game information you entered will not show up in the [AresCentral Game Directory](http://arescentral.aresmush.com/games) until you mark your game as open.  See [Configuring the Game Directory](/tutorials/config/game_dir) to do that.

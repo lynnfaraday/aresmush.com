@@ -48,7 +48,7 @@ This is the maximum number of chargen points a character can spend on attributes
 
 Attributes cost 2 points per dot and skills cost 1 point per dot.  For exmple - setting `max_points_on_attrs` to 10 would allow you to buy 5 attribute dots above level 1-2.
 
-Note: These limits also apply to XP spent after chargen, unless modified by the `dots_beyond_chargen_max` setting (see [Configuring FS3 XP](/tutorials/config/fs3_xp)).
+Note: These limits also apply to XP spent after chargen, unless modified by the `dots_beyond_chargen_max` setting (see [Configuring FS3 XP](/tutorials/config/fs3skills_xp)).
 
 ### max_skills_at_or_above and max_attrs_at_or_above
 

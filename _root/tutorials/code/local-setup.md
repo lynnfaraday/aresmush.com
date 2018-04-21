@@ -13,17 +13,15 @@ The exact steps to set things up locally will vary based on your operating syste
 
 ## Prerequisites
 
-You'll need to have the following tools installed. 
+You'll need to have the following tools installed. There are scripts available below to help you install these prerequisites on Mac OSX or Windows.
 
-* Ruby 2.3 or higher.  We recommend installing Ruby 2.4 via [Ruby Version Manager](https://rvm.io/) or RBEnv.
+* Ruby 2.3 or higher.  We recommend installing Ruby 2.4 via [Ruby Version Manager](https://rvm.io/) or RBEnv.  (You need regular Ruby; Ares is not compatible with jRuby.)
 * [Redis database server](https://redis.io/download)
 * [NPM package manager](https://docs.npmjs.com/getting-started/installing-node)
 * [Yarn dependency manager](https://yarnpkg.com/lang/en/docs/install/)
 * [GitHub](https://desktop.github.com/)
 * [Bundler](http://bundler.io/)
 * [Ember CLI](https://ember-cli.com/)
-
-There are scripts available to help you install these prerequisites on Mac OSX or Windows.
 
 ### Installing on Mac
 
@@ -75,6 +73,8 @@ See [Next Steps](/tutorials/install/next-steps) for information on how to custom
 
 ## Miscellaneous
 
+<a name="editors"></a>
+
 ### Code Editors
 
 If you're editing code on your local PC, do yourself a favor and get a decent code editor.  Here are some options - some free, some paid:
@@ -89,4 +89,4 @@ If you're editing code on your local PC, do yourself a favor and get a decent co
 
 Unless you're just playing around to learn Ares, you've probably got a "real" version of the game running on a server somewhere.  Whatever changes you make locally, you'll eventually want to upload to the game.
 
-The best way to do this is to use [GitHub version control](/tutorials/code/git) to sync the changes between game and local test server.  If you don't want to mess around with GitHub, you can always just FTP the changed files back to the game server.
+The best way to do this is to use [GitHub version control](/tutorials/code/git) to sync the changes between game and local test server.  If you don't want to mess around with GitHub, you can always just FTP the changed files back to the game server.  See [Editing the Code](/tutorials/code/editing) for help with FTP.

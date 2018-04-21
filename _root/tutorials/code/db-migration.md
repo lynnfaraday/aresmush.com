@@ -7,8 +7,10 @@ tags:
 - database
 ---
 
-Many Ares version upgrades will come with an associated **Database Migration**.   This is just a fancy way of talking about some code that will make changes to your database to bring it in line with the new version.
+Many Ares version upgrades will come with an associated **Database Migration**.   This is just a fancy way of talking about some code that will make changes to your database to bring it in line with the new version.   
 
+As part of a [code upgrade](/tutorials/manage/upgrades), you'll use the `bin/migrate` script to run any available database migrations.  This is an automated process, so you shouldn't need to worry about how it works under the hood.  This article can help you understand more about what's going on.
+  
 ## Types of Migrations
 
 There are three main types of migrations:
@@ -44,13 +46,6 @@ Moving fields requires a little trickery in the same way that removing a field d
       c.update(rank: nil)
     end
 
+## Creating a Migration
 
-## Running Migrations
-
-Migrations have names, which include a number to show what order they should be run in.  For example:  `030-remove-html-cache`.   To run a migration, go to the server shell and change to the aresmush folder.  Then run the command:
-
-    bin/upgrade <migration name>
-
-> <i class="fa fa-info-circle"></i> **Tip:** Don't include the ".rb" file extension when specifying the migration name.
-
-> <i class="fa fa-info-circle"></i> **Tip:** It's best to run the migration when the game is shut down, so nobody tries to update their character in the midst of a migration running.
+If you're creating your own plugins, you may want to supply database migrations so others can install your code.  It's usually easier to just ask people to run them as `tinker` snippets than to tie into the official migraiton framework, but if you need to make official migrations, follow the example of the ones in the `install/migrations` folder.

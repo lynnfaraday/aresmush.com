@@ -21,3 +21,11 @@ You can access the border lines using special control codes `%lh` for header, `%
 Here's an example of how the lines would be used:
 
 {{#pretty-image}}/assets/media/code/skin.png{{/pretty-image}}
+
+## Lines with Text
+
+There's a special line that's used in a few places - it has text shown on a divider line like so:
+
+    -----[ Languages ]--------------------------------------------------------------
+
+You can configure the color of this line and the main line symbol (-) using `line_with_text_color` and `line_with_text_padding`.  If you want to radically change the way the line looks, you'll need to tweak the `LineWithText` code in `aresmush/utils/templates`.

@@ -43,10 +43,11 @@ If you've already installed the game, you just need to make your install point a
 
     git remote rm origin
     git remote add origin <your fork's clone URL>
-    git remote add upstream https://github.com/aresmush/aresmush
     git pull origin master
 
-Either way, now your game will be set up to get code updates from your fork instead of from the main Ares repository.
+ > <i class="fa fa-exclamation-triangle"></i> **Note:** Repeat the above commands for both the aresmush and ares-webportal folders.
+
+Now your game will be set up to get code updates from your fork instead of from the main Ares repository.
 
 ## Pushing and Pulling
 
@@ -64,7 +65,7 @@ You can look in your repository in GitHub to see the commit.
 
 ## Git from the Game
 
-You can actually execute `git` commands from within the game without needing to connect to the server shell.  See `help git` in-game.  This is handy if you're not editing code directly on the server but using FTP or GitHub to sync changes between a local PC and the server.
+You can actually execute selected `git` commands from within the game without needing to connect to the server shell.  See `help git` in-game.  This is handy if you're using GitHub to sync changes between a local PC and the server because you can push to GitHub from your PC and pull the code down from inside the game itself.
 
 ## Working Locally
 
@@ -72,8 +73,34 @@ Commonly people will actually make code changes on their local computer, push th
 
 {{#pretty-image}}{{urls.media}}/code/git-pull.png{{/pretty-image}}
 
-See [Setting Up Ares Locally](/tutorials/code/local-setup) for more help getting Ares running on your PC/Mac.
+You can even set up a test game on your PC so you can test the code before pushing it.  See [Setting Up Ares Locally](/tutorials/code/local-setup) for more help getting Ares running on your PC/Mac.
 
+<a name="upgrade"></a>
+
+## Updating Your Fork
+
+While you're changing your own copy of the code, there's also work going on in the main Ares repository. Whenever a new AresMUSH version is announced, you should update your fork.
+
+> <i class="fa fa-info-circle"></i> **Tip:** It's recommended that you keep up with updates as they happen.  Not only does it ensure that you have the latest features and bugfixes at all times, but it's easier to do updates one at a time.  If you let them stack up and your code gets too far behind, the upgrade will be more difficult.
+
+To pull code from the main Ares repository into your own, you'll need to add a link in your local Git working folder.  
+In the aresmush directory, run the command:
+
+    git remote add upstream https://github.com/aresmush/aresmush
+
+In the ares-webportal directory, run:
+
+    git remote add upstream https://github.com/aresmush/ares-webportal
+
+Now whenever you want to upgrade your fork to include the latest Ares code, you can just do:
+
+    git pull upstream master
+
+> <i class="fa fa-exclamation-triangle"></i> **Note:**  Always remember to update **both** aresmush and ares-webportal when getting the latest code.
+
+### Dealing with Conflicts
+
+There may be merge conflicts if both you and the Ares devs changed the same bits of code differently.  See [Upgrades - Resolving Conflicts](/tutorials/manage/upgrades) for more information, and [ask for help](/feebdack) if you get stuck.
 
 ## Learning GitHub
 

@@ -31,5 +31,4 @@ A "droplet" is just what DO calls a server.   To create a new droplet, log into 
 3. Don't add block storage.
 4. Select a region close to you.
 5. Don't add additional options.
-6. If you're familiar with SSH and wish to connect using a SSH client, see Digital Ocean's article on [SSH Keys](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-putty-on-digitalocean-droplets-windows-users).  Setting up a SSH key is beyond the scope of this tutorial.
-7. Select 1 droplet, and enter a name for it (like 'ares').
+6. Select 1 droplet, and enter a name for it (like 'ares').
