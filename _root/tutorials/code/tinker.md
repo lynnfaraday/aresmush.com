@@ -7,11 +7,19 @@ tags:
 - tinker
 ---
 
-Ares does not have the ability to execute softcode directly from a MU client.  You can't just whip up a `think iter(switch(...))` off the cuff in your MUSH window.   However, there are times when you just need to do a quick thing - find all characters over 30 years old, or change a database field that doesn't have an associated admin command.  In Ares, you can do these one-off code tasks with the `tinker` command.
+Ares doesn't allow you to alter the game code from the MU client window, but sometimes you need to do things that aren't covered by an existing command - find all characters over 30 years old, update the faction on a bunch of people at once, etc.  There's no need to create specific commands for this sort of tinkering, especially if you're unlikely to do that specific task ever again.  In Ares, you can use the `ruby` command to execute simple code blocks, or the `tinker` command to perform more involved processing.
 
-> <i class="fa fa-info-circle"></i> **Tip:** Not all admins can tinker - only characters with the `coder` role.  This is a security feature, because giving someone access to the code essentially gives them the keys to the kingdom.  They could do literally anything with the database.
+> <i class="fa fa-info-circle"></i> **Tip:** Not all admins can use the tinker/ruby commands - only characters with the `coder` role.  This is a security feature, because giving someone access to run arbitrary code essentially gives them the keys to the kingdom.  They could do literally anything with the database.
+
+## Using the Ruby Command
+
+The `ruby` command lets you run simple Ruby code snippets straight from your MU client.  Separate multiple lines with semicolons.  For example:
+
+    ruby c = Character.find_one_by_name("Faraday");c.update_demographic("hair","blonde") 
 
 ## How to Tinker
+
+Doing a lot of code on a single line can be cumbersome.  That's where the `tinker` command comes in.  Tinker is a built-in command that does nothing by default.  You update the command code to do whatever you need at that moment.  Unlike other commands, the tinker code can be easily updated through the web portal.
 
 Tinkering involves three steps:
 
@@ -23,56 +31,36 @@ Tinkering involves three steps:
 
 ## Tinkering Examples
 
-Here is what the default tinker command looks like:
-
-    module AresMUSH
-      module Tinker
-        class TinkerCmd
-          include CommandHandler
-            
-          def check_can_tinker
-            return t('dispatcher.not_allowed') if !enactor.is_coder?
-            return nil
-          end
-      
-          def handle
-            client.emit_success "Done!"
-          end
-        end
-      end
-    end
-
-
 Let's say you wanted to write a quick code snippet to find all the characters who are 30 years or older.  All you need to do is modify the `handle` method to find those characters and emit their names to you.  
 
 > <i class="fa fa-exclamation-triangle"></i> **Note:** This example only shows the handle method, but you still need all the rest of the code in the file too.
 
 For example:
 
-          def handle
-            client.emit Character.all.select { |c| c.age >= 30 }.map { |c| "#{c.name} - #{c.age}" }
-            client.emit_success "Done!"
-          end
+      def handle
+        client.emit Character.all.select { |c| c.age >= 30 }.map { |c| "#{c.name} - #{c.age}" }
+        client.emit_success "Done!"
+      end
 
 > <i class="fa fa-info-circle"></i> **Tip:** When doing a database query, make sure to do the 'map' at the end so you don't spam yourself with full database objects when all you really want is their name (or in this case, name + age).
 
 You can also use the tinker command to update things in the database.  For example, if you wanted to change Bob's hair color (and didn't want to use the demographic/set command because that would be too easy):
 
-          def handle
-            char = Character.find_one_by_name("Bob")
-            char.update_demographic("hair", "Gray" )
-            client.emit_success "Done!"
-          end
+      def handle
+        char = Character.find_one_by_name("Bob")
+        char.update_demographic("hair", "Gray" )
+        client.emit_success "Done!"
+      end
 
 You can even combine the two - a query and an update - to act on a list of characters.  Say you changed a faction's name and wanted to update everyone with the old faction name to the new one:
 
-          def handle
-            chars = Character.all.select { |c| c.group("Faction") == "Old Faction" }
-            chars.each do |c|
-                Demographics.set_group(c, "Faction", "New Faction")
-            end
-            client.emit_success "Done!"
-          end
+      def handle
+        chars = Character.all.select { |c| c.group("Faction") == "Old Faction" }
+        chars.each do |c|
+            Demographics.set_group(c, "Faction", "New Faction")
+        end
+        client.emit_success "Done!"
+      end
 
 
 ## Multiple Tinkerers
@@ -81,34 +69,21 @@ Tinkering is set up with the assumption that only one person will be tinkering a
 
 > <i class="fa fa-exclamation-triangle"></i> **Note:** You still need to take turns _editing_ the file, otherwise you'll end up clobbering each others' code changes.  But once the file is edited, you can each independently run your own tinker snippet.
 
-    module AresMUSH
-      module Tinker
-        class TinkerCmd
-          include CommandHandler
-            
-          def check_can_tinker
-            return t('dispatcher.not_allowed') if !enactor.is_coder?
-            return nil
-          end
-      
-          def handle
-            if (enactor_name == "Faraday")
-               faraday_tinker
-            elseif (enactor_name == "Chaos")
-               chaos_tinker
-            end
-            client.emit_success "Done!"
-          end
-          
-          def faraday_tinker
-             # Whatever Fara's tinkering with goes here.
-          end
-          
-          def chaos_tinker
-             # Whatever Chaos is tinkering with goes here.
-          end
+      def handle
+        if (enactor_name == "Faraday")
+           faraday_tinker
+        elseif (enactor_name == "Chaos")
+           chaos_tinker
         end
+        client.emit_success "Done!"
       end
-    end
+      
+      def faraday_tinker
+         # Whatever Fara's tinkering with goes here.
+      end
+      
+      def chaos_tinker
+         # Whatever Chaos is tinkering with goes here.
+      end
 
 If taking turns editing the tinker file is too much trouble, have your multitude of coders just create their own individual tinker commands (tinker/faraday, tinker/chaos, etc.) in files they can edit separately.
