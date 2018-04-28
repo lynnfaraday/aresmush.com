@@ -1,5 +1,6 @@
 ---
-toc: ~config~ Configuring the Game
+tags:
+- config
 title: Configuring the game directory information.
 ---
 # Configuring the Game Directory Information

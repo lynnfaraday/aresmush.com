@@ -94,6 +94,7 @@ A variety of other settings exist, but the defaults will work well for most game
 * [Configuring Secret Codes](/tutorials/config/secrets)
 * [Configuring the Status System](/tutorials/config/status)
 * [Configuring the Weather System](/tutorials/config/weather)
+* [Configuring the Who/Where System](/tutorials/config/who)
 
 ### Uncommon Config
 

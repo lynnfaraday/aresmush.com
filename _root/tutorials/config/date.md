@@ -1,6 +1,7 @@
 ---
-toc: ~config~ Configuring the Game
 title: Configuring the date and time formats.
+tags:
+- config
 ---
 # Configuring the Date and Time Formats
 

@@ -112,9 +112,9 @@ You shouldn't need to set up anything to make editing work in SimpleMU.
 
 ## Setting up DuckClient
 
-DuckClient really doesn't like Ares' keepalive feature.  The effects can vary depending on your operating system, and can include extra lines being spammed or lines not coming through occasionally.  
+DuckClient really doesn't like Ares' keepalive feature.  The effects can include extra lines, lines not coming through when expected, or even prior lines being deleted from the screen (!!) when a keepalive text is received.  Myself and a couple other folks have reported this behavior to the DuckClient developer and are awaiting their response.  In the meantime, the fix is pretty easy:
 
-1. In the AresMUSH game, type `keepalive off` to disable the keepalive feature.
+1. In the AresMUSH game, type `keepalive off` to disable the keepalive feature.  You will need to do this for each alt.
 
 
 <a name="other" />

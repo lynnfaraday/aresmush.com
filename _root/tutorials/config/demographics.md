@@ -1,6 +1,7 @@
 ---
-toc: ~config~ Configuring the Plugins
 title: Configuring demographics.
+tags:
+- config
 ---
 # Configuring the Demographics Plugin
 

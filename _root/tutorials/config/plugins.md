@@ -1,5 +1,6 @@
 ---
-toc: ~config~ Configuring the Game
+tags:
+- config
 title: Enabling and Disabling Plugins
 ---
 

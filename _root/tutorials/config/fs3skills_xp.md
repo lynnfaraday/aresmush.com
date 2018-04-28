@@ -1,5 +1,6 @@
 ---
-toc: ~config~ Configuring FS3 Skills
+tags:
+- config
 title: Configuring FS3 experience.
 ---
 # Configuring FS3 - Experience
@@ -36,6 +37,10 @@ After chargen, `max_points_on_attrs` and `max_points_on_action` still control ho
 You may want to allow characters some room to grow a bit beyond the chargen maximum.  The `dots_beyond_chargen_max` setting is added to the two chargen settings to determine the absolute maximum anyone can achieve, even with XP. 
 
 For example: If `max_points_on_attrs` is set to 12 (6 dots) and `dots_beyond_chargen_max` is set to 2, that means a character can spend XP on attributes up to a max of 8 dots above average.
+
+## allow_advantages_xp
+
+This setting controls whether you can raise advantages directly with XP.  In some games they may be fixed at chargen and only alterable through plots.  In other games they may require special approval.  Set this to 'true' if you want to allow them to be learned just like any other ability.
 
 ## xp_costs
 

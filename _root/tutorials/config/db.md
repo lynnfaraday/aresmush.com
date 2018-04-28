@@ -1,6 +1,7 @@
 ---
-toc: ~config~ Configuring the Game
 title: Configuring the database.
+tags:
+- config
 ---
 # Configuring the Database
 

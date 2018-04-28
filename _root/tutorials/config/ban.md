@@ -1,10 +1,10 @@
 ---
-toc: ~config~ Configuring the Game
 title: Configuring banned and suspect sites.
 tags: 
 - siteban
 - suspect
 - trouble
+- config
 ---
 
 # Configuring Banned and Suspect Sites

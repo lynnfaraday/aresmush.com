@@ -1,6 +1,7 @@
 ---
-toc: ~config~ Configuring FS3 Combat
 title: Configuring miscellaneous FS3 Combat options.
+tags:
+- config
 ---
 # Configuring FS3 Combat - Miscellaneous
 

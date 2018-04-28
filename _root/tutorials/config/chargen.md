@@ -1,6 +1,7 @@
 ---
-toc: ~config~ Configuring the Plugins
 title: Configuring character generation.
+tags:
+- config
 ---
 # Configuring the Chargen System
 

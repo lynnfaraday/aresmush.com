@@ -1,5 +1,6 @@
 ---
-toc: ~config~ Configuring FS3 Skills
+tags:
+- config
 title: Configuring FS3 chargen.
 ---
 # Configuring FS3 - Chargen
@@ -13,6 +14,8 @@ To configure the FS3 Chargen Limits:
 
 You should read the article [Tweaking FS3](http://aresmush.com/fs3/fs3-3/tweaking-fs3/), which contains important information to help guide you in customizing your game.
 
+> <i class="fa fa-exclamation-triangle"></i> **Note:** Many of the chargen configuration options are lists.  They can't be left blank.  If the list is empty, use `[]` to reflect an empty list.
+
 ## free_languages and free_backgrounds
 
 The first few points in Language and Background Skills are free, meaning they do not count toward a character's Ability Point total.  
@@ -23,6 +26,10 @@ The first few points in Language and Background Skills are free, meaning they do
 ## min_backgrounds
 
 You can require how many Background Skills (distinct skills, not points) a character must start with.
+
+## advantages_cost
+
+If you are using Advantages, you can configure the cost.  The default is 2 points per dot.  You can adjust this depending on how valuable advantages are in your game.  Making different advantages cost different amounts will require custom code.
 
 ## max_skill_rating and max_attr_rating
 

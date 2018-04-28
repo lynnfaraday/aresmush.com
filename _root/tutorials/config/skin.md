@@ -1,5 +1,6 @@
 ---
-toc: ~config~ Configuring the Game
+tags:
+- config
 title: Configuring the game skin (lines).
 ---
 # Configuring the Game Skin (Lines)

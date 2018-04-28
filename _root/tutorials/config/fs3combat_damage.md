@@ -1,6 +1,7 @@
 ---
-toc: ~config~ Configuring FS3 Combat
 title: Configuring FS3 combat damage.
+tags:
+- config
 ---
 # Configuring FS3 Combat - Damage
 

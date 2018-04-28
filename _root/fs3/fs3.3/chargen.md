@@ -166,6 +166,18 @@ Like Background Skills, Language Skills have more descriptive ratings.
 
 Your reading level is assumed to be on par with your speaking level, unless otherwise specified.
 
-### Buying Languages
+## Advantages
 
-You start as **Fluent** in whatever the common game language is for free.   Any additional languages cost **1 AP** per rating.
+Advantages are used on some games to represent things a character has that are not skills - resources, rank, connections, etc.  Valid Advantages will vary from game to game.  Some games may not use them at all.
+
+### Advantage Ratings
+
+Advantages have compressed ratings like languages and background skills.  The precise meaning of each rating should be set by the game admin, since advantages mean different things on different games.
+
+* **Fair** 
+* **Good** 
+* **Exceptional** 
+
+### Buying Advantages
+
+Advantages cost **2 AP** per rating by default, but individual games can adjust this cost.

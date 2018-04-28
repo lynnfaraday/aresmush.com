@@ -1,5 +1,6 @@
 ---
-toc: ~config~ Configuring the Plugins
+tags:
+- config
 title: Configuring the roles system.
 ---
 # Configuring the Roles System

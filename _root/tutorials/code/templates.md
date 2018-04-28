@@ -35,13 +35,25 @@ Anything inside `<%= %>` brackets is evaluated as code by the template engine.  
     Played By: Jessica Chastain
     +==~~~~~====~~~~====~~~~====~~~~=====~~~~=====~~~~====~~~~====~~~~====~~~~~==+
 
+## Customizing a Template
+
+A few templates will automatically be customized based on your game configuration.  The 'who' template lets you pick fields and the 'profile' template automatically shows whatever demographics you've configured.
+
+You can customize other templates too - it just requires you to change the template code.  Just edit the ERB file directly.  Usually they are located in a `templates` folder within each plugin - for example `aresmush/plugins/describe/templates/character.erb`.   In our desc template above, for example, you might remove the "military_name" line if you just wanted to show the character's basic name instead of their full name plus rank.
+
 ## Template Renderer
 
-Templates use a "renderer" class to help decide what to show.  Technically you could put all the code logic into the ERB file itself, but that gets pretty ugly pretty fast.  It's better to keep the decision-making in a separate file.
+Templates use a "renderer" class to help decide what to show.  *Technically* you could put all the code logic into the ERB file itself, but that gets really ugly really fast.  It's better to keep the decision-making in a separate file.
 
-All template renderers have some common helpers.   The `<%= header %>`, `<%= footer %>` and `<%= divider %>` we saw in the example above are helpers that use the lines defined in the game's [Skin Configuration](/tutorials/config/skin).  There are also left/right/center methods for justifying text.  They are used like so: `left(text, width, padding_char)`.
+All template renderers have some common helpers.   The `<%= header %>`, `<%= footer %>` and `<%= divider %>` we saw in the example above are helpers that use the lines defined in the game's [Skin Configuration](/tutorials/config/skin).  There are also left/right/center methods for justifying text.  They are used like so: `left(text, width, padding_char)`, `center(text, width, padding_char)`, etc.
 
-A template can also define its own custom helpers, like the `<%= military_name(char) %>` helper used in the description example.  This strings together the character's rank (if applicable), name and callsign (if applicable) into a single string.
+A template can also define its own custom helpers.  These helpers are located in the same folder as the ERB file, named similarly but with a 'rb' extension instead of 'erb'.  For example:  `aresmush/plugins/describe/templates/character_template.rb` contains the `military_name` helper used in the description example.
+
+    def military_name(char)
+      Ranks.military_name(char)
+    end
+
+> <i class="fa fa-info-circle"></i> **Tip:** Some of the template renderers share common helpers with another template.  You'll see this when the renderer has a line like `include CharDescTemplateFields` near the top of the file.  For example, the description and glance templates share some helpers from `plugins/describe/char_desc_template_fields.rb`.  If you don't see the helper you're looking for (e.g. military_name), look for a shared helper file.
 
 ## Using Templates
 

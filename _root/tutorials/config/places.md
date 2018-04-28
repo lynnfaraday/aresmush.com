@@ -1,5 +1,6 @@
 ---
-toc: ~config~ Configuring the Plugins
+tags:
+- config
 title: Configuring the places system.
 ---
 # Configuring the Places System

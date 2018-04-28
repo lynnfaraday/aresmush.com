@@ -1,5 +1,6 @@
 ---
-toc: ~config~ Configuring FS3 Skills
+tags:
+- config
 title: Configuring FS3 luck and miscellaneous.
 ---
 # Configuring FS3 - Luck and Miscellaneous

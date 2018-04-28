@@ -1,6 +1,7 @@
 ---
-toc: ~config~ Configuring FS3 Combat
 title: Configuring FS3 combat armor.
+tags:
+- config
 ---
 # Configuring FS3 Combat - Armor
 

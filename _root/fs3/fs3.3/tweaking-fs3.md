@@ -28,6 +28,16 @@ FS3 works best with broad Action Skills, because otherwise you end up with a gaz
 
 Specialties are there when it's really important to divide up a skill.  Don't add specialties for every skill or it gets silly.  Reserve them for the ones that truly need some degree of oversight.  On a BSG game it might be important to know whether your pilot knows Vipers, Raptors or both.  On a modern game, does it really matter what kinds of planes they can fly?  Probably not.
 
+# Advantages
+
+Advantages can be used for things that aren't skills, but that you want people to spend points on in chargen.  Common things you might use this for:
+
+* WoD-esque backgrounds (Resources, Connections, Rank, etc.) 
+* Merits/Advantages (Ambidexterity, Internal Compass, etc.)
+* Powers/Spells - although be careful, because FS3 isn't inherently geared towards fantasy/superhero settings.
+
+The advantage rating descriptions are pretty vague (Fair/Good/Exceptional), so you should be sure to elaborate on what exactly those ratings mean in your system.  What is "Fair" rank, for example.
+
 # Ability Point Limits
 
 Be sure to allow enough ability points for the types of concepts you want to support.  There's nothing wrong with telling people to start off at "level 1" - MMOs and tabletop RPGs have been doing it for ages.  But "level 1" characters should have an appropriate "level 1" background.  It makes no sense to allow a Navy SEAL or superhero character and then nerf their skills.

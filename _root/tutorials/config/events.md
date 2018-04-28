@@ -1,6 +1,7 @@
 ---
-toc: ~config~ Configuring the Plugins
 title: Configuring the events system.
+tags:
+- config
 ---
 # Configuring the Events System
 

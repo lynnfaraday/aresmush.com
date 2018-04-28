@@ -1,6 +1,7 @@
 ---
-toc: ~config~ Configuring the Plugins
 title: Configuring the communication with AresCentral.
+tags:
+- config
 ---
 # AresCentral - Configuration
 

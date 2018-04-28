@@ -1,5 +1,6 @@
 ---
-toc: ~config~ Configuring the Plugins
+tags:
+- config
 title: Configuring the ranks system.
 ---
 # Configuring the Ranks System
@@ -34,15 +35,30 @@ There are types within a group - typically this would be for Officer/Enlisted ra
             ...
             Chief Petty Officer: false
 
-## Ranks Template
+## rank_style
 
-The default template for the ranks display (`military_ranks.erb`) shows a side-by-side listing of Officer and Enlisted ranks, suitable for a military game.
+There are two display styles available for the faction ranks.
 
-If your game is different, there's also a more generic ranks template (`ranks.erb`).  To use this one, modify the `ranks_template.rb` file's initialize method.  You'll see code like this:
+### military
 
-    # There are two built-in rank templates - a generic one and one that shows 
-    # officer/enlisted ranks side by side
-    super File.dirname(__FILE__) + "/military_ranks.erb"
-    #super File.dirname(__FILE__) + "/ranks.erb"
+The default style, 'military', shows a side-by-side listing of Officer and Enlisted ranks, suitable for a military game.
 
-Just un-comment the template you want to use, and comment out the other, then reload the ranks plugin.
+    Ranks for Navy
+    
+         Enlisted                           Officer
+    1    Crewman Apprentice                 Ensign
+    2    Crewman                            Lieutenant Jg
+
+### basic
+
+The basic style just shows the rank groups one after the other.  This is more useful when the ranks have no parallel structure and the groups are more distinct.
+
+    Ranks for Navy
+    
+    Enlisted
+    Crewman Apprentice
+    Crewman
+    
+    Officer
+    Ensign
+    Lieutenant Jg

@@ -1,6 +1,7 @@
 ---
-toc: ~config~ Configuring the Plugins
 title: Configuring the cookie system.
+tags:
+- config
 ---
 # Configuring the Cookie System
 

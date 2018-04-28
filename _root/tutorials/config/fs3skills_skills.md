@@ -1,5 +1,6 @@
 ---
-toc: ~config~ Configuring FS3 Skills
+tags:
+- config
 title: Configuring FS3 skills list.
 ---
 # Configuring FS3 - Skills List
@@ -7,7 +8,7 @@ title: Configuring FS3 skills list.
 To configure the FS3 Skills List:
 
 1. Select Admin -> Setup.
-2. Edit `fs3skills_action.yml`, `fs3skills_attrs.yml`, `fs3skills_bg.yml` and `fs3skills_langs.yml`.
+2. Edit `fs3skills_action.yml`, `fs3skills_attrs.yml`, `fs3skills_bg.yml`, `fs3skills_langs.yml` and `fs3skills_advantages.yml`.
 
 ## Before You Start
 
@@ -27,6 +28,10 @@ You can configure the list of Attributes, specifying a name and description for 
 This is the Attribute used by default when someone rolls a Background or Language skill and doesn't specify an Attribute.  For example, if you set this to 'Wits' then someone rolling Basketweaving will really be rolling 'Basketweaving+Wits'.
 
 > <i class="fa fa-exclamation-triangle"></i> **Note:** This only applies to Background and Language Skills.  Action Skills all specifiy their own linked Attribute.
+
+## attributes_blurb
+
+This is the instructional blurb used in the abilities screen and in chargen help.  It supports markdown text.
 
 ## Action Skills
 
@@ -48,6 +53,10 @@ You may optionally specify a list of specialties for a skill.
       - Doctor
       - Surgeon
 
+## action_skills_blurb
+
+This is the instructional blurb used in the abilities screen and in chargen help.  It supports markdown text.
+
 ## Languages
 
 You can configure the list of Langauges, specifying a name and description for each.
@@ -57,6 +66,10 @@ You can configure the list of Langauges, specifying a name and description for e
     - name: Gemenese
       desc: Dead language known by academics and religious scholars.
 
+### language_blurb
+
+This is the instructional blurb used in the abilities screen and in chargen help.  It supports markdown text.
+
 ### Starting Languages
 
 You can specify the languages that everyone should start the game Fluent at.  List one language per line, with dashes in front.  For example:
@@ -64,6 +77,23 @@ You can specify the languages that everyone should start the game Fluent at.  Li
     - Standard
 
 > <i class="fa fa-info-circle"></i> **Tip:** Make sure you allocate enough free language points in chargen to cover rating 3 (Fluent) in each starting language, otherwise the languages will count towards a character's Ability Point total.
+
+## Advantages
+
+Advantages are an optional part of the system.  You can use them for things that aren't skills, but that you want people to pay points for in chargen - rank, resources, powers, etc.   You can configure the list of Advantages, specifying a name and description for each.
+
+    - name: Resources
+      desc: Wealth and other tangible possessions.
+    - name: Rank
+      desc: Rank or social status.
+
+### use_advantages
+
+You can disable Advantages entirely by setting `use_advantages` to false.  This is the default setting.
+
+### advantages_blurb
+
+This is the instructional blurb used in the abilities screen and in chargen help.  It supports markdown text.
 
 ## Removing an Ability
 

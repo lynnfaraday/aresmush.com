@@ -1,6 +1,7 @@
 ---
-toc: ~config~ Configuring the Plugins
 title: Configuring channels.
+tags:
+- config
 ---
 # Configuring the Channel System
 

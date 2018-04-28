@@ -77,7 +77,7 @@ In all the tutorials thus far, we've never talked about `on_command` - it's alwa
 * Perform error checking.
 * If no errors, handle the command.
 
-It also provides useful utilities like variables for `enactor` and `enactor_room` and the [Arg Parsers](/tutorials/code/arg-parsing).
+It also provides useful utilities like variables for `enactor` and `enactor_room` and the [Arg Parsers](/tutorials/code/arg-parsers).
 
 To utilize the `CommandHandler` functionality, just include it in your command class and implement a `handle` method.  The rest of the methods are optional:
 

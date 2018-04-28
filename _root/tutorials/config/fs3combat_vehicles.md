@@ -1,5 +1,6 @@
 ---
-toc: ~config~ Configuring FS3 Combat
+tags:
+- config
 title: Configuring FS3 Combat vehicles and mounts.
 ---
 # Configuring FS3 Combat - Vehicles and Mounts

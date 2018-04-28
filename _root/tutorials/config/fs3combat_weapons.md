@@ -1,5 +1,6 @@
 ---
-toc: ~config~ Configuring FS3 Combat
+tags:
+- config
 title: Configuring FS3 Combat weapons.
 ---
 # Configuring FS3 Combat - Weapons

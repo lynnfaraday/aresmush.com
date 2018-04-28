@@ -1,6 +1,7 @@
 ---
-toc: ~config~ Configuring FS3 Combat
 title: Configuring FS3 NPC skills.
+tags:
+- config
 ---
 # Configuring FS3 Combat - NPC Skills
 
