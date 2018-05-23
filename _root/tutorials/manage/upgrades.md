@@ -22,11 +22,10 @@ Many version upgrades can be done while the game is still running.
 
 > <i class="fa fa-info-circle"></i> **Tip:** The version's release notes will advise you if a restart is required.  If so, follow the instructions in **Upgrade With a Restart** instead.
 
-1. Connect to the [server shell](/tutorials/install/server-shell) and change to the `aresmush` folder.
-2. Use git commands or the `bin/upgrade` script to commit any local changes and get the latest game code from GitHub.  If you see any CONFLICT notices from the upgrade, see Resolving Conflicts below.
-3. Type `bin/migrate` to perform any necessary database migrations.
-4. Go back to the MU client window and type `load all` to reload the code and configuration.
-5. Type `website/deploy` in-game to re-deploy the website.
+1. Type `upgrade` to commit any local changes and get the latest game code from GitHub.  If you see any CONFLICT notices from the upgrade, you'll need to edit the code on the server shell as explained in Resolving Conflicts below.
+2. Type `load all`  to reload the code and configuration.
+3. Type `migrate` to run any database updates.
+4. Type `website/deploy` to re-deploy the website.
 
 ## Upgrade With a Restart
 

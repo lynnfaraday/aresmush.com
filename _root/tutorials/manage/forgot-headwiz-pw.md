@@ -1,5 +1,5 @@
 ---
-title: Reset the Headwiz Password
+title: Reset the Master Admin Password
 description:
 layout: page
 tags: 
@@ -8,13 +8,13 @@ tags:
 - headwiz
 ---
 
-An admin can change anyone's password except Headwiz. If you forget your Headwiz password, there's a special tool to reset it. are a few ways to change it.
+An admin can change anyone's password except the master admin (named Headwiz by default). If you forget your Headwiz password, there's a special tool to reset it. are a few ways to change it.
 
 ## Shell Method
 
 Log into the server shell and change into the aresmush folder.  Run the following script with the desired new password:
 
-    bin/dbscript reset_headwiz_password,somenewpassword
+    bin/script reset_headwiz_password,somenewpassword
 
 ## Tinker Method
 

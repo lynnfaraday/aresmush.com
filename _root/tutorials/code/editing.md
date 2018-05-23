@@ -8,6 +8,8 @@ tags:
 
 Although you can use the [tinker](/tutorials/code/tinker) command for quick code tasks, the bulk of Ares code lives on the server, like the news and connect files in Penn/Tiny.  To change the code, you'll need to edit these code files.  There are many ways you can do this.  This article will cover a few.
 
+> <i class="fa fa-exclamation-triangle"></i> **Note:** No matter how you edit the code, you'll need the game to recognize your changes afterward.  See [Reloading Code](/tutorials/code/reload) for more information.
+
 ## FTP Upload
 
 A common way to edit the code is to get a copy on your local PC, modify it, and then upload it back to the game using FTP (File Transfer Protocol) software.  You can upload a batch of changes all at once, so players aren't stuck with code in an intermediate state.  

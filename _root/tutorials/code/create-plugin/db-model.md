@@ -1,39 +1,90 @@
 ---
-title: Create a Database Model
+title: Create a Database Field
 description:
 layout: create-plugin
 prevstep: help-file
-nextstep: cmd-handler
+nextstep: abilities-cmd
 tags: 
 - code
 - plugins
 - database
 ---
 
-We're going to need to save our traits to the database.  Since traits are a facet of a character, it makes the most sense to add them to the `Character` class.
+We'll need to save character abilities to the database, which entails some new database fields.   
 
-Database fields can take many forms - strings, numbers, lists, hashes, etc.  In this case, since traits are name:value pairs, it makes the most sense to store them in a hash.  Fields are strings unless otherwise specified.
+## Storing a Hash
 
-You define a database field using the `attribute` method in a database model class.  For example:
+The simplest approach would just be to create a single hash on the Character model and store all the ability data there, like so:
 
     class Character < Ohm::Model
+      attribute :cortex_abilities, :type => DataType::Hash, :default => {}
+    end
+
+To update someone's strength, you'd have to do something like this:
+
+    old_abilities = char.cortex_abilities
+    old_abilities['attributes']['strength'] = 'd6'
+    char.update(cortex_abilities: old_abilities)
+
+This works, but it's a little clunky.  You have to load and save _all_ abilities as a batch, even if you're just changing one.  And it's prone to typos.  If you do 'atributes' instead of 'attributes', you won't get an error message but the code will just not update the data properly.
+
+## Storing Models
+
+A better way is to use specialized database models.  The Cortex plugin define several model classes for this purpose. Let's look at one of them - CortexSkill - in detail.  
+
+### Model Definition
+
+First we have the class definition.  Inheriting from `Ohm::Model` is what makes it a database model, and including `ObjectModel` provides access to a number of useful standard Ares database utilities.
+
+    class CortexSkill < Ohm::Model
+      include ObjectModel
+    end
+
+### Model Attributes
+
+Next we have the model attributes - a name, step, specialties and the character the ability belongs to.  The `index :name` statement creates an index on the name field, which just helps the database look things up faster.
+
       attribute :name
+      attribute :die_step
+      reference :character, "AresMUSH::Character"
+      index :name
+
+It's expected that `die_step` will be a step like 'd2', 'd4', etc. rather than a numeric value.
+
+### Character Reference
+
+The `CortexSkill` class stores which character each ability belongs to, but we also want to be able to easily find all of a character's skills.  To do this, we add a reverse reference in the Character model.  Since a character can have multiple skills, this reference uses the `collection` type.
+
+    class Character
+        collection :cortex_skills, "AresMUSH::CortexSkill"
     end
 
-> <i class="fa fa-info-circle"></i> **Tip:** Ruby classes can be spread across multiple files.  This lets you define bits and pieces of the `Character` class across multiple plugins.
+This allows us to reference things both ways:
 
-Database models can be placed in any folder within the plugin folder, but traditionally they live in the `public` folder because they can be referenced by other plugins.
+    char = Character.find_one_by_name("Bob")
+    
+    # This gets us all of a character's skills
+    char.skills
+    skill = char.skills[0]
+    
+    # This gets us back to the character (Bob)
+    skill.character  
 
-## Try It
+### Saving Skills
 
-Create a file named `traits_char.rb` and put it in `aresmush/plugins/traits/public`.  Give it the following contents:
+To create a skill, we just need to create a new model object.
 
-    module AresMUSH
-      class Character
-        attribute :traits, :type => DataType::Hash, :default => {}
-      end
-    end
+    char = Character.find_one_by_name("Bob")
+    skill = CortexSkill.create(name: "Guns", die_step: 1, character: char)
 
-This defines an attribute named `traits` with a hash data type.  On new characters created **after** you define the field, it will be given a default value of an empty hash.  On any existing characters, it will be nil.
+> <i class="fa fa-info-circle"></i> **Tip:** This skill will automatically be added to Bob's skills collection; we don't need to do anything to make that happen.
 
-> <i class="fa fa-info-circle"></i> **Tip:** It's important to default hashes and arrays to empty values or you can get unexpected errors.  That's not necessary for strings and other data types, because the nil default is appropriate.
+To update a skill, first we have to find it.  There's a utility in `aresmush/plugins/cortex/helpers.rb` that can help us with that:
+
+    char = Character.find_one_by_name("Bob")
+    skill = Cortex.find_skill(char, "Guns")
+
+Once we have the skill model, we can update it or delete it:
+
+    skill.update(die_step: 'd4')
+    skill.destroy

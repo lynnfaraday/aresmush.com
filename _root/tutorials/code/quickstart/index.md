@@ -8,15 +8,19 @@ tags:
 - code-quickstart
 ---
 
-This tutorial will take you through a series of exercises to teach you Ares code.
+This tutorial will teach you the basics of Ares code.
+
+## What We'll Cover
+
+* Executing Ruby code using the `ruby` and `tinker` commands.
+* Emitting messages.
+* Parse command arguments.
+* Updating fields in the database.
+* A few other basic Ares coding concepts.
 
 ## What You'll Need
 
 The tutorial is interactive, so it works best when you have [coder privileges](/tutorials/manage/roles) on an actual Ares game.  You can also [install Ares locally](/tutorials/code/local-setup) so you have your own test game.  If all else fails, the exercises still explain key concepts and contain useful reference code even if you can't get the satisfaction of running it.
-
-## Conventions
-
-These tutorials assume that you're logged in with the game's master admin character (named Headwiz), but you can use any character with the `coder` role.
 
 ## Getting Help
 

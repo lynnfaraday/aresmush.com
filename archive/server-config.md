@@ -9,7 +9,7 @@ tags:
 - config
 ---
 
-This article helps you determine what configuration information to use when performing the [Basic Game Configuration](/tutorials/install/basic-config).
+This article helps you determine what configuration information to use when [Installing the Game](/tutorials/install/install-game).
 
 ## Database Host
 

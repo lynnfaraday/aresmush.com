@@ -1,42 +1,45 @@
 ---
-title: Create a Help File
+title: Create Help Files
 description:
 layout: create-plugin
-prevstep: config-file
 nextstep: db-model
+prevstep: config-file
 tags: 
 - code
 - plugins
 - help
 ---
 
-All commands need a help file.  It's useful to make the helpfile first because it lets you think about what the commands are actually supposed to do _before_ you code them.
+Our commands will need help files.  This is the same as in the [Adding Commands](/tutorials/code/add-cmd), only this time we're going to have multiple files and our own table of contents section for Cortex.  Notice we're also using one of the optional fields: `order`.  This controls the order that help topics are displayed within the table of contents section.
 
-Help files live in a `help\<language code>` folder under the plugin folder.  This supports having help files in multiple languages, based on the game's locale.
 
-> <i class="fa fa-info-circle"></i> **Tip:** "en" is the language code for English, so help files will typically be in the `help/en` folder.
-
-The name of the help file will be the topic name.  For instance, if we name the file `traits.md` then you can type `help traits`.
-
-Inside the help file, the first few lines are embedded YAML, where you can set various fields.  See [Help Files](/tutorials/code/help) for all the options.  We're only going to use the two basic ones here:
-
-* toc - Defines where the topic falls in the help table of contents.
-* summary - The summary text that shows up next to the topic in the help table of contents.
-
-## Try It
-
-Create a file named `traits.md` in the folder `aresmush/plugins/traits/help/en/`.  Give it the following contents:
+In `aresmush/plugins/cortex/help/en/cortex.md`:
 
     ---
-    toc: Character Creation
-    summary: Setting traits.
+    toc: Cortex
+    summary: The Cortex RPG system.
+    order: 1
     ---
-    # Traits
-    You can set descriptive traits on your character.  Each trait can have a name and a free-form description.
+    # Cortex System
     
-    `traits` - Show you own traits.
-    `trait/set <trait name>=<trait description>` - Set a trait.
+    This game uses a simplified implementation of the 
+    [Cortex System](http://www.drivethrurpg.com/product/58488/Cortex-Classic-System-Role-Playing-Game) used in 
+    the Firefly and Leverage RPGs.
 
-This will create an help topic `help traits` and place an entry for it in the "Character Creation" section of the help files.
+In `aresmush/plugins/cortex/help/en/cortex_abilities.md`:
 
-> <i class="fa fa-info-circle"></i> **Tip:** Help files use [Markdown Text](https://daringfireball.net/projects/markdown/syntax).  This lets you use formatting and hyperlinks that will show up nicely on the Web Portal and also in-game.  The code markers <pre>`traits`</pre> are used to highlight commands.
+    ---
+    toc: Cortex
+    summary: Setting your abilities.
+    ---
+    # Cortex Abilities
+    
+    The Cortex system has several different kinds of abilities, and there are different commands for each.
+    Ratings use dice values, so 'd2', 'd4', etc.
+    
+    `sheet` - View your character sheet.
+    `attribute <name>=<die_step>` - Sets an attribute.
+    ...
+
+
+There's also a cortex_rolls.md help file containing help text for rolling abilities.

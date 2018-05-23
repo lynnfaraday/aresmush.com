@@ -6,7 +6,20 @@ tags:
 - client
 ---
 
-To connect to AresMUSH (or any other MUSH), you'll need a MUSH client.  Basic features will work no matter which client you use, but there are two things that you will need to set up to get the most out of Ares' features:
+To connect to AresMUSH (or any other MUSH), you'll need a MUSH client.  There are dedicated apps you can install on your PC/Mac or mobile device, or you can use the game's built-in web client to play through the web browser.
+
+## Common Clients
+
+There are many MUSH clients around.  Popular MUSH clients include:
+
+* [Potato](http://www.potatomushclient.com/) (Windows/Linux - it's broken on Mac at the time of this writing)
+* [Atlantis](http://www.riverdark.net/atlantis/) (Mac) 
+* [MUSHClient](http://www.gammon.com.au/mushclient/mushclient.htm) (Windows)
+* [Duck Client](http://duckclient.com/) (Any Chrome browser - including Chromebook)
+
+## Setting Up Your Client
+
+Basic features will work no matter which client you use, but there are two things that you will need to set up to get the most out of Ares' features:
 
 * **Character Encoding** allows you to see characters with accents, alternate character sets (Russian, Chinese) and symbols.  Without this feature, if someone uses those characters you'll see a substitute character that looks like white squares or gibberish.  For the optimal Ares experience, you'll need to set up your client to use the **UTF-8** Unicode character set.  UTF-8 is backwards-compatible with ASCII, so you can safely make it your client's global default.
 

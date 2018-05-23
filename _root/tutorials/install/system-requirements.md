@@ -45,6 +45,6 @@ For the database, it will depend on the size of your game, but it's pretty insig
 
 ### Software Packages
 
-There are several software packages that Ares requires.  If you use the [Digital Ocean](/tutorials/install/digital-ocean) environment, the official install scripts will set up everything you need.  Otherwise you'll have to set them up on your own.  
+There are several software packages that Ares requires.  If you use the [Digital Ocean](/tutorials/install/digital-ocean) environment or a comparable VPS that runs Ubuntu, the official install scripts will set up everything you need.  Otherwise you'll have to set them up on your own.  
 
 [Setting up Ares On Your PC/Mac](/tutorials/code/local-setup) may help.  You can also use the install scripts as a guide.  There are two install scripts: `setup_server` and `install`.  Find the files corresponding to your AresMUSH version in [GitHub](https://github.com/AresMUSH/aresmush/tree/master/bin).

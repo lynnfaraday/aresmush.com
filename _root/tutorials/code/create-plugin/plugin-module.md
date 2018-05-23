@@ -13,23 +13,21 @@ All plugins reside within their own Ruby Module, within the main AresMUSH module
 
 The module must include two special methods - one to help the game find the plugin files, and another to tell it the plugin's command shortcuts.
 
-## Try It
-
-Create a file `traits.rb` in the `aresmush/plugins/traits` folder with the following code:
+The create plugin script creates a file named `aresmush/plugins/cortex/cortex.rb`.  It will have a module like the following with a few methods inside it, including these:
 
     module AresMUSH
-      module Traits
+      module Cortex
         def self.plugin_dir
           File.dirname(__FILE__)
         end
         
        def self.shortcuts
-          Global.read_config("traits", "shortcuts")
+          Global.read_config("cortex", "shortcuts")
         end
       end
     end
 
-We'll add more code to this module later, but this will do for now.
+We'll add more code to this module later.  For now it's enough just to know it exists.
 
 
 

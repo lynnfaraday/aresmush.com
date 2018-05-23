@@ -59,7 +59,7 @@ Sometimes you'll get in a jam when you've shut down the game and it won't restar
 When this happens, you can use a database script to help you.
 
 1. Edit the file `aresmush/install/scripts/remove_db_field.rb` to add back the field temporarily and clear it out. The code is basically the same as what you would have used in the tinker example above.  There's some sample code in the file you can modify.
-2. Run the script using `bin/dbscript remove_db_field`.
+2. Run the script using `bin/script remove_db_field`.
 3. Restart the game.
 
 ## Errors After Upgrades

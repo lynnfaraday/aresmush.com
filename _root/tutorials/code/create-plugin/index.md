@@ -8,17 +8,19 @@ tags:
 - plugins
 ---
 
-This tutorial will show you how to create a brand new plugin.  Our example will be a Traits plugin - a simple way of setting descriptive stats as you might find on a comic game.
+This is the third in the series of basic Ares coding tutorials.  The first tutorial dealt with simple code snippets.  The second showed how to add stand-alone commands.  This tutorial shows you how to design an entire plugin.   
+
+## What We'll Cover
+
+In this tutorial, we'll examine the design of the Cortex plugin, a simplified implementation of the [Cortex System](http://www.drivethrurpg.com/product/58488/Cortex-Classic-System-Role-Playing-Game) used in the Firefly and Leverage RPGs.
+
+You can find the full code for the Cortex plugin in the [Ares Extras](/tutorials/code/extras) repository.
+
+> <i class="fa fa-exclamation-triangle"></i> **Note:** You don't need to do this tutorial if all you want to do is **use** the Cortex plugin.  Instead, follow the instructions in [Ares Extras](/tutorials/code/extras) to install the plugin.  This article is for coders who want to understand how the plugin was created.
 
 ## What You'll Need
 
-You'll need access to the game's code.  It may be helpful to review the options for [changing Ares code](/tutorials/code/overview) before you begin, since this tutorial goes beyond simple tinkering.
-
-If all else fails, the exercises still explain key concepts and contain useful reference code even if you can't get the satisfaction of running it.
-
-## Conventions
-
-These tutorials assume that you're logged in with the game's master admin character (named Headwiz), but you can use any character with the `coder` role.
+Unlike the other two, this is not a "Try It!" tutorial.  It's more of a walk-through showing you how the Cortex plugin was built.  
 
 ## Getting Help
 

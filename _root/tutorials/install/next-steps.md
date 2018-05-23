@@ -2,7 +2,7 @@
 title: Next Steps
 description:
 layout: install-ares
-prevstep: basic-config
+prevstep: install-game
 tags: 
 - install
 - customization

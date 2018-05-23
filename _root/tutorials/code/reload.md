@@ -8,14 +8,25 @@ tags:
 - reload
 ---
 
-Changes to the Ares game engine require a [restart](/tutorials/manage/shutdown), but the plugins can be reloaded while the game is running.  The load command lets you reload the code for a specific plugin.
+Changes to the Ares game engine require a [restart](/tutorials/manage/shutdown), but the plugins can be reloaded while the game is running.  
+
+## How to Reload
+
+If you've only changed **plugins**, you can reload each plugin while the game is still running by using the `load <plugin name>` command in-game. 
+
+If all you've changed are **configuration files**, the `load config` command will read them.   The config is automatically reloaded when using the Web Portal config editor.
+
+If you've changed the **Web Portal**, you'll need to re-deploy it through the Admin -> Manage menu on the Web Portal or the `website/deploy` command in-game. 
+
+If you've changed the **engine**, you'll need to actually [shutdown and restart](/tutorials/manage/shutdown) the game before the changes will take effect.   You probably shouldn't be changing the engine, though.
+
+## How Code is Loaded
+
+The load command lets you reload the code for a specific plugin.
 
     > load fs3skills
     %% Plugin 'fs3skills' loading.  Please wait...
     %% Plugin 'fs3skills' (including config, help and locale) reloaded.
-
-
-## How Code is Loaded
 
 To understand the reload feature (and its limitations), it helps to understand a bit about how Ruby loads code.
 
@@ -84,7 +95,3 @@ Normally this doesn't do any harm.  Having an extra, unused command laying aroun
 ### Killing the Manager
 
 The Manage plugin is the one that provides all the code necessary to load other code.  Be extra cautious when making code changes to the Manage plugin.  If anything goes haywire when loading it, you'll find yourself without a Manage plugin ... which means you won't be able to load any other code!   The only way to recover from that is to [shutdown](/tutorials/manage/shutdown) and restart the game.
-
-## Further Reading
-
-In case you're interested in some more nitty-gritty examples of how code reloading can go awry, check out this [great article](http://blog.rkh.im/code-reloading) by Konstantin Haase.

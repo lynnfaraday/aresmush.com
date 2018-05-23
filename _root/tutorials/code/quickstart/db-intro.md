@@ -3,16 +3,16 @@ title: Database Queries and Updates
 description:
 layout: code-quickstart
 prevstep: localization-intro
-nextstep: portal-intro
+nextstep: next-steps
 tags: 
 - code
 - code-quickstart
 - database
 ---
 
-Most commands will need to read data from or save data to the database.  Ares uses an off-the-shelf database tool called Redis.  The [Ohm](http://ohm.keyvalue.org/) database library lets you interact with the database directly from Ruby code.
+Most commands will need to read data from or save data to the database.  Ares uses an off-the-shelf database tool called Redis, but you won't interact with the database directly.  There are no SQL queries to write or anything like that.  The [Ohm](http://ohm.keyvalue.org/) database library lets you interact with the database using Ruby code.
 
-Diving deep into the database is beyond the Quickstart Tutorial.  There's a separate  [database tutorial](/tutorials/code/database) for you in the Advanced Coding section when you're ready.
+Diving deep into the database is beyond the Quickstart Tutorial.  This is just a quick overview.  There's a separate  [database tutorial](/tutorials/code/database) for you in the Advanced Coding section if you want to learn more.
 
 ## Models and Fields
 

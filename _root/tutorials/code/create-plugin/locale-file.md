@@ -2,7 +2,7 @@
 title: Create a Locale File
 description:
 layout: create-plugin
-prevstep: cmd-handler
+prevstep: roll-cmd
 nextstep: cmd-dispatch
 tags: 
 - code
@@ -10,19 +10,13 @@ tags:
 - localization
 ---
 
-In the previous step, we created command that utilized some translations:  `t('traits.traits_title')` and `t('traits.trait_set')`.  Now we need to create a locale file to define real strings for those translations.
+All of our commands have been using translation keys, such as `t('cortex.ability_set')`, so we'll need to create a locale file to convert those keys to actual string values.
 
 Locale files need to live in the `locales` folder under your plugin folder.  They need to be named `locale_<language code>.yml`.  'en' is the language code for English.
 
-Locale files use YAML format just like configuration files.   Each plugin has its own top-level locale section.
-
-## Try It
-
-Create a file `local_en.yml` and place it in `aresmush/plugins/traits/locales`.  Give it the following contents:
+Locale files use YAML format just like configuration files.   Each plugin has its own top-level locale section.  For example:
 
     en: 
-      traits:
-        traits_title: "Traits"
-        trait_set: "Trait set!"
-
-This defines the two translations we need for our commands.
+      cortex:
+        attributes_title: "Attributes"
+        ability_set: "Ability set!"

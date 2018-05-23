@@ -12,27 +12,27 @@ In this part of the MUSH 101 Tutorial, we'll discuss the mechanics of connecting
 
 # Getting the App
 
-To connect to a MUSH, you'll need a MUSH client - an app that lets you access MUSH games, just like a web browser lets you access a website.   There are many MUSH clients out there.  [Potato](http://www.potatomushclient.com/) is a popular one that supports all the basic features you'll need.  It runs on Windows, Mac and Linux.
+To connect to a MUSH, you'll need a MUSH client - an app that lets you access MUSH games, just like a web browser lets you access a website.   
 
-Some other popular MUSH clients include [Atlantis](http://www.riverdark.net/atlantis/) for Mac and [MUSHClient](http://www.gammon.com.au/mushclient/mushclient.htm) for Windows.
+There are many MUSH clients around.  Popular MUSH clients include:
+
+* [Potato](http://www.potatomushclient.com/) (Windows/Linux - it's broken on Mac at the time of this writing)
+* [Atlantis](http://www.riverdark.net/atlantis/) (Mac) 
+* [MUSHClient](http://www.gammon.com.au/mushclient/mushclient.htm) (Windows)
+* [Duck Client](http://duckclient.com/) (Any Chrome browser - including Chromebook)
 
 Download and install a MUSH Client app to continue with this tutorial.
 
 # Finding a Game
 
-When it comes to traditional video games, you can visit your local game store or website and browse the titles until you find one you like.  Not so with MUSHes.  There is no authoritative list of games out there, and a lot of advertising is done through word of mouth.
+When it comes to traditional video games, you can visit your local game store or website and browse the titles until you find one you like.  Not so with MUSHes.  A lot of advertising is done through word of mouth.
 
-So what's a new player to do?
+There are a couple of MUSH directories:
 
-Here are a number of MUSHes in different genres.  Hopefully one of them might appeal to you.  These are established games with sizeable player bases, and I have friends who recommend each of them.   
+* [AresCentral Game Directory](http://arescentral.aresmush.com/)
+* [Evennia Game Index](http://www.evennia.com/)
+* [MudConnector[http://www.mudconnect.com/] lists some MUSHes, but is often out of date.
 
-* [Battlestar: Unification](http://bsgunificationmush.wikidot.com/) - Battlestar Galactica
-* [Arx: After the Reckoning](http://play.arxmush.org/) - Original Fantasy
-
-If you don't see anything that grabs you in the list above, you have a couple of options:
-
-* Try doing web searches for your favorite themes (like "Star Trek MUSH").  
-* Visit one of the games above (or [AresCentral](/arescentral)) and see if there are any advertisements for other games.
 
 # Connecting to a Game
 

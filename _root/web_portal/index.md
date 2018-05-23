@@ -63,7 +63,7 @@ Web portal character profiles draw their information directly from the game, so 
 
 ## Community Features
 
-The Web Portal helps you connect with the game's community even when you can't get to your MUSH client.  You can read and respond to forum posts, read and send mail, access chat channels, and view upcoming events.  The events calendar provides an iCal feed so you can see game events in your favorite calendar application.
+The Web Portal helps you connect with the game's community even when you can't get to your MUSH client.  You can read and respond to forum posts, read and send mail, access chat channels, and view upcoming events.  The events calendar provides an iCal feed so you can see game events on your phone or in your favorite calendar application.
 
 {{#pretty-image}}/assets/media/web_portal/forum.png{{/pretty-image}}
 

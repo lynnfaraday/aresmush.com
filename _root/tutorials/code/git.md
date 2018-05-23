@@ -7,9 +7,7 @@ tags:
 - git
 ---
 
-If you intend to do advanced coding (like swapping out FS3 for another skills system, or making major changes to the built-in templates), I highly recommend you use version control.
-
-AresMUSH uses [GitHub](http://www.github.com) for its version control, so using that for your own game's code enables easy synchronization and support.  Some benefits of using GitHub:
+If you intend to do advanced coding (like swapping out FS3 for another skills system, or making major changes to the built-in templates), I highly recommend you use version control.  Some benefits of using version control:
 
 * It can serve as a backup location for your custom code and configuration.
 * It helps you coordinate among multiple coders.
@@ -18,6 +16,8 @@ AresMUSH uses [GitHub](http://www.github.com) for its version control, so using 
 * It helps me to help you if you later need assistance.
 
 If you're not familiar with how version control works, here's a [great tutorial](https://betterexplained.com/articles/a-visual-guide-to-version-control/).
+
+AresMUSH uses [GitHub](http://www.github.com) for its version control, so using that for your own game's code enables easy synchronization and support.  
 
 ## Creating a Fork
 
@@ -35,7 +35,7 @@ The first step in using GitHub for your own game code is to create your own semi
 
 ## Making the Game Use the Fork
 
-If you create your fork before you install the code, you can use specify it when you [install the game](/tutorials/install/basic-config).
+If you create your fork before you install the code, you can use specify it when you [install the game](/tutorials/install/install-game).
 
     ./install <game clone URL> <Web Portal clone URL>
 

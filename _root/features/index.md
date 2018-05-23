@@ -26,4 +26,6 @@ Some games will need advanced customizations or theme-specific code. Traditional
 
 Learn more at [Ares for Coders](/features/ares-for-coders).
 
+## Ares Compared To Other Servers
+
 You can also see a detailed comparison of Ares and other MU servers in [Server Roundup](/features/server-roundup).

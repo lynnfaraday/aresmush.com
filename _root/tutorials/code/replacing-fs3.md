@@ -10,7 +10,13 @@ tags:
 
 Although many identify [FS3](/fs3) and AresMUSH as being a conjoined pair, they really aren't.  FS3 is a plugin, the same as any other, and you can create any skill system you want for Ares.   
 
-Here are some tips if you want to replace FS3 with a different system:
+The article provides tips if you want to replace FS3 with a different system.
+
+## Before You Begin
+
+The truth is that skills systems are complex and tedious to implement.  There's a reason why FS3 is so popular even on games it's not a natural fit for.  Be prepared for some hard work.
+
+It is recommended that you've done the all three of the [Ares coding tutorials](/tutorials/code) and have dabbled a bit in some simpler projects before you try to tackle a skills system.  You wouldn't try to implement a skills system in MUSHCode on your first day, and you shouldn't do it with Ares either.  Don't try to run before you can walk.
 
 ## Disabling FS3
 
@@ -24,7 +30,7 @@ The Chargen plugin is designed to be generic.  You'll just need to customize the
 
 ## Creating Your Own System
 
-The real work, of course, is in creating a plugin for your new skill system to replace FS3.  The [Creating a Plugin Tutorial](/tutorials/code/create-plugin) is a good starting point.  It walks you through the creating of a simple 'traits' plugin (similar to what one might find on a comic book game).  From there you can build up to something more advanced.
+The real work, of course, is in creating a plugin for your new skill system to replace FS3.  The [Creating a Plugin Tutorial](/tutorials/code/create-plugin) is a good starting point.  It walks you through the creation of the Cortex plugin.  Since many skill systems share similar features, the Cortex and FS3 examples will hopefully get you started making your own.
 
 Feel free to [ask for help](/feedback).  I want Ares to enable many kinds of games, not just FS3 ones.
 

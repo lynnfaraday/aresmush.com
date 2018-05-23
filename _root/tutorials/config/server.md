@@ -7,7 +7,9 @@ title: Configuring the server.
 
 Your server host and port information are set up during installation.  If they ever change, you'll need to update the configuration.
 
-For more info on server configuration options, see [Basic Configuration](/tutorials/install/basic-config).
+For more info on server configuration options, see [Installing the Game](/tutorials/install/install-game).
+
+> <i class="fa fa-exclamation-triangle"></i> **Note:**  If you change the Engine API port and are using the API proxy feature, you will need to update your web server configuration.  See [Website Configuration](/tutorials/config/website) for details.
 
 To configure the server:
 

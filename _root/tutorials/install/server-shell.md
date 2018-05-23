@@ -3,7 +3,7 @@ title: Connecting to the Server Shell
 description:
 layout: install-ares
 prevstep: getting-a-hostname
-nextstep: install-game
+nextstep: setup-server
 tags: 
 - install
 - hosting

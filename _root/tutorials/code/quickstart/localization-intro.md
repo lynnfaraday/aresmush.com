@@ -16,10 +16,6 @@ In our examples so far, we've used raw text in all of our messages, like: `clien
 
 What's up with that `t()` stuff?
 
-Ares is designed for non-English games too.  All of the game code can be translated into other languages simply by swapping in different translation files, called a **Locale**.
+Ares is designed for non-English games too.  All of the game code can be translated into other languages simply by swapping in different translation files, called a **Locale**.  The `t()` function (short for 'translate') takes a key like "describe.description_set" and turns it into the appropriate text (like "Description set!" or "Bescreibung gesetzt!") depending on the game's language.
 
-Diving deep into how locales work is beyond the Quickstart Tutorial.  There's a separate article on [Localization](/tutorials/code/templates) for you in the Advanced Coding section when you're ready.
-
-The important thing to know is that the translate method `t()` can take a key like "describe.description.set" and translate that into a string based on the current language.  In English it's "Description set!" but in German it's "Beschreibung gesetzt!"   The game will pick the appropriate text based on the game's language setting.
-
-You probably don't need to worry about localizing the strings in your own custom code, but it's still good to be aware of what's going on behind the scenes.
+You don't need to worry about localizing the strings in your own custom code.  This is just a FYI so you understand what's going on when you see `t()` all over the place.  There's a separate article on [Localization](/tutorials/code/localization) for you in the Advanced Coding section if you ever want to know more about translations.

@@ -79,6 +79,7 @@ A variety of other settings exist, but the defaults will work well for most game
 * [Configuring the Cookie System](/tutorials/config/cookies)
 * [Configuring Chargen](/tutorials/config/chargen)
 * [Configuring Date and Time Formats](/tutorials/config/date)
+* [Configuring the Description System](/tutorials/config/describe)
 * [Configuring the Events System](/tutorials/config/events)
 * [Configuring the Idle System](/tutorials/config/idle)
 * [Configuring the Jobs System](/tutorials/config/jobs)
@@ -95,6 +96,7 @@ A variety of other settings exist, but the defaults will work well for most game
 * [Configuring the Status System](/tutorials/config/status)
 * [Configuring the Weather System](/tutorials/config/weather)
 * [Configuring the Who/Where System](/tutorials/config/who)
+* [Configuring the Wiki](/tutorials/config/wiki)
 
 ### Uncommon Config
 
@@ -103,6 +105,7 @@ These configuration options will probably not need to be changed unless your ser
 * [Configuring the Database](/tutorials/config/db)
 * [Configuring the Server Info](/tutorials/config/server)
 * [Configuring AresCentral](/tutorials/config/arescentral)
+* [Using the API Proxy](/tutorials/config/api-proxy))
 
 ## General Config Topics
 

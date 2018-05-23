@@ -2,7 +2,7 @@
 title: Try Ruby
 description:
 layout: code-quickstart
-nextstep: tinker-intro
+nextstep: hello-mush
 prevstep: 
 tags: 
 - code

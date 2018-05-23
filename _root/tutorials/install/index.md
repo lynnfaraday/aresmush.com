@@ -21,6 +21,6 @@ If at any point you run into trouble, see [Getting Help](/feedback).
     * [Setting up Ares On Your PC/Mac](/tutorials/code/local-setup)
 * [Getting a Host Name](/tutorials/install/getting-a-hostname)
 * [Connecting to the Server Shell](/tutorials/install/server-shell)
+* [Setup the Server](/tutorials/install/setup-server)
 * [Install the Game](/tutorials/install/install-game)
-* [Configure the Game](/tutorials/install/basic-config)
 * [Next Steps](/tutorials/install/next-steps)

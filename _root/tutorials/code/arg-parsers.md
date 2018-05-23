@@ -8,7 +8,7 @@ tags:
 - commands
 ---
 
-Arguments coming out of the `Command` class are raw strings.  Ares provides a variety of argument parsing utilities to handle command args that are intended to be interpreted as numbers, lists, or even complex sequences like "name=subject/message".
+An important part of [command handling](/tutorials/code/commands) is parsing arguments.  Arguments coming out of the `Command` class are raw strings.  Ares provides a variety of argument parsing utilities to handle command args that are intended to be interpreted as numbers, lists, or even complex sequences like "name=subject/message".
 
 ## Arg Converters
 

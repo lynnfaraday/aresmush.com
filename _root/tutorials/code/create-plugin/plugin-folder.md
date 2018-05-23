@@ -15,8 +15,19 @@ Plugins use a convention-based structure.  That means the game engine is going t
 
 Your plugin must live in a folder under `aresmush/plugins/<your plugin name>`.  
 
-> **Important Convention:** The folder name must be one word, all lowercase.
+> **Important Convention:** The folder name must be one word, all lowercase, containing only letters and numbers.
 
-## Try It
+We can use the create plugin script to create our plugin directory structure:
 
-Create a folder for our traits plugin:  `aresmush/plugins/traits`
+    bin/script create_plugin,cortex
+
+This will create the following folder structure:
+
+    aresmush/plugins/cortex
+        cortex.rb
+        help
+        locales
+            locale_en.yml
+        commands
+
+You may notice that some plugins also have other directories, as explained in [Plugins](/tutorials/code/plugins), but these are the basic ones.
