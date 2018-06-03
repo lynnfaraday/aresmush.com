@@ -12,7 +12,7 @@ AresMUSH is ready to go out of the box with a default configuration based on a B
 
 ## Configuration Files
 
-The easiest way to configure your game is through the game's [Web Portal](/tutorials/web-portal).  Log in as an admin user and visit  `Admin -> Setup`.
+The easiest way to configure your game is through the game's [Web Portal](/web-portal).  Log in as an admin user and visit  `Admin -> Setup`.
 
 You'll see a list of configuration files with settings you can change.
 

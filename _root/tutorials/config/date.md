@@ -19,7 +19,7 @@ The game supports several different types of formats, each of which may be confi
 * `short_date_format` - This is used when you just want a short date, like 1/2/2016.  
 * `long_date_format` - This combines date and time into a longer format, like 27 March 2016, 5:45pm.
 * `time_format` - This is just the time by itself, like 5:45pm.
-* `date_and_time_entry_format` - This is used for parsing date/time strings (e.g. when inputting event start times like 12/25/2016 2:45pm).
+* `date_and_time_entry_format` - This is used for parsing date/time strings (e.g. when inputting event start times like 12/25/2016 2:45pm).   It is suggested that you only use numeric month values here.  Trying to parse month names can be problematic.
 
 Here are some common examples:
 

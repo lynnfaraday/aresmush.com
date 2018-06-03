@@ -10,7 +10,7 @@ tags:
 - help
 ---
 
-Our commands will need help files.  This is the same as in the [Adding Commands](/tutorials/code/add-cmd), only this time we're going to have multiple files and our own table of contents section for Cortex.  Notice we're also using one of the optional fields: `order`.  This controls the order that help topics are displayed within the table of contents section.
+Our commands will need help files.  This is the same as in the [Adding a Command](/tutorials/code/add-cmd), only this time we're going to have multiple files and our own table of contents section for Cortex.  Notice we're also using one of the optional fields: `order`.  This controls the order that help topics are displayed within the table of contents section.
 
 
 In `aresmush/plugins/cortex/help/en/cortex.md`:

@@ -6,10 +6,6 @@ layout: page
 
 These articles will teach you how to code for AresMUSH.   
 
-Read the Intrudction topics first, as they will introduce key concepts you need to know.  Then it's suggested that you do the three main tutorials.  They're designed to be done in order, as they build off each other.
-
-After you've completed those tutorials, there are a number of advanced topics you can explore.  Try doing them little by little as you need them, because otherwise it may be an overhwelming amount of information.
-
 {{>tutorial_warning}}
 
 ## Introduction
@@ -17,43 +13,45 @@ After you've completed those tutorials, there are a number of advanced topics yo
 * [Ares Architecture](/tutorials/code/architecture) - All the moving parts that make up an Ares game.
 * [Coding for Ares](/tutorials/code/overview) - General overview of how coding for Ares works.
 
-## Quickstart Tutorial
+## Basic Coding Tutorials
 
-This tutorial will introduce you to the key Ares code concepts.
+There are three tutorials designed to introduce you to Ares coding step by step.  It's recommended that you do these in order, since they all build on each other.
 
-* [Quickstart Tutorial](/tutorials/code/quickstart)
+### Tutorial #1 - Quickstart
 
-<button data-toggle="collapse" data-target="#quickstart" class="btn btn-info">Show Exercises</button>
+Learn the basic Ares functions and code concepts.
+
+<button data-toggle="collapse" data-target="#quickstart" class="btn btn-info">Show Tutorial</button>
 
 <div id="quickstart" class="collapse">
 {{>quickstart_tutorial}}
 </div>
 
-## Adding Commands Tutorial
+### Tutorial #2 - Adding a Command
 
-This tutorial will teach you how to add your own commands.
+Learn how to add a command (a simple 'goals' command to set character goals.)
 
-* [Adding Commands Tutorial](/tutorials/code/add-cmd)
-
-<button data-toggle="collapse" data-target="#add-cmd" class="btn btn-info">Show Exercises</button>
+<button data-toggle="collapse" data-target="#add-cmd" class="btn btn-info">Show Tutorial</button>
 
 <div id="add-cmd" class="collapse">
-{{>quickstart_tutorial}}
+{{>add_command_tutorial}}
 </div>
 
-## Creating a Plugin Tutorial (Cortex Skills System)
+### Tutorial #3 - Creating a Plugin (Cortex Skills System)
 
-This tutorial will walk you through creating your very own plugin from start to finish.  The example uses the Cortex skills system.
+Learn the anatomy of a more complex system (aka a plugin) from start to finish.  The example uses the Cortex skills system.
 
-* [Creating a Plugin Tutorial](/tutorials/code/create-plugin)
-
-<button data-toggle="collapse" data-target="#create-plugin" class="btn btn-info">Show Exercises</button>
+<button data-toggle="collapse" data-target="#create-plugin" class="btn btn-info">Show Tutorial</button>
 
 <div id="create-plugin" class="collapse">
 {{>create_plugin_tutorial}}
 </div>
 
 ## Other Coding Topics
+
+Once you've completed the initial tutorials, there are a wealth of other topics available for reference. 
+
+> <i class="fa fa-info-circle"></i> **Tip:** It's suggested that you refer to these as you need them rather than trying to learn them all at once.  There's a lot of information here and it can be a bit overwhelming.
 
 ### General
 

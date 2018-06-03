@@ -8,7 +8,7 @@ tags:
 - plugins
 ---
 
-This is the third in the series of basic Ares coding tutorials.  The first tutorial dealt with simple code snippets.  The second showed how to add stand-alone commands.  This tutorial shows you how to design an entire plugin.   
+This is the third in the series of basic Ares coding tutorials.
 
 ## What We'll Cover
 
@@ -26,6 +26,6 @@ Unlike the other two, this is not a "Try It!" tutorial.  It's more of a walk-thr
 
 If at any point you run into trouble, you can [Get Help](/feedback).
 
-## Exercises
+## Tutorial
 
 {{>create_plugin_tutorial}}

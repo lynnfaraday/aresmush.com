@@ -13,7 +13,7 @@ While Ares attempts to recreate the PennMUSH/TinyMUX experience on the whole, a 
 
 Some MUSHes go wild with exit aliases.  An exit named "Front Door" would be accessible via "F", "FR", "DOOR", "FRONT", and who knows what else.
 
-Ares only allows you to have a single exit name, which is shown in room descs next to the destination room name.  For example: 
+Ares only allows you to have a single exit name and a single exit alias.  The name is shown in room descs next to the destination room name.  For example: 
 
     [R] Restaurant
     [O] Town Square

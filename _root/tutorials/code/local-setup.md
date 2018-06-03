@@ -49,11 +49,13 @@ You'll need code from both the [AresMUSH](https://github.com/AresMUSH/aresmush) 
 
 > <i class="fa fa-exclamation-triangle"></i> **Note:**   The game engine will work fine by itself, but the web portal is a pretty integral part of the game.  You should really install both.
 
+> <i class="fa fa-exclamation-triangle"></i> **Note:**   In development mode, the web portal and game code must be in parallel directories.  For example:  `/home/youruser/code/aresmush` and `/home/youruser/code/ares-webportal`.
+
 ## Setting up the Game
 
 Run the `bin/configure` script in the aresmush folder to set up the game's basic settings.  Use 'localhost' for the host name.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** This is a unix-style shell script, and will only work on Linux/MacOSX operating systems.  On Windows, you can copy/paste the commands from the file to run them manually.
+> <i class="fa fa-exclamation-triangle"></i> **Note:** This and other scripts in the `bin` directory are  unix-style shell scripts, and will only work on Linux/MacOSX operating systems.  On Windows, you can copy/paste the commands from the file one by one into a command prompt to run them manually.
 
 ## Setting up the Database
 
@@ -61,7 +63,7 @@ Running `bin/wipedb` will initialize the databse to its default settings.
 
 ## Running the Game
 
-When you're debugging locally, it's easier to run the game in debug mode.  
+When you're debugging locally, you'll usually want to run the game in debug mode.  
 
 To start the game server in debug mode, run `bin/devstart` from the aresmush folder.
 

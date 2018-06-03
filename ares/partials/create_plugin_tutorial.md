@@ -1,4 +1,4 @@
-* [Overview](/tutorials/code/create-plugin/)
+* [Start Tutorial](/tutorials/code/create-plugin/)
 * [Create a Plugin Folder](/tutorials/code/create-plugin/plugin-folder)
 * [Create a Plugin Module](/tutorials/code/create-plugin/plugin-module)
 * [Create a Config File](/tutorials/code/create-plugin/config-file)

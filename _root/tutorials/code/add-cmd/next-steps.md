@@ -5,7 +5,7 @@ layout: add-command
 prevstep: removing-cmd
 ---
 
-Congratulations! You've completed the Adding Commands tutorial.
+Congratulations! You've completed the Adding a Command tutorial.
 
 This was the second of three basic tutorials introducing Ares code.  The next is [Creating a Plugin](/tutorials/code/create-plugin).
 

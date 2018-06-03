@@ -1,4 +1,4 @@
-* [Overview](/tutorials/code/add-cmd/)
+* [Start Tutorial](/tutorials/code/add-cmd/)
 * [Editing Code](/tutorials/code/add-cmd/edit-code)
 * [Create a Help File](/tutorials/code/add-cmd/help-file)
 * [Create a Database Field](/tutorials/code/add-cmd/db-field)

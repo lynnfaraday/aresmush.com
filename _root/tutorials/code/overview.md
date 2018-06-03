@@ -10,10 +10,42 @@ The Ares coding experience is different from what you might be familiar with fro
 
 ## What Ares Code is Like
 
-The Ares game server code is written in Ruby.  Ruby is a mainstream language, so you'll find tons of tutorials, reference guides and community support sites.  It's far easier to find someone with Ruby experience than to find someone who knows MUSH softcode.
+The Ares game server code is written in Ruby.  Ruby is a mainstream language, so you'll find tons of tutorials, reference guides and community support sites.
 
-Many people find Ares code more readable and easier to learn than softcode.   Here is the code for the `cookie` command, which gives a cookie to a list of names.
+You can run quick one-off tasks straight from your MU client, but anything more advanced will require you to change the code server-side and then reload it.  You can change and reload code while the game is running, so it's not like MUSH hardcode.
 
+Many people find Ares code more readable and easier to learn than softcode.  The following example shows a snippet of code from the AFK command (`afk <message>`), comparing traditional MUSH softcode and Ares code.
+
+> <i class="fa fa-info-circle"></i> **Tip:** Don't worry if you don't understand all of this right now.  This site has a number of tutorials that will walk you through Ares code step by step.  This is just a small piece to show you what it looks like.
+
+
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMUEx" aria-expanded="false" aria-controls="collapseExample">
+    Show MUSH softcode sample.
+  </button>
+
+<div class="collapse" id="collapseMUEx">
+  <div class="card card-block">
+
+Normally MUSHcode would be all smushed together in one line, but let's assume we're using a code prettifier to break it apart:
+
+      <pre>
+
+    @@ Update the afk message and flag on the character executing the command (%#)
+    
+    [set(%#,afk_message: %0)]
+    [set(%#,is_afk: 1)]
+    
+    @@ Save their last IC location so they can go back with the 'onstage' command later.
+
+    [u(#493/fun_update_last_ic_location, %#)]
+    
+    @@ Tell the room they went AFK. 
+    
+    [remit(%l, %N has gone afk: %0.)]
+    
+    </pre>
+  </div>
+</div>
 
   <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
     Show Ares code sample.
@@ -21,73 +53,57 @@ Many people find Ares code more readable and easier to learn than softcode.   He
 
 <div class="collapse" id="collapseExample">
   <div class="card card-block">
+
+Ares code is inherently done on multiple lines:
+
       <pre>
-class CookieCmd
-  # Include basic command handling functionality
-  include CommandHandler
-  
-  # Parse the command arguments and store them into the 'names' variable.
-  attr_accessor :names
-  def parse_args
+ 
+    # Store the command arguments into a variable
 
-    # If they left off the list of players, default to an empty list.
-    if (!cmd.args)
-      self.names = []
+    self.message = cmd.args
+    
+    # Update the afk message and flag on the character executing the command (enactor)
 
-    # Otherwise separate the names into a list.
-    else
-      self.names = cmd.args.split(" ")
-    end
-  end
+    enactor.update(afk_message: self.message)
+    enactor.update(is_afk: true)
+    
+    # Save their last IC location so they can go back with the 'onstage' command later.
 
-  # Exceute the command.
-  def handle
-  
-    # Loop through each name in the list
-    self.names.each do |name|
+    Status.update_last_ic_location(char)
+    
+    # Tell the room they went AFK.  
+    
+    enactor.room.emit_ooc "#{enactor.name} has gone AFK: #{self.message}."
 
-      # Look up the name to find its corresponding character object.
-      result = ClassTargetFinder.find(name, Character, enactor)
-  
-      # If the name wasn't found, emit an error.
-      if (!result.found?)
-        client.emit_failure(t('cookies.invalid_recipient', :name => name))
-        return
-      end
-  
-      # Make sure the name wasn't your own.
-      if (recipient == giver)
-        client.emit_failure t('cookies.cant_cookie_yourself')
-        return
-      end
-    
-      # See if there's already a cookie award this week.
-      cookies_from_giver = recipient.cookies_received.select { |c| c.giver == giver }
-      if (!cookies_from_giver.empty?)
-        client.emit_failure t('cookies.cookie_already_given', :name => recipient.name)
-        return
-      end
-    
-      # Create the cookie award database entry.
-      CookieAward.create(giver: giver, recipient: recipient)
-    
-      # Tell the giver that the cookie has been given
-      client.emit_success t('cookies.cookie_given', :name => recipient.name)
-  
-      # If the other character is logged in, tell them that they got a cookie.
-      Global.client_monitor.emit_ooc_if_logged_in(recipient,  t('cookies.cookie_received', :name => giver.name))
-    
-      # Log the award to the game log file for tracking purposes.
-      Global.logger.info "#{giver.name} gave #{recipient.name} a cookie."
-    end
-  end
-end
     </pre>
   </div>
 </div>
 
-> <i class="fa fa-info-circle"></i> **Tip:** The Web Portal code is written in Javascript, not Ruby, but it's designed to be generic and configurable.   Most games won't need to change the Web Portal.
+A lot of learning Ares code boils down to knowing what functions are available and how to call them.  That's what the basic Ares coding tutorials will teach you.
 
-## Changing the Code
+## Triggering Commands
 
-You can run quick one-off tasks straight from your MU client through [Tinkering](/tutorials/code/tinker), but anything more advanced will require you to change the code server-side and then reload it.  You can change and reload code while the game is running, so it's not like MUSH hardcode.  The main difference is in how you physically edit the code.
+The scaffolding around how commands get triggered is also different.  In MUSH Softcode, commands are placed on objects, which in turn are placed in rooms.  To make a command global, you put an object into the master room.  Commands are triggered by pattern matching:
+
+    &CMD-Cookie Cookie Command Object=$+cookie *:(cookie code goes here)
+
+In Ares, all commands are global unless you put code inside them restricting them to only work under certain conditions (like if the character is in a particular room or belongs to a particular faction).  Commands don't live on objects, but rather in Ruby classes.
+
+    class CookieCmdHandler
+       def handle
+         (cookie code goes here)
+       end
+    end
+
+There's a dispatcher for each plugin that sends the command to the appropriate class - typically based on the command's base name (aka root) and switch.
+
+    module Cookies
+      def get_cmd_handler(cmd, client)
+        if (cmd.root_is?("cookie"))
+          if (cmd.switch_is?("here"))
+            return CookieHereCmdHandler
+          else
+            return CookieCmdHandler
+        end
+      end
+    end
