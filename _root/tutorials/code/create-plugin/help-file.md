@@ -2,7 +2,8 @@
 title: Create Help Files
 description:
 layout: tutorial
-tutorialName: Creaing a Plugin
+createPluginTutorial: true
+tutorialName: Creating a Plugin
 tutorialIndex: tutorials/code/create-plugin
 nextstep: db-model
 prevstep: config-file

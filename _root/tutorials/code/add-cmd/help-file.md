@@ -5,6 +5,7 @@ layout: tutorial
 prevstep: edit-code
 nextstep: db-field
 tutorialIndex: tutorials/code/add-cmd
+addCmdTutorial: true
 tutorialName: Adding a Command
 tags: 
 - code

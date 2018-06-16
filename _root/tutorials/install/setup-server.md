@@ -2,6 +2,7 @@
 title: Setup the Server
 description:
 layout: tutorial
+installTutorial: true
 tutorialName: Installing AresMUSH
 tutorialIndex: tutorials/install
 prevstep: server-shell

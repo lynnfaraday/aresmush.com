@@ -2,9 +2,11 @@
 title: Installing Ares
 description:
 layout: tutorial
+installTutorial: true
 tutorialName: Installing AresMUSH
 tutorialIndex: tutorials/install
 nextstep: choosing-a-host
+installSidebar: true
 tags: 
 - install
 ---
@@ -16,13 +18,4 @@ If at any point you run into trouble, see [Getting Help](/feedback).
 {{>tutorial_warning}}
 
 
-* [Choosing a Host](/tutorials/install/choosing-a-host)
-    * [Digital Ocean Easy Mode](/tutorials/install/easy-mode)
-    * [Digital Ocean Self-Install](/tutorials/install/digital-ocean)
-    * [System Requirements](/tutorials/install/system-requirements)
-    * [Setting up Ares On Your PC/Mac](/tutorials/code/local-setup)
-* [Getting a Host Name](/tutorials/install/getting-a-hostname)
-* [Connecting to the Server Shell](/tutorials/install/server-shell)
-* [Setup the Server](/tutorials/install/setup-server)
-* [Install the Game](/tutorials/install/install-game)
-* [Next Steps](/tutorials/install/next-steps)
+{{> install_tutorial}}

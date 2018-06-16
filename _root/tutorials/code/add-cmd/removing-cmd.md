@@ -5,6 +5,7 @@ layout: tutorial
 prevstep: putting-it-together
 nextstep: next-steps
 tutorialIndex: tutorials/code/add-cmd
+addCmdTutorial: true
 tutorialName: Adding a Command
 tags: 
 - code

@@ -4,6 +4,7 @@ description:
 layout: tutorial
 nextstep: edit-code
 tutorialIndex: tutorials/code/add-cmd
+addCmdTutorial: true
 tutorialName: Adding a Command
 tags: 
 - code

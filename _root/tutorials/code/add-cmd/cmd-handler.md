@@ -5,6 +5,7 @@ layout: tutorial
 prevstep: db-field
 nextstep: cmd-dispatch
 tutorialIndex: tutorials/code/add-cmd
+addCmdTutorial: true
 tutorialName: Adding a Command
 tags: 
 - code

@@ -2,6 +2,7 @@
 title: Digital Ocean Easy Mode
 description:
 layout: tutorial
+installTutorial: true
 tutorialName: Installing AresMUSH
 tutorialIndex: tutorials/install
 prevstep: choosing-a-host

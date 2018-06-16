@@ -2,6 +2,7 @@
 title: MUSH 101 - Connecting and Communicating
 description:
 layout: tutorial
+mush101Tutorial: true
 tutorialName: MUSH 101
 tutorialIndex: mush-101
 prevstep: game-of-words

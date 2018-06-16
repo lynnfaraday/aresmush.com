@@ -5,6 +5,7 @@ layout: tutorial
 prevstep: cmd-dispatch
 nextstep: removing-cmd
 tutorialIndex: tutorials/code/add-cmd
+addCmdTutorial: true
 tutorialName: Adding a Command
 tags: 
 - code

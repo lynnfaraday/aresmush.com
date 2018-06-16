@@ -2,6 +2,7 @@
 title: Database Queries and Updates
 description:
 layout: tutorial
+quickstartTutorial: true
 tutorialName: Code Quickstart
 tutorialIndex: tutorials/code/quickstart
 prevstep: localization-intro

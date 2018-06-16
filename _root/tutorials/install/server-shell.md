@@ -2,6 +2,7 @@
 title: Connecting to the Server Shell
 description:
 layout: tutorial
+installTutorial: true
 tutorialName: Installing AresMUSH
 tutorialIndex: tutorials/install
 prevstep: getting-a-hostname

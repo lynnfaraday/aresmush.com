@@ -2,6 +2,7 @@
 title: Tinkering
 description:
 layout: tutorial
+quickstartTutorial: true
 tutorialName: Code Quickstart
 tutorialIndex: tutorials/code/quickstart
 nextstep: command-handlers

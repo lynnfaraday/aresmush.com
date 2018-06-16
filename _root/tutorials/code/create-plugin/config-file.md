@@ -2,7 +2,8 @@
 title: Create a Config File
 description:
 layout: tutorial
-tutorialName: Creaing a Plugin
+createPluginTutorial: true
+tutorialName: Creating a Plugin
 tutorialIndex: tutorials/code/create-plugin
 prevstep: plugin-module
 nextstep: help-file

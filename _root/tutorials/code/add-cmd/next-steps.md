@@ -4,6 +4,7 @@ description:
 layout: tutorial
 prevstep: removing-cmd
 tutorialIndex: tutorials/code/add-cmd
+addCmdTutorial: true
 tutorialName: Adding a Command
 ---
 

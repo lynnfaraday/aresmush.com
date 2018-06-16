@@ -2,6 +2,7 @@
 title: Localization
 description:
 layout: tutorial
+quickstartTutorial: true
 tutorialName: Code Quickstart
 tutorialIndex: tutorials/code/quickstart
 prevstep: config-intro

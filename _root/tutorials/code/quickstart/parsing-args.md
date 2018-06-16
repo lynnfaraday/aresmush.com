@@ -2,6 +2,7 @@
 title: Parsing Args
 description:
 layout: tutorial
+quickstartTutorial: true
 tutorialName: Code Quickstart
 tutorialIndex: tutorials/code/quickstart
 prevstep: command-args

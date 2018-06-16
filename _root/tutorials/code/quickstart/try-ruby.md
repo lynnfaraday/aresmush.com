@@ -2,6 +2,7 @@
 title: Try Ruby
 description:
 layout: tutorial
+quickstartTutorial: true
 tutorialName: Code Quickstart
 tutorialIndex: tutorials/code/quickstart
 nextstep: hello-mush

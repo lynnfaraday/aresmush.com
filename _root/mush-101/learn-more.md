@@ -3,6 +3,7 @@ title: Learn More
 description:
 layout: tutorial
 tutorialName: MUSH 101
+mush101Tutorial: true
 tutorialIndex: mush-101
 prevstep: mu-glossary
 ---

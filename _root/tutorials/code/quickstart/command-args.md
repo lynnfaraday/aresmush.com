@@ -2,6 +2,7 @@
 title: Command Switches and Args
 description:
 layout: tutorial
+quickstartTutorial: true
 tutorialName: Code Quickstart
 tutorialIndex: tutorials/code/quickstart
 prevstep: templates-intro

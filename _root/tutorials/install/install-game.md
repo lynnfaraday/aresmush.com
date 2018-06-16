@@ -2,6 +2,7 @@
 title: Install the Game
 description:
 layout: tutorial
+installTutorial: true
 tutorialName: Installing AresMUSH
 tutorialIndex: tutorials/install
 prevstep: setup-server

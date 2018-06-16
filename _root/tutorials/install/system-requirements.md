@@ -2,6 +2,7 @@
 title: System Requirements
 description:
 layout: tutorial
+installTutorial: true
 tutorialName: Installing AresMUSH
 tutorialIndex: tutorials/install
 prevstep: choosing-a-host

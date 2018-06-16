@@ -2,6 +2,7 @@
 title: Getting Started With MongoLab
 description:
 layout: tutorial
+installTutorial: true
 tutorialName: Installing AresMUSH
 tutorialIndex: tutorials/install
 prevstep: install-db

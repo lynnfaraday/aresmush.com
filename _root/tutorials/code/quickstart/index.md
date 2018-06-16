@@ -2,6 +2,7 @@
 title: Code Quickstart Tutorial
 description:
 layout: tutorial
+quickstartTutorial: true
 tutorialName: Code Quickstart
 tutorialIndex: tutorials/code/quickstart
 nextstep: try-ruby

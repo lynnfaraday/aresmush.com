@@ -2,7 +2,8 @@
 title: Sheet Command
 description:
 layout: tutorial
-tutorialName: Creaing a Plugin
+createPluginTutorial: true
+tutorialName: Creating a Plugin
 tutorialIndex: tutorials/code/create-plugin
 prevstep: set-ability-cmd
 nextstep: app-review-cmd

@@ -692,3 +692,16 @@ li {
     color: white;
     background-color: black;
 }
+
+.gsc-input-box table {
+    margin: 0px;
+}
+
+
+@media (max-width:800px)  { 
+
+    .fs3-shortcut {
+        display: block;
+    }
+
+}

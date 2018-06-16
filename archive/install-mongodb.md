@@ -2,6 +2,7 @@
 title: Install MongoDB Locally
 description:
 layout: tutorial
+installTutorial: true
 tutorialName: Installing AresMUSH
 tutorialIndex: tutorials/install
 prevstep: install-db

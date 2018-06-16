@@ -5,6 +5,7 @@ layout: tutorial
 prevstep: help-file
 nextstep: cmd-handler
 tutorialIndex: tutorials/code/add-cmd
+addCmdTutorial: true
 tutorialName: Adding a Command
 tags: 
 - code
