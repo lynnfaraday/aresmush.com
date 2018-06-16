@@ -15,6 +15,8 @@ If the game is ever stopped, you'll need to restart it.
 
 If the game is already running and you want to *restart* it, see [Shutting Down the Game](/tutorials/shutdown) for information on how to stop the game first.
 
+> <i class="fa fa-info-circle"></i> **Tip:** Always wait about 10 seconds or so between shutting the game down and restarting it.  This ensures that everything has a chance to shut down fully and cleanly.
+
 To ensure the game automatically restarts when the server is rebooted, see [Auto-Restart After Server Reboot](/tutorials/manage/restart-after-reboot).
 
 > Tip:  You can also run `bin/devstart` if you want to start it in debug mode, so you can see log messages 'live' on the console.  In debug mode, the game will stop running if you hit CONTROL-C or close down your connection, so it's only good for short debug sessions.   You must start the Web Portal separately in debug mode using `bin/devportal`.

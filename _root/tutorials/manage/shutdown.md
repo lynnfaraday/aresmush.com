@@ -20,6 +20,8 @@ If that doesn't work, you can:
 
 Once the game is shut down, see [Starting the Game](/tutorials/manage/start) to restart it.
 
+> <i class="fa fa-info-circle"></i> **Tip:** Always wait about 10 seconds or so between shutting the game down and restarting it.  This ensures that everything has a chance to shut down fully and cleanly.
+
 ## Hard Kill
 
 As a last resort, if none of the above steps work, you can kill the server process.  

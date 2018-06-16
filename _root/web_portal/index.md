@@ -9,6 +9,8 @@ tags:
 
 AresMUSH features a fully-integrated **Web Portal** that allows you to interact with the game from a web browser.  Far from just a telnet window embedded in the browser, the Web Portal offers a rich experience and can fully replace (and enhance!) traditional game wikis.  Here are just a few of the features the Web Portal provides.
 
+{{#pretty-image}}/assets/media/web_portal/webportal.png{{/pretty-image}}
+
 ## Character Creation
 
 Through the Web Portal, you can create your character with a few clicks of the mouse.  The web chargen provides feedback for common issues as you go, and easy links to all the information you'll need.

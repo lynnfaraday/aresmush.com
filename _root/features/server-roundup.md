@@ -96,6 +96,7 @@ Several servers have community contributions for skill systems.  This list only 
 |---- |
 |[FS3, 3rd Edition](/fs3/fs3-3) |AresMUSH ||
 |[FS3, 2nd Edition](http://lynnfaraday.github.io/MUSH/) |PennMUSH |No longer in active development. |
+|Cortex |AresMUSH |An old, unsupported version exists for Penn/Tiny. |
 |Dahan's Star Wars Sagas |PennMUSH, RhostMUSH |Probably also works on TinyMUX. |
 |[Dahan's Star Wars / WEG D6 System](http://www.mushcode.com/File/Dahans-D6-Skills) |PennMUSH |Probably also works on TinyMUX and RhostMUSH.|
 |[Thenomain's Chronicles of Darkness (WoD)](https://github.com/thenomain/GMCCG/) |TinyMUX |Probably also works on PennMUSH and RhostMUSH. |

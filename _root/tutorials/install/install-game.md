@@ -59,7 +59,7 @@ AresMUSH is stored in GitHub, a popular software version control system.  Someti
 
 ### Ports
 
-Whereas the old MUSH servers you might be useful have only one port (mush.somewhere.com port 1234) Ares actually uses several.  On a VPS you can use any port number you want, as long as it isn't being used by something else.
+Whereas the old MUSH servers you might be useful have only one port (mush.somewhere.com port 1234) Ares actually uses several.  You can use any port that isn't already in use.  On a VPS server, ports greater than **1024** are typically open.
 
 The **Telnet Port** is the general one that regular MU clients connect to.  (default 4201)
 

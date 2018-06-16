@@ -47,3 +47,14 @@ Some of the text data coming back from the game is going to be blocks of ansi-fo
 </pre>
 
 Three braces are important because it's already got HTML in it.
+
+
+## Title Helper
+
+The template also needs to set the page title, which is shown in the browser titlebar and bookmarks.  It uses the title helper for this. The title helper can accept either a plain string or a controller property (such as the model).  For example:
+
+<pre>
+    &#x7b;&#x7b;title 'Events'&#x7d;&#x7d;  -- plain string
+    &#x7b;&#x7b;title model.heading&#x7d;&#x7d;  -- model property
+    &#x7b;&#x7b;title pageTitle&#x7d;&#x7d; -- custom property that you can define in the controller
+</pre>

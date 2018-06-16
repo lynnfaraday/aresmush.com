@@ -28,18 +28,6 @@ Many routes have a dynamic part of their URL, such as an object ID.  The model c
 
 The GameApi service lets you communicate with the game.  See [Web Portal Game Api](/tutorials/code/web-game-api) for more information.
 
-## Browser Title
-
-The route also sets the browser title, which is shown in the browser titlebar and bookmarks.  For example:
-
-    titleToken: 'Events'
-
-Many routes use a piece of the model in their browser title:
-
-    titleToken: function(model) {
-        return model.name;
-    }
-
 ## Router
 
 All routes must be defined in the Ember `Router` class.  You must specify whether the router accepts parameters as part of its URL or not.  For example:

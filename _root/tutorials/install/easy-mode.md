@@ -53,13 +53,13 @@ I will transfer a Digital Ocean snapshot image to your account. This image has e
 
 Hostnames are linked to IP addresses, so you can't fully set them up until you have cloned a droplet from the snapshot.  
 
-If you're using an aresmush.com hostname, simply [contact Faraday](/feedback) with your droplet's IP address (visible on the 'Droplets' screen in your Digital Ocean account).  
+If you're using an aresmush.com hostname, simply [contact me](/feedback) with your droplet's IP address (visible on the 'Droplets' screen in your Digital Ocean account).  
 
 If you're using your own custom host name, you'll need to set up the DNS through your domain provider.
 
 After the hostname is ready, you will need to reboot the server.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** The hostname may take an hour or more to be recognized.  You game will not work until the hostname is valid.
+> <i class="fa fa-exclamation-triangle"></i> **Note:** The hostname may take up to 24 hours to be recognized.  You game will not work until the hostname is valid.
 
 1. Connect to the [server shell](/tutorials/install/server-shell).
 2. Verify that the hostname is recognized by typing `nslookup <your host name>` (e.g. nslookup mygame.aresmush.com).  The "Non-authoritative answer" address should match your game's IP address.

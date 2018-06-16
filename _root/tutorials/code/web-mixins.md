@@ -17,7 +17,7 @@ All Routes extend one of the route authentication mixins to make sure the charac
 
 * `DefaultRoute` is for routes that are allowed even if you're not logged in.
 * `AuthenticatedRoute` is for routes that require you to be logged in.
-* `AdminRoute` is for routes that require you to be logged in with an admin character.
+* `RestrictedRoute` is for routes that require you to be logged in with an admin or coder character.
 * `UnauthenticatedRouteMixin` is for routes that require you to **not** be logged in.  This one has a slightly different name than the others because it comes from another code library.
 
 For example:
