@@ -1,7 +1,9 @@
 ---
 title: Try Ruby
 description:
-layout: code-quickstart
+layout: tutorial
+tutorialName: Code Quickstart
+tutorialIndex: tutorials/code/quickstart
 nextstep: hello-mush
 prevstep: 
 tags: 

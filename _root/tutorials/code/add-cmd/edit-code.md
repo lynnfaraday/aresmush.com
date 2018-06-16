@@ -1,8 +1,10 @@
 ---
 title: Editing the Code
 description:
-layout: add-command
+layout: tutorial
 nextstep: help-file
+tutorialIndex: tutorials/code/add-cmd
+tutorialName: Adding a Command
 tags: 
 - code
 - plugins

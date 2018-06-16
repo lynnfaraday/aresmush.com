@@ -1,7 +1,9 @@
 ---
 title: Templates
 description:
-layout: code-quickstart
+layout: tutorial
+tutorialName: Code Quickstart
+tutorialIndex: tutorials/code/quickstart
 prevstep: emits
 nextstep: command-args
 tags: 

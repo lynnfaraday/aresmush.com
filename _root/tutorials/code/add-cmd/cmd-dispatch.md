@@ -1,9 +1,11 @@
 ---
 title: Dispatching
 description:
-layout: add-command
+layout: tutorial
 prevstep: cmd-handler
 nextstep: putting-it-together
+tutorialIndex: tutorials/code/add-cmd
+tutorialName: Adding a Command
 tags: 
 - code
 - plugins

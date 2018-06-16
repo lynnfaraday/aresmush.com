@@ -1,7 +1,9 @@
 ---
 title: Getting a Host Name
 description:
-layout: install-ares
+layout: tutorial
+tutorialName: Installing AresMUSH
+tutorialIndex: tutorials/install
 prevstep: choosing-a-host
 nextstep: server-shell
 tags: 

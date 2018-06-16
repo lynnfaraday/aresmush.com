@@ -1,7 +1,9 @@
 ---
 title: Set Ability Command
 description:
-layout: create-plugin
+layout: tutorial
+tutorialName: Creaing a Plugin
+tutorialIndex: tutorials/code/create-plugin
 prevstep: abilities-cmd
 nextstep: sheet-cmd
 tags: 

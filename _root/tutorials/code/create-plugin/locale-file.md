@@ -1,7 +1,9 @@
 ---
 title: Create a Locale File
 description:
-layout: create-plugin
+layout: tutorial
+tutorialName: Creaing a Plugin
+tutorialIndex: tutorials/code/create-plugin
 prevstep: roll-cmd
 nextstep: cmd-dispatch
 tags: 

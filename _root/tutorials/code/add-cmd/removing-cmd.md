@@ -1,9 +1,11 @@
 ---
 title: Removing the Commands
 description:
-layout: add-command
+layout: tutorial
 prevstep: putting-it-together
 nextstep: next-steps
+tutorialIndex: tutorials/code/add-cmd
+tutorialName: Adding a Command
 tags: 
 - code
 - plugins

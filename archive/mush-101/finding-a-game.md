@@ -1,7 +1,9 @@
 ---
 title: MUSH 101 - Finding a Game
 description:
-layout: mush-101
+layout: tutorial
+tutorialName: MUSH 101
+tutorialIndex: mush-101
 prevstep: connecting-and-commo
 nextstep: joining-the-cast
 tags: 

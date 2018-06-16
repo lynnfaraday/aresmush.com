@@ -1,7 +1,9 @@
 ---
 title: Next Steps
 description:
-layout: install-ares
+layout: tutorial
+tutorialName: Installing AresMUSH
+tutorialIndex: tutorials/install
 prevstep: install-game
 tags: 
 - install

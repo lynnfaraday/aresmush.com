@@ -1,7 +1,9 @@
 ---
 title: Install the Game
 description:
-layout: install-ares
+layout: tutorial
+tutorialName: Installing AresMUSH
+tutorialIndex: tutorials/install
 prevstep: setup-server
 nextstep: next-steps
 tags: 

@@ -1,7 +1,9 @@
 ---
 title: MUSH 101 - A Game of Words
 description:
-layout: mush-101
+layout: tutorial
+tutorialName: MUSH 101
+tutorialIndex: mush-101
 nextstep: connecting-and-commo
 tags: 
 - storytelling

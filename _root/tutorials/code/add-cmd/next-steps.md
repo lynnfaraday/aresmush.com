@@ -1,8 +1,10 @@
 ---
 title: Next Steps
 description:
-layout: add-command
+layout: tutorial
 prevstep: removing-cmd
+tutorialIndex: tutorials/code/add-cmd
+tutorialName: Adding a Command
 ---
 
 Congratulations! You've completed the Adding a Command tutorial.

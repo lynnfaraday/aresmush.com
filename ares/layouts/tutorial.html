@@ -5,19 +5,22 @@ layout : page
     {{{ content }}}
 
 <div class="tutorial-nav">
-    <p>This article is part of the <a href="/tutorials/code/create-plugin">Create Plugin</a> tutorial.</p>
+    <p>This article is part of the <a href="/{{page.tutorialIndex}}">{{page.tutorialName}}</a> tutorial.</p>
     
     <div class="pagination-block">
         <ul>
             {{# page.prevstep }}
-            <li><a href="/tutorials/code/create-plugin/{{page.prevstep}}"> &larr; Previous</a></li>
+            <li><a href="/{{page.tutorialIndex}}/{{page.prevstep}}"> &larr; Previous</a></li>
             {{/ page.prevstep}}
             {{^ page.prevstep }}
             <li class="link-disabled"><a>&larr; Previous</a></li>
             {{/ page.prevstep }}
             
+            <li><a href="/{{page.tutorialIndex}}">Back to Start</a> </li>
+            
+        
             {{# page.nextstep }}
-            <li><a href="/tutorials/code/create-plugin/{{page.nextstep}}">Next &rarr; </a></li>
+            <li><a href="/{{page.tutorialIndex}}/{{page.nextstep}}">Next &rarr; </a></li>
             {{/ page.nextstep }}
             {{^ page.nextstep }}
             <li class="link-disabled"><a>Next &rarr;</a></li>

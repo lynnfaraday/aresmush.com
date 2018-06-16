@@ -1,7 +1,9 @@
 ---
 title: Hello MUSH
 description:
-layout: code-quickstart
+layout: tutorial
+tutorialName: Code Quickstart
+tutorialIndex: tutorials/code/quickstart
 nextstep: tinker-intro
 prevstep: try-ruby
 tags: 

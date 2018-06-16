@@ -1,9 +1,11 @@
 ---
 title: Putting It All Together
 description:
-layout: add-command
+layout: tutorial
 prevstep: cmd-dispatch
 nextstep: removing-cmd
+tutorialIndex: tutorials/code/add-cmd
+tutorialName: Adding a Command
 tags: 
 - code
 - plugins

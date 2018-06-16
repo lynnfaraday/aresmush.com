@@ -1,7 +1,9 @@
 ---
 title: Command Errors
 description:
-layout: code-quickstart
+layout: tutorial
+tutorialName: Code Quickstart
+tutorialIndex: tutorials/code/quickstart
 prevstep: parsing-args
 nextstep: config-intro
 tags: 

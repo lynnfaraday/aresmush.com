@@ -1,7 +1,9 @@
 ---
 title: Roll Command
 description:
-layout: create-plugin
+layout: tutorial
+tutorialName: Creaing a Plugin
+tutorialIndex: tutorials/code/create-plugin
 prevstep: sheet-cmd
 nextstep: locale-file
 tags: 

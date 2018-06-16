@@ -1,7 +1,9 @@
 ---
 title: Dispatching
 description:
-layout: create-plugin
+layout: tutorial
+tutorialName: Creaing a Plugin
+tutorialIndex: tutorials/code/create-plugin
 prevstep: locale-file
 nextstep: next-steps
 tags: 

@@ -1,9 +1,11 @@
 ---
 title: Create a Command Handler
 description:
-layout: add-command
+layout: tutorial
 prevstep: db-field
 nextstep: cmd-dispatch
+tutorialIndex: tutorials/code/add-cmd
+tutorialName: Adding a Command
 tags: 
 - code
 - plugins

@@ -1,7 +1,9 @@
 ---
 title: Command Handlers
 description:
-layout: code-quickstart
+layout: tutorial
+tutorialName: Code Quickstart
+tutorialIndex: tutorials/code/quickstart
 prevstep: hello-mush
 nextstep: emits
 tags: 

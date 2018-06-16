@@ -1,7 +1,9 @@
 ---
 title: Web Portal
 description:
-layout: code-quickstart
+layout: tutorial
+tutorialName: Code Quickstart
+tutorialIndex: tutorials/code/quickstart
 prevstep: db-intro
 nextstep: next-steps
 tags: 

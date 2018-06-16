@@ -1,7 +1,9 @@
 ---
 title: Getting Started With MongoLab
 description:
-layout: install-ares
+layout: tutorial
+tutorialName: Installing AresMUSH
+tutorialIndex: tutorials/install
 prevstep: install-db
 nextstep: install-game
 tags: 

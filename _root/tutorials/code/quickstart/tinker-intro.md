@@ -1,7 +1,9 @@
 ---
 title: Tinkering
 description:
-layout: code-quickstart
+layout: tutorial
+tutorialName: Code Quickstart
+tutorialIndex: tutorials/code/quickstart
 nextstep: command-handlers
 prevstep: hello-mush
 tags: 

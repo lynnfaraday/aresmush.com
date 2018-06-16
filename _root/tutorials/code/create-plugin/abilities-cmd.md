@@ -1,7 +1,9 @@
 ---
 title: List Abilities Command
 description:
-layout: create-plugin
+layout: tutorial
+tutorialName: Creaing a Plugin
+tutorialIndex: tutorials/code/create-plugin
 prevstep: db-model
 nextstep: set-ability-cmd
 tags: 

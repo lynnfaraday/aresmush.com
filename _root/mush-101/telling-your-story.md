@@ -1,7 +1,9 @@
 ---
 title: MUSH 101 - Telling Your Story
 description:
-layout: mush-101
+layout: tutorial
+tutorialName: MUSH 101
+tutorialIndex: mush-101
 prevstep: connecting-and-commo
 nextstep: mu-glossary
 tags: 

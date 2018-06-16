@@ -1,7 +1,9 @@
 ---
 title: Installing Ares
 description:
-layout: install-ares
+layout: tutorial
+tutorialName: Installing AresMUSH
+tutorialIndex: tutorials/install
 nextstep: choosing-a-host
 tags: 
 - install

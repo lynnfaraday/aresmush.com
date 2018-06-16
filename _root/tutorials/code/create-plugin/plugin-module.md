@@ -1,7 +1,9 @@
 ---
 title: Create a Plugin Module
 description:
-layout: create-plugin
+layout: tutorial
+tutorialName: Creaing a Plugin
+tutorialIndex: tutorials/code/create-plugin
 prevstep: plugin-folder
 nextstep: config-file
 tags: 

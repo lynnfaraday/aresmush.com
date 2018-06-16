@@ -1,7 +1,9 @@
 ---
 title: Test the Game
 description:
-layout: install-ares
+layout: tutorial
+tutorialName: Installing AresMUSH
+tutorialIndex: tutorials/install
 prevstep: init-db
 nextstep: run-game
 tags: 

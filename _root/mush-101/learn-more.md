@@ -1,7 +1,9 @@
 ---
 title: Learn More
 description:
-layout: mush-101
+layout: tutorial
+tutorialName: MUSH 101
+tutorialIndex: mush-101
 prevstep: mu-glossary
 ---
 

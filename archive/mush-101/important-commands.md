@@ -1,7 +1,9 @@
 ---
 title: MUSH 101 - Important Commands
 description:
-layout: mush-101
+layout: tutorial
+tutorialName: MUSH 101
+tutorialIndex: mush-101
 prevstep: telling-your-story
 nextstep: mu-glossary
 tags: 

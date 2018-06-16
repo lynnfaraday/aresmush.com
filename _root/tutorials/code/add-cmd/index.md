@@ -1,8 +1,10 @@
 ---
 title: Adding a Command
 description:
-layout: add-command
+layout: tutorial
 nextstep: edit-code
+tutorialIndex: tutorials/code/add-cmd
+tutorialName: Adding a Command
 tags: 
 - code
 - cortex

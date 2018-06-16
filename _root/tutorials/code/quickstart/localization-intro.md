@@ -1,7 +1,9 @@
 ---
 title: Localization
 description:
-layout: code-quickstart
+layout: tutorial
+tutorialName: Code Quickstart
+tutorialIndex: tutorials/code/quickstart
 prevstep: config-intro
 nextstep: db-intro
 tags: 

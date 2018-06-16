@@ -1,7 +1,9 @@
 ---
 title: Install the Database
 description:
-layout: install-ares
+layout: tutorial
+tutorialName: Installing AresMUSH
+tutorialIndex: tutorials/install
 prevstep: getting-a-hostname
 nextstep: install-game
 tags: 

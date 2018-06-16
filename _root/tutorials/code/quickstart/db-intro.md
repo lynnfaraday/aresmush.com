@@ -1,7 +1,9 @@
 ---
 title: Database Queries and Updates
 description:
-layout: code-quickstart
+layout: tutorial
+tutorialName: Code Quickstart
+tutorialIndex: tutorials/code/quickstart
 prevstep: localization-intro
 nextstep: next-steps
 tags: 

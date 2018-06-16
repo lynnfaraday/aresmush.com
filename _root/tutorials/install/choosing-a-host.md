@@ -1,7 +1,9 @@
 ---
 title: Choosing a Host
 description:
-layout: install-ares
+layout: tutorial
+tutorialName: Installing AresMUSH
+tutorialIndex: tutorials/install
 nextstep: digital-ocean
 tags: 
 - install

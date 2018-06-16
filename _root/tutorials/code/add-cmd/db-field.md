@@ -1,9 +1,11 @@
 ---
 title: Create a Database Field
 description:
-layout: add-command
+layout: tutorial
 prevstep: help-file
 nextstep: cmd-handler
+tutorialIndex: tutorials/code/add-cmd
+tutorialName: Adding a Command
 tags: 
 - code
 - plugins

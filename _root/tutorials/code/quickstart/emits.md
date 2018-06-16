@@ -1,7 +1,9 @@
 ---
 title: Emits
 description:
-layout: code-quickstart
+layout: tutorial
+tutorialName: Code Quickstart
+tutorialIndex: tutorials/code/quickstart
 prevstep: command-handlers
 nextstep: templates-intro
 tags: 
