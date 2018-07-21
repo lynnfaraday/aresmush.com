@@ -631,9 +631,11 @@ li {
 }
 
 .tutorial-nav {
-    padding: 2%;
+    padding: 10px;
     border: 1px dotted #aaa;
     margin: 10px;
+    overflow: auto;
+    
 }
 
 
@@ -657,7 +659,7 @@ li {
 
 .pagination-block li {
     float:left;
-    padding-left: 12%;
+    padding-left: 10px;
 }
 
 

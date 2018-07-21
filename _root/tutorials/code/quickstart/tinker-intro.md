@@ -14,11 +14,11 @@ tags:
 
 The `ruby` command is handy, but often you'll want to run code that's too involved to write comfortably in a single line of text.  For that, we have the `tinker` command.   The `tinker` command lets you enter some code in a mini code editor on the web portal and then execute it in the game.
 
-We're going to To change the tinker code:
+To change the tinker code:
 
 1. Log into the Web Portal.
 2. Go to Admin -> Tinker.
-3. Edit the handle method to do the desired processing.
+3. Edit the handle method to do the desired processing (see below for details).
 4. Click Save.
 5. Back in the MUSH client window, type `tinker` to execute the code.
 

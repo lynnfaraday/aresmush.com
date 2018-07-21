@@ -1,5 +1,5 @@
-* [Start Tutorial](/tutorials/code/add-cmd/)
-* [Editing Code](/tutorials/code/add-cmd/edit-code)
+* [Tutorial Overview](/tutorials/code/add-cmd/)
+* [The Custom Plugin](/tutorials/code/add-cmd/custom-plugin)
 * [Create a Help File](/tutorials/code/add-cmd/help-file)
 * [Create a Database Field](/tutorials/code/add-cmd/db-field)
 * [Create a Command Handler](/tutorials/code/add-cmd/cmd-handler)

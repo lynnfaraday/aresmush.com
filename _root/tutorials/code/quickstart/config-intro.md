@@ -26,4 +26,4 @@ Go to the Admin -> Setup menu in the Web Portal and edit the `tinker.yml` config
 
 Save the code and run the tinker command.  Notice that the color is blue, the color in our configuration setting.
 
-Change the configuration file to use a different color code (like "%xg" for green) and run the command again.  The color changed without you needing to touch the code.
+Change the configuration file to use a different color code (like "%xg" for green) and run the command again.  Notice how the color changed without you needing to touch the code.

@@ -5,7 +5,7 @@ layout: tutorial
 tutorialName: MUSH 101
 mush101Tutorial: true
 tutorialIndex: mush-101
-nextstep: connecting-and-commo
+nextstep: before-you-start
 tags: 
 - storytelling
 ---
@@ -20,6 +20,8 @@ A **MUSH** is a multi-player online game that blends creative writing, improv ac
 
 
 > The outlaw hoists Sophia up on his horse, gripping her tightly and using her as a shield. "Now settle down there, missy," Kelly advises her. "Sheriff! You best put your guns up. Nobody wants this pretty little lady getting hurt now!" 
+>
+> Sophia squawks as she's scooped up and flailing. "Put me down!" She's not going lightly but she's hardly a physical monster.
 > 
 > "No one wants the pretty little lady getting hurt, but no one's negotiating with an outlaw either, Kid!" calls out Mitchell, keeping his gun right where it is. "You've killed before. I'm not one to think you'd hold off on account of me."
 > 

@@ -12,7 +12,7 @@ tags:
 - plugins
 ---
 
-That's it!  Our plugin should be ready.  
+That's it!  Our commands should be ready.  
 
 ## Try It Out
 

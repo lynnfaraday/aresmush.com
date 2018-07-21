@@ -25,6 +25,4 @@ Most MUs are hosted on a cloud server.  This is the easiest way to make your gam
 
 ## Local Setup
 
-If you want to set up Ares on your local computer for code development, see **[Setting up Ares On Your PC/Mac](/tutorials/code/local-setup)**.  
-
-> <i class="fa fa-info-circle"></i> **Tip:** Running locally is not recommended for hosting your real game, but it's great for local coding and testing.
+Running on a local computer is not recommended for hosting a real game, but it can be useful for coding and testing.  See [Setting Up a Development Environment](/tutorials/code/dev-tools).

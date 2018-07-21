@@ -7,17 +7,17 @@ tags:
 - git
 ---
 
-If you intend to do advanced coding (like swapping out FS3 for another skills system, or making major changes to the built-in templates), I highly recommend you use version control.  Some benefits of using version control:
-
-* It can serve as a backup location for your custom code and configuration.
-* It helps you coordinate among multiple coders.
-* It lets you track changes and go back to old versions if needed.
-* It will be easier for you to handle upgrades and bugfixes from the main Ares code.
-* It helps me to help you if you later need assistance.
-
-If you're not familiar with how version control works, here's a [great tutorial](https://betterexplained.com/articles/a-visual-guide-to-version-control/).
-
 AresMUSH uses [GitHub](http://www.github.com) for its version control, so using that for your own game's code enables easy synchronization and support.  
+
+## Video Tutorial
+ 
+You can view the [Using GitHub](/tutorials/code/edit-code/github) screencast for a full walkthrough of how to use GitHub to help you when editing Ares code.  This article describes some additional details.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jc0GLdMZya8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+Here is a basic summary of the workflow:
+
+{{#pretty-image}}{{urls.media}}/code/git-pull.png{{/pretty-image}}
 
 ## Creating a Fork
 
@@ -49,31 +49,9 @@ If you've already installed the game, you just need to make your install point a
 
 Now your game will be set up to get code updates from your fork instead of from the main Ares repository.
 
-## Pushing and Pulling
-
-GitHub stores your code in the cloud.  After you've made some code changes, you **push** those changes to your repo so they're stored safely and there's a record of who changed what.   You can **pull** changes from the cloud into your local copy.  These could be changes made by other coders (if your game has more than one) or changes made in the main Ares repository that you want to incorporate.
-
-Let's say you've made some code changes and uploaded them to your server.  Here's how you push those changes to GitHub.
-
-1. Log into the server shell and change into the aresmush folder.
-2. Type `git add -A .` to add all local changes to the 'staging' list - this is the list of the changes that will be pushed.
-3. Type `git status` to review the staging list and make sure everything you expect is there.
-4. Type `git commit -m "<a description of the changes>"` to create a 'commit', which is a collection of changes.
-5. Type `git push` to push the changes to GitHub.
-
-You can look in your repository in GitHub to see the commit.
-
 ## Git from the Game
 
 You can actually execute selected `git` commands from within the game without needing to connect to the server shell.  See `help git` in-game.  This is handy if you're using GitHub to sync changes between a local PC and the server because you can push to GitHub from your PC and pull the code down from inside the game itself.
-
-## Working Locally
-
-Commonly people will actually make code changes on their local computer, push them to GitHub, and pull them down to the MUSH server when they're done.  This lets you make changes without affecting the running game.
-
-{{#pretty-image}}{{urls.media}}/code/git-pull.png{{/pretty-image}}
-
-You can even set up a test game on your PC so you can test the code before pushing it.  See [Setting Up Ares Locally](/tutorials/code/local-setup) for more help getting Ares running on your PC/Mac.
 
 <a name="upgrade"></a>
 
@@ -83,18 +61,7 @@ While you're changing your own copy of the code, there's also work going on in t
 
 > <i class="fa fa-info-circle"></i> **Tip:** It's recommended that you keep up with updates as they happen.  Not only does it ensure that you have the latest features and bugfixes at all times, but it's easier to do updates one at a time.  If you let them stack up and your code gets too far behind, the upgrade will be more difficult.
 
-To pull code from the main Ares repository into your own, you'll need to add a link in your local Git working folder.  
-In the aresmush directory, run the command:
-
-    git remote add upstream https://github.com/aresmush/aresmush
-
-In the ares-webportal directory, run:
-
-    git remote add upstream https://github.com/aresmush/ares-webportal
-
-Now whenever you want to upgrade your fork to include the latest Ares code, you can just do:
-
-    git pull upstream master
+Follow the instructions in the [Using GitHub](/tutorials/code/edit-code/github) tutorial to update your code.
 
 > <i class="fa fa-exclamation-triangle"></i> **Note:**  Always remember to update **both** aresmush and ares-webportal when getting the latest code.
 

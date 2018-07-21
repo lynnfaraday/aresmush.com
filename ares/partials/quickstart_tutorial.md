@@ -1,4 +1,4 @@
-* [Start Tutorial](/tutorials/code/quickstart/)
+* [Tutorial Overview](/tutorials/code/quickstart/)
 * [Try Ruby](/tutorials/code/quickstart/try-ruby)
 * [Hello MUSH](/tutorials/code/quickstart/hello-mush)
 * [Tinkering](/tutorials/code/quickstart/tinker-intro)

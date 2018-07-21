@@ -27,16 +27,14 @@ Ohm lets you define ruby classes that interact with the database.  These are cal
       ...
     end
 
-We're already seen how we can utilize the name attribute in our code through examples like `client.emit "Hello #{enactor.name}!"`   In that case, `enactor` is a character model, and `name` is the database field.
-
-You'll need to look in the code to find out what database fields are available.
+We're already seen how we can utilize the name attribute in our code through examples like `client.emit "Hello #{enactor.name}!"`   In that case, `enactor` is an instance of a character model, and `name` is the database field.
 
 ## Queries
 
 There are a variety of ways to query (request) information from the database, but the most common one will be to find something by name.   Let's see how that works.   Change the tinker command as shown:
 
     def handle
-      char = Character.find_one_by_name(cmd.args)
+      char = Character.find(name: cmd.args).first
       if (char)
         client.emit "You found #{char.name}"
       else
@@ -45,6 +43,14 @@ There are a variety of ways to query (request) information from the database, bu
     end
 
 Try the command with different names and see what happens.
+
+You may have noticed that this version will not find "Faraday" if you typed "faraday" - it's very literal.  It also won't search by alias.  Since searching by name is so common, there's a utility method to help you with these this.  Change the `char = ` line in the handle method to this:
+
+    char = Character.find_one_by_name(cmd.args)
+
+Now try the searches again with aliases and different capitalization.  It works much better.
+
+There are some other query helpers, which you can read about in the advanced [database tutorial](/tutorials/code/database/) when you're ready.
 
 ## Updates
 

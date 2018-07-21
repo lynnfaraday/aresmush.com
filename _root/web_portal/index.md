@@ -11,6 +11,12 @@ AresMUSH features a fully-integrated **Web Portal** that allows you to interact 
 
 {{#pretty-image}}/assets/media/web_portal/webportal.png{{/pretty-image}}
 
+## Video Guide
+
+For a visual guide to these features, you can check out the "Playing from the Web Portal" screencast from the [MUSH 101 Tutorial](/mush-101/play-webportal).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/x4RD3SE7EU8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 ## Character Creation
 
 Through the Web Portal, you can create your character with a few clicks of the mouse.  The web chargen provides feedback for common issues as you go, and easy links to all the information you'll need.

@@ -1,5 +1,5 @@
 ---
-title: Extras and Contributions
+title: Extras
 description:
 layout: page
 tags: 
@@ -20,10 +20,10 @@ If an extra is a complete plugin, there's a script that will automatically insta
 
     bin/addplugin <plugin name>
 
-Once the plugin is installed, you'll need to do `load all to load the game code and `website/deploy` to update the website.
+Once the plugin is installed, you'll need to do `load all` to load the game code and `website/deploy` to update the website.
 
 > <i class="fa fa-exclamation-triangle"></i> **Note:** The `addplugin` script just copies the plugin's files into place.  There may be other code or configuration changes required.  See the plugin's README file in the ares-extras repository to see if any extra steps are needed.
 
-## Submitting Extras
+## Contributions
 
-See [Submitting Extras](/tutorials/code/extra-contribs) if you want to contribute your own extras or community plugins.
+See [Submitting Contributions](/tutorials/code/extra-contribs) if you want to contribute your own extras or community plugins.

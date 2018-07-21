@@ -4,7 +4,7 @@ description:
 layout: page
 ---
 
-These articles will help you learn how to play AresMUSH.  If you're brand new to MUSHing, start with the Roleplay Guides below.
+These articles will help you learn how to play AresMUSH.  If you're brand new to MUSHing, start with the [MUSH 101 Tutorial](/mush-101).
 
 {{>tutorial_warning}}
 

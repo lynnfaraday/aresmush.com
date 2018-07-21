@@ -23,9 +23,7 @@ This tutorial will teach you the basics of Ares code.
 
 ## What You'll Need
 
-The tutorial is interactive, so it works best when you have coder privileges on an actual Ares game.  You can use the Headwiz character or assign the [coder role](/tutorials/manage/roles) to a character of your choice.  
-
-If you don't have privileges on an Ares game, you can always [install Ares locally](/tutorials/code/local-setup) so you have your own test game.  If all else fails, the exercises still explain key concepts and contain useful reference code even if you can't get the satisfaction of running it.
+This tutorial is interactive, so you'll need the Headwiz character or [coder permissions](/tutorials/manage/roles) on an actual Ares game.
 
 ## Getting Help
 

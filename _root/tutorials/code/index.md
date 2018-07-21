@@ -27,7 +27,17 @@ Learn the basic Ares functions and code concepts.
 {{>quickstart_tutorial}}
 </div>
 
-### Tutorial #2 - Adding a Command
+### Tutorial #2 - Editing Ares Code
+
+Learn what tools you use to edit the Ares code.
+
+<button data-toggle="collapse" data-target="#edit-code" class="btn btn-info">Show Tutorial</button>
+
+<div id="edit-code" class="collapse">
+{{>edit_code_tutorial}}
+</div>
+
+### Tutorial #3 - Adding a Command (Character Goals)
 
 Learn how to add a command (a simple 'goals' command to set character goals.)
 
@@ -37,7 +47,7 @@ Learn how to add a command (a simple 'goals' command to set character goals.)
 {{>add_command_tutorial}}
 </div>
 
-### Tutorial #3 - Creating a Plugin (Cortex Skills System)
+### Tutorial #4 - Creating a Plugin (Cortex Skills System)
 
 Learn the anatomy of a more complex system (aka a plugin) from start to finish.  The example uses the Cortex skills system.
 
@@ -47,7 +57,7 @@ Learn the anatomy of a more complex system (aka a plugin) from start to finish. 
 {{>create_plugin_tutorial}}
 </div>
 
-## Other Coding Topics
+## Advanced Coding Topics
 
 Once you've completed the initial tutorials, there are a wealth of other topics available for reference. 
 
@@ -56,7 +66,6 @@ Once you've completed the initial tutorials, there are a wealth of other topics 
 ### General
 
 * [Basic Concepts](/tutorials/code/concepts)
-* [Editing the Code](/tutorials/code/editing)
 * [Tinkering](/tutorials/code/tinker)
 * [Using Formatting Codes](/tutorials/code/formatting)
 * [Using Log Files](/tutorials/code/logs)
@@ -75,6 +84,7 @@ Once you've completed the initial tutorials, there are a wealth of other topics 
 
 ### Engine
 
+* [Engine Ports](/tutorials/code/ports)
 * [Engine Globals](/tutorials/code/globals)
 * [Client Monitor](/tutorials/code/client-monitor)
 * [Config Reader](/tutorials/code/config-reader)
@@ -124,18 +134,19 @@ Once you've completed the initial tutorials, there are a wealth of other topics 
 
 * [Troubleshooting Issues](/tutorials/code/troubleshooting)
 
-## Git and Coding On Your PC or Mac
-
-* [Using Git](/tutorials/code/git) - Using the GitHub version control system to manage your code.
-* [Setting up Ares On Your PC/Mac](/tutorials/code/local-setup) - Develop code for Ares on your local PC.
-* [Running Tests](/tutorials/code/tests) - Running the automated unit tests.
-
 ## FS3
 
 * [FS3 Code Roadmap](/tutorials/code/fs3-roadmap) - Overview of the FS3 code.
 * [Replacing FS3](/tutorials/code/replacing-fs3) - Replacing FS3 with your own skills system.
 
+## Extras/Contributions
+
+* [Extras](/tutorials/code/extras) - Using community plugins and code snippets.
+* [Submitting Contributions](/tutorials/code/extra-contribs) - Submitting extras.
+
 ## Miscellaneous
 
-* [Extras](/tutorials/code/extras) - Community plugins and other contributions.
 * [Chopping Block](/tutorials/code/chopping-block) - Code that didn't make the cut.
+* [Using Git](/tutorials/code/git) - Using the GitHub version control system to manage your code.
+* [Setting up a Development System](/tutorials/code/dev-tools) - Setting up a system to code and test.
+* [Running Tests](/tutorials/code/tests) - Running the automated unit tests.

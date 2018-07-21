@@ -13,11 +13,11 @@ tags:
 - dispatcher
 ---
 
-We've talked a lot about how commands get handled, but how do you get from the player typing "goals" in their MU client to the `GoalsCmd` class?  The answer is the [Dispatcher](/tutorials/code/dispatcher).  
+We've talked a lot about how commands get handled, but how do you get from the player typing "goals" in their MU client to the `GoalsCmd` class?  The answer is the Dispatcher.  
 
 One of the Dispatcher's jobs is calling each plugin's `get_cmd_handler` method any time it gets a command.  A plugin can return `nil` - if they don't want the command - or an appropriate command handler if they do.
 
-If the plugin returns a command handler, then the Dispatcher will execute the `parse_args`, error checkers and `handle` methods as we've previously discussed.
+If the plugin returns a command handler, then the Dispatcher will execute the command handler methods as we previously discussed.  You can learn more about the dispatcher in the Advanced Tutorial on [Command Dispatching](/tutorials/code/dispatcher).
 
 ## Try It
 

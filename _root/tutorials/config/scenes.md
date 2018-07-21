@@ -18,10 +18,6 @@ You can configure the available scene types.  By default they are "event", "soci
 
 You can configure the color that is used in OOC asides. You can use multiple color codes.  For example: %xh%xc
 
-## notify_of_web_watching
-
-By default, players watching a scene from the Web Portal only show up in the room description; there's no active notification when people start and stop watching.   You can turn on that notification by setting `notify_of_web_watching` to true.  Be warned, though, it can be spammy.
-
 ## room_cleanup_cron
 
 The game will periodically clear scene sets and scenes from empty rooms.  
@@ -29,6 +25,10 @@ The game will periodically clear scene sets and scenes from empty rooms.
 There is a cron job to control when this happens.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/config/cron) for help if you want to change this.
 
 > <i class="fa fa-exclamation-triangle"></i> **Note:** Scenes in temp rooms will remain open as long as there are characters still in the room - even if they're logged off.  Scenes in grid rooms will stop after everyone logs off.
+
+## include_pose_separator
+
+When you complete a scene and share the log, the default behavior is to compress all the poses together into a single narrative, like you'd find in a book.   You can alternately include a separator line between poses to make it more clear which pargarphs went together in a single pose.  This separator can be styled with custom CSS using the 'pose-divider' class.
 
 ## delete_unshared_scenes
 

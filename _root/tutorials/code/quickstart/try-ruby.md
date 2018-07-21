@@ -12,6 +12,6 @@ tags:
 - code-quickstart
 ---
 
-The main Ares game code is written in Ruby.  If you're not already familiar with the language, the [Try Ruby](http://tryruby.org/) interactive tutorial will give you a quick overview of the basics in just fifteen minutes.  
+The main Ares game code is written in Ruby.  If you're not already familiar with the language, the [Try Ruby](https://ruby.github.io/TryRuby/) interactive tutorial will give you a quick overview of the basics in under half an hour.
 
-The Try Ruby tutorial should be enough to get you through the Quickstart.  When you're ready to learn more, check out the [Learning Ruby](/tutorials/ruby) resources.
+The Try Ruby tutorial should be enough to get you through the Quickstart.  At some point, you may want to check out the [Learning Ruby](/tutorials/code/ruby) resources to learn more.

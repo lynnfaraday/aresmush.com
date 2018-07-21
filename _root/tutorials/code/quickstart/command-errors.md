@@ -29,7 +29,7 @@ Let's see what this looks like.  Change the tinker code back to our previous exa
       end
     end
 
-Now run the `tinker` command by itself without giving it any arguments?  Give it a try.  You should get a bunch of red error text including this message:
+Now run the `tinker` command by itself without giving it any arguments.  You should get a bunch of red error text including this message:
 
     Error: "undefined method `<' for nil:NilClass"
 

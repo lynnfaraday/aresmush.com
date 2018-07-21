@@ -18,17 +18,21 @@ This article details the system requirements to help you find the right VPS and 
 
 ## Local Install
 
-If you are trying to install the game on your local computer, see [Setting up Ares On Your PC/Mac](/tutorials/code/local-setup).
+If you are trying to install the game on your local computer, see [Setting up a Development Environment](/tutorials/code/dev-tools).
 
-## VPS Specs
+## Digital Ocean
 
-> I recommend [Digital Ocean](http://www.digitalocean.com/?refcode=5c07173bc1f2).  It's what I use for [AresCentral](/arescentral).  If you want to use that, hop on over to [Getting Started with Digital Ocean](/tutorials/install/digital-ocean) for step-by-step instructions on setting up your game there.
+I recommend [Digital Ocean](http://www.digitalocean.com/?refcode=5c07173bc1f2).  It's what I use for [AresCentral](/arescentral).  If you want to use that, hop on over to [Getting Started with Digital Ocean](/tutorials/install/digital-ocean) for step-by-step instructions on setting up your game there.
+
+## Custom VPS
+
+If you don't want to use Digital Ocean, you can use any VPS server.
 
 ### Operating System
 
-AresMUSH runs best on a linux operating system.  The Ares install scripts and tutorials are designed for **Ubuntu Linux**.
+AresMUSH was designed to run on **Ubuntu Linux**.  Ares has been fully tested on Ubuntu 16.04 and 18.04.  Newer versions are probably fine too.
 
-> You _can_ run AresMUSH on other operating systems, including OSX and Windows, but you're on your own for server-side support.
+It may work on other OSes, but you're on your own for support.
 
 ### RAM
 
@@ -48,6 +52,8 @@ For the database, it will depend on the size of your game, but it's pretty insig
 
 ### Software Packages
 
-There are several software packages that Ares requires.  If you use the [Digital Ocean](/tutorials/install/digital-ocean) environment or a comparable VPS that runs Ubuntu, the official install scripts will set up everything you need.  Otherwise you'll have to set them up on your own.  
+There are several software packages that Ares requires.  
 
-[Setting up Ares On Your PC/Mac](/tutorials/code/local-setup) may help.  You can also use the install scripts as a guide.  There are two install scripts: `setup_server` and `install`.  Find the files corresponding to your AresMUSH version in [GitHub](https://github.com/AresMUSH/aresmush/tree/master/bin).
+> <i class="fa fa-exclamation-triangle"></i> **Note:** The automated install scripts assume you're using a Digital Ocean droplet with only a single MUSH running on it.  If you're using a different environement, you may need to customize the install script or just use it as a reference and run the commands manually.
+
+There are two install scripts: `setup_server` and `install`.  Find the files corresponding to your AresMUSH version in [GitHub](https://github.com/AresMUSH/aresmush/tree/master/bin).

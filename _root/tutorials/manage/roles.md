@@ -48,6 +48,24 @@ Let's say you wanted to create a more limited admin role for apps staff.  You wa
 3. Update the jobs config to add the `app_staff` role to the APP category.  See the [jobs configuration tutorial](/tutorials/config/jobs) for details.
 4. Set permissions on the Apps forum using `forum/readroles <roles>` and `forum/writeroles <roles>`.
 
+## Using Permissions in Code
+
+In your code, permissions can restrict who can use commands.  For example, if you wanted to lock the 'home' command to only people who have the 'go_home' permission, you would add the following error checker in the home command handler.
+
+      def check_can_go_home
+        return "You are not allowed to do that." if !enactor.has_permission?("go_home")
+        return nil
+      end
+
+Many plugins have helper methods to check for the necessary permission.  For example:
+
+    Rooms.can_go_home?(enactor)
+    Chargen.can_approve?(enactor)
+
+> <i class="fa fa-info-circle"></i> **Tip:** It's preferable to use the helper methods instead of the permission names so you only have to update one place if the permission ever changes.
+
+> <i class="fa fa-info-circle"></i> **Tip:** Remember that characters with the 'admin' role automatically have all permissions.
+
 ## Default Permissions
 
 | Role | Notes |
@@ -75,3 +93,4 @@ Let's say you wanted to create a more limited admin role for apps staff.  You wa
 | teleport | |
 | view_bgs | |
 | view_sheets | |
+

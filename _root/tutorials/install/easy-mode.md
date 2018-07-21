@@ -34,9 +34,10 @@ Create an account on [Digital Ocean](http://www.digitalocean.com/?refcode=5c0717
 * The email address associated with your Digital Ocean account.
 * Your desired game port number. (Must be > 1024; default is 4201.)
 * Which region you want the server hosted in.  (Default is US East Coast.  You may also select US West Coast or one of Digital Ocean's global regions.)
+* A name and description for your game.  (You can change this later.)
 * Your desired hostname (yourgame.somewhere.com).  You can request an aresmush.com hostname or [register your own](/tutorials/install/getting-a-hostname).
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** Your email is needed to transfer the server snapshot image to you.   It must match the email you used for your Digital Ocean account.  We pledge not to do anything nefarious with your email.  See our [privacy policy](/privacy) for details.
+> <i class="fa fa-exclamation-triangle"></i> **Note:** Your email is needed to transfer the server snapshot image to you.   It must match the email you used for your Digital Ocean account.  I pledge not to do anything nefarious with your email.  See our [privacy policy](/privacy) for details.
 
 ## Clone Your Server
 
@@ -50,7 +51,7 @@ I will transfer a Digital Ocean snapshot image to your account. This image has e
   * Choose a droplet size.  (1GB RAM is the standard Ares size)
   * Select 1 droplet, and enter a name for it (like 'ares').
   * All other options may be left as the defaults.
-4. You can keep the snapshot around as a backup until you're sure your server is up and running, but then you can delete it.  Digital Ocean charges a small fee (less than $1/month usually) for storing snapshots.
+4. You can keep the snapshot around as a backup until you're sure your server is up and running, but then you should delete it.
 
 ## Finalize the Hostname Settings
 
@@ -60,14 +61,9 @@ If you're using an aresmush.com hostname, simply [contact me](/feedback) with yo
 
 If you're using your own custom host name, you'll need to set up the DNS through your domain provider.
 
-After the hostname is ready, you will need to reboot the server.
+> <i class="fa fa-exclamation-triangle"></i> **Note:** The hostname may take up to 24 hours to be recognized.  
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** The hostname may take up to 24 hours to be recognized.  You game will not work until the hostname is valid.
-
-1. Connect to the [server shell](/tutorials/install/server-shell).
-2. Verify that the hostname is recognized by typing `nslookup <your host name>` (e.g. nslookup mygame.aresmush.com).  The "Non-authoritative answer" address should match your game's IP address.
-2. Type `sudo reboot` and enter the ares user password when prompted.
-3. Wait a minute and the server should restart.
+You can tell that the hostname is working when you're able to see the web portal when you go to `http://yourmushaddress`.  Once this happens, you'll need to [restart the game](/tutorials/manage/shutdown) for everything to start working. 
 
 ## Next Steps
 

@@ -79,6 +79,8 @@ Ares doesn't come with a search feature for the Web Portal, but you can set one 
 
 > <i class="fa fa-exclamation-triangle"></i> **Note:** Select the "Overlay" look and feel.  Other search types may require you to modify the code in `ares-webportal/app/templates/components/search-box.hbs`.
 
+{{#pretty-image}}/assets/media/config/search layout.png{{/pretty-image}}
+
 The GCSE control panel will tell you your search engine ID, which will be a string of numbers and letters like:  `123456:abcdef`. 
   
 1. Select Admin -> Setup
@@ -90,7 +92,7 @@ Enter your search engine ID under the gcse option.
 
 You also need a robots.txt file to tell the Google search crawler where to find your sitemap.  If you used the standard install, this should have been set up automatically.  Otherwise you'll need to edit `ares-webportal/public/robots.txt` to add the following line:
 
-    Sitemap:  http://yourmushhost/game/sitemap.txt
+    Sitemap:  http://yourmushhost/game/sitemap.xml
 
 After the robots file has been updated, be sure to do a `website/deploy` in-game or a `bin/deploy` from the ares-webportal directory to deploy the changes.
 

@@ -1,4 +1,7 @@
 * [A Game of Words](/mush-101/game-of-words)
-* [Connecting and Communicating](/mush-101/connecting-and-commo)
+* [Before You Start](/mush-101/before-you-start)
+* [Playing from a MUSH Client](/mush-101/play-muclient)
+* [Playing from the Web Portal](/mush-101/play-webportal)
 * [Telling Your Story](/mush-101/telling-your-story)
+* [Time and Space](/mush-101/time-and-space)
 * [MUSH Glossary](/mush-101/mu-glossary)

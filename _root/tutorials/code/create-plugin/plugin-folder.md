@@ -33,4 +33,4 @@ This will create the following folder structure:
             locale_en.yml
         commands
 
-You may notice that some plugins also have other directories, as explained in [Plugins](/tutorials/code/plugins), but these are the basic ones.
+You may notice that some plugins also have other directories for organizational purposes, but these are the basic ones.

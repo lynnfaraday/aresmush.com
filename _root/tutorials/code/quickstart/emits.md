@@ -20,7 +20,7 @@ Emits are the way the game communicates with the MUSH clients.  The Client class
 * `emit_failure` - Failure/error alerts show up in red.
 * `emit_raw` - A special emit that will not evaluate linebreaks or ansi codes.
 
-Let's try another format.  Change the tinker code as shown, save, and run the command again.
+Let's see what those different formats look like.  Change the tinker code as shown, save, and run the command again.
 
     def handle
       client.emit_ooc "Hello, #{enactor.name}!"

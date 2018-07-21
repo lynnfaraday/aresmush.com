@@ -65,25 +65,4 @@ You can even combine the two - a query and an update - to act on a list of chara
 
 ## Multiple Tinkerers
 
-Tinkering is set up with the assumption that only one person will be tinkering at a time, because frankly most games only have one coder.   In the remarkable event that you have multiple coders wanting to tinker at the same time, the recommended solution is to have the tinker command run different code based on who's triggering it, as shown below.
-
-> <i class="fa fa-exclamation-triangle"></i> **Note:** You still need to take turns _editing_ the file, otherwise you'll end up clobbering each others' code changes.  But once the file is edited, you can each independently run your own tinker snippet.
-
-      def handle
-        if (enactor_name == "Faraday")
-           faraday_tinker
-        elseif (enactor_name == "Chaos")
-           chaos_tinker
-        end
-        client.emit_success "Done!"
-      end
-      
-      def faraday_tinker
-         # Whatever Fara's tinkering with goes here.
-      end
-      
-      def chaos_tinker
-         # Whatever Chaos is tinkering with goes here.
-      end
-
-If taking turns editing the tinker file is too much trouble, have your multitude of coders just create their own individual tinker commands (tinker/faraday, tinker/chaos, etc.) in files they can edit separately.
+Tinkering is set up with the assumption that only one person will be tinkering at a time, because frankly most games only have one coder.   In the remarkable event that you have multiple coders wanting to tinker at the same time, they'll just have to take turns or create their own personal tinker commands.

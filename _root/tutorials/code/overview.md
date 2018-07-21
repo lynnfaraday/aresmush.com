@@ -12,7 +12,7 @@ The Ares coding experience is different from what you might be familiar with fro
 
 The Ares game server code is written in Ruby.  Ruby is a mainstream language, so you'll find tons of tutorials, reference guides and community support sites.
 
-You can run quick one-off tasks straight from your MU client, but anything more advanced will require you to change the code server-side and then reload it.  You can change and reload code while the game is running, so it's not like MUSH hardcode.
+You can run quick one-off tasks straight from your MU client, but anything more advanced will require you to change the code server-side and then reload it - all while the game is running.
 
 Many people find Ares code more readable and easier to learn than softcode.  The following example shows a snippet of code from the AFK command (`afk <message>`), comparing traditional MUSH softcode and Ares code.
 
@@ -54,7 +54,7 @@ Normally MUSHcode would be all smushed together in one line, but let's assume we
 <div class="collapse" id="collapseExample">
   <div class="card card-block">
 
-Ares code is inherently done on multiple lines:
+Ares code is inherently done on multiple lines so there's no need for a prettifier tool:
 
       <pre>
  
@@ -87,7 +87,7 @@ The scaffolding around how commands get triggered is also different.  In MUSH So
 
     &CMD-Cookie Cookie Command Object=$+cookie *:(cookie code goes here)
 
-In Ares, all commands are global unless you put code inside them restricting them to only work under certain conditions (like if the character is in a particular room or belongs to a particular faction).  Commands don't live on objects, but rather in Ruby classes.
+In Ares, all commands are global. Commands don't live on objects, but rather in Ruby classes in the server-side code.
 
     class CookieCmdHandler
        def handle
@@ -107,3 +107,9 @@ There's a dispatcher for each plugin that sends the command to the appropriate c
         end
       end
     end
+
+Although all commands are global, you resrict code to only work under certain conditions.  For example:
+
+* If the character is in a particular room or area.
+* If the character belongs to a particular faction.
+* If the character has a certain skill.

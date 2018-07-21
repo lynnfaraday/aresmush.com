@@ -30,6 +30,8 @@ Next we'll configure some basic information about your game.  These settings det
         [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
 
 > <i class="fa fa-exclamation-triangle"></i> **Note:** If you already have a GitHub fork, you can pass the HTTPS clone urls to the install script: `./install <game code clone URL> <Web Portal clone URL>`   If you don't have a GitHub fork (or don't know what that even means) then just leave off those URLs.
+    
+> <i class="fa fa-exclamation-triangle"></i> **Note:** You can use a different version of Ruby
 
 3.  Enter your ares password when prompted.
 

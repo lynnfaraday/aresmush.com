@@ -10,7 +10,7 @@ prevstep: db-intro
 
 Congratulations!  You've completed the AresMUSH Code Quickstart Tutorial.  
 
-This was the first of three basic tutorials introducing Ares code.  The next is [Adding a Command](/tutorials/code/add-cmd).
+This was the first of four basic tutorials introducing Ares code.  The next is [Editing Code](/tutorials/code/edit-code).
 
 Don't forget you can always [ask for help](/feedback). 
 

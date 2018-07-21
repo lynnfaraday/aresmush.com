@@ -34,6 +34,15 @@ Any demographics you list in `editable_properties` may be changed after chargen.
 
 > <i class="fa fa-info-circle"></i> **Tip:** The names here must exactly match the names in the demographics list.
 
+## nickname_field and nickname_format
+
+If you set `nickname_field` to the name of a demographic field (for example - callsign), that field will be shown alongisde the character's name in places like the who list and room description.  The field will also be included in 'whois' searches.
+
+If you're using the nickname field, you can control how the name and nickname are shown together using the `nickname_format` config option.  It's a standard Ruby format string with two parameters: name and nickname.  Here are some examples:
+
+    "%{name} (%{nickname})"   Steve (Captain America)
+    "%{name}:%{nickname}"     Steve:Captain America
+
 ## help_text
 
 Since demographics are so flexible, the help file refers players to the `demographics` command to list the available demographic commands.  If you want more detailed instructions, you can configure it as shown below.  Any demographics not listed will show the standard help (e.g. `hair <value>`).
