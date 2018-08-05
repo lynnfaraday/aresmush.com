@@ -40,6 +40,8 @@ Splitting up the code into multiple methods makes it more organized and readable
 
 The first command will set the goals.  Create a file named `set_goals_cmd.rb` in `aresmush/plugins/custom`.
 
+> <i class="fa fa-info-circle"></i> **Note:** The commands won't work just yet because we haven't finished wiring everything up.  We'll get to that in a later step - stay tuned.
+
 ### Basic Scaffolding
 
 Edit the file and add the basic scaffolding - a `GoalsCmd` in the `AresMUSH::Custom` module, that includes the standard command handling functionality.  All commands will start off like this.
@@ -88,6 +90,8 @@ We also need a command to view the goals.  We'll create another file in the same
 > <i class="fa fa-info-circle"></i> **Tip:** It's best practice to store separate commands in separate files for organization and readability.
 
 This is a very simple version that allows people to see each others' goals.
+
+> <i class="fa fa-info-circle"></i> **Note:** The commands won't work just yet because we haven't finished wiring everything up.  We'll get to that in a later step - stay tuned.
 
 ### Basic Scaffolding
 

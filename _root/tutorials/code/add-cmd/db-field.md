@@ -17,11 +17,9 @@ We're going to need to save our goals to the database.  Since goals are a facet 
 
 You define a database field using the `attribute` method in a database model class.  For example:
 
-    class Character < Ohm::Model
+    class Character
       attribute :name
     end
-
-> <i class="fa fa-info-circle"></i> **Tip:** Ruby classes can be spread across multiple files.  This lets you define bits and pieces of the `Character` class across multiple plugins.
 
 Database fields can take many forms - strings, numbers, lists, hashes, etc.  Fields are strings unless otherwise specified.
 
@@ -35,4 +33,7 @@ Create a file named `goals_char.rb` and put it in `aresmush/plugins/custom`.  Gi
       end
     end
 
+
 This defines an attribute named `goals` with a string data type.
+
+> <i class="fa fa-info-circle"></i> **Tip:**  Ruby classes can be spread across multiple files.  This lets you define bits and pieces of the `Character` class across multiple plugins.  Here we're defining only a single field, but the Character model has many.  Most plugins prefix their db fields with the plugin name (e.g. fs3_skills) to avoid name collisions.  

@@ -52,7 +52,8 @@ Create a file in `aresmush/plugins/custom/help/en` named `goals.md`.  Give it th
     
     Characters with the "view_bgs" permission can view goals using `goals <name>`.
 
-
 This will create an help topic `help goals` and place an entry for it in the "Character Creation" section of the help files.
 
 > <i class="fa fa-info-circle"></i> **Tip:** The code markers <pre>`goals`</pre> are the standard way to highlight command text in help files.
+
+> <i class="fa fa-info-circle"></i> **Note:** The help file won't actually show up yet because we haven't told the game it's there.  We'll get to that in a later step - stay tuned.

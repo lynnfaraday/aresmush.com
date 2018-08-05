@@ -8,6 +8,7 @@ tutorialIndex: tutorials/code/edit-code
 nextstep: finding-code
 tags: 
 - code
+- editing
 ---
 
 This is the second in the series of basic Ares coding tutorials.

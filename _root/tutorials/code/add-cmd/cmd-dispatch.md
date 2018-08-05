@@ -42,3 +42,4 @@ In that file you'll see a `get_cmd_handler` method.  It returns nil by default, 
 
 This dispatcher will return the `GoalsCmd` handler for the "goals" command, and the `SetGoalsCmd` handler for "goals/set".  Otherwise it will return `nil` and the command will be ignored so other plugins can handle it.
 
+> <i class="fa fa-info-circle"></i> **Note:** The commands still won't work yet because we haven't told the game there's new code available.  We'll do that next - stay tuned!

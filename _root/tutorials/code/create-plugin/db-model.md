@@ -19,7 +19,7 @@ We'll need to save character abilities to the database, which entails some new d
 
 The simplest approach would just be to create a single hash on the Character model and store all the ability data there, like so:
 
-    class Character < Ohm::Model
+    class Character
       attribute :cortex_abilities, :type => DataType::Hash, :default => {}
     end
 
@@ -37,11 +37,13 @@ A better way is to use specialized database models.  The Cortex plugin define se
 
 ### Model Definition
 
-First we have the class definition.  Inheriting from `Ohm::Model` is what makes it a database model, and including `ObjectModel` provides access to a number of useful standard Ares database utilities.
+First we have the class definition.  Inheriting from `Ohm::Model` is what makes it a database model -- a class capable of storing data to the database -- and including `ObjectModel` provides access to a number of useful standard Ares database utilities.
 
     class CortexSkill < Ohm::Model
       include ObjectModel
     end
+
+> <i class="fa fa-info-circle"></i> **Tip:** Ohm is the database library that helps us talk to the database, and `< Ohm::Model` is a special bit of Ruby code that lets us do things like `attribute :name` to define a database field.  We didn't see Ohm::Model in the previous examples because we were adding to an existing model class (Character) defined by the engine.  Here, though, we're creating a brand new one.  You can learn more about the Ohm library in the [advanced database tutorial](/tutorials/code/database) when you're ready.  
 
 ### Model Attributes
 

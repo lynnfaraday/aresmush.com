@@ -8,7 +8,6 @@ addCmdTutorial: true
 tutorialName: Adding a Command
 tags: 
 - code
-- cortex
 ---
 
 This is the third in the basic series of Ares coding tutorials.
