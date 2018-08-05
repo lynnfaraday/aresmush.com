@@ -7,7 +7,7 @@ tags:
 - tools
 ---
 
-This article lists some tools that you'll probably want to get if you're doing Ares coding on your PC.
+This article lists some tools that you'll probably want to get if you're doing Ares coding.
 
 ## Github Desktop
 
@@ -30,6 +30,9 @@ I personally don't think a Ruby IDE like RubyMine is worth the cost for the bene
 
 It's helpful to have a place to test your code that *isn't* your main game.  That way you can make sure everything works right before unleashing it on your players.  
 
+> **Important!** It's strongly recommended that you follow the standard [installation instructions](/tutorials/install) for your very first Ares game.  For just a few bucks, less than the price of a grande coffee, you can spin up a droplet for a couple weeks and get your feet wet.  That way you're not trying to learn both Ares code and Ares server setup at the same time!  Once you have a little more experience with Ares, you can explore some of the [other options](/tutorials/code/dev-tools) for setting up a game for development purposes.
+
+
 See the [Setting Up a Test Game](/tutorials/code/edit-code/test-game) tutorial for a screencast explaining and demonstrating your options.  Some technical details for each can be found below.
 
 ### Installing on a Local PC
@@ -46,7 +49,9 @@ Unfortunately, AresMUSH doesn't run on Windows at the present time due to a limi
 
 ### Dual Droplets
 
-A quick and easy way to have a test environment is to just get a second droplet and install a new copy of the game.  You can save a snapshot of the test droplet for a modest fee and spin up a new copy whenver you need to test something.  If you destroy the test droplet each time you're done testing, you'll only end up using it for a few hours a month and the cost will be small.
+A quick and easy way to have a test environment is to just get a second droplet and install a new copy of the game using the standard [installation instructions](/tutorials/install).   
+
+A droplet costs only a few dollars a month, but if you're extra-strapped for cash you can use Digital Ocean's snapshot feature to save a backup of the droplet and spin it up only for a few hours each month while testing.
 
 ### Using a Virtual Machine
 

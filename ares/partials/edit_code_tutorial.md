@@ -1,4 +1,5 @@
 * [Tutorial Overview](/tutorials/code/edit-code/)
+* [Finding Code](/tutorials/code/finding-code)
 * [Direct Editing](/tutorials/code/edit-code/direct-edit)
 * [FTP Upload](/tutorials/code/edit-code/ftp-upload)
 * [Using GitHub](/tutorials/code/edit-code/github)

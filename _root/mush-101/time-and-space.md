@@ -37,18 +37,18 @@ Contrary to the name, a "room" on a MUSH can represent any size area - from a cl
 
 Rooms on a MUSH represent only a **part** of the virtual world - the highlights, if you will.  A Hollywood set designer doesn't build the *entire* starship Enterprise - only the sections they need for the scenes they intend to film.  Similarly, a MUSH designer doesn't attempt to build every conceivable location in the world.  They focus on the areas that are likely to be used for scenes.
 
-For example, this map from the now-closed Sweetwater Crossing MUSH illustrates the locations represented by MUSH rooms (in black) compared to the entire town.
+For example, this map from the now-closed Sweetwater Crossing MUSH illustrates the locations represented by MUSH rooms (in black) compared to the entire town of Sweetwater.
 
 {{#pretty-image}}/assets/media/sweetwater.jpg{{/pretty-image}}
 <div class="caption">Map from Sweetwater Crossing MUSH.</div>
 
-Just because there's not a MUSH room for the undertaker's or the back room of the train station doesn't mean you can't hold a scene there.   You can use a temporary room to represent areas not on the grid.
+Just because there's not a MUSH room for the undertaker's or the back room of the train station doesn't mean you can't hold a scene there.  You can use a temporary room to represent areas not on the grid.
 
 ### Location Within Rooms
 
 Some locations might even have multiple rooms.  The Boarding House, for example, could be represented as a single room (as shown above), but it could also be created with three rooms (lobby, dining room, upstairs) or even more (adding a kitchen and some bedrooms).
 
-You usually establish your character's location within the room when you make your first pose in a scene.  "Cate takes a seat at the bar..." or "Cate heads for a table in the back..."  Keep relative locations in mind when posing.  Somoene at the bar would be hard-pressed to carry on a conversation with someone in the back storeroom.
+You usually establish your character's location within the room when you make your first pose in a scene.  "Cate takes a seat at the bar..." or "Cate heads for a table in the back..."  Keep relative locations in mind when posing.  Somoene at the bar would be hard-pressed to carry on a casual conversation with someone in the back storeroom.
 
 ## Time
 
@@ -60,7 +60,7 @@ Most MUSHes generally run on a 1:1 time ratio.  For every day that passes in the
 
 Here a TV analogy might help.  We see the characters doing cool things on-camera, but we don't see their entire lives.  We know that they are doing other (usually mundane) things **off-camera** as well.
 
-Nobody can play your character when you're offline, and should leave the door open for you to come up with reasons why your character wasn't around for a scene.  "Crazy night at the hospital yesterday, right?  I'm glad I missed it - I was visiting my aunt in Cleveland."
+Nobody can play your character when you're offline, and should leave the door open for you to come up with reasons why your character wasn't around for a scene.
 
 ### Punching the Clock
 
@@ -72,4 +72,4 @@ Players will usually establish a time-of-day at the beginning of a scene.  Withi
 
 Most scenes take place in whatever day the MUSH time command says it is.  But like flashbacks in a book or TV show, MUSH players can do a flashback scene (called a **backscene**) to flesh out something that happened in the past.  Backscenes are commonly used to fill in gaps when players couldn't be online together.  Forward scenes (ones that take place in the game's future) are also possible, but far less common.
 
-Both backscenes and forward scenes require you to tread carefully to avoid giant continuity glitches.  You can't die in a backscene last week if you've already done other things this week.  Players need to work together to ensure the story stays reasonably consistent.
+Both backscenes and forward scenes require you to tread carefully to avoid giant continuity glitches.  You can't die in a backscene last week if you've already done other things this week.  Players need to work together to ensure the story stays consistent (within reason).

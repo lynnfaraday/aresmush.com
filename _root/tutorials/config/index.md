@@ -75,6 +75,7 @@ These are advanced customization settings that most games won't need to alter.
 A variety of other settings exist, but the defaults will work well for most games.
 
 * [Configuring Banned and Suspect Sites](/tutorials/config/ban)
+* [Configuring the Achievements System](/tutorials/config/achievements)
 * [Configuring the Channel System](/tutorials/config/channels)
 * [Configuring the Cookie System](/tutorials/config/cookies)
 * [Configuring Chargen](/tutorials/config/chargen)
@@ -109,6 +110,6 @@ These configuration options will probably not need to be changed unless your ser
 
 ## General Config Topics
 
-* [Configuring Cron Jobs](/tutorials/config/cron) - Setting up tasks to run periodically.
+* [Configuring Cron Jobs](/tutorials/code/cron) - Setting up tasks to run periodically.
 * [Understanding YAML](/tutorials/code/yaml) - All about YAML configuration files.
 * [Troubleshooting YAML](/tutorials/code/troubleshooting-yaml) - Dealing with YAML configuration problems.

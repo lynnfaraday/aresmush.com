@@ -72,5 +72,5 @@ The temperature description is a combination of the actual temperature, the seas
 
 ## weather_cron
 
-The game will periodically change the weather.  There is a cron job to control when this happens.  By default it does this every hour.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/config/cron) for help if you want to change this or turn it off.
+The game will periodically change the weather.  There is a cron job to control when this happens.  By default it does this every hour.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/code/cron) for help if you want to change this or turn it off.
 

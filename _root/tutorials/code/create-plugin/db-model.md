@@ -90,4 +90,4 @@ To update a skill, first we have to find it.  There's a utility in `aresmush/plu
 Once we have the skill model, we can update it or delete it:
 
     skill.update(die_step: 'd4')
-    skill.destroy
+    skill.delete

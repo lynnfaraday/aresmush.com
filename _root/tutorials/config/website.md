@@ -72,30 +72,6 @@ A few of the navigation bar settings are configurable, described in Advanced Con
 
 Beyond that, changing the navigation bars requires a slight change to the website code.  See [Web Navigation](/tutorials/code/web-nav) for details.
 
-
-## Setting up the Search Box
-
-Ares doesn't come with a search feature for the Web Portal, but you can set one up easily using [Google Custom  Search Engine](https://cse.google.com/cse/all).  Just log in with your Google account and add your site.  
-
-> <i class="fa fa-exclamation-triangle"></i> **Note:** Select the "Overlay" look and feel.  Other search types may require you to modify the code in `ares-webportal/app/templates/components/search-box.hbs`.
-
-{{#pretty-image}}/assets/media/config/search layout.png{{/pretty-image}}
-
-The GCSE control panel will tell you your search engine ID, which will be a string of numbers and letters like:  `123456:abcdef`. 
-  
-1. Select Admin -> Setup
-2. Edit `secrets.yml`.
-
-Enter your search engine ID under the gcse option.
-
-> <i class="fa fa-exclamation-triangle"></i> **Note:** Once you've registered your site with Google, it can take anywhere from a few days to a month for Google to 'index' your website to enable search.
-
-You also need a robots.txt file to tell the Google search crawler where to find your sitemap.  If you used the standard install, this should have been set up automatically.  Otherwise you'll need to edit `ares-webportal/public/robots.txt` to add the following line:
-
-    Sitemap:  http://yourmushhost/game/sitemap.xml
-
-After the robots file has been updated, be sure to do a `website/deploy` in-game or a `bin/deploy` from the ares-webportal directory to deploy the changes.
-
 ## Configuring Recaptca
 
 You can use Google's [Recaptcha](https://www.google.com/recaptcha/intro/) to keep bots from creating accounts.  This is optional, but if you don't turn it on you should disable `allow_web_registration`.  Otherwise you'll get bot accounts for sure.

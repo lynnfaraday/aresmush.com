@@ -65,4 +65,4 @@ Raising an Action Skill in that example is much easier.  It takes only 1 XP to g
 
 ## xp_cron
 
-The game will periodically award all approved/active characters XP.  By default this happens weekly on Saturday evenings.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/config/cron) for help if you want to change this.
+The game will periodically award all approved/active characters XP.  By default this happens weekly on Saturday evenings.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/code/cron) for help if you want to change this.

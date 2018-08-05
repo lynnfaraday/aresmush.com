@@ -86,6 +86,7 @@ Many plugins have helper methods to check for the necessary permission.  For exa
 | manage_forum | |
 | manage_idle | |
 | manage_login | |
+| manage_notes | |
 | manage_ranks | |
 | manage_roster | |
 | manage_scenes | |

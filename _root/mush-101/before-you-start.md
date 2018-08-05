@@ -32,7 +32,7 @@ Here are some places you can look for games:
 
 * [AresCentral Game Directory](http://arescentral.aresmush.com/)
 * [Evennia Game Index](http://www.evennia.com/)
-* [Mu Soapbox](http://musoapbox.net/topic/2342/a-mildly-complete-list-of-current-games) - I don't really recommend the site in general, but it's good for advertisements and one of the posters curates a list of MUSHes.
-* [MudConnector](http://mudconnector.com) - Be aware that listings here are often out of date and include other types of online games besides MUSHes.
+* [Mu Soapbox](http://musoapbox.net/topic/2342/a-mildly-complete-list-of-current-games) - Contains advertisements and a curated list of some current games.
 * [Ares Demo Game](http://mush.aresmush.com) - You can stop by to see if there are any advertisements for recent games, or people who can share recommendations.
+* [MudConnector](http://mudconnector.com) - Be aware that listings here are often out of date and include other types of online games besides MUSHes.
 

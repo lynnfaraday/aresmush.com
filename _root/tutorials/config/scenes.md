@@ -22,7 +22,7 @@ You can configure the color that is used in OOC asides. You can use multiple col
 
 The game will periodically clear scene sets and scenes from empty rooms.  
 
-There is a cron job to control when this happens.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/config/cron) for help if you want to change this.
+There is a cron job to control when this happens.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/code/cron) for help if you want to change this.
 
 > <i class="fa fa-exclamation-triangle"></i> **Note:** Scenes in temp rooms will remain open as long as there are characters still in the room - even if they're logged off.  Scenes in grid rooms will stop after everyone logs off.
 
@@ -38,7 +38,7 @@ If it's set to true, there are a few other things you can configure:
 
 ### unshared_scene_cleanup_cron
 
-See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/config/cron) for help if you want to change this.
+See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/code/cron) for help if you want to change this.
 
 ### unshared_scene_deletion_days and unshared_scene_warning_days
 

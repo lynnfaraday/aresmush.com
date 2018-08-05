@@ -44,7 +44,7 @@ Like a video game, a MUSH provides a virtual world for the characters to inhabit
 {{#pretty-image}}/assets/media/postpics/mush-room.png{{/pretty-image}}
 <div class="caption">A MUSH room description.</div>
 
-You connect to the game using a special app called a **MUSH client**, which shows you the world and lets you communicate with other players.   You'll learn more about MUSH clients and connecting in [another part](/mush-101/connecting-and-commo) of this tutorial.
+You connect to the game using a special app called a **MUSH client**, which shows you the world and lets you communicate with other players.   You'll learn more about MUSH clients and connecting in [another part](/mush-101/play-muclient) of this tutorial.
 
 ## Players on the Stage
 

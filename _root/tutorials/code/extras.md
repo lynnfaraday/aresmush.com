@@ -24,6 +24,14 @@ Once the plugin is installed, you'll need to do `load all` to load the game code
 
 > <i class="fa fa-exclamation-triangle"></i> **Note:** The `addplugin` script just copies the plugin's files into place.  There may be other code or configuration changes required.  See the plugin's README file in the ares-extras repository to see if any extra steps are needed.
 
+## Updating Plugins
+
+As long as you haven't modified the plugin's source code, you can upgrade it just by using the `bin/addplugin` script again, as described above.
+
+> <i class="fa fa-exclamation-triangle"></i> **Note:** If a plugin has been installed previously, adding it again will **not** overwrite your configuration files.  You should check the plugin configuration notes to see if any new options are available and add them manually to your configuration.
+
+If you have modified the plugin source, you'll have to handle the upgrade mamnually.  GitHub's compare versions tool may help.
+
 ## Contributions
 
 See [Submitting Contributions](/tutorials/code/extra-contribs) if you want to contribute your own extras or community plugins.
