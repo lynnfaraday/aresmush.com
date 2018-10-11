@@ -1,9 +1,9 @@
 ---
-title: Configuring the date and time formats.
+title: Configuring the Date and Time Formats
+layout: page
 tags:
 - config
 ---
-# Configuring the Date and Time Formats
 
 The game shows dates and times in various places.  You can configure how these are shown. 
 
@@ -12,6 +12,13 @@ To configure the date and time preferencse:
 1. Select Admin -> Setup
 2. Edit `datetime.yml`
  
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Date Formats
 
 The game supports several different types of formats, each of which may be configured:
@@ -50,4 +57,17 @@ There are two date options that are not used for date formatting by the code, bu
 
 * `date_entry_format_help` - A human-readable string telling someone how to enter a date in `short_date_format`.  For example, if short date format is 12/25/2016 then your help would be mm/dd/yyyy.
 * `date_and_time_entry_format_help` - A human-readable string telling someone how to enter a date and time in `date_and_time_entry_format`.  For example, if your entry format is 12/25/2016 2:45pm then your help would be mm/dd/yyyy hh:mm(am/pm).
+
+## server_timezone
+
+OOC dates and times (shown in the time command, for example) are relative to the server's timezone, so it's helpful to tell the players what that is.  
+
+> <i class="fa fa-exclamation-triangle"></i> **Note:**  This doesn't actually *change* the server timezone; it's just an advisory.  It's important that this setting matches what the server timezone actually is.
+
+Players can choose to have events and other times displayed in their local time by setting their timezone with the timezone command.
+
+## Changing the Server Timezone
+
+If you want to change what the actual server time is, see [Changing the Server Timezone](/tutorials/manage/server-timezone).
+
 

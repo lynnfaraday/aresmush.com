@@ -19,6 +19,13 @@ When the Web Portal sends a JSON-based request to the game engine API port, seve
 
 > <i class="fa fa-info-circle"></i> **Tip:** Only one plugin may handle a web request.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Handling Web Requests
 
 If a plugin wants to handle a web request, it must implement the `get_web_requst_handler` method in its plugin module.  This method is given a request object and  and can return either nil (if the plugin doesn't want the request) or a request handler class (if it does).

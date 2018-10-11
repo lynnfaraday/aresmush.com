@@ -5,7 +5,7 @@ layout: tutorial
 editCodeTutorial: true
 tutorialName: Editing Code
 tutorialIndex: tutorials/code/edit-code
-prevstep: test-game
+prevstep: debug-mode
 tags: 
 - code
 ---

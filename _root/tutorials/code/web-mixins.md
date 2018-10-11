@@ -11,6 +11,13 @@ Like the `include CommandHandler` statement on the game engine side, which allow
 
 > <i class="fa fa-exclamation-triangle"></i> **Note:** Instead of `include`, the Ember terminology is to `extend` a Mixin.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Route Authentication
 
 All Routes extend one of the route authentication mixins to make sure the character is properly authenticated.

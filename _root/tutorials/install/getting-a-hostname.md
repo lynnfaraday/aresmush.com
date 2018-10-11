@@ -22,4 +22,4 @@ You can request an AresMUSH sub-domain (yourmush.aresmush.com) by [contacting me
 
 ## Custom Domain
 
-You can also register a custom domain name (yourmush.com) for just a few dollars a year through sites like [NameCheap](https://www.namecheap.com/).
+You can also register a custom domain name (yourmush.com) for just a few dollars a year through sites like [NameCheap](https://www.namecheap.com/).  Once you have a domain, you can point it at the IP address of your droplet.  The steps will vary depending on the domain provider.

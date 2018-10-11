@@ -19,6 +19,13 @@ When a MU client sends text to the game's telnet port, several things happen:
 
 > <i class="fa fa-info-circle"></i> **Tip:** Only one plugin may handle a command.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Handling Commands
 
 If a plugin wants to handle and event, it must implement the `get_cmd_handler` method in its plugin module.  This method is given a command object and  and can return either nil (if the plugin doesn't want the event) or an event handler class (if it does).

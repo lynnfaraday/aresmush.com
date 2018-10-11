@@ -1,9 +1,9 @@
 ---
+title: Configuring the IC Time System
+layout: page
 tags:
 - config
-title: Configuring IC Time.
 ---
-# Configuring the IC Time System
 
 The IC Time plugin lets you track an IC date/time that's different from the OOC time.  
 
@@ -11,6 +11,13 @@ To configure the IC Time plugin:
 
 1. Select Admin -> Setup.
 2. Edit `ictime.yml`
+
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
 
 ## How It Works
 

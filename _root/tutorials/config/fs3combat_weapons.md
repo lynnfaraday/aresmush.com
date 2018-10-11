@@ -1,14 +1,21 @@
 ---
+title: Configuring FS3 Combat - Weapons
+layout: page
 tags:
 - config
-title: Configuring FS3 Combat weapons.
 ---
-# Configuring FS3 Combat - Weapons
 
 To configure the FS3 Weapons List:
 
 1. Select Admin -> Setup.
 2. Edit `fs3combat_weapons.yml`
+
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
 
 ## Before You Start
 

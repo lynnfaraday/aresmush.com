@@ -21,8 +21,6 @@ Templates are a special code class that handle complex information display.  The
 
 Diving deep into how to design templates is beyond the Quickstart Tutorial.  There's a separate article on [Templates](/tutorials/code/templates) for you in the Advanced Coding section when you're ready.  Right now we're just going to go into how to _use_ existing templates.
 
-## Bordered Display Template
-
 Tons of MU commands have a similar display structure:
 
     ------------------------------
@@ -31,7 +29,11 @@ Tons of MU commands have a similar display structure:
     Some text
     ------------------------------
 
-Ares provides a template to make this easy:  `BorderedDisplayTemplate`  Let's give it a try.  Modify the tinker command as shown below.  Save it, then run the command in-game to see how it looks.
+Ares provides a template to make this easy:  `BorderedDisplayTemplate`  
+
+## Try It!
+
+Let's give the bordered template a try.  Modify the tinker command as shown below.  Save it, then run the command in-game to see how it looks.
 
     def handle
       template = BorderedDisplayTemplate.new "Some text to show.", "A Title"

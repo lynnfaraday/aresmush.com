@@ -9,6 +9,13 @@ tags:
 
 Ares has an internal logging system (log4r) to help diagnose code issues.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Logging in Code
 
 Throughout the code, you'll see statements like:

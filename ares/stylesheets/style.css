@@ -34,6 +34,14 @@ body {
 
 }
 
+#inline_toc {
+    background-color: #FFFCF6;
+    padding: 5px;
+    border-bottom: 1px solid #CF895D;
+    border-top: 1px solid #CF895D;
+    margin: 20px 50px 20px 50px;
+}
+
 .btn-info {
     background-color: #3C8575;
     border-color: #3C8575;

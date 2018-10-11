@@ -8,11 +8,20 @@ tags:
 - extras
 ---
 
-The [Ares Extras repository](https://github.com/AresMUSH/ares-extras) in GitHub contains various things that are not part of the main Ares release.  There are tinker snippets (like a sample import from Wikidot), community-authored plugins, and other tidbits.
+"Extras" are various things that are not part of the main Ares release.  There are tinker snippets (like a sample import from Wikidot), community-authored plugins, and other tidbits.
 
-## Using Extras
+<div id="inline_toc" markdown="1">
+**Table of Contents**
 
-Each extra should contain a README file with instructions on how you use it.  The details will vary depending on what it does.
+* TOC
+{:toc}
+</div>
+
+## Finding Extras
+
+You can find extras in the [Ares Extras repository](https://github.com/AresMUSH/ares-extras) in GitHub.  The main README will direct you to what plugins are available.
+
+Each plugin will contain its own README file with instructions on how you use it.  The details will vary depending on what it does.
 
 ## Installing Plugins
 

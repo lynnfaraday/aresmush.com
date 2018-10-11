@@ -33,6 +33,8 @@ The magic here is in the `CommandHandler` module.  Near the top of the tinker co
 
 > <i class="fa fa-info-circle"></i> **Tip:** Throughout the Ares code, you'll see 'Cmd' used as an abbreviation for 'Command'.
 
+## Try It!
+
 Let's use some of these other automatic variables.  Edit the tinker code as shown, save, and then execute the tinker command in the MU client to see how you can access the enactor's room as well as their name.
 
     def handle

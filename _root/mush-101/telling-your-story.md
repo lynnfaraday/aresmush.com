@@ -14,6 +14,13 @@ tags:
 
 In this part of the MUSH 101 tutorial, we will cover how to create a character and start telling stories.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Joining the Cast
 
 Some games allow you to create a character either through the web portal (by clicking 'Register') or from the game's connect screen (by typing `create <name> <password>`).  Others require you to contact a game admin or perform other special steps.  Consult your particular game's website and/or help files for details.

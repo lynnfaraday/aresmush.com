@@ -28,6 +28,7 @@ These articles will help you administer/manage an Ares game.  It assumes your ga
 * [Connect to the Server Shell](/tutorials/install/server-shell)
 * [Starting the Game](/tutorials/manage/start)
 * [Shutting Down the Game](/tutorials/manage/shutdown)
+* [Changing the Server Timezone](/tutorials/manage/server-timezone)
 * [Setup Auto-Restart After Reboot](/tutorials/manage/restart-after-reboot)
 * [Upgrading the Code](/tutorials/manage/upgrades)
 * [Archiving the Web Portal](/tutorials/manage/web-archive)

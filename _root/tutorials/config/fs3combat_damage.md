@@ -1,14 +1,21 @@
 ---
-title: Configuring FS3 combat damage.
+title: Configuring FS3 Combat - Damage
+layout: page
 tags:
 - config
 ---
-# Configuring FS3 Combat - Damage
 
 To configure the FS3 damage system:
 
 1. Select Admin -> Setup.
 2. Edit `fs3combat_damage.yml`
+
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
 
 ## damage_mods
 

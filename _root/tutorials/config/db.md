@@ -1,9 +1,9 @@
 ---
-title: Configuring the database.
+title: Configuring the Database
+layout: page
 tags:
 - config
 ---
-# Configuring the Database
 
 Your database was set up initially during the game installation.  If for some reason your database server changes, or you need to reset the password, you'll need to update the configuration.
 

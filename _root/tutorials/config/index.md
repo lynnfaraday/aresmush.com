@@ -10,17 +10,24 @@ AresMUSH is ready to go out of the box with a default configuration based on a B
 
 {{>tutorial_warning}}
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Configuration Files
 
 The easiest way to configure your game is through the game's [Web Portal](/web-portal).  Log in as an admin user and visit  `Admin -> Setup`.
 
 You'll see a list of configuration files with settings you can change.
 
-{{#pretty-image}}/assets/media/web_portal/game-setup.png{{/pretty-image}}
+{{#pretty-image}}/assets/media/web-portal/game-setup.png{{/pretty-image}}
 
 Clicking on any config file will present you with a screen where you can edit the settings. 
 
-{{#pretty-image}}/assets/media/web_portal/config.png{{/pretty-image}}
+{{#pretty-image}}/assets/media/web-portal/config.png{{/pretty-image}}
 
 Ares configuration files use YAML, so you should check out the [Understanding YAML](/tutorials/code/yaml) tutorial before diving into the advanced configuration.
 

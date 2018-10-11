@@ -8,6 +8,13 @@ tags:
 
 This article describes some core concepts in Ares code.   It assumes you've already read about the [Ares Architecture](/tutorials/code/architecture).
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Clients
 
 When someone connects to the game with their MU client, Ares calls that connection a **Client**.  The Client class provides information about the connection, like the IP address and idle time.  It handles input from the MU client and turns it into a Command (explained below).  

@@ -1,13 +1,18 @@
 ---
+title: Configuring the Login System
+layout: page
 tags:
 - config
-title: Configuring the login system.
-aliases:
-- siteban
-- ban
-- suspect
 ---
-# Configuring the Login System
+
+There are several things you can configure about character logins.
+
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
 
 ## Connect Screen
 

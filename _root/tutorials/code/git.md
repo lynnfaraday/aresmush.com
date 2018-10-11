@@ -9,6 +9,13 @@ tags:
 
 AresMUSH uses [GitHub](http://www.github.com) for its version control, so using that for your own game's code enables easy synchronization and support.  
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Video Tutorial
  
 You can view the [Using GitHub](/tutorials/code/edit-code/github) screencast for a full walkthrough of how to use GitHub to help you when editing Ares code.  This article describes some additional details.
@@ -35,17 +42,24 @@ The first step in using GitHub for your own game code is to create your own semi
 
 ## Making the Game Use the Fork
 
-If you create your fork before you install the code, you can use specify it when you [install the game](/tutorials/install/install-game).
+GitHub will pull from whatever repository you cloned when you set the game up. By default this is the main Ares code, but you can specify your personal fork in the install options.
 
     ./install <game clone URL> <Web Portal clone URL>
 
-If you've already installed the game, you just need to make your install point at your new fork instead of the standard AresMUSH repository.  In the server shell, change to the aresmush folder and run the following commands:
+If you need to add the fork after the game is installed, you’ll need to re-point the GitHub “origin” to your forked repository instead of the main one.
 
-    git remote rm origin
-    git remote add origin <your fork's clone URL>
-    git pull origin master
+In GitHub desktop:
 
- > <i class="fa fa-exclamation-triangle"></i> **Note:** Repeat the above commands for both the aresmush and ares-webportal folders.
+1. Open the repo.
+2. Go to Repository -> Repository Settings -> Primary Remote Repository.
+3. Enter your fork’s clone URL.
+4. Repeat for the web portal repo.
+
+In the server shell:
+
+1. Go to the aresmush directory.
+2. Type `git remote set-url origin <Your Clone URL>`
+3. Repeat for the web portal directory.
 
 Now your game will be set up to get code updates from your fork instead of from the main Ares repository.
 
@@ -69,6 +83,6 @@ Follow the instructions in the [Using GitHub](/tutorials/code/edit-code/github) 
 
 There may be merge conflicts if both you and the Ares devs changed the same bits of code differently.  See [Upgrades - Resolving Conflicts](/tutorials/manage/upgrades) for more information, and [ask for help](/feebdack) if you get stuck.
 
-## Learning GitHub
+## Advanced GitHub
 
 There are a plethora of good tutorials on the internet about using GitHub, including [Try Git](https://try.github.io)  and [Learn Enough Git To Be Dangerous](https://www.learnenough.com/git-tutorial).  There's also detailed guides on GitHub's own website, and the first couple chapters of the [Pro Git](https://git-scm.com/book/en/v2) ebook (later chapters go into gory details you won't need).

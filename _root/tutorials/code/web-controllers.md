@@ -1,9 +1,7 @@
 ---
 title: Web Portal Controllers
 description:
-layout: portal-anatomy
-prevstep: events-route
-nextstep: events-web-request
+layout: page
 tags: 
 - code
 - webportal

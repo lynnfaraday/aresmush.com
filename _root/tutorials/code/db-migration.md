@@ -11,6 +11,13 @@ Many Ares version upgrades will come with an associated **Database Migration**. 
 
 As part of a [code upgrade](/tutorials/manage/upgrades), you'll use the `bin/migrate` script to run any available database migrations.  This is an automated process, so you shouldn't need to worry about how it works under the hood.  This article can help you understand more about what's going on.
   
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Types of Migrations
 
 There are three main types of migrations:

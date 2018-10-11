@@ -11,6 +11,13 @@ Ares doesn't allow you to alter the game code from the MU client window, but som
 
 > <i class="fa fa-info-circle"></i> **Tip:** Not all admins can use the tinker/ruby commands - only characters with the `coder` role.  This is a security feature, because giving someone access to run arbitrary code essentially gives them the keys to the kingdom.  They could do literally anything with the database.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Using the Ruby Command
 
 The `ruby` command lets you run simple Ruby code snippets straight from your MU client.  Separate multiple lines with semicolons.  For example:

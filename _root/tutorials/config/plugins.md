@@ -1,10 +1,9 @@
 ---
+title: Enabling and Disabling Plugins
+layout: page
 tags:
 - config
-title: Enabling and Disabling Plugins
 ---
-
-# Enabling and Disabling Plugins
 
 The Ares plugin system allows you to easily plug IN new code modules.  Taking them OUT is trickier because many plugins rely on each other.
 
@@ -38,3 +37,11 @@ Disabling a plugin does **NOT**:
 * Remove its web pages.  You can still access them if you manually type in the address.
 
 In other words, the plugin is still there - it's just hidden from casual inspection.
+
+## Why is it Better to Disable?
+
+You might wonder why you'd want to disable a plugin instead of just excising its code completely.  Why keep around code you're not using?
+
+The main reason is that *other* Ares code is designed to look for these plugins.  For example, the profile code might say "If the ranks system is enabled, show their rank."  If you remove the ranks plugin completely, that code will break.
+
+Also, removing existing code will cause you some version control headaches if you later want to upgrade to a new Ares version.

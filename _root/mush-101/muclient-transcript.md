@@ -14,6 +14,13 @@ tags:
 
 This is the text transcript from the [Playing from a MUSH Client](/mush-101/play-muclient) tutorial.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Introduction
 
 Hi.  This is Faraday from AresMUSH and this is Part II of the MUSH 101 tutorial.  In this segment we’ll cover how to play the game using a MUSH client.  

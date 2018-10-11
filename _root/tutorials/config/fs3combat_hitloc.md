@@ -1,14 +1,21 @@
 ---
-title: Configuring FS3 combat damage.
+title: Configuring FS3 Combat - Hit Locations
+layout: page
 tags:
 - config
----
-# Configuring FS3 Combat - Hit Locations
+--- 
 
 To configure the FS3 hit location tables:
 
 1. Select Admin -> Setup.
 2. Edit `fs3combat_hitloc.yml`
+
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
 
 ## Before You Start
 

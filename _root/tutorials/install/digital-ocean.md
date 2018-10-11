@@ -30,7 +30,7 @@ A "droplet" is just what DO calls a server.   To create a new droplet, log into 
 
 1. Select the UBuntu distribution image.  (Ares has been fully tested on Ubuntu 16.04 and 18.04.  Newer versions are probably fine too.)
 {{#pretty-image}}{{urls.media}}/install-ares/droplet.png{{/pretty-image}}
-2. Select a size.  The 1GB droplet meets all of Ares' [System Requirements](/tutorials/install/system-requirements), including the Web Portal.
+2. Select a size.  The 1GB droplet meets all of Ares' system requirements, including the Web Portal.
 3. Don't add block storage.
 4. Select a region close to you.
 5. Don't add additional options.

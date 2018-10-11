@@ -1,14 +1,21 @@
 ---
+title: Configuring FS3 - Chargen
+layout: page
 tags:
 - config
-title: Configuring FS3 chargen.
 ---
-# Configuring FS3 - Chargen
 
 To configure the FS3 Chargen Limits:
 
 1. Select Admin -> Setup.
 2. Edit `fs3skills_chargen.yml`
+
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
 
 ## Before You Start
 
@@ -81,6 +88,8 @@ Remember that these limits are at *or above*.  So given the max skills example a
 FS3 lets you assign starting skills and specialties for different groups.  For example, you may want to ensure that people from a certain colony all start with a particular language, or that people in a certain position start with certain professional skills.
 
 > <i class="fa fa-exclamation-triangle"></i> **Note:** As with the rating limits, these are soft targets.  The app command status will have a warning if any starting skills are missing or too low.
+
+> <i class="fa fa-info-circle"></i> **Tip:** Despite the word 'skills' in the name, you can also include attributes and advantages in the skills list.  It's just intended mainly for skills.
 
 ### Group Skills
 

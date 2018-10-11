@@ -1,9 +1,9 @@
 ---
-title: Configuring channels.
+title: Configuring the Channel System
+layout: page
 tags:
 - config
 ---
-# Configuring the Channel System
 
 To configure the Channels plugin:
 

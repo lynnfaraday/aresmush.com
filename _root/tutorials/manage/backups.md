@@ -10,6 +10,13 @@ tags:
 
 It's important to make backups of your game database and files.  There are many ways to do this, a few of which are discussed here.  
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## What Do I Need to Back Up?
 
 Here are the things that you need to back up in order to protect your game from disaster:

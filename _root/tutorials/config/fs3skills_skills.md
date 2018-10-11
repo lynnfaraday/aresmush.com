@@ -1,14 +1,21 @@
 ---
+title: Configuring FS3 - Skills List
+layout: page
 tags:
 - config
-title: Configuring FS3 skills list.
 ---
-# Configuring FS3 - Skills List
 
 To configure the FS3 Skills List:
 
 1. Select Admin -> Setup.
 2. Edit `fs3skills_action.yml`, `fs3skills_attrs.yml`, `fs3skills_bg.yml`, `fs3skills_langs.yml` and `fs3skills_advantages.yml`.
+
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
 
 ## Before You Start
 

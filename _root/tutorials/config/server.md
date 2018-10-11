@@ -1,9 +1,9 @@
 ---
+title: Configuring the Server
+layout: page
 tags:
 - config
-title: Configuring the server.
 ---
-# Configuring the Server
 
 Your server host and port information are set up during installation.  If they ever change, you'll need to update the configuration.
 

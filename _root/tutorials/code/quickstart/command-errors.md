@@ -14,9 +14,9 @@ tags:
 
 You may already have stumbled upon this, but the code we used in the previous exercise had a problem.  If you ran the `tinker` command witohut specifying any arguments, you'd get an error.
 
-## What Errors Look Like
-
 Whenever the code suffers an unexpected failure, you'll get a red "Oops! The code has lost its mind..." message explaining what the problem is.  Because players are not always great about reporting the details of errors, the error message is also included in the game's [log file](/tutorials/code/logs).  
+
+## Try It! - What Errors Look Like
 
 Let's see what this looks like.  Change the tinker code back to our previous example:
 
@@ -35,7 +35,7 @@ Now run the `tinker` command by itself without giving it any arguments.  You sho
 
 This is because `integer_arg`, like all the arg parsers, returns `nil` if the arg is missing.  You can't use nil in a greater-than/less-than comparison because it's not a number.
 
-## Adding An Error Check
+## Try It! - Adding An Error Check
 
 We need to do some error checking to make sure that doesn't happen.  Give it a try:
 

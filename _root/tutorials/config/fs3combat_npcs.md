@@ -1,14 +1,21 @@
 ---
-title: Configuring FS3 NPC skills.
+title: Configuring FS3 Combat - NPC Skills
+layout: page
 tags:
 - config
 ---
-# Configuring FS3 Combat - NPC Skills
 
 You can configure the skill levels used by NPCs in FS3 combat.
 
 1. Select Admin -> Setup.
 2. Edit `fs3combat_npcs.yml`
+
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
 
 ## npc_types
 
@@ -43,7 +50,7 @@ You can also fine-tune dice pools for specific skills.  This is helpful if you w
 
 Any skills not expressly listed will use the 'Default' value.
 
-## wounds
+### wounds
 
 Finally, there is a setting for 'Wounds' which is a lethality bonus (or penalty) added to all damage they **take**. To make goons easier to damage and bosses harder, you could do:
 
@@ -53,3 +60,7 @@ Finally, there is a setting for 'Wounds' which is a lethality bonus (or penalty)
     Boss:
         Default: 6
         Wounds: -10
+
+## default_npc_type
+
+You can set what the default NPC type is.  It must be one of those specified in the `npc_types` list.

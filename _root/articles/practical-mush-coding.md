@@ -15,6 +15,13 @@ This is not a beginner's coding manual. It assumes that you have some basic know
 
 What you'll find in this guide is a (hopefully) practical demonstration of what I like to call "journeyman-level psychocoding". It's meant to bridge the gap between a "casual" coder and a true "psychocoder"; to give you enough familiarity with how to do things that you can use these principles in your own coding projects. I hope you find it useful.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Reinventing the Wheel
 
 I believe strongly that the only way to learn to code is by doing it. No amount of reading and theory that can substitute for the experience you get by working on even a small code project. Unfortunately, most of the small projects have been done already. +who, +finger, bulletin boards - every MUSH in the world has them. Why reinvent the wheel, if someone's already done the work?

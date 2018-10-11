@@ -7,9 +7,18 @@ tags:
 - yaml
 ---
 
-YAML is the data format used for Ares' configuration files.  For general information about how to use YAML, see [Understanding YAML](/tutorials/code/yaml). 
+YAML is the data format used for Ares' configuration files.  For general information about how to use YAML, see [Understanding YAML](/tutorials/code/yaml).  This article will help you troubleshoot issues with your YAML files.
 
-Sometimes, though, your YAML configuration goes awry, and you'll get errors like this:
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
+## YAML Errors
+
+Sometimes your YAML configuration goes awry, and you'll get errors like this:
 
     Error reading YAML from /Users/ares/Code/aresmush/game/plugins/fs3combat/fs3combat.yml.  See http://aresmush.com/tutorials/code/yaml/ for troubleshooting help: (<unknown>): mapping values are not allowed in this context at line 3 column 17
 

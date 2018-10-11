@@ -1,9 +1,9 @@
 ---
-title: Configuring FS3 Combat skills.
+title: Configuring FS3 Combat - Skills
+layout: page
 tags:
 - config
 ---
-# Configuring FS3 Combat - Skills
 
 To configure the FS3 Combat Skills:
 

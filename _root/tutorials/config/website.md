@@ -1,15 +1,18 @@
 ---
+title: Configuring the Web Portal.
+layout: page
 tags:
 - config
-title: Configuring the Web Portal.
-aliases:
-- css
-- recaptcha
-- webportal
 ---
-# Configuring the Web Portal
 
 There are a variety of things you can configure about the Web Portal.
+
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
 
 ## Home Page Text
 

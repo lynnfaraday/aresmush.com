@@ -114,6 +114,7 @@ Once you've completed the initial tutorials, there are a wealth of other topics 
 
 ### Utilities
 
+* [Emitting](/tutorials/code/emitting)
 * [Formatters](/tutorials/code/formatters)
 * [Templates](/tutorials/code/templates)
 

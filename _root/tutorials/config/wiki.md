@@ -1,12 +1,9 @@
 ---
+title: Configuring the Game Wiki
+layout: page
 tags:
 - config
-title: Configuring the Game Wiki.
-aliases:
-- css
-- recaptcha
 ---
-# Configuring the Game Wiki
 
 The Web Portal wiki has a number of configuration options.  To set them:
 

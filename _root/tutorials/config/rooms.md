@@ -1,9 +1,9 @@
 ---
+title: Configuring the Rooms System
+layout: page
 tags:
 - config
-title: Configuring the rooms system.
 ---
-# Configuring the Rooms System
 
 To configure the Rooms plugin:
 

@@ -1,9 +1,9 @@
 ---
+title: Configuring the Weather System
+layout: page
 tags:
 - config
-title: Configuring the weather system.
 ---
-# Configuring the Weather System
 
 To configure the Weather plugin:
 

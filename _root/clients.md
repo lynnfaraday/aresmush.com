@@ -8,6 +8,13 @@ tags:
 
 To connect to AresMUSH (or any other MUSH), you'll need a MUSH client.  There are dedicated apps you can install on your PC/Mac or mobile device, or you can use the game's built-in web client to play through the web browser.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Common Clients
 
 There are many MUSH clients around.  Popular MUSH clients include:

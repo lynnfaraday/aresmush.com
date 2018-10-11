@@ -1,9 +1,9 @@
 ---
+title: Configuring the Places System
+layout: page
 tags:
 - config
-title: Configuring the places system.
 ---
-# Configuring the Places System
 
 To configure the Places plugin:
 

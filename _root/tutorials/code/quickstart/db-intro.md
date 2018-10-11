@@ -13,7 +13,7 @@ tags:
 - database
 ---
 
-Most commands will need to read data from or save data to the database.  Ares uses an off-the-shelf database tool called Redis, but you won't interact with the database directly.  There are no SQL queries to write or anything like that.  The [Ohm](http://ohm.keyvalue.org/) database library lets you interact with the database using Ruby code.
+Most commands will need to read data from or save data to the database.  Ares uses an off-the-shelf database server called Redis, but you won't interact with the database directly.  There are no SQL queries to write or anything like that.  The [Ohm](http://ohm.keyvalue.org/) database library lets you interact with the database using Ruby code.
 
 Diving deep into the database is beyond the Quickstart Tutorial.  This is just a quick overview.  There's a separate  [database tutorial](/tutorials/code/database) for you in the Advanced Coding section if you want to learn more.
 
@@ -29,7 +29,7 @@ Ohm lets you define ruby classes that interact with the database.  These are cal
 
 We're already seen how we can utilize the name attribute in our code through examples like `client.emit "Hello #{enactor.name}!"`   In that case, `enactor` is an instance of a character model, and `name` is the database field.
 
-## Queries
+## Try It! - Queries
 
 There are a variety of ways to query (request) information from the database, but the most common one will be to find something by name.   Let's see how that works.   Change the tinker command as shown:
 
@@ -52,7 +52,7 @@ Now try the searches again with aliases and different capitalization.  It works 
 
 There are some other query helpers, which you can read about in the advanced [database tutorial](/tutorials/code/database/) when you're ready.
 
-## Updates
+## Try It! - Updates
 
 Once you have the database object, you can use the `update` method to change its fields.  Here's how we can change Guest-1's alias to "guest":
 
@@ -62,5 +62,5 @@ Once you have the database object, you can use the `update` method to change its
       client.emit "Done!"
     end
 
-> <i class="fa fa-exclamation-triangle"></i> **Important:** Just setting the class attribute (like `char.alias = 'guest'`) will change the local copy of the object, but it doesn't update the databse.  Always call `update` to save database changes.
+> <i class="fa fa-exclamation-triangle"></i> **Important:** Just setting the class attribute (like `char.alias = 'guest'`) will change the local copy of the object, but it doesn't update the database.  Always call `update` to save database changes.
 

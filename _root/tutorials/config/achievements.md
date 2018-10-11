@@ -1,9 +1,9 @@
 ---
-title: Configuring the achievements system.
+title: Configuring the Achievements System
 tags:
 - config
+layout: page
 ---
-# Achievements - Configuration
 
 Achievements is an optional plugin that lets you set up in-game achievements for characters to earn.   To configure the Achievements plugin:
 

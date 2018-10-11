@@ -1,14 +1,21 @@
 ---
+title: Configuring the Idle System
+layout: page
 tags:
 - config
-title: Configuring the idle system.
 ---
-# Configuring the Idle System
 
 To configure the Idle plugin:
 
 1. Select Admin -> Setup.
 2. Edit `idle.yml`
+
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
 
 ## use_roster
 

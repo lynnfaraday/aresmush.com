@@ -9,7 +9,7 @@ These articles will help you learn how to play AresMUSH.  If you're brand new to
 {{>tutorial_warning}}
 
 * [Ares for Vets](/tutorials/play/ares-for-vets) - Overview of Ares for veteran MU\* players.
-* [Using the Web Portal](/web_portal) - Understanding Ares' web interface.
+* [Using the Web Portal](/web-portal) - Understanding Ares' web interface.
 * [Client Setup](/clients) - Setting up your MUSH client to work with Ares.
 * [Player Handles](/handles) - Learn all about Ares' player identity system.
 * [Dealing with Trolls](/tutorials/manage/trolls) - Tools for handling trolls and harassment.

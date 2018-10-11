@@ -12,6 +12,13 @@ At some point there will be a new version of Ares code available and you'll want
 
  > <i class="fa fa-exclamation-triangle"></i> **Note:** These instructions assume that you've followed the standard installation process and have your game server pointed at GitHub (either to the main Ares repository or to [your own fork](/tutorials/code/git)).  If you've done something different with your server, you may need to adapt the instructions to your environment.
  
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Important Note About Downgrades
 
 > <i class="fa fa-exclamation-triangle"></i> **Note:** Ares has a lot of support for **upgrades** but not for *downgrades*.  If you ever find yourself needing to revert back to a previous version, you may need to make some custom code tweaks to prevent data loss (since database fields may be different between versions).  Unless you're super-comfortable with the code, it's probably best to [ask for help](/feedback) before attempting this. 

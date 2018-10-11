@@ -9,6 +9,13 @@ tags:
 
 Most commands will need to read data from or save data to the database.  Ares uses an off-the-shelf database tool called Redis.  The [Ohm](http://ohm.keyvalue.org/) database library lets you interact with the database directly from Ruby code.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Models and Fields
 
 Ohm lets you define ruby classes that interact with the database.  These are called **Models**, and you can identify them by the fact that they inherit from `Ohm::Model`.   Model classes define attributes that correspond to fields in the database.  For example, the `Character` class defines a name and alias: 

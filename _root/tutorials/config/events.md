@@ -1,18 +1,14 @@
 ---
-title: Configuring the events system.
+title: Configuring the Events System
+layout: page
 tags:
 - config
 ---
-# Configuring the Events System
 
 To change the Events plugin configuration:
 
 1. Select Admin -> Setup.
 2. Edit `events.yml`
-
-## calendar_timezone
-
-Event dates and times are stored in the server's timezone, so it's helpful to tell the players what that is.
 
 ## event_alert_cron
 

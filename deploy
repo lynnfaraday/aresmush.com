@@ -1,0 +1,1 @@
+scp -r compiled/* ares@www.aresmush.com:/www/www.aresmush.com

@@ -18,6 +18,13 @@ tags:
 
 The game engine provides a number of global objects that provide useful services.  These are all part of the `Global` class, so you can access them with code like `Global.service.method`.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Dispatcher
 
 The Dispatcher is responsible for routing game commands, events and web requests to the appropriate plugin.  It is, in a way, the heart of the game engine.

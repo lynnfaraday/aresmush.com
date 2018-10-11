@@ -9,6 +9,15 @@ tags:
 
 Ares uses the [Ohm](http://ohm.keyvalue.org/) database library to access fields in the Redis database.  Adding new fields to Ohm database models is very easy.  Removing them requires a little more work.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
+## Why Removing is Tricky
+
 For example - let's say that you had an attribute named favorite_color on the Character class:
 
     class Character < Ohm::Model
@@ -18,17 +27,17 @@ For example - let's say that you had an attribute named favorite_color on the Ch
 
 You make some code to set it, and now some characters have a favorite color.  
 
-Now you've decided you don't need favorite color after all.   You remove it from the class.  Everything seems fine, until the next time someone logs in, then bam!
+Now you've decided you don't need favorite color after all.   You remove it from the class.  Everything seems fine, but then you start seeing all kinds of warning messages in the logs:
 
-    undefined method `favorite_color=' for #<AresMUSH::Character:0x007fcca57994f0>
+    WARN - Model AresMUSH::Character failed to respond to favorite_color undefined method `favorite_color='
 
-This is happening because you've got data for `favorite_color` in the databse, but nowhere to put it on the Character object!   Ohm assumes that's a coding mistake and throws an error.
+This is happening because you've got data for `favorite_color` in the databse, but nowhere to put it on the Character object!   Ohm assumes that's a coding mistake and gives you a warning.
 
 ## Removing Fields Safely
 
 To prevent this from happening, you should set all instances of the field to `nil` in the database **before** removing it from the code.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** If the field was originally a special data type (like DateTime or Integer) we need to change it to a string data type first.  Otherwise our nil may be converted to a default value (like 0).
+> <i class="fa fa-exclamation-triangle"></i> **Note:** If the field was originally a special data type (like DateTime or Integer) we need to change it to a string data type first by removing the `type` specification.  Otherwise our nil may be converted to a default value (like 0).
 
 For example, assume we have:
 

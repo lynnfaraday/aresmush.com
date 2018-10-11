@@ -10,11 +10,41 @@ This tutorial will go over the major differences between Ares and Penn/Tiny.
 
 If you have any questions or suggestions, feel free to [contact me](/feedback).
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Getting Help
 
 Ares doesn't have a separate +help system - there's just `help`.   Help files are organized by category rather than by name, hopefully making it easier to find what you're looking for.   Admin and builder help are built into the same system, so no more looking for help in multiple places.
 
-Ares help files are optimized for viewing on the game's Web Portal, but you can see them in-game too.
+Ares help files are optimized for viewing on the game's Web Portal.  They are written more as guides than command references.
+
+The quickref command (aliased `qr`) allows you to quickly look up the syntax for specific commands.
+
+For example:
+
+`help combat` will give you a wall of text explaining combat:
+
+```
+  FS3 Combat
+  ----------
+  The FS3 Combat system is designed to bring some order to the chaos of large combat scenes, managing ability rolls and tracking damage in an automated fashion. 
+```
+
+`qr combat` will give you a quick reference for syntax:
+
+```
+  Command Quick Reference
+
+  combat/stance <stance> - Sets stance for your actions.  You can use combat/stances to see a list of possible stances.
+  combat/attack <target>[/<specials, see below>]
+  combat/aim <target> - Takes careful aim.
+  combat/reload – Reloads a weapon.
+```
 
 ## Commands
 

@@ -1,14 +1,21 @@
 ---
-title: Configuring FS3 combat armor.
+title: Configuring FS3 Combat - Armor
+layout: page
 tags:
 - config
 ---
-# Configuring FS3 Combat - Armor
 
 To configure the FS3 armor types:
 
 1. Select Admin -> Setup.
 2. Edit `fs3combat_armor.yml`
+
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
 
 ## Before You Start
 

@@ -14,9 +14,9 @@ tags:
 
 In the previous exercise, we learned how to access command arguments.  We saw, though, that `cmd.args` was a string.  We can't do numeric operations on string.  What if we wanted to count our little piggies?  
 
-## Arg Utilities
-
 Ares provides a variety of argument parsing utilities to handle args that are numbers, lists, or even complex sequences like "name=subject/message".  We're just going to go over a couple here, but the rest are documented in [Arg Parsers](/tutorials/code/arg-parsers).  You can check that out later.
+
+## Try It! - Arg Utilities
 
 We'll start with the `integer_arg` helper, which will help us turn our number of piggies from a string to a number that we can do something with.
 
@@ -33,7 +33,7 @@ Try tinkering with different numbers of piggies and see how the message changes 
 
 > <i class="fa fa-exclamation-triangle"></i> **Note:** If you leave off the argument and just use `tinker` by itself, you'll get an error.  We'll talk about why this is and how to fix it in the next exercise.
 
-## Arg Parsers
+## Try It! - Arg Parsers
 
 What if we have multiple parts to our arguments, like `tinker <number of piggies>=<names of piggies>`?
 

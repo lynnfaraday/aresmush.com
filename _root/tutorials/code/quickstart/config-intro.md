@@ -19,6 +19,8 @@ Go to the Admin -> Setup menu in the Web Portal and edit the `tinker.yml` config
 
 {{#pretty-image}}/assets/media/code/config.png{{/pretty-image}}
 
+## Try It!
+
 Change the tinker handle method as shown below:
 
 > <i class="fa fa-info-circle"></i> **Tip:** You can click the Reset button on the tinker screen to put the tinker code back to the default values and remove all the piggy processing we did in prior exercises.

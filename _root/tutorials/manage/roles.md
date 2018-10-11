@@ -6,6 +6,13 @@ layout: page
 
 Ares has a robust and flexible roles/permissions system.  This article describes how you can utilize roles on your game.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Roles vs Permissions
 
 There are two levels to the Roles system:  roles and permissions.

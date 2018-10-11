@@ -6,7 +6,7 @@ editCodeTutorial: true
 tutorialName: Editing Code
 tutorialIndex: tutorials/code/edit-code
 prevstep: github
-nextstep: next-steps
+nextstep: debug-mode
 tags: 
 - code
 ---

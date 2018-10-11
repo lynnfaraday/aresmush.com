@@ -11,6 +11,15 @@ tags:
 
 > <i class="fa fa-info-circle"></i> **Tip:** Indentation is super-important in YAML files.  Always make sure things are lined up with each other.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
+## Example YAML
+
 Here is a snippet from the "Cookies" module configuration file:
 
     cookies:
@@ -18,6 +27,7 @@ Here is a snippet from the "Cookies" module configuration file:
         cookies_per_luck: 10
 
 This defines a configuration section (`cookies`) and two settings (`cookie_forum` and `cookies_per_luck`).  The setting names are called **keys**.   
+
 
 ## Key Naming
 
@@ -37,7 +47,7 @@ When values are displayed to or used by the players (like skills, gear or factio
 
 You can edit the game's configuration through the Web Portal.  Go to Admin -> Setup and choose the configuration file you want to edit.  You'll be presented with a simple editor screen.   You don't have to worry about the config keys in the web editor, only their values.
 
-{{#pretty-image}}/assets/media/web_portal/config.png{{/pretty-image}}
+{{#pretty-image}}/assets/media/web-portal/config.png{{/pretty-image}}
 
 Coders may also prefer to edit the config files on disk in the server shell.  All game configuration files reside in the `aresmush/game/config` folder on the server.  When editing on disk, you must do `load config` or `load <plugin name>` after changing the configuration so the game recognizes the changes.  This is not necessary when changing configuration in the Web Portal; it does so automatically.
 

@@ -10,6 +10,13 @@ tags:
 
 Whether you're modifying FS3 for your own house rules or using it as a pattern for your own skill system, it may help you to understand the key code blocks that make up the FS3 codebase.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## FS3 Plugins
 
 FS3 is implemented as two plugins:  FS3Skills (including luck and XP) and FS3Combat.  The combat plugin is separate so it can be easily disabled in games that don't want automated combat.
@@ -71,6 +78,28 @@ Typically this will be built from the `parse_roll_params` method, which cracks a
 ## FS3 Combat
 
 This section describes some key components of the FS3 Combat plugin.
+
+### Combat Messages
+
+Most emits are sent to everyone in the combat.
+
+    FS3Combat.emit_to_combat(combat, message, npcmaster_text)
+
+If a command can be executed by another player (common for NPCs, but sometimes used to take actions when someone is idle), you want to be sure to supply the "NPC Master Text".  This is what generates the text at the end saying who did the command.  For example:
+
+     <FS3Combat> Bob will reload this turn. (by Faraday)
+
+NPC Master Text can be generated automatically using the helper:
+
+    FS3Combat.npcmaster_text(character_or_npc_name, enactor)
+
+Less commonly, you might want to emit only to the combat organizer (like when secret modifiers are applied) or to an individual combatant:
+
+    FS3Combat.emit_to_organizer(combat, message, npcmaster_text)
+    FS3Combat.emit_to_combatant(combatant, message)
+
+> <i class="fa fa-info-circle"></i> **Tip:** Since combatants may be NPCs or PCs offline, it's generally better to show the messages to everyone in combat rather than individual combatants.
+
 
 ### Database Models
 

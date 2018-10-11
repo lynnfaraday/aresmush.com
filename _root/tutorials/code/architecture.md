@@ -15,9 +15,16 @@ The following image shows all the different Ares components and how they fit tog
 
 {{#pretty-image}}/assets/media/architecture.png{{/pretty-image}}
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Clients
 
-At the left are the **Clients**, which are how you connect to the game.  Generally you'll use a MU client application (like Atlantis or Potato) connected to the telnet port.  Ares also allows you to access the [Web Portal](/web_portal) through a web browser.
+At the left are the **Clients**, which are how you connect to the game.  Generally you'll use a MU client application (like Atlantis or Potato) connected to the telnet port.  Ares also allows you to access the [Web Portal](/web-portal) through a web browser.
 
 ## Engine
 

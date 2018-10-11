@@ -1,9 +1,9 @@
 ---
+title: Configuring the Scenes System
+layout: page
 tags:
 - config
-title: Configuring the scenes system.
 ---
-# Configuring the Scenes System
 
 To configure the Scenes plugin:
 

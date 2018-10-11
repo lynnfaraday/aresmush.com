@@ -1,5 +1,6 @@
 ---
-title: Using the API proxy feature.
+title: Using the API Proxy Feature
+layout: page
 tags:
 - webportal
 - api
@@ -8,6 +9,13 @@ tags:
 The web portal uses a special forwarding feature of the web server to make it easier to talk to the game engine.  This feature is called a proxy, and it translates requests to `http://<hostname>/api` into `http://<hostname>:<engine_api_port>`.   This helps people behind corporate/school firewalls, who might otherwise not be able to access the web portal from school/work.   
 
 > <i class="fa fa-exclamation-triangle"></i> **Note:**  Be aware that without this feature, it may cause some people with strict work/school firewalls to be unable to connect to the web portal.
+
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
 
 ## Setting Up the Proxy
 

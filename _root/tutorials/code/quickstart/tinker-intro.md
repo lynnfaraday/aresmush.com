@@ -22,15 +22,18 @@ To change the tinker code:
 4. Click Save.
 5. Back in the MUSH client window, type `tinker` to execute the code.
 
-To make our tinker command say hello, we would make the `handle` method look like this:
+## Try It!
+
+Let's make the tinker code say hello to us.  Edit the tinker code as described above and make the `handle` method look like this:
 
     def handle
       client.emit "Hello, #{enactor.name}!"
     end
 
-After saving, go back to your MUSH client (logged in with your coder character) and type 'tinker'.  You should see:  "Hello, Headwiz!" (or whatever your character's name is.)
+> <i class="fa fa-info-circle"></i> **Tip:** There's other code in the tinker file, but we don't need to mess with that.  In these examples, we'll only be changing the 'handle' method.  The other code will be explained in future tutorials.
 
-> <i class="fa fa-info-circle"></i> **Tip:** If you get an error when saving your code, check to make sure you've typed it exactly as indicated in each exercise.  Usually errors result from misplaced braces `{}` or missing `end` statements.
+After saving, go back to your MUSH client (logged in with your coder character) and type 'tinker'.  You should see:  "Hello, Headwiz!" (or whatever your character's name is.)
 
 We're going to continue using the tinker command for the remaining exercises in this tutorial.  There's a more in-depth [Tinkering Tutorial](/tutorials/code/tinker) if you want to learn more about tinkering when you've finished with the Quickstart.
 
+> <i class="fa fa-info-circle"></i> **Tip:** If you get an error when saving or executing your code, check to make sure you've typed it exactly as indicated in each exercise.  Usually errors result from misplaced braces `{}` or missing `end` statements.

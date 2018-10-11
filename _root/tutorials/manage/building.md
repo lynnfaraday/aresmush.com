@@ -13,6 +13,13 @@ Scenes have to take place *somewhere*.   The Ares scene system lets you start sc
 
 > <i class="fa fa-info-circle"></i> **Tip:** Despite the historical name, a Room doesn't have to represent a single room.  It's more like a virtual 'chatroom' - a place where people gather for roleplay.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Onstage and Offstage
 
 Ares uses a theater analogy for its grid, with three types of rooms:
@@ -48,9 +55,20 @@ Ares does not directly support multiple starting locations (e.g. starting people
 
 ## Areas
 
-Areas are just an easy way to organize rooms into related groups.  Typically they correspond to distinct geographic areas - districts in a city, decks on a ship, planets, etc.   The maps and weather systems are geared around areas, with each area able to have a separate map and weather pattern.  Areas also help distinguish between rooms with similar names.
+Areas are just an easy way to organize rooms into related groups.  Typically they correspond to distinct geographic areas - districts in a city, decks on a ship, planets, etc.  Areas also help distinguish between rooms with similar names.
 
-You can use areas in custom code - e.g. making it so certain commands are only available (or work differently) depending on the area the character is in.
+You can use areas in custom code - e.g. making it so certain commands are only available (or work differently) depending on the area the character is in.  For example, the weather plugin bases weather patterns on the room areas.
+
+Areas can have a description (in which you might want to put some ASCII map art or a link to a map image).
+
+You can set up areas in a parent/child hierarchy.  For example:
+
+* Chicago
+  * The Loop
+  * Northbrook
+* New York
+  * Brooklyn
+  * The Bronx
 
 ## Locks
 

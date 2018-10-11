@@ -11,6 +11,13 @@ I've always thought of BSP like a television show. So in the same vein as [Krieg
 
 --Faraday
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Building BSP
 
 ### Famous Last Words

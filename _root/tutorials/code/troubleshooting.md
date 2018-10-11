@@ -11,9 +11,20 @@ Sometimes things go wrong, and you'll get the "Sorry! The code lost its mind whi
 
 If the information below doesn't help you, you can always ask for help on the [Ares Forums](/feedback).
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Log Files
 
 The first place to check is the game log.  This will help you pinpoint the exact file and line number where the code failed.  See [Using Log Files](/tutorials/code/logs) for help.
+
+## Debug Mode
+
+For tricky issues - especially during development - it can be helpful to run the game in [Debug Mode](/tutorials/code/edit-code/debug-mode).
 
 ## YAML Issues
 

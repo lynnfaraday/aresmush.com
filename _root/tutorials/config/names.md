@@ -1,9 +1,9 @@
 ---
+title: Configuring Restricted Names
+layout: page
 tags:
 - config
-title: Configuring restricted names.
 ---
-# Configuring Restricted Names
 
 You can configure character names that are off-limits.  For example, if your theme is Star Wars you may want to reserve Luke and Yoda. 
 

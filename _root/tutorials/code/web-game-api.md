@@ -9,6 +9,13 @@ tags:
 
 `GameApi` is the Web Portal service that talks to the game. 
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Game Requests
 
 The Game API service supports two primary methods: 

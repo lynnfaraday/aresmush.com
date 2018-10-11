@@ -1,9 +1,9 @@
 ---
+title: Configuring the Game Skin
+layout: page
 tags:
 - config
-title: Configuring the game skin (lines).
 ---
-# Configuring the Game Skin
 
 To configure the game skin:
 

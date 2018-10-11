@@ -11,6 +11,13 @@ On the whole, I think Battlestar Pacifica is a pretty cool game. We have a bunch
 
 That said, it is not without its problems. There are a number of things that I would do differently if I had the chance. I figured I'd jot some of them down in the hopes that these 'lessons learned' might be useful to somebody somewhere.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Have a Vision
 
 On BSP, we didn't have a clear vision from the start. Was it a gritty realistic game or a science-fantasy drama? The show itself tends to alternate between both of those extremes from week to week depending on the whims of the writers. That's all well and good for a TV show. Fans will shake their fists at the TV screen and laugh about all the continuity errors and plot holes, but they'll keep on watching. To some extent MUSH players will do the same, but on the whole they seem to have higher expectations.

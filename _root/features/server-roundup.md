@@ -10,6 +10,13 @@ Choosing the right server for your MUSH is important, and Ares may not be the be
 
 Obviously this is biased a bit from my perspective, but I have done my best to be fair and accurate in representing the other servers.  If you see any discrepancies, please [let me know](/feedback).
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Server Comparison
 
 This article compares the following servers:
@@ -58,7 +65,7 @@ The newer servers have integrated game websites that pull data directly from the
 |Integrated Website|Full Web Portal |Minimal Website (Extensible) |--- |--- |API Only |
 |Web Client|Yes|Yes|API Only|---|API Only|
 
-Ares contains a full-fledged [web portal](https://aresmush.com/web_portal/) with an integrated wiki, web chargen, scenes and character profiles, and an admin console.
+Ares contains a full-fledged [web portal](https://aresmush.com/web-portal/) with an integrated wiki, web chargen, scenes and character profiles, and an admin console.
 
 Evennia comes with an integrated website.  Out of the box it has an admin panel for editing the database and a few player utilities.  You can use the Django web framework to code up a more robust site like [Arx’s](http://play.arxmush.org/).
 

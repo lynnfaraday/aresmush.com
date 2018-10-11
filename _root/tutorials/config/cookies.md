@@ -1,9 +1,9 @@
 ---
-title: Configuring the cookie system.
+title: Configuring the Cookie System
+layout: page
 tags:
 - config
 ---
-# Configuring the Cookie System
 
 To configure the Cookies plugin:
 

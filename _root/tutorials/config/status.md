@@ -1,9 +1,9 @@
 ---
+title: Configuring the Status System
+layout: page
 tags:
 - config
-title: Configuring the status system.
 ---
-# Configuring the Status System
 
 To configure the Status plugin:
 

@@ -1,9 +1,9 @@
 ---
+title: Configuring the Roles System
+layout: page
 tags:
 - config
-title: Configuring the roles system.
 ---
-# Configuring the Roles System
 
 To configure the Roles plugin:
 

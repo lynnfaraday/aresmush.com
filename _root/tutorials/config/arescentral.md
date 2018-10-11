@@ -1,9 +1,10 @@
 ---
-title: Configuring the communication with AresCentral.
+title: Configuring AresCentral
+layout: page
 tags:
 - config
 ---
-# AresCentral - Configuration
+# Configuring AresCentral
 
 > You probably won't ever need to change the AresCentral configuration.
 

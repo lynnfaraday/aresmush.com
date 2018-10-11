@@ -9,11 +9,12 @@ tags:
 
 This article lists some tools that you'll probably want to get if you're doing Ares coding.
 
-## Github Desktop
+<div id="inline_toc" markdown="1">
+**Table of Contents**
 
-[GitHub Desktop](https://desktop.github.com/) is a nice tool that makes it easy to work with GitHub.  It's available for Mac or Windows.
-
-The [Using GitHub](/tutorials/code/edit-code/github) screencast walks you through how to use GitHub Desktop.
+* TOC
+{:toc}
+</div>
 
 ## Code Editors
 
@@ -26,20 +27,27 @@ Do yourself a favor and get a decent code editor.  Here are some good ones:
 
 I personally don't think a Ruby IDE like RubyMine is worth the cost for the benefits you get, but YMMV.
 
+## Github Desktop
+
+[GitHub Desktop](https://desktop.github.com/) is a nice tool that makes it easy to work with GitHub.  It's available for Mac or Windows.
+
+The [Using GitHub](/tutorials/code/edit-code/github) screencast walks you through how to use GitHub Desktop.
+
 ## Test Environment
 
 It's helpful to have a place to test your code that *isn't* your main game.  That way you can make sure everything works right before unleashing it on your players.  
 
-> **Important!** It's strongly recommended that you follow the standard [installation instructions](/tutorials/install) for your very first Ares game.  For just a few bucks, less than the price of a grande coffee, you can spin up a droplet for a couple weeks and get your feet wet.  That way you're not trying to learn both Ares code and Ares server setup at the same time!  Once you have a little more experience with Ares, you can explore some of the [other options](/tutorials/code/dev-tools) for setting up a game for development purposes.
+> <i class="fa fa-exclamation-triangle"></i> **Note:** It's strongly recommended that you follow the standard [installation instructions](/tutorials/install) for your very first Ares game.  For just a few bucks, less than the price of a grande coffee, you can spin up a droplet for a couple weeks and get your feet wet.  That way you're not trying to learn both Ares code and Ares server setup at the same time!  Once you have a little more experience with Ares, you can explore these other options for setting up a game for development purposes.
 
+### Overview
 
-See the [Setting Up a Test Game](/tutorials/code/edit-code/test-game) tutorial for a screencast explaining and demonstrating your options.  Some technical details for each can be found below.
+See the [Setting Up a Test Game](/tutorials/code/edit-code/test-game) tutorial for a screencast explaining and demonstrating your options.  Those options are explained more in the following sections.
 
 ### Installing on a Local PC
 
-If you have MacOS or Linux installed on your home PC, you can actually install your own copy of Ares and run the code locally.  This makes testing a breeze.
+If you have MacOS installed on your home PC, you can actually install your own copy of Ares and run the code locally.  This makes testing a breeze.
 
-Unfortunately, AresMUSH doesn't run on Windows at the present time due to a limitation of a third-party library used in the database adapter.  :(
+AresMUSH won't run on Windows due to a limitation in the database driver, but you can install a Virtual Machine on your Windows PC (explained below).
 
 <button data-toggle="collapse" data-target="#macsetup" class="btn btn-info">Show Mac Setup Instructions</button>
 <div id="macsetup" class="collapse">
@@ -51,11 +59,11 @@ Unfortunately, AresMUSH doesn't run on Windows at the present time due to a limi
 
 A quick and easy way to have a test environment is to just get a second droplet and install a new copy of the game using the standard [installation instructions](/tutorials/install).   
 
-A droplet costs only a few dollars a month, but if you're extra-strapped for cash you can use Digital Ocean's snapshot feature to save a backup of the droplet and spin it up only for a few hours each month while testing.
+A droplet costs only a few dollars a month, and you can shave the costs even further by using Digital Ocean's snapshot feature.  This lets you save a backup of the droplet and spin it up only for a few hours each month while testing.
 
 ### Using a Virtual Machine
 
-You can run a Virtual Machine (VM) - a computer within a computer - on your local PC running MacOS, Windows or Linux.  If the machine is running Ubuntu Linux, you can install Ares on it.  With [GitHub](/tutorials/code/edit-code/github), you can transfer code to the Virtual Machine and test it there.
+A Virtual Machine (VM) lets you run a server on your own PC.  It's like a computer within a computer.  Once your VM is installed and configured, you can connect to it just as you would a server in the cloud.
 
 <button data-toggle="collapse" data-target="#vmsetup" class="btn btn-info">Show Virtual Machine Setup Instructions</button>
 <div id="vmsetup" class="collapse">
@@ -65,7 +73,7 @@ You can run a Virtual Machine (VM) - a computer within a computer - on your loca
 
 ### Using a Cloud IDE
 
-You can install Ares on a cloud development environment.  You'll need one like [CodeAnywhere.com](https://codeanywhere.com) that allows you to use an Ubuntu virtual machine for testing and provides SSH access to the machine so you can install the database and other tools.  The standard installation scripts will require some tweaking.
+You can install Ares on a cloud development environment.  You'll need one like [CodeAnywhere.com](https://codeanywhere.com) that allows you to use an Ubuntu virtual machine for testing and provides SSH access to the machine so you can install the database and other tools.  The standard installation scripts will require some tweaking.  I haven't been able to get the web portal running this way - only the game.
 
 ### Using a Dual Install (Not Advised)
 

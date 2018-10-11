@@ -1,9 +1,9 @@
 ---
+title: Configuring the Ranks System
+layout: page
 tags:
 - config
-title: Configuring the ranks system.
 ---
-# Configuring the Ranks System
 
 To configure the Ranks plugin:
 

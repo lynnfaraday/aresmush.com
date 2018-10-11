@@ -11,6 +11,13 @@ Creating a character on a MUSH can be a complex, challenging, and fascinating ta
 
 No background is ever truly complete. As you play your character, you will constantly think of new angles, new tidbits of past history. But the more you know about your character when you begin playing, the better you will be able to portray that person in a consistent and realistic manner. This guide is meant to aid you in fleshing out your character.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## FAMILY
 
 I have often wondered at the vast number of MUSH characters with no family. Sometimes these backgrounds are done for dramatic effect - the struggling orphan loner, or the tragic hero whose family was wiped out by the bad-guys. But other times, they're done out of sheer laziness. A player doesn't want to take the time describing brothers and sisters, so he makes his character an only child. He doesn't want to be bothered playing his parents as NPCs, so he says they died years ago. Players who do this are missing out on a golden opportunity.

@@ -20,6 +20,8 @@ Emits are the way the game communicates with the MUSH clients.  The Client class
 * `emit_failure` - Failure/error alerts show up in red.
 * `emit_raw` - A special emit that will not evaluate linebreaks or ansi codes.
 
+## Try It!
+
 Let's see what those different formats look like.  Change the tinker code as shown, save, and run the command again.
 
     def handle
@@ -27,9 +29,10 @@ Let's see what those different formats look like.  Change the tinker code as sho
       client.emit_success "Success!"
       client.emit_failure "Failure!"    
       client.emit "Here's some %xggreen%xn text.%RAnd a separate line."
-      client.emit_raw "Here's some RAW %xggreen%xn text.%RAnd a separate line."
     end
 
-The latter two emits show how a regular emit and a raw emit handle [Formatting Codes](/tutorials/code/formatting).
+The last emit shows how you can use [Formatting Codes](/tutorials/code/formatting) in an emit.
 
 > <i class="fa fa-info-circle"></i> **Tip:** It's highly recommended that you use the standard emit_ooc / emit_success / emit_failure methods in any custom code you write.  This provides a consistent look-and-feel for all game commands and enable log editors to easily filter out these messages.
+
+There are also some more advanced ways to emit to people and rooms, which you can learn about in the [Emitting](/tutorials/code/emitting) tutorial when you're ready.

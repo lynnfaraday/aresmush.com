@@ -11,6 +11,13 @@ So what's the ultimate solution for the 'Perfect MUSH'? I don't think it exists.
 
 When creating a MUSH, there are a lot of things to consider. This document is meant to highlight certain issues/problems with MUSHes in general, and makes some recommendations on each. I'll say one thing up front -- these ideas won't work for everybody and there are some cases where things mentioned here don't fit at all. To each his own. But hopefully this document might allow you to see some alternate viewpoints so you can come up with YOUR own solutions for your own MUSH.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Man This Joint Is Jumping
 
 It doesn’t really matter which theme you choose, as long as the plot is dynamic. Things have to HAPPEN in the mush, be it an invasion, plague, a band of outlaws raiding the town, a power outage, a food shortage, a natural disaster or what. The exact dynamic aspects are drawn from the theme of the game itself, but some themes find it easier to incorporate the dynamics than others. The key is having staff-guided TPs every once in a while to keep the game moving along.

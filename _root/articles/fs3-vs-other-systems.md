@@ -7,6 +7,13 @@ author: Linda Naughton ("Faraday")
 
 In order to help people who may be familiar with other RPG systems, I have done a little comparison between some of the more popular systems and FS3 to show how the dice work.   This research was inspired by a [nice article comparing D20 and 3D6](http://www.criticalmiss.com/issue8/bitaboutd201.html).
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Background
 
 The systems used in this article are D20, new World of Darkness (nWoD), FUDGE and FS3.  In my examples, I've used four people and the Firearms skill.  I assigned them skill ratings based on the *descriptions* of the ratings in each system's player's guide.  In all cases, I assumed average attributes.

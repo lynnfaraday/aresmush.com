@@ -12,6 +12,13 @@ tags:
 
 Unfortunately, you will sometimes have troublesome players trolling you or your game.  There are a variety of commands for players and admin to deal with them.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Player Commands
 
 ### Booting Trolls

@@ -1,9 +1,9 @@
 ---
+title: Configuring the Page System
+layout: page
 tags:
 - config
-title: Configuring the page system.
 ---
-# Configuring the Page System
 
 To configure the Page plugin:
 

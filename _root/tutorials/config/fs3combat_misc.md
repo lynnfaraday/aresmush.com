@@ -1,14 +1,21 @@
 ---
-title: Configuring miscellaneous FS3 Combat options.
+title: Configuring FS3 Combat - Miscellaneous
+layout: page
 tags:
 - config
 ---
-# Configuring FS3 Combat - Miscellaneous
 
 This topic describes some miscellaneous combat options you can configure.
 
 1. Select Admin -> Setup.
 2. Edit `fs3combat_misc.yml` 
+
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
 
 ## combatant_types
 

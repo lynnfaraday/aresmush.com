@@ -9,6 +9,13 @@ tags:
 
 While Ares attempts to recreate the PennMUSH/TinyMUX experience on the whole, a few features were deliberately left out for philosophical reasons.  If you find just can't live without them, please provide [Feedback](/feedback).  If enough people are desperate for the feature, it may be considered for a future version.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Exit Aliases
 
 Some MUSHes go wild with exit aliases.  An exit named "Front Door" would be accessible via "F", "FR", "DOOR", "FRONT", and who knows what else.

@@ -1,14 +1,34 @@
 ---
-title: Configuring demographics.
+title: Configuring the Demographics Plugin
+layout: page
 tags:
 - config
 ---
-# Configuring the Demographics Plugin
 
 To configure the Demographics plugin:
 
 1. Select Admin -> Setup.
 2. Edit `demographics.yml`
+
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
+## Demographics vs Groups
+
+Both groups and demographic fields allow you to record information about a character - be it their eye color or hometown. Philosophically-speaking, groups are for things that associate characters with one another (e.g. everyone from France, all Marines, all Craftspeople, etc.)
+
+Groups have a few extra features that regular demographics fields don’t:
+
+* Automatically tie into the census. (How many Craftspeople are there?)
+* Can be restricted to a set list of values, with associated commands for showing the list. (Here are the available nations.)
+* Can be used to set starting skills by group. (All Pilots must start with Piloting:3.)
+* Can be used to organize people on the web character gallery.
+
+The latter two are really only useful with a fixed list, but the census should work sensibly even when you have a freeform group.
 
 ## min_age and max_age
 
@@ -62,7 +82,7 @@ If you omit the values, the group will be freeform, allowing the player to speci
             Navy: "Join the fleet, see the worlds."
             Marines: "Semper fi."
 
-## Shortcuts
+## Group Shortcuts
 
 Ares will automatically create shortcuts for your group names - a singular one to set the group (e.g. `faction <value>` for `group/set <value>`) and a plural one to list the values (e.g. `factions` for `group faction`).  If you have irregularly-spelled groups, you can add a custom value to the `shortcuts` setting in the demographics config:
 
@@ -71,3 +91,17 @@ Ares will automatically create shortcuts for your group names - a singular one t
 Similarly, Ares will create shortcuts for your demographics (e.g. `hair <value>` for `demographics/set hair=<value>`).
 
 In the unlikely event that you don't want these auto-shortcuts, you can disable them by setting `disable_auto_shortcuts` to true.  Then you'll be responsible for setting your own shortcuts.  
+
+## census_fields
+
+You can configure which fields appear on the full census screen.  For each field, you can specify the column title, width, and where to get the data.  For example, this config makes two columns (25 wide and 15 wide) showing name and position.
+
+    - field: name
+      width: 25
+      title: Name
+    - field: group
+      value: position
+      width: 15
+      title: Position
+
+A complete description of all available fields can be found in the "who_fields" option in the [Who/Where Configuration](/tutorials/config/who).

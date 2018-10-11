@@ -10,6 +10,13 @@ tags:
 
 Changes to the Ares game engine require a [restart](/tutorials/manage/shutdown), but the plugins can be reloaded while the game is running.  
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## How to Reload
 
 If you've only changed **plugins**, you can reload each plugin while the game is still running by using the `load <plugin name>` command in-game. 

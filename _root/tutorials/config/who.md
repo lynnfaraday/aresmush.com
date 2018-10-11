@@ -1,10 +1,9 @@
 ---
+title: Configuring the Who/Where System
+layout: page
 tags:
 - config
-title: Configuring the Who/Where System.
 ---
-
-# Configuring the Who/Where System
 
 To configure the Who/Where plugin:
 
@@ -35,11 +34,13 @@ The following fields are available by default.
 * room (current room name)
 * handle (character handle, if available)
 
-You can also create your own fields by creating methods in the [template renderer](/tutorials/code/templates) `aresmush/plugins/who/char_who_fields.rb`.
+You can also create your own fields by extending the `general_field` utility in `aresmush/plugins/profile/public/profile_api.rb`.
 
-    def my_field(char)
-      "Some value"
-    end
+    def self.general_field(char, field_type, value)
+      case field_type
+      when 'yourfield'
+        char.get_your_field
+      etc.
 
 ## where_style
 

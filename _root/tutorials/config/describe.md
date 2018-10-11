@@ -1,14 +1,20 @@
 ---
-title: Configuring the description system.
+title: Configuring the Description System
+layout: page
 tags:
 - config
 ---
-# Configuring the Description System
 
 To change the Description plugin configuration:
 
 1. Select Admin -> Setup.
 2. Edit `describe.yml`
+
+## exit_start_bracket and exit_end_bracket
+
+These options control the appearance of exit names in room descriptions.  The default is square brackets, so exits appear like:
+
+     [N] Town Square
 
 ## tag_colors
 

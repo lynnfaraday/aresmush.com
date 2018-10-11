@@ -12,7 +12,7 @@ The [Ares for Vets](/tutorials/play/ares-for-vets) tutorial gives a run-down on 
 
 ## Web Portal
 
-AresMUSH features a fully-integrated [Web Portal](/web_portal) that allows you to interact with the game from a web browser.  Far from just a telnet window embedded in the browser, the Web Portal offers a rich experience and can fully replace (and enhance!) traditional game wikis.
+AresMUSH features a fully-integrated [Web Portal](/web-portal) that allows you to interact with the game from a web browser.  Far from just a telnet window embedded in the browser, the Web Portal offers a rich experience and can fully replace (and enhance!) traditional game wikis.
 
 ## Commands
 
@@ -20,7 +20,7 @@ Commands in Ares are designed to be simpler and more approachable to new players
 
 ## FS3 Third Edition
 
-Ares features a [new edition](/fs3/fs3-3) of the FS3 skills and combat system, that streamlines skills, adds new combat options, and offers various other improvements over prior editions.
+Ares features a [new edition](/fs3/fs3-3) of the FS3 skills and combat system, which streamlines skills, adds new combat options, and offers various other improvements over prior editions.
 
 ## Handles
 
@@ -28,4 +28,12 @@ Ares features a [new edition](/fs3/fs3-3) of the FS3 skills and combat system, t
 
 ## Little Things
 
-Ares tries to make players’ lives easier.  These little conveniences, like a better AFK system and a clear separation between IC and OOC command output, add up to a more pleasurable experience overall.
+Ares tries to make players’ lives easier.  These little conveniences add up to a more pleasurable experience overall, and include:
+
+* A better AFK system.
+* More helpful help files.
+* A clear separation between IC and OOC command output.
+* Utilities that people often code themselves,  from multi-descers to dice rollers.
+* Flexible keepalive handling.
+* Custom command shortcuts.
+* And much more!

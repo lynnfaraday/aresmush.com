@@ -1,3 +1,5 @@
+#### Local Mac Setup
+
 1. Install [Homebrew](https://brew.sh/), Mac's package manager.
 
 2. Copy/paste the following commands into a Mac terminal.
@@ -12,8 +14,16 @@
 
 4. If you want the Redis database server to be running all the time, set it up as a Homebrew service using `brew services start redis`.  Otherwise you'll have to start it every time you want to use it by typing `redis-server /usr/local/etc/redis.conf`.
 
-5. Clone the aresmush and ares-webportal code repositories to your local drive.  They must reside in adjacent directories (e.g. /home/Users/you/Code/aresmush and /home/Users/you/Code/ares-webportal).  See the [Editing Code](/tutorials/code/edit-code) tutorial for help.
+5. Clone the aresmush and ares-webportal code repositories to your local drive.  They must reside in adjacent directories (e.g. /home/Users/you/Code/aresmush and /home/Users/you/Code/ares-webportal).  See the [Editing Code](/tutorials/code/edit-code) tutorial for help using GitHub desktop to clone the game.
 
-6. From the aresmush directory, run `bin/configure` then `bin/wipedb` to set up the game.
+6. From the aresmush directory, run the following scripts to set up the game:
 
-7. Now you can start the game using `bin/devstart` in the aresmush directory and start the web portal using `bin/devportal` from the ares-webportal directory.   The development web portal runs on http://localhost:4200.
+        cp -r install/game.distr game
+        mkdir game/logs
+        chmod +x bin/*
+        bin/configure
+        bin/wipedb
+
+8. Start the game using `bin/devstart` in the aresmush directory.
+
+9. Start the web portal using `bin/devportal` from the ares-webportal directory.   The development web portal runs on http://localhost:4200.

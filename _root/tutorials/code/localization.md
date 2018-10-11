@@ -10,6 +10,13 @@ tags:
 
 Ares is designed for non-English games too.  All of the game code can be translated into other languages simply by swapping in different translation files, called a **Locale**.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## Locale Files
 
 Global locale files (which are shared across many plugins) live in the `aresmush/game/locales` folder.   Plugin-specific locale files live in their respective plugin folder under a `locales` sub-folder.

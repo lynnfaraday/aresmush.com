@@ -1,9 +1,9 @@
 ---
+title: Configuring the Time System
+layout: page
 tags:
 - config
-title: Configuring the OOC time system.
 ---
-# Configuring the Time System
 
 To configure the OOC Time plugin:
 

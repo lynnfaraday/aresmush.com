@@ -1,9 +1,9 @@
 ---
+title: Configuring FS3 - Luck and Miscellaneous
+layout: page
 tags:
 - config
-title: Configuring FS3 luck and miscellaneous.
 ---
-# Configuring FS3 - Luck and Miscellaneous
 
 To configure the FS3 Skills List:
 

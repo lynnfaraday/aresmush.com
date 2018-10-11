@@ -1,9 +1,9 @@
 ---
+title: Configuring the Game Directory Information
+layout: page
 tags:
 - config
-title: Configuring the game directory information.
 ---
-# Configuring the Game Directory Information
 
 You can configure basic information about your game.  This information is used in the [AresCentral games directory](http://arescentral.aresmush.com).  
 
@@ -12,7 +12,7 @@ To configure the game preferencse:
 1. Select Admin -> Setup.
 2. Select 'Game Info' under Basic Information.
 
-{{#pretty-image}}/assets/media/web_portal/game-info.png{{/pretty-image}}
+{{#pretty-image}}/assets/media/web-portal/game-info.png{{/pretty-image}}
 
 This information includes:
 

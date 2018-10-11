@@ -9,6 +9,13 @@ tags:
 
 Templates are a special code class that handle complex information display.  There are templates for all sorts of things in the game:  the who/where list, mail messages, forums, character sheets, profile, descriptions and more.
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 ## The Template Engine
 
 Templates use the Ruby [ERB Template system](http://www.stuartellis.name/articles/erb/), which mingles text with embedded Ruby code.  (Similar to embedded Python for those familiar with that.)
