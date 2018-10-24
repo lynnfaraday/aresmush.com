@@ -15,7 +15,7 @@ tags:
 
 Most commands will need to read data from or save data to the database.  Ares uses an off-the-shelf database server called Redis, but you won't interact with the database directly.  There are no SQL queries to write or anything like that.  The [Ohm](http://ohm.keyvalue.org/) database library lets you interact with the database using Ruby code.
 
-Diving deep into the database is beyond the Quickstart Tutorial.  This is just a quick overview.  There's a separate  [database tutorial](/tutorials/code/database) for you in the Advanced Coding section if you want to learn more.
+Diving deep into the database is beyond the Quickstart Tutorial.  This is just a quick overview, and we'll cover more in the later tutorials.  There's also a separate  [database tutorial](/tutorials/code/database) for you in the Advanced Coding section when you get more comfortable.
 
 ## Models and Fields
 
@@ -44,7 +44,9 @@ There are a variety of ways to query (request) information from the database, bu
 
 Try the command with different names and see what happens.
 
-You may have noticed that this version will not find "Faraday" if you typed "faraday" - it's very literal.  It also won't search by alias.  Since searching by name is so common, there's a utility method to help you with these this.  Change the `char = ` line in the handle method to this:
+You may have noticed that this version will not find "Faraday" if you typed "faraday" - it's very literal.  It also won't search by alias.
+
+Since searching by name is so common, there's a utility method to help you with these things.  Change the `char = ` line in the handle method to this:
 
     char = Character.find_one_by_name(cmd.args)
 

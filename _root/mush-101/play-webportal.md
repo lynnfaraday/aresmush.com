@@ -18,3 +18,5 @@ This is a video-based tutorial, so you can watch the video below or [read the tr
 You can visit the Ares demo game shown in the tutorial at [http://mush.aresmush.com](http://mush.aresmush.com).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/x4RD3SE7EU8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+*[Link to video](https://www.youtube.com/embed/x4RD3SE7EU8)*

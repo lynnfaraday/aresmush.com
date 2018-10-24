@@ -14,10 +14,10 @@ Before you can actually edit the code, you need to figure out **which** code you
 
 ## AresMUSH Directory
 
-The main AresMUSH game code is organized in a single directory, typically named `aresmush`.  Within that directory are several folders.  Here are the ones you'll typically be working with:
+The main AresMUSH game code is organized in a single directory, typically named `aresmush`.  Within that directory are several folders.  Here are the ones you'll most commonly be working with:
 
 * bin - Scripts that you can execute.  For example, `bin/startares` starts the game.
-* game - Files specific to your game, like configuration and styles.
+* game - Files specific to your game, like configuration and styles.  Website file uploads live here too.
 * plugins - Contains folders for each plugin.
 
 There are some other folders, like engine (for the engine code) and install (for installation utilities), but you shouldn't need to mess with these.  If you find yourself needing to change the engine code, consider [asking first](/feebdack) because there may be a different way to approach your problem.

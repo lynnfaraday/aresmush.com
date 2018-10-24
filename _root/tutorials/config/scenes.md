@@ -5,6 +5,13 @@ tags:
 - config
 ---
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 To configure the Scenes plugin:
 
 1. Select Admin -> Setup.
@@ -29,6 +36,10 @@ There is a cron job to control when this happens.  See the [Cron Job Tutorial](h
 ## include_pose_separator
 
 When you complete a scene and share the log, the default behavior is to compress all the poses together into a single narrative, like you'd find in a book.   You can alternately include a separator line between poses to make it more clear which pargarphs went together in a single pose.  This separator can be styled with custom CSS using the 'pose-divider' class.
+
+## idle_scene_timeout_days
+
+Scenes in grid rooms are automatically closed when there's nobody left in the room.  Scenes in temp rooms (including scenes played solely on the web portal) are closed after this many days without activity.
 
 ## delete_unshared_scenes
 

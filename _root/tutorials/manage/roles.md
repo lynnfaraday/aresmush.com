@@ -84,6 +84,7 @@ Many plugins have helper methods to check for the necessary permission.  For exa
 | desc_anything | |
 | desc_places | | 
 | go_home | |
+| login | |
 | manage_abilities | |
 | manage_apps | |
 | manage_channels | |

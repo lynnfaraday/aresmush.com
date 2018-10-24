@@ -21,4 +21,4 @@ To ensure the game automatically restarts when the server is rebooted, see [Auto
 
 ## Debug Mode
 
-Both the game and portal can be started in [Debug Mode](/tutorials/code/edit-code/debug-mode).  This is good for temporary debugging, but the game only stays running as long as you're logged in.  It's not a permanent solution.
+Both the game and portal can be started in [Debug Mode](/tutorials/code/debug-mode).  This is good for temporary debugging, but the game only stays running as long as you're logged in.  It's not a permanent solution.

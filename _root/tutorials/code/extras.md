@@ -25,13 +25,19 @@ Each plugin will contain its own README file with instructions on how you use it
 
 ## Installing Plugins
 
-If an extra is a complete plugin, there's a script that will automatically install it for you.  From your server shell, change to the aresmush folder and run:
+If an extra is a complete plugin, there's a script that will automatically install it for you.  
+
+If the game is running, you can install the plugin using an in-game command:
+
+    plugin/install <plugin name>
+
+If the game is shut down, from your server shell, change to the aresmush folder and run:
 
     bin/addplugin <plugin name>
 
 Once the plugin is installed, you'll need to do `load all` to load the game code and `website/deploy` to update the website.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** The `addplugin` script just copies the plugin's files into place.  There may be other code or configuration changes required.  See the plugin's README file in the ares-extras repository to see if any extra steps are needed.
+> <i class="fa fa-exclamation-triangle"></i> **Note:** The automated installation just copies the plugin's files into place.  There may be other code or configuration changes required.  See the plugin's README file in the ares-extras repository to see if any extra steps are needed.
 
 ## Updating Plugins
 

@@ -40,7 +40,7 @@ Many version upgrades can be done while the game is still running.
 
 ## Upgrade With a Restart
 
-Some version upgrades require a game restart, particularly if game engine changes or there's a major database update.  Even if the version doesn't require a restart, you can still do one safely.  You'll shut the game down, update the code, and then restart it.  Total downtime should be a few minutes at most.
+Some version upgrades require a game restart, particularly if game engine changes or there's a major database update.  Even if the version doesn't *require* a restart, it's still fine to do one.  You'll shut the game down, update the code, and then restart it.  Total downtime should be a few minutes at most.
 
 1. [Shut down the game](/tutorials/manage/shutdown) using the `shutdown` command in-game or the web portal admin screen.
 2. Connect to the [server shell](/tutorials/install/server-shell) and change to the `aresmush` folder.

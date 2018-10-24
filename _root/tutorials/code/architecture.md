@@ -38,10 +38,10 @@ Plugins are highly-configurable, allowing game owners to easily change their fun
 
 ## Database and Database Models
 
-Ares uses [Redis](https://redis.io), a fast and lightweight database system.  You don't need to deal with Redis directly.  Both the Engine and the Plugins communicate with the database through **Database Models**.  DB Models utilize the [Ohm](http://ohm.keyvalue.org/) database library to translate Ruby code into database queries/updates.
+Ares uses Redis, a fast and lightweight database system.  You don't need to deal with Redis directly.  Both the Engine and the Plugins communicate with the database through **Database Models**.  DB Models utilize the Ohm database library to translate Ruby code into database queries/updates.
 
 The engine provides some common models, like characters and rooms.  Plugins may add their own models for everything from mail messages to combat instances.  They can also add custom fields to the common models, to store character attributes like profile fields or skills.
 
 ## Web Portal
 
-The Web Portal is the game's website, allowing players to manage scenes, character profiles, wiki pages [and more](/web-portal).  The Web Portal consists of an [EmberJS](https://www.emberjs.com/) web application running on top of a standard web server like nginx (the Ares standard) or Apache.   Players connect to the portal through their web browser.
+The Web Portal is the game's website, allowing players to manage scenes, character profiles, wiki pages [and more](/web-portal).  The Web Portal consists of an EmberJS web application running on top of a standard web server like nginx (the Ares standard) or Apache.   Players connect to the portal through their web browser.

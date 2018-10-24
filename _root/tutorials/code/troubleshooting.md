@@ -24,7 +24,7 @@ The first place to check is the game log.  This will help you pinpoint the exact
 
 ## Debug Mode
 
-For tricky issues - especially during development - it can be helpful to run the game in [Debug Mode](/tutorials/code/edit-code/debug-mode).
+For tricky issues - especially during development - it can be helpful to run the game in [Debug Mode](/tutorials/code/debug-mode).
 
 ## YAML Issues
 

@@ -7,7 +7,7 @@ tags:
 - git
 ---
 
-AresMUSH uses [GitHub](http://www.github.com) for its version control, so using that for your own game's code enables easy synchronization and support.  
+[GitHub](http://www.github.com) source control is the best way to transfer code between your PC and the game server.  In this tutorial, we'll discuss how to use GitHub and take your code workflow to the next level.
 
 <div id="inline_toc" markdown="1">
 **Table of Contents**
@@ -22,9 +22,17 @@ You can view the [Using GitHub](/tutorials/code/edit-code/github) screencast for
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jc0GLdMZya8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+*[Link to video](https://www.youtube.com/embed/jc0GLdMZya8)*
+
+The transcript is available [here](/tutorials/code/edit-code/github-transcript).
+
 Here is a basic summary of the workflow:
 
 {{#pretty-image}}{{urls.media}}/code/git-pull.png{{/pretty-image}}
+
+## GitHub Desktop
+
+You can find the GitHub Desktop installer mentioned in the tutorial [here](https://desktop.github.com/).
 
 ## Creating a Fork
 

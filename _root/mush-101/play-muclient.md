@@ -20,6 +20,8 @@ You can visit the Ares demo game shown in the tutorial at [mush.aresmush.com por
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5q3seETzgh8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+*[Link to video](https://www.youtube.com/embed/5q3seETzgh8)*
+
 ## Command Reference
 
 Here is a handy reference for the commands introduced in this tutorial:

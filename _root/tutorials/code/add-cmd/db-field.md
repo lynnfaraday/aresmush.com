@@ -15,17 +15,9 @@ tags:
 
 We're going to need to save our goals to the database.  Since goals are a facet of a character, it makes the most sense to add them to the `Character` class.
 
-You define a database field using the `attribute` method in a database model class.  For example:
+## Create the Database Model
 
-    class Character
-      attribute :name
-    end
-
-Database fields can take many forms - strings, numbers, lists, hashes, etc.  Fields are strings unless otherwise specified.
-
-## Try It
-
-Create a file named `goals_char.rb` and put it in `aresmush/plugins/custom`.  Give it the following contents:
+Create a file named `goals_char.rb` in `aresmush/plugins/custom`.  Give it the following contents:
 
     module AresMUSH
       class Character
@@ -33,7 +25,18 @@ Create a file named `goals_char.rb` and put it in `aresmush/plugins/custom`.  Gi
       end
     end
 
+In the game, type `load custom` to reload the custom plugin.
 
-This defines an attribute named `goals` with a string data type.
+Type `ruby enactor.update(goals: "Test goals")` to set some goals on yourself.
 
-> <i class="fa fa-info-circle"></i> **Tip:**  Ruby classes can be spread across multiple files.  This lets you define bits and pieces of the `Character` class across multiple plugins.  Here we're defining only a single field, but the Character model has many.  Most plugins prefix their db fields with the plugin name (e.g. fs3_skills) to avoid name collisions.  
+Type `ruby enactor.goals` to view them.
+
+## About Database Models
+
+Character is one of the core database models in Ares (along with Room, Exit and Game).  Database models contain multiple data fields, called *attributes*.  A character will have a name, an alias, a description, etc.
+
+Ruby lets you *extend* classes in multiple files.  Even though the Character class is defined in the engine, you can add new fields to it from different plugins.
+
+Database fields can take many forms - strings, numbers, lists, hashes, etc.  Fields are strings unless otherwise specified, so in the example above we've defined a string field named "goals".
+
+> <i class="fa fa-info-circle"></i> **Tip:**  Since database fields can be defined across multiple files, most plugins prefix their db fields with the plugin name (e.g. fs3_skills) to avoid name collisions.  

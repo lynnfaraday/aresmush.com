@@ -17,6 +17,4 @@ The transcript is available [here](/tutorials/code/edit-code/direct-edit-transcr
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rwu18Dt2tXc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-
-
-
+*[Link to video](https://www.youtube.com/embed/rwu18Dt2tXc)*

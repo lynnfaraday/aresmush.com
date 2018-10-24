@@ -15,6 +15,14 @@ tags:
 
 To manage certain parts of your game, you will need to connect to the **Server Shell**, which is like a command prompt for your game server.  This is different than connecting with your MUSH client, because your'e connecting to the *server*, not the game.
 
+## The Ares User
+
+The very first time you log in (using any of the methods described below), you'll use the username "root" and the password that was emailed to you.  
+
+As part of the game installation, it will create an "ares" user and password.  Use the "ares" user for day-to-day operations and save the "root" user for things that require special permissions.
+
+> <i class="fa fa-exclamation-triangle"></i> **Note:** All of the command line tools you use once the game is set up, like starting the game and doing upgrades, are designed to be run as the **ares** user.  You'll need to either log in as that user or `su - ares` to switch to them with a privileged account, otherwise things won't work right.
+
 ## Connecting through Digital Ocean
 
 If you used the [Digital Ocean](/tutorials/install/digital-ocean) setup instructions, you can connect directly to your droplet using the Digital Ocean control panel.  
@@ -25,8 +33,6 @@ If you used the [Digital Ocean](/tutorials/install/digital-ocean) setup instruct
 4. Click "Launch Console".
 {{#pretty-image}}{{urls.media}}/install-ares/droplet-connect.png{{/pretty-image}}
 4. Log in.
-
-> The very first time you log in, you'll use the username "root" and the password that was emailed to you.  Once you complete this tutorial, you'll end up with a different "ares" user and password.  Use the "ares" user for day-to-day operations and save the "root" user for things that require special permissions.
 
 ## Connecting through a Client
 

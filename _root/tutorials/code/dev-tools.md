@@ -39,9 +39,11 @@ It's helpful to have a place to test your code that *isn't* your main game.  Tha
 
 > <i class="fa fa-exclamation-triangle"></i> **Note:** It's strongly recommended that you follow the standard [installation instructions](/tutorials/install) for your very first Ares game.  For just a few bucks, less than the price of a grande coffee, you can spin up a droplet for a couple weeks and get your feet wet.  That way you're not trying to learn both Ares code and Ares server setup at the same time!  Once you have a little more experience with Ares, you can explore these other options for setting up a game for development purposes.
 
-### Overview
+This video tutorial shows you how to set up a second copy of the game for the express purpose of testing your code.  The options are explained more in the following sections.
 
-See the [Setting Up a Test Game](/tutorials/code/edit-code/test-game) tutorial for a screencast explaining and demonstrating your options.  Those options are explained more in the following sections.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hGRpEBjX1Z0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+*[Link to video](https://www.youtube.com/embed/hGRpEBjX1Z0)*
 
 ### Installing on a Local PC
 

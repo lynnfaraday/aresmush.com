@@ -24,6 +24,8 @@ For a visual guide to these features, you can check out the "Playing from the We
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/x4RD3SE7EU8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+[Link to video](https://www.youtube.com/embed/x4RD3SE7EU8)
+
 ## Character Creation
 
 Through the Web Portal, you can create your character with a few clicks of the mouse.  The web chargen provides feedback for common issues as you go, and easy links to all the information you'll need.

@@ -12,7 +12,7 @@ The Ares coding experience is different from what you might be familiar with fro
 
 The Ares game server code is written in Ruby.  Ruby is a mainstream language, so you'll find tons of tutorials, reference guides and community support sites.
 
-You can run quick one-off tasks straight from your MU client, but anything more advanced will require you to change the code server-side and then reload it - all while the game is running.
+You can run quick one-off tasks straight from your MU client, but anything more advanced will require you to change the code server-side and then reload it.  You can do this while the game is running.
 
 Many people find Ares code more readable and easier to learn than softcode.  The following example shows a snippet of code from the AFK command (`afk <message>`), comparing traditional MUSH softcode and Ares code.
 
@@ -108,8 +108,10 @@ There's a dispatcher for each plugin that sends the command to the appropriate c
       end
     end
 
-Although all commands are global, you resrict code to only work under certain conditions.  For example:
+Although all commands are technically global, you can restrict code to only work under certain conditions.  For example:
 
 * If the character is in a particular room or area.
 * If the character belongs to a particular faction.
 * If the character has a certain skill.
+
+In other situations, that command would give an error.

@@ -16,7 +16,7 @@ The `ruby` command is handy, but often you'll want to run code that's too involv
 
 To change the tinker code:
 
-1. Log into the Web Portal.
+1. Log into the Web Portal with your coder character.
 2. Go to Admin -> Tinker.
 3. Edit the handle method to do the desired processing (see below for details).
 4. Click Save.
@@ -32,7 +32,7 @@ Let's make the tinker code say hello to us.  Edit the tinker code as described a
 
 > <i class="fa fa-info-circle"></i> **Tip:** There's other code in the tinker file, but we don't need to mess with that.  In these examples, we'll only be changing the 'handle' method.  The other code will be explained in future tutorials.
 
-After saving, go back to your MUSH client (logged in with your coder character) and type 'tinker'.  You should see:  "Hello, Headwiz!" (or whatever your character's name is.)
+After saving, go back to your MUSH client (logged in with your coder character) and type `tinker`.  You should see:  "Hello, Headwiz!" (or whatever your character's name is.)
 
 We're going to continue using the tinker command for the remaining exercises in this tutorial.  There's a more in-depth [Tinkering Tutorial](/tutorials/code/tinker) if you want to learn more about tinkering when you've finished with the Quickstart.
 

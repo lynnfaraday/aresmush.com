@@ -45,6 +45,23 @@ To configure the rest of the Login plugin:
 1. Select Admin -> Setup.
 2. Edit `login.yml`
 
+### Disabling Creating New Characters
+
+The default behavior allows players to create their characters right from the login screen.  You might want to disable this if you have a roster-only game or require email registration or an invitation.
+
+> <i class="fa fa-exclamation-triangle"></i> **Note:** Allowing creation from the web portal is a different setting, found in the [Website config](/tutorials/config/website).
+
+To disable character creation from the login screen:
+
+* Set `allow_creation` to false.
+* Optionally set a message about your game's registration policy in `creation_not_allowed_message`.  If no message is set, players will just see a generic message.
+
+### Disabling Logins
+
+During development, maintenance, or other special times, you might want to disable player logins.  You can do this by controlling which roles have the 'login' permission.  By default, this permission is assigned to the 'everyone' role, meaning all characters can log in. 
+
+* Use the [Roles System](/tutorials/manage/roles) to remove the 'login' permission from the 'everyone' role.  Add it to any non-admin roles that you want to give login access to (e.g. builder).  Admins can log in even without the explicit permission.
+* Optionally set a message about why people can't log in using `login_not_allowed_message`.
 
 ### use_terms_of_service
 

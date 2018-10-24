@@ -27,7 +27,7 @@ The quickref command (aliased `qr`) allows you to quickly look up the syntax for
 
 For example:
 
-`help combat` will give you a wall of text explaining combat:
+`help combat` will give you a wall of text explaining combat (which is why it's best read on the web portal):
 
 ```
   FS3 Combat

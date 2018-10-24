@@ -1,17 +1,11 @@
 ---
 title: Using GitHub (Transcript)
 description:
-layout: tutorial
-editCodeTutorial: true
-tutorialName: Editing Code
-tutorialIndex: tutorials/code/edit-code
-prevstep: ftp-upload
-nextstep: test-game
 tags: 
 - code
 ---
 
-This is the transcript for the [Using GitHub](/tutorials/code/edit-code/github) segment of the Editing Ares Code tutorial.
+This is the transcript for the [Using GitHub](/tutorials/code/git) segment of the Editing Ares Code tutorial.
 
 ## Introduction
 

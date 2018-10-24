@@ -24,24 +24,15 @@ The main command is "cg" and it normally supports "cg/next" and "cg/prev" comman
 
 > <i class="fa fa-info-circle"></i> **Tip:** To avoid merge conflicts, you can add your own custom shortcuts to the `custom.yml` configuration file.  
 
-## Shortcut Order
+## Chaining Shortcuts
 
-Commands may only match a **single** shortcut, and shortcuts are matched in order.  
+It's possible to 'chain' a root shortcut and a switch shortcut.  For example:
 
-Take the following example from the jobs shortcuts:
+    "chargen": "cg"
+    "cg/back": "cg/prev"
 
-        "jobs": "job"
-        "job/mine" : "job/filter mine"
+If the player types chargen/back, it will be converted as follows:
 
-The jobs --> job entry applies to all jobs commands, so jobs/status --> job/status.
+    chargen/back -> cg/back -> cg/prev
 
-There's an additional shortcut that turns job/mine -> job/filter mine.
-
-But since only one shortcut can apply, jobs/mine --> job/mine.  It doesn't trigger the second shortcut.
-
-To turn jobs/mine -> job/filter mine, we would need to add a specific shortcut for that at the top of the list;
-
-        # This must come first before the jobs -> job conversion
-        "jobs/mine" : "job/filter mine"
-        "jobs": "job"
-        "job/mine" : "job/filter mine"
+You can't chain multiple shortcuts of the same type, so you can't convert cg/back -> cg/prev and then have another shortcut to convert cg/prev to something else.

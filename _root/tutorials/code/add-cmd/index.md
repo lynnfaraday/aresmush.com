@@ -2,7 +2,7 @@
 title: Adding a Command
 description:
 layout: tutorial
-nextstep: edit-code
+nextstep: custom-plugin
 tutorialIndex: tutorials/code/add-cmd
 addCmdTutorial: true
 tutorialName: Adding a Command
@@ -16,7 +16,6 @@ This is the third in the basic series of Ares coding tutorials.
 
 In this tutorial, we'll create a `goals` command that lets you record your character's goals.  Specific topics include:
 
-* Editing server-side code.
 * Adding a help file.
 * Adding database fields.
 * Creating the goal command.

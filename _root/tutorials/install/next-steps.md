@@ -43,10 +43,15 @@ The Headwiz character is special, and should be reserved for special occasions. 
 
 > <i class="fa fa-info-circle"></i> **Tip:** You can also grant the 'coder' role to let someone access the tinker command to change the code.  Just be careful, because there's no limit to what someone can do once you give them access to the code (and thus the database).  See the [roles tutorial](/tutorials/manage/roles) for more information.
 
-## Customization
-
-Ares works out of the box, but there are a lot of configuration settings you can customize to get things just the way you like.  See [Configuring AresMUSH](/tutorials/config).
-
-## Game Directory
+## Game Directory Information
 
 The game information you entered will not show up in the [AresCentral Game Directory](http://arescentral.aresmush.com/games) until you mark your game as open.  See [Configuring the Game Directory](/tutorials/config/game_dir) to do that.
+
+## Tutorials
+
+Ares works out of the box, but there are a lot of things you can configure to make the game your own.  You can even alter the code to add custom functionality.  A rich suite of tutorials are available to help you on your way, including:
+
+* [Playing Ares](/tutorials/play) - What's different between Ares and other game servers, including the web portal and player handles.
+* [Configuring Ares](/tutorials/config) - Learn all about how you can configure Ares' appearance and behavior.
+* [Managing Ares](/tutorials/manage) - All about running an Ares game, including building, setting up staff roles, and performing basic server maintenance.
+* [Coding for Ares](/tutorials/code) - Learn Ares code from the ground up.

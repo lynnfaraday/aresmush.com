@@ -128,6 +128,55 @@ Each action must implement several methods:
 
 > <i class="fa fa-info-circle"></i> **Tip:** In addition to being called when the action is first set, `prepare` is called whenever the combat HUD is viewed and when the action is performed.  If at any time the character's action is no longer valid, the system will reset it.
 
+#### Action Example
+
+The aim action is a good example to look at to see how this all works. 
+
+First is the class definition - notice that it inherits from `CombatAction` so it has access to all the action utilities.
+
+    class AimAction < CombatAction
+
+Next is the prepare method.  Aim has only a single argument - the target name.  It can use the standard `parse_targets` utility of the `CombatAction` to turn a string like "Bob Joe" into a list of combatants representing the targets.  There's also an error check to ensure that you only specify one combatant when aiming.  
+
+      def prepare
+        error = parse_targets(self.action_args)
+        return error if error
+        
+        return t('fs3combat.only_one_target') if (self.targets.count > 1)
+        return nil
+      end
+
+Notice that, like command error-checkers, prepare can either return an error message (if something is wrong) or nil (if everything is OK).
+
+The two print action methods are pretty straightforward; they just return a message like "Faraday will aim at Bob" or "Aim Bob".  Note that even though we know we only have one target, we can still use the `print_target_names` utility from the base class to get a string with the name.
+
+      def print_action
+        msg = t('fs3combat.aim_action_msg_long', :name => self.name, :target => self.print_target_names)
+      end
+      
+      def print_action_short
+        t('fs3combat.aim_action_msg_short', :name => self.name, :target => self.print_target_names)
+      end
+
+
+Last is the resolve method.  Aim is interesting because it doesn't actually _do_ anything immediately.  It's a preparatory action that saves who the character is aiming at.  The resolution message is simply "Faraday aims at Bob."
+
+      def resolve
+        self.combatant.update(aim_target: self.target)
+        [t('fs3combat.aim_resolution_msg', :name => self.name, :target => self.print_target_names)]
+      end
+    end
+
+So where does the aim actually take effect?  Like many combat properties, it is used in various helper methods.  Specifically, when determining whether an attack hits (in `FS3Combat.roll_attack`), it does this:
+
+      aiming_mod = (combatant.is_aiming? && (combatant.aim_target == combatant.action.target)) ? 3 : 0
+
+If the combatant is aiming and hasn't changed targets since they aimed, give them a +3 modifier.
+
+Other types of actions may initiate attacks (using `FS3Combat.attack_target`), trigger a recovery check (using `FS3Combat.check_for_unko`), or update other combat properties (like reloading, which uses `combatant.update(ammo: combatant.max_ammo)`).
+
+Finally, it's worth noting that many combat properties get reset at the end of a turn.  The aim target, for instance, is cleared if you end a turn with an action other than 'aim' set.  This is all handled in the `FS3Combat.reset_for_new_turn` method.
+
 #### Adding a New Action
 
 If you create a brand new combat action, you'll need to register it with the `find_action_klass` method in `plugins/fs3combat/helpers/actions_helper.rb`.  This is essentially a mini dispatcher for combat action commands.

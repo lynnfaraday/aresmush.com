@@ -15,7 +15,7 @@ These articles will teach you how to code for AresMUSH.
 
 ## Basic Coding Tutorials
 
-There are three tutorials designed to introduce you to Ares coding step by step.  It's recommended that you do these in order, since they all build on each other.
+There are several tutorials designed to introduce you to Ares coding step by step.  It's recommended that you do these in order, since they all build on each other.
 
 ### Tutorial #1 - Quickstart
 
@@ -134,6 +134,7 @@ Once you've completed the initial tutorials, there are a wealth of other topics 
 ### Troubleshooting
 
 * [Troubleshooting Issues](/tutorials/code/troubleshooting)
+* [Debug Mode](/tutorials/code/debug-mode)
 
 ## FS3
 

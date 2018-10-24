@@ -18,8 +18,8 @@ There are a variety of things you can configure about the Web Portal.
 
 You can configure the welcome text on the Web Portal's home page.
 
-1. Select Admin -> Setup
-2. Edit `website.txt` 
+1. Select Admin -> Setup -> Website
+2. Select Home Page Text.
 
 The home page text can contain [Markdown formatting](https://daringfireball.net/projects/markdown/syntax) and ansi formatting codes.
 
@@ -27,9 +27,17 @@ The home page text can contain [Markdown formatting](https://daringfireball.net/
 
 You can configure the colors on the Web Portal.
 
-The Web Portal uses SCSS, which is an enhanced version of CSS that - among other things - lets you set up variables so you can change a color in one spot and have it take effect in many styles.  
+The Web Portal uses SCSS, which is an enhanced version of CSS that - among other things - lets you set up variables so you can change a color in one spot and have it take effect in many styles. Changing the primary color will affect both headings and table headers, for example.
 
-Changing the primary color will affect both headings and table headers, for example.  Here are the available colors:
+To change the colors:
+
+1. Select Admin -> Setup
+2. Select Edit Theme Colors.
+3. Use the color widgets to select the desired colors.
+
+You can alternately edit the colors.scss config file (via Admin -> Setup -> Text Files) and enter colors manually using [HTML color codes](https://htmlcolorcodes.com/).
+
+Here are the available colors:
 
 * Background color - The main page background.
 * Text color - The main text color.
@@ -40,18 +48,6 @@ Changing the primary color will affect both headings and table headers, for exam
 * Gutter color - The gutter borders on the left and right side of the page.
 * Border color - Boxes and lines around things.
 * Faded text color - Hints and subtle headings, like the sidebar headings.
-
-To change the colors:
-
-1. Select Admin -> Setup
-2. Edit `colors.scss`.
-
-For example, the colors stylesheet lets you set up colors like so:
-
-    $primary-color: #6B0C22;
-    $background-color: #fff;
-
-You can use any [HTML color code](https://htmlcolorcodes.com/) (like #6B0C22) or a limited set of pre-defined HTML color names (like darkorange or salmon).
 
 ## Images
 
@@ -64,7 +60,27 @@ There are three main images used by the website.  You can upload new versions on
 * box-bg.png - Used as a background behind the character and log pages.
 * jumbotron.png - Home page image.
 
-> <i class="fa fa-info-circle"></i> **Tip:** The default header background style makes it *centered* in the available space - 200px high and as wide as the browser window.   It works best when you have a wide but short background image - something like 1600x400 works pretty well.  Be sure to test it at different browser window sizes, including mobile.  You can also adjust the `header-wrap` CSS style if you want to adjust the formatting to something more suited to your particular header image.
+### Choosing a Header Background
+
+The default style positions the header background in a 200 pixel high area using `background-size: cover` and `background-position: center`.   
+
+* **Cover** will either stretch or crop the image to make it cover the entire header area.  
+* **Center** always tries to keep the center of the image in view.
+
+Take the BSGU background image, for example.  Here is the original image.  Notice that the center of the image is near the Cylon's shoulder.
+
+{{#pretty-image}}/assets/media/web-portal/background-main.jpg{{/pretty-image}}
+
+In wide browsers, you'll get a 200 pixel wide swath across the center of the image.  Notice that the Cylon's shoulder is still in the center of the header.
+
+{{#pretty-image}}/assets/media/web-portal/background-wide.jpg{{/pretty-image}}
+{{#pretty-image}}/assets/media/web-portal/background-wide-example.jpg{{/pretty-image}}
+
+And in narrow browsers, including mobile, the height will be scaled down to be 200 pixels high, and the width will be cropped to fit.  Notice again that the Cylon's shoulder is still in the center of the header.
+
+{{#pretty-image}}/assets/media/web-portal/background-narrow.jpg{{/pretty-image}}
+
+You can pick a different focal point (other than center) with custom CSS, as explained in the [W3Schools](https://www.w3schools.com/css/css_background.asp) tutorial on background positioning.  See below for information on custom CSS styles.
 
 ## Changing the Navigation Bars
 
@@ -110,6 +126,15 @@ Beyond the colors, you can add custom CSS styles that will override the Web Port
 
 1. Select Admin -> Setup
 2. Edit `custom_style.scss`.
+
+### Changing the Font
+
+Many games want to change the text font.  You can easily use a Google font by adding the following to your custom CSS style:
+
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+    body {    
+      font-family: 'Roboto', sans-serif;
+    }
 
 ### Advanced Color Variables
 

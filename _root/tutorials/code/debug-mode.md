@@ -1,12 +1,7 @@
 ---
 title: Debug Mode
 description:
-layout: tutorial
-editCodeTutorial: true
-tutorialName: Editing Code
-tutorialIndex: tutorials/code/edit-code
-nextstep: next-steps
-prevstep: test-game
+layout: page
 tags: 
 - code
 ---

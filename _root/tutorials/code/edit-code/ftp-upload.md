@@ -6,7 +6,7 @@ editCodeTutorial: true
 tutorialName: Editing Code
 tutorialIndex: tutorials/code/edit-code
 prevstep: direct-edit
-nextstep: github
+nextstep: next-steps
 tags: 
 - code
 ---
@@ -18,3 +18,7 @@ The transcript is available [here](/tutorials/code/edit-code/ftp-upload-transcri
 For links to the code editors mentioned in the tutorial, check out [Code Editors](/tutorials/code/dev-tools).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EkIC-8UJGPw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+*[Link to video](https://www.youtube.com/embed/EkIC-8UJGPw)*
+
+> <i class="fa fa-exclamation-triangle"></i> **Note:** Be careful when uploading config files through FTP from Windows, as sometimes it can change the line endings on the file and mess up the YAML formatting.

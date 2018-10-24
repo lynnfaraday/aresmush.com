@@ -89,13 +89,21 @@ The solution is to change the affected parameter to a number.
 
 ### Merge Errors
 
-The final 'common' error happens when you accidentally have two copies of the same configuration file.   Say you've got `chargen.yml` and an emacs autosave file `#chargen.yml#` in your config folder.  You'll get an error like:
+The final 'common' error happens when you accidentally have duplicate copies of the same configuration setting.  
 
     Error reading YAML from chargen.yml# ... undefined method `merge_recursively' for "New Arrivals":String
 
-What's happening here is that the code loaded `#chargen.yml#` and created an entry for the `channels` config.  Then it comes along and tries to read the regular `chargen.yml` and gets mixed up because the configuration already exists.
+This can happen in two ways:
+
+#### Rogue Config File
+
+Sometimes you accidentally end up with two copies of the same config file.  This commonly happens with editor autosave files when editing on the command line.  You'll end up with `chargen.yml` and an autospace file like `#chargen.yml` both in the config directory.
 
 Just remove the erroneous config file.
+
+#### Duplicate Config Options
+
+With complex config options, defining the same option in multiple files can cause this error too.  Make sure you don't have that config option (New Arrivals in this example) defined twice in the chargen config.
 
 ## Weird Errors
 

@@ -25,7 +25,9 @@ This tutorial will teach you the basics of Ares code.
 
 This tutorial is interactive, so you'll need the Headwiz character or [coder permissions](/tutorials/manage/roles) on an actual Ares game.  
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** It's strongly recommended that you follow the standard [installation instructions](/tutorials/install) for your very first Ares game.  For just a few bucks, less than the price of a grande coffee, you can spin up a droplet for a couple weeks and get your feet wet.  That way you're not trying to learn both Ares code and Ares server setup at the same time!  Once you have a little more experience with Ares, you can explore some of the [other options](/tutorials/code/dev-tools) for setting up a game for development purposes.
+> <i class="fa fa-exclamation-triangle"></i> **Note:** It's strongly recommended that you follow the standard [installation instructions](/tutorials/install) for your very first Ares game.  For just a few bucks, less than the price of a grande coffee, you can spin up a droplet for a couple weeks and get your feet wet.  Faraday can even [set it up for you](/tutorials/install/easy-mode).  This way you're not trying to learn both Ares code and Ares server setup at the same time!  
+>
+> If that's not a viable option for you, there are instructions for how to set up an Ares test game on your [local PC or Mac](/tutorials/code/dev-tools) for development purposes.  
 
 ## Getting Help
 

@@ -36,4 +36,4 @@ Save the code and run the tinker command.  Notice that the color is blue, the co
 
 Change the configuration file to use a different color code (like "%xg" for green) and run the command again.  Notice how the color changed without you needing to touch the code.
 
-> <i class="fa fa-info-circle"></i> **Tip:** Configuration sections always correspond to their filenames (`tinker.yml` for the "tinker" section), but sometimes sections are spread out across multiple config files for readability.
+> <i class="fa fa-info-circle"></i> **Tip:** Configuration sections generally correspond to their filenames (`tinker.yml` for the "tinker" section), but sometimes sections are spread out across multiple config files for readability.

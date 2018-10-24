@@ -5,7 +5,7 @@ layout: tutorial
 editCodeTutorial: true
 tutorialName: Editing Code
 tutorialIndex: tutorials/code/edit-code
-prevstep: debug-mode
+prevstep: ftp-upload
 tags: 
 - code
 ---

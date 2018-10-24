@@ -31,7 +31,7 @@ Let's see what those different formats look like.  Change the tinker code as sho
       client.emit "Here's some %xggreen%xn text.%RAnd a separate line."
     end
 
-The last emit shows how you can use [Formatting Codes](/tutorials/code/formatting) in an emit.
+The last emit shows how you can use [Formatting Codes](/tutorials/code/formatting) in an emit, including ansi and linebreaks.
 
 > <i class="fa fa-info-circle"></i> **Tip:** It's highly recommended that you use the standard emit_ooc / emit_success / emit_failure methods in any custom code you write.  This provides a consistent look-and-feel for all game commands and enable log editors to easily filter out these messages.
 

@@ -2,7 +2,7 @@
 title: Removing the Commands
 description:
 layout: tutorial
-prevstep: putting-it-together
+prevstep: cmd-handler2
 nextstep: next-steps
 tutorialIndex: tutorials/code/add-cmd
 addCmdTutorial: true
