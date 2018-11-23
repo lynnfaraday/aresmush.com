@@ -5,6 +5,13 @@ tags:
 - config
 ---
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
 To configure the Channels plugin:
 
 1. Select Admin -> Setup.
@@ -31,3 +38,9 @@ This should be a list.  For example:
     - Chat
 
 > <i class="fa fa-exclamation-triangle"></i> **Note:**  Make sure these channels don't have permissions that would restrict their use by unapproved/guest characters.
+
+## approved_channels
+
+You can also configure which channels characters join when they are approved.  Like `default_channels`, this should be a list.  For example:
+
+    - RP Requests

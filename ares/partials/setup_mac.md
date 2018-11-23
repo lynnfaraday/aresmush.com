@@ -1,5 +1,3 @@
-#### Local Mac Setup
-
 1. Install [Homebrew](https://brew.sh/), Mac's package manager.
 
 2. Copy/paste the following commands into a Mac terminal.

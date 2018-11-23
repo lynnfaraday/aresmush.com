@@ -1,6 +1,3 @@
-
-#### Setup the VM
-
 1. Download and install [Oracle VirtualBox](https://www.virtualbox.org/).
 2. Install the VirtualBox Extension Pack (available from the same downloads page as VirtualBox itself).
 3. Create a VM in VirtualBox.  Use the following options:

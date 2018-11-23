@@ -30,7 +30,7 @@ Here’s an example of how this would work:
 
 ## What Does Winning Mean?
 
-**Social conflict is not mind control.**  Even if an attacker wins a social contest, that doesn’t mean they get to script the defender’s response.  The defender must respect the roll, but they get to choose the reaction that’s most appropriate to their character.
+**Social combat is not mind control.**  Even if an attacker wins a social contest, that doesn’t mean they get to script the defender’s response.  The defender must respect the roll, but they get to choose the reaction that’s most appropriate to their character.
 
 For example, in the Ben/Andrew example above, sitting down was what Andrew asked for, but there could have been other valid responses to a successful Intimidation roll.  For example:
 
@@ -43,9 +43,9 @@ All of those are reasonable human responses to being intimidated.  An *inappropr
 > Ben laughs in Andrew’s face.  “I ain’t scared of you, old man!”
 > Ben ignores Andrew, and turns back to Mary.  “Like I was saying...”
 
-In rare situations, there may be extenuating circumstances where the player might respect the roll in an unorthodox way.  Players should discuss this first and try to make a reasonable compromise.  Remember you can always contact staff if needed.
+In rare situations, there may be extenuating circumstances where the player might respect the roll in an unorthodox way.  Players should discuss this first and try to make a reasonable compromise.  If you lose the roll, you have to offer some kind of concession.  Remember you can always contact staff if needed.
 
-> &lt;OOC&gt; Ben's more scared of his gang than Andrew.  How about he makes a show of resisting and then Andrew can force him to sit.
+> &lt;OOC&gt; Ben's intimidated, but he's more scared of his gang than Andrew.  How about he makes a show of resisting and then Andrew can force him to sit.
 > &lt;OOC&gt; Andrew says, "OK."
 
 ## Guardrails
@@ -60,14 +60,16 @@ There are some important guardrails in social combat to protect against harassme
 
 Often social combat is a one-and-done situation.  You either bluff your way past the guard or you get caught.  But for more subtle manipulation, the attacker may want to try and try again. This is fine, providing:
 
-* The attacker varies their approach each time.
-* A reasonable amount of time (generally an hour or more) passes between attempts.
+* The attacker varies their approach each time. -or-
+* A reasonable amount of time passes between attempts (generally you can try something once per scene).
 
 In other words, Andrew can’t try to Intimidate Ben into sitting down by yelling at him, then immediately yell at him some more to try again.  Similarly, Ben can’t sit down for ten seconds and then immediately bounce back up and start mouthing off at Andrew again.
 
 ## Calculating Leverage
 
-Leverage is calculated by considering several key areas, outlined below.  Each area may contribute either a vulnerability ⚔ (in favor of the attacker), a resistance ◈ (in favor of the defender) or nothing (neutral) to the overall total.  
+Leverage is calculated by considering several key areas: Obligation, Background, Consequences, Trust, and Influence - all described in detail below.  
+
+Each area may contribute either a vulnerability ⚔ (in favor of the attacker), a resistance ◈ (in favor of the defender) or nothing (neutral) to the overall total.  
 
 > <i class="fa fa-exclamation-triangle"></i> **Note:** Note: An area cannot be counted more than once, even if multiple factors from that area might apply.
 
@@ -76,7 +78,7 @@ Once you’ve figured out what leverage applies, consult the following table to 
 Social contests are described in more detail below.
 
 |  | No Vulnerabilities | ⚔ | ⚔⚔+ |
-| No Resistances | Contest favoring attacker. | Contest favoring attacker. | No contest - attacker wins. |
+| No Resistances | Even contest. | Contest favoring attacker. | No contest - attacker wins. |
 | ◈ | Contest favoring defender. | Contest favoring defender. | Even contest. |
 | ◈◈ + |  No contest - defender wins. | No contest - defender wins. | Contest favoring defender. |
 

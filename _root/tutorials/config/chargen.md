@@ -24,7 +24,7 @@ You can configure the messages that are put into the approval job when character
 * `approval_message` - This message is sent when they're approved.
 * `rejection_message` - This message is sent when they're rejected.
 * `post_approval_message` - The system will also create a job *after* someone is approved, to remind the game admin to do any ancillary tasks, like adding them to lists, or making sure they have a log icon.  You can configure the todo list in the job message.
-* `welcome_message` - This message is posted to the forum when a character is approved.  %{name} and %{position} are parameters passed to the message representing the character's name and position.  You can place them wherever you want in the string.
+* `welcome_message` - This message is posted to the forum when a character is approved.  You can use %{name} in the message where you want the char's name to go.  You can also use any group.  For example:  `"Welcome %{name} - the newest %{position} in %{faction}."`
 
 ## Web Chargen Blurbs
 

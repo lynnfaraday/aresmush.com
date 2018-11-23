@@ -16,5 +16,20 @@ If not, the exact instructions will vary depending on your machine's operating s
 
 ## Ubuntu
 
-Adding **/home/yourusername/aresmush/bin/startares&** to the machine's **/etc/rc.local** file should do the trick. This requires root access to the machine.
+You need to run bin/startares from the aresmush directory **as the ares user**.
 
+The standard install does this with three files.
+
+/root/onboot.sh:
+
+    sudo -u ares -i '/home/ares/onboot.sh'
+    
+/home/ares/onboot.sh:
+
+    cd aresmush
+    bin/startares&
+
+/etc/rc.local:
+
+    /root/onboot.sh &
+    exit 0

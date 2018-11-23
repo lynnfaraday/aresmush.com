@@ -49,6 +49,8 @@ Here are the available colors:
 * Border color - Boxes and lines around things.
 * Faded text color - Hints and subtle headings, like the sidebar headings.
 
+> <i class="fa fa-exclamation-triangle"></i> **Note:** After changing the colors, you'll usually need to do a force-refresh on your browser to make it reload the page.  This is a browser thing, not an Ares thing.
+
 ## Images
 
 There are three main images used by the website.  You can upload new versions on the website admin page.
@@ -86,10 +88,10 @@ You can pick a different focal point (other than center) with custom CSS, as exp
 
 A few of the navigation bar settings are configurable, described in Advanced Configuration below.
 
-* Whether the sidebar appears on the left or right.
-* Wiki pages to show under the Wiki menu.
+* Whether the sidebar appears on the left or right.  (`left_sidebar`)
+* What pages to show on the top navbar.  (`top_navbar`)
 
-Beyond that, changing the navigation bars requires a slight change to the website code.  See [Web Navigation](/tutorials/code/web-nav) for details.
+Changing what's on the sidebar requires a change to the website code.  See [Web Navigation](/tutorials/code/web-nav) for details.
 
 ## Configuring Recaptca
 
@@ -126,6 +128,8 @@ Beyond the colors, you can add custom CSS styles that will override the Web Port
 
 1. Select Admin -> Setup
 2. Edit `custom_style.scss`.
+
+> <i class="fa fa-exclamation-triangle"></i> **Note:** After changing the custom CSS style, you'll usually need to do a force-refresh on your browser to make it reload the page.  This is a browser thing, not an Ares thing.
 
 ### Changing the Font
 
@@ -190,3 +194,48 @@ By default, the character gallery page shows characters organized into tabs by F
 ### left_sidebar
 
 If set to true, the sidebar appears on the left instead of the default right.
+
+### top_navbar
+
+This setting lets you customize the top navigation bar.  The home, account and admin links are always fixed, so the navbar goes:
+
+    Home | Account (on small browsers) | CUSTOM NAV | Admin
+
+You control what appears in the CUSTOM NAV section.
+
+> <i class="fa fa-exclamation-triangle"></i> **Note:** If you mess up your custom navigation configuration, you can cause your web portal to not load properly.  When in doubt, [ask for help](/feedback).
+
+The basic format is:
+
+    - title: First Menu Title
+      menu:
+         - page: some-ember-page
+           title: First Page Title
+         - page: another-ember-page
+           title: Second Page Title
+    - title: Second Menu Title
+      menu:
+         - page: random-ember-page
+           title: Third Page Title
+         - page: other-ember-page
+           title: Fourth Page Title
+
+Within each `menu` config, you can list internal pages, external pages, and a divider.
+
+For an internal page, list the page route, a display title, and an *optional* id.  Some routes, notably help-topic and wiki-page, require you to specify an identifier matching the help topic name or wiki page name.  For example:
+
+    - page: wiki-page
+      title: Getting Started
+      id: getting_started
+
+> <i class="fa fa-exclamation-triangle"></i> **Note:** The 'page' entries must match Ember page routes **not** regular URLs (e.g. `wiki-page` not `/wiki/page`, or `characters` not `/chars`).  You'll find most of the routes you need already listed in the default top_navbar configuration.  If the one you want isn't listed, just [ask for help](/feedback).
+
+For an external page, list the URL, a display title, and an *optional* [browser tab target](https://www.w3schools.com/tags/att_a_target.asp).  For example:
+
+    - target: blank
+      title: Interactive Combat Walkthrough <i class="fa fa-external-link-alt" aria-hidden="true">
+      url: http://aresmush.com/fs3/fs3-3/combat-walkthrough
+
+For a dividing line, just use:
+
+    - divider: true

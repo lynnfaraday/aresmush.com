@@ -54,6 +54,13 @@ Any demographics you list in `editable_properties` may be changed after chargen.
 
 > <i class="fa fa-info-circle"></i> **Tip:** The names here must exactly match the names in the demographics list.
 
+### private_properties
+
+Any demographics you list in `private_properties` are secret.  They will only show up when viewed by staff or by the character themselves.
+
+> <i class="fa fa-info-circle"></i> **Tip:** The names here must exactly match the names in the demographics list.
+
+
 ## nickname_field and nickname_format
 
 If you set `nickname_field` to the name of a demographic field (for example - callsign), that field will be shown alongisde the character's name in places like the who list and room description.  The field will also be included in 'whois' searches.

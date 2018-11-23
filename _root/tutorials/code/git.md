@@ -71,6 +71,22 @@ In the server shell:
 
 Now your game will be set up to get code updates from your fork instead of from the main Ares repository.
 
+## Controlling Your Config Files
+
+By default, the AresMUSH repository does not contain configuration files.  This prevents conflicts between the default configuration and your game's configuration when you're doing updates.
+
+You may wish to add your game's configuration files to source control, though, just to have a record of what changed and when.  This is especially useful if you're trying to synchronize changes between a test game and the real game.
+
+To add your config files to source control, just modify the .gitignore file in your Ares fork.  **Remove** the final line that excludes the entire game directory:
+
+    # Game directory
+    # -----------------------------
+    /game/
+
+The next time you add files to git, it will include your configuration changes.  
+
+> <i class="fa fa-info-circle"></i> **Tip:** Git will still ignore other parts of the game directory, including uploads, logs, and the secrets.yml config file (to keep your secret codes secret).
+
 ## Git from the Game
 
 You can actually execute selected `git` commands from within the game without needing to connect to the server shell.  See `help git` in-game.  This is handy if you're using GitHub to sync changes between a local PC and the server because you can push to GitHub from your PC and pull the code down from inside the game itself.

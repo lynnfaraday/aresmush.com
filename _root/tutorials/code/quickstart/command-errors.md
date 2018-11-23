@@ -35,7 +35,7 @@ Now run the `tinker` command by itself without giving it any arguments.  You sho
 
 ## Try It! - Looking in the Error Log
 
-There's minimal information about the error printed to the screen, but a lot more is captured in the game's [log file](/tutorials/code/logs).  The log file records commands, errors, and other important game events.
+There's minimal information about the error printed to the screen, but a lot more is captured in the game's [log file](/tutorials/code/logs).  The log file records most commands (minus some for privacy), errors, and other important game events.
 
 1. In the web portal, go to Admin -> Logs.  (You can open this in a new tab to avoid losing your tinker window).
 2. Select the most recent (highest-numbered) log file.
