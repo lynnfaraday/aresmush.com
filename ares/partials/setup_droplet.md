@@ -26,7 +26,7 @@ Before we start, a few things you should know:
         - Change logfile to "/home/arestest/redis/redis-server.log"
         - Change dir to "/home/arestest/redis"
         - Change port to something else, like 6380
-        - Change demonize from true to false.
+        - Change daemonize from true to false.
 
 5. Run the following commands:
 

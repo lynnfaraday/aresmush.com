@@ -45,13 +45,13 @@ This chart shows what basic game commands/systems each server offers.
 |Mail |<i class="fa fa-check-square"></i> |<i class="fa fa-user"></i>|<i class="fa fa-check-square"></i> |<i class="fa fa-check-square"></i> |<i class="fa fa-check-square"></i> |
 |BBS / Forums |<i class="fa fa-check-square"></i> |<i class="fa fa-user"></i>|<i class="fa fa-user"></i>|<i class="fa fa-user"></i>|<i class="fa fa-check-square"></i>|
 |Advanced Who / Where |<i class="fa fa-check-square"></i> ||<i class="fa fa-user"></i>|<i class="fa fa-user"></i>|<i class="fa fa-user"></i>|
-|Events Calendar|<i class="fa fa-check-square"></i> ||<i class="fa fa-user"></i>|||
+|Events Calendar|<i class="fa fa-check-square"></i> ||<i class="fa fa-user"></i>|<i class="fa fa-user"></i>||
 |Admin Jobs |<i class="fa fa-check-square"></i> ||<i class="fa fa-user"></i>|<i class="fa fa-user"></i>|<i class="fa fa-user"></i>|
 |Finger / Profile |<i class="fa fa-check-square"></i> ||<i class="fa fa-user"></i>|<i class="fa fa-user"></i>|<i class="fa fa-user"></i>|
-|IC Time |<i class="fa fa-check-square"></i> |<i class="fa fa-check-square"></i>|<i class="fa fa-user"></i>||<i class="fa fa-user"></i>|
+|IC Time |<i class="fa fa-check-square"></i> |<i class="fa fa-check-square"></i>|<i class="fa fa-user"></i>|<i class="fa fa-user"></i>|<i class="fa fa-user"></i>|
 |Places |<i class="fa fa-check-square"></i> ||<i class="fa fa-user"></i>|<i class="fa fa-user"></i>|<i class="fa fa-user"></i>|
 |Weather|<i class="fa fa-check-square"></i> ||<i class="fa fa-user"></i>|<i class="fa fa-user"></i>||
-|Scenes and Repose |<i class="fa fa-check-square"></i> ||<i class="fa fa-user"></i>||<i class="fa fa-user"></i>|
+|Scenes and Repose |<i class="fa fa-check-square"></i> ||<i class="fa fa-user"></i>|<i class="fa fa-user"></i>|<i class="fa fa-user"></i>|
 
 It's worth considering that a built-in system is only useful if you like how it works.  If you plan on ripping it all out and writing it from scratch anyway, then it may be easier to start with a blank slate.
 

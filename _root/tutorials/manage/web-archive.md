@@ -14,7 +14,7 @@ All games come to an end eventually, and when that happens you don't want to los
 
 To run the exporter, go to the `aresmush` folder on the Server Shell and type:
 
-> bundle exec webexport
+> bundle exec rake webexport
 
 This generates raw HTML files in the `wiki_export` folder.  You can use FTP to download the files and browse them on your local PC.  You can even host it on a static web server, or create a ZIP file and put it somewhere for your players to download for their future reading enjoyment.
 

@@ -20,6 +20,11 @@ Emits are the way the game communicates with the MUSH clients.  The Client class
 * `emit_failure` - Failure/error alerts show up in red.
 * `emit_raw` - A special emit that will not evaluate linebreaks or ansi codes.
 
+You can also emit to everyone in a room if you have a room object.  In commands, we can use the `enactor_room` helper to get the enactor's room.
+
+* `enactor_room.emit`  - Emits to the enactor's room.
+* `enactor_room.emit_ooc` - OOC messages show up in light blue.
+
 ## Try It!
 
 Let's see what those different formats look like.  Change the tinker code as shown, save, and run the command again.
@@ -28,6 +33,7 @@ Let's see what those different formats look like.  Change the tinker code as sho
       client.emit_ooc "Hello, #{enactor.name}!"
       client.emit_success "Success!"
       client.emit_failure "Failure!"    
+      enactor_room.emit "This gets sent to the entire room."
       client.emit "Here's some %xggreen%xn text.%RAnd a separate line."
     end
 

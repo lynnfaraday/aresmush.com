@@ -10,7 +10,7 @@ tutorialName: Adding a Command
 
 Congratulations! You've completed the Adding a Command tutorial.
 
-This was the third of four basic tutorials introducing Ares code.  The next is [Creating a Plugin](/tutorials/code/create-plugin).
+This was the third of the structured tutorials introducing Ares code.  The next is [Creating a Plugin](/tutorials/code/create-plugin).
 
 You may also want to polish your basic Ruby skills by checking out some of the [Ruby resources](/tutorials/code/ruby).
 

@@ -38,7 +38,9 @@ Seasons follow the RL northern hemisphere dates based on the IC time.  In other 
 
 ## climate_for_area and default_climate
 
-The weather system lets you configure a climate for each room **area**.  You can use 'none' to disable the weather system for an area.  For all areas that are not specified, the weather system will use the `default_climate`.  
+The weather system lets you configure a climate for each room **area**.  You can use 'none' to disable the weather system for an area.  
+
+If the climate for an area is not specified, the weather system will look at the area's parent, and it's parent's parent, and so on until it finds a climate.  If all else fails, it will use the `default_climate`.  
 
 For example, the following config will use the polar climate for the North area and disable weather in the offstage area.  Any other areas will use the temperate climate.
 

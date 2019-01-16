@@ -5,7 +5,7 @@ tags:
 - config
 ---
 
-You can configure basic information about your game.  This information is used in the [AresCentral games directory](http://arescentral.aresmush.com).  
+You can configure basic information about your game.  This information is used in the [AresCentral games directory](http://arescentral.aresmush.com).  See [Managing the Game Directory](/tutorials/manage/directory) for more information.
 
 To configure the game preferencse:
 

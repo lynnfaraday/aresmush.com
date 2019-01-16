@@ -28,7 +28,7 @@ There are many MUSH clients around.  Popular MUSH clients include:
 
 Basic features will work no matter which client you use, but there are two things that you will need to set up to get the most out of Ares' features:
 
-* **Character Encoding** allows you to see characters with accents, alternate character sets (Russian, Chinese) and symbols.  Without this feature, if someone uses those characters you'll see a substitute character that looks like white squares or gibberish.  For the optimal Ares experience, you'll need to set up your client to use the **UTF-8** Unicode character set.  UTF-8 is backwards-compatible with ASCII, so you can safely make it your client's global default.
+* **Character Encoding** allows you to see characters with accents, alternate character sets (Russian, Chinese) and symbols.  Without this feature, if someone uses those characters you'll see a substitute character that looks like white squares or gibberish.  For the optimal Ares experience, you'll need to set up your client to use the **UTF-8** Unicode character set.  UTF-8 is backwards-compatible with ASCII, so you can safely make it your client's global default.  If you have a client that doesn't support UTF-8 at all, you can enable ascii-only mode.  Type `ascii on` in-game or edit your AresCentral [handle preferences](/handles).
 
 * **Editing** allows you to use the /edit switch on various commands to pull text from the game into your client's input buffer.  For example, typing `desc/edit me` will put your description into your input buffer so you can edit it and send it right back.  This is Ares' version of the /grab or @dec/tf syntax from old servers.  See `help edit` in game for more information.
 
@@ -122,7 +122,7 @@ SimpleMU is no longer supported, but many people still use it.
 
 ### Character Encoding
 
-SimpleMU does not support international characters.
+SimpleMU does not support international characters.  You'll want to turn on ASCII-only mode.  You can do this with the `ascii on` command in-game, or via your AresCentral [handle preferences](/handles).
 
 ### Editing
 
@@ -132,10 +132,7 @@ You shouldn't need to set up anything to make editing work in SimpleMU.
 
 ## Setting up DuckClient
 
-DuckClient really doesn't like Ares' keepalive feature.  The effects can include extra lines, lines not coming through when expected, or even prior lines being deleted from the screen (!!) when a keepalive text is received.  Myself and a couple other folks have reported this behavior to the DuckClient developer and are awaiting their response.  In the meantime, the fix is pretty easy:
-
-1. In the AresMUSH game, type `keepalive off` to disable the keepalive feature.  You will need to do this for each alt.
-
+Prior versions of DuckClient did not like Ares' keepalive feature.  This was reportedly fixed, but if you see weird line behavior, you may need to disable the keepalive feature.  Type `keepalive off` in-game.
 
 <a name="other" />
 

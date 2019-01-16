@@ -89,6 +89,8 @@ If you omit the values, the group will be freeform, allowing the player to speci
             Navy: "Join the fleet, see the worlds."
             Marines: "Semper fi."
 
+> <i class="fa fa-info-circle"></i> **Tip:** The group names must use the capitalization you want in-game.  For example, "Navy" or "CIA".
+
 ## Group Shortcuts
 
 Ares will automatically create shortcuts for your group names - a singular one to set the group (e.g. `faction <value>` for `group/set <value>`) and a plural one to list the values (e.g. `factions` for `group faction`).  If you have irregularly-spelled groups, you can add a custom value to the `shortcuts` setting in the demographics config:
@@ -111,4 +113,4 @@ You can configure which fields appear on the full census screen.  For each field
       width: 15
       title: Position
 
-A complete description of all available fields can be found in the "who_fields" option in the [Who/Where Configuration](/tutorials/config/who).
+A complete description of all available fields - and how to create custom fields - can be found in the "who_fields" option in the [Who/Where Configuration](/tutorials/config/who).

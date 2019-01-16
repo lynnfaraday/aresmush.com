@@ -6,7 +6,7 @@ quickstartTutorial: true
 tutorialName: Code Quickstart
 tutorialIndex: tutorials/code/quickstart
 prevstep: localization-intro
-nextstep: next-steps
+nextstep: apis
 tags: 
 - code
 - code-quickstart
@@ -34,7 +34,7 @@ We're already seen how we can utilize the name attribute in our code through exa
 There are a variety of ways to query (request) information from the database, but the most common one will be to find something by name.   Let's see how that works.   Change the tinker command as shown:
 
     def handle
-      char = Character.find(name: cmd.args).first
+      char = Character.all.select { |c| c.name == cmd.args }.first
       if (char)
         client.emit "You found #{char.name}"
       else

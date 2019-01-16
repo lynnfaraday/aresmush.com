@@ -45,6 +45,12 @@ If your game can't connect to the database you'll see an error like:  "Error con
 * Check your database config file (database.yml) and make sure you have the correct URL and password.  You can compare these values to the 'port', 'bind' and 'requirepass' parameters in your redis configuration file.   In the standard install, this file is located at `/etc/redis/redis.conf`.
 * Make sure your database service is running.  You can use the server shell command `service redis-server status`.
 
+## Multiple Copies of the Game
+
+Having multiple copies of the game running on different ports with the same database can cause some *really* wacky effects.  This is not a normal configuration, but some people do it accidentally or intentionally while testing.  If you're getting weird errors and think you may have done this, check to see if you've got multiple copies of the game running.  Use `ps -aux | grep ares` on the server shell and look for multiple entries with 'startares' or 'devstart'.  For example:
+
+    ares     27590  0.0  5.5 1373916 113564 ?      Sl   Jan14   2:12 /home/ares/.rvm/rubies/ruby-2.5.1/bin/rake startares[]
+
 ## Web Portal Unavailable
 
 If you get a 'page not found' error for your web portal, here are some things to check:

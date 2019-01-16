@@ -43,9 +43,9 @@ Once the plugin is installed, you'll need to do `load all` to load the game code
 
 As long as you haven't modified the plugin's source code, you can upgrade it just by using the `bin/addplugin` script again, as described above.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** If a plugin has been installed previously, adding it again will **not** overwrite your configuration files.  You should check the plugin configuration notes to see if any new options are available and add them manually to your configuration.
+> <i class="fa fa-exclamation-triangle"></i> **Warning:** Do not attempt to run the upgrade script if you've got custom code modifications (other than configuration files). The upgrade will overwrite your changes.  You'll have to do the upgrade by hand.  GitHub's version compare tools can help you figure out what changed.  Feel free to ask for help.
 
-If you have modified the plugin source, you'll have to handle the upgrade mamnually.  GitHub's compare versions tool may help.
+> <i class="fa fa-info-circle"></i> **Tip:** If a plugin has been installed previously, adding it again will **not** overwrite your configuration files.  You should check the plugin configuration notes to see if any new options are available and add them manually to your configuration.
 
 ## Contributions
 

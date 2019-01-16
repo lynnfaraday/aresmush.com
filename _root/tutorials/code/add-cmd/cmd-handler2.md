@@ -83,8 +83,16 @@ The syntax is `goals <name>` so we have a single argument for the name.  This is
   
 For this command, we're assuming we want to restrict it so only staff can view other peoples' goals.  We didn't have to do this - we could just make goals public - but for the sake of this example we'll restrict the command.
 
-This is done by adding a an error check method.  Error check methods start with `check_` and either return nil (if everything's okay) or an error message (if there's a problem).  Here we're using the standard `has_permission?` method of the character model to see if the character has the right permission.
+This is done by adding a an error check method.  Error check methods start with `check_` and either return nil (if everything's okay) or an error message (if there's a problem).  Here we're going to:
+
+* Return nil (A-OK) if they're looking at their own goals.
+* Return nil (A-OK) if they've got the 'view_bgs' permission.  This uses the standard `has_permission?` method of the character model.
+* Return an error otherwise.
 
 In the handle method, we use the `ClassTargetFinder.with_a_character` [Database Finder Helper](/tutorials/code/database) to search for the character by name.  This helper will only execute the code in-between the "do" and "end" if the character is found.  If the name is ambiguous or doesn't exist, the helper will notify the player automatically.
 
 Finally, the handle method uses simple bordered template to show the goals with a title.
+
+## About the Command Dispatcher
+
+Our dispatcher has gotten a little more complicated as well.  Now it's handling two commands - `SetGoalsCmd` for goals/set and `GoalsCmd` for goals or goals/anythingelse.

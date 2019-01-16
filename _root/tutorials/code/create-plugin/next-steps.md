@@ -12,7 +12,7 @@ Congratulations! You've completed the Create a Plugin tutorial.
 
 If you want to see the complete Cortex plugin code, you can find it in the [Ares Extras repository](https://github.com/AresMUSH/ares-extras).
 
-This is the final structured tutorial, but there are numerous [Advanced Coding Topics](/tutorials/code/) in the tutorials section.
+This was the fourth of the structured tutorials introducing Ares code.  The next is [Modifying the Web Portal](/tutorials/code/add-web).
 
 Don't forget you can always [ask for help](/feedback). 
 

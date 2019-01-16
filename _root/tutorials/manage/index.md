@@ -8,6 +8,8 @@ These articles will help you administer/manage an Ares game.  It assumes your ga
 
 {{>tutorial_warning}}
 
+> <i class="fa fa-info-circle"></i> **Tip:** In addition to these overview articles, you'll find help files on specific admin commands in-game under the `~admin~` sections of the help files.  For example:  `help manage apps`.
+
 ## Game Administration
 
 * [Building the Grid](/tutorials/manage/building) - Setting up the game's locations.
@@ -15,6 +17,7 @@ These articles will help you administer/manage an Ares game.  It assumes your ga
 * [Dealing with Trolls](/tutorials/manage/trolls) - Tools for handling trolls and harassment.
 * [Setting up Guests](/tutorials/manage/guests) - Adding/changing guest characters.
 * [Adding Plugins](/tutorials/code/extras) - Finding and using community plugins.
+* [Managing the Game Directory](/tutorials/manage/directory) - Advertising your game.
 
 ## Database Tools
 

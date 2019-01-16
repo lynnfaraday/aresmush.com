@@ -16,8 +16,6 @@ Your server host and port information are set up during installation.  If they e
 
 For more info on server configuration options, see [Installing the Game](/tutorials/install/install-game).
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:**  If you change the Engine API port and are using the API proxy feature, you will need to update your web server configuration.  See [Website Configuration](/tutorials/config/website) for details.
-
 To configure the server:
 
 1. Select Admin -> Setup
@@ -32,15 +30,40 @@ These advanced server options will not be needed by every game.
 
 ### HTTPS Web Portal
 
-If you want to have your web portal use HTTPS instead of HTTP, you will need to first install a security certificate.  [CertBot](https://certbot.eff.org/) is a really easy way to do this.  If you're using the Ares default setup of Ubuntu/Nginx, you can just enter that on their main page and CertBot will give you the commands to run on the game's server shell to set up the certificate.
+If you want to have your web portal use HTTPS instead of HTTP, you will need to first install a security certificate.  [CertBot](https://certbot.eff.org/) is a really easy way to do this.  
+
+If you're using the Ares default setup of Ubuntu/nginx, go to CertBot's website and select 'nginx' and your server's version of Ubuntu (usually either 16.04 or 18.04; you will see the version printed in your server shell when you log in.) 
+
+CertBot will give you the commands you need.  Run those commands in the game's server shell to set up the certificate.  Allow it to update your nginx configuration for you.
 
 Once you have that installed, you'll need to set a couple advanced server options.
 
-* `use_https` - Set this to true to use HTTPS.
-* `private_key_file_path` - This path should be the same as your CertBot "Private Key Path", which you can get by typing `sudo certbot certificates` in the server shell.
-* `certificate_file_path` - This path should be the same as your CertBot "Certificate Path", which you can get by typing `sudo certbot certificates` in the server shell.
+1. Run `sudo certbot certificates` to get your certificate info.  It will look something like this:
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** Remember to restart the game engine after changing this setting.
+            Certificate Name: YOURSITE
+
+              Domains: YOURSITE
+
+              Expiry Date: whenever
+
+              Certificate Path: /etc/letsencrypt/live/YOURSITE/fullchain.pem
+
+              Private Key Path: /etc/letsencrypt/live/YOURSITE/privkey.pem
+
+You will need to use the same YOURSITE value in a moment.
+
+2. From the aresmush directory, run `bin/certs YOURSITE`.
+
+3. Edit `server.yml` in the game configuration:
+  - Set `use_https` to true.
+  - Set `certificate_file_path` to `/home/ares/certs/fullchain.pem`.
+  - Set `private_key_file_path` to `/home/ares/certs/privkey.pem`.
+
+4. Restart the game engine.  See [Shutting Down the Game](/tutorials/manage/shutdown).
+
+5. Restart the website with `sudo service nginx restart`.
+
+6. Do a force-refresh in the browser to reload the web portal.
 
 ### bind_address
 

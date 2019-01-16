@@ -57,6 +57,16 @@ Learn the anatomy of a more complex system (aka a plugin) from start to finish. 
 {{>create_plugin_tutorial}}
 </div>
 
+### Tutorial #5 - Modifying the Web Portal (Web Goals)
+
+Learn how to add things - in this case, the character goals from Tutorial #3 - to the web portal. 
+
+<button data-toggle="collapse" data-target="#add-web" class="btn btn-info">Show Tutorial</button>
+
+<div id="add-web" class="collapse">
+{{>add_web_tutorial}}
+</div>
+
 ## Advanced Coding Topics
 
 Once you've completed the initial tutorials, there are a wealth of other topics available for reference. 

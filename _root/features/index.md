@@ -29,7 +29,7 @@ Existing MUSH clients effectively require you to have a coder on board before yo
 * A complete MUSH-in-a-box that can be installed and configured by people with no prior code experience.
 * A fully-integrated [Web Portal](/web-portal), so you don't need to manage a separate wiki.
 * Easy web-based configuration.
-* FS3 comes built-in, and several other [skill systems](/skills) are available as easy-to-install plugins.
+* FS3 comes built-in, and several other [skill systems](/features/skills) are available as easy-to-install plugins.
 
 Learn more at [Ares for Admins](/features/ares-for-admins).
 

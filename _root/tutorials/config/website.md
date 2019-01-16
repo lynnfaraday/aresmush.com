@@ -62,6 +62,8 @@ There are three main images used by the website.  You can upload new versions on
 * box-bg.png - Used as a background behind the character and log pages.
 * jumbotron.png - Home page image.
 
+> <i class="fa fa-exclamation-triangle"></i> **Note:** Some browsers (notably Chrome) are stubborn about reloading theme images right away.  You may need to clear your image cache or try viewing it in private/incognito mode to see your images right after you've uploaded them.
+
 ### Choosing a Header Background
 
 The default style positions the header background in a 200 pixel high area using `background-size: cover` and `background-position: center`.   
@@ -239,3 +241,7 @@ For an external page, list the URL, a display title, and an *optional* [browser 
 For a dividing line, just use:
 
     - divider: true
+
+### HTTPS Web Portal
+
+If you want your web portal to use HTTPS for security, it requires some advanced server setup.  See [HTTPS Web Portal Setup](/tutorials/config/server#https-web-portal).

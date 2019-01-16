@@ -89,4 +89,6 @@ We've talked a lot about how commands get handled, but how do you get from the p
 
 One of the Dispatcher's jobs is calling each plugin's `get_cmd_handler` method any time it gets a command.  A plugin can return `nil` - if they don't want the command - or an appropriate command handler if they do.
 
+In this example, we have a simple case statement that returns the `SetGoalsCmd` class if the command root is 'goals' and the switch is 'set'.
+
 You can learn more about the dispatcher in the Advanced Tutorial on [Command Dispatching](/tutorials/code/dispatcher).

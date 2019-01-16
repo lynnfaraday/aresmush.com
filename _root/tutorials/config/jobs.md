@@ -40,6 +40,13 @@ You can also set a color for each category.  For example, REQ jobs are magenta b
         REQ:
             color: "%xm"
 
+This color config is only used in-game.  To customize the web portal category colors, you'll need to use a [custom CSS style](https://aresmush.com/tutorials/config/website#custom-css-style).  For example:
+
+    .job-category-REQ {
+        background-color: purple;
+        color: white;
+    }
+
 ### Category Roles
 
 Characters with the 'admin' role have access to all job categories.  Even if you give the `access_jobs` permission to a role, you also need to add that role to the categories you want them to have access to.
@@ -73,10 +80,19 @@ You can add more status steps to your workflow.
 
 > **Important!** Adding new status values is fine.  If you change or delete existing status values, you need to check to see if any code is using the old status.  For example, the chargen system allows you to configure which status a job goes to when an application is rejected or re-submitted.
 
+### Status Color
+
 You can also set a color for each job.  This can be changed at will.  For example, NEW jobs are green by default:
 
         NEW:
             color: "\%xg"
+
+This color config is only used in-game.  To customize the web portal status colors, you'll need to use a [custom CSS style](https://aresmush.com/tutorials/config/website#custom-css-style).  For example:
+
+    .job-status-NEW {
+        background-color: yellow;
+        color: black;
+    }
 
 ### Special Status Values
 

@@ -56,9 +56,9 @@ If you used the [Digital Ocean](/tutorials/install/digital-ocean) setup instruct
 {{#pretty-image}}{{urls.media}}/install-ares/droplet-connect.png{{/pretty-image}}
 4. Log in.
 
-## Changing Directories
+## Directories
 
-Once in the server shell, you'll need to change to the folder where the Ares code lives.  You do this through the change directory command - `cd`.
+**After** your game is installed, you will find the Ares code in your home directory.  It won't be there until you finish this install guide, but once it is, you can use the linux change directory command - `cd` - to change to the folder where the Ares code lives.
 
     cd - Goes to your home folder.
     cd aresmush - From your home folder, changes to the game folder.

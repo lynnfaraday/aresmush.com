@@ -11,4 +11,5 @@
 * [Configuration](/tutorials/code/quickstart/config-intro)
 * [Localization](/tutorials/code/quickstart/localization-intro)
 * [Database Queries and Updates](/tutorials/code/quickstart/db-intro)
+* [Common APIs](/tutorials/code/quickstart/apis)
 * [Next Steps](/tutorials/code/quickstart/next-steps)

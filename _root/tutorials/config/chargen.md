@@ -36,6 +36,18 @@ You can also configure the character creation instructions that appear in the We
 
 > <i class="fa fa-info-circle"></i> **Tip:** Abilities instructions are set up in the [FS3Skills Chargen Config](/tutorials/config/fs3skills_chargen).
 
+## allow_web_submit
+
+This setting controls whether characters can submit their application from the web portal.  If your game isn't using FS3 and doesn't have the ability to set stats via the web, you'll probably want to disable this to force people to complete chargen in-game.
+
+## app_review_commands
+
+You can configure which commands execute when you do `app/review`.  Just supply a list of commands, and use %{name} where you want the character's name to go in the command.  For example:
+
+    - app %{name}
+    - profile %{name}
+    - bg %{name}
+
 ## arrivals_category
 
 You can configure which forum category the welcome message is posted to.  Making it a forum that doesn't exist will effectively disable the welcome post.

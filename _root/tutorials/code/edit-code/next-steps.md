@@ -12,7 +12,7 @@ tags:
 
 Congratulations!  You've completed the AresMUSH Editing Code Tutorial.  
 
-This was the second of four basic tutorials introducing Ares code.  The next is [Adding a Command](/tutorials/code/add-cmd).
+This was the second of the structured tutorials introducing Ares code.  The next is [Adding a Command](/tutorials/code/add-cmd).
 
 Don't forget you can always [ask for help](/feedback). 
 

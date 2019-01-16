@@ -55,6 +55,8 @@ Let's say you wanted to create a more limited admin role for apps staff.  You wa
 3. Update the jobs config to add the `app_staff` role to the APP category.  See the [jobs configuration tutorial](/tutorials/config/jobs) for details.
 4. Set permissions on the Apps forum using `forum/readroles <roles>` and `forum/writeroles <roles>`.
 
+> <i class="fa fa-exclamation-triangle"></i> **Important:** Numerous commands are locked to characters with the 'approved' role as a defense against trolls. Full-fledged admins automatically count as approved, but you'll need to assign the 'approved' role to your other staff manually using `role/add <name>=approved`.  You should also mark them as player bits with the `playerbit` command so they don’t show up on the character gallery.
+  
 ## Using Permissions in Code
 
 In your code, permissions can restrict who can use commands.  For example, if you wanted to lock the 'home' command to only people who have the 'go_home' permission, you would add the following error checker in the home command handler.
@@ -75,6 +77,8 @@ Many plugins have helper methods to check for the necessary permission.  For exa
 
 ## Default Permissions
 
+> <i class="fa fa-info-circle"></i> **Tip:** If you want to know exactly which commands are accessible with these permissions, use the 'search' feature of help files to look for help files referencing these permissions.  You'll see a statement like  "These commands require the Admin role or the permission: whatever_permission".
+
 | Role | Notes |
 | ---- |
 | access_jobs | Characters with the admin role have access to all job categories, but you have to edit the [jobs configuration](/tutorials/config/jobs) to give access to other roles. |
@@ -85,6 +89,7 @@ Many plugins have helper methods to check for the necessary permission.  For exa
 | desc_places | | 
 | go_home | |
 | login | |
+| manage_achievements | |
 | manage_abilities | |
 | manage_apps | |
 | manage_channels | |

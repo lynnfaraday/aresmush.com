@@ -10,6 +10,29 @@ To change the Description plugin configuration:
 1. Select Admin -> Setup.
 2. Edit `describe.yml`
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
+## glance_format
+
+This allows you to format what the "glance" command displays for each character.  For example, if the format is:
+
+    "%{height_title} height, %{age} year-old %{gender_noun} with %{hair} hair."
+
+Then it will show:
+
+    "Average height, 25 year-old man with brown hair."
+
+Variables are inserted using the `%{variablename}` syntax.  Available variables include:
+
+* All basic demographics fields you've defined in the [Demographics Configuration](/tutorials/config/demographics) in both all-lowercase (`%{hair}`, `%{skin}`, etc.) and titlecase (`%{hair_title}`, `%{height_title}`, etc.) You might use the titlecase ones at the beginning of the sentence (like height in the example above) or if the demographic is a proper noun, like nationality.
+* Age, as a number.  (`%{age}`)
+* Their gender noun: man, woman, person. (`%{gender_noun}`)
+
 ## exit_start_bracket and exit_end_bracket
 
 These options control the appearance of exit names in room descriptions.  The default is square brackets, so exits appear like:

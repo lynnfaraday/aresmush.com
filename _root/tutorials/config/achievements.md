@@ -10,18 +10,44 @@ Achievements is an optional plugin that lets you set up in-game achievements for
 1. Select Admin -> Setup.
 2. Edit `achievements.yml`
 
+<div id="inline_toc" markdown="1">
+**Table of Contents**
+
+* TOC
+{:toc}
+</div>
+
+## announce_channel
+
+By default, announcements are only shown to the person who received them.  You can optionally have them announced on a channel.  Just set `announce_channel` to the name of the channel you wish to use.  Leave the setting blank to disable the announcement.
+
 ## types
 
-You can configure what achievement types exist and what their icon is.  Icons come from the [Font Awesome](https://fontawesome.com/?from=io) icon library, so you'll see codes like `fa-globe` and `fa-users`.
+You can configure what achievement types exist and what their icon is.  Standard types include things like community, story, and portal.  Icons come from the [Font Awesome](https://fontawesome.com/?from=io) icon library, so you'll see codes like `fa-globe` and `fa-users`.
 
-> <i class="fa fa-info-circle"></i> **Tip:** Don't erase the existing types, because they're used by various plugins.  You can change their icons, though.
+> <i class="fa fa-info-circle"></i> **Tip:** Don't erase the existing types, because they're used by various plugins.  You can change their icons, though, and add new types.
 
-## Adding Custom Achievements
+## custom_achievements
 
-Plugins control what achievements are available.  If you want some piece of code to award an achievement, just call: `Achievements.award_achievement(char, achievement_name, type, message)`.  For example:
+The standard plugins come with a number of achievements.  You can also define your own using the `custom_achievements` setting.  For each achievement, you define:
 
-    Achievements.award_achievement(enactor, "fs3_luck_spent", 'fs3', "Spent a luck point.")
+* Internal name (e.g. something_special)
+* Displayed Message (e.g.  Did something special.)
+* Achievement Type (e.g. story, portal, etc.)
 
-> <i class="fa fa-info-circle"></i> **Tip:** You don't have to check to see if the person already has the award; the Achievements plugin does that automatically.  It checks if they already have an achievement with that same name.  If so - it won't award the achievement again.
+For example:
 
-Each achievement can only be received one time, though you can define different 'levels' of the achievement with different names.  For example, joining combats has several levels: fs3_joined_combat_1, fs3_joined_combat_10, etc.
+    custom_achievements:
+      something_special:
+        message: "Did something special."
+        type: "story"
+
+You can award custom achievements with the `achievement/add` command.
+
+If you want some piece of code to award a custom achievement automatically, just call: `Achievements.award_achievement(char, achievement_name)`.  For example:
+
+    Achievements.award_achievement(enactor, "something_special")
+
+> <i class="fa fa-info-circle"></i> **Tip:** You don't have to check to see if the person already has the award; the Achievements plugin does that automatically.
+
+Each achievement can only be received one time, though you can define different 'levels' of the achievement with different names.  For example, joining combats has several levels: `fs3_joined_combat_1`, `fs3_joined_combat_10`, etc.

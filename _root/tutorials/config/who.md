@@ -25,6 +25,7 @@ You can configure which fields are shown in columns on the who list.  For each f
 The following fields are available by default.
 
 * name
+* age
 * group  (value required to specify which group - e.g. faction, position, department)
 * demographic (value reuquired to specify which demographic - e.g. fullname, callsign)
 * status (colored IC/OOC status)
