@@ -59,3 +59,7 @@ You can configure how long to wait before deleting unshared scenes.  For example
     unshared_scene_warning_days: 13
 
 Whenever the unshared scene cron job runs, it will warn participants in unshared scenes that were completed more than 13 days ago.  It will delete unshared scenes that were completed more than 20 days ago - effectively giving a 7-day grace period after the warning.
+
+### trending_scenes_cron and trending_scenes_category
+
+The game will post trending scenes (i.e. recent scenes with the most 'likes' on the web portal) to a forum.  By default this happens once a week, and you can control the timing with `trending_scenes_cron`.  You can also control which forum it posts to with `trending_scenes_category`.  Leave the category blank to disable the post.

@@ -25,7 +25,7 @@ At some point there will be a new version of Ares code available and you'll want
 
 ## Updating Your Own Fork
 
-If you have your own GitHub fork, you can update it to get the latest code from the main Ares repository. See [upgrading forks](/tutorials/code/git#upgrade).  It's never too late to create your own [custom GitHub fork](/tutorials/code/git) to have a place to backup and track changes to your game code.  [Ask for help](/feedback) if you get stuck.
+If you are making custom code changes and have your own GitHub fork, you'll need to update your fork to get the latest code from the main Ares repository. See [upgrading forks](/tutorials/code/git#upgrade).
 
 ## Upgrade While Running
 

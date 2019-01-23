@@ -38,7 +38,7 @@ Arg converters alter the format of the argument string - changing it to a number
 
 ## Arg Parsers
 
-The `ArgParser` class helps to split up commands that are in more complex formats, like "mail players=subject/message".  There are a variety of common parsers available.  You can use them with the `parse_args` method of the command class.  For example:
+The `ArgParser` class helps to split up commands that are in more complex formats, like "mail players=subject/message".  It is used in conjunction with the `cmd.parse_args` method.  For example:
 
     def parse_args
       args = cmd.parse_args(ArgParser.arg1_equals_arg2)
@@ -46,8 +46,13 @@ The `ArgParser` class helps to split up commands that are in more complex format
       self.value = titlecase_arg(args.arg2)
     end
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** By default, all args will end up as `nil` if the command string doesn't match the intended format.  In the example above, both property and value would be nil if you just passed "set x" instead of "set x=y".   However, some of the arg parsers expressly allow optional args.  Only the optional ones will be nil if missing.
+The first line cracks apart the arguments and stores them in 'args'.  Then we can access the pieces with things like `args.arg1` and `args.arg1`.  
 
+There are a variety of common parsers available, described in more detail below.
+
+Under the hood, a parsers like `ArgParser.arg1_equals_arg2` is just a fancy regular expression that matches the pieces of the commands and assigns names to them (arg1 and arg2 in this case).  `cmd.parse_args` is a method that uses one of those fancy regexes and stores the results in an easily-accessed hash (args).
+
+> <i class="fa fa-exclamation-triangle"></i> **Note:** By default, **all** args will end up as `nil` if the command string doesn't match the intended format.  In the example above, both property and value would be nil if you just passed "set x" instead of "set x=y".   However, some of the arg parsers expressly allow optional args.
 
 ## arg1_equals_arg2
 

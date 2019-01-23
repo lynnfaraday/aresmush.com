@@ -14,13 +14,13 @@ tags:
 
 For our first exercise, we'll adapt the universal "Hello World" code example.  We're going to make use of the `emit` method on the client object. 
 
-The `ruby` command lets you execute arbitrary Ruby code from your MUSH client window, similar to how you might have done MUSHcode in the past.  You can't create entire commands or systems this way (unlike MUSHcode) but you can run little utilities and test things.
+The `ruby` command lets you execute arbitrary Ruby code from your MUSH client window and emit the results to yourself, similar to how you might have done MUSHcode in the past.  You can't create entire commands or systems this way (unlike MUSHcode) but you can run little utilities and test things.
 
 ## Try It!
 
 In your MU client, type this:
 
-    ruby client.emit "Hello #{enactor.name}!"
+    ruby "Hello #{enactor.name}!"
 
 The game should respond by saying hello to you.
 

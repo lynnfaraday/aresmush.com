@@ -1,5 +1,5 @@
 ---
-title: Creating a Plugin Tutorial
+title: Creating a Plugin Tutorial Overview
 description:
 layout: tutorial
 createPluginTutorial: true

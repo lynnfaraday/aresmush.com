@@ -1,5 +1,5 @@
 ---
-title: Adding a Command
+title: Adding a Command Overview
 description:
 layout: tutorial
 nextstep: custom-plugin

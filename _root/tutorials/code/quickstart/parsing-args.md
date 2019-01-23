@@ -37,7 +37,11 @@ Try tinkering with different numbers of piggies and see how the message changes 
 
 What if we have multiple parts to our arguments, like `tinker <number of piggies>=<names of piggies>`?
 
-Here we can leverage the `ArgParser` helper class.  It has pre-set parsers for a variety of common MUSH command formats, including `arg1_equals_arg2`.  Let's try it.
+Here we can leverage the `ArgParser` helper class.  `args = cmd.parse_args(parser)` will crack apart the command arguments according to the parser you supply, and store the value in `args`.  You can then do things like `args.arg1` and `args.arg2` to access the different pieces.
+
+ArgParser provides pre-set parsers for a variety of common MUSH command formats, including `arg1_equals_arg2` or `arg1_equals_arg2_slash_arg3`.  For a complete list, you can check out [Arg Parsers](/tutorials/code/arg-parsers) after you've finished the quickstart.
+
+Let's try it.
 
     def handle
       args = cmd.parse_args(ArgParser.arg1_equals_arg2)      

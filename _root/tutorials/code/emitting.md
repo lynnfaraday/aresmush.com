@@ -48,6 +48,8 @@ Many commands emit messages to everyone in a room.  The Room class has a helper 
 
     room.emit "A message"
     room.emit_ooc "A message"
+    room.emit_failure "A message"
+    room.emit_success "A message"
 
 Commonly you'll use the `enactor_room` helper in the command handler to emit to the enactor's room:
 

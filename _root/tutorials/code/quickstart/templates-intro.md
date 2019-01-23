@@ -25,7 +25,6 @@ Tons of MU commands have a similar display structure:
 
     ------------------------------
               Title
-    ------------------------------
     Some text
     ------------------------------
 

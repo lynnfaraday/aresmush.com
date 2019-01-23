@@ -62,7 +62,10 @@ If you have Atlantis set to do character encoding auto-detection, it should auto
 
 ### Editing
 
-You shouldn't need to set up anything to make editing work in Potato.
+You shouldn't need to set up anything to make editing work in Potato.  But if it's not working, you can set up a grabber under Options -> Configure World.
+
+{{#pretty-image}}/assets/media/potato.jpg{{/pretty-image}}
+
 
 <a name="atlantis" />
 
@@ -86,8 +89,7 @@ If you have Atlantis set to do character encoding auto-detection, it should auto
 
 1. Open the Atlantis 'Preferences' menu (Atlantis -> Preferences)
 2. On the 'General' tab, check 'Support FugueEdit input grabbing'.
-3. You do not need to set the edit prefix; the default one should work.
-
+3. You do not need to set the edit prefix; the default one should work.  If it doesn't, you can use edit/prefix to set the prefix to "FugueEdit >".
 
 <a name="mushclient" />
 

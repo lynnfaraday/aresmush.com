@@ -22,8 +22,11 @@ Emits are the way the game communicates with the MUSH clients.  The Client class
 
 You can also emit to everyone in a room if you have a room object.  In commands, we can use the `enactor_room` helper to get the enactor's room.
 
-* `enactor_room.emit`  - Emits to the enactor's room.
-* `enactor_room.emit_ooc` - OOC messages show up in light blue.
+* `enactor_room.emit`
+* `enactor_room.emit_ooc`
+* `enactor_room.emit_success`
+* `enactor_room.emit_failure`
+* `enactor_room.emit_raw`
 
 ## Try It!
 

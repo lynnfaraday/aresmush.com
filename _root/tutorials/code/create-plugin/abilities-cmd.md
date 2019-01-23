@@ -14,7 +14,7 @@ tags:
 
 Now we're going to examine a few of the Cortex plugin commands to see how they work.  These commands are pretty standard across all skill systems.
 
-Back in [Create a Config File](/tutorials/create-plugin/config-file), we added a lot of configuration entries for skills, attributes, etc.  But we need a way for players to view that information.  We'll create a set of commands -- attributes, skills, assets and complications -- to show the different categories.
+Back in [Create a Config File](/tutorials/code/create-plugin/config-file), we added a lot of configuration entries for skills, attributes, etc.  But we need a way for players to view that information.  We'll create a set of commands -- attributes, skills, assets and complications -- to show the different categories.
 
 Let's look at the simplest one first - the list of attributes.  There are only a few, and they have only a name and description, so our display is pretty simple.
 

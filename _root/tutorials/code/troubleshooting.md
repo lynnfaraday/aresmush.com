@@ -37,6 +37,7 @@ Sometimes you'll get a 'connection refused' error in your MU client or a 'This s
 * Make sure your hostname is correct and your DNS is set up.  Ares can't start if the hostname is inaccessible, and you'll see an error in the logs like "no acceptor (port is in use or requires root privileges)".
 * Try starting the game in debug mode using `bin/devstart` instead of startares.  This will run until you hit CTRL-C, and you will see log messages live on your screen.
 * Try changing your hostname (in server.yml) to 'localhost' or the machine's IP address to rule out DNS issues.
+* If you have a firewall running, make sure that all four Ares server ports are allowed through the firewall.  (Not just the port you connect to with a MUSH client, but the back-end ports for web portal communication as well.)
 
 ## Database Issues
 

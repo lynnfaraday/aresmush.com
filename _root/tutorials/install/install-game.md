@@ -48,7 +48,6 @@ These are the basic settings you'll need to enter:
 * **Server Web Portal Port** - See ports, below.
 * **MUSH Name** - Name your game.
 * **MUSH Description** - A short blurb about your game (optional).
-* **Website** - URL for your game (optional).  If not specified, the web portal URL will be the hostnae and web portal port.
 * **Category** - Pick which category best describes your MUSH for the Ares games folder.
 * **GitHub Email** - See GitHub, below.
 * **GitHub Name** - See GitHub, below.

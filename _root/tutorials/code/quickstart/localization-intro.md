@@ -15,11 +15,11 @@ tags:
 
 In our examples so far, we've used raw text in all of our messages, like: `client.emit "Here, piggy piggy piggy."`.  In the real Ares code, however, you'll see things like this:
 
-    client.emit t('describe.description_set')
+    client.emit t('db.object_not_found')
 
 What's up with that `t()` stuff?
 
-Ares is designed for non-English games too.  All of the game code can be translated into other languages simply by swapping in different translation files, called a **Locale**.  The `t()` function (short for 'translate') takes a key like "describe.description_set" and turns it into the appropriate text (like "Description set!" or "Bescreibung gesetzt!" depending on the game's language.
+Ares is designed for non-English games too.  All of the game code can be translated into other languages simply by swapping in different translation files, called a **Locale**.  The `t()` function (short for 'translate') takes a key like "db.object_not_found" and turns it into the appropriate text (like "Not found!" or "Nicht gefunden!" depending on the game's language.
 
 You don't _have_ to worry about localizing the strings if you don't want to.  It's fine to just write the messages in whatever language your game is using.
 
@@ -31,3 +31,13 @@ We mostly mention localization here as a FYI so you understand what's going on w
 * It's just a good software practice to learn.
 
 There's a separate article on [Localization](/tutorials/code/localization) for you in the Advanced Coding section if you ever want to incorporate localized strings into your code.
+
+## Try It! 
+
+Try out a translation:
+
+    ruby t('db.object_not_found')
+
+And one that takes an argument:
+
+    ruby t('describe.desc_set', :name => "Bob")

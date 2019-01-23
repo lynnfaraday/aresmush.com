@@ -18,7 +18,7 @@ This information includes:
 
 * Name - Your game's name.
 * Description - A short blurb about your game (optional).
-* Website - URL for your game (optional).
+* Website - URL for your game (optional; if not specified it will just use your web portal URL).
 * Category - Pick which category best describes your MUSH for the AresCentral games directory: Social, Historical, Sci-Fi, Fantasy, Modern, Supernatural, or Other.
 * Public Game - Check the box if you want your game shown on AresCentral's game directory.
 * Status - Pick a status that best describes your game.

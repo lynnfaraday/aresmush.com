@@ -41,6 +41,8 @@ If you don't want a limit, just set them to 0 and 99 respectively.
 You are able to specify all of the demographics you're going to use.  
 
 > <i class="fa fa-info-circle"></i> **Tip:** Use all-lowercase names!  These are going to be converted into code variables, and lowercase is important.
+
+> <i class="fa fa-info-circle"></i> **Tip:** Don't use demographic names that conflict with other commands (like 'job').
  
 ### required_properties
 
@@ -90,6 +92,8 @@ If you omit the values, the group will be freeform, allowing the player to speci
             Marines: "Semper fi."
 
 > <i class="fa fa-info-circle"></i> **Tip:** The group names must use the capitalization you want in-game.  For example, "Navy" or "CIA".
+
+> <i class="fa fa-info-circle"></i> **Tip:** Don't use group names that conflict with other commands (like 'job').
 
 ## Group Shortcuts
 

@@ -53,16 +53,19 @@ Here are the available colors:
 
 ## Images
 
-There are three main images used by the website.  You can upload new versions on the website admin page.
+There are three main images used by the website.  You can upload new versions on the website.
 
 1. Select Directory -> Files.
 2. Upload new versions for any files in the `theme_images` folder.  This folder is locked to admins.
+3. Be sure to check the 'overwrite' box to overwrite the existing version.
 
 * background.png - Used as a background image across the page title/header area.
-* box-bg.png - Used as a background behind the character and log pages.
+* box-bg.png - Used as a background behind the character profile and log pages.
 * jumbotron.png - Home page image.
 
 > <i class="fa fa-exclamation-triangle"></i> **Note:** Some browsers (notably Chrome) are stubborn about reloading theme images right away.  You may need to clear your image cache or try viewing it in private/incognito mode to see your images right after you've uploaded them.
+
+You can use [Custom CSS](#custom-css-style), explained below, to change which images are used in each section.  For example, if you want to use different backgrounds for the profile and log pages, or a JPG instead of a PNG for the title background.
 
 ### Choosing a Header Background
 
@@ -158,6 +161,14 @@ Here are some examples of how you can set Bootstrap and Power Select styles:
 
 [FontAwesome](http://fontawesome.io/icons/) icons are used throughout the site and available for your use in custom HTML.
 
+### Custom Images
+
+You can use custom CSS to change which images are used in each section.  For example, to use the jumbotron image for the scene log background, override the 'background-image' property of the `log-wrap` class:
+
+    .log-wrap {
+      background-image: url('/game/uploads/theme_images/jumbotron.png');
+    }
+
 ## Wiki Options
 
 See [Configuring the Wiki](/tutorials/config/wiki).
@@ -168,14 +179,6 @@ The Web Portal has a number of configuration options.  To set them:
 
 1. Select Admin -> Setup
 2. Edit `website.yml`.
-
-### allow_web_registration
-
-By default, players can create characters from the Web Portal.  If you wish to lock this down, you can set `allow_web_registration` to `false`.   If you allow web registration, be sure to configure Recapta to prevent bots, as explained below.
-
-### portal_requires_registration
-
-Set this to `true` if you want to require people to log in before they can access the Web Portal at all.  Often coupled with `allow_web_registration` to require people to create a character from the game itself instead of registering on the Web Portal.
 
 ### allow_html_in_markdown
 

@@ -18,10 +18,12 @@ An API (Application Program Interface) is a well-defined way for one piece of co
 Plugin APIs are always found in the file `plugins/<plugin>/public/<plugin>_api.rb`.  If you look in that file, you'll see what API methods that plugin provides. For example, in the `jobs_api.rb` file, you'll find API methods for:
   
     Jobs.create_job(category, title, description, author)
-    Jobs.close_job(enactor, job, message = nil)
+    Jobs.close_job(enactor, job, message)
     etc.
 
 You'll find these APIs used throughout the Ares codebase.  The channel plugin creates a job when someone reports channel abuse.  The idle plugin creates a job when it's time to do the idle purge.  The chargen plugin creates a job when someone submits their app.  And so on.
+
+> <i class="fa fa-info-circle"></i> **Tip:** APIs generally expect that permissions will be checked by the calling command handler.
 
 ## Common APIs
 
