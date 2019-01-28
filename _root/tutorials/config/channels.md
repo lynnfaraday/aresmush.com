@@ -44,3 +44,13 @@ This should be a list.  For example:
 You can also configure which channels characters join when they are approved.  Like `default_channels`, this should be a list.  For example:
 
     - RP Requests
+
+## ooc_lounge_channel
+
+Linking a channel to the OOC lounge/Offstage room ensures that all chit-chat in that room is echoed to the selected channel.  This ensures that chatter can be accessible to all players - including ones on the web portal - and also subject to reporting with the Ares harassment tools. Just set `ooc_lounge_channel` to the channel name.  Leave it blank to allow people to chat in the OOC room as normal.
+
+## recall_timeout_days and clear_history_cron
+
+Messages in channel recall will be automatically deleted after the specified timeout, in days.  This helps keep the recall reasonably current for someone looking at the channel history - particularly on the web portal.
+
+The clearing happens on the timetable specified by the cron config.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/code/cron) for help if you want to change this.

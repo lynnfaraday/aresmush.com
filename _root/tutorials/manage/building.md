@@ -57,6 +57,7 @@ Ares has several special rooms, which are part of the default database.  They ea
 * Welcome Room - Where characters first arrive on the game.  Typically you'll update this room description with a description of the game and some basic instructions.
 * Offstage Room - Where characters go when they use the `offstage` command to take a break from roleplay.  AKA the "OOC Room" or "OOC Lounge".
 * IC Start Room - Where characters go the very first time they use the `onstage` command to go IC.
+* Quiet Room - Where characters can idle without being bothered by spam.
 
 The IC Start Room has a few special considerations.
  
