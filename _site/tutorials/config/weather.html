@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>Configuring the Weather System - </title>
+    <meta property="og:title" content="Configuring the Weather System - ">
+    <meta name="twitter:title" content="Configuring the Weather System - ">
+    <meta itemprop="name" content="Configuring the Weather System - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="Configuring the Weather System" >
+    <meta property="og:url" content="/tutorials/config/weather.html" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+<h1>Configuring the Weather System</h1>
+
+    <div class="tags-box">
+                 <ul class="tags-box">
+                 
+                 <li>[config]</li>
+                 
+                 </ul>
+    </div>
+                               
+             <div class="page">
+                 <p>To configure the Weather plugin:</p>
+
+<ol>
+  <li>Select Admin -&gt; Setup.</li>
+  <li>Edit <code class="language-ruby highlighter-rouge"><span class="n">weather</span><span class="p">.</span><span class="nf">yml</span></code></li>
+</ol>
+
+<h2 id="how-weather-works">How Weather Works</h2>
+
+<p>Ares has a fairly simplistic weather system.  You can define <strong>climates</strong> with different weather patterns available by <strong>season</strong>.  Each weather pattern consists of a <strong>temperature</strong> and a <strong>condition</strong>.</p>
+
+<p>The temperature and condition combine to a weather report like:  “It is a hot spring morning.  The skies are clear.”</p>
+
+<p>Here’s what a sample climate might look like.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">temperate:
+    summer:
+        temperature: </span><span class="n">hot</span> <span class="n">hot</span> <span class="n">hot</span> <span class="n">hot</span> <span class="n">hot</span> <span class="n">warm</span> <span class="n">warm</span> <span class="n">warm</span> <span class="n">cool</span> <span class="n">cool</span>
+        <span class="ss">condition:  </span><span class="n">clear</span> <span class="n">clear</span> <span class="n">clear</span> <span class="n">fair</span> <span class="n">fair</span> <span class="n">fair</span> <span class="n">drizzling</span> <span class="n">drizzling</span> <span class="n">overcast</span> <span class="n">raining</span>
+        <span class="ss">stability: </span><span class="mi">70</span>
+    <span class="ss">spring:
+        temperature: </span><span class="n">cool</span> <span class="n">cool</span> <span class="n">cool</span> <span class="n">cool</span> <span class="n">cool</span> <span class="n">warm</span> <span class="n">warm</span> <span class="n">warm</span> <span class="n">warm</span> <span class="n">warm</span>
+        <span class="ss">condition:  </span><span class="n">clear</span> <span class="n">clear</span> <span class="n">clear</span> <span class="n">fair</span> <span class="n">fair</span> <span class="n">fair</span> <span class="n">drizzling</span> <span class="n">drizzling</span> <span class="n">overcast</span> <span class="n">raining</span>
+        <span class="ss">stability: </span><span class="mi">70</span>
+</code></pre></div></div>
+
+<p>Every time the weather cron job runs, there’s a chance the weather will change.  That chance is determined by the <strong>stability</strong> of the weather.  If the stability is 70, that means there’s a 30% chance of the weather changing.  In other words, the weather will shift roughly once every 8 hours.</p>
+
+<p>When the weather does change, the system will select a random temperature and condition from the seasonal list.  By default, there are 10 entries in the list, meaning each entry has a 10% chance of occurring.  You can make some entries more likely than others by repeating them multiple times.  In the spring example above, there’s a 30% chance of clear skies, 30% chance of fair weather, 20% chance of drizzling, 10% overcast, 10% raining.</p>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> You are not limited to ten entries.  That’s just convenient for understanding that each entry represents a 10% chance.  You could have 20 entries (5% chance each) or even 100 entries (1% chance each) to fine-tune the weather as much as you want.</p>
+</blockquote>
+
+<p>Seasons follow the RL northern hemisphere dates based on the IC time.  In other words, January would be winter and July summer.  If you want to make this more sophisticated (like accounting for different seasons on different planets, or months like November which are half winter and half fall), you’ll have to change the code.</p>
+
+<h2 id="climate_for_area-and-default_climate">climate_for_area and default_climate</h2>
+
+<p>The weather system lets you configure a climate for each room <strong>area</strong>.  You can use ‘none’ to disable the weather system for an area.</p>
+
+<p>If the climate for an area is not specified, the weather system will look at the area’s parent, and it’s parent’s parent, and so on until it finds a climate.  If all else fails, it will use the <code class="language-ruby highlighter-rouge"><span class="n">default_climate</span></code>.</p>
+
+<p>For example, the following config will use the polar climate for the North area and disable weather in the offstage area.  Any other areas will use the temperate climate.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">climate_for_area:
+    </span><span class="no">Offstage</span><span class="p">:</span> <span class="n">none</span>
+    <span class="no">North</span><span class="p">:</span> <span class="n">polar</span>
+    
+<span class="ss">default_climate: </span><span class="n">temperate</span>
+</code></pre></div></div>
+
+<p>To disable weather completely, you can just make the default_climate ‘none’.</p>
+
+<h2 id="temperatures-and-conditions">temperatures and conditions</h2>
+
+<p>The ‘temperatures’ and ‘conditions’ lists control what temperatures and weather conditions are available for your use in weather patterns.</p>
+
+<p>If you add new ones, you may want to add them to the weather descriptions config, described below.</p>
+
+<h2 id="descriptions">descriptions</h2>
+
+<p>The <code class="language-ruby highlighter-rouge"><span class="n">descriptions</span></code> configuration can override the default (lame) weather descriptions.</p>
+
+<p>The condition description is simply the current condition:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">clear: </span><span class="no">The</span> <span class="n">skies</span> <span class="n">are</span> <span class="n">clear</span><span class="p">.</span>
+<span class="nf">misty</span><span class="p">:</span> <span class="no">There</span><span class="err">'</span><span class="n">s</span> <span class="n">a</span> <span class="n">mist</span> <span class="k">in</span> <span class="n">the</span> <span class="n">air</span><span class="o">.</span>
+</code></pre></div></div>
+
+<p>The temperature description is a combination of the actual temperature, the season, and the time of day (morning, day, evening, night):</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">hot_spring_morning: </span><span class="no">It</span> <span class="n">is</span> <span class="n">a</span> <span class="n">hot</span> <span class="n">spring</span> <span class="n">morning</span><span class="p">.</span>
+<span class="nf">warm_summer_day</span><span class="p">:</span> <span class="no">It</span> <span class="n">is</span> <span class="n">a</span> <span class="n">warm</span> <span class="n">summer</span> <span class="n">day</span><span class="o">.</span>
+</code></pre></div></div>
+
+<h2 id="weather_cron">weather_cron</h2>
+
+<p>The game will periodically change the weather.  There is a cron job to control when this happens.  By default it does this every hour.  See the <a href="http://www.aresmush.com/tutorials/code/cron.html">Cron Job Tutorial</a> for help if you want to change this or turn it off.</p>
+
+
+             </div>             
+                           </div>
+              
+                           <div class="col col-sm-3">
+                                                 <div class="sidebar">   
+                 
+<div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+                  
+<div class="sidebar-title">See AresMUSH In Action</div>
+
+<p>Visit the Ares <a href="http://mush.aresmush.com">Demo Game</a>.</p>
+
+<p>Find other Ares games at <a href="http://arescentral.aresmush.com">AresCentral</a>.</p>
+
+
+<div class="sidebar-title">Follow Us on Facebook</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1423276681271936";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-page" data-href="https://www.facebook.com/aresmush/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/aresmush/"><a href="https://www.facebook.com/aresmush/">Ares Mush</a></blockquote></div></div>
+
+<div class="sidebar-title">Discuss Ares</div>
+
+Have a question?  Want to talk about AresMUSH (or MU*s in general)?  Visit our <a href="http://forum.aresmush.com">Discussion Forum</a>.
+                  
+                  
+
+                  <div class="sidebar-title">Stay Up to Date</div>
+                          
+                          Get important updates about Ares on <a href="https://www.facebook.com/aresmush/">Facebook</a> or the <a href="http://forum.aresmush.com">Discussion Forum</a>.
+
+              <div id="searchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Search Results</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       
+
+       <div id="search-hits">
+         <!-- Hits widget will appear here -->
+       </div>
+
+
+       <div id="search-pagination">
+         <!-- Pagination widget will appear here -->
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/scripts/search.js"></script>
+<script>
+  initializeSearch( 'NI38C577BA',
+    '29793fd9084a3446072c14e471e32589',
+    'aresmush.com',
+    ' ' );
+</script>
+
+                  
+
+                  
+                
+                  
+                           </div>
+</div>
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>

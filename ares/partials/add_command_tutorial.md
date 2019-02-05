@@ -1,8 +1,0 @@
-* [Tutorial Overview](/tutorials/code/add-cmd/)
-* [The Custom Plugin](/tutorials/code/add-cmd/custom-plugin)
-* [Create a Help File](/tutorials/code/add-cmd/help-file)
-* [Create a Database Field](/tutorials/code/add-cmd/db-field)
-* [Create a Command Handler](/tutorials/code/add-cmd/cmd-handler)
-* [Create Another Command Handler](/tutorials/code/add-cmd/cmd-handler2)
-* [Removing the Commands](/tutorials/code/add-cmd/removing-cmd)
-* [Next Steps](/tutorials/code/add-cmd/next-steps)

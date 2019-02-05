@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>Troubleshooting YAML - </title>
+    <meta property="og:title" content="Troubleshooting YAML - ">
+    <meta name="twitter:title" content="Troubleshooting YAML - ">
+    <meta itemprop="name" content="Troubleshooting YAML - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="Troubleshooting YAML" >
+    <meta property="og:url" content="/tutorials/code/troubleshooting-yaml.html" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+<h1>Troubleshooting YAML</h1>
+
+    <div class="tags-box">
+                 <ul class="tags-box">
+                 
+                 <li>[config]</li>
+                 
+                 <li>[yaml]</li>
+                 
+                 </ul>
+    </div>
+                               
+             <div class="page">
+                 <p>YAML is the data format used for Ares’ configuration files.  For general information about how to use YAML, see <a href="/tutorials/code/yaml.html">Understanding YAML</a>.  This article will help you troubleshoot issues with your YAML files.</p>
+
+<div id="inline_toc">
+  <p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#yaml-errors" id="markdown-toc-yaml-errors">YAML Errors</a></li>
+  <li><a href="#validator" id="markdown-toc-validator">Validator</a></li>
+  <li><a href="#common-errors" id="markdown-toc-common-errors">Common Errors</a>    <ul>
+      <li><a href="#quote-errors" id="markdown-toc-quote-errors">Quote Errors</a></li>
+      <li><a href="#indentation-errors" id="markdown-toc-indentation-errors">Indentation Errors</a></li>
+      <li><a href="#number-type-errors" id="markdown-toc-number-type-errors">Number Type Errors</a></li>
+      <li><a href="#merge-errors" id="markdown-toc-merge-errors">Merge Errors</a>        <ul>
+          <li><a href="#duplicate-config-options" id="markdown-toc-duplicate-config-options">Duplicate Config Options</a></li>
+          <li><a href="#rogue-config-file" id="markdown-toc-rogue-config-file">Rogue Config File</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#weird-errors" id="markdown-toc-weird-errors">Weird Errors</a></li>
+</ul>
+
+</div>
+
+<h2 id="yaml-errors">YAML Errors</h2>
+
+<p>Sometimes your YAML configuration goes awry, and you’ll get errors like this:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Error</span> <span class="n">reading</span> <span class="no">YAML</span> <span class="n">from</span> <span class="sr">/Users/</span><span class="n">ares</span><span class="o">/</span><span class="no">Code</span><span class="o">/</span><span class="n">aresmush</span><span class="o">/</span><span class="n">game</span><span class="o">/</span><span class="n">plugins</span><span class="o">/</span><span class="n">fs3combat</span><span class="o">/</span><span class="n">fs3combat</span><span class="p">.</span><span class="nf">yml</span><span class="o">.</span>  <span class="no">See</span> <span class="n">http</span><span class="ss">:/</span><span class="o">/</span><span class="n">aresmush</span><span class="p">.</span><span class="nf">com</span><span class="o">/</span><span class="n">tutorials</span><span class="o">/</span><span class="n">code</span><span class="o">/</span><span class="n">yaml</span><span class="o">/</span> <span class="k">for</span> <span class="n">troubleshooting</span> <span class="ss">help: </span><span class="p">(</span><span class="o">&lt;</span><span class="n">unknown</span><span class="o">&gt;</span><span class="p">):</span> <span class="n">mapping</span> <span class="n">values</span> <span class="n">are</span> <span class="n">not</span> <span class="n">allowed</span> <span class="k">in</span> <span class="n">this</span> <span class="n">context</span> <span class="n">at</span> <span class="n">line</span> <span class="mi">3</span> <span class="n">column</span> <span class="mi">17</span>
+</code></pre></div></div>
+
+<p>The information in the error message can help you find the problem.  In the example above, it says that the problem is line 3, column 17.</p>
+
+<h2 id="validator">Validator</h2>
+
+<p>If your game is running, you can use the <code class="language-ruby highlighter-rouge"><span class="n">config</span><span class="o">/</span><span class="n">check</span></code> command to identify YAML problems.  This guide will help you troubleshoot common errors.</p>
+
+<p>If the game won’t start, or if you can’t figure out the problem, there are several online YAML validator tools that can help.  You copy/paste your YAML (from the Advanced Editor mode or the raw YML file) into the tool and it tells you if there are any problems.  Here’s a good one to use: <a href="http://www.yamllint.com/">YAML Lint</a>.</p>
+
+<p>If you’re not sure what file is having the issue, you can use a command-line validator to check all your files at once.  Here are some commands you can run on your server shell to install the tool and run it on every file in your config folder:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">npm</span> <span class="n">install</span> <span class="o">-</span><span class="n">g</span> <span class="n">yaml</span><span class="o">-</span><span class="n">lint</span>
+<span class="n">cd</span> <span class="n">aresmush</span><span class="o">/</span><span class="n">game</span><span class="o">/</span><span class="n">config</span>
+<span class="n">find</span> <span class="p">.</span> <span class="nf">-</span><span class="n">iname</span> <span class="s1">'*'</span> <span class="o">-</span><span class="nb">exec</span> <span class="n">yamllint</span> <span class="p">{}</span> <span class="p">\;</span>
+</code></pre></div></div>
+
+<h2 id="common-errors">Common Errors</h2>
+
+<p>Here are a few common YAML errors you might encounter.</p>
+
+<h3 id="quote-errors">Quote Errors</h3>
+
+<p>One common error is forgetting to put quotes around strings with special characters.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Error</span> <span class="n">reading</span> <span class="no">YAML</span> <span class="n">from</span> <span class="n">cookies</span><span class="p">.</span><span class="nf">yml</span> <span class="o">...</span> <span class="n">mapping</span> <span class="n">values</span> <span class="n">are</span> <span class="n">not</span> <span class="n">allowed</span> <span class="k">in</span> <span class="n">this</span> <span class="n">context</span> <span class="n">at</span> <span class="n">line</span> <span class="mi">3</span> <span class="n">column</span> <span class="mi">17</span>
+</code></pre></div></div>
+
+<p>Looking at the line of text mentioned in the error message, you might see something like this:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">cookie_forum: </span><span class="no">Foo</span><span class="ss">:Bar</span>
+</code></pre></div></div>
+
+<p>Oops!  If there are special characters inside a string, you need to put quotes around it.  Change it to:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">cookie_forum: </span><span class="s2">"Foo:Bar"</span>
+</code></pre></div></div>
+
+<h3 id="indentation-errors">Indentation Errors</h3>
+
+<p>Another common error happens when you don’t have the indentation levels lined up right.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Error</span> <span class="n">reading</span> <span class="no">YAML</span> <span class="n">from</span> <span class="n">fs3combat</span><span class="p">.</span><span class="nf">yml</span> <span class="o">...</span> <span class="n">did</span> <span class="n">not</span> <span class="n">find</span> <span class="n">expected</span> <span class="n">key</span> <span class="k">while</span> <span class="n">parsing</span> <span class="n">a</span> <span class="n">block</span> <span class="n">mapping</span> <span class="n">at</span> <span class="n">line</span> <span class="mi">5</span> <span class="n">column</span> <span class="mi">9</span>
+</code></pre></div></div>
+
+<p>Looking at line in the file, you might see:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">stances:
+    </span><span class="no">Reckless</span><span class="p">:</span>
+           <span class="ss">attack_mod: </span><span class="mi">4</span>
+        <span class="ss">defense_mod: </span><span class="o">-</span><span class="mi">4</span>
+</code></pre></div></div>
+
+<p>Ooops!  The attack and defense mod lines aren’t lined up right.  Change it to:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">stances:
+    </span><span class="no">Reckless</span><span class="p">:</span>
+        <span class="ss">attack_mod: </span><span class="mi">4</span>
+        <span class="ss">defense_mod: </span><span class="o">-</span><span class="mi">4</span>
+</code></pre></div></div>
+
+<h3 id="number-type-errors">Number Type Errors</h3>
+
+<p>Sometimes the code expects a number, like the maximum number of ability points or the number of cookies per week.  If you accidentally put a string instead of a number in the config file, you’ll get a type mismatch error:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Error</span><span class="p">:</span> <span class="s2">"comparison of Integer with String failed"</span>
+<span class="no">Error</span><span class="p">:</span> <span class="s2">"comparison of Fixnum with String failed"</span>
+</code></pre></div></div>
+
+<p>The solution is to change the affected parameter to a number.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Correct</span> <span class="p">(</span><span class="n">a</span> <span class="n">number</span><span class="p">):</span>
+<span class="ss">max_ap: </span><span class="mi">40</span>
+
+<span class="no">Incorrect</span> <span class="p">(</span><span class="n">a</span> <span class="n">string</span><span class="p">):</span>
+<span class="ss">max_ap: </span><span class="s1">'40'</span>
+</code></pre></div></div>
+
+<h3 id="merge-errors">Merge Errors</h3>
+
+<p>The final ‘common’ error happens when you accidentally have duplicate copies of the same configuration setting.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Error</span> <span class="n">reading</span> <span class="no">YAML</span> <span class="n">from</span> <span class="n">chargen</span><span class="p">.</span><span class="nf">yml</span><span class="c1"># ... undefined method `merge_recursively' for "Foo":String</span>
+</code></pre></div></div>
+
+<p>This can happen in two ways:</p>
+
+<h4 id="duplicate-config-options">Duplicate Config Options</h4>
+
+<p>Often this error happens if you have the same config option defined in multiple <em>files</em> for the same <em>section</em>.  (Usually when it’s a big system with multiple config files like FS3 or one of the other skills systems).  For example:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">In</span> <span class="n">fs3_armor</span><span class="p">.</span><span class="nf">yml</span> <span class="n">you</span> <span class="ss">have: 
+   fs3combat:
+      </span><span class="no">Foo</span><span class="p">:</span> <span class="s2">"A"</span>
+
+<span class="no">In</span> <span class="n">fs3_weapons</span><span class="p">.</span><span class="nf">yml</span> <span class="n">you</span> <span class="ss">have:
+   fs3combat:
+      </span><span class="no">Foo</span><span class="p">:</span> <span class="s2">"B"</span>
+</code></pre></div></div>
+
+<p>Since “Foo” is defined twice in the fs3combat section in different files, the game tries to merge it together and can’t - hence the error.   Just remove one of the duplicate entries.</p>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> It’s okay to have the same option defined in <em>different sections</em>, as sections are completely independent.  It also won’t be an error if the option is defined twice in the same section if it’s in the the <em>same file</em>.  The last entry “wins”.</p>
+</blockquote>
+
+<h4 id="rogue-config-file">Rogue Config File</h4>
+
+<p>The other way a merge error can happen is if you accidentally end up with two copies of the same config file.  This commonly happens with editor autosave files when editing on the command line.  You’ll end up with <code class="language-ruby highlighter-rouge"><span class="n">chargen</span><span class="p">.</span><span class="nf">yml</span></code> and an autospace file like <code class="language-ruby highlighter-rouge"><span class="c1">#chargen.yml</span></code> both in the config directory.</p>
+
+<p>Just remove the erroneous config file.</p>
+
+<h2 id="weird-errors">Weird Errors</h2>
+
+<p>Sometimes the error is not quite so straightforward and you’ll end up with an error that isn’t one of the above:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Error</span> <span class="n">reading</span> <span class="no">YAML</span> <span class="n">from</span> <span class="n">fs3combat</span><span class="p">.</span><span class="nf">yml</span> <span class="o">...</span> <span class="n">undefined</span> <span class="nb">method</span> <span class="sb">`merge_yaml' for 3:Fixnum
+</span></code></pre></div></div>
+
+<p>This usually happens when you restart the game.  Since it’s loading all the config files at once, it’s not quite so easy to pinpoint which file actually is at fault.</p>
+
+<p>Start, of course, with the file that’s reporting the error (fs3combat.yml in the example above).  Run it through the YAML validator mentioned above.</p>
+
+<p>If that file is OK, though, sometimes the error is in a file loaded previously.  The game’s log file can help you here.  See <a href="/tutorials/code/logs.html">Using Log Files</a> for help.  If the log shows:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">2017</span><span class="o">-</span><span class="mo">07</span><span class="o">-</span><span class="mo">04</span> <span class="mi">08</span><span class="p">:</span><span class="mi">33</span><span class="p">:</span><span class="mi">53</span> <span class="no">DEBUG</span> <span class="o">-</span> <span class="no">Loading</span> <span class="n">config</span> <span class="n">from</span> <span class="o">...</span><span class="sr">/events.yml. 
+2017-07-04 08:33:53 DEBUG - Loading config from .../</span><span class="n">friends</span><span class="p">.</span><span class="nf">yml</span><span class="o">.</span> 
+<span class="mi">2017</span><span class="o">-</span><span class="mo">07</span><span class="o">-</span><span class="mo">04</span> <span class="mi">08</span><span class="p">:</span><span class="mi">33</span><span class="p">:</span><span class="mi">53</span> <span class="no">DEBUG</span> <span class="o">-</span> <span class="no">Loading</span> <span class="n">config</span> <span class="n">from</span> <span class="o">...</span><span class="sr">/fs3combat.yml.
+Error reading YAML from fs3combat.yml
+</span></code></pre></div></div>
+
+<p>You can be pretty sure that the error is either in fs3combat.yml or in friends.yml, since everything was okay before that.</p>
+
+<p>If that still doesn’t help, you’ll just have to go on a scavenger hunt for bad YAML.  Start with files you’ve changed recently or ones that were touched by a recent code merge (if you’re using <a href="/tutorials/code/git.html">git</a> for code management).  A YAML validator may help, as explained in the introduction.</p>
+
+<p>If all else fails, you can always <a href="/feedback.html">ask for help</a>.</p>
+
+             </div>             
+                           </div>
+              
+                           <div class="col col-sm-3">
+                                                 <div class="sidebar">   
+                 
+<div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+                  
+<div class="sidebar-title">See AresMUSH In Action</div>
+
+<p>Visit the Ares <a href="http://mush.aresmush.com">Demo Game</a>.</p>
+
+<p>Find other Ares games at <a href="http://arescentral.aresmush.com">AresCentral</a>.</p>
+
+
+<div class="sidebar-title">Follow Us on Facebook</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1423276681271936";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-page" data-href="https://www.facebook.com/aresmush/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/aresmush/"><a href="https://www.facebook.com/aresmush/">Ares Mush</a></blockquote></div></div>
+
+<div class="sidebar-title">Discuss Ares</div>
+
+Have a question?  Want to talk about AresMUSH (or MU*s in general)?  Visit our <a href="http://forum.aresmush.com">Discussion Forum</a>.
+                  
+                  
+
+                  <div class="sidebar-title">Stay Up to Date</div>
+                          
+                          Get important updates about Ares on <a href="https://www.facebook.com/aresmush/">Facebook</a> or the <a href="http://forum.aresmush.com">Discussion Forum</a>.
+
+              <div id="searchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Search Results</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       
+
+       <div id="search-hits">
+         <!-- Hits widget will appear here -->
+       </div>
+
+
+       <div id="search-pagination">
+         <!-- Pagination widget will appear here -->
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/scripts/search.js"></script>
+<script>
+  initializeSearch( 'NI38C577BA',
+    '29793fd9084a3446072c14e471e32589',
+    'aresmush.com',
+    ' ' );
+</script>
+
+                  
+
+                  
+                
+                  
+                           </div>
+</div>
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>

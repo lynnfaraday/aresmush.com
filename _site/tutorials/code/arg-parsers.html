@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>Arg Parsers - </title>
+    <meta property="og:title" content="Arg Parsers - ">
+    <meta name="twitter:title" content="Arg Parsers - ">
+    <meta itemprop="name" content="Arg Parsers - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="Arg Parsers" >
+    <meta property="og:url" content="/tutorials/code/arg-parsers.html" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+<h1>Arg Parsers</h1>
+
+    <div class="tags-box">
+                 <ul class="tags-box">
+                 
+                 <li>[code]</li>
+                 
+                 <li>[plugins]</li>
+                 
+                 <li>[commands]</li>
+                 
+                 </ul>
+    </div>
+                               
+             <div class="page">
+                 <p>An important part of <a href="/tutorials/code/commands.html">command handling</a> is parsing arguments.  Arguments coming out of the <code class="language-ruby highlighter-rouge"><span class="no">Command</span></code> class are raw strings.  Ares provides a variety of argument parsing utilities to handle command args that are intended to be interpreted as numbers, lists, or even complex sequences like “name=subject/message”.</p>
+
+<div id="inline_toc">
+  <p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#arg-converters" id="markdown-toc-arg-converters">Arg Converters</a></li>
+  <li><a href="#arg-parsers" id="markdown-toc-arg-parsers">Arg Parsers</a></li>
+  <li><a href="#arg1_equals_arg2" id="markdown-toc-arg1_equals_arg2">arg1_equals_arg2</a></li>
+  <li><a href="#arg1_equals_optional_arg2" id="markdown-toc-arg1_equals_optional_arg2">arg1_equals_optional_arg2</a></li>
+  <li><a href="#arg1_slash_arg2" id="markdown-toc-arg1_slash_arg2">arg1_slash_arg2</a></li>
+  <li><a href="#arg1_slash_optional_arg2" id="markdown-toc-arg1_slash_optional_arg2">arg1_slash_optional_arg2</a></li>
+  <li><a href="#arg1_equals_arg2_slash_arg3" id="markdown-toc-arg1_equals_arg2_slash_arg3">arg1_equals_arg2_slash_arg3</a></li>
+  <li><a href="#arg1_equals_arg2_slash_optional_arg3" id="markdown-toc-arg1_equals_arg2_slash_optional_arg3">arg1_equals_arg2_slash_optional_arg3</a></li>
+  <li><a href="#arg1_slash_arg2_equals_arg3" id="markdown-toc-arg1_slash_arg2_equals_arg3">arg1_slash_arg2_equals_arg3</a></li>
+</ul>
+
+</div>
+
+<h2 id="arg-converters">Arg Converters</h2>
+
+<p>Arg converters alter the format of the argument string - changing it to a number, a list, a titlecased string, etc.  They are part of the <code class="language-ruby highlighter-rouge"><span class="no">Command</span> <span class="no">Handler</span></code> class, so they can be used by any command handler.</p>
+
+<ul>
+  <li><code class="language-ruby highlighter-rouge"><span class="n">trim_arg</span></code> - Strips leading and trailing spaces from an arg.</li>
+  <li><code class="language-ruby highlighter-rouge"><span class="n">titlecase_arg</span></code> - Capitalizes words (like a title).  Also strips spaces like trim_arg.</li>
+  <li><code class="language-ruby highlighter-rouge"><span class="n">upcase_arg</span></code> - Makes every letter uppercase.  Also strips spaces like trim_arg.</li>
+  <li><code class="language-ruby highlighter-rouge"><span class="n">upcase_arg</span></code> - Makes every letter lowercase.  Also strips spaces like trim_arg.</li>
+  <li><code class="language-ruby highlighter-rouge"><span class="n">integer_arg</span></code> - Interprets the arg as a number.  Returns 0 if you give it a non-numeric string.</li>
+  <li><code class="language-ruby highlighter-rouge"><span class="n">list_arg</span></code> - Splits an argument into an array.  Splits on spaces by default, but you can pass any delimeter.</li>
+  <li><code class="language-ruby highlighter-rouge"><span class="n">trimmed_list_arg</span></code> - Splits an argument into an array and strips spaces on each entry like trim_arg.  Splits on spaces by default, but you can pass any delimeter.</li>
+  <li><code class="language-ruby highlighter-rouge"><span class="n">titlecase_list_arg</span></code> - Splits an argument into an array and strips spaces and formats each entry like a title.  Splits on spaces by default, but you can pass any delimeter.</li>
+</ul>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> All of the arg converters are safe to use even if the arg is <code class="language-ruby highlighter-rouge"><span class="kp">nil</span></code>.  They will just return <code class="language-ruby highlighter-rouge"><span class="kp">nil</span></code>.</p>
+</blockquote>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">parse_args</span>
+  <span class="nb">self</span><span class="p">.</span><span class="nf">value</span> <span class="o">=</span> <span class="n">downcase_arg</span><span class="p">(</span><span class="n">cmd</span><span class="p">.</span><span class="nf">args</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<h2 id="arg-parsers">Arg Parsers</h2>
+
+<p>The <code class="language-ruby highlighter-rouge"><span class="no">ArgParser</span></code> class helps to split up commands that are in more complex formats, like “mail players=subject/message”.  It is used in conjunction with the <code class="language-ruby highlighter-rouge"><span class="n">cmd</span><span class="p">.</span><span class="nf">parse_args</span></code> method.  For example:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">parse_args</span>
+  <span class="n">args</span> <span class="o">=</span> <span class="n">cmd</span><span class="p">.</span><span class="nf">parse_args</span><span class="p">(</span><span class="no">ArgParser</span><span class="p">.</span><span class="nf">arg1_equals_arg2</span><span class="p">)</span>
+  <span class="nb">self</span><span class="p">.</span><span class="nf">property</span> <span class="o">=</span> <span class="n">downcase_arg</span><span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="nf">arg1</span><span class="p">)</span>
+  <span class="nb">self</span><span class="p">.</span><span class="nf">value</span> <span class="o">=</span> <span class="n">titlecase_arg</span><span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="nf">arg2</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>The first line cracks apart the arguments and stores them in ‘args’.  Then we can access the pieces with things like <code class="language-ruby highlighter-rouge"><span class="n">args</span><span class="p">.</span><span class="nf">arg1</span></code> and <code class="language-ruby highlighter-rouge"><span class="n">args</span><span class="p">.</span><span class="nf">arg1</span></code>.</p>
+
+<p>There are a variety of common parsers available, described in more detail below.</p>
+
+<p>Under the hood, a parsers like <code class="language-ruby highlighter-rouge"><span class="no">ArgParser</span><span class="p">.</span><span class="nf">arg1_equals_arg2</span></code> is just a fancy regular expression that matches the pieces of the commands and assigns names to them (arg1 and arg2 in this case).  <code class="language-ruby highlighter-rouge"><span class="n">cmd</span><span class="p">.</span><span class="nf">parse_args</span></code> is a method that uses one of those fancy regexes and stores the results in an easily-accessed hash (args).</p>
+
+<blockquote>
+  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong> By default, <strong>all</strong> args will end up as <code class="language-ruby highlighter-rouge"><span class="kp">nil</span></code> if the command string doesn’t match the intended format.  In the example above, both property and value would be nil if you just passed “set x” instead of “set x=y”.   However, some of the arg parsers expressly allow optional args.</p>
+</blockquote>
+
+<h2 id="arg1_equals_arg2">arg1_equals_arg2</h2>
+
+<p>This is probably the most commonly-used parser, intended for commands where you’ve got a target and a value.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">describe</span> <span class="n">object</span><span class="o">=</span><span class="n">description</span>
+<span class="n">channel</span><span class="o">/</span><span class="k">alias</span> <span class="n">channel</span><span class="o">=</span><span class="k">alias</span>
+</code></pre></div></div>
+
+<h2 id="arg1_equals_optional_arg2">arg1_equals_optional_arg2</h2>
+
+<p>Similar to <code class="language-ruby highlighter-rouge"><span class="n">arg1_equals_arg2</span></code>, this version allows the second arg to be optional.  It is commonly used on commands that can work on yourself or on an optional target.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">group</span><span class="o">/</span><span class="n">set</span> <span class="n">myfaction</span> <span class="n">or</span> <span class="n">group</span><span class="o">/</span><span class="n">set</span> <span class="n">player</span><span class="o">=</span><span class="n">faction</span>
+<span class="n">channel</span><span class="o">/</span><span class="n">join</span> <span class="n">channel</span>  <span class="n">or</span>  <span class="n">channel</span><span class="o">/</span><span class="n">join</span> <span class="n">channel</span><span class="o">=</span><span class="k">alias</span>
+</code></pre></div></div>
+
+<h2 id="arg1_slash_arg2">arg1_slash_arg2</h2>
+
+<p>Less common than its ‘equals’ counterpart, this version is usually used when there’s a target and a more detailed identifier.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">bbs</span><span class="o">/</span><span class="n">read</span> <span class="n">board</span><span class="o">/</span><span class="n">number</span>
+<span class="n">look</span> <span class="n">object</span><span class="o">/</span><span class="n">detail</span>
+</code></pre></div></div>
+
+<h2 id="arg1_slash_optional_arg2">arg1_slash_optional_arg2</h2>
+
+<p>Similar to <code class="language-ruby highlighter-rouge"><span class="n">arg1_slash_arg2</span></code>, this version allows the more detailed identifier to be optional.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mail</span><span class="o">/</span><span class="n">review</span> <span class="n">char</span> <span class="n">vs</span> <span class="n">mail</span><span class="o">/</span><span class="n">review</span> <span class="n">char</span><span class="o">/</span><span class="c1">#</span>
+<span class="n">combat</span><span class="o">/</span><span class="n">join</span> <span class="n">combat_number</span> <span class="n">or</span>  <span class="n">combat</span><span class="o">/</span><span class="n">join</span> <span class="n">combat_number</span><span class="o">/</span><span class="n">combatant_type</span>
+</code></pre></div></div>
+
+<h2 id="arg1_equals_arg2_slash_arg3">arg1_equals_arg2_slash_arg3</h2>
+
+<p>This parser appears when there’s a target followed by multiple pieces of information.  It is commonly used in admin commands where the syntax is “command player=thing/value”.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">demographic</span> <span class="n">char</span><span class="o">=</span><span class="n">hair</span><span class="o">/</span><span class="n">haircolor</span>
+<span class="n">mail</span> <span class="n">to</span> <span class="n">list</span><span class="o">=</span><span class="n">subject</span><span class="o">/</span><span class="n">message</span>
+</code></pre></div></div>
+
+<h2 id="arg1_equals_arg2_slash_optional_arg3">arg1_equals_arg2_slash_optional_arg3</h2>
+
+<p>This version is similar to arg1_equals_arg2_slash_arg3 but allows the second piece of information to be optional.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mail</span><span class="o">/</span><span class="n">fwd</span> <span class="n">mail_number</span><span class="o">=</span><span class="n">char</span> <span class="n">or</span> <span class="n">mail</span><span class="o">/</span><span class="n">fwd</span> <span class="n">mail_number</span><span class="o">=</span><span class="n">char</span><span class="o">/</span><span class="n">comment</span>
+<span class="n">combat</span><span class="o">/</span><span class="n">join</span> <span class="n">npc</span><span class="o">=</span><span class="n">combat_number</span> <span class="n">or</span> <span class="n">combat</span><span class="o">/</span><span class="n">join</span> <span class="n">npc</span><span class="o">=</span><span class="n">combat_number</span><span class="o">/</span><span class="n">combatant_type</span>
+</code></pre></div></div>
+
+<h2 id="arg1_slash_arg2_equals_arg3">arg1_slash_arg2_equals_arg3</h2>
+
+<p>This very uncommon parser is used to act on items that have multiple identifiers.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">bbs</span><span class="o">/</span><span class="n">deletereply</span> <span class="n">board</span><span class="o">/</span><span class="n">post_num</span><span class="o">/</span><span class="n">reply_num</span>
+</code></pre></div></div>
+
+             </div>             
+                           </div>
+              
+                           <div class="col col-sm-3">
+                                                 <div class="sidebar">   
+                 
+<div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+                  
+<div class="sidebar-title">See AresMUSH In Action</div>
+
+<p>Visit the Ares <a href="http://mush.aresmush.com">Demo Game</a>.</p>
+
+<p>Find other Ares games at <a href="http://arescentral.aresmush.com">AresCentral</a>.</p>
+
+
+<div class="sidebar-title">Follow Us on Facebook</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1423276681271936";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-page" data-href="https://www.facebook.com/aresmush/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/aresmush/"><a href="https://www.facebook.com/aresmush/">Ares Mush</a></blockquote></div></div>
+
+<div class="sidebar-title">Discuss Ares</div>
+
+Have a question?  Want to talk about AresMUSH (or MU*s in general)?  Visit our <a href="http://forum.aresmush.com">Discussion Forum</a>.
+                  
+                  
+
+                  <div class="sidebar-title">Stay Up to Date</div>
+                          
+                          Get important updates about Ares on <a href="https://www.facebook.com/aresmush/">Facebook</a> or the <a href="http://forum.aresmush.com">Discussion Forum</a>.
+
+              <div id="searchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Search Results</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       
+
+       <div id="search-hits">
+         <!-- Hits widget will appear here -->
+       </div>
+
+
+       <div id="search-pagination">
+         <!-- Pagination widget will appear here -->
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/scripts/search.js"></script>
+<script>
+  initializeSearch( 'NI38C577BA',
+    '29793fd9084a3446072c14e471e32589',
+    'aresmush.com',
+    ' ' );
+</script>
+
+                  
+
+                  
+                
+                  
+                           </div>
+</div>
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>

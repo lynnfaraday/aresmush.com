@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>Server Roundup - </title>
+    <meta property="og:title" content="Server Roundup - ">
+    <meta name="twitter:title" content="Server Roundup - ">
+    <meta itemprop="name" content="Server Roundup - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="Server Roundup" >
+    <meta property="og:url" content="/features/server-roundup.html" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+<h1>Server Roundup</h1>
+
+    <div class="tags-box">
+                 <ul class="tags-box">
+                 
+                 <li>[features]</li>
+                 
+                 </ul>
+    </div>
+                               
+             <div class="page">
+                 <p>Choosing the right server for your MUSH is important, and Ares may not be the best choice for every game.  This article compares some key MUSH features across different servers to help you find the one that best fits your needs.</p>
+
+<p>Obviously this is biased a bit from my perspective, but I have done my best to be fair and accurate in representing the other servers.  If you see any discrepancies, please <a href="/feedback.html">let me know</a>.</p>
+
+<div id="inline_toc">
+  <p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#server-comparison" id="markdown-toc-server-comparison">Server Comparison</a></li>
+  <li><a href="#basic-systems" id="markdown-toc-basic-systems">Basic Systems</a></li>
+  <li><a href="#web-integration" id="markdown-toc-web-integration">Web Integration</a></li>
+  <li><a href="#language" id="markdown-toc-language">Language</a></li>
+  <li><a href="#coding-from-a-mu-client" id="markdown-toc-coding-from-a-mu-client">Coding from a MU Client</a></li>
+  <li><a href="#skill-systems" id="markdown-toc-skill-systems">Skill Systems</a></li>
+</ul>
+
+</div>
+
+<h2 id="server-comparison">Server Comparison</h2>
+
+<p>This article compares the following servers:</p>
+
+<ul>
+  <li><a href="http://www.aresmush.com">AresMUSH</a></li>
+  <li><a href="http://www.evennia.com">Evennia</a></li>
+  <li><a href="http://www.pennmush.org">PennMUSH</a></li>
+  <li><a href="http://www.tinymux.org/">TinyMUX</a></li>
+  <li><a href="https://github.com/RhostMUSH/trunk">RhostMUSH</a></li>
+</ul>
+
+<h2 id="basic-systems">Basic Systems</h2>
+
+<p>This chart shows what basic game commands/systems each server offers.</p>
+
+<blockquote>
+  <p><i class="fa fa-check-square"></i> - The server comes with that functionality out of the box.</p>
+
+  <p><i class="fa fa-user"></i> - A community contribution is available.  Community contributions usually require coding knowledge to install/configure, and may have limited support.   This list only includes well-known code packages like SGP, Myrddin’s BBS, Anomaly Jobs, Faraday/Volund code suites, and approved Evennia/Ares contribs.</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>AresMUSH</th>
+      <th>Evennia</th>
+      <th>PennMUSH</th>
+      <th>TinyMUX</th>
+      <th>RhostMUSH</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Creating / Connecting</td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td><i class="fa fa-check-square"></i></td>
+    </tr>
+    <tr>
+      <td>Building / Moving</td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td><i class="fa fa-check-square"></i></td>
+    </tr>
+    <tr>
+      <td>Posing</td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td><i class="fa fa-check-square"></i></td>
+    </tr>
+    <tr>
+      <td>Channels / Pages</td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td><i class="fa fa-check-square"></i></td>
+    </tr>
+    <tr>
+      <td>Mail</td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td><i class="fa fa-user"></i></td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td><i class="fa fa-check-square"></i></td>
+    </tr>
+    <tr>
+      <td>BBS / Forums</td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td><i class="fa fa-user"></i></td>
+      <td><i class="fa fa-user"></i></td>
+      <td><i class="fa fa-user"></i></td>
+      <td><i class="fa fa-check-square"></i></td>
+    </tr>
+    <tr>
+      <td>Advanced Who / Where</td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td> </td>
+      <td><i class="fa fa-user"></i></td>
+      <td><i class="fa fa-user"></i></td>
+      <td><i class="fa fa-user"></i></td>
+    </tr>
+    <tr>
+      <td>Events Calendar</td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td> </td>
+      <td><i class="fa fa-user"></i></td>
+      <td><i class="fa fa-user"></i></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Admin Jobs</td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td> </td>
+      <td><i class="fa fa-user"></i></td>
+      <td><i class="fa fa-user"></i></td>
+      <td><i class="fa fa-user"></i></td>
+    </tr>
+    <tr>
+      <td>Finger / Profile</td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td> </td>
+      <td><i class="fa fa-user"></i></td>
+      <td><i class="fa fa-user"></i></td>
+      <td><i class="fa fa-user"></i></td>
+    </tr>
+    <tr>
+      <td>IC Time</td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td><i class="fa fa-user"></i></td>
+      <td><i class="fa fa-user"></i></td>
+      <td><i class="fa fa-user"></i></td>
+    </tr>
+    <tr>
+      <td>Places</td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td> </td>
+      <td><i class="fa fa-user"></i></td>
+      <td><i class="fa fa-user"></i></td>
+      <td><i class="fa fa-user"></i></td>
+    </tr>
+    <tr>
+      <td>Weather</td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td> </td>
+      <td><i class="fa fa-user"></i></td>
+      <td><i class="fa fa-user"></i></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Scenes and Repose</td>
+      <td><i class="fa fa-check-square"></i></td>
+      <td> </td>
+      <td><i class="fa fa-user"></i></td>
+      <td><i class="fa fa-user"></i></td>
+      <td><i class="fa fa-user"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>It’s worth considering that a built-in system is only useful if you like how it works.  If you plan on ripping it all out and writing it from scratch anyway, then it may be easier to start with a blank slate.</p>
+
+<h2 id="web-integration">Web Integration</h2>
+
+<p>The newer servers have integrated game websites that pull data directly from the game.  Some also support a web-based MU client so you can play from the web.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>AresMUSH</th>
+      <th>Evennia</th>
+      <th>PennMUSH</th>
+      <th>TinyMUX</th>
+      <th>RhostMUSH</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Integrated Website</td>
+      <td>Full Web Portal</td>
+      <td>Minimal Website (Extensible)</td>
+      <td>—</td>
+      <td>—</td>
+      <td>API Only</td>
+    </tr>
+    <tr>
+      <td>Web Client</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>API Only</td>
+      <td>—</td>
+      <td>API Only</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Ares contains a full-fledged <a href="https://aresmush.com/web-portal/">web portal</a> with an integrated wiki, web chargen, scenes and character profiles, and an admin console.</p>
+
+<p>Evennia comes with an integrated website.  Out of the box it has an admin panel for editing the database and a few player utilities.  You can use the Django web framework to code up a more robust site like <a href="http://play.arxmush.org/">Arx’s</a>.</p>
+
+<p>Rhost supports a web API, which you could use to build an integrated website.</p>
+
+<p>PennMUSH and Rhost have server-side support for <a href="https://github.com/grapenut/websockclient">Grapenut’s WebClient</a> or a custom-made websocket client, but you have to set up the website yourself.</p>
+
+<h2 id="language">Language</h2>
+
+<p>The programming language used by the game is relevant if you want to modify or extend the existing code.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>AresMUSH</th>
+      <th>Evennia</th>
+      <th>PennMUSH</th>
+      <th>TinyMUX</th>
+      <th>RhostMUSH</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ruby / EmberJS</td>
+      <td>Python / Django</td>
+      <td>MUSHCode / C</td>
+      <td>MUSHCode / C++</td>
+      <td>MUSHCode / C</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Rhost commands can also call out to external scripts written in any language.</p>
+
+<p>C/C++ for Penn/Tiny/Rhost is only used in the hardcode, which most people don’t have to modify.</p>
+
+<h2 id="coding-from-a-mu-client">Coding from a MU Client</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>AresMUSH</th>
+      <th>Evennia</th>
+      <th>PennMUSH</th>
+      <th>TinyMUX</th>
+      <th>RhostMUSH</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Limited</td>
+      <td>Limited</td>
+      <td>Full</td>
+      <td>Full</td>
+      <td>Full</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>PennMUSH, TinyMUX and RhostMUSH let you code from your MU client, executing MUSHCode or storing commands on objects.  With a robust permissions and quota systems, you can even allow regular players to create their own code.</p>
+
+<p>Ares and Evennia both offer commands to execute arbitrary python/ruby code, but these are limited to admin-level coders for security reasons.  The bulk of coding in these platforms is done in text files that live on the server.  Even though the code lives on the server, it can be reloaded while the game is running.</p>
+
+<h2 id="skill-systems">Skill Systems</h2>
+
+<p>Several servers have community contributions for skill systems.  This list only includes well-known, reputable systems and not every bit of random code floating around the ‘net.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>System</th>
+      <th>Servers</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/fs3/fs3-3">FS3, 3rd Edition</a></td>
+      <td>AresMUSH</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="http://lynnfaraday.github.io/MUSH/">FS3, 2nd Edition</a></td>
+      <td>PennMUSH</td>
+      <td>No longer in active development.</td>
+    </tr>
+    <tr>
+      <td>Cortex</td>
+      <td>AresMUSH</td>
+      <td>An old, unsupported version exists for Penn/Tiny.</td>
+    </tr>
+    <tr>
+      <td>Fate</td>
+      <td>AresMUSH</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>FFG Genesys / Star Wars</td>
+      <td>AresMUSH</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Dahan’s Star Wars Sagas</td>
+      <td>PennMUSH, RhostMUSH</td>
+      <td>Probably also works on TinyMUX.</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.mushcode.com/File/Dahans-D6-Skills">Dahan’s Star Wars / WEG D6 System</a></td>
+      <td>PennMUSH</td>
+      <td>Probably also works on TinyMUX and RhostMUSH.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/thenomain/GMCCG/">Thenomain’s Chronicles of Darkness (WoD)</a></td>
+      <td>TinyMUX</td>
+      <td>Probably also works on PennMUSH and RhostMUSH.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+             </div>             
+                           </div>
+              
+                           <div class="col col-sm-3">
+                                                 <div class="sidebar">   
+                 
+<div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+                  
+<div class="sidebar-title">See AresMUSH In Action</div>
+
+<p>Visit the Ares <a href="http://mush.aresmush.com">Demo Game</a>.</p>
+
+<p>Find other Ares games at <a href="http://arescentral.aresmush.com">AresCentral</a>.</p>
+
+
+<div class="sidebar-title">Follow Us on Facebook</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1423276681271936";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-page" data-href="https://www.facebook.com/aresmush/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/aresmush/"><a href="https://www.facebook.com/aresmush/">Ares Mush</a></blockquote></div></div>
+
+<div class="sidebar-title">Discuss Ares</div>
+
+Have a question?  Want to talk about AresMUSH (or MU*s in general)?  Visit our <a href="http://forum.aresmush.com">Discussion Forum</a>.
+                  
+                  
+
+                  <div class="sidebar-title">Stay Up to Date</div>
+                          
+                          Get important updates about Ares on <a href="https://www.facebook.com/aresmush/">Facebook</a> or the <a href="http://forum.aresmush.com">Discussion Forum</a>.
+
+              <div id="searchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Search Results</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       
+
+       <div id="search-hits">
+         <!-- Hits widget will appear here -->
+       </div>
+
+
+       <div id="search-pagination">
+         <!-- Pagination widget will appear here -->
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/scripts/search.js"></script>
+<script>
+  initializeSearch( 'NI38C577BA',
+    '29793fd9084a3446072c14e471e32589',
+    'aresmush.com',
+    ' ' );
+</script>
+
+                  
+
+                  
+                
+                  
+                           </div>
+</div>
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>

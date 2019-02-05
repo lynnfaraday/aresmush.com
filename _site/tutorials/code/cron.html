@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>Cron Jobs - </title>
+    <meta property="og:title" content="Cron Jobs - ">
+    <meta name="twitter:title" content="Cron Jobs - ">
+    <meta itemprop="name" content="Cron Jobs - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="Cron Jobs" >
+    <meta property="og:url" content="/tutorials/code/cron.html" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+<h1>Cron Jobs</h1>
+
+    <div class="tags-box">
+                 <ul class="tags-box">
+                 
+                 <li>[cron]</li>
+                 
+                 <li>[config]</li>
+                 
+                 </ul>
+    </div>
+                               
+             <div class="page">
+                 <p>Cron Jobs are game events that run on a set schedule, such as daily healing or weekly cookie awards.</p>
+
+<div id="inline_toc">
+  <p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#cron-event" id="markdown-toc-cron-event">Cron Event</a></li>
+  <li><a href="#cron-config" id="markdown-toc-cron-config">Cron Config</a></li>
+  <li><a href="#monthly-task" id="markdown-toc-monthly-task">Monthly Task</a></li>
+  <li><a href="#weekly-task" id="markdown-toc-weekly-task">Weekly Task</a></li>
+  <li><a href="#bi-weekly-task" id="markdown-toc-bi-weekly-task">Bi-Weekly Task</a></li>
+  <li><a href="#daily-task" id="markdown-toc-daily-task">Daily Task</a></li>
+  <li><a href="#hourly-task" id="markdown-toc-hourly-task">Hourly Task</a></li>
+  <li><a href="#every-fifteen-minutes-task" id="markdown-toc-every-fifteen-minutes-task">Every Fifteen Minutes Task</a></li>
+  <li><a href="#disabling-a-task" id="markdown-toc-disabling-a-task">Disabling a Task</a></li>
+</ul>
+
+</div>
+
+<h2 id="cron-event">Cron Event</h2>
+
+<p>The Engine’s cron system sends out a <code class="language-ruby highlighter-rouge"><span class="no">CronEvent</span></code> once a minute.  To implement a cron job, the plugin needs to handle this event as explained in <a href="/tutorials/code/events.html">Event Handling</a>.</p>
+
+<p>Unless you want your cron job to run <em>every minute</em>, you’ll need some code in the cron handler to make it run when desired.   Typically this is done with the <code class="language-ruby highlighter-rouge"><span class="n">is_cron_match?</span></code> utility .  For example:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="n">config</span> <span class="o">=</span> <span class="no">Global</span><span class="p">.</span><span class="nf">read_config</span><span class="p">(</span><span class="s2">"your_plugin"</span><span class="p">,</span> <span class="s2">"your_cron_config"</span><span class="p">)</span>
+    <span class="k">return</span> <span class="k">if</span> <span class="o">!</span><span class="no">Cron</span><span class="p">.</span><span class="nf">is_cron_match?</span><span class="p">(</span><span class="n">config</span><span class="p">,</span> <span class="n">event</span><span class="p">.</span><span class="nf">time</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>If the cron event time matches your cron configuration settings, the cron job will run.  Otherwise it will return without doing anything.</p>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> All of the built-in cron jobs allow you to configure when they run.  See the relevant configuration file for details of what the cron jobs do and suggestions of how to set them.</p>
+</blockquote>
+
+<h2 id="cron-config">Cron Config</h2>
+
+<p>The <code class="language-ruby highlighter-rouge"><span class="n">is_cron_match?</span></code> utility lets you specify when a cron job is supposed to run.  There are four components of the cron configuration:</p>
+
+<ul>
+  <li>date - What day(s) of the month it runs.</li>
+  <li>day_of_week - What day(s) of the week it runs.</li>
+  <li>hour - What hour(s) it runs.  Uses 24-hour time.</li>
+  <li>minute - What minute(s) of the hour it runs.</li>
+</ul>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Avoid specifying both date <em>and</em> day of week, or you’ll end up with a job that only runs on Tuesdays that happen to fall on the 1st of the month.</p>
+</blockquote>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> If you specify hour, also specify minute.  Otherwise it will run <em>every minute</em> for that entire hour.</p>
+</blockquote>
+
+<p>Each item is a list, so you can have a job that runs on Tuesdays and Thursdays, or every half-hour, or on the 1st and 15th of the month, etc.</p>
+
+<p>If you don’t care about a component, just leave it out.  Some common examples are shown below.</p>
+
+<h2 id="monthly-task">Monthly Task</h2>
+
+<p>Runs on the 1st of every month at midnight (doesn’t care what day of the week it is):</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">date: 
+</span><span class="o">-</span> <span class="mi">1</span>
+<span class="ss">hour: 
+</span><span class="o">-</span> <span class="mo">00</span>
+<span class="ss">minute: 
+</span><span class="o">-</span> <span class="mo">00</span>
+</code></pre></div></div>
+
+<h2 id="weekly-task">Weekly Task</h2>
+
+<p>Runs every Saturday at 9pm (2100 hours) (doesn’t care what the date is):</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">day_of_week: 
+</span><span class="o">-</span> <span class="no">Sat</span>
+<span class="ss">hour: 
+</span><span class="o">-</span> <span class="mi">21</span>
+<span class="ss">minute: 
+</span><span class="o">-</span> <span class="mo">00</span>
+</code></pre></div></div>
+
+<h2 id="bi-weekly-task">Bi-Weekly Task</h2>
+
+<p>Runs every Saturday and Tuesday at 9pm (2100 hours) (doesn’t care what the date is):</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">day_of_week: 
+</span><span class="o">-</span> <span class="no">Sat</span>
+<span class="o">-</span> <span class="no">Tue</span>
+<span class="ss">hour: 
+</span><span class="o">-</span> <span class="mi">21</span>
+<span class="ss">minute: 
+</span><span class="o">-</span> <span class="mo">00</span>
+</code></pre></div></div>
+
+<h2 id="daily-task">Daily Task</h2>
+
+<p>Runs every day at 3am (0300 hours) (doesn’t care what the date or day of week is):</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">hour: 
+</span><span class="o">-</span> <span class="mo">03</span>
+<span class="ss">minute: 
+</span><span class="o">-</span> <span class="mo">00</span>
+</code></pre></div></div>
+
+<h2 id="hourly-task">Hourly Task</h2>
+
+<p>Runs at the top of every hour (doesn’t care what the date, day of week, or hour is):</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">minute: 
+</span><span class="o">-</span> <span class="mo">00</span>
+</code></pre></div></div>
+
+<h2 id="every-fifteen-minutes-task">Every Fifteen Minutes Task</h2>
+
+<p>Runs every fifteen minutes (doesn’t care what the date/day/hour is):</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">minute: 
+</span><span class="o">-</span> <span class="mo">00</span>
+<span class="o">-</span> <span class="mi">15</span>
+<span class="o">-</span> <span class="mi">30</span>
+<span class="o">-</span> <span class="mi">45</span>
+</code></pre></div></div>
+
+<h2 id="disabling-a-task">Disabling a Task</h2>
+
+<p>If you want the task to never run, you can make it an empty hash:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{}</span>
+</code></pre></div></div>
+
+
+             </div>             
+                           </div>
+              
+                           <div class="col col-sm-3">
+                                                 <div class="sidebar">   
+                 
+<div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+                  
+<div class="sidebar-title">See AresMUSH In Action</div>
+
+<p>Visit the Ares <a href="http://mush.aresmush.com">Demo Game</a>.</p>
+
+<p>Find other Ares games at <a href="http://arescentral.aresmush.com">AresCentral</a>.</p>
+
+
+<div class="sidebar-title">Follow Us on Facebook</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1423276681271936";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-page" data-href="https://www.facebook.com/aresmush/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/aresmush/"><a href="https://www.facebook.com/aresmush/">Ares Mush</a></blockquote></div></div>
+
+<div class="sidebar-title">Discuss Ares</div>
+
+Have a question?  Want to talk about AresMUSH (or MU*s in general)?  Visit our <a href="http://forum.aresmush.com">Discussion Forum</a>.
+                  
+                  
+
+                  <div class="sidebar-title">Stay Up to Date</div>
+                          
+                          Get important updates about Ares on <a href="https://www.facebook.com/aresmush/">Facebook</a> or the <a href="http://forum.aresmush.com">Discussion Forum</a>.
+
+              <div id="searchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Search Results</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       
+
+       <div id="search-hits">
+         <!-- Hits widget will appear here -->
+       </div>
+
+
+       <div id="search-pagination">
+         <!-- Pagination widget will appear here -->
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/scripts/search.js"></script>
+<script>
+  initializeSearch( 'NI38C577BA',
+    '29793fd9084a3446072c14e471e32589',
+    'aresmush.com',
+    ' ' );
+</script>
+
+                  
+
+                  
+                
+                  
+                           </div>
+</div>
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>

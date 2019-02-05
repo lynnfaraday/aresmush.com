@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>MUSH 101 - Time and Space - </title>
+    <meta property="og:title" content="MUSH 101 - Time and Space - ">
+    <meta name="twitter:title" content="MUSH 101 - Time and Space - ">
+    <meta itemprop="name" content="MUSH 101 - Time and Space - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="MUSH 101 - Time and Space" >
+    <meta property="og:url" content="/mush-101/time-and-space.html" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+                               
+             <div class="page">
+                 
+                 <h1>MUSH 101 - Time and Space</h1>
+                 
+                 <div class="fs3-shortcut">
+                     <a href="#toc">(View Table of Contents)</a>
+                 </div>
+                 
+
+                     <p>In this part of the MUSH 101 tutorial, we’ll go over rooms and time, two features that make MUSHes unique compared to other types of online roleplaying.</p>
+
+<div id="inline_toc">
+  <p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#rooms" id="markdown-toc-rooms">Rooms</a>    <ul>
+      <li><a href="#other-locations" id="markdown-toc-other-locations">Other Locations</a></li>
+      <li><a href="#location-within-rooms" id="markdown-toc-location-within-rooms">Location Within Rooms</a></li>
+    </ul>
+  </li>
+  <li><a href="#time" id="markdown-toc-time">Time</a>    <ul>
+      <li><a href="#punching-the-clock" id="markdown-toc-punching-the-clock">Punching the Clock</a></li>
+      <li><a href="#backscenes" id="markdown-toc-backscenes">Backscenes</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+<h2 id="rooms">Rooms</h2>
+
+<p>In a video game RPG, you have a continuous virtual world at your disposal, and can “see” yourself moving through city blocks, across wide-open prairies, or through a planet’s atmosphere.</p>
+
+<p>In a forum-based RPG, you just say “we’re the Battlestar’s docking bay” or “we’re in the Gold Star Saloon” and <em>poof</em> - you’re there.</p>
+
+<p>MUSHes are somewhere between those two.  There is a virtual world, called <em>the grid</em>, but it’s broken up into discrete locations, called <em>rooms</em>.  Each room is given a description to tell you what that location represents.</p>
+
+<figure>
+
+    <div class="figure-contents">
+
+        
+           <a class="no_icon" target="_blank" href="/images/postpics/mush-room.png">
+        
+
+          <img class="docimage" src="/images/postpics/mush-room.png" alt="" />
+
+          </a>
+
+          
+
+        </div>
+
+</figure>
+
+<div class="caption">A MUSH room description.</div>
+
+<p>Contrary to the name, a “room” on a MUSH can represent any size area - from a closet to a planet.  For example: the grid of a western town might include:</p>
+
+<ul>
+  <li>Town Square</li>
+  <li>Livery Stable</li>
+  <li>Saloon</li>
+  <li>Church</li>
+  <li>Boarding House</li>
+</ul>
+
+<h3 id="other-locations">Other Locations</h3>
+
+<p>Rooms on a MUSH represent only a <strong>part</strong> of the virtual world - the highlights, if you will.  A Hollywood set designer doesn’t build the <em>entire</em> starship Enterprise - only the sections they need for the scenes they intend to film.  Similarly, a MUSH designer doesn’t attempt to build every conceivable location in the world.  They focus on the areas that are likely to be used for scenes.</p>
+
+<p>For example, this map from the now-closed Sweetwater Crossing MUSH illustrates the locations represented by MUSH rooms (in black) compared to the entire town of Sweetwater.</p>
+
+<figure>
+
+    <div class="figure-contents">
+
+        
+           <a class="no_icon" target="_blank" href="/images/sweetwater.jpg">
+        
+
+          <img class="docimage" src="/images/sweetwater.jpg" alt="" />
+
+          </a>
+
+          
+
+        </div>
+
+</figure>
+
+<div class="caption">Map from Sweetwater Crossing MUSH.</div>
+
+<p>Just because there’s not a MUSH room for the undertaker’s or the back room of the train station doesn’t mean you can’t hold a scene there.  You can use a temporary room to represent areas not on the grid.</p>
+
+<h3 id="location-within-rooms">Location Within Rooms</h3>
+
+<p>Some locations might even have multiple rooms.  The Boarding House, for example, could be represented as a single room (as shown above), but it could also be created with three rooms (lobby, dining room, upstairs) or even more (adding a kitchen and some bedrooms).</p>
+
+<p>You usually establish your character’s location within the room when you make your first pose in a scene.  “Cate takes a seat at the bar…” or “Cate heads for a table in the back…”  Keep relative locations in mind when posing.  Somoene at the bar would be hard-pressed to carry on a casual conversation with someone in the back storeroom.</p>
+
+<h2 id="time">Time</h2>
+
+<p>Another unique feature of MUSHes is the way they handle time.  In a video game, time only passes <em>while you’re playing</em>.  In a forum game, time passes when you say it passes.</p>
+
+<p>In a MUSH, the clock is always running, 24/7/365.</p>
+
+<p>Most MUSHes generally run on a 1:1 time ratio.  For every day that passes in the real world, one day passes in the game world as well.  Things can and do happen in your absence.</p>
+
+<p>Here a TV analogy might help.  We see the characters doing cool things on-camera, but we don’t see their entire lives.  We know that they are doing other (usually mundane) things <strong>off-camera</strong> as well.</p>
+
+<p>Nobody can play your character when you’re offline, and should leave the door open for you to come up with reasons why your character wasn’t around for a scene.</p>
+
+<h3 id="punching-the-clock">Punching the Clock</h3>
+
+<p>Although days generally run on 1:1 time, time <em>within</em> the day is more flexible.  Characters can talk a lot faster than their players can type, and a 1-hour trip across town could be glossed over with a single sentence.</p>
+
+<p>Players will usually establish a time-of-day at the beginning of a scene.  Within the scene, time will pass organically, no matter what the RL wall clock says.</p>
+
+<h3 id="backscenes">Backscenes</h3>
+
+<p>Most scenes take place in whatever day the MUSH time command says it is.  But like flashbacks in a book or TV show, MUSH players can do a flashback scene (called a <strong>backscene</strong>) to flesh out something that happened in the past.  Backscenes are commonly used to fill in gaps when players couldn’t be online together.  Forward scenes (ones that take place in the game’s future) are also possible, but far less common.</p>
+
+<p>Both backscenes and forward scenes require you to tread carefully to avoid giant continuity glitches.  You can’t die in a backscene last week if you’ve already done other things this week.  Players need to work together to ensure the story stays consistent (within reason).</p>
+
+
+                 <div class="tutorial-nav">
+                     <p>This article is part of the <a href="/mush-101">MUSH 101</a> tutorial.</p>
+    
+                     <div class="pagination-block">
+                         <ul>
+                             
+                             <li><a href="/mush-101/telling-your-story.html"> &larr; Previous</a></li>
+                             
+            
+                             <li><a href="/mush-101">Back to Start</a> </li>
+            
+        
+                             
+                             <li><a href="/mush-101/mu-glossary.html">Next &rarr; </a></li>
+                             
+                         </ul>
+                     </div>
+    
+                     <br/>
+                 </div>
+                 
+             </div>             
+                           </div>
+              
+              
+                  <div class="col col-sm-3">
+                      
+                      
+                      <a name="toc"></a>
+                      <div class="sidebar fs3-sidebar"> 
+                      
+                        <div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+                      
+                      <h2>MUSH 101</h2>
+                      
+                     
+                      
+                                          
+                      
+                                          
+                      
+                                          
+                      
+                                          
+                                          <ul>
+  <li><a href="/mush-101/game-of-words.html">A Game of Words</a></li>
+  <li><a href="/mush-101/before-you-start.html">Before You Start</a></li>
+  <li><a href="/mush-101/play-muclient.html">Playing from a MUSH Client</a></li>
+  <li><a href="/mush-101/play-webportal.html">Playing from the Web Portal</a></li>
+  <li><a href="/mush-101/telling-your-story.html">Telling Your Story</a></li>
+  <li><a href="/mush-101/time-and-space.html">Time and Space</a></li>
+  <li><a href="/mush-101/mu-glossary.html">MUSH Glossary</a></li>
+</ul>
+
+                                          
+                      
+                                          
+                      
+                                          
+                      
+                  </div>
+              </div>
+
+              <div id="searchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Search Results</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       
+
+       <div id="search-hits">
+         <!-- Hits widget will appear here -->
+       </div>
+
+
+       <div id="search-pagination">
+         <!-- Pagination widget will appear here -->
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/scripts/search.js"></script>
+<script>
+  initializeSearch( 'NI38C577BA',
+    '29793fd9084a3446072c14e471e32589',
+    'aresmush.com',
+    ' ' );
+</script>
+              
+</div>
+
+
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>

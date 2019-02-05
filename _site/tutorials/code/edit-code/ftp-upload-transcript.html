@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>FTP Upload (Transcript) - </title>
+    <meta property="og:title" content="FTP Upload (Transcript) - ">
+    <meta name="twitter:title" content="FTP Upload (Transcript) - ">
+    <meta itemprop="name" content="FTP Upload (Transcript) - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="FTP Upload (Transcript)" >
+    <meta property="og:url" content="/tutorials/code/edit-code/ftp-upload-transcript.html" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+                               
+             <div class="page">
+                 
+                 <h1>FTP Upload (Transcript)</h1>
+                 
+                 <div class="fs3-shortcut">
+                     <a href="#toc">(View Table of Contents)</a>
+                 </div>
+                 
+
+                     <p>This is the transcript for the <a href="/tutorials/code/edit-code/ftp-upload.html">FTP Upload</a>  segment of the Editing Ares Code tutorial.</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Hi.  This is Faraday from AresMUSH and in this Part II of the editing AresMUSH code tutorial.  In this segment, I’m going to show you how to use FTP to make changes locally on your hard drive and then upload those changes to the game to test them.</p>
+
+<h2 id="getting-the-code">Getting the Code</h2>
+
+<p>The first thing we’re going to need to do is to get a copy of the code on our PC.  To do that we can go to Aresmush.com and select the Source Code option.  This will give us links to both the game engine and web portal code.  This takes us to GitHub, which is the source control system used for AresMUSH.</p>
+
+<p>We can use the Clone or Download button to download a ZIP file containing all the source code for the game, and again for the web portal.</p>
+
+<h2 id="code-editors">Code Editors</h2>
+
+<p>Once you have the files on your hard drive, you can use the code editor of your choice to change them.  There are lots of code editors available, and you just need to find the one you like the best.  There are links to some popular ones on the Editing Code tutorial on aresmush.com.</p>
+
+<p>You’ll want to use a dedicated code editor rather than a generic text editor because it’s going to have a variety of helpful features.  Code editors will have syntax highlighting, which changes the colors on the screen to match the type of code you’re looking at.  Most code editors also allow you to have multiple files open at once, and switch between them using tabs at the top, like tabs on a web browser.  Code editors also have a directory browsing feature built in, so you can easily switch between directories in your game code.  And finally, most code editors will have a global search feature, so you can search the entire codebase for references to a particular class or function.  That’s very helpful for finding code in a big project.</p>
+
+<h2 id="setting-up-ftp">Setting Up FTP</h2>
+
+<p>Once we’ve changed the files on our hard drive, we’re going to need to upload them to the game server so we can test them.  To do that, we’re going to use a FTP - or file transfer - application.  There are lots of FTP applications available.  The one I’m going to show you is FileZilla, which is free and available for both Mac and Windows.</p>
+
+<p>To set up our FTP app, we need to tell it our server information.  We’re going to go to the Site Manager and create a new site.  It’s important to select SFTP - secure FTP - because most servers won’t accept regular FTP by default any more.  Enter the server name and select ‘Ask for Password’ for the login type.  Don’t enter your game’s port for the port number.  That’s the port for the FTP server, not your game server.  Just leave it blank and it will use the default.</p>
+
+<h2 id="uploading-files">Uploading Files</h2>
+
+<p>Once you’ve connected and given it your username and password for the server shell, you’ll see the local code (from your PC) on the left and the remote code (from the game server) on the right.  You’ll probably need to browse around on the local side to find where you downloaded the Ares code.  And on the remote side, you’ll want to go into the aresmush folder.</p>
+
+<p>From here, we can move files back and forth by dragging and dropping them.  It’s a pain to keep track of which files you modified.  One thing you can do is upload the entire plugins directory, and when prompted choose “Overwrite if source newer.”  That will only bother uploading it if the version on your hard drive is newer than the version on the server.  We can apply that to every file in our current upload.  We can upload the entire plugins directory or just a particular plugin if we’re only working on one.</p>
+
+<h2 id="loading-code">Loading Code</h2>
+
+<p>As we mentioned in the previous tutorial, when we changed files manually on the server shell, we have to tell the game that they changed.  Otherwise it will just go on using the old code.  The way we do that is the ‘load’ command.   If we know we only changed a particular plugin, we can load just that plugin - like ‘load tinker’.  If we’re not sure what we changed, we can use ‘load all’ and reload everything.  It’s a little less efficient, but not really a big deal.</p>
+
+<p>Now that our code has been reloaded, we can execute any new commands and test them.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>So that’s how we can edit files locally on our PC and then upload them to the game server.  It’s an improvement over editing the code directly on the server, because we get to use a proper code editor, with a lot of great features.  But it’s still not ideal.  FTP is a little slow and clunky, and it can be hard to keep track of what changed.</p>
+
+<p>Some people will prefer the simplicity of FTP, and that’s perfectly fine.  But there’s an even better way of managing your code.  In the next tutorial, we’ll look at how to use GitHub source control to synchronize the code between your local PC and your game.</p>
+
+<p>For now, though, that concludes this tutorial.  Thanks for listening.</p>
+
+
+                 <div class="tutorial-nav">
+                     <p>This article is part of the <a href="/tutorials/code/edit-code">Editing Code</a> tutorial.</p>
+    
+                     <div class="pagination-block">
+                         <ul>
+                             
+                             <li class="link-disabled"><a>&larr; Previous</a></li>
+                             
+            
+                             <li><a href="/tutorials/code/edit-code">Back to Start</a> </li>
+            
+        
+                             
+                             <li><a href="/tutorials/code/edit-code/ftp-upload.html">Next &rarr; </a></li>
+                             
+                         </ul>
+                     </div>
+    
+                     <br/>
+                 </div>
+                 
+             </div>             
+                           </div>
+              
+              
+                  <div class="col col-sm-3">
+                      
+                      
+                      <a name="toc"></a>
+                      <div class="sidebar fs3-sidebar"> 
+                      
+                        <div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+                      
+                      <h2>Editing Code</h2>
+                      
+                     
+                      
+                                          
+                      
+                                          
+                      
+                                          
+                      
+                                          
+                      
+                                          
+                      
+                                          
+                                          <ul>
+  <li><a href="/tutorials/code/edit-code/">Tutorial Overview</a></li>
+  <li><a href="/tutorials/code/edit-code/finding-code.html">Finding Code</a></li>
+  <li><a href="/tutorials/code/edit-code/direct-edit.html">Direct Editing</a></li>
+  <li><a href="/tutorials/code/edit-code/ftp-upload.html">FTP Upload</a></li>
+  <li><a href="/tutorials/code/edit-code/next-steps.html">Next Steps</a></li>
+</ul>
+
+                                          
+                      
+                  </div>
+              </div>
+
+              <div id="searchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Search Results</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       
+
+       <div id="search-hits">
+         <!-- Hits widget will appear here -->
+       </div>
+
+
+       <div id="search-pagination">
+         <!-- Pagination widget will appear here -->
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/scripts/search.js"></script>
+<script>
+  initializeSearch( 'NI38C577BA',
+    '29793fd9084a3446072c14e471e32589',
+    'aresmush.com',
+    ' ' );
+</script>
+              
+</div>
+
+
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>

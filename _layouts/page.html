@@ -1,0 +1,31 @@
+---
+layout : default
+---
+
+
+
+<div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+<h1>{{page.title}}</h1>
+
+    <div class="tags-box">
+                 <ul class="tags-box">
+                 {% for name in page.tags %}
+                 <li>[{{ name }}]</li>
+                 {% endfor %}
+                 </ul>
+    </div>
+                               
+             <div class="page">
+                 {{ content }}
+             </div>             
+                           </div>
+              
+                           <div class="col col-sm-3">
+                               {% include sidebar.html %}
+                  
+                           </div>
+</div>

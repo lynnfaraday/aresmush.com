@@ -1,0 +1,96 @@
+---
+layout : default
+---
+
+                         
+<div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+                               
+             <div class="page">
+                 
+                 <h1>{{page.title}}</h1>
+                 
+                 <div class="fs3-shortcut">
+                     <a href="#toc">(View Table of Contents)</a>
+                 </div>
+                 
+
+                     {{ content }}
+
+                 <div class="tutorial-nav">
+                     <p>This article is part of the <a href="/{{page.tutorialIndex}}">{{page.tutorialName}}</a> tutorial.</p>
+    
+                     <div class="pagination-block">
+                         <ul>
+                             {% if page.prevstep %}
+                             <li><a href="/{{page.tutorialIndex}}/{{page.prevstep}}.html"> &larr; Previous</a></li>
+                             {% else %}
+                             <li class="link-disabled"><a>&larr; Previous</a></li>
+                             {% endif %}
+            
+                             <li><a href="/{{page.tutorialIndex}}">Back to Start</a> </li>
+            
+        
+                             {% if page.nextstep %}
+                             <li><a href="/{{page.tutorialIndex}}/{{page.nextstep}}.html">Next &rarr; </a></li>
+                             {% else %}
+                             <li class="link-disabled"><a>Next &rarr;</a></li>
+                             {% endif %}
+                         </ul>
+                     </div>
+    
+                     <br/>
+                 </div>
+                 
+             </div>             
+                           </div>
+              
+              
+                  <div class="col col-sm-3">
+                      
+                      
+                      <a name="toc"></a>
+                      <div class="sidebar fs3-sidebar"> 
+                      
+                        {% include searchbox.html %}
+                      
+                      <h2>{{page.tutorialName}}</h2>
+                      
+                     {% if page.addCmdTutorial %}
+                                          {% include add_command_tutorial.html %}
+                                          {% endif %}
+                      
+                                          {% if page.addWebTutorial %}
+                                          {% include add_web_tutorial.html %}
+                                          {% endif %}
+                      
+                                          {% if page.installTutorial %}
+                                          {% include install_tutorial.html %}
+                                          {% endif %}
+                      
+                                          {% if page.quickstartTutorial %}
+                                          {% include quickstart_tutorial.html %}
+                                          {% endif %}
+                      
+                                          {% if page.mush101Tutorial %}
+                                          {% include mush101_tutorial.html %}
+                                          {% endif %}
+                      
+                                          {% if page.createPluginTutorial %}
+                                          {% include create_plugin_tutorial.html %}
+                                          {% endif %}
+                      
+                                          {% if page.editCodeTutorial %}
+                                          {% include edit_code_tutorial.html %}
+                                          {% endif %}
+                      
+                  </div>
+              </div>
+
+              {% include search_results.html %}
+              
+</div>
+

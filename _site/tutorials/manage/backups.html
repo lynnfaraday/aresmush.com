@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>Backing Up the Game - </title>
+    <meta property="og:title" content="Backing Up the Game - ">
+    <meta name="twitter:title" content="Backing Up the Game - ">
+    <meta itemprop="name" content="Backing Up the Game - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="Backing Up the Game" >
+    <meta property="og:url" content="/tutorials/manage/backups.html" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+<h1>Backing Up the Game</h1>
+
+    <div class="tags-box">
+                 <ul class="tags-box">
+                 
+                 <li>[manage]</li>
+                 
+                 <li>[database]</li>
+                 
+                 <li>[backup]</li>
+                 
+                 </ul>
+    </div>
+                               
+             <div class="page">
+                 <p>It’s important to make backups of your game database and files.  There are many ways to do this, a few of which are discussed here.</p>
+
+<div id="inline_toc">
+  <p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#what-do-i-need-to-back-up" id="markdown-toc-what-do-i-need-to-back-up">What Do I Need to Back Up?</a>    <ul>
+      <li><a href="#the-database" id="markdown-toc-the-database">The Database</a></li>
+      <li><a href="#game-files" id="markdown-toc-game-files">Game Files</a></li>
+    </ul>
+  </li>
+  <li><a href="#backup-options" id="markdown-toc-backup-options">Backup Options</a>    <ul>
+      <li><a href="#option-1-digital-ocean-automatic-backups" id="markdown-toc-option-1-digital-ocean-automatic-backups">Option 1: Digital Ocean Automatic Backups</a></li>
+      <li><a href="#option-2-configuring-automatic-backups-with-s3" id="markdown-toc-option-2-configuring-automatic-backups-with-s3">Option 2: Configuring Automatic Backups with S3</a>        <ul>
+          <li><a href="#setting-up-s3" id="markdown-toc-setting-up-s3">Setting up S3</a></li>
+          <li><a href="#configuring-the-game-to-use-s3" id="markdown-toc-configuring-the-game-to-use-s3">Configuring the Game to Use S3</a></li>
+          <li><a href="#test-the-backup" id="markdown-toc-test-the-backup">Test the Backup</a></li>
+        </ul>
+      </li>
+      <li><a href="#option-3-automated-local-backups" id="markdown-toc-option-3-automated-local-backups">Option 3: Automated Local Backups</a></li>
+      <li><a href="#option-4-manual-ftp" id="markdown-toc-option-4-manual-ftp">Option 4: Manual FTP</a></li>
+    </ul>
+  </li>
+  <li><a href="#general-backup-configuration" id="markdown-toc-general-backup-configuration">General Backup Configuration</a>    <ul>
+      <li><a href="#backup-type" id="markdown-toc-backup-type">Backup Type</a></li>
+      <li><a href="#number-of-backups" id="markdown-toc-number-of-backups">Number of Backups</a></li>
+      <li><a href="#backup-cron-job" id="markdown-toc-backup-cron-job">Backup Cron Job</a></li>
+      <li><a href="#database-file-location" id="markdown-toc-database-file-location">Database File Location</a></li>
+    </ul>
+  </li>
+  <li><a href="#restoring-backups" id="markdown-toc-restoring-backups">Restoring Backups</a></li>
+</ul>
+
+</div>
+
+<h2 id="what-do-i-need-to-back-up">What Do I Need to Back Up?</h2>
+
+<p>Here are the things that you need to back up in order to protect your game from disaster:</p>
+
+<h3 id="the-database">The Database</h3>
+
+<p>The Redis database periodically dumps your database to a file on the server.  If you used the standard install scripts on Digital Ocean, your database file should be located in <code class="language-ruby highlighter-rouge"><span class="sr">/var/</span><span class="n">lib</span><span class="o">/</span><span class="n">redis</span><span class="o">/</span><span class="n">dump</span><span class="p">.</span><span class="nf">rdb</span></code>.   Otherwise, you probably installed redis yourself so hopefully you know where you installed it!</p>
+
+<h3 id="game-files">Game Files</h3>
+
+<p>Everything in your <code class="language-ruby highlighter-rouge"><span class="n">aresmush</span><span class="o">/</span><span class="n">game</span></code> folder is custom for your game.  This includes your connect screen, configuration files, and Web Portal file uploads.</p>
+
+<blockquote>
+  <p><i class="fa fa-exclamation-triangle"></i> <strong>Important:</strong> Ares’ automated backup tools do not include source code.  It’s assumed that you’re either using <a href="/tutorials/code/git.html">GitHub</a> (which is an awesome way to protect your code that provides other benefits too) or that you’re making changes on your local computer and uploading them through FTP.  Making code changes directly through the server shell without version control is not advisable.  If you choose to do so, you’ll need to decide on your own backup strategy.</p>
+</blockquote>
+
+<h2 id="backup-options">Backup Options</h2>
+
+<p>The next few sections will give you different options for backing up your game, listed in order from <strong>most reliable</strong> to least reliable.</p>
+
+<h3 id="option-1-digital-ocean-automatic-backups">Option 1: Digital Ocean Automatic Backups</h3>
+
+<p>If you are using a Digital Ocean droplet, you can use their <a href="https://www.digitalocean.com/community/tutorials/an-introduction-to-digitalocean-backups">Automatic Backup</a> feature to create a weekly backup of your entire server.  This includes the database, the code, the server config - everything.</p>
+
+<p>This is the most robust form of backup strategy, but it costs a little extra.  As of 2/18, automated weekly backups of the standard Ares droplet size cost $1/month.</p>
+
+<h3 id="option-2-configuring-automatic-backups-with-s3">Option 2: Configuring Automatic Backups with S3</h3>
+
+<p>AresMUSH can automatically perform daily backups to Amazon’s S3 storage service for a safe, off-site storage solution.</p>
+
+<blockquote>
+  <p><i class="fa fa-exclamation-triangle"></i> <strong>Important:</strong> AWS is a great backup option, but AWS’ menu options can be overwhelming for novice server admins.  Make sure you’re familiar with their cost tiers.  Most games <strong>should</strong> fit comfortably into their ‘free tier’ and cost you nothing; however, it’s your responsibility to understand their pricing tiers and know what you’re signing up for.</p>
+</blockquote>
+
+<h4 id="setting-up-s3">Setting up S3</h4>
+
+<p>To set up automatic backups, you’ll need:</p>
+
+<ol>
+  <li>An account with Amazon Web Services.</li>
+  <li>An AWS S3 Bucket.  (which is like a folder to store your files)</li>
+  <li>An AWS access key.</li>
+</ol>
+
+<p>You’ll need to follow the Amazon tutorials, particularly <a href="http://docs.aws.amazon.com/AmazonS3/latest/gsg/AmazonS3Basics.html">Getting Started With S3</a> and <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/intro-managing-access-s3-resources.html">Managing Access to S3</a>.</p>
+
+<blockquote>
+  <p><i class="fa fa-exclamation-triangle"></i> <strong>Important:</strong> Even if you use S3 for other things, create a separate bucket just for your AresMUSH backups.  Ares will delete older files to make room for new backups, and you don’t want it to accidentally delete anything important!</p>
+</blockquote>
+
+<h4 id="configuring-the-game-to-use-s3">Configuring the Game to Use S3</h4>
+
+<p>Once you have an S3 account, you’ll need to configure the game to use it.</p>
+
+<ol>
+  <li>Go to the Web Portal’s Admin screen.</li>
+  <li>Select ‘Setup’.</li>
+  <li>Select ‘secrets.yml’.</li>
+</ol>
+
+<p>Enter your AWS access key, bucket name and the code for the region your bucket is in into the AWS section.  You can find the AWS region codes <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#apigateway_region">here</a>.</p>
+
+<h4 id="test-the-backup">Test the Backup</h4>
+
+<p>There are many moving parts in the AWS backup process.  Once you have it all set up, we recommend that you test it once using the manual <code class="language-ruby highlighter-rouge"><span class="n">dbbackup</span></code> command.  Make sure that the database file ends up in your S3 bucket successfully before relying on the automatic daily backups.</p>
+
+<h3 id="option-3-automated-local-backups">Option 3: Automated Local Backups</h3>
+
+<p>AresMUSH will periodically back up your database and game folder to the local server.  This isn’t a great backup strategy (since your backups will be toast if anything happens to the server itself) but it’s better than nothing.  Edit the backup type (explained below) to ‘local’ to enable automated local backups.</p>
+
+<p>Backups are stored in your <code class="language-ruby highlighter-rouge"><span class="n">aresmush</span><span class="o">/</span><span class="n">backups</span></code> folder.</p>
+
+<h3 id="option-4-manual-ftp">Option 4: Manual FTP</h3>
+
+<p>You can manually FTP the database dump file and game files to your local hard drive for a simple backup.  The catch is you need to remember to do this periodically!</p>
+
+<h2 id="general-backup-configuration">General Backup Configuration</h2>
+
+<p>For the automated backup strategies (local or AWS), there are a few things you’ll want to configure.</p>
+
+<ol>
+  <li>Go to the Web Portal’s Admin screen.</li>
+  <li>Select ‘Setup’.</li>
+  <li>Select <code class="language-ruby highlighter-rouge"><span class="n">backup</span><span class="p">.</span><span class="nf">yml</span></code>.</li>
+</ol>
+
+<h4 id="backup-type">Backup Type</h4>
+
+<p>Set the backup type to ‘aws’ for AWS backups and ‘local’ for local backups.</p>
+
+<h4 id="number-of-backups">Number of Backups</h4>
+
+<p>You can configure the number of backups the game keeps.  By default this is 5.  Older backups are automatically deleted.</p>
+
+<h4 id="backup-cron-job">Backup Cron Job</h4>
+
+<p>You can configure when backups are done.  By default it’s early morning, after peak MU* times.  See the <a href="http://www.aresmush.com/tutorials/code/cron.html">Cron Job Tutorial</a> for help if you want to change this.</p>
+
+<h4 id="database-file-location">Database File Location</h4>
+
+<p>If you used the standard install scripts, the game should already be configured with the proper database file location.  But if you performed a custom installation, you’ll need to tell the game where the database file is.</p>
+
+<ol>
+  <li>Go to the Web Portal’s Admin screen.</li>
+  <li>Select ‘Setup’.</li>
+  <li>Select <code class="language-ruby highlighter-rouge"><span class="n">database</span><span class="p">.</span><span class="nf">yml</span></code>.</li>
+  <li>Enter the path to redis’ dump file.</li>
+</ol>
+
+<h2 id="restoring-backups">Restoring Backups</h2>
+
+<p>In the event you need to restore a backup, see <a href="/tutorials/manage/restore-db.html">Restoring Backups</a>.</p>
+
+             </div>             
+                           </div>
+              
+                           <div class="col col-sm-3">
+                                                 <div class="sidebar">   
+                 
+<div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+                  
+<div class="sidebar-title">See AresMUSH In Action</div>
+
+<p>Visit the Ares <a href="http://mush.aresmush.com">Demo Game</a>.</p>
+
+<p>Find other Ares games at <a href="http://arescentral.aresmush.com">AresCentral</a>.</p>
+
+
+<div class="sidebar-title">Follow Us on Facebook</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1423276681271936";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-page" data-href="https://www.facebook.com/aresmush/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/aresmush/"><a href="https://www.facebook.com/aresmush/">Ares Mush</a></blockquote></div></div>
+
+<div class="sidebar-title">Discuss Ares</div>
+
+Have a question?  Want to talk about AresMUSH (or MU*s in general)?  Visit our <a href="http://forum.aresmush.com">Discussion Forum</a>.
+                  
+                  
+
+                  <div class="sidebar-title">Stay Up to Date</div>
+                          
+                          Get important updates about Ares on <a href="https://www.facebook.com/aresmush/">Facebook</a> or the <a href="http://forum.aresmush.com">Discussion Forum</a>.
+
+              <div id="searchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Search Results</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       
+
+       <div id="search-hits">
+         <!-- Hits widget will appear here -->
+       </div>
+
+
+       <div id="search-pagination">
+         <!-- Pagination widget will appear here -->
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/scripts/search.js"></script>
+<script>
+  initializeSearch( 'NI38C577BA',
+    '29793fd9084a3446072c14e471e32589',
+    'aresmush.com',
+    ' ' );
+</script>
+
+                  
+
+                  
+                
+                  
+                           </div>
+</div>
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>Configuring FS3 - Chargen - </title>
+    <meta property="og:title" content="Configuring FS3 - Chargen - ">
+    <meta name="twitter:title" content="Configuring FS3 - Chargen - ">
+    <meta itemprop="name" content="Configuring FS3 - Chargen - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="Configuring FS3 - Chargen" >
+    <meta property="og:url" content="/tutorials/config/fs3skills_chargen.html" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+<h1>Configuring FS3 - Chargen</h1>
+
+    <div class="tags-box">
+                 <ul class="tags-box">
+                 
+                 <li>[config]</li>
+                 
+                 </ul>
+    </div>
+                               
+             <div class="page">
+                 <p>To configure the FS3 Chargen Limits:</p>
+
+<ol>
+  <li>Select Admin -&gt; Setup.</li>
+  <li>Edit <code class="language-ruby highlighter-rouge"><span class="n">fs3skills_chargen</span><span class="p">.</span><span class="nf">yml</span></code></li>
+</ol>
+
+<div id="inline_toc">
+  <p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#before-you-start" id="markdown-toc-before-you-start">Before You Start</a></li>
+  <li><a href="#free_languages-and-free_backgrounds" id="markdown-toc-free_languages-and-free_backgrounds">free_languages and free_backgrounds</a></li>
+  <li><a href="#min_backgrounds" id="markdown-toc-min_backgrounds">min_backgrounds</a></li>
+  <li><a href="#advantages_cost" id="markdown-toc-advantages_cost">advantages_cost</a></li>
+  <li><a href="#max_skill_rating-and-max_attr_rating" id="markdown-toc-max_skill_rating-and-max_attr_rating">max_skill_rating and max_attr_rating</a></li>
+  <li><a href="#allow_unskilled_action_skills" id="markdown-toc-allow_unskilled_action_skills">allow_unskilled_action_skills</a></li>
+  <li><a href="#guiding-maximums" id="markdown-toc-guiding-maximums">Guiding Maximums</a>    <ul>
+      <li><a href="#max_ap" id="markdown-toc-max_ap">max_ap</a></li>
+      <li><a href="#max_points_on_attrs-and-max_points_on_action" id="markdown-toc-max_points_on_attrs-and-max_points_on_action">max_points_on_attrs and max_points_on_action</a></li>
+      <li><a href="#max_skills_at_or_above-and-max_attrs_at_or_above" id="markdown-toc-max_skills_at_or_above-and-max_attrs_at_or_above">max_skills_at_or_above and max_attrs_at_or_above</a></li>
+    </ul>
+  </li>
+  <li><a href="#starting_skills" id="markdown-toc-starting_skills">starting_skills</a>    <ul>
+      <li><a href="#group-skills" id="markdown-toc-group-skills">Group Skills</a></li>
+      <li><a href="#skill-notes" id="markdown-toc-skill-notes">Skill Notes</a></li>
+      <li><a href="#everyone-skills" id="markdown-toc-everyone-skills">Everyone Skills</a></li>
+    </ul>
+  </li>
+  <li><a href="#unusual_skills" id="markdown-toc-unusual_skills">unusual_skills</a></li>
+</ul>
+
+</div>
+
+<h2 id="before-you-start">Before You Start</h2>
+
+<p>You should read the article <a href="http://aresmush.com/fs3/fs3-3/tweaking-fs3.html">Tweaking FS3</a>, which contains important information to help guide you in customizing your game.</p>
+
+<blockquote>
+  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong> Many of the chargen configuration options are lists.  They can’t be left blank.  If the list is empty, use <code class="language-ruby highlighter-rouge"><span class="p">[]</span></code> to reflect an empty list.</p>
+</blockquote>
+
+<h2 id="free_languages-and-free_backgrounds">free_languages and free_backgrounds</h2>
+
+<p>The first few points in Language and Background Skills are free, meaning they do not count toward a character’s Ability Point total.</p>
+
+<ul>
+  <li><strong>free_languages</strong>: Free points in Language Skills.  Make sure you assign 3 (Fluent) for each of the starting languages you set up in the skill list.</li>
+  <li><strong>free_backgrounds</strong>: Free points in Background Skills.</li>
+</ul>
+
+<h2 id="min_backgrounds">min_backgrounds</h2>
+
+<p>You can require how many Background Skills (distinct skills, not points) a character must start with.</p>
+
+<h2 id="advantages_cost">advantages_cost</h2>
+
+<p>If you are using Advantages, you can configure the cost.  The default is 2 points per dot.  You can adjust this depending on how valuable advantages are in your game.  Making different advantages cost different amounts will require custom code.</p>
+
+<h2 id="max_skill_rating-and-max_attr_rating">max_skill_rating and max_attr_rating</h2>
+
+<p>FS3 Attributes are rated from 1-5 (with 5 being Exceptional) and Skills are rated from 1-8 (with 8 being Legendary).  Some games may not want to allow characters at the top end of the spectrum by setting these values lower than the maximum possible ratings.</p>
+
+<h2 id="allow_unskilled_action_skills">allow_unskilled_action_skills</h2>
+
+<p>The Unskilled level might not be necessary in every setting.  See <a href="/fs3/fs3-3/chargen.html#unskilled">everyman vs. unskilled</a> for details.  To avoid confusion in chargen, the ‘Unskilled’ level is disabled by default.  You can enable it by setting this setting to true.</p>
+
+<h2 id="guiding-maximums">Guiding Maximums</h2>
+
+<p>You can configure various guidelines about what skills and attributes a character can have.</p>
+
+<blockquote>
+  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong> These are soft limits.  The system will let someone go over them, but a warning will appear in their app command status.  You can choose whether to allow a special exception when approving the character.</p>
+</blockquote>
+
+<h3 id="max_ap">max_ap</h3>
+
+<p>This is the maximum Ability Points a character can spend.  Free skills and attributes don’t count toward this total.</p>
+
+<h3 id="max_points_on_attrs-and-max_points_on_action">max_points_on_attrs and max_points_on_action</h3>
+
+<p>This is the maximum number of chargen points a character can spend on attributes and action skills.  Ratings 1-2 (for attributes) and 1 (for action skills) are not counted towards the total.</p>
+
+<p>Attributes cost 2 points per dot and skills cost 1 point per dot.  For exmple - setting <code class="language-ruby highlighter-rouge"><span class="n">max_points_on_attrs</span></code> to 10 would allow you to buy 5 attribute dots above level 1-2.</p>
+
+<p>Note: These limits also apply to XP spent after chargen, unless modified by the <code class="language-ruby highlighter-rouge"><span class="n">dots_beyond_chargen_max</span></code> setting (see <a href="/tutorials/config/fs3skills_xp.html">Configuring FS3 XP</a>).</p>
+
+<h3 id="max_skills_at_or_above-and-max_attrs_at_or_above">max_skills_at_or_above and max_attrs_at_or_above</h3>
+
+<p>You can set break points for attributes and skills to limit how many a character can have at or above a given level.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">max_skills_at_or_above:
+    </span><span class="mi">6</span><span class="p">:</span> <span class="mi">2</span>
+    <span class="mi">7</span><span class="p">:</span> <span class="mi">1</span>
+
+<span class="ss">max_attrs_at_or_above: 
+    </span><span class="mi">4</span><span class="p">:</span> <span class="mi">2</span>
+    <span class="mi">5</span><span class="p">:</span> <span class="mi">1</span>
+</code></pre></div></div>
+
+<p>Remember that these limits are at <em>or above</em>.  So given the max skills example above:</p>
+
+<blockquote>
+  <p>1 at 6, 1 at 7 –&gt; OK
+2 at 6 –&gt; OK
+2 at 7 –&gt; <em>NOT</em> OK  (even though you can have 2 above 6, only 1 of them may be at or above 7)
+2 at 6, 1 at 7 –&gt; <em>NOT</em> OK (you can only have 2 skills total at or above 6)</p>
+</blockquote>
+
+<h2 id="starting_skills">starting_skills</h2>
+
+<p>FS3 lets you assign starting skills and specialties for different groups.  For example, you may want to ensure that people from a certain colony all start with a particular language, or that people in a certain position start with certain professional skills.</p>
+
+<blockquote>
+  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong> As with the rating limits, these are soft targets.  The app command status will have a warning if any starting skills are missing or too low.</p>
+</blockquote>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Despite the word ‘skills’ in the name, you can also include attributes and advantages in the skills list.  It’s just intended mainly for skills.</p>
+</blockquote>
+
+<h3 id="group-skills">Group Skills</h3>
+
+<p>Starting skills are group-based, so you’ll see multiple entries for different groups in the list.  You can list skills and also specialties.  Here is an example:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Faction</span><span class="p">:</span>
+    <span class="no">Navy</span><span class="p">:</span>
+        <span class="ss">skills:
+            </span><span class="no">Swimming</span><span class="p">:</span> <span class="mi">2</span>
+    <span class="no">Marines</span><span class="p">:</span>
+        <span class="ss">skills:
+            </span><span class="no">Melee</span><span class="p">:</span> <span class="mi">2</span>
+<span class="no">Position</span><span class="p">:</span>
+    <span class="no">Pilot</span><span class="p">:</span>
+        <span class="ss">skills:
+            </span><span class="no">Piloting</span><span class="p">:</span> <span class="mi">3</span>
+        <span class="ss">specialties:
+            </span><span class="no">Piloting</span><span class="p">:</span>
+                <span class="o">-</span> <span class="no">Viper</span>
+                <span class="o">-</span> <span class="no">Raptor</span>
+    <span class="no">Rifleman</span><span class="p">:</span>
+        <span class="ss">skills:
+            </span><span class="no">Firearms</span><span class="p">:</span> <span class="mi">3</span>
+            <span class="no">Melee</span><span class="p">:</span> <span class="mi">3</span>
+</code></pre></div></div>
+
+<p>A Navy Pilot would start with Swimming: 2 and Piloting: 3, whereas a Marine Pilot would start with Melee: 2 and Piloting: 3.  The system will take the highest rating out of all applicable groups, so a Marine Rifleman would start with Melee: 3 and Firearms: 3.</p>
+
+<h3 id="skill-notes">Skill Notes</h3>
+
+<p>Sometimes you may want to prompt the player with a note about their skills.  You can do this with the optional ‘notes’ field.  For example, the following configuration will give a Combat Engineer Demolitions: 2 and prompt them to either raise it to 3 or add Technician at 3.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Combat</span> <span class="no">Engineer</span><span class="p">:</span>
+    <span class="ss">notes: </span><span class="s2">"A combat engineer should also take a 3 or higher in either Demo or Tech."</span>
+    <span class="ss">skills:
+        </span><span class="no">Demolitions</span><span class="p">:</span> <span class="mi">2</span>
+        <span class="no">Firearms</span><span class="p">:</span> <span class="mi">3</span>
+</code></pre></div></div>
+
+<h3 id="everyone-skills">Everyone Skills</h3>
+
+<p>Sometimes you may want to give a skill to everybody.  Instead of duplicating the information in each group, you can use the special “Everyone” group.   For example, to make everyone start with Alertness 2:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Everyone</span><span class="p">:</span>
+    <span class="ss">skills:
+        </span><span class="no">Alertness</span><span class="p">:</span> <span class="mi">2</span>
+</code></pre></div></div>
+
+<h2 id="unusual_skills">unusual_skills</h2>
+
+<p>You can mark certain skills as unusual in your setting.  Characters with those skills above Fair will receive a warning prompting them to have a good reason.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">-</span> <span class="no">Celtan</span>
+<span class="o">-</span> <span class="no">Demolitions</span>
+</code></pre></div></div>
+
+             </div>             
+                           </div>
+              
+                           <div class="col col-sm-3">
+                                                 <div class="sidebar">   
+                 
+<div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+                  
+<div class="sidebar-title">See AresMUSH In Action</div>
+
+<p>Visit the Ares <a href="http://mush.aresmush.com">Demo Game</a>.</p>
+
+<p>Find other Ares games at <a href="http://arescentral.aresmush.com">AresCentral</a>.</p>
+
+
+<div class="sidebar-title">Follow Us on Facebook</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1423276681271936";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-page" data-href="https://www.facebook.com/aresmush/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/aresmush/"><a href="https://www.facebook.com/aresmush/">Ares Mush</a></blockquote></div></div>
+
+<div class="sidebar-title">Discuss Ares</div>
+
+Have a question?  Want to talk about AresMUSH (or MU*s in general)?  Visit our <a href="http://forum.aresmush.com">Discussion Forum</a>.
+                  
+                  
+
+                  <div class="sidebar-title">Stay Up to Date</div>
+                          
+                          Get important updates about Ares on <a href="https://www.facebook.com/aresmush/">Facebook</a> or the <a href="http://forum.aresmush.com">Discussion Forum</a>.
+
+              <div id="searchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Search Results</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       
+
+       <div id="search-hits">
+         <!-- Hits widget will appear here -->
+       </div>
+
+
+       <div id="search-pagination">
+         <!-- Pagination widget will appear here -->
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/scripts/search.js"></script>
+<script>
+  initializeSearch( 'NI38C577BA',
+    '29793fd9084a3446072c14e471e32589',
+    'aresmush.com',
+    ' ' );
+</script>
+
+                  
+
+                  
+                
+                  
+                           </div>
+</div>
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>

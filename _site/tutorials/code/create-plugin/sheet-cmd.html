@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>Sheet Command - </title>
+    <meta property="og:title" content="Sheet Command - ">
+    <meta name="twitter:title" content="Sheet Command - ">
+    <meta itemprop="name" content="Sheet Command - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="Sheet Command" >
+    <meta property="og:url" content="/tutorials/code/create-plugin/sheet-cmd.html" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+                               
+             <div class="page">
+                 
+                 <h1>Sheet Command</h1>
+                 
+                 <div class="fs3-shortcut">
+                     <a href="#toc">(View Table of Contents)</a>
+                 </div>
+                 
+
+                     <p>Now that we have some abilities, we can create a character sheet command to show them.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sheet</span> <span class="o">&lt;</span><span class="nb">name</span><span class="o">&gt;</span>
+</code></pre></div></div>
+
+<h2 id="command-class">Command Class</h2>
+
+<p>The command class for this one is pretty simple, allowing an optional target name that defaults to the enactor name.  This version makes all character sheets public, but you could easily add an error check to restrict viewing if you wanted.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">module</span> <span class="nn">AresMUSH</span>    
+  <span class="k">module</span> <span class="nn">Cortex</span>
+    <span class="k">class</span> <span class="nc">SheetCmd</span>
+      <span class="kp">include</span> <span class="no">CommandHandler</span>
+      <span class="nb">attr_accessor</span> <span class="ss">:target_name</span>
+  
+      <span class="k">def</span> <span class="nf">parse_args</span>
+         <span class="nb">self</span><span class="p">.</span><span class="nf">target_name</span> <span class="o">=</span> <span class="n">cmd</span><span class="p">.</span><span class="nf">args</span> <span class="p">?</span> <span class="n">titlecase_arg</span><span class="p">(</span><span class="n">cmd</span><span class="p">.</span><span class="nf">args</span><span class="p">)</span> <span class="p">:</span> <span class="n">enactor_name</span>
+      <span class="k">end</span>
+  
+      <span class="k">def</span> <span class="nf">handle</span>
+        <span class="no">ClassTargetFinder</span><span class="p">.</span><span class="nf">with_a_character</span><span class="p">(</span><span class="nb">self</span><span class="p">.</span><span class="nf">target_name</span><span class="p">,</span> <span class="n">client</span><span class="p">,</span> <span class="n">enactor</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">model</span><span class="o">|</span>
+           <span class="n">template</span> <span class="o">=</span> <span class="no">SheetTemplate</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+           <span class="n">client</span><span class="p">.</span><span class="nf">emit</span> <span class="n">template</span><span class="p">.</span><span class="nf">render</span>
+        <span class="k">end</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<h2 id="sheet-template">Sheet Template</h2>
+
+<p>The real work lies in generating the <a href="/tutorials/code/templates.html">Template</a>.  Without a template, we’d have to build up the sheet output line by line, which would be a real chore.  Templates provide a way to cleanly render multi-line output.</p>
+
+<p>The real template has a bunch of pieces to show attributes, skills and traits.  We’re just going to examine the attribute section.  The others are very similar.</p>
+
+<h3 id="template-erb-file">Template ERB File</h3>
+
+<p>The first part of the template is the ERB (Embedded Ruby) file.  This mixes plain text and Ruby code.</p>
+
+<p>This snippet shows the header line, character sheet title, attributes title, the attributes display, and then the footer line:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%</span><span class="n">lh</span>
+<span class="o">&lt;</span><span class="sx">%= t('cortex.sheet_title', :name =</span><span class="o">&gt;</span> <span class="n">char</span><span class="p">.</span><span class="nf">name</span><span class="p">)</span> <span class="o">%&gt;</span>
+<span class="o">&lt;</span><span class="sx">%= line_with_text t('cortex.attributes_title') -%&gt;
+&lt;% attrs.each do |a| -%&gt;
+&lt;%=</span> <span class="n">a</span> <span class="o">-</span><span class="sx">%&gt;
+&lt;% end %&gt;</span>
+<span class="o">%</span><span class="n">lf</span>
+</code></pre></div></div>
+
+<p>Here are a few quick notes about template code.  For more information, see <a href="/tutorials/code/templates.html">Template</a>.</p>
+
+<ul>
+  <li>We can use our template helper methods, like <code class="language-ruby highlighter-rouge"><span class="n">line_with_text</span></code> and <code class="language-ruby highlighter-rouge"><span class="n">left</span><span class="p">()</span></code> to help format things.</li>
+  <li><code class="language-ruby highlighter-rouge"><span class="o">&lt;</span><span class="sx">%= ruby code %&gt;</span></code> displays the result of the Ruby code.  For example:  &lt;%= t(‘key’) %&gt; will display the translated string.</li>
+  <li><code class="language-ruby highlighter-rouge"><span class="o">&lt;</span><span class="sx">% ruby </span><span class="n">code</span> <span class="sx">%&gt;</span></code> (without the equals sign) is a non-display version, typically used in ‘each’ loops.</li>
+  <li>We can use formatting codes like <code class="language-ruby highlighter-rouge"><span class="o">%</span><span class="n">xh</span></code> for bold and <code class="language-ruby highlighter-rouge"><span class="o">%</span><span class="n">lh</span></code> for the header line.</li>
+  <li>There’s no need to use %R for linebreaks; whenever there’s a new line in the file - there will be a new line in the output.  A line that ends in <code class="language-ruby highlighter-rouge"><span class="o">-</span><span class="sx">%&gt;</span></code> won’t have a linebreak after it though.</li>
+</ul>
+
+<h3 id="template-renderer">Template Renderer</h3>
+
+<p>In the above example, we used two things - char and attrs - that don’t appear anywhere in the ERB file.  Where did they come from?   Every template has a helper class called a Renderer.  This defines methods and variables that can be accessed by the template’s ERB file.  It also provides the base <code class="language-ruby highlighter-rouge"><span class="n">render</span></code> method called by the command class.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">module</span> <span class="nn">AresMUSH</span>    
+  <span class="k">module</span> <span class="nn">Cortex</span>
+    <span class="k">class</span> <span class="nc">SheetTemplate</span> <span class="o">&lt;</span> <span class="no">ErbTemplateRenderer</span>
+      <span class="nb">attr_accessor</span> <span class="ss">:char</span>
+  
+      <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+        <span class="vi">@char</span> <span class="o">=</span> <span class="n">char</span>
+        <span class="k">super</span> <span class="no">File</span><span class="p">.</span><span class="nf">dirname</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"/sheet.erb"</span>
+      <span class="k">end</span>
+  
+      <span class="k">def</span> <span class="nf">attrs</span>
+        <span class="vi">@char</span><span class="p">.</span><span class="nf">cortex_attributes</span><span class="p">.</span><span class="nf">to_a</span><span class="p">.</span><span class="nf">sort_by</span> <span class="p">{</span> <span class="o">|</span><span class="n">a</span><span class="o">|</span> <span class="n">a</span><span class="p">.</span><span class="nf">name</span> <span class="p">}</span>
+          <span class="p">.</span><span class="nf">each_with_index</span>
+            <span class="p">.</span><span class="nf">map</span> <span class="k">do</span> <span class="o">|</span><span class="n">a</span><span class="p">,</span> <span class="n">i</span><span class="o">|</span> 
+              <span class="n">linebreak</span> <span class="o">=</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">?</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="p">:</span> <span class="s2">""</span>
+              <span class="n">title</span> <span class="o">=</span> <span class="n">left</span><span class="p">(</span><span class="s2">"</span><span class="si">#{</span> <span class="n">a</span><span class="p">.</span><span class="nf">name</span> <span class="si">}</span><span class="s2">:"</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
+              <span class="n">step</span> <span class="o">=</span> <span class="n">left</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="nf">die_step</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+              <span class="s2">"</span><span class="si">#{</span><span class="n">linebreak</span><span class="si">}</span><span class="s2">%xh</span><span class="si">#{</span><span class="n">title</span><span class="si">}</span><span class="s2">%xn </span><span class="si">#{</span><span class="n">step</span><span class="si">}</span><span class="s2">"</span>
+        <span class="k">end</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>The <code class="language-ruby highlighter-rouge"><span class="n">char</span></code> variable is passed in from the command class when it does <code class="language-ruby highlighter-rouge"><span class="n">template</span> <span class="o">=</span> <span class="no">SheetTemplate</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">model</span><span class="p">)</span></code>.</p>
+
+<p>The <code class="language-ruby highlighter-rouge"><span class="n">attrs</span></code> method loops through each of the attributes and formats them for display.  Technically we <em>could</em> do this in the ERB file.  But since we want to show two attributes on each line in columns, the ERB template code would look pretty messy.  It’s cleaner to do it this way.  In general, you want to minimize the amount of code that appears in your ERB file and leave it to simple data access like <code class="language-ruby highlighter-rouge"><span class="o">&lt;</span><span class="sx">%= char.name %&gt;</span></code> or <code class="language-ruby highlighter-rouge"><span class="o">&lt;</span><span class="sx">% attrs.each </span><span class="o">&gt;</span></code>.</p>
+
+
+                 <div class="tutorial-nav">
+                     <p>This article is part of the <a href="/tutorials/code/create-plugin">Creating a Plugin</a> tutorial.</p>
+    
+                     <div class="pagination-block">
+                         <ul>
+                             
+                             <li><a href="/tutorials/code/create-plugin/set-ability-cmd.html"> &larr; Previous</a></li>
+                             
+            
+                             <li><a href="/tutorials/code/create-plugin">Back to Start</a> </li>
+            
+        
+                             
+                             <li><a href="/tutorials/code/create-plugin/app-review-cmd.html">Next &rarr; </a></li>
+                             
+                         </ul>
+                     </div>
+    
+                     <br/>
+                 </div>
+                 
+             </div>             
+                           </div>
+              
+              
+                  <div class="col col-sm-3">
+                      
+                      
+                      <a name="toc"></a>
+                      <div class="sidebar fs3-sidebar"> 
+                      
+                        <div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+                      
+                      <h2>Creating a Plugin</h2>
+                      
+                     
+                      
+                                          
+                      
+                                          
+                      
+                                          
+                      
+                                          
+                      
+                                          
+                                          <ul>
+  <li><a href="/tutorials/code/create-plugin/">Tutorial Overview</a></li>
+  <li><a href="/tutorials/code/create-plugin/plugin-folder.html">Create a Plugin Folder</a></li>
+  <li><a href="/tutorials/code/create-plugin/plugin-module.html">Create a Plugin Module</a></li>
+  <li><a href="/tutorials/code/create-plugin/config-file.html">Create a Config File</a></li>
+  <li><a href="/tutorials/code/create-plugin/help-file.html">Create a Help File</a></li>
+  <li><a href="/tutorials/code/create-plugin/db-model.html">Create a Database Model</a></li>
+  <li><a href="/tutorials/code/create-plugin/abilities-cmd.html">Create the Abilities Command</a></li>
+  <li><a href="/tutorials/code/create-plugin/set-ability-cmd.html">Create the Set Ability Command</a></li>
+  <li><a href="/tutorials/code/create-plugin/sheet-cmd.html">Create the Sheet Command</a></li>
+  <li><a href="/tutorials/code/create-plugin/app-review-cmd.html">Expand the App Review Command</a></li>
+  <li><a href="/tutorials/code/create-plugin/roll-cmd.html">Create the Roll Command</a></li>
+  <li><a href="/tutorials/code/create-plugin/locale-file.html">Create a Translations File</a></li>
+  <li><a href="/tutorials/code/create-plugin/cmd-dispatch.html">Create a Dispatch Link</a></li>
+  <li><a href="/tutorials/code/create-plugin/next-steps.html">Next Steps</a></li>
+</ul>
+
+                                          
+                      
+                                          
+                      
+                  </div>
+              </div>
+
+              <div id="searchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Search Results</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       
+
+       <div id="search-hits">
+         <!-- Hits widget will appear here -->
+       </div>
+
+
+       <div id="search-pagination">
+         <!-- Pagination widget will appear here -->
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/scripts/search.js"></script>
+<script>
+  initializeSearch( 'NI38C577BA',
+    '29793fd9084a3446072c14e471e32589',
+    'aresmush.com',
+    ' ' );
+</script>
+              
+</div>
+
+
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>Configuring Ares - </title>
+    <meta property="og:title" content="Configuring Ares - ">
+    <meta name="twitter:title" content="Configuring Ares - ">
+    <meta itemprop="name" content="Configuring Ares - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="Configuring Ares" >
+    <meta property="og:url" content="/tutorials/config/" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+<h1>Configuring Ares</h1>
+
+    <div class="tags-box">
+                 <ul class="tags-box">
+                 
+                 <li>[config]</li>
+                 
+                 </ul>
+    </div>
+                               
+             <div class="page">
+                 <p>AresMUSH is ready to go out of the box with a default configuration based on a Battlestar Galactica setting.  Most games will want to customize Ares to their own theme and preferences.  These tutorials will show you how.</p>
+
+<blockquote>
+<i class="fa fa-exclamation-triangle fa-2x" aria-hidden="true"></i>
+ <b>Beta Warning</b>
+ 
+<p>Ares is still in beta, including the documentation.  While it's stable overall, features are subject to change and some bugs are to be expected.  Watch the <a href="http://forum.aresmush.com">Forum</a> for updates.</p>
+</blockquote>
+
+<div id="inline_toc">
+  <p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#configuration-files" id="markdown-toc-configuration-files">Configuration Files</a></li>
+  <li><a href="#essential-config" id="markdown-toc-essential-config">Essential Config</a></li>
+  <li><a href="#fs3-config" id="markdown-toc-fs3-config">FS3 Config</a>    <ul>
+      <li><a href="#basic-fs3-config" id="markdown-toc-basic-fs3-config">Basic FS3 Config</a></li>
+      <li><a href="#fs3-gear-config" id="markdown-toc-fs3-gear-config">FS3 Gear Config</a></li>
+      <li><a href="#advanced-fs3-config" id="markdown-toc-advanced-fs3-config">Advanced FS3 Config</a></li>
+    </ul>
+  </li>
+  <li><a href="#other-config" id="markdown-toc-other-config">Other Config</a>    <ul>
+      <li><a href="#uncommon-config" id="markdown-toc-uncommon-config">Uncommon Config</a></li>
+    </ul>
+  </li>
+  <li><a href="#general-config-topics" id="markdown-toc-general-config-topics">General Config Topics</a></li>
+</ul>
+
+</div>
+
+<h2 id="configuration-files">Configuration Files</h2>
+
+<p>The easiest way to configure your game is through the game’s <a href="/web-portal">Web Portal</a>.  Log in as an admin user and visit  <code class="language-ruby highlighter-rouge"><span class="no">Admin</span> <span class="o">-&gt;</span> <span class="no">Setup</span></code>.</p>
+
+<p>You’ll see a list of configuration files with settings you can change.</p>
+
+<figure>
+
+    <div class="figure-contents">
+
+        
+           <a class="no_icon" target="_blank" href="/images/web-portal/game-setup.png">
+        
+
+          <img class="docimage" src="/images/web-portal/game-setup.png" alt="" />
+
+          </a>
+
+          
+
+        </div>
+
+</figure>
+
+<p>Clicking on any config file will present you with a screen where you can edit the settings.</p>
+
+<figure>
+
+    <div class="figure-contents">
+
+        
+           <a class="no_icon" target="_blank" href="/images/web-portal/config.png">
+        
+
+          <img class="docimage" src="/images/web-portal/config.png" alt="" />
+
+          </a>
+
+          
+
+        </div>
+
+</figure>
+
+<p>Ares configuration files use YAML, so you should check out the <a href="/tutorials/code/yaml.html">Understanding YAML</a> tutorial before diving into the advanced configuration.</p>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Coders can also edit the config files in the server shell, but you’ll need to ue the <code class="language-ruby highlighter-rouge"><span class="nb">load</span> <span class="n">config</span></code> command afterwards to reload the configuration.  The Web Portal automatically reloads the config, so that step is not necessary when using the web editor.</p>
+</blockquote>
+
+<h2 id="essential-config">Essential Config</h2>
+
+<p>These are settings that pretty much every game will want to configure.</p>
+
+<ul>
+  <li><a href="/tutorials/config/game_dir.html">Configuring the Game Directory Info</a></li>
+  <li><a href="/tutorials/config/website.html">Configuring the Web Portal</a></li>
+  <li><a href="/tutorials/config/skin.html">Configuring the Game Skin (Lines)</a></li>
+  <li><a href="/tutorials/config/demographics.html">Configuring Demographics</a></li>
+  <li><a href="/tutorials/config/ictime.html">Configuring the IC Time System</a></li>
+  <li><a href="/tutorials/config/plugins.html">Enabling and Disabling Plugins</a></li>
+  <li><a href="/tutorials/manage/backups.html">Setting Up Backups</a></li>
+</ul>
+
+<h2 id="fs3-config">FS3 Config</h2>
+
+<p>If you intend to use the FS3 skills/combat systems, you’ll want to review these settings.</p>
+
+<h3 id="basic-fs3-config">Basic FS3 Config</h3>
+
+<p>These are the basic configuration options that most games will need to tweak for their theme/setting.</p>
+
+<ul>
+  <li><a href="/tutorials/config/fs3skills_skills.html">Configuring FS3 - Skill List</a></li>
+  <li><a href="/tutorials/config/fs3skills_chargen.html">Configuring FS3 - Chargen</a></li>
+  <li><a href="/tutorials/config/fs3combat_misc.html">Configuring FS3 Combat Miscellaneous</a></li>
+  <li><a href="/tutorials/config/fs3combat_skills.html">Configuring FS3 Combat Skills</a></li>
+</ul>
+
+<h3 id="fs3-gear-config">FS3 Gear Config</h3>
+
+<p>The default gear lists are designed for a Battlestar setting.  If you’re using another setting, you’ll probably need to tweak the gear lists.  If you have custom vehicles or unusual combatant types (like six-legged aliens.html), you’ll need to adjust the hit location tables.</p>
+
+<ul>
+  <li><a href="/tutorials/config/fs3combat_armor.html">Configuring FS3 Combat Armor</a></li>
+  <li><a href="/tutorials/config/fs3combat_vehicles.html">Configuring FS3 Combat Vehicles and Mounts</a></li>
+  <li><a href="/tutorials/config/fs3combat_weapons.html">Configuring FS3 Combat Weapons</a></li>
+  <li><a href="/tutorials/config/fs3combat_hitloc.html">Configuring FS3 Combat Hit Locations</a></li>
+</ul>
+
+<h3 id="advanced-fs3-config">Advanced FS3 Config</h3>
+
+<p>These are advanced customization settings that most games won’t need to alter.</p>
+
+<ul>
+  <li><a href="/tutorials/config/fs3skills_xp.html">Configuring FS3 - Experience (XP)</a></li>
+  <li><a href="/tutorials/config/fs3skills_misc.html">Configuring FS3 - Luck and Miscellaneous</a></li>
+  <li><a href="/tutorials/config/fs3combat_damage.html">Configuring FS3 Combat Damage</a></li>
+  <li><a href="/tutorials/config/fs3combat_npcs.html">Configuring FS3 Combat NPCs</a></li>
+</ul>
+
+<h2 id="other-config">Other Config</h2>
+
+<p>A variety of other settings exist, but the defaults will work well for most games.</p>
+
+<ul>
+  <li><a href="/tutorials/config/ban.html">Configuring Banned and Suspect Sites</a></li>
+  <li><a href="/tutorials/config/achievements.html">Configuring the Achievements System</a></li>
+  <li><a href="/tutorials/config/channels.html">Configuring the Channel System</a></li>
+  <li><a href="/tutorials/config/cookies.html">Configuring the Cookie System</a></li>
+  <li><a href="/tutorials/config/chargen.html">Configuring Chargen</a></li>
+  <li><a href="/tutorials/config/date.html">Configuring Date and Time Formats</a></li>
+  <li><a href="/tutorials/config/describe.html">Configuring the Description System</a></li>
+  <li><a href="/tutorials/config/events.html">Configuring the Events System</a></li>
+  <li><a href="/tutorials/config/idle.html">Configuring the Idle System</a></li>
+  <li><a href="/tutorials/config/jobs.html">Configuring the Jobs System</a></li>
+  <li><a href="/tutorials/config/login.html">Configuring the Login System</a></li>
+  <li><a href="/tutorials/config/ooctime.html">Configuring the OOC Time System</a></li>
+  <li><a href="/tutorials/config/page.html">Configuring the Page System</a></li>
+  <li><a href="/tutorials/config/places.html">Configuring the Places System</a></li>
+  <li><a href="/tutorials/config/ranks.html">Configuring the Ranks System</a></li>
+  <li><a href="/tutorials/config/names.html">Configuring Restricted Names</a></li>
+  <li><a href="/tutorials/config/roles.html">Configuring the Roles System</a></li>
+  <li><a href="/tutorials/config/rooms.html">Configuring the Rooms System</a></li>
+  <li><a href="/tutorials/config/scenes.html">Configuring the Scene System</a></li>
+  <li><a href="/tutorials/config/secrets.html">Configuring Secret Codes</a></li>
+  <li><a href="/tutorials/config/status.html">Configuring the Status System</a></li>
+  <li><a href="/tutorials/config/weather.html">Configuring the Weather System</a></li>
+  <li><a href="/tutorials/config/who.html">Configuring the Who/Where System</a></li>
+  <li><a href="/tutorials/config/wiki.html">Configuring the Wiki</a></li>
+</ul>
+
+<h3 id="uncommon-config">Uncommon Config</h3>
+
+<p>These configuration options will probably not need to be changed unless your server or database changes.</p>
+
+<ul>
+  <li><a href="/tutorials/config/db.html">Configuring the Database</a></li>
+  <li><a href="/tutorials/config/server.html">Configuring the Server Info</a></li>
+  <li><a href="/tutorials/config/arescentral.html">Configuring AresCentral</a></li>
+  <li><a href="/tutorials/config/api-proxy.html">Using the API Proxy</a>.html)</li>
+</ul>
+
+<h2 id="general-config-topics">General Config Topics</h2>
+
+<ul>
+  <li><a href="/tutorials/code/cron.html">Configuring Cron Jobs</a> - Setting up tasks to run periodically.</li>
+  <li><a href="/tutorials/code/yaml.html">Understanding YAML</a> - All about YAML configuration files.</li>
+  <li><a href="/tutorials/code/troubleshooting-yaml.html">Troubleshooting YAML</a> - Dealing with YAML configuration problems.</li>
+</ul>
+
+             </div>             
+                           </div>
+              
+                           <div class="col col-sm-3">
+                                                 <div class="sidebar">   
+                 
+<div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+                  
+<div class="sidebar-title">See AresMUSH In Action</div>
+
+<p>Visit the Ares <a href="http://mush.aresmush.com">Demo Game</a>.</p>
+
+<p>Find other Ares games at <a href="http://arescentral.aresmush.com">AresCentral</a>.</p>
+
+
+<div class="sidebar-title">Follow Us on Facebook</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1423276681271936";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-page" data-href="https://www.facebook.com/aresmush/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/aresmush/"><a href="https://www.facebook.com/aresmush/">Ares Mush</a></blockquote></div></div>
+
+<div class="sidebar-title">Discuss Ares</div>
+
+Have a question?  Want to talk about AresMUSH (or MU*s in general)?  Visit our <a href="http://forum.aresmush.com">Discussion Forum</a>.
+                  
+                  
+
+                  <div class="sidebar-title">Stay Up to Date</div>
+                          
+                          Get important updates about Ares on <a href="https://www.facebook.com/aresmush/">Facebook</a> or the <a href="http://forum.aresmush.com">Discussion Forum</a>.
+
+              <div id="searchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Search Results</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       
+
+       <div id="search-hits">
+         <!-- Hits widget will appear here -->
+       </div>
+
+
+       <div id="search-pagination">
+         <!-- Pagination widget will appear here -->
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/scripts/search.js"></script>
+<script>
+  initializeSearch( 'NI38C577BA',
+    '29793fd9084a3446072c14e471e32589',
+    'aresmush.com',
+    ' ' );
+</script>
+
+                  
+
+                  
+                
+                  
+                           </div>
+</div>
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>

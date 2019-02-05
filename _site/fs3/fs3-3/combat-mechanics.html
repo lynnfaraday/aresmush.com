@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>FS3.3 - Combat Mechanics - </title>
+    <meta property="og:title" content="FS3.3 - Combat Mechanics - ">
+    <meta name="twitter:title" content="FS3.3 - Combat Mechanics - ">
+    <meta itemprop="name" content="FS3.3 - Combat Mechanics - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="FS3.3 - Combat Mechanics" >
+    <meta property="og:url" content="/fs3/fs3-3/combat-mechanics.html" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+                               
+             <div class="page">
+                 
+                 <div class="fs3-shortcut">
+                     <a href="#toc">(View Table of Contents)</a>
+                 </div>
+                 
+<h1>FS3.3 - Combat Mechanics</h1>
+
+                 <p>For those who care about the nitty-gritty about how the combat system works, this article is for you.</p>
+
+<p><a name="attacks"></a></p>
+
+<h1 id="initiative">Initiative</h1>
+
+<p>Initiative is a based on a simple roll of whatever is configured as the initiative stat (Alertness by default, which represents situational awareness).   Most successes goes first.  Ties are broken by a random die roll.</p>
+
+<p>You can get 3 extra initiative dice by spending luck.   You also get 3 dice for subdue, suppress or distract actions.  Since their main effects expire at the end of the turn, this initiative bonus helps them to be more relevant.</p>
+
+<h1 id="attacks">Attacks</h1>
+
+<h2 id="aim">Aim</h2>
+
+<p>Aiming givs a +3 bonus to attack the next turn. Spending more than one turn aiming does not increase the modifier, and the modifier is lost if you switch targets.</p>
+
+<h2 id="suppress-and-distract">Suppress and Distract</h2>
+
+<p>Suppression and distraction are both resolved by making an attack roll as normal, with a defense of a Composure Roll instead of the normal defense skill. If the attack “hits”, no damage is done but a penalty is applied.</p>
+
+<p>For suppression, the penalty applies a number of stress points equal to 2 plus the difference between the attacker and defender’s roll results.</p>
+
+<p>For example: Bruno fires his pistol to suppress Tom. Bruno rolls a 3 Hits and Tom rolls 1, giving a difference of 2. This inflicts 4 stress points on Tom.</p>
+
+<p>A fully automatic or explosive weapon can suppress up to 3 targets in a single turn. Each target requires a separate attack and defense roll.</p>
+
+<p>For distraction, there’s a distract penalty (separate from suppression) equal to the difference between the attacker and defender’s roll results.</p>
+
+<p>Suppression penalties apply to attacks only.  Distraction penalties apply to both attacks <em>and</em> defense.</p>
+
+<h2 id="subdue-and-escape">Subdue and Escape</h2>
+
+<p>A subdue attempt is resolved by making an attack roll as normal. If the attack “hits”, the target is subdued. No damage is done.</p>
+
+<p>The attacker cannot take any other action (other than “free” actions) while subduing another character; if he does, the other character automatically escapes.  An escape is resolved with the same roll again.  If the defender wins, they escape and may take a normal action next turn.</p>
+
+<h2 id="rally">Rally</h2>
+
+<p>Rally requires no special roll, but immediately allows the rallied character to make another Knockout Roll. If the Knockout Roll succeeds, the character is no longer knocked out.</p>
+
+<h2 id="treat">Treat</h2>
+
+<p>The healer makes a first aid ability roll. If successful, it reduces wound modifiers for the target’s worst injury (the same as if a wound had been healed).  It also allows a knocked out character to immediately make another Knockout Roll. If the Knockout Roll succeeds, the character is no longer knocked out.</p>
+
+<h2 id="burst-and-auto-fire">Burst and Auto Fire</h2>
+
+<p>Full-auto (8-round burst) or burst fire (3-round burst) is resolved just like a regular attack, but with a separate attack and defense roll per bullet. All bullets after the first one receive a negative modifier based on the recoil statistic of the weapon multiplied by the number of bullets so far (excluding the first).</p>
+
+<p>Example: Bob is firing full-auto at a single target. His weapon has a recoil modifier of 1. He makes 8 attack rolls total, the first with a -0 modifier, the second with -1, the third with -2, etc. Defense rolls, damage, armor, etc. must be determined separately for each of the bullets.</p>
+
+<p>Full-auto fire can be directed at up to 3 targets in a single turn.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Number of Targets</th>
+      <th>Bullets Per Target</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="explosions">Explosions</h2>
+
+<p>Third edition has done away with the different target ranges for explosive attacks.  Instead you can target up to three people with the explosive.  There is a separate attack and defense roll for each target.</p>
+
+<p>In addition to the regular attack, explosive weapons with shrapnel have a chance of doing 0-5 shrapnel wounds to each target in the blast.</p>
+
+<p><a name="defense"></a></p>
+
+<h1 id="defense">Defense</h1>
+
+<p>The defense skill used against an attack is determined by the following chart:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Defender in vehicle</td>
+      <td>Use vehicle pilot’s piloting skill</td>
+    </tr>
+    <tr>
+      <td>Defender and attacker both have melee weapons</td>
+      <td>Use the skill for the <em>defender’s</em> weapon.</td>
+    </tr>
+    <tr>
+      <td>Otherwise</td>
+      <td>Use the “defense” skill for the defender’s combatant type.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For example:  Erson is fighting Britt.  Erson has a sword (skill: Blades) and Britt has a staff (skill: Staves).  Erson uses the Blades skill for attack, but Britt uses her Staves skill for defense.   When it’s Britt’s turn, she attacks with Staves and Erson defens with Blades.</p>
+
+<p>Another example:  This time Gray is attacking Britt.  He has a rifle and she has her staff.  Even though Britt has a melee weapon, she doesn’t get to use it against a firearm.  She defends with the base defense skill (typically Reflexes).  He also uses the base defense skill when she attacks him back.</p>
+
+<p>Note: No matter which passenger in a vehicle is targeted, the defense roll is always based on the <em>pilot’s</em> piloting skill.</p>
+
+<p><a name="stress"></a></p>
+
+<h1 id="stress">Stress</h1>
+
+<p>Stress accumulates in combat as your character is attacked, making you less effective.  Each stress point causes a -1 to your attack rolls.</p>
+
+<p>Every attack - even if it does no damage - inflicts 1 stress point, up to a maximum of 5.  The suppress attack inflicts more stress than normal - see that attack description for details.</p>
+
+<p>You automatically recover 1 stress point every turn.  You can recover additional stress by making a successful Composure roll - 1 extra point per success.</p>
+
+<p><a name="armor"></a></p>
+
+<h1 id="armor">Armor</h1>
+
+<p>Some characters may wear body armor to protect them from damage. Most armor will only protect certain body parts, so the first step is using the hit location to determine whether the armor even comes into play. Some areas are protected better than others, so hit location determines the armor’s protection value.</p>
+
+<p>Some weapons get through armor better than others, too.  This is represented by the weapon’s penetration value.  Net successes on the attack roll can help the attacker find a weak spot in the armor, boosting the weapon’s penetration value.</p>
+
+<p>Armor is determined as follows:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">roll</span> <span class="o">=</span> <span class="mi">1</span><span class="n">d8</span> <span class="o">+</span> <span class="n">attacker</span> <span class="n">net</span> <span class="n">successes</span> <span class="o">+</span> <span class="n">weapon</span> <span class="n">penetration</span> <span class="o">-</span> <span class="n">armor</span> <span class="n">protection</span>
+</code></pre></div></div>
+
+<p>Look up the roll value on the following table to determine the result:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Roll</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8+</td>
+      <td>Attack found a spot not covered by armor; armor has no effect.</td>
+    </tr>
+    <tr>
+      <td>6-7</td>
+      <td>Attack found a weak spot.  Armor reduces damage lethality by 1-24.</td>
+    </tr>
+    <tr>
+      <td>4-5</td>
+      <td>Armor slows some. Armor reduces damage lethality by 25-49.</td>
+    </tr>
+    <tr>
+      <td>2-3</td>
+      <td>Armor slows considerably. Armor reduces damage lethality by 50-99.</td>
+    </tr>
+    <tr>
+      <td>&lt;1</td>
+      <td>Armor stops the attack completely; no damage is done.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The table below shows some suggested protection and penetration based on the modern world.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Weapon / Armor</th>
+      <th>Penetration / Protection Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Interior wall (drywall / plaster)</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Knife</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Solid wood furniture</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Anti-Personnel Shrapnel</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Light body armor (undershirt vest)</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Light small arms (pistols, SMGs)</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Military body armor (kevlar vest)</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Medium small arms (rifles)</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Car door</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Brick wall</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Light Truck</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Fighter Jet</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Heavy small arms (12.5mm/.50cal)</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Light cannon (20mm)</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Cargo aircraft / Bomber</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Anti-Aircraft Missile</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Armored Personnel Carrier (APC)</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Medium cannon (40mm)</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>Tank</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Tank cannon</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Anti-Tank Missile</td>
+      <td>25</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="cover"></a></p>
+
+<h1 id="cover">Cover</h1>
+
+<p>If a target is in cover, the attack has a chance of being stopped by cover instead of hitting the target.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attack Roll</th>
+      <th>Chance of Hitting Cover</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Crushing Victory</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>Solid Victory</td>
+      <td>25%</td>
+    </tr>
+    <tr>
+      <td>Marginal Victory</td>
+      <td>50%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="damage"></a></p>
+
+<h1 id="damage">Damage</h1>
+
+<p>The damage severity of a wound is based on a percentile dice roll modified by:</p>
+
+<ul>
+  <li>The weapon’s lethality statistic.</li>
+  <li>+30 if the target is a NPC, because they’re not a hero and get badly wounded more easily.</li>
+  <li>+30 if the hit location was deemed a “Critical” one on the hit location chart.</li>
+  <li>+0 if the hit location was deemed a “Vital” one on the hit location chart.</li>
+  <li>-30 if the hit location is neither Critical nor Vital on the hit location chart.</li>
+  <li>armor, if it applies</li>
+  <li>+30 if the attacker spent luck on attack</li>
+  <li>-30 if the defender spent luck on defense</li>
+  <li>+5 for every net success the attacker gets beyond the first.</li>
+</ul>
+
+<p>All modifiers are cumulative, and are added to the percentile roll to give a final result based on the damage table.  The damage table is configurable by each game.  Here is the standard one:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Roll</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>19 or less</td>
+      <td>Graze</td>
+    </tr>
+    <tr>
+      <td>20 - 69</td>
+      <td>FleshWound</td>
+    </tr>
+    <tr>
+      <td>70 - 94</td>
+      <td>Impaired</td>
+    </tr>
+    <tr>
+      <td>95 or higher</td>
+      <td>Incapacitated</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Knockout is based on a composure roll, offset by the damage modifier.  PCs receive an automatic +3 bonus to the knockout roll.</p>
+
+<p><a name="hit-location"></a></p>
+
+<h1 id="hit-location">Hit Location</h1>
+
+<p>FS3 uses a custom hit location system.  First choose a hit location you’re aiming at.  Typically this is the center of mass (chest for humans) unless you’re doing a called shot.  Imagine an archery target with rings superimposed over this hit location.</p>
+
+<figure style="max-width: 400px">
+
+    <div class="figure-contents">
+
+        
+           <a class="no_icon" target="_blank" href="/images/hitloc_chest.jpg">
+        
+
+          <img class="docimage" src="/images/hitloc_chest.jpg" alt="" />
+
+          </a>
+
+          
+
+        </div>
+
+</figure>
+
+<p>The better you roll, the closer you’ll get to the bullseye.</p>
+
+<p>Mechanics-wise, each hit location is assigned a list of 10 places where a hit might land, corresponding to the green, yellow and red zones of the bullseye chart.</p>
+
+<p>Hit location is determined by rolling a random number from 1-10, then adding the attacker’s net successes.  So the more successes, the closer you’ll get to the bullseye.</p>
+
+<h2 id="called-shots">Called Shots</h2>
+
+<p>When you target a hit location <em>other than the center of mass</em>, it shifts the bullseye to that location.</p>
+
+<figure style="max-width: 400px">
+
+    <div class="figure-contents">
+
+        
+           <a class="no_icon" target="_blank" href="/images/hitloc_head.jpg">
+        
+
+          <img class="docimage" src="/images/hitloc_head.jpg" alt="" />
+
+          </a>
+
+          
+
+        </div>
+
+</figure>
+
+<figure style="max-width: 400px">
+
+    <div class="figure-contents">
+
+        
+           <a class="no_icon" target="_blank" href="/images/hitloc_hand.jpg">
+        
+
+          <img class="docimage" src="/images/hitloc_hand.jpg" alt="" />
+
+          </a>
+
+          
+
+        </div>
+
+</figure>
+
+<p>Notice that more of the bullseye now falls on dead air, increasing the chance of a miss.  With a called shot, consider the attacker’s net successes.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attacker Net Successes</th>
+      <th>Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&gt;= 3</td>
+      <td>Exactly Where Aimed</td>
+    </tr>
+    <tr>
+      <td>1-2</td>
+      <td>Random roll with the bullseye centered on a different location</td>
+    </tr>
+    <tr>
+      <td>0 (tie)</td>
+      <td>Near Miss</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>So each location has its own hit location chart for use in called shots.</p>
+
+<p><a name="vehicles"></a></p>
+
+<h1 id="vehicle-crew-hits">Vehicle Crew Hits</h1>
+
+<p>If a vehicle is hit in a crew compartment, each passenger may receive shrapnel wounds.  The amount of shrapnel depends on the damage to the vehicle.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Vehicle Damage</th>
+      <th>Shrapnel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Graze</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Flesh</td>
+      <td>0-1</td>
+    </tr>
+    <tr>
+      <td>Impair</td>
+      <td>0-2</td>
+    </tr>
+    <tr>
+      <td>Incap</td>
+      <td>0-4</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="mounts"></a></p>
+
+<h1 id="mounts">Mounts</h1>
+
+<p>Mounts are similar to vehicles, but simpler.  The game configuration defines types of mounts (e.g. Horse, War Horse, Elephant).  Each type of mount provides a bonus to attack against unmounted opponents.  When an unmounted opponent attacks the rider, that bonus is <em>subtracted from</em> the attack roll (making it harder for someone on the ground to hit a mounted rider).</p>
+
+<p>When a mounted opponent is hit, there’s a chance the hit will hit the mount instead of the rider.   If the attacker gets 3+ net successes, he automatically hits the rider.  Otherwise, there’s a 20% chance of hitting the mount if the attacker is also mounted, and 40% if he’s unmounted.  You can also target the mount specifically, giving you a 90% chance of hitting the mount.</p>
+
+<p>Every time a mount is hit, it gets a knockout roll with a number of dice equal to the mount’s toughness rating.  You can use toughness to reflect the mount’s size and/or armor.   If a mount fails it’s KO roll, it’s taken out and the rider becomes unmounted and takes some fall damage.  Otherwise the mount is only injured.  This is just a RP effect; damage isn’t tracked for mounts.</p>
+
+             </div>             
+                           </div>
+              
+              
+                  <div class="col col-sm-3">
+                      
+                      
+                      <a name="toc"/>
+                      <div class="sidebar fs3-sidebar"> 
+                          
+                      <h2>FS3.3 System Reference Document</h2>
+                      <a href="/fs3/fs3-3/">Introduction</a>
+                      
+                      <h4>Character Guide</h4>
+                      <ul>
+                          <li><a href="/fs3/fs3-3/basics.html">System Basics</a></li>
+                          <li><a href="/fs3/fs3-3/chargen.html">Character Creation</a>
+                              <ul>
+                                  <li><a href="/fs3/fs3-3/chargen.html#concept">Concept</a></li>
+                                  <li><a href="/fs3/fs3-3/chargen.html#ability-points">Ability Points</a></li>
+                                  <li><a href="/fs3/fs3-3/chargen.html#attributes">Attributes</a></li>
+                                  <li><a href="/fs3/fs3-3/chargen.html#action-skills">Action Skills</a></li>
+                                  <li><a href="/fs3/fs3-3/chargen.html#background-skills">Background Skills</a></li>
+                                  <li><a href="/fs3/fs3-3/chargen.html#languages">Languages</a></li>
+                                  <li><a href="/fs3/fs3-3/chargen.html#advantages">Advantages</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="/fs3/fs3-3/detailed-ratings.html">Detailed Ability Ratings</a></li>
+                          <li><a href="/fs3/fs3-3/experience.html">Experience</a></li>
+                              
+                              
+                          </ul>
+                      
+                      <h4>Conflict Guide</h4>
+                      <ul>
+                          
+                          <li><a href="/fs3/fs3-3/conflict.html">Introduction</a></li>
+                          <li><a href="/fs3/fs3-3/conflict.html#when-to-roll">When to Roll</a></li>
+                          <li><a href="/fs3/fs3-3/conflict.html#hail-mary">Hail Mary Rolls</a></li>
+                          <li><a href="/fs3/fs3-3/conflict.html#what-to-roll">What to Roll</a></li>
+                          <li><a href="/fs3/fs3-3/conflict.html#defaulting">Defaulting</a></li>
+                          <li><a href="/fs3/fs3-3/conflict.html#specialties">Specialties</a></li>
+                          <li><a href="/fs3/fs3-3/conflict.html#success-level">Success Level</a></li>
+                          <li><a href="/fs3/fs3-3/conflict.html#modifiers">Modifiers</a></li>
+                          <li><a href="/fs3/fs3-3/conflict.html#linked-attributes">Linked Attributes</a></li>
+                          <li><a href="/fs3/fs3-3/conflict.html#opposed-rolls">Opposed Rolls</a></li>
+                          <li><a href="/fs3/fs3-3/conflict.html#teamwork">Teamwork</a></li> 
+                          </ul>
+
+                      <h4>Luck Guide</h4>
+                      <ul>
+                          
+                          <li><a href="/fs3/fs3-3/luck.html">Luck Points</a></li>
+                          </ul>
+         
+                          <h4>Combat Guide</h4>
+                          <ul>
+                          <li><a href="/fs3/fs3-3/combat.html">Introduction</a></li>
+                          <li><a href="/fs3/fs3-3/combat.html#turns">Turns</a></li>
+                          <li><a href="/fs3/fs3-3/combat.html#actions">Actions</a></li>
+                          <li><a href="/fs3/fs3-3/combat.html#initiative">Initiative</a></li>
+                          <li><a href="/fs3/fs3-3/combat.html#stance">Stance</a></li>
+                          <li><a href="/fs3/fs3-3/combat.html#vehicles">Vehicles</a></li>
+                          <li><a href="/fs3/fs3-3/combat.html#attack-rolls">Attack Rolls</a></li>
+                          <li><a href="/fs3/fs3-3/combat.html#hit-location">Hit Location</a></li>
+                          <li><a href="/fs3/fs3-3/combat.html#cover-and-armor">Cover and Armor</a></li>
+                          <li><a href="/fs3/fs3-3/combat.html#damage">Damage</a></li>
+                          <li><a href="/fs3/fs3-3/combat.html#luck">Luck</a></li>
+                          <li><a href="/fs3/fs3-3/combat.html#healing">Healing</a></li>                                 
+                          </ul>
+                          
+                          <h4>Combat Organizer Guide</h4>
+                          <ul>
+                          <li><a href="/fs3/fs3-3/running-combat.html">Running Combats</a></li>                                 
+                          </ul>
+                          
+                          <h4>Code Help</h4>
+                          <ul>
+                              <li><a href="/fs3/fs3-3/roll-quickref.html">Rolls Quick Reference</a></li>                                 
+                              <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>                               
+                              <li><a href="/fs3/fs3-3/combat-walkthrough.html">Combat Interactive Walkthrough</a></li>                               
+
+                          </ul>
+                          
+                          <h4>Design Guide</h4>
+                          
+                          <ul>
+                              <li><a href="/fs3/fs3-3/choosing-fs3.html">Choosing FS3</a></li>
+                              <li><a href="/fs3/fs3-3/core.html">FS3 Core</a></li>
+                              <li><a href="/fs3/fs3-3/tweaking-fs3.html">Tweaking FS3</a></li>
+                              <li><a href="/fs3/fs3-3/min-maxing.html">Managing Min-Maxing</a></li>
+                              <li><a href="/fs3/fs3-3/mechanics.html">Dice Mechanics</a></li>
+                              <li><a href="/fs3/fs3-3/combat-mechanics.html">Combat Mechanics</a></li>                                 
+                              </ul>
+                  </div>
+              </div>
+              
+</div>
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>

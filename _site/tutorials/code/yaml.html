@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>Undestanding YAML - </title>
+    <meta property="og:title" content="Undestanding YAML - ">
+    <meta name="twitter:title" content="Undestanding YAML - ">
+    <meta itemprop="name" content="Undestanding YAML - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="Undestanding YAML" >
+    <meta property="og:url" content="/tutorials/code/yaml.html" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+<h1>Undestanding YAML</h1>
+
+    <div class="tags-box">
+                 <ul class="tags-box">
+                 
+                 <li>[config]</li>
+                 
+                 <li>[yaml]</li>
+                 
+                 </ul>
+    </div>
+                               
+             <div class="page">
+                 <p><a href="http://www.yaml.org/start.html">YAML</a> is the data format used for Ares’ configuration files.  It is similar to other formats like JSON and XML, but is designed to be more human-readable.</p>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Indentation is super-important in YAML files.  Always make sure things are lined up with each other.</p>
+</blockquote>
+
+<div id="inline_toc">
+  <p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#example-yaml" id="markdown-toc-example-yaml">Example YAML</a></li>
+  <li><a href="#key-naming" id="markdown-toc-key-naming">Key Naming</a></li>
+  <li><a href="#editing-yaml-config" id="markdown-toc-editing-yaml-config">Editing YAML Config</a></li>
+  <li><a href="#data-types" id="markdown-toc-data-types">Data Types</a>    <ul>
+      <li><a href="#strings" id="markdown-toc-strings">Strings</a></li>
+      <li><a href="#numbers" id="markdown-toc-numbers">Numbers</a></li>
+      <li><a href="#lists-arrays" id="markdown-toc-lists-arrays">Lists (Arrays)</a></li>
+      <li><a href="#complex-structures-hashes" id="markdown-toc-complex-structures-hashes">Complex Structures (Hashes)</a></li>
+    </ul>
+  </li>
+  <li><a href="#troubleshooting-yaml" id="markdown-toc-troubleshooting-yaml">Troubleshooting YAML</a></li>
+</ul>
+
+</div>
+
+<h2 id="example-yaml">Example YAML</h2>
+
+<p>Here is a snippet from the “Cookies” module configuration file:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">cookies:
+    cookie_forum: </span><span class="s2">"Cookie Awards"</span>
+    <span class="ss">cookies_per_luck: </span><span class="mi">10</span>
+</code></pre></div></div>
+
+<p>This defines a configuration section (<code class="language-ruby highlighter-rouge"><span class="n">cookies</span></code>) and two settings (<code class="language-ruby highlighter-rouge"><span class="n">cookie_forum</span></code> and <code class="language-ruby highlighter-rouge"><span class="n">cookies_per_luck</span></code>).  The setting names are called <strong>keys</strong>.</p>
+
+<h2 id="key-naming">Key Naming</h2>
+
+<p>Underscores and spaces are the only permitted special characters in key names.  For example: “cookie_forum” and “Viper Pilot” are valid key names.  Ares uses separate words for things that are displayed to players, and underscores for everything else.</p>
+
+<p>When values are displayed to or used by the players (like skills, gear or faction names), keys shoud be in “titlecase” - first letter of each word capitalized, remaining letters lowercase.</p>
+
+<blockquote>
+  <p>Good:  Viper Pilot
+Bad:  Viper pilot</p>
+
+  <p>Good: Eco
+Bad: ECO</p>
+</blockquote>
+
+<blockquote>
+  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong> Yes, we know that being forced to use “titlecase” is an annoying limitation sometimes, like when you want to have a skill named SCUBA or a weapon named LMG.  It’s a tradeoff to reduce coding complexity and configuration errors (which both help with overall game stability).</p>
+</blockquote>
+
+<h2 id="editing-yaml-config">Editing YAML Config</h2>
+
+<p>You can edit the game’s configuration through the Web Portal.  Go to Admin -&gt; Setup and choose the configuration file you want to edit.  You’ll be presented with a simple editor screen.   You don’t have to worry about the config keys in the web editor, only their values.</p>
+
+<figure>
+
+    <div class="figure-contents">
+
+        
+           <a class="no_icon" target="_blank" href="/images/web-portal/config.png">
+        
+
+          <img class="docimage" src="/images/web-portal/config.png" alt="" />
+
+          </a>
+
+          
+
+        </div>
+
+</figure>
+
+<p>Coders may also prefer to edit the config files on disk in the server shell.  All game configuration files reside in the <code class="language-ruby highlighter-rouge"><span class="n">aresmush</span><span class="o">/</span><span class="n">game</span><span class="o">/</span><span class="n">config</span></code> folder on the server.  When editing on disk, you must do <code class="language-ruby highlighter-rouge"><span class="nb">load</span> <span class="n">config</span></code> or <code class="language-ruby highlighter-rouge"><span class="nb">load</span> <span class="o">&lt;</span><span class="n">plugin</span> <span class="nb">name</span><span class="o">&gt;</span></code> after changing the configuration so the game recognizes the changes.  This is not necessary when changing configuration in the Web Portal; it does so automatically.</p>
+
+<h2 id="data-types">Data Types</h2>
+
+<p>YAML supports a variety of data types.</p>
+
+<h3 id="strings">Strings</h3>
+
+<p>Strings are specifed as <code class="language-ruby highlighter-rouge"><span class="n">key</span><span class="ss">:value</span></code>.  Quotes around the value are optional as long as there are no special characters inside the string.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">cookie_forum: </span><span class="no">Cookie</span> <span class="no">Awards</span>     <span class="c1"># No special characters; no quotes needed.</span>
+<span class="ss">cookie_forum: </span><span class="s2">"Foo:Bar"</span>         <span class="c1"># Quotes are needed because of the ':'.</span>
+</code></pre></div></div>
+
+<h3 id="numbers">Numbers</h3>
+
+<p>Numbers are also specified as <code class="language-ruby highlighter-rouge"><span class="n">key</span><span class="ss">:value</span></code>.   Don’t put quotes around values you want to be numbers, or they will be treated as strings instead.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">cookies_per_luck: </span><span class="mi">10</span>
+</code></pre></div></div>
+
+<h3 id="lists-arrays">Lists (Arrays)</h3>
+
+<p>Many configuration settings are lists.  For example, the list of channels that a new character should be added to automatically.  Lists use the array type in Ruby, and there are two ways to specify that in YAML.  You can put each item on its own line with a dash in front:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">default_channels:
+    </span><span class="o">-</span> <span class="no">Questions</span>
+    <span class="o">-</span> <span class="no">Chat</span>
+</code></pre></div></div>
+
+<p>Or you can use Ruby’s array syntax:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">default_channels: </span><span class="p">[</span> <span class="s1">'Questions'</span><span class="p">,</span> <span class="s1">'Chat'</span> <span class="p">]</span>
+</code></pre></div></div>
+
+<p>The array syntax is necessary if you want it to be an empty list.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">default_channels: </span><span class="p">[]</span>
+</code></pre></div></div>
+
+<h3 id="complex-structures-hashes">Complex Structures (Hashes)</h3>
+
+<p>For more complex configuration data, you can use a Ruby hash.  Each level of indentation makes a new key in the hash.  Each level of the hash can include strings, numbers, lists, and even other hashes.  Just be sure to keep all the levels lined up with each other.</p>
+
+<p>Here is an example of the combat stance configuration, defining two stances with different attack and defense mods:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">stances:
+    </span><span class="no">Aggressive</span><span class="p">:</span>
+        <span class="ss">attack_mod: </span><span class="mi">2</span>
+        <span class="ss">defense_mod: </span><span class="o">-</span><span class="mi">2</span>
+    <span class="no">Reckless</span><span class="p">:</span>
+        <span class="ss">attack_mod: </span><span class="mi">4</span>
+        <span class="ss">defense_mod: </span><span class="o">-</span><span class="mi">4</span>
+</code></pre></div></div>
+
+<h2 id="troubleshooting-yaml">Troubleshooting YAML</h2>
+
+<p>You can get unusual errors if you have indentation problems or other issues with your YAML files.  For help figuring out YAML errors, see <a href="/tutorials/code/troubleshooting-yaml.html">Troubleshooting YAML</a>.</p>
+
+             </div>             
+                           </div>
+              
+                           <div class="col col-sm-3">
+                                                 <div class="sidebar">   
+                 
+<div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+                  
+<div class="sidebar-title">See AresMUSH In Action</div>
+
+<p>Visit the Ares <a href="http://mush.aresmush.com">Demo Game</a>.</p>
+
+<p>Find other Ares games at <a href="http://arescentral.aresmush.com">AresCentral</a>.</p>
+
+
+<div class="sidebar-title">Follow Us on Facebook</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1423276681271936";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-page" data-href="https://www.facebook.com/aresmush/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/aresmush/"><a href="https://www.facebook.com/aresmush/">Ares Mush</a></blockquote></div></div>
+
+<div class="sidebar-title">Discuss Ares</div>
+
+Have a question?  Want to talk about AresMUSH (or MU*s in general)?  Visit our <a href="http://forum.aresmush.com">Discussion Forum</a>.
+                  
+                  
+
+                  <div class="sidebar-title">Stay Up to Date</div>
+                          
+                          Get important updates about Ares on <a href="https://www.facebook.com/aresmush/">Facebook</a> or the <a href="http://forum.aresmush.com">Discussion Forum</a>.
+
+              <div id="searchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Search Results</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       
+
+       <div id="search-hits">
+         <!-- Hits widget will appear here -->
+       </div>
+
+
+       <div id="search-pagination">
+         <!-- Pagination widget will appear here -->
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/scripts/search.js"></script>
+<script>
+  initializeSearch( 'NI38C577BA',
+    '29793fd9084a3446072c14e471e32589',
+    'aresmush.com',
+    ' ' );
+</script>
+
+                  
+
+                  
+                
+                  
+                           </div>
+</div>
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>

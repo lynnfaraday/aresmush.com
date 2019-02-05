@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>MUSH 101 - Playing from the Web Portal (Transcript) - </title>
+    <meta property="og:title" content="MUSH 101 - Playing from the Web Portal (Transcript) - ">
+    <meta name="twitter:title" content="MUSH 101 - Playing from the Web Portal (Transcript) - ">
+    <meta itemprop="name" content="MUSH 101 - Playing from the Web Portal (Transcript) - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="MUSH 101 - Playing from the Web Portal (Transcript)" >
+    <meta property="og:url" content="/mush-101/webportal-transcript.html" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+                               
+             <div class="page">
+                 
+                 <h1>MUSH 101 - Playing from the Web Portal (Transcript)</h1>
+                 
+                 <div class="fs3-shortcut">
+                     <a href="#toc">(View Table of Contents)</a>
+                 </div>
+                 
+
+                     <p>This is the text transcript from the <a href="/mush-101/play-webportal.html">Playing from the Web Portal</a> tutorial.</p>
+
+<div id="inline_toc">
+  <p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#character-creation" id="markdown-toc-character-creation">Character Creation</a></li>
+  <li><a href="#community-features" id="markdown-toc-community-features">Community Features</a></li>
+  <li><a href="#scenes-and-characters" id="markdown-toc-scenes-and-characters">Scenes and Characters</a></li>
+  <li><a href="#playing-from-the-web" id="markdown-toc-playing-from-the-web">Playing from the Web</a></li>
+  <li><a href="#game-wiki" id="markdown-toc-game-wiki">Game Wiki</a></li>
+  <li><a href="#admin-features" id="markdown-toc-admin-features">Admin Features</a></li>
+</ul>
+
+</div>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Hi.  This is Faraday from AresMUSH and this is Part III of the MUSH 101 tutorial.  In this segment we’ll cover how to play the game using the web portal.</p>
+
+<p>Though most MUSHes have some sort of website or wiki, AresMUSH games are unique in having a complete, integrated web portal and wiki out of the box.   You can’t do everything on the web portal that you can do in the game itself, but you can do a lot.</p>
+
+<p>A brief note before we begin: Individual games have a lot of customization options for their web portals, so not all features you see here may be available on all games.</p>
+
+<h2 id="character-creation">Character Creation</h2>
+
+<p>First we’re going to look at how you can create a character through the web portal.</p>
+
+<p>We can register a new character or log in with an existing one if we already created one through the MUSH client.  The name and password on the web portal are the same ones you use when logging in with the connect command in-game.</p>
+
+<p>Fill-in forms and drop-down lists make it easy to enter your character’s basic demographics and select their group affiliations.</p>
+
+<p>For games that use the FS3 skills system or have created a web plugin for their own skills system, you can also set your abilities via the web.  The system will do some basic error-checking and alert you of any obvious problems.  You can also enter your background, description and roleplay hooks here.</p>
+
+<p>When you’ve finished entering everything, you can  go to the application review screen.  It will do more comprehensive error-checking and let you know if you’ve missed anything.  If you’re satisfied, you can submit the character for review right from here.</p>
+
+<h2 id="community-features">Community Features</h2>
+
+<p>Once your character’s been approved, you have full access to the game’s community features through the web portal.</p>
+
+<p>You can read and respond to the discussion forum.</p>
+
+<p>You can read and send mail.</p>
+
+<p>You can talk on the chat system.</p>
+
+<h2 id="scenes-and-characters">Scenes and Characters</h2>
+
+<p>The web portal is fully integrated with the game, so information in the game directory is always up to date.</p>
+
+<p>Characters appear in the gallery as soon as they’re approved.  Some profile information is taken straight from chargen, but you can also include your own details - including images and even music players.</p>
+
+<p>You can easily edit your own character profile with fill-in fields — no need to learn a lot of fancy wiki formatting codes.</p>
+
+<p>When scenes happen on the game,  you can use the optional scene logger and share scenes easily on the web portal.  No tedious log cleaning required - OOC chatter is automatically stripped out and system messages properly formatted.</p>
+
+<p>If you need to edit a scene, fill-in fields again make it easy.</p>
+
+<p>The scenes directory lets you browse scenes of different types and even search by title or character.</p>
+
+<h2 id="playing-from-the-web">Playing from the Web</h2>
+
+<p>The web portal offers a minimal web client that functions the same as a traditional MUSH client.   You can connect to the game and send commands like you normally would.</p>
+
+<p>You can also join scenes through the ‘Active Scenes’ page.</p>
+
+<p>This will show you all the scenes that are currently in-progress.  Scenes may be marked private, meaning they require an invitation, or open - meaning anyone is welcome to join.</p>
+
+<p>If you click on a scene that’s either open or that you’ve been invited to, you’ll see the scene page.  This has the scene set and characters listed, along with any poses you’ve missed.   You can pose yourself in.   And when someone else poses, it will automatically appear along with an activity notice.</p>
+
+<p>You can switch between multiple scenes at the top, and it will show you any that have new scene activity.</p>
+
+<p>Active scenes can involve players both on the web portal and on the game.  You can even have two players posing sporadically over the span of multiple days - like the way some people use Google Docs for roleplay.  Except now you can do it through the game.</p>
+
+<h2 id="game-wiki">Game Wiki</h2>
+
+<p>Although the scene directory and character gallery replicate a lot of what you’ll find on most game wikis, the web portal also has an integrated wiki for things like policy and theme information.</p>
+
+<p>Wiki pages use markdown text, which is similar to what you’ll find on most other wikis.  It also has extensions for things like a music player, dynamic page lists, tabs, inclues and more.   Games have been able to fully replace their mediawiki or wikidot sites using only the web portal.</p>
+
+<h2 id="admin-features">Admin Features</h2>
+
+<p>The web portal has a number of features for game admins as well.  Admins can view staff jobs and respond from the web.  You can change your basic game information, and configure every game setting without ever touching a line of code.</p>
+
+<p>Coders can view error logs and also do some minor code tinkering - although full coding requires access to the server shell, which is described in a different tutorial.</p>
+
+<p>With flexible background images and colors, admins can easily ‘skin’ the web portal for their game.  By adding custom CSS, it’s possible to make some really unique looking wikis - such as the one for 8th Sea MUSH or Spirit Lake.</p>
+
+<p>That concludes this segment of the Ares 101 tutorial.  Return to aresmush.com for the next segment, where we’ll talk more about how to tell your character’s story.  Thanks for listening.</p>
+
+
+
+                 <div class="tutorial-nav">
+                     <p>This article is part of the <a href="/mush-101">MUSH 101</a> tutorial.</p>
+    
+                     <div class="pagination-block">
+                         <ul>
+                             
+                             <li><a href="/mush-101/play-muclient.html"> &larr; Previous</a></li>
+                             
+            
+                             <li><a href="/mush-101">Back to Start</a> </li>
+            
+        
+                             
+                             <li><a href="/mush-101/telling-your-story.html">Next &rarr; </a></li>
+                             
+                         </ul>
+                     </div>
+    
+                     <br/>
+                 </div>
+                 
+             </div>             
+                           </div>
+              
+              
+                  <div class="col col-sm-3">
+                      
+                      
+                      <a name="toc"></a>
+                      <div class="sidebar fs3-sidebar"> 
+                      
+                        <div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+                      
+                      <h2>MUSH 101</h2>
+                      
+                     
+                      
+                                          
+                      
+                                          
+                      
+                                          
+                      
+                                          
+                                          <ul>
+  <li><a href="/mush-101/game-of-words.html">A Game of Words</a></li>
+  <li><a href="/mush-101/before-you-start.html">Before You Start</a></li>
+  <li><a href="/mush-101/play-muclient.html">Playing from a MUSH Client</a></li>
+  <li><a href="/mush-101/play-webportal.html">Playing from the Web Portal</a></li>
+  <li><a href="/mush-101/telling-your-story.html">Telling Your Story</a></li>
+  <li><a href="/mush-101/time-and-space.html">Time and Space</a></li>
+  <li><a href="/mush-101/mu-glossary.html">MUSH Glossary</a></li>
+</ul>
+
+                                          
+                      
+                                          
+                      
+                                          
+                      
+                  </div>
+              </div>
+
+              <div id="searchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Search Results</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       
+
+       <div id="search-hits">
+         <!-- Hits widget will appear here -->
+       </div>
+
+
+       <div id="search-pagination">
+         <!-- Pagination widget will appear here -->
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/scripts/search.js"></script>
+<script>
+  initializeSearch( 'NI38C577BA',
+    '29793fd9084a3446072c14e471e32589',
+    'aresmush.com',
+    ' ' );
+</script>
+              
+</div>
+
+
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>

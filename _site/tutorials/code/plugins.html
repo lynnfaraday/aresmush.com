@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>Plugins - </title>
+    <meta property="og:title" content="Plugins - ">
+    <meta name="twitter:title" content="Plugins - ">
+    <meta itemprop="name" content="Plugins - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="Plugins" >
+    <meta property="og:url" content="/tutorials/code/plugins.html" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+<h1>Plugins</h1>
+
+    <div class="tags-box">
+                 <ul class="tags-box">
+                 
+                 <li>[code]</li>
+                 
+                 <li>[plugins]</li>
+                 
+                 </ul>
+    </div>
+                               
+             <div class="page">
+                 <p>Ares supports a robust <strong>Plugin</strong> system, with its features separated into plugin modules.  Plugins provide all of the player commands - even core functionality like movement, help, descriptions, pages and channels.  They handle game events, responding to things like “character connected” or “game started”.</p>
+
+<div id="inline_toc">
+  <p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#folder-organization" id="markdown-toc-folder-organization">Folder Organization</a></li>
+  <li><a href="#plugin-modules" id="markdown-toc-plugin-modules">Plugin Modules</a></li>
+  <li><a href="#shared-helpers" id="markdown-toc-shared-helpers">Shared Helpers</a></li>
+  <li><a href="#plugin-interfaces-apis" id="markdown-toc-plugin-interfaces-apis">Plugin Interfaces (APIs)</a></li>
+  <li><a href="#adding-and-removing-plugins" id="markdown-toc-adding-and-removing-plugins">Adding and Removing Plugins</a></li>
+</ul>
+
+</div>
+
+<h2 id="folder-organization">Folder Organization</h2>
+
+<p>Each plugin has its own folder inside aresmush/plugins. The name of the folder is the name of the plugin.</p>
+
+<blockquote>
+  <p><strong>Important Convention:</strong> The folder name must be one word, all lowercase, with no special characters.</p>
+</blockquote>
+
+<p>There’s a standard organization to a plugin folder.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">myplugin</span>
+    <span class="o">-</span> <span class="n">commands</span> <span class="p">(</span><span class="n">command</span> <span class="n">handlers</span><span class="p">)</span>
+    <span class="o">-</span> <span class="n">events</span> <span class="p">(</span><span class="n">event</span> <span class="n">handlers</span><span class="p">)</span>
+    <span class="o">-</span> <span class="n">help</span><span class="o">*</span> <span class="p">(</span><span class="n">help</span> <span class="n">files</span><span class="p">)</span>
+    <span class="o">-</span> <span class="n">locale</span><span class="o">*</span> <span class="p">(</span><span class="n">translation</span> <span class="n">files</span><span class="p">)</span>
+    <span class="o">-</span> <span class="kp">public</span> <span class="p">(</span><span class="n">models</span> <span class="n">and</span> <span class="n">interfaces</span> <span class="n">used</span> <span class="n">by</span> <span class="n">other</span> <span class="n">plugins</span><span class="p">)</span>
+    <span class="o">-</span> <span class="n">templates</span> <span class="p">(</span><span class="n">templates</span> <span class="n">and</span> <span class="n">renderers</span><span class="p">)</span>
+    <span class="o">-</span> <span class="n">web</span> <span class="p">(</span><span class="n">web</span> <span class="n">request</span> <span class="n">handlers</span><span class="p">)</span>
+    <span class="n">myplugin</span><span class="p">.</span><span class="nf">rb</span>
+</code></pre></div></div>
+
+<p>Help and Locale must be in separate folders, but the other folders are optional.  You could lump everything under <code class="language-ruby highlighter-rouge"><span class="n">myplugin</span></code> if you want, but the standard organization will make it easier to find files - particularly in large, complex plugins.</p>
+
+<h2 id="plugin-modules">Plugin Modules</h2>
+<p>All plugin code lives in its own Ruby module - inside the main AresMUSH module - to keep the code organized and provide clues as to what goes where.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">module</span> <span class="nn">AresMUSH</span>
+   <span class="k">module</span> <span class="nn">MyPlugin</span>
+   <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>Important Conventions:</strong></p>
+
+  <ol>
+    <li>
+      <p>The module must be defined in a file matching your plugin folder name, located in the top level of your plugin folder.</p>
+    </li>
+    <li>
+      <p>The module must be nested within the main AresMUSH module.</p>
+    </li>
+    <li>
+      <p>The name of the Ruby module must match the name of the plugin folder when converted to lowercase.  In other words, it’s okay to have a module FS3Skills and a folder fs3skills.</p>
+    </li>
+  </ol>
+</blockquote>
+
+<p>The plugin module must define a single method:  <code class="language-ruby highlighter-rouge"><span class="n">plugin_dir</span></code> that always returns the current folder.  For example:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">module</span> <span class="nn">AresMUSH</span>
+  <span class="k">module</span> <span class="nn">MyPlugin</span>
+    <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">plugin_dir</span>
+      <span class="no">File</span><span class="p">.</span><span class="nf">dirname</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">)</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>There are several other optional methods that plugins can define:</p>
+
+<ul>
+  <li><code class="language-ruby highlighter-rouge"><span class="n">shortcuts</span></code> - Returns the plugin’s shortcut configuration.  Usually <code class="language-ruby highlighter-rouge"><span class="no">Global</span><span class="p">.</span><span class="nf">read_config</span><span class="p">(</span><span class="s1">'myplugin'</span><span class="p">,</span> <span class="s1">'shortcuts'</span><span class="p">)</span></code></li>
+  <li><code class="language-ruby highlighter-rouge"><span class="nb">load</span></code> - Any special actions you want to do when the plugin is loaded.  For example, the help plugin initializes some variables.</li>
+  <li><code class="language-ruby highlighter-rouge"><span class="n">get_cmd_handler</span></code>, <code class="language-ruby highlighter-rouge"><span class="n">get_web_request_handler</span></code>, <code class="language-ruby highlighter-rouge"><span class="n">get_event_handler</span></code> - Define handlers, as explained below.</li>
+</ul>
+
+<h2 id="shared-helpers">Shared Helpers</h2>
+
+<p>You might find yourself doing the same thing across multiple commands within your plugin. In this case, you’ll probably want to create a shared method to avoid duplicating code.</p>
+
+<p>A shared method doesn’t live in any individual command class; instead it lives in the plugin’s module. For example:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">module</span> <span class="nn">AresMUSH</span>
+  <span class="k">module</span> <span class="nn">Bbs</span>
+    <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">can_manage_bbs?</span><span class="p">(</span><span class="n">actor</span><span class="p">)</span>
+      <span class="o">...</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>You access shared methods using the module name.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Bbs</span><span class="p">.</span><span class="nf">can_manage_bbs?</span><span class="p">(</span><span class="n">enactor</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>You can place helpers anywhere, but the standard Ares code convention is to put them in the plugin folder and name them <code class="language-ruby highlighter-rouge"><span class="n">helpers</span><span class="p">.</span><span class="nf">rb</span></code>.</p>
+
+<h2 id="plugin-interfaces-apis">Plugin Interfaces (APIs)</h2>
+
+<p>The plugins talk to each other through database fields and interface methods (api’s).</p>
+
+<p>For example, the Scenes plugin provides the interface method <code class="language-ruby highlighter-rouge"><span class="no">Scenes</span><span class="p">.</span><span class="nf">add_to_scene</span><span class="p">()</span></code>, which is used by various utilities (like skills and combat) to add system messages to a scene.   The Ranks plugin provides a database model field so you can do <code class="language-ruby highlighter-rouge"><span class="n">character</span><span class="p">.</span><span class="nf">rank</span></code>.</p>
+
+<p>Methods that are intended to be used across plugins are by convention placed in the plugin’s <code class="language-ruby highlighter-rouge"><span class="kp">public</span></code> folder.</p>
+
+<h2 id="adding-and-removing-plugins">Adding and Removing Plugins</h2>
+
+<p>Plugins are designed to plug <strong>in</strong> easily, so you can add new code systems with ease.  They’re also designed like puzzle pieces, so you can swap in a different version as long as it’s the same basic shape.  In code terms, this means as long as it implements the same <strong>Interfaces</strong> as described above.</p>
+
+<p>For example:  The mail API provides to main interfaces:  an <code class="language-ruby highlighter-rouge"><span class="n">unread_mail</span></code> count and a <code class="language-ruby highlighter-rouge"><span class="n">send_mail</span></code> method.  You can drop in any mail system you want, and everything will work just fine as long as it provides its own implementation of those methods.</p>
+
+<p>Removing a plugin completely is another story.</p>
+
+<p>Some optional plugins can simply be disabled through the game configuration.  See <a href="/tutorials/config/plugins.html">Enabling and Disabling Plugins</a>.</p>
+
+<p>For others, though, it takes some code surgery.  You’ll need to hunt through the code looking for all references to its models and interfaces.  You’d also have to <a href="/tutorials/code/remove-field.html">remove the fields</a> from the database itself.</p>
+
+<p>This can be a pain, yes, but such is the price for having a fully-integrated MUSH-in-a-box system.</p>
+
+             </div>             
+                           </div>
+              
+                           <div class="col col-sm-3">
+                                                 <div class="sidebar">   
+                 
+<div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+                  
+<div class="sidebar-title">See AresMUSH In Action</div>
+
+<p>Visit the Ares <a href="http://mush.aresmush.com">Demo Game</a>.</p>
+
+<p>Find other Ares games at <a href="http://arescentral.aresmush.com">AresCentral</a>.</p>
+
+
+<div class="sidebar-title">Follow Us on Facebook</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1423276681271936";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-page" data-href="https://www.facebook.com/aresmush/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/aresmush/"><a href="https://www.facebook.com/aresmush/">Ares Mush</a></blockquote></div></div>
+
+<div class="sidebar-title">Discuss Ares</div>
+
+Have a question?  Want to talk about AresMUSH (or MU*s in general)?  Visit our <a href="http://forum.aresmush.com">Discussion Forum</a>.
+                  
+                  
+
+                  <div class="sidebar-title">Stay Up to Date</div>
+                          
+                          Get important updates about Ares on <a href="https://www.facebook.com/aresmush/">Facebook</a> or the <a href="http://forum.aresmush.com">Discussion Forum</a>.
+
+              <div id="searchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Search Results</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       
+
+       <div id="search-hits">
+         <!-- Hits widget will appear here -->
+       </div>
+
+
+       <div id="search-pagination">
+         <!-- Pagination widget will appear here -->
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/scripts/search.js"></script>
+<script>
+  initializeSearch( 'NI38C577BA',
+    '29793fd9084a3446072c14e471e32589',
+    'aresmush.com',
+    ' ' );
+</script>
+
+                  
+
+                  
+                
+                  
+                           </div>
+</div>
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>

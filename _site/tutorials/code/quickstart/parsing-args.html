@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>Parsing Args - </title>
+    <meta property="og:title" content="Parsing Args - ">
+    <meta name="twitter:title" content="Parsing Args - ">
+    <meta itemprop="name" content="Parsing Args - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="Parsing Args" >
+    <meta property="og:url" content="/tutorials/code/quickstart/parsing-args.html" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+                               
+             <div class="page">
+                 
+                 <h1>Parsing Args</h1>
+                 
+                 <div class="fs3-shortcut">
+                     <a href="#toc">(View Table of Contents)</a>
+                 </div>
+                 
+
+                     <p>In the previous exercise, we learned how to access command arguments.  We saw, though, that <code class="language-ruby highlighter-rouge"><span class="n">cmd</span><span class="p">.</span><span class="nf">args</span></code> was a string.  We can’t do numeric operations on string.  What if we wanted to count our little piggies?</p>
+
+<p>Ares provides a variety of argument parsing utilities to handle args that are numbers, lists, or even complex sequences like “name=subject/message”.  We’re just going to go over a couple here, but the rest are documented in <a href="/tutorials/code/arg-parsers.html">Arg Parsers</a>.  You can check that out later.</p>
+
+<h2 id="try-it---arg-utilities">Try It! - Arg Utilities</h2>
+
+<p>We’ll start with the <code class="language-ruby highlighter-rouge"><span class="n">integer_arg</span></code> helper, which will help us turn our number of piggies from a string to a number that we can do something with.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">handle</span>
+  <span class="n">piggies</span> <span class="o">=</span> <span class="n">integer_arg</span><span class="p">(</span><span class="n">cmd</span><span class="p">.</span><span class="nf">args</span><span class="p">)</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">piggies</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">)</span>
+    <span class="n">client</span><span class="p">.</span><span class="nf">emit_ooc</span> <span class="s2">"</span><span class="si">#{</span><span class="n">piggies</span><span class="si">}</span><span class="s2"> is a small number of piggies."</span>
+  <span class="k">else</span>
+    <span class="n">client</span><span class="p">.</span><span class="nf">emit_ooc</span> <span class="s2">"</span><span class="si">#{</span><span class="n">piggies</span><span class="si">}</span><span class="s2"> is a lot of piggies!"</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>Try tinkering with different numbers of piggies and see how the message changes when you have a small or large number.</p>
+
+<blockquote>
+  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong> If you leave off the argument and just use <code class="language-ruby highlighter-rouge"><span class="n">tinker</span></code> by itself, you’ll get an error.  We’ll talk about why this is and how to fix it in the next exercise.</p>
+</blockquote>
+
+<h2 id="try-it---arg-parsers">Try It! - Arg Parsers</h2>
+
+<p>What if we have multiple parts to our arguments, like <code class="language-ruby highlighter-rouge"><span class="n">tinker</span> <span class="o">&lt;</span><span class="n">number</span> <span class="n">of</span> <span class="n">piggies</span><span class="o">&gt;=&lt;</span><span class="n">names</span> <span class="n">of</span> <span class="n">piggies</span><span class="o">&gt;</span></code>?</p>
+
+<p>Here we can leverage the <code class="language-ruby highlighter-rouge"><span class="no">ArgParser</span></code> helper class.  <code class="language-ruby highlighter-rouge"><span class="n">args</span> <span class="o">=</span> <span class="n">cmd</span><span class="p">.</span><span class="nf">parse_args</span><span class="p">(</span><span class="n">parser</span><span class="p">)</span></code> will crack apart the command arguments according to the parser you supply, and store the value in <code class="language-ruby highlighter-rouge"><span class="n">args</span></code>.  You can then do things like <code class="language-ruby highlighter-rouge"><span class="n">args</span><span class="p">.</span><span class="nf">arg1</span></code> and <code class="language-ruby highlighter-rouge"><span class="n">args</span><span class="p">.</span><span class="nf">arg2</span></code> to access the different pieces.</p>
+
+<p>ArgParser provides pre-set parsers for a variety of common MUSH command formats, including <code class="language-ruby highlighter-rouge"><span class="n">arg1_equals_arg2</span></code> or <code class="language-ruby highlighter-rouge"><span class="n">arg1_equals_arg2_slash_arg3</span></code>.  For a complete list, you can check out <a href="/tutorials/code/arg-parsers.html">Arg Parsers</a> after you’ve finished the quickstart.</p>
+
+<p>Let’s try it.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">handle</span>
+  <span class="n">args</span> <span class="o">=</span> <span class="n">cmd</span><span class="p">.</span><span class="nf">parse_args</span><span class="p">(</span><span class="no">ArgParser</span><span class="p">.</span><span class="nf">arg1_equals_arg2</span><span class="p">)</span>      
+  <span class="n">num_piggies</span> <span class="o">=</span> <span class="n">integer_arg</span><span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="nf">arg1</span><span class="p">)</span>
+  <span class="n">names</span> <span class="o">=</span> <span class="n">list_arg</span><span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="nf">arg2</span><span class="p">)</span>
+  
+  <span class="n">client</span><span class="p">.</span><span class="nf">emit</span> <span class="s2">"You have </span><span class="si">#{</span><span class="n">num_piggies</span><span class="si">}</span><span class="s2"> and their names are </span><span class="si">#{</span><span class="n">names</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="s1">', '</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span>
+  
+  <span class="k">if</span> <span class="p">(</span><span class="n">num_piggies</span> <span class="o">&gt;</span> <span class="n">names</span><span class="p">.</span><span class="nf">count</span><span class="p">)</span>
+    <span class="n">client</span><span class="p">.</span><span class="nf">emit_failure</span> <span class="s2">"You didn't name all your piggies!"</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>Calling <code class="language-ruby highlighter-rouge"><span class="n">parse_args</span></code> will split our argument string into the “3” (arg1) and the “A B C” (arg2).   Then we use the other two arg helpers to interpret the 3 as a number and the names as a list.</p>
+
+<p>Now that we’ve converted our number of piggies to an actual number, we can use it in a numeric comparison to make sure we named all our piggies.</p>
+
+<p>Join is a commonly-used method that takes a list and displays it as a string separated by the specified characters (in this case by commas).</p>
+
+<p>Try using the command with a number of piggies and their names, like <code class="language-ruby highlighter-rouge"><span class="n">tinker</span> <span class="mi">3</span><span class="o">=</span><span class="no">Larry</span> <span class="no">Moe</span> <span class="no">Curly</span></code>.</p>
+
+
+                 <div class="tutorial-nav">
+                     <p>This article is part of the <a href="/tutorials/code/quickstart">Code Quickstart</a> tutorial.</p>
+    
+                     <div class="pagination-block">
+                         <ul>
+                             
+                             <li><a href="/tutorials/code/quickstart/command-args.html"> &larr; Previous</a></li>
+                             
+            
+                             <li><a href="/tutorials/code/quickstart">Back to Start</a> </li>
+            
+        
+                             
+                             <li><a href="/tutorials/code/quickstart/command-errors.html">Next &rarr; </a></li>
+                             
+                         </ul>
+                     </div>
+    
+                     <br/>
+                 </div>
+                 
+             </div>             
+                           </div>
+              
+              
+                  <div class="col col-sm-3">
+                      
+                      
+                      <a name="toc"></a>
+                      <div class="sidebar fs3-sidebar"> 
+                      
+                        <div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+                      
+                      <h2>Code Quickstart</h2>
+                      
+                     
+                      
+                                          
+                      
+                                          
+                      
+                                          
+                                          <ul>
+  <li><a href="/tutorials/code/quickstart/">Tutorial Overview</a></li>
+  <li><a href="/tutorials/code/quickstart/try-ruby.html">Try Ruby</a></li>
+  <li><a href="/tutorials/code/quickstart/hello-mush.html">Hello MUSH</a></li>
+  <li><a href="/tutorials/code/quickstart/tinker-intro.html">Tinkering</a></li>
+  <li><a href="/tutorials/code/quickstart/command-handlers.html">Command Handlers</a></li>
+  <li><a href="/tutorials/code/quickstart/emits.html">Emits</a></li>
+  <li><a href="/tutorials/code/quickstart/templates-intro.html">Templates</a></li>
+  <li><a href="/tutorials/code/quickstart/command-args.html">Command Switches and Args</a></li>
+  <li><a href="/tutorials/code/quickstart/parsing-args.html">Parsing Args</a></li>
+  <li><a href="/tutorials/code/quickstart/command-errors.html">Command Error Checking</a></li>
+  <li><a href="/tutorials/code/quickstart/config-intro.html">Configuration</a></li>
+  <li><a href="/tutorials/code/quickstart/localization-intro.html">Localization</a></li>
+  <li><a href="/tutorials/code/quickstart/db-intro.html">Database Queries and Updates</a></li>
+  <li><a href="/tutorials/code/quickstart/apis.html">Common APIs</a></li>
+  <li><a href="/tutorials/code/quickstart/next-steps.html">Next Steps</a></li>
+</ul>
+
+                                          
+                      
+                                          
+                      
+                                          
+                      
+                                          
+                      
+                  </div>
+              </div>
+
+              <div id="searchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Search Results</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       
+
+       <div id="search-hits">
+         <!-- Hits widget will appear here -->
+       </div>
+
+
+       <div id="search-pagination">
+         <!-- Pagination widget will appear here -->
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/scripts/search.js"></script>
+<script>
+  initializeSearch( 'NI38C577BA',
+    '29793fd9084a3446072c14e471e32589',
+    'aresmush.com',
+    ' ' );
+</script>
+              
+</div>
+
+
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>

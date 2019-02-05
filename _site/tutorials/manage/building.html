@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>Building the Grid - </title>
+    <meta property="og:title" content="Building the Grid - ">
+    <meta name="twitter:title" content="Building the Grid - ">
+    <meta itemprop="name" content="Building the Grid - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="Building the Grid" >
+    <meta property="og:url" content="/tutorials/manage/building.html" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+<h1>Building the Grid</h1>
+
+    <div class="tags-box">
+                 <ul class="tags-box">
+                 
+                 <li>[manage]</li>
+                 
+                 <li>[building]</li>
+                 
+                 <li>[locations]</li>
+                 
+                 <li>[rooms]</li>
+                 
+                 </ul>
+    </div>
+                               
+             <div class="page">
+                 <p>Scenes have to take place <em>somewhere</em>.   The Ares scene system lets you start scenes in temporary rooms, which can stand in for any location you can imagine.  You can even start a scene purely on the Web Portal, with no room at all.  But the majority of MUSH players still prefer to have a <strong>grid</strong> - a tangible set of <strong>rooms</strong> linked by <strong>exits</strong> for them to explore and play in.  This article describes some of the building concepts unique to Ares.  For more detailed information on specific commands, see <code class="language-ruby highlighter-rouge"><span class="n">help</span> <span class="n">building</span></code> in-game.</p>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Despite the historical name, a Room doesn’t have to represent a single room.  It’s more like a virtual ‘chatroom’ - a place where people gather for roleplay.</p>
+</blockquote>
+
+<div id="inline_toc">
+  <p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#room-type" id="markdown-toc-room-type">Room Type</a></li>
+  <li><a href="#areas" id="markdown-toc-areas">Areas</a></li>
+  <li><a href="#special-rooms" id="markdown-toc-special-rooms">Special Rooms</a>    <ul>
+      <li><a href="#naming-the-ic-start-room" id="markdown-toc-naming-the-ic-start-room">Naming the IC Start Room</a></li>
+      <li><a href="#multiple-starting-locations" id="markdown-toc-multiple-starting-locations">Multiple Starting Locations</a></li>
+    </ul>
+  </li>
+  <li><a href="#locks" id="markdown-toc-locks">Locks</a></li>
+  <li><a href="#disconnected-rooms" id="markdown-toc-disconnected-rooms">Disconnected Rooms</a></li>
+</ul>
+
+</div>
+
+<h2 id="room-type">Room Type</h2>
+
+<p>There are three types of rooms in Ares:</p>
+
+<ul>
+  <li>IC - The areas that are on-camera where the action (i.e. the roleplay) takes place.</li>
+  <li>OOC - The backstage areas where people hang out when they’re not playing, or official business takes place.</li>
+  <li>Roleplay Room (RPR) - A hybrid of the two; it’s not technically part of the onstage grid, but roleplay takes place here.  RP Rooms could be supplanted by the scene system, but some people still find them easier to use for private RP.</li>
+</ul>
+
+<p>The status system is based off the room type.  If you’re in an offstage room, you’re considered OOC.  If you’re in an onstage or RP room, you’re considered IC.</p>
+
+<h2 id="areas">Areas</h2>
+
+<p>Areas are just an easy way to organize rooms as a navigational aid and a way help identify where you are.  Typically they correspond to distinct geographic areas - districts in a city, decks on a ship, planets, etc.  Areas also help distinguish between rooms with the same name (i.e. a Mess Hall on one ship and a Mess Hall on another ship).</p>
+
+<p>You can use areas in custom code - e.g. making it so certain commands are only available (or work differently) depending on the area the character is in.  For example, the weather plugin bases weather patterns on the room areas.</p>
+
+<p>Areas can have a description (in which you might want to put some ASCII map art or a link to a map image).</p>
+
+<p>You can set up areas in a parent/child hierarchy.  For example:</p>
+
+<ul>
+  <li>Chicago
+    <ul>
+      <li>The Loop</li>
+      <li>Northbrook</li>
+    </ul>
+  </li>
+  <li>New York
+    <ul>
+      <li>Brooklyn</li>
+      <li>The Bronx</li>
+    </ul>
+  </li>
+  <li>Offstage</li>
+</ul>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Although there will probably be multiple IC areas on your grid, you’ll usually have only one OOC area.  In the default database, it’s just called “Offstage”.</p>
+</blockquote>
+
+<h2 id="special-rooms">Special Rooms</h2>
+
+<p>Ares has several special rooms, which are part of the default database.  They each serve an important purpose in the code, so you can’t destroy them.  You can change their names and descriptions, though.</p>
+
+<ul>
+  <li>Welcome Room - Where characters first arrive on the game.  Typically you’ll update this room description with a description of the game and some basic instructions.</li>
+  <li>Offstage Room - Where characters go when they use the <code class="language-ruby highlighter-rouge"><span class="n">offstage</span></code> command to take a break from roleplay.  AKA the “OOC Room” or “OOC Lounge”.</li>
+  <li>IC Start Room - Where characters go the very first time they use the <code class="language-ruby highlighter-rouge"><span class="n">onstage</span></code> command to go IC.</li>
+  <li>Quiet Room - Where characters can idle without being bothered by spam.</li>
+</ul>
+
+<p>The IC Start Room has a few special considerations.</p>
+
+<h3 id="naming-the-ic-start-room">Naming the IC Start Room</h3>
+
+<p>You should rename the room as appropriate to your theme (e.g. Starport, Hangar Bay, Downtown - wherever new characters start.)</p>
+
+<h3 id="multiple-starting-locations">Multiple Starting Locations</h3>
+
+<p>Ares does not directly support multiple starting locations (e.g. starting people in different planets/cities/areas depending on their faction).  If that’s really important to you, you have two choices:</p>
+
+<ul>
+  <li>Make the IC Start Room more of an OOC hub, with exits to all the real start locations.</li>
+  <li>Alter the code that sets the character’s starting location.</li>
+</ul>
+
+<h2 id="locks">Locks</h2>
+
+<p>Ares has a simpler exit lock system than PennMUSH/TinyMUX.  You cannot lock exits to any arbitrary code function.  Exits may only be locked to <a href="/tutorials/manage/roles.html">roles</a>.</p>
+
+<p>For example: If you wanted to lock the Rebel HQ to only players in the rebel faction, you could create a “Rebel” role and assign it to everyone with rebel access.  Then lock the HQ entrance to only people with the “Rebel” or “Admin” roles.</p>
+
+<blockquote>
+  <p>Curious why the lock system is different from Penn/Tiny?  Check out the <a href="/tutorials/code/chopping-block.html">chopping block</a> article.</p>
+</blockquote>
+
+<h2 id="disconnected-rooms">Disconnected Rooms</h2>
+
+<p>Games that wish to maximize use of the scene system can create rooms that are disconnected from the grid but still available for scenes.</p>
+
+<ol>
+  <li>Create a room - it doesn’t have to be connected to anywhere else.</li>
+  <li>Give the room a description and an area.</li>
+</ol>
+
+<p>Even though the room isn’t linked to anywhere on the grid, someone can still use scene/start to begin a scene there.  A temproom will be created, with the disconnected room’s description copied over.</p>
+
+             </div>             
+                           </div>
+              
+                           <div class="col col-sm-3">
+                                                 <div class="sidebar">   
+                 
+<div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+                  
+<div class="sidebar-title">See AresMUSH In Action</div>
+
+<p>Visit the Ares <a href="http://mush.aresmush.com">Demo Game</a>.</p>
+
+<p>Find other Ares games at <a href="http://arescentral.aresmush.com">AresCentral</a>.</p>
+
+
+<div class="sidebar-title">Follow Us on Facebook</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1423276681271936";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-page" data-href="https://www.facebook.com/aresmush/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/aresmush/"><a href="https://www.facebook.com/aresmush/">Ares Mush</a></blockquote></div></div>
+
+<div class="sidebar-title">Discuss Ares</div>
+
+Have a question?  Want to talk about AresMUSH (or MU*s in general)?  Visit our <a href="http://forum.aresmush.com">Discussion Forum</a>.
+                  
+                  
+
+                  <div class="sidebar-title">Stay Up to Date</div>
+                          
+                          Get important updates about Ares on <a href="https://www.facebook.com/aresmush/">Facebook</a> or the <a href="http://forum.aresmush.com">Discussion Forum</a>.
+
+              <div id="searchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Search Results</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       
+
+       <div id="search-hits">
+         <!-- Hits widget will appear here -->
+       </div>
+
+
+       <div id="search-pagination">
+         <!-- Pagination widget will appear here -->
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/scripts/search.js"></script>
+<script>
+  initializeSearch( 'NI38C577BA',
+    '29793fd9084a3446072c14e471e32589',
+    'aresmush.com',
+    ' ' );
+</script>
+
+                  
+
+                  
+                
+                  
+                           </div>
+</div>
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>

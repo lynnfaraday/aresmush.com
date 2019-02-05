@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>Create a Config File - </title>
+    <meta property="og:title" content="Create a Config File - ">
+    <meta name="twitter:title" content="Create a Config File - ">
+    <meta itemprop="name" content="Create a Config File - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="Create a Config File" >
+    <meta property="og:url" content="/tutorials/code/create-plugin/config-file.html" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+                               
+             <div class="page">
+                 
+                 <h1>Create a Config File</h1>
+                 
+                 <div class="fs3-shortcut">
+                     <a href="#toc">(View Table of Contents)</a>
+                 </div>
+                 
+
+                     <p>In the previous step, we set up the plugin to read its shortcuts from the game configuration: <code class="language-ruby highlighter-rouge"><span class="no">Global</span><span class="p">.</span><span class="nf">read_config</span><span class="p">(</span><span class="s2">"cortex"</span><span class="p">,</span> <span class="s2">"shortcuts"</span><span class="p">)</span></code>.</p>
+
+<p>Now we need to set up that configuration.  All configuration files live in the <code class="language-ruby highlighter-rouge"><span class="n">aresmush</span><span class="o">/</span><span class="n">game</span><span class="o">/</span><span class="n">config</span></code> folder.  The name doesn’t matter, but traditionally they’re named the same as the plugin.</p>
+
+<p>Configuration files use the <a href="/tutorials/code/yaml.html">YAML</a> format, with a series of key/value pairs.  Each plugin has its own top-level configuration section.</p>
+
+<p>The create plugin script created a file named <code class="language-ruby highlighter-rouge"><span class="n">cortex</span><span class="p">.</span><span class="nf">yml</span></code> in <code class="language-ruby highlighter-rouge"><span class="n">aresmush</span><span class="o">/</span><span class="n">game</span><span class="o">/</span><span class="n">config</span></code>, with an empty cortex section:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">cortex: </span><span class="p">{}</span>
+</code></pre></div></div>
+
+<p>The first thing we’ll want to add to that configuration is the list of abilities, which will vary from game to game.  Cortex has several different kinds of abilities.</p>
+
+<ul>
+  <li>Attributes have a name and description.</li>
+  <li>Skills have a name, a description, and suggestions of specialties.</li>
+  <li>Assets and Complications have a name, a description, and a list of available die steps.</li>
+</ul>
+
+<p>We’ll also have some other configuration, like the number of points people start with and the shortcuts list (which we’ll just leave empty for now until we have some commands).</p>
+
+<p>Put this all together and we get the following configuration:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">cortex:
+    starting_attribute_points: </span><span class="mi">48</span>
+    <span class="ss">starting_skill_points: </span><span class="mi">68</span>
+    <span class="ss">starting_trait_points: </span><span class="mi">4</span>
+    <span class="ss">shortcuts: </span><span class="p">{}</span>
+    <span class="ss">attributes:
+    </span><span class="o">-</span>
+      <span class="ss">name: </span><span class="no">Agility</span>
+      <span class="ss">description: </span><span class="no">Quickness</span> <span class="n">and</span> <span class="n">coordination</span><span class="p">.</span>
+    <span class="nf">-</span> 
+      <span class="ss">name: </span><span class="no">Strength</span>
+      <span class="ss">description: </span><span class="no">Physical</span> <span class="n">brawn</span><span class="p">.</span>
+    <span class="nf">skills</span><span class="p">:</span>
+    <span class="o">-</span> 
+      <span class="ss">name: </span><span class="no">Athletics</span>
+      <span class="ss">description: </span><span class="no">General</span> <span class="n">athletic</span> <span class="n">activity</span> <span class="n">and</span> <span class="n">sports</span><span class="p">.</span>
+      <span class="nf">specialties</span><span class="p">:</span> <span class="no">Running</span><span class="p">,</span> <span class="no">Jumping</span><span class="p">,</span> <span class="no">Climbing</span><span class="p">,</span> <span class="no">Weight</span> <span class="no">Lifting</span>
+    <span class="o">-</span> 
+      <span class="ss">name: </span><span class="no">Guns</span>
+      <span class="ss">description: </span><span class="no">Shooting</span> <span class="n">firearms</span><span class="p">.</span>
+      <span class="nf">specialties</span><span class="p">:</span> <span class="no">Rifle</span><span class="p">,</span> <span class="no">Energy</span> <span class="no">Weapon</span><span class="p">,</span> <span class="no">Pistol</span><span class="p">,</span> <span class="no">Shotgun</span>
+    <span class="ss">assets:
+    </span><span class="o">-</span> 
+      <span class="ss">name: </span><span class="no">Ambidextrous</span>
+      <span class="ss">description: </span><span class="no">Using</span> <span class="n">both</span> <span class="n">hands</span> <span class="n">with</span> <span class="n">equal</span> <span class="n">proficiency</span><span class="p">.</span>
+      <span class="nf">steps</span><span class="p">:</span>
+      <span class="o">-</span> <span class="n">d2</span>
+    <span class="o">-</span> 
+      <span class="ss">name: </span><span class="no">Blue</span> <span class="no">Blood</span>
+      <span class="ss">description: </span><span class="no">Descended</span> <span class="n">from</span> <span class="n">nobility</span><span class="p">.</span>
+      <span class="nf">steps</span><span class="p">:</span>
+      <span class="o">-</span> <span class="n">d2</span>
+      <span class="o">-</span> <span class="n">d4</span>
+      <span class="o">-</span> <span class="n">d6</span>
+    <span class="ss">complications:
+    </span><span class="o">-</span> 
+      <span class="ss">name: </span><span class="no">Allergy</span>
+      <span class="ss">description: </span><span class="no">Allergic</span> <span class="n">to</span> <span class="n">something</span> <span class="n">common</span><span class="p">.</span>
+      <span class="nf">steps</span><span class="p">:</span>
+      <span class="o">-</span> <span class="n">d2</span>
+      <span class="o">-</span> <span class="n">d8</span>
+    <span class="o">-</span>
+      <span class="ss">name: </span><span class="no">Forked</span> <span class="no">Tongue</span>
+      <span class="ss">description: </span><span class="no">Compulsive</span> <span class="n">liar</span><span class="p">.</span>
+      <span class="nf">steps</span><span class="p">:</span>
+      <span class="o">-</span> <span class="n">d6</span>
+</code></pre></div></div>
+
+<p>Obviously that’s only a tiny sampling of the abilities.  In the real implementation, the configuration is broken up across several files, cortex_attributes.yml, cortex_skills.yml, etc. just to keep the data more organized.  You can have multiple config files for a single plugin, as long as their configuration is under <code class="language-ruby highlighter-rouge"><span class="n">cortex</span><span class="p">:</span></code>.  For example:</p>
+
+<p>In cortex.yml:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">cortex:
+    starting_attribute_points: </span><span class="mi">48</span>
+    <span class="o">...</span>
+    <span class="ss">shortcuts: </span><span class="p">{}</span>
+</code></pre></div></div>
+
+<p>In cortex_attributes.yml:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">cortex:
+    attributes:
+        </span><span class="o">-</span> <span class="o">...</span>
+</code></pre></div></div>
+
+<p>And so on.</p>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Notice that the list of specialties is just a string, but the list of steps for assets/complications is an actual list.  That’s because specialties are free-form.  The listed values are just suggestions and you can create your own.  Steps on the other hand are fixed.  You can only get a trait at one of the available steps.</p>
+</blockquote>
+
+
+                 <div class="tutorial-nav">
+                     <p>This article is part of the <a href="/tutorials/code/create-plugin">Creating a Plugin</a> tutorial.</p>
+    
+                     <div class="pagination-block">
+                         <ul>
+                             
+                             <li><a href="/tutorials/code/create-plugin/plugin-module.html"> &larr; Previous</a></li>
+                             
+            
+                             <li><a href="/tutorials/code/create-plugin">Back to Start</a> </li>
+            
+        
+                             
+                             <li><a href="/tutorials/code/create-plugin/help-file.html">Next &rarr; </a></li>
+                             
+                         </ul>
+                     </div>
+    
+                     <br/>
+                 </div>
+                 
+             </div>             
+                           </div>
+              
+              
+                  <div class="col col-sm-3">
+                      
+                      
+                      <a name="toc"></a>
+                      <div class="sidebar fs3-sidebar"> 
+                      
+                        <div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+                      
+                      <h2>Creating a Plugin</h2>
+                      
+                     
+                      
+                                          
+                      
+                                          
+                      
+                                          
+                      
+                                          
+                      
+                                          
+                                          <ul>
+  <li><a href="/tutorials/code/create-plugin/">Tutorial Overview</a></li>
+  <li><a href="/tutorials/code/create-plugin/plugin-folder.html">Create a Plugin Folder</a></li>
+  <li><a href="/tutorials/code/create-plugin/plugin-module.html">Create a Plugin Module</a></li>
+  <li><a href="/tutorials/code/create-plugin/config-file.html">Create a Config File</a></li>
+  <li><a href="/tutorials/code/create-plugin/help-file.html">Create a Help File</a></li>
+  <li><a href="/tutorials/code/create-plugin/db-model.html">Create a Database Model</a></li>
+  <li><a href="/tutorials/code/create-plugin/abilities-cmd.html">Create the Abilities Command</a></li>
+  <li><a href="/tutorials/code/create-plugin/set-ability-cmd.html">Create the Set Ability Command</a></li>
+  <li><a href="/tutorials/code/create-plugin/sheet-cmd.html">Create the Sheet Command</a></li>
+  <li><a href="/tutorials/code/create-plugin/app-review-cmd.html">Expand the App Review Command</a></li>
+  <li><a href="/tutorials/code/create-plugin/roll-cmd.html">Create the Roll Command</a></li>
+  <li><a href="/tutorials/code/create-plugin/locale-file.html">Create a Translations File</a></li>
+  <li><a href="/tutorials/code/create-plugin/cmd-dispatch.html">Create a Dispatch Link</a></li>
+  <li><a href="/tutorials/code/create-plugin/next-steps.html">Next Steps</a></li>
+</ul>
+
+                                          
+                      
+                                          
+                      
+                  </div>
+              </div>
+
+              <div id="searchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Search Results</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       
+
+       <div id="search-hits">
+         <!-- Hits widget will appear here -->
+       </div>
+
+
+       <div id="search-pagination">
+         <!-- Pagination widget will appear here -->
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/scripts/search.js"></script>
+<script>
+  initializeSearch( 'NI38C577BA',
+    '29793fd9084a3446072c14e471e32589',
+    'aresmush.com',
+    ' ' );
+</script>
+              
+</div>
+
+
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>

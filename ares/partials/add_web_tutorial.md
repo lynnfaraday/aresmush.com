@@ -1,8 +1,0 @@
-* [Tutorial Overview](/tutorials/code/add-web/)
-* [Setting up the Data](/tutorials/code/add-web/data)
-* [Modifying the Web Request](/tutorials/code/add-web/get-request)
-* [Modifying the Character Template](/tutorials/code/add-web/get-template)
-* [Modifying the Edit Template](/tutorials/code/add-web/edit-template)
-* [Modifying the Edit Request](/tutorials/code/add-web/edit-request)
-* [Modifying Chargen](/tutorials/code/add-web/modify-chargen)
-* [Next Steps](/tutorials/code/add-web/next-steps)

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>Set Ability Command - </title>
+    <meta property="og:title" content="Set Ability Command - ">
+    <meta name="twitter:title" content="Set Ability Command - ">
+    <meta itemprop="name" content="Set Ability Command - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="Set Ability Command" >
+    <meta property="og:url" content="/tutorials/code/create-plugin/set-ability-cmd.html" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+                               
+             <div class="page">
+                 
+                 <h1>Set Ability Command</h1>
+                 
+                 <div class="fs3-shortcut">
+                     <a href="#toc">(View Table of Contents)</a>
+                 </div>
+                 
+
+                     <p>Next up - we need a way to set character abilities.  The processing is slightly different for each type of ability.   We’re only going to look at the attribute set command in detail.  There are two verisons of this command:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">attribute</span><span class="o">/</span><span class="n">set</span> <span class="o">&lt;</span><span class="n">ability</span> <span class="nb">name</span><span class="o">&gt;=&lt;</span><span class="n">die</span> <span class="n">step</span><span class="o">&gt;</span>  <span class="p">(</span><span class="k">for</span> <span class="n">players</span><span class="p">)</span>
+<span class="n">attribute</span><span class="o">/</span><span class="n">set</span> <span class="o">&lt;</span><span class="n">char</span> <span class="nb">name</span><span class="o">&gt;=&lt;</span><span class="n">ability</span> <span class="nb">name</span><span class="o">&gt;</span><span class="sr">/&lt;die step&gt; (for admins)
+</span></code></pre></div></div>
+
+<p>This command is more complex than the previous ones we’ve looked at, so we’ll take it apart piece by piece.</p>
+
+<h2 id="parsing-args">Parsing Args</h2>
+
+<p>We can tell the difference between the two versions of the command based on whether the command args contains a ‘/’.  That affects how we parse the arguments.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nb">attr_accessor</span> <span class="ss">:target_name</span><span class="p">,</span> <span class="ss">:ability_name</span><span class="p">,</span> <span class="ss">:die_step</span>
+  
+  <span class="k">def</span> <span class="nf">parse_args</span>
+     <span class="c1"># Admin version</span>
+     <span class="k">if</span> <span class="p">(</span><span class="n">cmd</span><span class="p">.</span><span class="nf">args</span> <span class="o">=~</span> <span class="sr">/\//</span><span class="p">)</span>
+       <span class="n">args</span> <span class="o">=</span> <span class="n">cmd</span><span class="p">.</span><span class="nf">parse_args</span><span class="p">(</span><span class="no">ArgParser</span><span class="p">.</span><span class="nf">arg1_equals_arg2_slash_arg3</span><span class="p">)</span>
+       <span class="nb">self</span><span class="p">.</span><span class="nf">target_name</span> <span class="o">=</span> <span class="n">titlecase_arg</span><span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="nf">arg1</span><span class="p">)</span>
+       <span class="nb">self</span><span class="p">.</span><span class="nf">ability_name</span> <span class="o">=</span> <span class="n">titlecase_arg</span><span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="nf">arg2</span><span class="p">)</span>
+       <span class="nb">self</span><span class="p">.</span><span class="nf">die_step</span> <span class="o">=</span> <span class="n">downcase_arg</span><span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="nf">arg3</span><span class="p">)</span>
+     <span class="k">else</span>
+       <span class="n">args</span> <span class="o">=</span> <span class="n">cmd</span><span class="p">.</span><span class="nf">parse_args</span><span class="p">(</span><span class="no">ArgParser</span><span class="p">.</span><span class="nf">arg1_equals_arg2</span><span class="p">)</span>
+       <span class="nb">self</span><span class="p">.</span><span class="nf">target_name</span> <span class="o">=</span> <span class="n">enactor_name</span>
+       <span class="nb">self</span><span class="p">.</span><span class="nf">ability_name</span> <span class="o">=</span> <span class="n">titlecase_arg</span><span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="nf">arg1</span><span class="p">)</span>
+       <span class="nb">self</span><span class="p">.</span><span class="nf">die_step</span> <span class="o">=</span> <span class="n">downcase_arg</span><span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="nf">arg2</span><span class="p">)</span>
+     <span class="k">end</span>
+  <span class="k">end</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> We use titlecase for the target name so it’ll be pretty when we display it later.  Titlecase is also important for the ability name, so it’s always consistent.  You don’t want someone to have one rating in Guns and another in GUNS.  We use downcase for the die step because ‘d2’ is a more standard way of writing it than ‘D2’.</p>
+</blockquote>
+
+<h2 id="error-checking">Error Checking</h2>
+
+<p>There are a number of error checks needed here.  First we want to make sure that all the pieces of the command were specified.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">def</span> <span class="nf">required_args</span>
+    <span class="p">[</span><span class="nb">self</span><span class="p">.</span><span class="nf">target_name</span><span class="p">,</span> <span class="nb">self</span><span class="p">.</span><span class="nf">ability_name</span><span class="p">,</span> <span class="nb">self</span><span class="p">.</span><span class="nf">die_step</span><span class="p">]</span>
+  <span class="k">end</span>
+</code></pre></div></div>
+
+<p>Then we check that the die step is valid.  We can use one of the helper methods for that.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">def</span> <span class="nf">check_valid_die_step</span>
+    <span class="k">return</span> <span class="n">t</span><span class="p">(</span><span class="s1">'cortex.invalid_die_step'</span><span class="p">)</span> <span class="k">if</span> <span class="o">!</span><span class="no">Cortex</span><span class="p">.</span><span class="nf">is_valid_die_step?</span><span class="p">(</span><span class="nb">self</span><span class="p">.</span><span class="nf">die_step</span><span class="p">)</span>
+    <span class="k">return</span> <span class="kp">nil</span>
+  <span class="k">end</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Methods that return true/false often have a ? on the end, like <code class="language-ruby highlighter-rouge"><span class="n">is_valid_die_step?</span></code>.  This is not universal, but you’ll see it a lot.</p>
+</blockquote>
+
+<p>There’s a similar check to make sure the attribute name is valid, since Cortex has a fixed list.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">def</span> <span class="nf">check_valid_ability</span>
+    <span class="k">return</span> <span class="n">t</span><span class="p">(</span><span class="s1">'cortex.invalid_ability_name'</span><span class="p">)</span> <span class="k">if</span> <span class="o">!</span><span class="no">Cortex</span><span class="p">.</span><span class="nf">is_valid_attribute_name?</span><span class="p">(</span><span class="nb">self</span><span class="p">.</span><span class="nf">ability_name</span><span class="p">)</span>
+    <span class="k">return</span> <span class="kp">nil</span>
+  <span class="k">end</span>
+</code></pre></div></div>
+
+<p>Next we make sure the character is allowed to edit abilities.  If the target is yourself, you can.  Otherwise we use a helper to ensure they have the ‘manage_apps’ permission.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">def</span> <span class="nf">check_can_set</span>
+    <span class="k">return</span> <span class="kp">nil</span> <span class="k">if</span> <span class="n">enactor_name</span> <span class="o">==</span> <span class="nb">self</span><span class="p">.</span><span class="nf">target_name</span>
+    <span class="k">return</span> <span class="kp">nil</span> <span class="k">if</span> <span class="no">Cortex</span><span class="p">.</span><span class="nf">can_manage_abilities?</span><span class="p">(</span><span class="n">enactor</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">t</span><span class="p">(</span><span class="s1">'dispatcher.not_allowed'</span><span class="p">)</span>
+  <span class="k">end</span>      
+</code></pre></div></div>
+
+<p>Finally we make sure that their character is unlocked.  The character gets locked by the chargen system once they’ve submitted their app (to prevent changes while the staff is reviewing) and when they’re approved.  Admins are allowed to override this.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">def</span> <span class="nf">check_chargen_locked</span>
+    <span class="k">return</span> <span class="kp">nil</span> <span class="k">if</span> <span class="no">Cortex</span><span class="p">.</span><span class="nf">can_manage_abilities?</span><span class="p">(</span><span class="n">enactor</span><span class="p">)</span>
+    <span class="no">Chargen</span><span class="p">.</span><span class="nf">check_chargen_locked</span><span class="p">(</span><span class="n">enactor</span><span class="p">)</span>
+  <span class="k">end</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> The fact that the permissions check came up in a number of commands is the reason why it was turned into a helper method.  Helpers let you use a chunk of code all over without repeating yourself.</p>
+</blockquote>
+
+<h2 id="handling">Handling</h2>
+
+<p>Finally we can actually set the attribute!   We use the target name to look up the character.  The <code class="language-ruby highlighter-rouge"><span class="n">with_a_character</span></code> helper does all the error checking for us to make sure the character exists.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">handle</span>
+  <span class="no">ClassTargetFinder</span><span class="p">.</span><span class="nf">with_a_character</span><span class="p">(</span><span class="nb">self</span><span class="p">.</span><span class="nf">target_name</span><span class="p">,</span> <span class="n">client</span><span class="p">,</span> <span class="n">enactor</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">model</span><span class="o">|</span>
+     <span class="c1"># See if we already have this attribute</span>
+     <span class="kp">attr</span> <span class="o">=</span> <span class="no">Cortex</span><span class="p">.</span><span class="nf">find_attribute</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="nb">self</span><span class="p">.</span><span class="nf">ability_name</span><span class="p">)</span>
+     
+     <span class="c1"># If so, update it.  Otherwise create a new one.</span>
+     <span class="k">if</span> <span class="p">(</span><span class="kp">attr</span><span class="p">)</span>
+       <span class="kp">attr</span><span class="p">.</span><span class="nf">update</span><span class="p">(</span><span class="ss">die_step: </span><span class="nb">self</span><span class="p">.</span><span class="nf">die_step</span><span class="p">)</span>
+     <span class="k">else</span>
+       <span class="no">CortexAttribute</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="ss">name: </span><span class="nb">self</span><span class="p">.</span><span class="nf">ability_name</span><span class="p">,</span> <span class="ss">die_step: </span><span class="nb">self</span><span class="p">.</span><span class="nf">die_step</span><span class="p">,</span> <span class="ss">character: </span><span class="n">model</span><span class="p">)</span>
+     <span class="k">end</span>
+     
+     <span class="n">client</span><span class="p">.</span><span class="nf">emit_success</span> <span class="n">t</span><span class="p">(</span><span class="s1">'cortex.ability_set'</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+
+                 <div class="tutorial-nav">
+                     <p>This article is part of the <a href="/tutorials/code/create-plugin">Creating a Plugin</a> tutorial.</p>
+    
+                     <div class="pagination-block">
+                         <ul>
+                             
+                             <li><a href="/tutorials/code/create-plugin/abilities-cmd.html"> &larr; Previous</a></li>
+                             
+            
+                             <li><a href="/tutorials/code/create-plugin">Back to Start</a> </li>
+            
+        
+                             
+                             <li><a href="/tutorials/code/create-plugin/sheet-cmd.html">Next &rarr; </a></li>
+                             
+                         </ul>
+                     </div>
+    
+                     <br/>
+                 </div>
+                 
+             </div>             
+                           </div>
+              
+              
+                  <div class="col col-sm-3">
+                      
+                      
+                      <a name="toc"></a>
+                      <div class="sidebar fs3-sidebar"> 
+                      
+                        <div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+                      
+                      <h2>Creating a Plugin</h2>
+                      
+                     
+                      
+                                          
+                      
+                                          
+                      
+                                          
+                      
+                                          
+                      
+                                          
+                                          <ul>
+  <li><a href="/tutorials/code/create-plugin/">Tutorial Overview</a></li>
+  <li><a href="/tutorials/code/create-plugin/plugin-folder.html">Create a Plugin Folder</a></li>
+  <li><a href="/tutorials/code/create-plugin/plugin-module.html">Create a Plugin Module</a></li>
+  <li><a href="/tutorials/code/create-plugin/config-file.html">Create a Config File</a></li>
+  <li><a href="/tutorials/code/create-plugin/help-file.html">Create a Help File</a></li>
+  <li><a href="/tutorials/code/create-plugin/db-model.html">Create a Database Model</a></li>
+  <li><a href="/tutorials/code/create-plugin/abilities-cmd.html">Create the Abilities Command</a></li>
+  <li><a href="/tutorials/code/create-plugin/set-ability-cmd.html">Create the Set Ability Command</a></li>
+  <li><a href="/tutorials/code/create-plugin/sheet-cmd.html">Create the Sheet Command</a></li>
+  <li><a href="/tutorials/code/create-plugin/app-review-cmd.html">Expand the App Review Command</a></li>
+  <li><a href="/tutorials/code/create-plugin/roll-cmd.html">Create the Roll Command</a></li>
+  <li><a href="/tutorials/code/create-plugin/locale-file.html">Create a Translations File</a></li>
+  <li><a href="/tutorials/code/create-plugin/cmd-dispatch.html">Create a Dispatch Link</a></li>
+  <li><a href="/tutorials/code/create-plugin/next-steps.html">Next Steps</a></li>
+</ul>
+
+                                          
+                      
+                                          
+                      
+                  </div>
+              </div>
+
+              <div id="searchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Search Results</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       
+
+       <div id="search-hits">
+         <!-- Hits widget will appear here -->
+       </div>
+
+
+       <div id="search-pagination">
+         <!-- Pagination widget will appear here -->
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/scripts/search.js"></script>
+<script>
+  initializeSearch( 'NI38C577BA',
+    '29793fd9084a3446072c14e471e32589',
+    'aresmush.com',
+    ' ' );
+</script>
+              
+</div>
+
+
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>

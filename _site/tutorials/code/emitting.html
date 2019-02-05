@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>Emitting - </title>
+    <meta property="og:title" content="Emitting - ">
+    <meta name="twitter:title" content="Emitting - ">
+    <meta itemprop="name" content="Emitting - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="Emitting" >
+    <meta property="og:url" content="/tutorials/code/emitting.html" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+<h1>Emitting</h1>
+
+    <div class="tags-box">
+                 <ul class="tags-box">
+                 
+                 <li>[code]</li>
+                 
+                 <li>[emit]</li>
+                 
+                 </ul>
+    </div>
+                               
+             <div class="page">
+                 <p>Emitting messages is the most basic way that your code will communicate with the players.  Pretty much every single command will emit something to someone.</p>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> All emits accept <a href="/tutorials/code/formatting.html">Formatting Codes</a>.</p>
+</blockquote>
+
+<div id="inline_toc">
+  <p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#basic-emits" id="markdown-toc-basic-emits">Basic Emits</a></li>
+  <li><a href="#emitting-to-a-different-characters-client" id="markdown-toc-emitting-to-a-different-characters-client">Emitting to a Different Character’s Client</a></li>
+  <li><a href="#emitting-to-a-room" id="markdown-toc-emitting-to-a-room">Emitting to a Room</a></li>
+  <li><a href="#emitting-to-everyone" id="markdown-toc-emitting-to-everyone">Emitting to Everyone</a></li>
+  <li><a href="#notifying-web-clients" id="markdown-toc-notifying-web-clients">Notifying Web Clients</a></li>
+  <li><a href="#raw-emits" id="markdown-toc-raw-emits">Raw Emits</a></li>
+</ul>
+
+</div>
+
+<h2 id="basic-emits">Basic Emits</h2>
+
+<p>The <strong>client</strong> object allows you to emit a message to a player.  Most commonly, you’ll use the <code class="language-ruby highlighter-rouge"><span class="n">client</span></code> helper in the command handler to emit to the client executing the command.</p>
+
+<ul>
+  <li><code class="language-ruby highlighter-rouge"><span class="n">client</span><span class="p">.</span><span class="nf">emit</span> <span class="s2">"A message"</span></code> - A basic emit.</li>
+  <li><code class="language-ruby highlighter-rouge"><span class="n">client</span><span class="p">.</span><span class="nf">emit_ooc</span> <span class="s2">"A message"</span></code> - OOC messages show up in light blue.</li>
+  <li><code class="language-ruby highlighter-rouge"><span class="n">client</span><span class="p">.</span><span class="nf">emit_success</span> <span class="s2">"A message"</span></code> - Success notices show up in green.</li>
+  <li><code class="language-ruby highlighter-rouge"><span class="n">client</span><span class="p">.</span><span class="nf">emit_failure</span> <span class="s2">"A message"</span></code> - Failure/error alerts show up in red.</li>
+</ul>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> A ‘client’ in this context means a traditional MUSH client, including telnet-based client apps or the web portal’s “Play” screen.   Regular emits are not sent to people just browsing around the web portal.  If you want to notify them of something (like to tell them that they’ve received a new mail message), see Notifying Web Clients below.</p>
+</blockquote>
+
+<h2 id="emitting-to-a-different-characters-client">Emitting to a Different Character’s Client</h2>
+
+<p>Sometimes you’ll need to emit to a different client - for example, the <em>target</em> of a command.</p>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> You can only emit to clients, not characters.  A character is just a database object; it can’t receive messages.</p>
+</blockquote>
+
+<p>There are a few utility methods that let emit to a client associated with a character, as long as that character is logged in:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Login</span><span class="p">.</span><span class="nf">emit_if_logged_in</span> <span class="n">char</span><span class="p">,</span> <span class="s2">"A message."</span>
+<span class="no">Login</span><span class="p">.</span><span class="nf">emit_ooc_if_logged_in</span> <span class="n">char</span><span class="p">,</span> <span class="s2">"A message."</span>
+</code></pre></div></div>
+
+<p>For more advanced processing, you can use the <code class="language-ruby highlighter-rouge"><span class="no">Login</span><span class="p">.</span><span class="nf">find_client</span></code> method to look up the client for a character and then emit to it directly.</p>
+
+<h2 id="emitting-to-a-room">Emitting to a Room</h2>
+
+<p>Many commands emit messages to everyone in a room.  The Room class has a helper method that will emit to any connected client whose character is in that room:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">room</span><span class="p">.</span><span class="nf">emit</span> <span class="s2">"A message"</span>
+<span class="n">room</span><span class="p">.</span><span class="nf">emit_ooc</span> <span class="s2">"A message"</span>
+<span class="n">room</span><span class="p">.</span><span class="nf">emit_failure</span> <span class="s2">"A message"</span>
+<span class="n">room</span><span class="p">.</span><span class="nf">emit_success</span> <span class="s2">"A message"</span>
+</code></pre></div></div>
+
+<p>Commonly you’ll use the <code class="language-ruby highlighter-rouge"><span class="n">enactor_room</span></code> helper in the command handler to emit to the enactor’s room:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">enactor_room</span><span class="p">.</span><span class="nf">emit</span> <span class="s2">"A message."</span>
+</code></pre></div></div>
+
+<h2 id="emitting-to-everyone">Emitting to Everyone</h2>
+
+<p>You can emit to all connected characters through the Client Monitor, which keeps track of who’s connected.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Global</span><span class="p">.</span><span class="nf">client_monitor</span><span class="p">.</span><span class="nf">emit_all</span> <span class="s2">"A message."</span>
+<span class="no">Global</span><span class="p">.</span><span class="nf">client_monitor</span><span class="p">.</span><span class="nf">emit_all_ooc</span> <span class="s2">"A message."</span>
+</code></pre></div></div>
+
+<h2 id="notifying-web-clients">Notifying Web Clients</h2>
+
+<p>By default, characters logged into the web portal are <strong>not</strong> notified of emits.  Most of them are simply irrelevant when you’re just browsing the website.</p>
+
+<p>If you want to send a notification to someone - no matter whether they’re on the web portal or a MU client - you can use the Notifier.  The Notifier accepts an <em>event type</em>, which may trigger special handling on the web portal, and a <em>block</em> that tells it which clients it should emit to.</p>
+
+<p>To emit to everyone, the block can simply return ‘true’:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Global</span><span class="p">.</span><span class="nf">notifier</span><span class="p">.</span><span class="nf">notify_ooc</span><span class="p">(</span><span class="ss">:event_created</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">char</span><span class="o">|</span>
+  <span class="kp">true</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>The notification for a new forum post might only go to people who can actually see the post:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Global</span><span class="p">.</span><span class="nf">notifier</span><span class="p">.</span><span class="nf">notify_ooc</span><span class="p">(</span><span class="ss">:forum_edited</span><span class="p">,</span> <span class="n">notification</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">char</span><span class="o">|</span>
+   <span class="no">Forum</span><span class="p">.</span><span class="nf">can_read_category?</span><span class="p">(</span><span class="n">char</span><span class="p">,</span> <span class="n">category</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<h2 id="raw-emits">Raw Emits</h2>
+
+<p>A ‘raw’ emit does not interpret formatting codes.  Pretty much the only time you’d use this is in the editing commands (like <code class="language-ruby highlighter-rouge"><span class="n">desc</span><span class="o">/</span><span class="n">edit</span></code>) where you want to send the original, unformatted text to the client to be loaded into their input buffer.</p>
+
+<ul>
+  <li><code class="language-ruby highlighter-rouge"><span class="n">client</span><span class="p">.</span><span class="nf">emit_raw</span> <span class="s2">"A message."</span></code></li>
+</ul>
+
+             </div>             
+                           </div>
+              
+                           <div class="col col-sm-3">
+                                                 <div class="sidebar">   
+                 
+<div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+                  
+<div class="sidebar-title">See AresMUSH In Action</div>
+
+<p>Visit the Ares <a href="http://mush.aresmush.com">Demo Game</a>.</p>
+
+<p>Find other Ares games at <a href="http://arescentral.aresmush.com">AresCentral</a>.</p>
+
+
+<div class="sidebar-title">Follow Us on Facebook</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1423276681271936";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-page" data-href="https://www.facebook.com/aresmush/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/aresmush/"><a href="https://www.facebook.com/aresmush/">Ares Mush</a></blockquote></div></div>
+
+<div class="sidebar-title">Discuss Ares</div>
+
+Have a question?  Want to talk about AresMUSH (or MU*s in general)?  Visit our <a href="http://forum.aresmush.com">Discussion Forum</a>.
+                  
+                  
+
+                  <div class="sidebar-title">Stay Up to Date</div>
+                          
+                          Get important updates about Ares on <a href="https://www.facebook.com/aresmush/">Facebook</a> or the <a href="http://forum.aresmush.com">Discussion Forum</a>.
+
+              <div id="searchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Search Results</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       
+
+       <div id="search-hits">
+         <!-- Hits widget will appear here -->
+       </div>
+
+
+       <div id="search-pagination">
+         <!-- Pagination widget will appear here -->
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/scripts/search.js"></script>
+<script>
+  initializeSearch( 'NI38C577BA',
+    '29793fd9084a3446072c14e471e32589',
+    'aresmush.com',
+    ' ' );
+</script>
+
+                  
+
+                  
+                
+                  
+                           </div>
+</div>
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>

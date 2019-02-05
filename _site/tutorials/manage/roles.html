@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>Using Roles and Permissions - </title>
+    <meta property="og:title" content="Using Roles and Permissions - ">
+    <meta name="twitter:title" content="Using Roles and Permissions - ">
+    <meta itemprop="name" content="Using Roles and Permissions - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="Using Roles and Permissions" >
+    <meta property="og:url" content="/tutorials/manage/roles.html" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+<h1>Using Roles and Permissions</h1>
+
+    <div class="tags-box">
+                 <ul class="tags-box">
+                 
+                 </ul>
+    </div>
+                               
+             <div class="page">
+                 <p>Ares has a robust and flexible roles/permissions system.  This article describes how you can utilize roles on your game.</p>
+
+<div id="inline_toc">
+  <p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#roles-vs-permissions" id="markdown-toc-roles-vs-permissions">Roles vs Permissions</a></li>
+  <li><a href="#default-roles" id="markdown-toc-default-roles">Default Roles</a></li>
+  <li><a href="#permissions" id="markdown-toc-permissions">Permissions</a></li>
+  <li><a href="#creating-a-new-role---app-staff" id="markdown-toc-creating-a-new-role---app-staff">Creating a New Role - App Staff</a></li>
+  <li><a href="#using-permissions-in-code" id="markdown-toc-using-permissions-in-code">Using Permissions in Code</a></li>
+  <li><a href="#default-permissions" id="markdown-toc-default-permissions">Default Permissions</a></li>
+</ul>
+
+</div>
+
+<h2 id="roles-vs-permissions">Roles vs Permissions</h2>
+
+<p>There are two levels to the Roles system:  roles and permissions.</p>
+
+<p>Roles are assigned to characters.  You could have a ‘builder’ role or a ‘pilot’ role.  Some things - like channels or forums - can be locked so that only people with certain roles can use them.</p>
+
+<p>Permissions are assigned to roles, and allow you to further refine what people with a given role can do.</p>
+
+<h2 id="default-roles">Default Roles</h2>
+
+<p>The default Ares database comes with several roles:</p>
+
+<ul>
+  <li><strong>Admin</strong> gives access to all game commands except tinkering.  This means they can use the existing commands but can’t alter the database directly.</li>
+  <li><strong>Coder</strong> gives access to the <a href="/tutorials/code/tinker.html">tinker command</a> (which lets them execute arbitrary code) and commands to reload the game code.</li>
+  <li><strong>Builder</strong> gives access to building commands, the ability to describe rooms, and the ability to teleport around.</li>
+  <li><strong>Guest</strong> doesn’t give any permissions, but the role is used to identify guest characters so the game can choose one when someone tries to log in as a guest.</li>
+  <li><strong>Approved</strong> grants some basic permissions that are available to approved characters, such as the ability to use the ‘home’ command.</li>
+  <li><strong>Everyone</strong> is a default role granted to all characters, approved or not.</li>
+</ul>
+
+<p>Additionally, there is a special character - the master admin (default name Headwiz).  The master admin has both the admin and coder roles, and is the only one that can assign those roles.</p>
+
+<blockquote>
+  <p><i class="fa fa-exclamation-triangle"></i> <strong>Important:</strong> Coders essentially have the keys to the kingdom.  They can do anything to the database, including changing the master admin password.  Make sure you trust your coders!</p>
+</blockquote>
+
+<h2 id="permissions">Permissions</h2>
+
+<p>Roles contain <strong>permissions</strong>, which control access to most commands.  For example, the ‘home’ command is limited to people with the “go_home” permission.  The ability to create and delete channels is limited to people with the “manage_channels” permission.</p>
+
+<p>You cannot assign individual permissions to characters.  Permissions may only be assigned to <em>roles</em>, which are in turn assigned to characters.</p>
+
+<p>Characters with the Admin role automatically have access to <strong>all</strong> permissions.</p>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> A list of the default permissions can be found below.</p>
+</blockquote>
+
+<h2 id="creating-a-new-role---app-staff">Creating a New Role - App Staff</h2>
+
+<p>Let’s say you wanted to create a more limited admin role for apps staff.  You want them to have access to review and approve characters, access to read jobs in the APP category, and access to an Apps forum.</p>
+
+<ol>
+  <li>Create the role using <code class="language-ruby highlighter-rouge"><span class="n">role</span><span class="o">/</span><span class="n">create</span> <span class="n">app_staff</span></code>.</li>
+  <li>Assign permissions using <code class="language-ruby highlighter-rouge"><span class="n">role</span><span class="o">/</span><span class="n">addpermission</span> <span class="n">app_staff</span><span class="o">=&lt;</span><span class="n">permission</span><span class="o">&gt;</span></code>.   You probably want to give them things like <code class="language-ruby highlighter-rouge"><span class="n">manage_apps</span></code>, <code class="language-ruby highlighter-rouge"><span class="n">view_sheets</span></code> and <code class="language-ruby highlighter-rouge"><span class="n">access_jobs</span></code>.</li>
+  <li>Update the jobs config to add the <code class="language-ruby highlighter-rouge"><span class="n">app_staff</span></code> role to the APP category.  See the <a href="/tutorials/config/jobs.html">jobs configuration tutorial</a> for details.</li>
+  <li>Set permissions on the Apps forum using <code class="language-ruby highlighter-rouge"><span class="n">forum</span><span class="o">/</span><span class="n">readroles</span> <span class="o">&lt;</span><span class="n">roles</span><span class="o">&gt;</span></code> and <code class="language-ruby highlighter-rouge"><span class="n">forum</span><span class="o">/</span><span class="n">writeroles</span> <span class="o">&lt;</span><span class="n">roles</span><span class="o">&gt;</span></code>.</li>
+</ol>
+
+<blockquote>
+  <p><i class="fa fa-exclamation-triangle"></i> <strong>Important:</strong> Numerous commands are locked to characters with the ‘approved’ role as a defense against trolls. Full-fledged admins automatically count as approved, but you’ll need to assign the ‘approved’ role to your other staff manually using <code class="language-ruby highlighter-rouge"><span class="n">role</span><span class="o">/</span><span class="n">add</span> <span class="o">&lt;</span><span class="nb">name</span><span class="o">&gt;=</span><span class="n">approved</span></code>.  You should also mark them as player bits with the <code class="language-ruby highlighter-rouge"><span class="n">playerbit</span></code> command so they don’t show up on the character gallery.</p>
+</blockquote>
+
+<h2 id="using-permissions-in-code">Using Permissions in Code</h2>
+
+<p>In your code, permissions can restrict who can use commands.  For example, if you wanted to lock the ‘home’ command to only people who have the ‘go_home’ permission, you would add the following error checker in the home command handler.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">def</span> <span class="nf">check_can_go_home</span>
+    <span class="k">return</span> <span class="s2">"You are not allowed to do that."</span> <span class="k">if</span> <span class="o">!</span><span class="n">enactor</span><span class="p">.</span><span class="nf">has_permission?</span><span class="p">(</span><span class="s2">"go_home"</span><span class="p">)</span>
+    <span class="k">return</span> <span class="kp">nil</span>
+  <span class="k">end</span>
+</code></pre></div></div>
+
+<p>Many plugins have helper methods to check for the necessary permission.  For example:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Rooms</span><span class="p">.</span><span class="nf">can_go_home?</span><span class="p">(</span><span class="n">enactor</span><span class="p">)</span>
+<span class="no">Chargen</span><span class="p">.</span><span class="nf">can_approve?</span><span class="p">(</span><span class="n">enactor</span><span class="p">)</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> It’s preferable to use the helper methods instead of the permission names so you only have to update one place if the permission ever changes.</p>
+</blockquote>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Remember that characters with the ‘admin’ role automatically have all permissions.</p>
+</blockquote>
+
+<h2 id="default-permissions">Default Permissions</h2>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> If you want to know exactly which commands are accessible with these permissions, use the ‘search’ feature of help files to look for help files referencing these permissions.  You’ll see a statement like  “These commands require the Admin role or the permission: whatever_permission”.</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>Role</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>access_jobs</td>
+      <td>Characters with the admin role have access to all job categories, but you have to edit the <a href="/tutorials/config/jobs.html">jobs configuration</a> to give access to other roles.</td>
+    </tr>
+    <tr>
+      <td>announce</td>
+      <td>By default this is given to all approved characters so storytellers can announce the start of events.</td>
+    </tr>
+    <tr>
+      <td>boot</td>
+      <td>By default this is given to all approved characters as part of the tools for <a href="/tutorials/manage/trolls.html">managing trolls</a>.</td>
+    </tr>
+    <tr>
+      <td>build</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>desc_anything</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>desc_places</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>go_home</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>login</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>manage_achievements</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>manage_abilities</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>manage_apps</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>manage_channels</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>manage_combat</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>manage_demographics</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>manage_events</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>manage_forum</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>manage_idle</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>manage_login</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>manage_notes</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>manage_ranks</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>manage_roster</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>manage_scenes</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>manage_weather</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>set_duty</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>teleport</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>view_bgs</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>view_sheets</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+             </div>             
+                           </div>
+              
+                           <div class="col col-sm-3">
+                                                 <div class="sidebar">   
+                 
+<div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+                  
+<div class="sidebar-title">See AresMUSH In Action</div>
+
+<p>Visit the Ares <a href="http://mush.aresmush.com">Demo Game</a>.</p>
+
+<p>Find other Ares games at <a href="http://arescentral.aresmush.com">AresCentral</a>.</p>
+
+
+<div class="sidebar-title">Follow Us on Facebook</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1423276681271936";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-page" data-href="https://www.facebook.com/aresmush/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/aresmush/"><a href="https://www.facebook.com/aresmush/">Ares Mush</a></blockquote></div></div>
+
+<div class="sidebar-title">Discuss Ares</div>
+
+Have a question?  Want to talk about AresMUSH (or MU*s in general)?  Visit our <a href="http://forum.aresmush.com">Discussion Forum</a>.
+                  
+                  
+
+                  <div class="sidebar-title">Stay Up to Date</div>
+                          
+                          Get important updates about Ares on <a href="https://www.facebook.com/aresmush/">Facebook</a> or the <a href="http://forum.aresmush.com">Discussion Forum</a>.
+
+              <div id="searchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Search Results</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       
+
+       <div id="search-hits">
+         <!-- Hits widget will appear here -->
+       </div>
+
+
+       <div id="search-pagination">
+         <!-- Pagination widget will appear here -->
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/scripts/search.js"></script>
+<script>
+  initializeSearch( 'NI38C577BA',
+    '29793fd9084a3446072c14e471e32589',
+    'aresmush.com',
+    ' ' );
+</script>
+
+                  
+
+                  
+                
+                  
+                           </div>
+</div>
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>

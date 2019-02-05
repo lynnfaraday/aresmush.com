@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>Using GitHub - </title>
+    <meta property="og:title" content="Using GitHub - ">
+    <meta name="twitter:title" content="Using GitHub - ">
+    <meta itemprop="name" content="Using GitHub - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="Using GitHub" >
+    <meta property="og:url" content="/tutorials/code/git.html" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+<h1>Using GitHub</h1>
+
+    <div class="tags-box">
+                 <ul class="tags-box">
+                 
+                 <li>[code]</li>
+                 
+                 <li>[git]</li>
+                 
+                 </ul>
+    </div>
+                               
+             <div class="page">
+                 <p><a href="http://www.github.com">GitHub</a> source control is the best way to transfer code between your PC and the game server.  In this tutorial, we’ll discuss how to use GitHub and take your code workflow to the next level.</p>
+
+<div id="inline_toc">
+  <p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#video-tutorial" id="markdown-toc-video-tutorial">Video Tutorial</a></li>
+  <li><a href="#github-desktop" id="markdown-toc-github-desktop">GitHub Desktop</a></li>
+  <li><a href="#creating-a-fork" id="markdown-toc-creating-a-fork">Creating a Fork</a></li>
+  <li><a href="#making-the-game-use-the-fork" id="markdown-toc-making-the-game-use-the-fork">Making the Game Use the Fork</a></li>
+  <li><a href="#controlling-your-config-files" id="markdown-toc-controlling-your-config-files">Controlling Your Config Files</a></li>
+  <li><a href="#git-from-the-game" id="markdown-toc-git-from-the-game">Git from the Game</a></li>
+  <li><a href="#updating-your-fork" id="markdown-toc-updating-your-fork">Updating Your Fork</a>    <ul>
+      <li><a href="#dealing-with-conflicts" id="markdown-toc-dealing-with-conflicts">Dealing with Conflicts</a></li>
+    </ul>
+  </li>
+  <li><a href="#advanced-github" id="markdown-toc-advanced-github">Advanced GitHub</a></li>
+</ul>
+
+</div>
+
+<h2 id="video-tutorial">Video Tutorial</h2>
+
+<p>You can view the <a href="/tutorials/code/git.html">Using GitHub</a> screencast for a full walkthrough of how to use GitHub to help you when editing Ares code.  This article describes some additional details.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jc0GLdMZya8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+<p><em><a href="https://www.youtube.com/embed/jc0GLdMZya8">Link to video</a></em></p>
+
+<p>The transcript is available <a href="/tutorials/code/github-transcript.html">here</a>.</p>
+
+<p>Here is a basic summary of the workflow:</p>
+
+<figure>
+
+    <div class="figure-contents">
+
+        
+           <a class="no_icon" target="_blank" href="/images//code/git-pull.png">
+        
+
+          <img class="docimage" src="/images//code/git-pull.png" alt="" />
+
+          </a>
+
+          
+
+        </div>
+
+</figure>
+
+<h2 id="github-desktop">GitHub Desktop</h2>
+
+<p>You can find the GitHub Desktop installer mentioned in the tutorial <a href="https://desktop.github.com/">here</a>.</p>
+
+<h2 id="creating-a-fork">Creating a Fork</h2>
+
+<p>The first step in using GitHub for your own game code is to create your own semi-independent version of Ares, called a ‘<strong>fork</strong>’ in GitHub lingo.</p>
+
+<ol>
+  <li>Create an account on <a href="https://www.github.com">Github</a>.</li>
+  <li>Browse to the main <a href="https://github.com/aresmush/aresmush">AresMUSH repository</a>.
+    <figure>
+
+ <div class="figure-contents">
+
+        
+        <a class="no_icon" target="_blank" href="/images//code/git.png">
+        
+
+       <img class="docimage" src="/images//code/git.png" alt="" />
+
+       </a>
+
+          
+
+     </div>
+
+</figure>
+  </li>
+</ol>
+<p>&lt;/figure&gt;</p>
+
+<ol>
+  <li>
+    <p>Click the “Fork” button (near the top right).</p>
+
+    <p>You are now the proud owner of your own version of AresMUSH.  You can tell that you’re on your version by looking at the repository name near the upper left.  The main Ares code is <strong>aresmush/aresmush</strong>.  Yours will be something like  <strong>YOURUSERNAME/aresmush</strong>.</p>
+  </li>
+  <li>The <strong>Clone URL</strong> is a URL that you use in the git commands to access your code.  On the right of the repository, you should see a ‘clone or download’ button.  Click on it to see the clone URL. Click on the <strong>“Use HTTPS”</strong> button to get the HTTP clone URL.</li>
+  <li>Repeat the above steps for the <a href="https://github.com/aresmush/ares-webportal">Ares Web Portal Repository</a> if you also want to create a fork of the Web Portal code.</li>
+</ol>
+
+<h2 id="making-the-game-use-the-fork">Making the Game Use the Fork</h2>
+
+<p>GitHub will pull from whatever repository you cloned when you set the game up. By default this is the main Ares code, but you can specify your personal fork in the install options.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">.</span><span class="nf">/</span><span class="n">install</span> <span class="o">&lt;</span><span class="n">game</span> <span class="nb">clone</span> <span class="no">URL</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="no">Web</span> <span class="no">Portal</span> <span class="nb">clone</span> <span class="no">URL</span><span class="o">&gt;</span>
+</code></pre></div></div>
+
+<p>If you need to add the fork after the game is installed, you’ll need to re-point the GitHub “origin” to your forked repository instead of the main one.</p>
+
+<p>In GitHub desktop:</p>
+
+<ol>
+  <li>Open the repo.</li>
+  <li>Go to Repository -&gt; Repository Settings -&gt; Primary Remote Repository.</li>
+  <li>Enter your fork’s clone URL.</li>
+  <li>Repeat for the web portal repo.</li>
+</ol>
+
+<p>In the server shell:</p>
+
+<ol>
+  <li>Go to the aresmush directory.</li>
+  <li>Type <code class="language-ruby highlighter-rouge"><span class="n">git</span> <span class="n">remote</span> <span class="n">set</span><span class="o">-</span><span class="n">url</span> <span class="n">origin</span> <span class="o">&lt;</span><span class="no">Your</span> <span class="no">Clone</span> <span class="no">URL</span><span class="o">&gt;</span></code></li>
+  <li>Repeat for the web portal directory.</li>
+</ol>
+
+<p>Now your game will be set up to get code updates from your fork instead of from the main Ares repository.</p>
+
+<h2 id="controlling-your-config-files">Controlling Your Config Files</h2>
+
+<p>By default, the AresMUSH repository does not contain configuration files.  This prevents conflicts between the default configuration and your game’s configuration when you’re doing updates.</p>
+
+<p>You may wish to add your game’s configuration files to source control, though, just to have a record of what changed and when.  This is especially useful if you’re trying to synchronize changes between a test game and the real game.</p>
+
+<p>To add your config files to source control, just modify the .gitignore file in your Ares fork.  <strong>Remove</strong> the final line that excludes the entire game directory:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Game directory</span>
+<span class="c1"># -----------------------------</span>
+<span class="sr">/game/</span>
+</code></pre></div></div>
+
+<p>The next time you add files to git, it will include your configuration changes.</p>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Git will still ignore other parts of the game directory, including uploads, logs, and the secrets.yml config file (to keep your secret codes secret).</p>
+</blockquote>
+
+<h2 id="git-from-the-game">Git from the Game</h2>
+
+<p>You can actually execute selected <code class="language-ruby highlighter-rouge"><span class="n">git</span></code> commands from within the game without needing to connect to the server shell.  See <code class="language-ruby highlighter-rouge"><span class="n">help</span> <span class="n">git</span></code> in-game.  This is handy if you’re using GitHub to sync changes between a local PC and the server because you can push to GitHub from your PC and pull the code down from inside the game itself.</p>
+
+<p><a name="upgrade"></a></p>
+
+<h2 id="updating-your-fork">Updating Your Fork</h2>
+
+<p>While you’re changing your own copy of the code, there’s also work going on in the main Ares repository. Whenever a new AresMUSH version is announced, you should update your fork.</p>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> It’s recommended that you keep up with updates as they happen.  Not only does it ensure that you have the latest features and bugfixes at all times, but it’s easier to do updates one at a time.  If you let them stack up and your code gets too far behind, the upgrade will be more difficult.</p>
+</blockquote>
+
+<p>Follow the instructions in the <a href="/tutorials/code/git.html">Using GitHub</a> tutorial to update your code.</p>
+
+<blockquote>
+  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong>  Always remember to update <strong>both</strong> aresmush and ares-webportal when getting the latest code.</p>
+</blockquote>
+
+<h3 id="dealing-with-conflicts">Dealing with Conflicts</h3>
+
+<p>There may be merge conflicts if both you and the Ares devs changed the same bits of code differently.  See <a href="/tutorials/manage/upgrades.html">Upgrades - Resolving Conflicts</a> for more information, and <a href="/feedback.html">ask for help</a> if you get stuck.</p>
+
+<h2 id="advanced-github">Advanced GitHub</h2>
+
+<p>There are a plethora of good tutorials on the internet about using GitHub, including <a href="https://try.github.io">Try Git</a>  and <a href="https://www.learnenough.com/git-tutorial">Learn Enough Git To Be Dangerous</a>.  There’s also detailed guides on GitHub’s own website, and the first couple chapters of the <a href="https://git-scm.com/book/en/v2">Pro Git</a> ebook (later chapters go into gory details you won’t need).</p>
+
+             </div>             
+                           </div>
+              
+                           <div class="col col-sm-3">
+                                                 <div class="sidebar">   
+                 
+<div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+                  
+<div class="sidebar-title">See AresMUSH In Action</div>
+
+<p>Visit the Ares <a href="http://mush.aresmush.com">Demo Game</a>.</p>
+
+<p>Find other Ares games at <a href="http://arescentral.aresmush.com">AresCentral</a>.</p>
+
+
+<div class="sidebar-title">Follow Us on Facebook</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1423276681271936";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-page" data-href="https://www.facebook.com/aresmush/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/aresmush/"><a href="https://www.facebook.com/aresmush/">Ares Mush</a></blockquote></div></div>
+
+<div class="sidebar-title">Discuss Ares</div>
+
+Have a question?  Want to talk about AresMUSH (or MU*s in general)?  Visit our <a href="http://forum.aresmush.com">Discussion Forum</a>.
+                  
+                  
+
+                  <div class="sidebar-title">Stay Up to Date</div>
+                          
+                          Get important updates about Ares on <a href="https://www.facebook.com/aresmush/">Facebook</a> or the <a href="http://forum.aresmush.com">Discussion Forum</a>.
+
+              <div id="searchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Search Results</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       
+
+       <div id="search-hits">
+         <!-- Hits widget will appear here -->
+       </div>
+
+
+       <div id="search-pagination">
+         <!-- Pagination widget will appear here -->
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/scripts/search.js"></script>
+<script>
+  initializeSearch( 'NI38C577BA',
+    '29793fd9084a3446072c14e471e32589',
+    'aresmush.com',
+    ' ' );
+</script>
+
+                  
+
+                  
+                
+                  
+                           </div>
+</div>
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+
+<!-- Schema.org markup for Google+ -->
+<!-- Twitter Card data -->
+<!-- Open Graph data -->
+
+    <meta name="google-site-verification" content="GK5cKdKe-CQEFsGx1pPxHFhflO88ddWG8NdWk_KDabA" />
+    
+    <title>Using the Database - </title>
+    <meta property="og:title" content="Using the Database - ">
+    <meta name="twitter:title" content="Using the Database - ">
+    <meta itemprop="name" content="Using the Database - ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta property="og:site_name" content="Using the Database" >
+    <meta property="og:url" content="/tutorials/code/database.html" >
+    
+  
+    <meta name="description" content=" ...">
+    <meta property="og:description" content=" ..." >
+    <meta name="twitter:description" content=" ...">  
+    <meta itemprop="description" content=" ...">
+  
+    
+  
+    <meta property="og:image" content="/default_preview.png">
+    <meta name="twitter:image" content="/default_preview.png">
+    <meta itemprop="image" content="/default_preview.png">
+  
+  
+  <meta name="twitter:site" content="@lynnnoton">
+  <meta name="twitter:creator" content="@lynnnoton">
+
+  
+    <!-- 
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/ee2438614b.js"></script>
+       
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
+
+    <script>
+        (function() {
+          var cx = '006109472892303620439:hmwpm8s4lvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+      
+    <script src="/scripts/default.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/tables.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/prettify.css"></link>
+    
+    
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <link rel="apple-touch-icon" href="/images/touchicon_57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/touchicon_62.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/touchicon_114.png">
+      
+      
+  </head>
+
+  <body>
+
+      <a name="top"></a>     
+         
+         
+                               
+                      <div class="titlebox">
+                                                    
+                         <div class="blogtitle">
+                          
+                              <a href="">AresMUSH</a> 
+                              
+                          </div>
+                          
+                          <div class="tagline">
+                                A New Breed of MUSH Server            
+                            </div>
+                            
+                            </div>
+                             
+                      
+                            <nav class="navbar navbar-dark">
+ 
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/features/">Why Ares?</a></li>
+          <li><a href="/features/ares-for-players.html">Ares for Players</a></li>
+          <li><a href="/features/ares-for-admins.html">Ares for Admins</a></li>
+          <li><a href="/features/ares-for-coders.html">Ares for Coders</a></li>
+          <li><hr/></li>
+          <li><a href="/web-portal">The Web Portal</a></li>
+          <li><a href="/features/skills.html">Skills Systems</a></li>
+          <li><a href="/handles">Player Handles</a></li>
+          <li><a href="/features/server-roundup.html">Server Comparison</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mush-101">MUSH 101</a></li>
+          <li><a href="/tutorials/play">Playing Ares</a></li>
+          <li><a href="/tutorials/install">Installing Ares</a></li>
+          <li><a href="/tutorials/config">Configuring Ares</a></li>
+          <li><a href="/tutorials/manage">Managing Ares</a></li>
+          <li><a href="/tutorials/code">Coding for Ares</a></li>
+        </ul>
+      </li>    
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FS3 <span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="/fs3/">FS3 Home</a></li>
+          <li><a href="/fs3/fs3-3/">Player's Guide</a></li>
+          <li><a href="/fs3/fs3-3/roll-quickref.html">Skills Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-quickref.html">Combat Quick Reference</a></li>
+          <li><a href="/fs3/fs3-3/combat-walkthrough.html">Interactive Combat Walkthrough</a></li>
+          <li><a href="/fs3/old-editions.html">Prior Edition Guides</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/code/">Source Code</a></li>
+          <li><a href="/tutorials/code">Learn to Code</a></li>
+          <li><a href="https://github.com/AresMUSH/aresmush/releases">Release Notes <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="http://arescentral.aresmush.com">AresCentral Directory <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://forum.aresmush.com">Discussion Forum <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="http://logcleaner.aresmush.com/">RP Log Cleaner <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/feedback.html">Contact Us</a>
+          <li><a href="/license.html">License</a>
+          <li><a href="/privacy.html">Privacy Policy</a>
+        </ul>
+      </li>
+
+    </ul>
+</nav>
+
+                      
+                        
+         
+         <div class="page-block">
+         
+                           <div class="row">
+                         
+                         
+    <div class="col col-sm-9">   
+
+<h1>Using the Database</h1>
+
+    <div class="tags-box">
+                 <ul class="tags-box">
+                 
+                 <li>[code]</li>
+                 
+                 <li>[database]</li>
+                 
+                 </ul>
+    </div>
+                               
+             <div class="page">
+                 <p>Most commands will need to read data from or save data to the database.  Ares uses an off-the-shelf database tool called Redis.  The <a href="http://ohm.keyvalue.org/">Ohm</a> database library lets you interact with the database directly from Ruby code.</p>
+
+<div id="inline_toc">
+  <p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#models-and-fields" id="markdown-toc-models-and-fields">Models and Fields</a></li>
+  <li><a href="#queries" id="markdown-toc-queries">Queries</a>    <ul>
+      <li><a href="#game-model" id="markdown-toc-game-model">Game Model</a></li>
+    </ul>
+  </li>
+  <li><a href="#accessing-fields" id="markdown-toc-accessing-fields">Accessing Fields</a></li>
+  <li><a href="#updating-fields" id="markdown-toc-updating-fields">Updating Fields</a></li>
+  <li><a href="#finder-helpers" id="markdown-toc-finder-helpers">Finder Helpers</a></li>
+  <li><a href="#target-finder-block-helpers" id="markdown-toc-target-finder-block-helpers">Target Finder Block helpers</a></li>
+  <li><a href="#callback-methods" id="markdown-toc-callback-methods">Callback Methods</a></li>
+  <li><a href="#relationships-references-and-collections" id="markdown-toc-relationships-references-and-collections">Relationships (References and Collections)</a></li>
+</ul>
+
+</div>
+
+<h2 id="models-and-fields">Models and Fields</h2>
+
+<p>Ohm lets you define ruby classes that interact with the database.  These are called <strong>Models</strong>, and you can identify them by the fact that they inherit from <code class="language-ruby highlighter-rouge"><span class="no">Ohm</span><span class="o">::</span><span class="no">Model</span></code>.   Model classes define attributes that correspond to fields in the database.  For example, the <code class="language-ruby highlighter-rouge"><span class="no">Character</span></code> class defines a name and alias:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Character</span> <span class="o">&lt;</span> <span class="no">Ohm</span><span class="o">::</span><span class="no">Model</span>
+  <span class="n">attribute</span> <span class="ss">:name</span>
+  <span class="n">attribute</span> <span class="ss">:alias</span>
+  <span class="o">...</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>You’ve probably seen database fields used throughout the code, in examples like <code class="language-ruby highlighter-rouge"><span class="n">client</span><span class="p">.</span><span class="nf">emit</span> <span class="s2">"Hello </span><span class="si">#{</span><span class="n">enactor</span><span class="p">.</span><span class="nf">name</span><span class="si">}</span><span class="s2">!"</span></code>   In that case, <code class="language-ruby highlighter-rouge"><span class="n">enactor</span></code> is a character model, and <code class="language-ruby highlighter-rouge"><span class="nb">name</span></code> is the database field.</p>
+
+<p>You’ll need to look in the code to find out what database fields are available.</p>
+
+<h2 id="queries">Queries</h2>
+
+<p>The <a href="http://ohm.keyvalue.org/">Ohm</a> database library provides a variety of ways to query for database models, but here are a few of the easiest:</p>
+
+<ul>
+  <li><code class="language-ruby highlighter-rouge"><span class="no">Character</span><span class="p">[</span><span class="nb">id</span><span class="p">]</span></code> - Finds an object directly by ID.</li>
+  <li><code class="language-ruby highlighter-rouge"><span class="no">Character</span><span class="p">.</span><span class="nf">find_one_by_name</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span></code> - Finds the first character with that name/alias.</li>
+  <li><code class="language-ruby highlighter-rouge"><span class="no">Character</span><span class="p">.</span><span class="nf">find_any_by_name</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span></code> - Finds <em>all</em> characters with that name/alias.</li>
+  <li><code class="language-ruby highlighter-rouge"><span class="no">Character</span><span class="p">.</span><span class="nf">all</span></code> - Finds <em>all</em> characters.</li>
+</ul>
+
+<p>If your database isn’t gigantic, you can also use the Ruby <code class="language-ruby highlighter-rouge"><span class="nb">select</span></code> statement to filter objects based on any set of criteria.  If your database is huge, you’re better off using <a href="http://ohm.keyvalue.org/">Ohm’s</a> queries.  They’re a little more complex, but faster.  Here’s an example that will find all characters with the ‘admin’ role:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">handle</span>
+  <span class="n">chars</span> <span class="o">=</span> <span class="no">Character</span><span class="p">.</span><span class="nf">all</span><span class="p">.</span><span class="nf">select</span> <span class="p">{</span> <span class="o">|</span><span class="n">c</span><span class="o">|</span> <span class="n">c</span><span class="p">.</span><span class="nf">has_any_role?</span><span class="p">(</span><span class="s2">"admin"</span><span class="p">)</span> <span class="p">}</span>
+  <span class="n">names</span> <span class="o">=</span> <span class="n">chars</span><span class="p">.</span><span class="nf">map</span> <span class="p">{</span> <span class="o">|</span><span class="n">c</span><span class="o">|</span> <span class="n">c</span><span class="p">.</span><span class="nf">name</span> <span class="p">}</span>
+  <span class="n">client</span><span class="p">.</span><span class="nf">emit</span> <span class="s2">"You found </span><span class="si">#{</span><span class="n">names</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="s2">", "</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> It is common to use <code class="language-ruby highlighter-rouge"><span class="nb">select</span></code> and <code class="language-ruby highlighter-rouge"><span class="n">map</span></code> together like this.  Select will find a bunch of database objects, and map will get just the field you need from them (in this case the name).</p>
+</blockquote>
+
+<h3 id="game-model">Game Model</h3>
+
+<p>The Game model is special because there’s only one game. You don’t really need to search for it. You can access the one and only game model using:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Game</span><span class="p">.</span><span class="nf">master</span>
+</code></pre></div></div>
+
+<h2 id="accessing-fields">Accessing Fields</h2>
+
+<p>Once you have a database object, you can use its properties as simple methods.  For example:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">char</span> <span class="o">=</span> <span class="no">Character</span><span class="p">.</span><span class="nf">find_one_by_name</span><span class="p">(</span><span class="s2">"Bob"</span><span class="p">)</span>
+<span class="n">client</span><span class="p">.</span><span class="nf">emit</span> <span class="s2">"Hello </span><span class="si">#{</span><span class="n">char</span><span class="p">.</span><span class="nf">name</span><span class="si">}</span><span class="s2">!"</span>
+</code></pre></div></div>
+
+<h2 id="updating-fields">Updating Fields</h2>
+
+<p>You can update the properties on a database object using the <code class="language-ruby highlighter-rouge"><span class="n">update</span></code> method.  For example:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">char</span> <span class="o">=</span> <span class="no">Character</span><span class="p">.</span><span class="nf">find_one_by_name</span><span class="p">(</span><span class="s2">"Bob"</span><span class="p">)</span>
+<span class="n">char</span><span class="p">.</span><span class="nf">update</span><span class="p">(</span><span class="ss">name: </span><span class="s2">"Harry"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Many database properties have specialized update methods because their data storage is not so straightforward.  Look around for helper methods in the plugin module:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">char</span> <span class="o">=</span> <span class="no">Character</span><span class="p">.</span><span class="nf">find_one_by_name</span><span class="p">(</span><span class="s2">"Bob"</span><span class="p">)</span>
+<span class="no">Demographics</span><span class="p">.</span><span class="nf">set_group</span><span class="p">(</span><span class="n">char</span><span class="p">,</span> <span class="s2">"Faction"</span><span class="p">,</span> <span class="s2">"Navy"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><i class="fa fa-exclamation-triangle"></i> <strong>Important:</strong> Do not attempt to change database properties just by updating the object (e.g. <code class="language-ruby highlighter-rouge"><span class="n">char</span><span class="p">.</span><span class="nf">name</span> <span class="o">=</span> <span class="s2">"Harry"</span></code>)  This changes the property on the <strong>object</strong> but does not actually update the database.   You can legitimately use this method to change multiple properties as a batch, but you have to do <code class="language-ruby highlighter-rouge"><span class="n">char</span><span class="p">.</span><span class="nf">save</span></code> at the end to commit the changes to the database.</p>
+</blockquote>
+
+<h2 id="finder-helpers">Finder Helpers</h2>
+
+<p>There are a few convenient utilities to help with common searches.  All of these will search by name or (for players) by alias, and include the <code class="language-ruby highlighter-rouge"><span class="n">me</span></code> or <code class="language-ruby highlighter-rouge"><span class="n">here</span></code> keywords, so they require you to pass in the character doing the search.</p>
+
+<ul>
+  <li><code class="language-ruby highlighter-rouge"><span class="no">ClassTargetFinder</span></code> - Searches for a single object of the specified type.</li>
+  <li><code class="language-ruby highlighter-rouge"><span class="no">AnyTargetFinder</span></code> - Searches for a single object among rooms, characters or exits.  Helpful for commands like describe/destroy that can work on multiple object types.</li>
+  <li><code class="language-ruby highlighter-rouge"><span class="no">OnlineCharFinder</span></code> - Searches for a single matching online character.</li>
+  <li><code class="language-ruby highlighter-rouge"><span class="no">VisibleTargetFinder</span></code> - Searches for a matching object in the same room - either a character, room or exit.</li>
+</ul>
+
+<p>All of the finder helpers do the error handling necessary to translate multiple matches into a message like “I don’t know which one you mean” and no matches into “I don’t see that here”.  They return a <code class="language-ruby highlighter-rouge"><span class="no">FindResult</span></code> object containing a ‘found’ indication and <strong>either</strong> the target object <strong>or</strong> an error message.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="no">ClassTargetFinder</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="nb">name</span><span class="p">,</span> <span class="no">Character</span><span class="p">,</span> <span class="n">searcher</span><span class="p">)</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">result</span><span class="p">.</span><span class="nf">found</span><span class="p">)</span>
+    <span class="c1"># Object was found - do something with result.target</span>
+<span class="k">else</span>
+   <span class="c1"># Object was not found - do something with result.error</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<h2 id="target-finder-block-helpers">Target Finder Block helpers</h2>
+
+<p>Several of the more commonly-used target finders have another level of helper utility you can use.  Here’s how it works:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">ClassTargetFinder</span><span class="p">.</span><span class="nf">with_a_character</span><span class="p">(</span><span class="nb">name</span><span class="p">,</span> <span class="n">client</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">model</span><span class="o">|</span>
+    <span class="c1"># Do something with model if it's found</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p><code class="language-ruby highlighter-rouge"><span class="n">with_a_character</span></code> will do the stuff in-between the <code class="language-ruby highlighter-rouge"><span class="k">do</span></code> and the <code class="language-ruby highlighter-rouge"><span class="k">end</span></code> if the character was found, using the variable <code class="language-ruby highlighter-rouge"><span class="n">model</span></code> for the character it found. If the character was not found, it will emit the appropriate error message to the client.</p>
+
+<p>There’s a similar helpers for <code class="language-ruby highlighter-rouge"><span class="n">with_something_visible</span></code> and <code class="language-ruby highlighter-rouge"><span class="n">with_online_chars</span></code>.</p>
+
+<h2 id="callback-methods">Callback Methods</h2>
+
+<p>Some database models use <strong>Callbacks</strong> - methods that are triggered in response to certain database events.   There are two possible callbacks in Ares, called before an object is deleted or before it’s saved:</p>
+
+<ul>
+  <li><code class="language-ruby highlighter-rouge"><span class="n">before_delete</span></code> -  If an object has any references, you may want to delete them before the object itself is deleted.  For example, a room might delete all of its exits when it’s getting deleted.</li>
+  <li><code class="language-ruby highlighter-rouge"><span class="n">before_save</span></code> - If an object has special fields, you may set them before the object is saved.   For example, if you store the uppercase version of the object name for fast lookups, you want to update that to match the object name every time the object is saved.</li>
+</ul>
+
+<h2 id="relationships-references-and-collections">Relationships (References and Collections)</h2>
+
+<p>Often you’ll have relationships between database models - for example, a mail message has a connection to its recipient.  The way Ohm does that is through <code class="language-ruby highlighter-rouge"><span class="n">references</span></code> and <code class="language-ruby highlighter-rouge"><span class="n">collections</span></code>.  You can read all about them in the <a href="http://ohm.keyvalue.org/">Ohm</a> reference guides.  Here’s a quick example:</p>
+
+<p>The MailMessage model has a <code class="language-ruby highlighter-rouge"><span class="n">reference</span></code> to its recipient:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">MailMessage</span> <span class="o">&lt;</span> <span class="no">Ohm</span><span class="o">::</span><span class="no">Model</span>
+  <span class="n">reference</span> <span class="ss">:character</span><span class="p">,</span> <span class="s2">"AresMUSH::Character"</span>
+  <span class="o">...</span> <span class="n">other</span> <span class="n">fields</span> <span class="o">...</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Notice that you need to specify the class name that the reference refers to, including the full module name, e.g.  <code class="language-ruby highlighter-rouge"><span class="no">AresMUSH</span><span class="o">::</span><span class="no">ModelClassName</span></code>.</p>
+</blockquote>
+
+<p>If you want to be able to easily get all mail for a characer, you also need a corresponding reference on the character model.  Because there can be multiple mail messages for a character, we use a <code class="language-ruby highlighter-rouge"><span class="n">collection</span></code>:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Character</span> <span class="o">&lt;</span> <span class="no">Ohm</span><span class="o">::</span><span class="no">Model</span>
+  <span class="n">collection</span> <span class="ss">:mail</span><span class="p">,</span> <span class="s2">"AresMUSH::MailMessage"</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>It’s also possible to have a 1:1 relationship between database models.  For example: a Scene has one and only one SceneLog, so its models look like this:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Scene</span> <span class="o">&lt;</span> <span class="no">Ohm</span><span class="o">::</span><span class="no">Model</span>
+  <span class="n">reference</span> <span class="ss">:scene_log</span><span class="p">,</span> <span class="s2">"AresMUSH::SceneLog"</span>
+<span class="k">end</span>
+
+<span class="k">class</span> <span class="nc">SceneLog</span> <span class="o">&lt;</span> <span class="no">Ohm</span><span class="o">::</span><span class="no">Model</span>
+  <span class="n">reference</span> <span class="ss">:scene</span><span class="p">,</span> <span class="s2">"AresMUSH::Scene"</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Collections are linked automatically, so <code class="language-ruby highlighter-rouge"><span class="no">MailMessage</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">character: </span><span class="n">some_char</span><span class="p">)</span></code> will automatically add that message to the character’s mail collection.  1:1 references must be manually set both ways; e.g.:</p>
+</blockquote>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">log</span> <span class="o">=</span> <span class="no">SceneLog</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">scene: </span><span class="n">some_scene</span><span class="p">)</span>
+<span class="n">some_scene</span><span class="p">.</span><span class="nf">update</span><span class="p">(</span><span class="ss">scene_log: </span><span class="no">Log</span><span class="p">)</span>
+</code></pre></div></div>
+
+             </div>             
+                           </div>
+              
+                           <div class="col col-sm-3">
+                                                 <div class="sidebar">   
+                 
+<div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+                  
+<div class="sidebar-title">See AresMUSH In Action</div>
+
+<p>Visit the Ares <a href="http://mush.aresmush.com">Demo Game</a>.</p>
+
+<p>Find other Ares games at <a href="http://arescentral.aresmush.com">AresCentral</a>.</p>
+
+
+<div class="sidebar-title">Follow Us on Facebook</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1423276681271936";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-page" data-href="https://www.facebook.com/aresmush/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/aresmush/"><a href="https://www.facebook.com/aresmush/">Ares Mush</a></blockquote></div></div>
+
+<div class="sidebar-title">Discuss Ares</div>
+
+Have a question?  Want to talk about AresMUSH (or MU*s in general)?  Visit our <a href="http://forum.aresmush.com">Discussion Forum</a>.
+                  
+                  
+
+                  <div class="sidebar-title">Stay Up to Date</div>
+                          
+                          Get important updates about Ares on <a href="https://www.facebook.com/aresmush/">Facebook</a> or the <a href="http://forum.aresmush.com">Discussion Forum</a>.
+
+              <div id="searchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Search Results</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       
+
+       <div id="search-hits">
+         <!-- Hits widget will appear here -->
+       </div>
+
+
+       <div id="search-pagination">
+         <!-- Pagination widget will appear here -->
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/scripts/search.js"></script>
+<script>
+  initializeSearch( 'NI38C577BA',
+    '29793fd9084a3446072c14e471e32589',
+    'aresmush.com',
+    ' ' );
+</script>
+
+                  
+
+                  
+                
+                  
+                           </div>
+</div>
+                          
+              </div>
+              
+          </div>
+          
+
+          <div class="footer">
+             <p> &copy;  2013 with help from the <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a> blog engine.
+              </p>
+          </div>
+          
+      
+     
+  </body>
+</html>
