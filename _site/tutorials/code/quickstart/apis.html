@@ -219,13 +219,21 @@
 
 <p>You’ll find these APIs used throughout the Ares codebase.  The channel plugin creates a job when someone reports channel abuse.  The idle plugin creates a job when it’s time to do the idle purge.  The chargen plugin creates a job when someone submits their app.  And so on.</p>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> APIs generally expect that permissions will be checked by the calling command handler.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>APIs generally expect that permissions will be checked by the calling command handler.</p>
+</div>
+
+<h2 id="try-it">Try It!</h2>
+
+<p>Let’s use the jobs API to create a test job.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ruby</span> <span class="no">Jobs</span><span class="p">.</span><span class="nf">create_job</span><span class="p">(</span><span class="s2">"REQ"</span><span class="p">,</span> <span class="s2">"A Test Job"</span><span class="p">,</span> <span class="s2">"This is a test job."</span><span class="p">,</span> <span class="n">enactor</span><span class="p">)</span>
+</code></pre></div></div>
 
 <h2 id="common-apis">Common APIs</h2>
 
-<p>Here are a few of the most common APIs you’ll use:</p>
+<p>Here are a few other common APIs you may use in your own code.</p>
 
 <h3 id="create-a-job">Create a Job</h3>
 

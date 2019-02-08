@@ -225,9 +225,10 @@
   <li>If no plugins handle the command, the Dispatcher will log an error.</li>
 </ol>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Only one plugin may handle a web request.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>Only one plugin may handle a web request.</p>
+</div>
 
 <div id="inline_toc">
   <p><strong>Table of Contents</strong></p>
@@ -268,9 +269,10 @@
 
 <p>The plugin dispatchd returns a Request Handler.  Like a Command Handler, it implements a <code class="language-ruby highlighter-rouge"><span class="n">handle</span></code> method to gather the desired data and return it to the Web Portal.</p>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong> Returned data should be in hash format.  It will be convered to JSON by the API server.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>Returned data should be in hash format.  It will be convered to JSON by the API server.</p>
+</div>
 
 <p>For example:</p>
 

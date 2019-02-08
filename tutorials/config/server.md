@@ -22,7 +22,7 @@ To configure the server:
 2. Edit `server.yml`.
 4. Shutdown and restart the game. (See the tutorials at [aresmush.com](http://www.aresmush.com) if you need help doing this.)
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** Server setting changes will not take effect until the game is restarted.
+{% include note.html content="Server setting changes will not take effect until the game is restarted." %}
 
 ## Advanced Server Options
 
@@ -69,5 +69,5 @@ You will need to use the same YOURSITE value in a moment.
 
 When hosting a game on a host with separate public/private IP addresses (commonly found with AWS) you'll need to tell the server to start up on the private IP.  Do this by setting the `bind_address` config option to the private IP.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** Remember to restart the game engine after changing this setting.
+{% include note.html content="Remember to restart the game engine after changing this setting." %}
 

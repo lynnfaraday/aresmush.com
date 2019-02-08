@@ -52,4 +52,4 @@ Here we're using the ansi-format helper because the goals can contain fancy form
 
 Re-deploy the website using the `website/deploy` command.  This will take a few minutes.  Then you can test it!
 
-> <i class="fa fa-info-circle"></i> **Tip:** You can also run the website in [debug mode](/tutorials/code/debug-mode.html).  This spins up a second copy of the website on a different port for testing.  The advantage is that changes to the web code will be immediately loaded without needing to wait for a deploy, and without potentially messing up your main site.
+{% include tip.html content="You can also run the website in [debug mode](/tutorials/code/debug-mode.html).  This spins up a second copy of the website on a different port for testing.  The advantage is that changes to the web code will be immediately loaded without needing to wait for a deploy, and without potentially messing up your main site." %}

@@ -242,9 +242,10 @@
 
 <p>If the cron event time matches your cron configuration settings, the cron job will run.  Otherwise it will return without doing anything.</p>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> All of the built-in cron jobs allow you to configure when they run.  See the relevant configuration file for details of what the cron jobs do and suggestions of how to set them.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>All of the built-in cron jobs allow you to configure when they run.  See the relevant configuration file for details of what the cron jobs do and suggestions of how to set them.</p>
+</div>
 
 <h2 id="cron-config">Cron Config</h2>
 
@@ -257,13 +258,15 @@
   <li>minute - What minute(s) of the hour it runs.</li>
 </ul>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Avoid specifying both date <em>and</em> day of week, or you’ll end up with a job that only runs on Tuesdays that happen to fall on the 1st of the month.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>Avoid specifying both date *and* day of week, or you'll end up with a job that only runs on Tuesdays that happen to fall on the 1st of the month.</p>
+</div>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> If you specify hour, also specify minute.  Otherwise it will run <em>every minute</em> for that entire hour.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>If you specify hour, also specify minute.  Otherwise it will run *every minute* for that entire hour.</p>
+</div>
 
 <p>Each item is a list, so you can have a job that runs on Tuesdays and Thursdays, or every half-hour, or on the 1st and 15th of the month, etc.</p>
 

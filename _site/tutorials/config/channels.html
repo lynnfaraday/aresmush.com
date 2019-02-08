@@ -213,6 +213,7 @@
   <p><strong>Table of Contents</strong></p>
 
 <ul id="markdown-toc">
+  <li><a href="#creating-channels" id="markdown-toc-creating-channels">Creating Channels</a></li>
   <li><a href="#start_marker-and-end_marker" id="markdown-toc-start_marker-and-end_marker">start_marker and end_marker</a></li>
   <li><a href="#default_channels" id="markdown-toc-default_channels">default_channels</a></li>
   <li><a href="#approved_channels" id="markdown-toc-approved_channels">approved_channels</a></li>
@@ -229,6 +230,10 @@
   <li>Edit <code class="language-ruby highlighter-rouge"><span class="n">channels</span><span class="p">.</span><span class="nf">yml</span></code></li>
 </ol>
 
+<h2 id="creating-channels">Creating Channels</h2>
+
+<p>In-game commands let you create, delete, and rename channels.  You can also set channel permissions, colors, and and other settings.  See <code class="language-ruby highlighter-rouge"><span class="n">help</span> <span class="n">manage</span> <span class="n">channels</span></code>.</p>
+
 <h2 id="start_marker-and-end_marker">start_marker and end_marker</h2>
 
 <p>You can configure the characters that appears at the beginning and end of the channel name.  This lets you alter the appearance to do things like:</p>
@@ -239,9 +244,10 @@
 
 <p>Start and end markers can include ansi color and other formatting codes.</p>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong>  Since &lt; and &gt; are reserved HTML characters, be sure to put them in quotes in the configuration.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p> Since &lt; and &gt; are reserved HTML characters, be sure to put them in quotes in the configuration.</p>
+</div>
 
 <h2 id="default_channels">default_channels</h2>
 
@@ -253,9 +259,10 @@
 <span class="o">-</span> <span class="no">Chat</span>
 </code></pre></div></div>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong>  Make sure these channels don’t have permissions that would restrict their use by unapproved/guest characters.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p> Make sure these channels don't have permissions that would restrict their use by unapproved/guest characters.</p>
+</div>
 
 <h2 id="approved_channels">approved_channels</h2>
 

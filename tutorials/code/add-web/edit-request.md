@@ -35,5 +35,5 @@ This handler does the actual *updating* of the character data.  Our data comes i
         char.update(rp_hooks: Website.format_input_for_mush(request.args[:rp_hooks]))
         char.update(goals: Website.format_input_for_mush(request.args[:goals]))
 
-> <i class="fa fa-info-circle"></i> **Tip:** Though it's not covered by this tutorial, it's useful to note that there's a lot of other handling at the top of these requests to check things like whether the user is logged in and has access to edit the character.  Always be sure to check permissions in your web requests.
+{% include tip.html content="Though it's not covered by this tutorial, it's useful to note that there's a lot of other handling at the top of these requests to check things like whether the user is logged in and has access to edit the character.  Always be sure to check permissions in your web requests." %}
 

@@ -16,7 +16,7 @@ Ember templates use [Handlebars](https://guides.emberjs.com/v2.18.0/templates/ha
 {:toc}
 </div>
 
-> <i class="fa fa-info-circle"></i> **Tip:** The curly braces in Handlebars templates are essentially like the markers in ERB templates.
+{% include tip.html content="The curly braces in Handlebars templates are essentially like the markers in ERB templates." %}
 
 <pre>
     &#x7b;&#x7b;#each model.events as |event|}}

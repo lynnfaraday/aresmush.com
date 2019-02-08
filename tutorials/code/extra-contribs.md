@@ -44,7 +44,7 @@ If you have any questions, just [ask for help](/feedback.html).
 
 Many extras will be entire plugins.  In order to be compatible with the automated plugin install, the plugin must follow a particular folder structure.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** The automated install just copies the plugin's files into place.  If your plugin requires changes to _other plugins_ (for example, adding steps to the Chargen config or Chargen web portal screen), you should include instructions for adding that in your README.
+{% include note.html content="The automated install just copies the plugin's files into place.  If your plugin requires changes to _other plugins_ (for example, adding steps to the Chargen config or Chargen web portal screen), you should include instructions for adding that in your README." %}
 
 The folder structure for a plugin includes:
 
@@ -57,7 +57,7 @@ For example:
 
 {% include pretty_image.html file='code/extras-dir.png' %}
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** All folders are optional, so just omit any that don't apply to your plugin.
+{% include note.html content="All folders are optional, so just omit any that don't apply to your plugin." %}
 
 ## Submitting Patches
 

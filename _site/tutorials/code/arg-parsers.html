@@ -247,9 +247,10 @@
   <li><code class="language-ruby highlighter-rouge"><span class="n">titlecase_list_arg</span></code> - Splits an argument into an array and strips spaces and formats each entry like a title.  Splits on spaces by default, but you can pass any delimeter.</li>
 </ul>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> All of the arg converters are safe to use even if the arg is <code class="language-ruby highlighter-rouge"><span class="kp">nil</span></code>.  They will just return <code class="language-ruby highlighter-rouge"><span class="kp">nil</span></code>.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>All of the arg converters are safe to use even if the arg is <code>nil</code>.  They will just return <code>nil</code>.</p>
+</div>
 
 <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">parse_args</span>
   <span class="nb">self</span><span class="p">.</span><span class="nf">value</span> <span class="o">=</span> <span class="n">downcase_arg</span><span class="p">(</span><span class="n">cmd</span><span class="p">.</span><span class="nf">args</span><span class="p">)</span>
@@ -273,9 +274,10 @@
 
 <p>Under the hood, a parsers like <code class="language-ruby highlighter-rouge"><span class="no">ArgParser</span><span class="p">.</span><span class="nf">arg1_equals_arg2</span></code> is just a fancy regular expression that matches the pieces of the commands and assigns names to them (arg1 and arg2 in this case).  <code class="language-ruby highlighter-rouge"><span class="n">cmd</span><span class="p">.</span><span class="nf">parse_args</span></code> is a method that uses one of those fancy regexes and stores the results in an easily-accessed hash (args).</p>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong> By default, <strong>all</strong> args will end up as <code class="language-ruby highlighter-rouge"><span class="kp">nil</span></code> if the command string doesn’t match the intended format.  In the example above, both property and value would be nil if you just passed “set x” instead of “set x=y”.   However, some of the arg parsers expressly allow optional args.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>By default, <b>all</b> args will end up as `nil` if the command string doesn't match the intended format.  In the example above, both property and value would be nil if you just passed "set x" instead of "set x=y".   However, some of the arg parsers expressly allow optional args.</p>
+</div>
 
 <h2 id="arg1_equals_arg2">arg1_equals_arg2</h2>
 

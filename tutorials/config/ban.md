@@ -43,7 +43,7 @@ Only part of a site needs to match, so listing `verizon.net` would block 123.456
 
 This is a 'contains' search, so wildcards (like *) are not supported.
 
-> <i class="fa fa-info-circle"></i> **Tip:** Be wary of making the match *too* broad.  You don't want to block an entire region of the country.
+{% include tip.html content="Be wary of making the match *too* broad.  You don't want to block an entire region of the country." %}
 
 ## Banning Proxy Sites
 

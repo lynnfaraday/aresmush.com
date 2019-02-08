@@ -225,7 +225,6 @@
   <li><a href="#configuring-recaptca" id="markdown-toc-configuring-recaptca">Configuring Recaptca</a></li>
   <li><a href="#custom-css-style" id="markdown-toc-custom-css-style">Custom CSS Style</a>    <ul>
       <li><a href="#changing-the-font" id="markdown-toc-changing-the-font">Changing the Font</a></li>
-      <li><a href="#changing-the-jumbotron-image-size" id="markdown-toc-changing-the-jumbotron-image-size">Changing the Jumbotron Image Size</a></li>
       <li><a href="#advanced-color-variables" id="markdown-toc-advanced-color-variables">Advanced Color Variables</a></li>
       <li><a href="#icons" id="markdown-toc-icons">Icons</a></li>
       <li><a href="#custom-images" id="markdown-toc-custom-images">Custom Images</a></li>
@@ -287,9 +286,10 @@
   <li>Faded text color - Hints and subtle headings, like the sidebar headings.</li>
 </ul>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong> After changing the colors, you’ll usually need to do a force-refresh on your browser to make it reload the page.  This is a browser thing, not an Ares thing.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>After changing the colors, you'll usually need to do a force-refresh on your browser to make it reload the page.  This is a browser thing, not an Ares thing.</p>
+</div>
 
 <h2 id="images">Images</h2>
 
@@ -307,9 +307,10 @@
   <li>jumbotron.png - Home page image.</li>
 </ul>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong> Some browsers (notably Chrome) are stubborn about reloading theme images right away.  You may need to clear your image cache or try viewing it in private/incognito mode to see your images right after you’ve uploaded them.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>Some browsers (notably Chrome) are stubborn about reloading theme images right away.  You may need to clear your image cache or try viewing it in private/incognito mode to see your images right after you've uploaded them.</p>
+</div>
 
 <p>You can use <a href="#custom-css-style">Custom CSS</a>, explained below, to change which images are used in each section.  For example, if you want to use different backgrounds for the profile and log pages, or a JPG instead of a PNG for the title background.</p>
 
@@ -455,9 +456,10 @@
   <li>Edit <code class="language-ruby highlighter-rouge"><span class="n">custom_style</span><span class="p">.</span><span class="nf">scss</span></code>.</li>
 </ol>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong> After changing the custom CSS style, you’ll usually need to do a force-refresh on your browser to make it reload the page.  This is a browser thing, not an Ares thing.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>After changing the custom CSS style, you'll usually need to do a force-refresh on your browser to make it reload the page.  This is a browser thing, not an Ares thing.</p>
+</div>
 
 <h3 id="changing-the-font">Changing the Font</h3>
 
@@ -469,24 +471,14 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
-<h3 id="changing-the-jumbotron-image-size">Changing the Jumbotron Image Size</h3>
-
-<p>The jumbotron is the banner image that shows on the home page.  By default, this stretches across the screen, so it’s designed for wide images.  If the image you want to use doesn’t look good that way, you can adjust the width of that image using CSS:</p>
-
-<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">.</span><span class="nf">jumbotron</span><span class="o">-</span><span class="n">image</span> <span class="p">{</span> 
-  <span class="ss">width: </span><span class="mi">500</span><span class="n">px</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>Set whatever width fits your image.</p>
-
 <h3 id="advanced-color-variables">Advanced Color Variables</h3>
 
 <p>The web portal uses the <a href="hhttps://getbootstrap.com/docs/3.3/css/#less">Bootstrap</a> website layout and the <a href="http://ember-power-select.com/docs/styles">Ember Power Select</a> addon for dropdown menus.  Although you <em>can</em> style these things with regular CSS by modifying <code class="language-ruby highlighter-rouge"><span class="n">custom_style</span><span class="p">.</span><span class="nf">scss</span></code>, it might be easier to use their own built-in variable names.</p>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong> Bootstrap and Power Select variables are <strong>not</strong> editable through the Ares <code class="language-ruby highlighter-rouge"><span class="n">colors</span><span class="p">.</span><span class="nf">scss</span></code> file.  You have to modify the code file <code class="language-ruby highlighter-rouge"><span class="n">ares</span><span class="o">-</span><span class="n">webportal</span><span class="o">/</span><span class="n">app</span><span class="o">/</span><span class="n">styles</span><span class="o">/</span><span class="n">advanced</span><span class="o">-</span><span class="n">colors</span><span class="p">.</span><span class="nf">scss</span></code> and then re-deploy the portal.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>Bootstrap and Power Select variables are **not** editable through the Ares `colors.scss` file.  You have to modify the code file `ares-webportal/app/styles/advanced-colors.scss` and then re-deploy the portal.</p>
+</div>
 
 <p>Here are some examples of how you can set Bootstrap and Power Select styles:</p>
 
@@ -550,9 +542,10 @@
 
 <p>You control what appears in the CUSTOM NAV section.</p>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong> If you mess up your custom navigation configuration, you can cause your web portal to not load properly.  When in doubt, <a href="/feedback.html">ask for help</a>.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>If you mess up your custom navigation configuration, you can cause your web portal to not load properly.  When in doubt, [ask for help](/feedback.html).</p>
+</div>
 
 <p>The basic format is:</p>
 
@@ -579,9 +572,10 @@
   <span class="ss">id: </span><span class="n">getting_started</span>
 </code></pre></div></div>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong> The ‘page’ entries must match Ember page routes <strong>not</strong> regular URLs (e.g. <code class="language-ruby highlighter-rouge"><span class="n">wiki</span><span class="o">-</span><span class="n">page</span></code> not <code class="language-ruby highlighter-rouge"><span class="sr">/wiki/</span><span class="n">page</span></code>, or <code class="language-ruby highlighter-rouge"><span class="n">characters</span></code> not <code class="language-ruby highlighter-rouge"><span class="sr">/chars</span></code>).  You’ll find most of the routes you need already listed in the default top_navbar configuration.  If the one you want isn’t listed, just <a href="/feedback.html">ask for help</a>.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>The 'page' entries must match Ember page routes **not** regular URLs (e.g. `wiki-page` not `/wiki/page`, or `characters` not `/chars`).  You'll find most of the routes you need already listed in the default top_navbar configuration.  If the one you want isn't listed, just [ask for help](/feedback.html).</p>
+</div>
 
 <p>For an external page, list the URL, a display title, and an <em>optional</em> <a href="https://www.w3schools.com/tags/att_a_target.asp">browser tab target</a>.  For example:</p>
 

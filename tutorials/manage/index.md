@@ -8,7 +8,7 @@ These articles will help you administer/manage an Ares game.  It assumes your ga
 
 {% include tutorial_warning.html %}
 
-> <i class="fa fa-info-circle"></i> **Tip:** In addition to these overview articles, you'll find help files on specific admin commands in-game under the `~admin~` sections of the help files.  For example:  `help manage apps`.
+{% include tip.html content="In addition to these overview articles, you'll find help files on specific admin commands in-game under the  <code>~admin~</code>  sections of the help files.  For example:   <code>help manage apps</code> ." %}
 
 ## Game Administration
 
@@ -31,6 +31,7 @@ These articles will help you administer/manage an Ares game.  It assumes your ga
 * [Connect to the Server Shell](/tutorials/install/server-shell.html)
 * [Starting the Game](/tutorials/manage/start.html)
 * [Shutting Down the Game](/tutorials/manage/shutdown.html)
+* [Rebooting the Server](/tutorials/manage/reboot.html)
 * [Changing the Server Timezone](/tutorials/manage/server-timezone.html)
 * [Setup Auto-Restart After Reboot](/tutorials/manage/restart-after-reboot.html)
 * [Upgrading the Code](/tutorials/manage/upgrades.html)

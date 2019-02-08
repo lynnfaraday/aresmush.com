@@ -19,7 +19,7 @@ In this tutorial, we'll examine the design of the Cortex plugin, a simplified im
 
 You can find the full code for the Cortex plugin in the [Ares Extras](/tutorials/code/extras.html) repository.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** You don't need to do this tutorial if all you want to do is **use** the Cortex plugin.  Instead, follow the instructions in [Ares Extras](/tutorials/code/extras.html) to install the plugin.  This article is for coders who want to understand how the plugin was created.
+{% include note.html content="You don't need to do this tutorial if all you want to do is **use** the Cortex plugin.  Instead, follow the instructions in [Ares Extras](/tutorials/code/extras.html) to install the plugin.  This article is for coders who want to understand how the plugin was created." %}
 
 ## What You'll Need
 

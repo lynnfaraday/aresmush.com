@@ -14,7 +14,7 @@ tags:
 
 The `app` method provided by the Chargen plugin is meant to be generic.  It provides hooks so you can add whatever processing is needed to alert the user to problems with their character application: Points overspent, missing required skills, etc.
 
-> <i class="fa fa-info-circle"></i> **Tip:** AresMUSH' Chargen plugin is designed around the idea that it's better to let people set things they way they want in peace and then checking everything when they're done.  This prevents information overload by spamming them with warnings while things are still only half-set.
+{% include tip.html content="AresMUSH' Chargen plugin is designed around the idea that it's better to let people set things they way they want in peace and then checking everything when they're done.  This prevents information overload by spamming them with warnings while things are still only half-set." %}
 
 In the chargen app template (`aresmush/plugins/chargen/templates/app.erb`) you'll see a section:
 

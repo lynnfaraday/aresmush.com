@@ -213,9 +213,10 @@
              <div class="page">
                  <p><a href="http://www.yaml.org/start.html">YAML</a> is the data format used for Ares’ configuration files.  It is similar to other formats like JSON and XML, but is designed to be more human-readable.</p>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Indentation is super-important in YAML files.  Always make sure things are lined up with each other.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>Indentation is super-important in YAML files.  Always make sure things are lined up with each other.</p>
+</div>
 
 <div id="inline_toc">
   <p><strong>Table of Contents</strong></p>
@@ -250,20 +251,6 @@
 <h2 id="key-naming">Key Naming</h2>
 
 <p>Underscores and spaces are the only permitted special characters in key names.  For example: “cookie_forum” and “Viper Pilot” are valid key names.  Ares uses separate words for things that are displayed to players, and underscores for everything else.</p>
-
-<p>When values are displayed to or used by the players (like skills, gear or faction names), keys shoud be in “titlecase” - first letter of each word capitalized, remaining letters lowercase.</p>
-
-<blockquote>
-  <p>Good:  Viper Pilot
-Bad:  Viper pilot</p>
-
-  <p>Good: Eco
-Bad: ECO</p>
-</blockquote>
-
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong> Yes, we know that being forced to use “titlecase” is an annoying limitation sometimes, like when you want to have a skill named SCUBA or a weapon named LMG.  It’s a tradeoff to reduce coding complexity and configuration errors (which both help with overall game stability).</p>
-</blockquote>
 
 <h2 id="editing-yaml-config">Editing YAML Config</h2>
 

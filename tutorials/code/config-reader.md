@@ -31,7 +31,7 @@ Some configuration options are hashes, meaning they are key-value pairs.  For ex
         color: "%xb"
         text: Blue
 
-> <i class="fa fa-info-circle"></i> **Tip:** Color's value needs to be in quotes because it's using a special character (%).  The text value doesn't.  Err on the side of using quotes if you're not sure if they're needed.
+{% include tip.html content="Color's value needs to be in quotes because it's using a special character (%).  The text value doesn't.  Err on the side of using quotes if you're not sure if they're needed." %}
 
 If we were to just do `Global.read_config("tinker", "example")`, we would get a hash:  `{ color: "%xb", text: "Blue"}`.   
 

@@ -48,7 +48,7 @@ Create a file named `goals_cmd.rb` in `aresmush/plugins/custom`.  Give it the fo
       end
     end
 
-> <i class="fa fa-info-circle"></i> **Tip:** It's best practice to store separate commands in separate files for organization and readability.
+{% include tip.html content="It's best practice to store separate commands in separate files for organization and readability." %}
 
 Then, like before, we need to wire up the command handler.
 

@@ -37,7 +37,7 @@ This is happening because you've got data for `favorite_color` in the databse, b
 
 To prevent this from happening, you should set all instances of the field to `nil` in the database **before** removing it from the code.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** If the field was originally a special data type (like DateTime or Integer) we need to change it to a string data type first by removing the `type` specification.  Otherwise our nil may be converted to a default value (like 0).
+{% include note.html content="If the field was originally a special data type (like DateTime or Integer) we need to change it to a string data type first by removing the `type` specification.  Otherwise our nil may be converted to a default value (like 0)." %}
 
 For example, assume we have:
 
@@ -59,7 +59,7 @@ Then we can use a [tinker](/tutorials/code/tinker.html) command to reset everyon
 
 Now it's safe to remove the field from the code.
 
-> <i class="fa fa-info-circle"></i> **Tip:** If you forgot to nil out the field before you removed it from the code, just put it back temporarily.  Run the commands above, then remove it for real.
+{% include tip.html content="If you forgot to nil out the field before you removed it from the code, just put it back temporarily.  Run the commands above, then remove it for real." %}
 
 ## Errors During Restart
 

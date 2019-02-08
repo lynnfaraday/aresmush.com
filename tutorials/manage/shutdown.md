@@ -20,7 +20,7 @@ If that doesn't work, you can:
 
 Once the game is shut down, see [Starting the Game](/tutorials/manage/start.html) to restart it.
 
-> <i class="fa fa-info-circle"></i> **Tip:** Always wait about 10 seconds or so between shutting the game down and restarting it.  This ensures that everything has a chance to shut down fully and cleanly.
+{% include tip.html content="Always wait about 10 seconds or so between shutting the game down and restarting it.  This ensures that everything has a chance to shut down fully and cleanly." %}
 
 ## Hard Kill
 

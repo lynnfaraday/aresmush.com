@@ -34,7 +34,7 @@ You can also configure the character creation instructions that appear in the We
 * `hooks_blurb` - RP Hook instructions.
 * `desc_blurb` - Description instructions.
 
-> <i class="fa fa-info-circle"></i> **Tip:** Abilities instructions are set up in the [FS3Skills Chargen Config](/tutorials/config/fs3skills_chargen.html).
+{% include tip.html content="Abilities instructions are set up in the [FS3Skills Chargen Config](/tutorials/config/fs3skills_chargen.html)." %}
 
 ## allow_web_submit
 
@@ -68,7 +68,7 @@ You can configure whether RP hooks must be set in chargen or not.
 
 Character creation is done as a series of 'stages'.  For each stage, you can choose to display either a help file, a tutorial file, or both.
 
-> <i class="fa fa-info-circle"></i> **Tip:** Tutorial files should be stored in the `chargen/templates` folder.
+{% include tip.html content="Tutorial files should be stored in the  <code>chargen/templates</code>  folder." %}
 
 For example, the first stage in the sample configuration below will show the 'chargen.md' tutorial file and the second stage will show the 'sheet' help file.
 

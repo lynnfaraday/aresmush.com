@@ -85,7 +85,7 @@ To add your config files to source control, just modify the .gitignore file in y
 
 The next time you add files to git, it will include your configuration changes.  
 
-> <i class="fa fa-info-circle"></i> **Tip:** Git will still ignore other parts of the game directory, including uploads, logs, and the secrets.yml config file (to keep your secret codes secret).
+{% include tip.html content="Git will still ignore other parts of the game directory, including uploads, logs, and the secrets.yml config file (to keep your secret codes secret)." %}
 
 ## Git from the Game
 
@@ -97,11 +97,11 @@ You can actually execute selected `git` commands from within the game without ne
 
 While you're changing your own copy of the code, there's also work going on in the main Ares repository. Whenever a new AresMUSH version is announced, you should update your fork.
 
-> <i class="fa fa-info-circle"></i> **Tip:** It's recommended that you keep up with updates as they happen.  Not only does it ensure that you have the latest features and bugfixes at all times, but it's easier to do updates one at a time.  If you let them stack up and your code gets too far behind, the upgrade will be more difficult.
+{% include tip.html content="It's recommended that you keep up with updates as they happen.  Not only does it ensure that you have the latest features and bugfixes at all times, but it's easier to do updates one at a time.  If you let them stack up and your code gets too far behind, the upgrade will be more difficult." %}
 
 Follow the instructions in the [Using GitHub](/tutorials/code/git.html) tutorial to update your code.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:**  Always remember to update **both** aresmush and ares-webportal when getting the latest code.
+{% include note.html content=" Always remember to update **both** aresmush and ares-webportal when getting the latest code." %}
 
 ### Dealing with Conflicts
 

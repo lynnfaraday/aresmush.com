@@ -21,7 +21,7 @@ To configure the FS3 Chargen Limits:
 
 You should read the article [Tweaking FS3](http://aresmush.com/fs3/fs3-3/tweaking-fs3.html), which contains important information to help guide you in customizing your game.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** Many of the chargen configuration options are lists.  They can't be left blank.  If the list is empty, use `[]` to reflect an empty list.
+{% include note.html content="Many of the chargen configuration options are lists.  They can't be left blank.  If the list is empty, use `[]` to reflect an empty list." %}
 
 ## free_languages and free_backgrounds
 
@@ -50,7 +50,7 @@ The Unskilled level might not be necessary in every setting.  See [everyman vs. 
 
 You can configure various guidelines about what skills and attributes a character can have. 
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** These are soft limits.  The system will let someone go over them, but a warning will appear in their app command status.  You can choose whether to allow a special exception when approving the character.
+{% include note.html content="These are soft limits.  The system will let someone go over them, but a warning will appear in their app command status.  You can choose whether to allow a special exception when approving the character." %}
 
 ### max_ap
 
@@ -87,9 +87,9 @@ Remember that these limits are at *or above*.  So given the max skills example a
 
 FS3 lets you assign starting skills and specialties for different groups.  For example, you may want to ensure that people from a certain colony all start with a particular language, or that people in a certain position start with certain professional skills.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** As with the rating limits, these are soft targets.  The app command status will have a warning if any starting skills are missing or too low.
+{% include note.html content="As with the rating limits, these are soft targets.  The app command status will have a warning if any starting skills are missing or too low." %}
 
-> <i class="fa fa-info-circle"></i> **Tip:** Despite the word 'skills' in the name, you can also include attributes and advantages in the skills list.  It's just intended mainly for skills.
+{% include tip.html content="Despite the word 'skills' in the name, you can also include attributes and advantages in the skills list.  It's just intended mainly for skills." %}
 
 ### Group Skills
 

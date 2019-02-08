@@ -23,7 +23,7 @@ Go to the Admin -> Setup menu in the Web Portal and edit the `tinker.yml` config
 
 Change the tinker handle method as shown below:
 
-> <i class="fa fa-info-circle"></i> **Tip:** You can click the Reset button on the tinker screen to put the tinker code back to the default values and remove all the piggy processing we did in prior exercises.
+{% include tip.html content="You can click the Reset button on the tinker screen to put the tinker code back to the default values and remove all the piggy processing we did in prior exercises." %}
 
     def handle
       color = Global.read_config("tinker", "example")
@@ -36,4 +36,4 @@ Save the code and run the tinker command.  Notice that the color is blue, the co
 
 Change the configuration file to use a different color code (like "%xg" for green) and run the command again.  Notice how the color changed without you needing to touch the code.
 
-> <i class="fa fa-info-circle"></i> **Tip:** Configuration sections generally correspond to their filenames (`tinker.yml` for the "tinker" section), but sometimes sections are spread out across multiple config files for readability.
+{% include tip.html content="Configuration sections generally correspond to their filenames ( <code>tinker.yml</code>  for the tinker section), but sometimes sections are spread out across multiple config files for readability." %}

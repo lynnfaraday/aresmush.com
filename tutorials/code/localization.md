@@ -30,7 +30,7 @@ A locale file looks something like this:
         db:
             object_not_found: Nothing found with that name.
 
-> <i class="fa fa-info-circle"></i> **Tip:** Like all YAML files, translation files require quotes around strings with special characters in them.  When in doubt, use quotes.
+{% include tip.html content="Like all YAML files, translation files require quotes around strings with special characters in them.  When in doubt, use quotes." %}
 
 ## Translation Keys
 
@@ -38,7 +38,7 @@ A translation key is in the form `section.key_name`.  For example:  `dispatcher.
 
 For example:  `t('dispatcher.huh')` would return "Huh?  Unrecognized command." in English.  In German, it might be "Bitte?  Befehl ist nicht bekannt."
 
-> <i class="fa fa-info-circle"></i> **Tip:** The game picks the appropriate language based on the global locale setting.  Individual players can't pick their own languages.
+{% include tip.html content="The game picks the appropriate language based on the global locale setting.  Individual players can't pick their own languages." %}
  
 ## Backup Locale
 

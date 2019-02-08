@@ -536,8 +536,14 @@ span.clear { clear: left; display: block; }
     padding: 10px;
 }
 
+.alert {
+	margin-left: 35px;
+        width: 80%;
+	padding: 10px;
+}
+
 blockquote{
-	margin: 0.4em 0;
+	margin-left: 35px;
         width: 80%;
 	padding: 10px;
     font-size: 1em;

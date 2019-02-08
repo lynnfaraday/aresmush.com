@@ -37,7 +37,7 @@ Of course you are welcome to use other environments.  However, support for custo
 
 There are several software packages that Ares requires, and you'll need to make sure they're installed on your server.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** The [`setup_server`](https://github.com/AresMUSH/aresmush/blob/master/bin/setup_server) script will install all of these packages automatically in the Supported Environment listed above, but it will not work on most custom environments.
+{% include note.html content="The [`setup_server`](https://github.com/AresMUSH/aresmush/blob/master/bin/setup_server) script will install all of these packages automatically in the Supported Environment listed above, but it will not work on most custom environments." %}
 
 * Ruby - runs the game code.  We recommend using Ruby Version Manager (RVM) to control which version of Ruby you get.
 * EmberJS - builds the web portal code.
@@ -61,7 +61,7 @@ Be advised that changing a step may affect subsequent steps too, so keep a sharp
 
 Once you have all the necessary software packages set up, you'll need to install the game.  
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** The [`install`](https://github.com/AresMUSH/aresmush/blob/master/bin/install) script will install the game automatically in the Supported Environment listed above, but it will not work on most custom environments.
+{% include note.html content="The [`install`](https://github.com/AresMUSH/aresmush/blob/master/bin/install) script will install the game automatically in the Supported Environment listed above, but it will not work on most custom environments." %}
 
 The basic installation steps include:
 

@@ -49,7 +49,7 @@ If you have Atlantis set to do character encoding auto-detection, it should auto
 4. Find the 'Starting Encoding' dropdown.
 5. Select 'UTF-8'.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** This setting will take effect for any new worlds.  For existing worlds, you'll have to adjust the same setting under Address Book -> Edit World -> Connection -> Starting Encoding.
+{% include note.html content="This setting will take effect for any new worlds.  For existing worlds, you'll have to adjust the same setting under Address Book -> Edit World -> Connection -> Starting Encoding." %}
 
 ### Editing
 

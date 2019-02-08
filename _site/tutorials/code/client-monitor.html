@@ -220,9 +220,10 @@
 <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Global</span><span class="p">.</span><span class="nf">client_monitor</span><span class="p">.</span><span class="nf">logged_in</span>
 </code></pre></div></div>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong> The <code class="language-ruby highlighter-rouge"><span class="n">logged_in</span></code> method only includes characters connected directly to the game engine through the telnet port.  If you want to notify people, including clients from the Web Portal, you should use the <a href="/tutorials/code/notifications.html">Notifier</a> instead.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>The logged_in method only includes characters connected directly to the game engine through the telnet port.  If you want to notify people, including clients from the Web Portal, you should use the Notifier instead.</p>
+</div>
 
 <p>There are handy shortcuts for emitting to someone when all you have is a character object.  Remember - we don’t emit to characters, we emit to <em>clients</em>.  We need the client monitor to help us find which client belongs to a given character:</p>
 

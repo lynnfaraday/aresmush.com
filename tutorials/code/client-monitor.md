@@ -14,7 +14,7 @@ For example, the 'who' list would rely on:
 
     Global.client_monitor.logged_in
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** The `logged_in` method only includes characters connected directly to the game engine through the telnet port.  If you want to notify people, including clients from the Web Portal, you should use the [Notifier](/tutorials/code/notifications.html) instead.
+{% include note.html content="The logged_in method only includes characters connected directly to the game engine through the telnet port.  If you want to notify people, including clients from the Web Portal, you should use the Notifier instead." %}
 
 There are handy shortcuts for emitting to someone when all you have is a character object.  Remember - we don't emit to characters, we emit to *clients*.  We need the client monitor to help us find which client belongs to a given character:
 

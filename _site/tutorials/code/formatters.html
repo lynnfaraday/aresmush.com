@@ -221,7 +221,6 @@
 <ul id="markdown-toc">
   <li><a href="#pose-formatter" id="markdown-toc-pose-formatter">Pose Formatter</a></li>
   <li><a href="#time-formatter" id="markdown-toc-time-formatter">Time Formatter</a></li>
-  <li><a href="#paginator" id="markdown-toc-paginator">Paginator</a></li>
 </ul>
 
 </div>
@@ -238,27 +237,6 @@
 <h2 id="time-formatter">Time Formatter</h2>
 
 <p>Given a duration (in seconds), the <code class="language-ruby highlighter-rouge"><span class="no">TimeFormatter</span></code> class will turn it into the familiar MUSH duration string like 2d or 5m.</p>
-
-<h2 id="paginator">Paginator</h2>
-
-<p>When you have a big list of items, the <code class="language-ruby highlighter-rouge"><span class="no">Paginator</span></code> helper class makes it easy to display it one page at a time.</p>
-
-<p>You can use the <code class="language-ruby highlighter-rouge"><span class="no">Paginator</span><span class="p">.</span><span class="nf">paginate</span></code> method to figure out which objects (if any) would be on the requested page.</p>
-
-<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="n">paginator</span> <span class="o">=</span> <span class="no">Paginator</span><span class="p">.</span><span class="nf">paginate</span><span class="p">(</span><span class="n">full_list</span><span class="p">,</span> <span class="n">cmd</span><span class="p">.</span><span class="nf">page</span><span class="p">,</span> <span class="n">items_per_page</span><span class="p">)</span>
-</code></pre></div></div>
-
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Remember that the Ares <a href="/tutorials/code/commands.html">Command Format</a> has a built-in way for the user to request multiple pages.  The page number appears after the command root but before the switch.  For example:  actors2 or jobs2/new.</p>
-</blockquote>
-
-<p>You can then call methods like:</p>
-
-<ul>
-  <li><code class="language-ruby highlighter-rouge"><span class="n">paginator</span><span class="p">.</span><span class="nf">out_of_bounds</span></code> - Tells if the requested page was valid.</li>
-  <li><code class="language-ruby highlighter-rouge"><span class="n">paginator</span><span class="p">.</span><span class="nf">page_items</span></code> - The list of items on the current page.</li>
-  <li><code class="language-ruby highlighter-rouge"><span class="n">paginator</span><span class="p">.</span><span class="nf">page_footer</span></code> - The standard footer in the form  “page x of y”.</li>
-</ul>
 
              </div>             
                            </div>

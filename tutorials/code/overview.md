@@ -16,7 +16,7 @@ You can run quick one-off tasks straight from your MU client, but anything more 
 
 Many people find Ares code more readable and easier to learn than softcode.  The following example shows a snippet of code from the AFK command (`afk <message>`), comparing traditional MUSH softcode and Ares code.
 
-> <i class="fa fa-info-circle"></i> **Tip:** Don't worry if you don't understand all of this right now.  This site has a number of tutorials that will walk you through Ares code step by step.  This is just a small piece to show you what it looks like.
+{% include tip.html content="Don't worry if you don't understand all of this right now.  This site has a number of tutorials that will walk you through Ares code step by step.  This is just a small piece to show you what it looks like." %}
 
 
   <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMUEx" aria-expanded="false" aria-controls="collapseExample">

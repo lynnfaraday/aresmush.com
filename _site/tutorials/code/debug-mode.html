@@ -217,9 +217,10 @@
 
 <p>The debug game will run until you close the server shell or hit CTRL-C.</p>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong> The game must be shut down before you can run it in debug mode.  Otherwise you’ll get a ‘port already in use’ error.  You can restart the game using <code class="language-ruby highlighter-rouge"><span class="n">bin</span><span class="o">/</span><span class="n">startares</span></code> once you’re done.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>The game must be shut down before you can run it in debug mode.  Otherwise you'll get a 'port already in use' error.  You can restart the game using `bin/startares` once you're done.</p>
+</div>
 
 <h2 id="web-portal-debug-mode">Web Portal Debug Mode</h2>
 
@@ -227,9 +228,10 @@
 
 <p>The debug portal will run until you close the server shell or hit CTRL-C.</p>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong> The portal’s debug mode runs on port <strong>4200</strong>, so you access it like:  http://mygame.aresmush.com:4200.  The real portal can still be running while you have debug mode going, but you need to remember to do a <code class="language-ruby highlighter-rouge"><span class="n">bin</span><span class="o">/</span><span class="n">deploy</span></code> to deploy your changes when you’re finished.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>The portal's debug mode runs on port **4200**, so you access it like:  http://mygame.aresmush.com:4200.  The real portal can still be running while you have debug mode going, but you need to remember to do a `bin/deploy` to deploy your changes when you're finished.</p>
+</div>
 
 <h3 id="dev-console">Dev Console</h3>
 

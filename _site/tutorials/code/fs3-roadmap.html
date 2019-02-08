@@ -285,9 +285,10 @@
 
 <p>FS3 has a slew of shared helper methods, in separate files organized by topic:  rolls, chargen, xp, etc.   The helpers actually contain the meat of the system.  Most of the commands are actually prety bare-bones, doing little more than parsing args and calling helpers.</p>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Having so many helper methods may be overwhelming at first, but dig into it a bit and hopefully you’ll find that having short, focused helpers makes the code easier to understand.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>Having so many helper methods may be overwhelming at first, but dig into it a bit and hopefully you'll find that having short, focused helpers makes the code easier to understand. </p>
+</div>
 
 <h3 id="ability-types">Ability Types</h3>
 
@@ -338,9 +339,10 @@
 <span class="no">FS3Combat</span><span class="p">.</span><span class="nf">emit_to_combatant</span><span class="p">(</span><span class="n">combatant</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
 </code></pre></div></div>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Since combatants may be NPCs or PCs offline, it’s generally better to show the messages to everyone in combat rather than individual combatants.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>Since combatants may be NPCs or PCs offline, it's generally better to show the messages to everyone in combat rather than individual combatants.</p>
+</div>
 
 <h3 id="database-models-1">Database Models</h3>
 
@@ -369,9 +371,10 @@
   <li><code class="language-ruby highlighter-rouge"><span class="n">resolve</span></code> - Resolves the attack when a new turn is triggered.  Does damage, updates ammo, imposes penalties, or whatever other effects the action has.  Returns an array of messages with the results of the action.  These will be emitted to the combat.</li>
 </ul>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> In addition to being called when the action is first set, <code class="language-ruby highlighter-rouge"><span class="n">prepare</span></code> is called whenever the combat HUD is viewed and when the action is performed.  If at any time the character’s action is no longer valid, the system will reset it.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>In addition to being called when the action is first set,  <code>prepare</code>  is called whenever the combat HUD is viewed and when the action is performed.  If at any time the character's action is no longer valid, the system will reset it.</p>
+</div>
 
 <h4 id="action-example">Action Example</h4>
 

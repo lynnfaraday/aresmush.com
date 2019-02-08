@@ -31,7 +31,7 @@ The magic here is in the `CommandHandler` module.  Near the top of the tinker co
 * **enactor_room** - As its name implies, it's a shortcut to the room the enactor's in.  As with enactor, it may be `nil` if the command is attempted on the login screen.
 * **cmd** - An object representing the command being executed.  We'll dive into this further in another exercise.
 
-> <i class="fa fa-info-circle"></i> **Tip:** Throughout the Ares code, you'll see 'Cmd' used as an abbreviation for 'Command'.
+{% include tip.html content="Throughout the Ares code, you'll see 'Cmd' used as an abbreviation for 'Command'." %}
 
 ## Try It!
 

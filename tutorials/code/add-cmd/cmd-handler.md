@@ -75,11 +75,11 @@ Splitting up the code into multiple methods makes it more organized and readable
 
 In this example, the `parse_args` method takes the arguments from `cmd.args` and stuffs it into a class variable named goals.  The `trim_arg` processing strips off any leading or trailing spaces.
 
-> <i class="fa fa-info-circle"></i> **Tip:** It's common practice to use Ruby's class variables (defined by `attr_accessor`) to store command arguments.  A class variable defined by `attr_accessor` can be accessed throughout the class.  To distinguish it from regular variables, you put `self.` in front of the name when using it.  For example:  `self.goals`.
+{% include tip.html content="It's common practice to use Ruby's class variables (defined by  <code>attr_accessor</code> ) to store command arguments.  A class variable defined by  <code>attr_accessor</code>  can be accessed throughout the class.  To distinguish it from regular variables, you put  <code>self.</code>  in front of the name when using it.  For example:   <code>self.goals</code> ." %}
 
 The `handle` method takes the goals (again from `self.goals`) and updates the goals database attribute on the enactor.  It then emits a success message to the client.
 
-> <i class="fa fa-info-circle"></i> **Tip:** Remember we need to use `update` to save a database field.  
+{% include tip.html content="Remember we need to use  <code>update</code>  to save a database field.  " %}
 
 Goals are just a free-form string, so there isn't any error checking to do here.
 

@@ -225,9 +225,10 @@
   <li>If no plugins handle the command, the Dispatcher will emit the default “Huh?” message.</li>
 </ol>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Only one plugin may handle a command.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>Only one plugin may handle a command.</p>
+</div>
 
 <div id="inline_toc">
   <p><strong>Table of Contents</strong></p>
@@ -272,9 +273,10 @@
 <span class="k">end</span>
 </code></pre></div></div>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> A few commands check the args too, especially commands that use a shortcut to make both singular and plural versions of the commands work the same.  In the example above, there’s a shortcut (not shown) that converts events -&gt; event.  So if the command root is <code class="language-ruby highlighter-rouge"><span class="n">event</span></code> and there are no arguments, it uses EventsCmd to show the events list.  If there is an argument, then it assumes you’re doing <code class="language-ruby highlighter-rouge"><span class="n">event</span> <span class="mi">1</span></code>.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>A few commands check the args too, especially commands that use a shortcut to make both singular and plural versions of the commands work the same.  In the example above, there's a shortcut (not shown) that converts events -&gt; event.  So if the command root is  <code>event</code>  and there are no arguments, it uses EventsCmd to show the events list.  If there is an argument, then it assumes you're doing <code>event 1</code>.</p>
+</div>
 
 <h2 id="command-class">Command Class</h2>
 
@@ -433,9 +435,10 @@
 <span class="k">end</span>
 </code></pre></div></div>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> If you have multiple pieces of information to send to the player, build up a single string and emit it all at once for efficiency.  You can also use a <a href="/tutorials/code/templates.html">Template</a>.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>If you have multiple pieces of information to send to the player, build up a single string and emit it all at once for efficiency.  You can also use a [Template](/tutorials/code/templates.html).</p>
+</div>
 
 <p>Don’t forget that you can emit in multiple ways depending on the type of message.  See <a href="/tutorials/code/quickstart/emits.html">emits</a>.</p>
 

@@ -215,21 +215,81 @@
     </div>
                                
              <div class="page">
-                 <p>Where command handling is triggered by a player typing something, Events are triggered by the game itself in response to something happening.</p>
+                 <p>Where command handling is triggered by a player typing something, Events are triggered by the game itself in response to something happening.  There are events for characters connecting and disconnecting, characters being created, the game starting, and more.</p>
 
-<p>When a MU client sends text to the game’s telnet port, several things happen:</p>
+<div id="inline_toc">
+  <p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#event-dispatching" id="markdown-toc-event-dispatching">Event Dispatching</a></li>
+  <li><a href="#handling-events" id="markdown-toc-handling-events">Handling Events</a>    <ul>
+      <li><a href="#get-event-handler" id="markdown-toc-get-event-handler">Get Event Handler</a></li>
+      <li><a href="#event-handler-class" id="markdown-toc-event-handler-class">Event Handler Class</a></li>
+    </ul>
+  </li>
+  <li><a href="#standard-events" id="markdown-toc-standard-events">Standard Events</a></li>
+  <li><a href="#plugin-events" id="markdown-toc-plugin-events">Plugin Events</a></li>
+</ul>
+
+</div>
+
+<h2 id="event-dispatching">Event Dispatching</h2>
+
+<p>When a code module triggers an event, several things happen:</p>
 
 <ol>
-  <li>The code triggering the event creates an Event object.</li>
   <li>The Event object is added to the <a href="/tutorials/code/dispatcher.html">Dispatcher’s</a> dispatch queue.</li>
   <li>When it gets to that item in the queue, the Dispatcher will ask each plugin if it’s interested in that event.</li>
   <li>If a plugin returns an event handler object, the Dispatcher will call <code class="language-ruby highlighter-rouge"><span class="n">on_event</span></code> in the handler.  It then continues on to the next plugin and does the same.</li>
   <li>If no plugins handle the event, the Dispatcher will ignore it.</li>
 </ol>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Multiple plugins may handle a single event.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>Multiple plugins may handle a single event.</p>
+</div>
+
+<h2 id="handling-events">Handling Events</h2>
+
+<p>There are two things required to handle events:</p>
+
+<h3 id="get-event-handler">Get Event Handler</h3>
+
+<p>All plugins have a <code class="language-ruby highlighter-rouge"><span class="n">get_event_handler</span></code> method.  Just like <code class="language-ruby highlighter-rouge"><span class="n">get_cmd_handler</span></code> returns a command handler class when a plugin wants a command, <code class="language-ruby highlighter-rouge"><span class="n">get_event_handler</span></code> returns an event handler class when a plugin wants an event.</p>
+
+<p>In this method, events are identified by a string corresponding to the event name (“CharConnectedEvent”, “CharCreatedEvent”, etc.)  Again, this is similar to the way that commands are identified by their command root (“forum”, “connect”, etc.)</p>
+
+<p>The <code class="language-ruby highlighter-rouge"><span class="n">get_event_handler</span></code> method can either return an event handler class or nil, depending on whether it wants the event.  For example:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">module</span> <span class="nn">AresMUSH</span>
+  <span class="k">module</span> <span class="nn">Channels</span>
+    <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">get_event_handler</span><span class="p">(</span><span class="n">event_name</span><span class="p">)</span> 
+      <span class="k">case</span> <span class="n">event_name</span>
+      <span class="k">when</span> <span class="s2">"CharCreatedEvent"</span>
+        <span class="k">return</span> <span class="no">CharCreatedEventHandler</span>
+      <span class="k">end</span>
+      <span class="kp">nil</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<h3 id="event-handler-class">Event Handler Class</h3>
+
+<p>The second piece is to implement a class to actually handle the plugin (<code class="language-ruby highlighter-rouge"><span class="no">CharCreatedEventHandler</span></code> in the example above.)  Event handling is much simpler than command handling.  There’s no arg parsing, no error checks–you only need to implement a single method, named <code class="language-ruby highlighter-rouge"><span class="n">on_event</span></code>.</p>
+
+<p>The <code class="language-ruby highlighter-rouge"><span class="n">on_event</span></code> method is passed an event object.  The contents of this object will vary depending on the event.  You’ll need to look at the event class definition to find out what data is available.  See “Standard Events” below for more information.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">module</span> <span class="nn">AresMUSH</span>
+  <span class="k">module</span> <span class="nn">Channels</span>
+    <span class="k">class</span> <span class="nc">CharCreatedEventHandler</span>
+      <span class="k">def</span> <span class="nf">on_event</span><span class="p">(</span><span class="n">event</span><span class="p">)</span>
+         <span class="n">event</span><span class="p">.</span><span class="nf">client</span><span class="p">.</span><span class="nf">emit</span> <span class="s2">"Hello!"</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
 
 <h2 id="standard-events">Standard Events</h2>
 
@@ -246,40 +306,21 @@
   <li><code class="language-ruby highlighter-rouge"><span class="no">RoleChangedEvent</span></code> - A character’s roles has changed.</li>
 </ul>
 
-<h2 id="handling-events">Handling Events</h2>
+<p>You can find details about the data in these events by looking in the code file <code class="language-ruby highlighter-rouge"><span class="sr">/aresmush/en</span><span class="n">gine</span><span class="o">/</span><span class="n">aresmush</span><span class="o">/</span><span class="n">commands</span><span class="o">/</span><span class="n">global_events</span></code>.  For example, character connected has the ID of the character and the client.</p>
 
-<p>If a plugin wants to handle an event, it must implement the <code class="language-ruby highlighter-rouge"><span class="n">get_event_handler</span></code> method in its plugin module.  This method is given an event name (matching the event names shown above) and can return either nil (if the plugin doesn’t want the event) or an event handler class (if it does).</p>
-
-<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">module</span> <span class="nn">AresMUSH</span>
-  <span class="k">module</span> <span class="nn">Channels</span>
-    <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">get_event_handler</span><span class="p">(</span><span class="n">event_name</span><span class="p">)</span> 
-      <span class="k">case</span> <span class="n">event_name</span>
-      <span class="k">when</span> <span class="s2">"CharCreatedEvent"</span>
-        <span class="k">return</span> <span class="no">CharCreatedEventHandler</span>
-      <span class="k">end</span>
-      <span class="kp">nil</span>
-    <span class="k">end</span>
-  <span class="k">end</span>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">CharConnectedEvent</span>
+  <span class="nb">attr_accessor</span> <span class="ss">:client</span><span class="p">,</span> <span class="ss">:char_id</span>
 <span class="k">end</span>
 </code></pre></div></div>
 
-<p>The handler class must implement the <code class="language-ruby highlighter-rouge"><span class="n">on_event</span></code> method.</p>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>Event objects always pass database **ids**, not actual database objects to avoid race conditions.  You can look up the character in the handler using  <code>Character[event.char_id]</code> .</p>
+</div>
 
-<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">module</span> <span class="nn">AresMUSH</span>
-  <span class="k">module</span> <span class="nn">Channels</span>
-    <span class="k">class</span> <span class="nc">CharCreatedEventHandler</span>
-      <span class="k">def</span> <span class="nf">on_event</span><span class="p">(</span><span class="n">event</span><span class="p">)</span>
-         <span class="o">...</span>
-      <span class="k">end</span>
-    <span class="k">end</span>
-  <span class="k">end</span>
-<span class="k">end</span>
-</code></pre></div></div>
+<h2 id="plugin-events">Plugin Events</h2>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Event objects always pass database <strong>ids</strong>, not actual database objects.  Each event handler must look up the database object independently.  This is necessary because otherwise the first plugin to handle the event may make changes to the database, and the second plugin would be operating on a stale copy of the object.</p>
-</blockquote>
-
+<p>Other events may be defined by individual plugins. You’ll typically find those in the <code class="language-ruby highlighter-rouge"><span class="kp">public</span></code> directory of a plugin.  For example: <code class="language-ruby highlighter-rouge"><span class="n">aresmush</span><span class="o">/</span><span class="n">plugins</span><span class="o">/</span><span class="n">scenes</span><span class="o">/</span><span class="kp">public</span><span class="sr">/pose_event.rb</span></code>.</p>
 
              </div>             
                            </div>

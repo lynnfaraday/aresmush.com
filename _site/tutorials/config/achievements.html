@@ -235,9 +235,10 @@
 
 <p>You can configure what achievement types exist and what their icon is.  Standard types include things like community, story, and portal.  Icons come from the <a href="https://fontawesome.com/?from=io">Font Awesome</a> icon library, so you’ll see codes like <code class="language-ruby highlighter-rouge"><span class="n">fa</span><span class="o">-</span><span class="n">globe</span></code> and <code class="language-ruby highlighter-rouge"><span class="n">fa</span><span class="o">-</span><span class="n">users</span></code>.</p>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Don’t erase the existing types, because they’re used by various plugins.  You can change their icons, though, and add new types.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>Don't erase the existing types, because they're used by various plugins.  You can change their icons, though, and add new types.</p>
+</div>
 
 <h2 id="custom_achievements">custom_achievements</h2>
 
@@ -264,9 +265,10 @@
 <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Achievements</span><span class="p">.</span><span class="nf">award_achievement</span><span class="p">(</span><span class="n">enactor</span><span class="p">,</span> <span class="s2">"something_special"</span><span class="p">)</span>
 </code></pre></div></div>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> You don’t have to check to see if the person already has the award; the Achievements plugin does that automatically.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>You don't have to check to see if the person already has the award; the Achievements plugin does that automatically.</p>
+</div>
 
 <p>Each achievement can only be received one time, though you can define different ‘levels’ of the achievement with different names.  For example, joining combats has several levels: <code class="language-ruby highlighter-rouge"><span class="n">fs3_joined_combat_1</span></code>, <code class="language-ruby highlighter-rouge"><span class="n">fs3_joined_combat_10</span></code>, etc.</p>
 

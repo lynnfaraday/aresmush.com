@@ -23,11 +23,17 @@ Plugin APIs are always found in the file `plugins/<plugin>/public/<plugin>_api.r
 
 You'll find these APIs used throughout the Ares codebase.  The channel plugin creates a job when someone reports channel abuse.  The idle plugin creates a job when it's time to do the idle purge.  The chargen plugin creates a job when someone submits their app.  And so on.
 
-> <i class="fa fa-info-circle"></i> **Tip:** APIs generally expect that permissions will be checked by the calling command handler.
+{% include tip.html content="APIs generally expect that permissions will be checked by the calling command handler." %}
+
+## Try It!
+
+Let's use the jobs API to create a test job.
+
+    ruby Jobs.create_job("REQ", "A Test Job", "This is a test job.", enactor)
 
 ## Common APIs
 
-Here are a few of the most common APIs you'll use:
+Here are a few other common APIs you may use in your own code.
 
 ### Create a Job
 

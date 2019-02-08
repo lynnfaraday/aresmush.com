@@ -229,9 +229,10 @@
 
 <p>When someone connects to the game with their MU client, Ares calls that connection a <strong>Client</strong>.  The Client class provides information about the connection, like the IP address and idle time.  It handles input from the MU client and turns it into a Command (explained below).</p>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong> Clients represent connections from actual MUSH clients and the Ares Web Portal’s “Play” screen (which acts like a MUSH client).  Other Web Portal connections are handled differently, as explained below.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>Clients represent connections from actual MUSH clients and the Ares Web Portal's "Play" screen (which acts like a MUSH client).  Other Web Portal connections are handled differently, as explained below.</p>
+</div>
 
 <p>The Client class also provides utilities to easily send messages (<strong>emit</strong>) to the MU client.  Throughout the Ares code, you’ll see things like:</p>
 
@@ -248,17 +249,19 @@
   <li><code class="language-ruby highlighter-rouge"><span class="n">emit_raw</span></code> - A special emit that will not evaluate linebreaks or ansi codes.</li>
 </ul>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> It’s highly recommended that you use the standard emit_ooc / emit_success / emit_failure methods in any custom code you write.  This provides a consistent look-and-feel for all game commands and enable log editors to easily filter out these messages.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>It's highly recommended that you use the standard emit_ooc / emit_success / emit_failure methods in any custom code you write.  This provides a consistent look-and-feel for all game commands and enable log editors to easily filter out these messages.</p>
+</div>
 
 <h2 id="characters">Characters</h2>
 
 <p>Once a player has logged in with their character name and password, their client now has a <strong>Character</strong> attached.  You can access that by calling <code class="language-ruby highlighter-rouge"><span class="n">client</span><span class="p">.</span><span class="nf">char</span></code> from a Client object.</p>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Remember that it’s possible for a Client to <em>not</em> have a Character object if the player is just sitting on the login screen.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>Remember that it's possible for a Client to *not* have a Character object if the player is just sitting on the login screen.</p>
+</div>
 
 <p>You can use the character object to access all sorts of information about the character.  For example, you can emit a personal greeting:</p>
 
@@ -306,9 +309,10 @@
   </tbody>
 </table>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Ares ignores the prefix except for a few rare circumstances.  So +who, who, @who and /who all end up being handled as simply ‘who’.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>Ares ignores the prefix except for a few rare circumstances.  So +who, who, @who and /who all end up being handled as simply 'who'.</p>
+</div>
 
 <p>Commands are routed through a central <strong>Dispatcher</strong>, which will go through the plugins trying to find one that wants the command.  The dispatcher uses the <a href="https://github.com/eventmachine/eventmachine">EventMachine</a> reactor library, which ensures that commands are handled one by one in an orderly queue.</p>
 

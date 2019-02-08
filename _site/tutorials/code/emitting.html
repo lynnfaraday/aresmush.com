@@ -213,9 +213,10 @@
              <div class="page">
                  <p>Emitting messages is the most basic way that your code will communicate with the players.  Pretty much every single command will emit something to someone.</p>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> All emits accept <a href="/tutorials/code/formatting.html">Formatting Codes</a>.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>All emits accept [Formatting Codes](/tutorials/code/formatting.html).</p>
+</div>
 
 <div id="inline_toc">
   <p><strong>Table of Contents</strong></p>
@@ -242,17 +243,19 @@
   <li><code class="language-ruby highlighter-rouge"><span class="n">client</span><span class="p">.</span><span class="nf">emit_failure</span> <span class="s2">"A message"</span></code> - Failure/error alerts show up in red.</li>
 </ul>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> A ‘client’ in this context means a traditional MUSH client, including telnet-based client apps or the web portal’s “Play” screen.   Regular emits are not sent to people just browsing around the web portal.  If you want to notify them of something (like to tell them that they’ve received a new mail message), see Notifying Web Clients below.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>A 'client' in this context means a traditional MUSH client, including telnet-based client apps or the web portal's Play screen.   Regular emits are not sent to people just browsing around the web portal.  If you want to notify them of something (like to tell them that they've received a new mail message), see Notifying Web Clients below.</p>
+</div>
 
 <h2 id="emitting-to-a-different-characters-client">Emitting to a Different Character’s Client</h2>
 
 <p>Sometimes you’ll need to emit to a different client - for example, the <em>target</em> of a command.</p>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> You can only emit to clients, not characters.  A character is just a database object; it can’t receive messages.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>You can only emit to clients, not characters.  A character is just a database object; it can't receive messages.</p>
+</div>
 
 <p>There are a few utility methods that let emit to a client associated with a character, as long as that character is logged in:</p>
 

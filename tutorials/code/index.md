@@ -71,7 +71,7 @@ Learn how to add things - in this case, the character goals from Tutorial #3 - t
 
 Once you've completed the initial tutorials, there are a wealth of other topics available for reference. 
 
-> <i class="fa fa-info-circle"></i> **Tip:** It's suggested that you refer to these as you need them rather than trying to learn them all at once.  There's a lot of information here and it can be a bit overwhelming.
+{% include tip.html content="It's suggested that you refer to these as you need them rather than trying to learn them all at once.  There's a lot of information here and it can be a bit overwhelming." %}
 
 ### General
 
@@ -126,6 +126,7 @@ Once you've completed the initial tutorials, there are a wealth of other topics 
 
 * [Emitting](/tutorials/code/emitting.html)
 * [Formatters](/tutorials/code/formatters.html)
+* [Multi-Page Output (Paginator)](/tutorials/code/paginator.html)
 * [Templates](/tutorials/code/templates.html)
 
 ### Web Portal

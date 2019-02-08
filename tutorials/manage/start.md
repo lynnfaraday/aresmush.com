@@ -15,7 +15,7 @@ If the game is ever stopped, you'll need to restart it.
 
 If the game is already running and you want to *restart* it, see [Shutting Down the Game](/tutorials/manage/shutdown.html) for information on how to stop the game first.
 
-> <i class="fa fa-info-circle"></i> **Tip:** Always wait about 10 seconds or so between shutting the game down and restarting it.  This ensures that everything has a chance to shut down fully and cleanly.
+{% include tip.html content="Always wait about 10 seconds or so between shutting the game down and restarting it.  This ensures that everything has a chance to shut down fully and cleanly." %}
 
 To ensure the game automatically restarts when the server is rebooted, see [Auto-Restart After Server Reboot](/tutorials/manage/restart-after-reboot.html).
 

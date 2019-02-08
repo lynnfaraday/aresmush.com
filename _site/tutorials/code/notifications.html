@@ -253,9 +253,10 @@
   <span class="k">end</span>
 </code></pre></div></div>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> If you’re selecting particular characters, it’s best to always check <code class="language-ruby highlighter-rouge"><span class="n">char</span> <span class="o">&amp;&amp;</span> </code> before your actual selection.  Remember that there can be clients without a character if they’re sitting on the login screen or not logged into the Web Portal.   You don’t want to get nil exceptions.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>If you're selecting particular characters, it's best to always check  <code>char &amp;&amp; </code>  before your actual selection.  Remember that there can be clients without a character if they're sitting on the login screen or not logged into the Web Portal.   You don't want to get nil exceptions.</p>
+</div>
 
 <h2 id="event-types">Event Types</h2>
 

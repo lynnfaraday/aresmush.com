@@ -10,7 +10,7 @@ tags:
 
 At some point there will be a new version of Ares code available and you'll want to upgrade the code on the game server.
 
- > <i class="fa fa-exclamation-triangle"></i> **Note:** These instructions assume that you've followed the standard installation process and have your game server pointed at GitHub (either to the main Ares repository or to [your own fork](/tutorials/code/git.html)).  If you've done something different with your server, you may need to adapt the instructions to your environment.
+ {% include note.html content="These instructions assume that you've followed the standard installation process and have your game server pointed at GitHub (either to the main Ares repository or to [your own fork](/tutorials/code/git.html)).  If you've done something different with your server, you may need to adapt the instructions to your environment." %}
  
 <div id="inline_toc" markdown="1">
 **Table of Contents**
@@ -21,7 +21,7 @@ At some point there will be a new version of Ares code available and you'll want
 
 ## Important Note About Downgrades
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** Ares has a lot of support for **upgrades** but not for *downgrades*.  If you ever find yourself needing to revert back to a previous version, you may need to make some custom code tweaks to prevent data loss (since database fields may be different between versions).  Unless you're super-comfortable with the code, it's probably best to [ask for help](/feedback.html) before attempting this. 
+{% include note.html content="Ares has a lot of support for **upgrades** but not for *downgrades*.  If you ever find yourself needing to revert back to a previous version, you may need to make some custom code tweaks to prevent data loss (since database fields may be different between versions).  Unless you're super-comfortable with the code, it's probably best to [ask for help](/feedback.html) before attempting this. " %}
 
 ## Updating Your Own Fork
 
@@ -31,7 +31,7 @@ If you are making custom code changes and have your own GitHub fork, you'll need
 
 Many version upgrades can be done while the game is still running.
 
-> <i class="fa fa-info-circle"></i> **Tip:** The version's release notes will advise you if a restart is required.  If so, follow the instructions in **Upgrade With a Restart** instead.
+{% include tip.html content="The version's release notes will advise you if a restart is required.  If so, follow the instructions in **Upgrade With a Restart** instead." %}
 
 1. Type `upgrade` to commit any local changes and get the latest game code from GitHub.  If you see any CONFLICT notices from the upgrade, you'll need to edit the code on the server shell as explained in Resolving Conflicts below.
 2. Type `load all`  to reload the code and configuration.

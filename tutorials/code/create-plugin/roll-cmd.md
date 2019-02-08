@@ -24,7 +24,7 @@ The roll string can take several forms:
 
 The difficulty is optional.  If omitted, the roll is simply done as an open-ended roll.
 
-> <i class="fa fa-info-circle"></i> **Tip:** This roll command does not directly handle opposed rolls.  To do an opposed roll, you have both sides do open-ended rolls and compare the results.
+{% include tip.html content="This roll command does not directly handle opposed rolls.  To do an opposed roll, you have both sides do open-ended rolls and compare the results." %}
 
 ## Command Class
 

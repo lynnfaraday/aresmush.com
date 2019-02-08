@@ -215,9 +215,10 @@
              <div class="page">
                  <p>At some point there will be a new version of Ares code available and you’ll want to upgrade the code on the game server.</p>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong> These instructions assume that you’ve followed the standard installation process and have your game server pointed at GitHub (either to the main Ares repository or to <a href="/tutorials/code/git.html">your own fork</a>).  If you’ve done something different with your server, you may need to adapt the instructions to your environment.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>These instructions assume that you've followed the standard installation process and have your game server pointed at GitHub (either to the main Ares repository or to [your own fork](/tutorials/code/git.html)).  If you've done something different with your server, you may need to adapt the instructions to your environment.</p>
+</div>
 
 <div id="inline_toc">
   <p><strong>Table of Contents</strong></p>
@@ -234,9 +235,10 @@
 
 <h2 id="important-note-about-downgrades">Important Note About Downgrades</h2>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong> Ares has a lot of support for <strong>upgrades</strong> but not for <em>downgrades</em>.  If you ever find yourself needing to revert back to a previous version, you may need to make some custom code tweaks to prevent data loss (since database fields may be different between versions).  Unless you’re super-comfortable with the code, it’s probably best to <a href="/feedback.html">ask for help</a> before attempting this.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>Ares has a lot of support for **upgrades** but not for *downgrades*.  If you ever find yourself needing to revert back to a previous version, you may need to make some custom code tweaks to prevent data loss (since database fields may be different between versions).  Unless you're super-comfortable with the code, it's probably best to [ask for help](/feedback.html) before attempting this. </p>
+</div>
 
 <h2 id="updating-your-own-fork">Updating Your Own Fork</h2>
 
@@ -246,9 +248,10 @@
 
 <p>Many version upgrades can be done while the game is still running.</p>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> The version’s release notes will advise you if a restart is required.  If so, follow the instructions in <strong>Upgrade With a Restart</strong> instead.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>The version's release notes will advise you if a restart is required.  If so, follow the instructions in **Upgrade With a Restart** instead.</p>
+</div>
 
 <ol>
   <li>Type <code class="language-ruby highlighter-rouge"><span class="n">upgrade</span></code> to commit any local changes and get the latest game code from GitHub.  If you see any CONFLICT notices from the upgrade, you’ll need to edit the code on the server shell as explained in Resolving Conflicts below.</li>

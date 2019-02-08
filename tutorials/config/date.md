@@ -62,7 +62,7 @@ There are two date options that are not used for date formatting by the code, bu
 
 OOC dates and times (shown in the time command, for example) are relative to the server's timezone, so it's helpful to tell the players what that is.  
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:**  This doesn't actually *change* the server timezone; it's just an advisory.  It's important that this setting matches what the server timezone actually is.
+{% include note.html content=" This doesn't actually *change* the server timezone; it's just an advisory.  It's important that this setting matches what the server timezone actually is." %}
 
 Players can choose to have events and other times displayed in their local time by setting their timezone with the timezone command.
 

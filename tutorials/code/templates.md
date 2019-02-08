@@ -60,7 +60,7 @@ A template can also define its own custom helpers.  These helpers are located in
       Ranks.military_name(char)
     end
 
-> <i class="fa fa-info-circle"></i> **Tip:** Some of the template renderers share common helpers with another template.  You'll see this when the renderer has a line like `include CharDescTemplateFields` near the top of the file.  For example, the description and glance templates share some helpers from `plugins/describe/char_desc_template_fields.rb`.  If you don't see the helper you're looking for (e.g. military_name), look for a shared helper file.
+{% include tip.html content="Some of the template renderers share common helpers with another template.  You'll see this when the renderer has a line like  <code>include CharDescTemplateFields</code>  near the top of the file.  For example, the description and glance templates share some helpers from  <code>plugins/describe/char_desc_template_fields.rb</code> .  If you don't see the helper you're looking for (e.g. military_name), look for a shared helper file." %}
 
 ## Using Templates
 
@@ -82,7 +82,7 @@ Ares provides a few common templates in the Utils plugin that are used everywher
     SubFooter
     ------------------------------
 
-> <i class="fa fa-info-circle"></i> **Tip:** Everything except the text/list is optional, so you can customize the display as desired.
+{% include tip.html content="Everything except the text/list is optional, so you can customize the display as desired." %}
 
 There's also a table, a line with text in the middle, and a standard page footer for multi-page commands.  See the code in `aresmush/plugins/utils/templates` for details.
 

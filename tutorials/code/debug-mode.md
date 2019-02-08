@@ -14,7 +14,7 @@ To start the game in debug mode, run `bin/devstart` from the aresmush directory.
 
 The debug game will run until you close the server shell or hit CTRL-C.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** The game must be shut down before you can run it in debug mode.  Otherwise you'll get a 'port already in use' error.  You can restart the game using `bin/startares` once you're done.
+{% include note.html content="The game must be shut down before you can run it in debug mode.  Otherwise you'll get a 'port already in use' error.  You can restart the game using `bin/startares` once you're done." %}
 
 ## Web Portal Debug Mode
 
@@ -22,7 +22,7 @@ The web portal also has a debug mode, which you can activate using `bin/devporta
 
 The debug portal will run until you close the server shell or hit CTRL-C.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** The portal's debug mode runs on port **4200**, so you access it like:  http://mygame.aresmush.com:4200.  The real portal can still be running while you have debug mode going, but you need to remember to do a `bin/deploy` to deploy your changes when you're finished.
+{% include note.html content="The portal's debug mode runs on port **4200**, so you access it like:  http://mygame.aresmush.com:4200.  The real portal can still be running while you have debug mode going, but you need to remember to do a `bin/deploy` to deploy your changes when you're finished." %}
 
 ### Dev Console
 

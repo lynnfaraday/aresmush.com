@@ -9,17 +9,65 @@ tags:
 - dispatcher
 ---
 
-Where command handling is triggered by a player typing something, Events are triggered by the game itself in response to something happening.  
+Where command handling is triggered by a player typing something, Events are triggered by the game itself in response to something happening.  There are events for characters connecting and disconnecting, characters being created, the game starting, and more.
 
-When a MU client sends text to the game's telnet port, several things happen:
+<div id="inline_toc" markdown="1">
+**Table of Contents**
 
-1. The code triggering the event creates an Event object.
-2. The Event object is added to the [Dispatcher's](/tutorials/code/dispatcher.html) dispatch queue.  
-3. When it gets to that item in the queue, the Dispatcher will ask each plugin if it's interested in that event.  
-4. If a plugin returns an event handler object, the Dispatcher will call `on_event` in the handler.  It then continues on to the next plugin and does the same.
-5. If no plugins handle the event, the Dispatcher will ignore it.
+* TOC
+{:toc}
+</div>
 
-> <i class="fa fa-info-circle"></i> **Tip:** Multiple plugins may handle a single event.
+## Event Dispatching
+
+When a code module triggers an event, several things happen:
+
+1. The Event object is added to the [Dispatcher's](/tutorials/code/dispatcher.html) dispatch queue.  
+2. When it gets to that item in the queue, the Dispatcher will ask each plugin if it's interested in that event.  
+3. If a plugin returns an event handler object, the Dispatcher will call `on_event` in the handler.  It then continues on to the next plugin and does the same.
+4. If no plugins handle the event, the Dispatcher will ignore it.
+
+{% include tip.html content="Multiple plugins may handle a single event." %}
+
+## Handling Events
+
+There are two things required to handle events:
+
+### Get Event Handler
+
+All plugins have a `get_event_handler` method.  Just like `get_cmd_handler` returns a command handler class when a plugin wants a command, `get_event_handler` returns an event handler class when a plugin wants an event.
+
+In this method, events are identified by a string corresponding to the event name ("CharConnectedEvent", "CharCreatedEvent", etc.)  Again, this is similar to the way that commands are identified by their command root ("forum", "connect", etc.)
+
+The `get_event_handler` method can either return an event handler class or nil, depending on whether it wants the event.  For example:
+
+    module AresMUSH
+      module Channels
+        def self.get_event_handler(event_name) 
+          case event_name
+          when "CharCreatedEvent"
+            return CharCreatedEventHandler
+          end
+          nil
+        end
+      end
+    end
+
+### Event Handler Class
+
+The second piece is to implement a class to actually handle the plugin (`CharCreatedEventHandler` in the example above.)  Event handling is much simpler than command handling.  There's no arg parsing, no error checks--you only need to implement a single method, named `on_event`.
+
+The `on_event` method is passed an event object.  The contents of this object will vary depending on the event.  You'll need to look at the event class definition to find out what data is available.  See "Standard Events" below for more information.
+
+    module AresMUSH
+      module Channels
+        class CharCreatedEventHandler
+          def on_event(event)
+             event.client.emit "Hello!"
+          end
+        end
+      end
+    end
 
 ## Standard Events
 
@@ -34,37 +82,14 @@ Standard events in the stock Ares code include:
 * `RoleDeletedEvent` - A role has been deleted. 
 * `RoleChangedEvent` - A character's roles has changed.
 
-## Handling Events
+You can find details about the data in these events by looking in the code file `/aresmush/engine/aresmush/commands/global_events`.  For example, character connected has the ID of the character and the client.
 
-If a plugin wants to handle an event, it must implement the `get_event_handler` method in its plugin module.  This method is given an event name (matching the event names shown above) and can return either nil (if the plugin doesn't want the event) or an event handler class (if it does).
-
-    module AresMUSH
-      module Channels
-        def self.get_event_handler(event_name) 
-          case event_name
-          when "CharCreatedEvent"
-            return CharCreatedEventHandler
-          end
-          nil
-        end
-      end
+    class CharConnectedEvent
+      attr_accessor :client, :char_id
     end
 
+{% include tip.html content="Event objects always pass database **ids**, not actual database objects to avoid race conditions.  You can look up the character in the handler using  <code>Character[event.char_id]</code> ." %}
 
-The handler class must implement the `on_event` method.  
+## Plugin Events
 
-    module AresMUSH
-      module Channels
-        class CharCreatedEventHandler
-          def on_event(event)
-             ...
-          end
-        end
-      end
-    end
-
-> <i class="fa fa-info-circle"></i> **Tip:** Event objects always pass database **ids**, not actual database objects.  Each event handler must look up the database object independently.  This is necessary because otherwise the first plugin to handle the event may make changes to the database, and the second plugin would be operating on a stale copy of the object.
-
-
-
-
+Other events may be defined by individual plugins. You'll typically find those in the `public` directory of a plugin.  For example: `aresmush/plugins/scenes/public/pose_event.rb`.

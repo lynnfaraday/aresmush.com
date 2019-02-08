@@ -274,9 +274,10 @@
 <span class="k">end</span>
 </code></pre></div></div>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Some of the template renderers share common helpers with another template.  You’ll see this when the renderer has a line like <code class="language-ruby highlighter-rouge"><span class="kp">include</span> <span class="no">CharDescTemplateFields</span></code> near the top of the file.  For example, the description and glance templates share some helpers from <code class="language-ruby highlighter-rouge"><span class="n">plugins</span><span class="o">/</span><span class="n">describe</span><span class="o">/</span><span class="n">char_desc_template_fields</span><span class="p">.</span><span class="nf">rb</span></code>.  If you don’t see the helper you’re looking for (e.g. military_name), look for a shared helper file.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>Some of the template renderers share common helpers with another template.  You'll see this when the renderer has a line like  <code>include CharDescTemplateFields</code>  near the top of the file.  For example, the description and glance templates share some helpers from  <code>plugins/describe/char_desc_template_fields.rb</code> .  If you don't see the helper you're looking for (e.g. military_name), look for a shared helper file.</p>
+</div>
 
 <h2 id="using-templates">Using Templates</h2>
 
@@ -300,9 +301,10 @@
 <span class="o">------------------------------</span>
 </code></pre></div></div>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Everything except the text/list is optional, so you can customize the display as desired.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>Everything except the text/list is optional, so you can customize the display as desired.</p>
+</div>
 
 <p>There’s also a table, a line with text in the middle, and a standard page footer for multi-page commands.  See the code in <code class="language-ruby highlighter-rouge"><span class="n">aresmush</span><span class="o">/</span><span class="n">plugins</span><span class="o">/</span><span class="n">utils</span><span class="o">/</span><span class="n">templates</span></code> for details.</p>
 

@@ -241,9 +241,10 @@
 <span class="k">end</span>
 </code></pre></div></div>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Ohm is the database library that helps us talk to the database, and <code class="language-ruby highlighter-rouge"><span class="o">&lt;</span> <span class="no">Ohm</span><span class="o">::</span><span class="no">Model</span></code> is a special bit of Ruby code that lets us do things like <code class="language-ruby highlighter-rouge"><span class="n">attribute</span> <span class="ss">:name</span></code> to define a database field.  We didn’t see Ohm::Model in the previous examples because we were adding to an existing model class (Character) defined by the engine.  Here, though, we’re creating a brand new one.  You can learn more about the Ohm library in the <a href="/tutorials/code/database.html">advanced database tutorial</a> when you’re ready.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>Ohm is the database library that helps us talk to the database, and  <code>&lt; Ohm::Model</code>  is a special bit of Ruby code that lets us do things like  <code>attribute :name</code>  to define a database field.  We didn't see Ohm::Model in the previous examples because we were adding to an existing model class (Character) defined by the engine.  Here, though, we're creating a brand new one.  You can learn more about the Ohm library in the [advanced database tutorial](/tutorials/code/database.html) when you're ready.  </p>
+</div>
 
 <h3 id="model-attributes">Model Attributes</h3>
 
@@ -286,9 +287,10 @@
 <span class="n">skill</span> <span class="o">=</span> <span class="no">CortexSkill</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="ss">name: </span><span class="s2">"Guns"</span><span class="p">,</span> <span class="ss">die_step: </span><span class="mi">1</span><span class="p">,</span> <span class="ss">character: </span><span class="n">char</span><span class="p">)</span>
 </code></pre></div></div>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> This skill will automatically be added to Bob’s skills collection; we don’t need to do anything to make that happen.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>This skill will automatically be added to Bob's skills collection; we don't need to do anything to make that happen.</p>
+</div>
 
 <p>To update a skill, first we have to find it.  There’s a utility in <code class="language-ruby highlighter-rouge"><span class="n">aresmush</span><span class="o">/</span><span class="n">plugins</span><span class="o">/</span><span class="n">cortex</span><span class="o">/</span><span class="n">helpers</span><span class="p">.</span><span class="nf">rb</span></code> that can help us with that:</p>
 

@@ -21,5 +21,5 @@ The combat rules require you to determine which abilities are used for the follo
 - `default_defense_skill` (default = Reflexes) - Used for defense rolls outside of melee and vehicle combat.  Melee combat uses the defender's melee weapon skill, and vehicle combat uses their piloting skill.  You can override this for a specific combatant type.  See [Combatant Types Config](/tutorials/config/fs3combat_misc.html).
 - `strength_skill` (default = Brawn) - Used for augmenting melee weapon damage.
 
-> <i class="fa fa-info-circle"></i> **Tip:** Although they're named "skills", you can use attributes instead.  Most of them are skill-based, but things like strength and recovery don't really have any _skill_ involved so they use raw attributes.  Just be aware that if they're only rolling an attribute they've got fewer dice.
+{% include tip.html content="Although they're named \"skills\", you can use attributes instead.  Most of them are skill-based, but things like strength and recovery don't really have any _skill_ involved so they use raw attributes.  Just be aware that if they're only rolling an attribute they've got fewer dice on average." %}
 

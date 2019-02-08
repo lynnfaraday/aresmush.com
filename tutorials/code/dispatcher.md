@@ -52,7 +52,7 @@ A timer delays code until some time has elapsed.  The code will be processed in 
           client.emit_success t('login.guest_name', :name => guest.name)
         end
 
-> <i class="fa fa-info-circle"></i> **Tip:** Ares timers do not have stopwatch precision.  The code will wait for *at least* the specified time, but it may take a little longer depending on how busy the system is.
+{% include tip.html content="Ares timers do not have stopwatch precision.  The code will wait for *at least* the specified time, but it may take a little longer depending on how busy the system is." %}
 
 ## Queue
 

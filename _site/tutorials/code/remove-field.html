@@ -248,9 +248,10 @@
 
 <p>To prevent this from happening, you should set all instances of the field to <code class="language-ruby highlighter-rouge"><span class="kp">nil</span></code> in the database <strong>before</strong> removing it from the code.</p>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Note:</strong> If the field was originally a special data type (like DateTime or Integer) we need to change it to a string data type first by removing the <code class="language-ruby highlighter-rouge"><span class="n">type</span></code> specification.  Otherwise our nil may be converted to a default value (like 0).</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>If the field was originally a special data type (like DateTime or Integer) we need to change it to a string data type first by removing the `type` specification.  Otherwise our nil may be converted to a default value (like 0).</p>
+</div>
 
 <p>For example, assume we have:</p>
 
@@ -275,9 +276,10 @@
 
 <p>Now it’s safe to remove the field from the code.</p>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> If you forgot to nil out the field before you removed it from the code, just put it back temporarily.  Run the commands above, then remove it for real.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>If you forgot to nil out the field before you removed it from the code, just put it back temporarily.  Run the commands above, then remove it for real.</p>
+</div>
 
 <h2 id="errors-during-restart">Errors During Restart</h2>
 

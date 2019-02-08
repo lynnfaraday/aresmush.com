@@ -234,9 +234,10 @@
 
 <p>Change the tinker handle method as shown below:</p>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> You can click the Reset button on the tinker screen to put the tinker code back to the default values and remove all the piggy processing we did in prior exercises.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>You can click the Reset button on the tinker screen to put the tinker code back to the default values and remove all the piggy processing we did in prior exercises.</p>
+</div>
 
 <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">handle</span>
   <span class="n">color</span> <span class="o">=</span> <span class="no">Global</span><span class="p">.</span><span class="nf">read_config</span><span class="p">(</span><span class="s2">"tinker"</span><span class="p">,</span> <span class="s2">"example"</span><span class="p">)</span>
@@ -250,9 +251,10 @@
 
 <p>Change the configuration file to use a different color code (like “%xg” for green) and run the command again.  Notice how the color changed without you needing to touch the code.</p>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Configuration sections generally correspond to their filenames (<code class="language-ruby highlighter-rouge"><span class="n">tinker</span><span class="p">.</span><span class="nf">yml</span></code> for the “tinker” section), but sometimes sections are spread out across multiple config files for readability.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>Configuration sections generally correspond to their filenames ( <code>tinker.yml</code>  for the tinker section), but sometimes sections are spread out across multiple config files for readability.</p>
+</div>
 
 
                  <div class="tutorial-nav">

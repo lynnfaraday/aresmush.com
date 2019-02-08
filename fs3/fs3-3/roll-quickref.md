@@ -58,8 +58,7 @@ You can simulate a NPC in the same way you do other characters.  Just specify a 
 
 You can make a roll that is hidden from others in the room.   You can specify linked attributes or modifiers here just like in a normal roll.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** Admins can see all rolls, even private ones.  This enables them to judge the results of secret rolls.
-
+{% include note.html content="Admins can see all rolls, even private ones.  This enables them to judge the results of secret rolls." %}
 
 
 

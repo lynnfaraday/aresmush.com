@@ -275,15 +275,17 @@
 
 <p>In this example, the <code class="language-ruby highlighter-rouge"><span class="n">parse_args</span></code> method takes the arguments from <code class="language-ruby highlighter-rouge"><span class="n">cmd</span><span class="p">.</span><span class="nf">args</span></code> and stuffs it into a class variable named goals.  The <code class="language-ruby highlighter-rouge"><span class="n">trim_arg</span></code> processing strips off any leading or trailing spaces.</p>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> It’s common practice to use Ruby’s class variables (defined by <code class="language-ruby highlighter-rouge"><span class="nb">attr_accessor</span></code>) to store command arguments.  A class variable defined by <code class="language-ruby highlighter-rouge"><span class="nb">attr_accessor</span></code> can be accessed throughout the class.  To distinguish it from regular variables, you put <code class="language-ruby highlighter-rouge"><span class="nb">self</span><span class="o">.</span></code> in front of the name when using it.  For example:  <code class="language-ruby highlighter-rouge"><span class="nb">self</span><span class="p">.</span><span class="nf">goals</span></code>.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>It's common practice to use Ruby's class variables (defined by  <code>attr_accessor</code> ) to store command arguments.  A class variable defined by  <code>attr_accessor</code>  can be accessed throughout the class.  To distinguish it from regular variables, you put  <code>self.</code>  in front of the name when using it.  For example:   <code>self.goals</code> .</p>
+</div>
 
 <p>The <code class="language-ruby highlighter-rouge"><span class="n">handle</span></code> method takes the goals (again from <code class="language-ruby highlighter-rouge"><span class="nb">self</span><span class="p">.</span><span class="nf">goals</span></code>) and updates the goals database attribute on the enactor.  It then emits a success message to the client.</p>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Remember we need to use <code class="language-ruby highlighter-rouge"><span class="n">update</span></code> to save a database field.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>Remember we need to use  <code>update</code>  to save a database field.  </p>
+</div>
 
 <p>Goals are just a free-form string, so there isn’t any error checking to do here.</p>
 

@@ -30,10 +30,10 @@ Let's make the tinker code say hello to us.  Edit the tinker code as described a
       client.emit "Hello, #{enactor.name}!"
     end
 
-> <i class="fa fa-info-circle"></i> **Tip:** There's other code in the tinker file, but we don't need to mess with that.  In these examples, we'll only be changing the 'handle' method.  The other code will be explained in future tutorials.
+{% include tip.html content="There's other code in the tinker file, but we don't need to mess with that.  In these examples, we'll only be changing the 'handle' method.  The other code will be explained in future tutorials." %}
 
 After saving, go back to your MUSH client (logged in with your coder character) and type `tinker`.  You should see:  "Hello, Headwiz!" (or whatever your character's name is.)
 
 We're going to continue using the tinker command for the remaining exercises in this tutorial.  There's a more in-depth [Tinkering Tutorial](/tutorials/code/tinker.html) if you want to learn more about tinkering when you've finished with the Quickstart.
 
-> <i class="fa fa-info-circle"></i> **Tip:** If you get an error when saving or executing your code, check to make sure you've typed it exactly as indicated in each exercise.  Usually errors result from misplaced braces `{}` or missing `end` statements.
+{% include tip.html content="If you get an error when saving or executing your code, check to make sure you've typed it exactly as indicated in each exercise.  Usually errors result from misplaced braces  <code>{}</code>  or missing  <code>end</code>  statements." %}

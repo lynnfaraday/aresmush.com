@@ -17,7 +17,7 @@ When the Web Portal sends a JSON-based request to the game engine API port, seve
 4. If a plugin returns a request handler object, the Dispatcher will call `handle` in the handler and then stop asking other plugins if they want the command.  
 5. If no plugins handle the command, the Dispatcher will log an error.
 
-> <i class="fa fa-info-circle"></i> **Tip:** Only one plugin may handle a web request.
+{% include tip.html content="Only one plugin may handle a web request." %}
 
 <div id="inline_toc" markdown="1">
 **Table of Contents**
@@ -51,7 +51,7 @@ The `WebRequest` class embodies a request from the Web Portal.  It provides a nu
 
 The plugin dispatchd returns a Request Handler.  Like a Command Handler, it implements a `handle` method to gather the desired data and return it to the Web Portal.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** Returned data should be in hash format.  It will be convered to JSON by the API server.
+{% include note.html content="Returned data should be in hash format.  It will be convered to JSON by the API server." %}
 
 For example:
 

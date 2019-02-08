@@ -218,11 +218,13 @@
   <li><code class="language-ruby highlighter-rouge"><span class="n">ares</span><span class="o">-</span><span class="n">webportal</span><span class="o">/</span><span class="n">app</span><span class="o">/</span><span class="n">templates</span><span class="o">/</span><span class="n">components</span><span class="o">/</span><span class="n">global</span><span class="o">-</span><span class="n">navbar</span></code></li>
 </ul>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> Always use the Ember link-to helper rather than raw <code class="language-ruby highlighter-rouge"><span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">&gt;</span></code> tags for internal web portal links.  This is important for maintaining the internal web portal state.  It’s also the reason why changing the navbar requires changing the code instead of just a configuration file.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>Always use the Ember link-to helper rather than raw  <code><a href="">&lt;/code&gt;  tags for internal web portal links.  This is important for maintaining the internal web portal state.  It's also the reason why changing the navbar requires changing the code instead of just a configuration file.&lt;/p&gt;
+&lt;/div&gt;
 
-<p>The sidebar is driven by the <code class="language-ruby highlighter-rouge"><span class="no">GetSidebarInfoRequestHandler</span></code> web request.  If you want additional data to appear on the sidebar (for example - adding a list of recently-approved characters), you’ll need to update that handler.</p>
+The sidebar is driven by the `GetSidebarInfoRequestHandler` web request.  If you want additional data to appear on the sidebar (for example - adding a list of recently-approved characters), you'll need to update that handler.
+</a></code></p></div>
 
              </div>             
                            </div>

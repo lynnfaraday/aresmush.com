@@ -18,4 +18,4 @@ We addressed editing goals from the character profile page, but what about durin
 - Chargen save request handler: `aresmush/plugins/chargen/web/chargen_save_request_handler.rb`
 - Chargen template: `ares-webportal/app/templates/chargen.hbs`
 
-> <i class="fa fa-info-circle"></i> **Tip:** RP Hooks has a configurable "blurb" that gets displayed as instructions above the data entry field in chargen.  You don't need a config option for goals - just put some plain text there instead.
+{% include tip.html content="RP Hooks has a configurable blurb that gets displayed as instructions above the data entry field in chargen.  You don't need a config option for goals - just put some plain text there instead." %}

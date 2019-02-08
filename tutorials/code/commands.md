@@ -17,7 +17,7 @@ When a MU client sends text to the game's telnet port, several things happen:
 4. If a plugin returns a command handler object, the Dispatcher will call `on_command` in the handler and then stop asking other plugins if they want the command.  
 5. If no plugins handle the command, the Dispatcher will emit the default "Huh?" message.
 
-> <i class="fa fa-info-circle"></i> **Tip:** Only one plugin may handle a command.
+{% include tip.html content="Only one plugin may handle a command." %}
 
 <div id="inline_toc" markdown="1">
 **Table of Contents**
@@ -53,7 +53,7 @@ Most plugins have a case statement based on the root command, and ten a second c
       end
     end
 
-> <i class="fa fa-info-circle"></i> **Tip:** A few commands check the args too, especially commands that use a shortcut to make both singular and plural versions of the commands work the same.  In the example above, there's a shortcut (not shown) that converts events -> event.  So if the command root is `event` and there are no arguments, it uses EventsCmd to show the events list.  If there is an argument, then it assumes you're doing `event 1`.
+{% include tip.html content="A few commands check the args too, especially commands that use a shortcut to make both singular and plural versions of the commands work the same.  In the example above, there's a shortcut (not shown) that converts events -> event.  So if the command root is  <code>event</code>  and there are no arguments, it uses EventsCmd to show the events list.  If there is an argument, then it assumes you're doing <code>event 1</code>." %}
 
 ## Command Class
 
@@ -154,6 +154,6 @@ The `handle` method is where the 'guts' of your command go. 99% of handle method
        client.emit_success "Done!"
     end
 
-> <i class="fa fa-info-circle"></i> **Tip:** If you have multiple pieces of information to send to the player, build up a single string and emit it all at once for efficiency.  You can also use a [Template](/tutorials/code/templates.html).
+{% include tip.html content="If you have multiple pieces of information to send to the player, build up a single string and emit it all at once for efficiency.  You can also use a [Template](/tutorials/code/templates.html)." %}
 
 Don't forget that you can emit in multiple ways depending on the type of message.  See [emits](/tutorials/code/quickstart/emits.html).

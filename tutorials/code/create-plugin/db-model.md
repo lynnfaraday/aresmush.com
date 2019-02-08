@@ -43,7 +43,7 @@ First we have the class definition.  Inheriting from `Ohm::Model` is what makes 
       include ObjectModel
     end
 
-> <i class="fa fa-info-circle"></i> **Tip:** Ohm is the database library that helps us talk to the database, and `< Ohm::Model` is a special bit of Ruby code that lets us do things like `attribute :name` to define a database field.  We didn't see Ohm::Model in the previous examples because we were adding to an existing model class (Character) defined by the engine.  Here, though, we're creating a brand new one.  You can learn more about the Ohm library in the [advanced database tutorial](/tutorials/code/database.html) when you're ready.  
+{% include tip.html content="Ohm is the database library that helps us talk to the database, and  <code>< Ohm::Model</code>  is a special bit of Ruby code that lets us do things like  <code>attribute :name</code>  to define a database field.  We didn't see Ohm::Model in the previous examples because we were adding to an existing model class (Character) defined by the engine.  Here, though, we're creating a brand new one.  You can learn more about the Ohm library in the [advanced database tutorial](/tutorials/code/database.html) when you're ready.  " %}
 
 ### Model Attributes
 
@@ -82,7 +82,7 @@ To create a skill, we just need to create a new model object.
     char = Character.find_one_by_name("Bob")
     skill = CortexSkill.create(name: "Guns", die_step: 1, character: char)
 
-> <i class="fa fa-info-circle"></i> **Tip:** This skill will automatically be added to Bob's skills collection; we don't need to do anything to make that happen.
+{% include tip.html content="This skill will automatically be added to Bob's skills collection; we don't need to do anything to make that happen." %}
 
 To update a skill, first we have to find it.  There's a utility in `aresmush/plugins/cortex/helpers.rb` that can help us with that:
 

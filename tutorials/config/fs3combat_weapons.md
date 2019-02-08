@@ -50,13 +50,13 @@ The description is just a free-form text field describing the weapon.  For best 
 
 The weapon's skill is used for attack rolls.  
 
-> <i class="fa fa-info-circle"></i> **Tip:** For *melee weapons only*, this is also the skill used for defense when attacked with *another melee weapon*. For example, if Bob has a sword and Joe is attacking him with an axe, Bob will defend with his sword skill.
+{% include tip.html content="For *melee weapons only*, this is also the skill used for defense when attacked with *another melee weapon*. For example, if Bob has a sword and Joe is attacking him with an axe, Bob will defend with his sword skill." %}
 
 ### lethality
 
 Lethality modifier provides a bonus (or penalty, if negative) to weapon damage.  Lethality is a percentage, so a 20 means that it's 20% more likely to do a serious wound.
 
-> <i class="fa fa-info-circle"></i> **Tip:** For reference, a 30 lethality is what applies to critical hit locations, so that's a big modifier.  Anything close to 50 is almost guaranteed to impair/incapacitate.
+{% include tip.html content="For reference, a 30 lethality is what applies to critical hit locations, so that's a big modifier.  Anything close to 50 is almost guaranteed to impair/incapacitate." %}
 
 ### penetration
 
@@ -98,7 +98,7 @@ A weapon can do either Physical or Stun damage.  Stun damage is intended for bru
 
 The weapon's accuracy value gives the attacker a bonus (or penalty, if accuracy is negative) to their attack roll.  
 
-> <i class="fa fa-info-circle"></i> **Tip:** Even a +/-1 can make an impact.  You probably don't want to go beyond +/-3.
+{% include tip.html content="Even a +/-1 can make an impact.  You probably don't want to go beyond +/-3." %}
 
 ### has_shrapnel
 

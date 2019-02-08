@@ -86,7 +86,7 @@ Several extensions use Handlebars templates, similar to the web portal, to help 
 
 Extensions must be registered by adding them to the list in `WikiMarkdownExtensions`.  Just add the class name to either the pre- or post-processing extension lists.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:**  Not sure whether to make your extension a pre- or post-processing one?  As a general rule, pre-processing extensions output Markdown and are pretty simple.  Post-processing extensions are complex, may involve templates, and may contain Markdown inside them.
+{% include note.html content=" Not sure whether to make your extension a pre- or post-processing one?  As a general rule, pre-processing extensions output Markdown and are pretty simple.  Post-processing extensions are complex, may involve templates, and may contain Markdown inside them." %}
 
 ## Finalizer
 

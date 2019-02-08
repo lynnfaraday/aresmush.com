@@ -19,7 +19,7 @@ This article describes some core concepts in Ares code.   It assumes you've alre
 
 When someone connects to the game with their MU client, Ares calls that connection a **Client**.  The Client class provides information about the connection, like the IP address and idle time.  It handles input from the MU client and turns it into a Command (explained below).  
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** Clients represent connections from actual MUSH clients and the Ares Web Portal's "Play" screen (which acts like a MUSH client).  Other Web Portal connections are handled differently, as explained below.
+{% include note.html content="Clients represent connections from actual MUSH clients and the Ares Web Portal's \"Play\" screen (which acts like a MUSH client).  Other Web Portal connections are handled differently, as explained below." %}
 
 The Client class also provides utilities to easily send messages (**emit**) to the MU client.  Throughout the Ares code, you'll see things like:
 
@@ -33,13 +33,13 @@ The Client class provides five methods for sending output to the MU client:
 * `emit_failure` - Failure/error alerts show up in red.
 * `emit_raw` - A special emit that will not evaluate linebreaks or ansi codes.
 
-> <i class="fa fa-info-circle"></i> **Tip:** It's highly recommended that you use the standard emit_ooc / emit_success / emit_failure methods in any custom code you write.  This provides a consistent look-and-feel for all game commands and enable log editors to easily filter out these messages.
+{% include tip.html content="It's highly recommended that you use the standard emit_ooc / emit_success / emit_failure methods in any custom code you write.  This provides a consistent look-and-feel for all game commands and enable log editors to easily filter out these messages." %}
 
 ## Characters
 
 Once a player has logged in with their character name and password, their client now has a **Character** attached.  You can access that by calling `client.char` from a Client object.
 
-> <i class="fa fa-info-circle"></i> **Tip:** Remember that it's possible for a Client to *not* have a Character object if the player is just sitting on the login screen.
+{% include tip.html content="Remember that it's possible for a Client to *not* have a Character object if the player is just sitting on the login screen." %}
 
 You can use the character object to access all sorts of information about the character.  For example, you can emit a personal greeting:
 
@@ -68,7 +68,7 @@ For example:  `+actor/set Faraday=Helen Mirren` would be broken up as:
 | ---- |
 |+ |actor |set |Faraday=Helen Mirren |
 
-> <i class="fa fa-info-circle"></i> **Tip:** Ares ignores the prefix except for a few rare circumstances.  So +who, who, @who and /who all end up being handled as simply 'who'.
+{% include tip.html content="Ares ignores the prefix except for a few rare circumstances.  So +who, who, @who and /who all end up being handled as simply 'who'." %}
 
 Commands are routed through a central **Dispatcher**, which will go through the plugins trying to find one that wants the command.  The dispatcher uses the [EventMachine](https://github.com/eventmachine/eventmachine) reactor library, which ensures that commands are handled one by one in an orderly queue.
 

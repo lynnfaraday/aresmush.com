@@ -14,7 +14,7 @@ tags:
 
 This article will walk you step-by-step through the process of setting up your hosting account through [Digital Ocean](http://www.digitalocean.com/?refcode=5c07173bc1f2).
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** These instructions were correct at the time of writing, but Digital Ocean can change their screens at any time.  If you find that the instructions are wrong, please [let me know](/feedback.html)!
+{% include note.html content="These instructions were correct at the time of writing, but Digital Ocean can change their screens at any time.  If you find that the instructions are wrong, please [let me know](/feedback.html)!" %}
 
 ## Sign Up and Log In
 

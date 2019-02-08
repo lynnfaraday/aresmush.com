@@ -44,7 +44,7 @@ You cannot assign individual permissions to characters.  Permissions may only be
 
 Characters with the Admin role automatically have access to **all** permissions.
 
-> <i class="fa fa-info-circle"></i> **Tip:** A list of the default permissions can be found below.
+{% include tip.html content="A list of the default permissions can be found below." %}
 
 ## Creating a New Role - App Staff
 
@@ -71,13 +71,13 @@ Many plugins have helper methods to check for the necessary permission.  For exa
     Rooms.can_go_home?(enactor)
     Chargen.can_approve?(enactor)
 
-> <i class="fa fa-info-circle"></i> **Tip:** It's preferable to use the helper methods instead of the permission names so you only have to update one place if the permission ever changes.
+{% include tip.html content="It's preferable to use the helper methods instead of the permission names so you only have to update one place if the permission ever changes." %}
 
-> <i class="fa fa-info-circle"></i> **Tip:** Remember that characters with the 'admin' role automatically have all permissions.
+{% include tip.html content="Remember that characters with the 'admin' role automatically have all permissions." %}
 
 ## Default Permissions
 
-> <i class="fa fa-info-circle"></i> **Tip:** If you want to know exactly which commands are accessible with these permissions, use the 'search' feature of help files to look for help files referencing these permissions.  You'll see a statement like  "These commands require the Admin role or the permission: whatever_permission".
+{% include tip.html content="If you want to know exactly which commands are accessible with these permissions, use the 'search' feature of help files to look for help files referencing these permissions.  You'll see a statement like  \"These commands require the Admin role or the permission: whatever_permission\"." %}
 
 | Role | Notes |
 | ---- |

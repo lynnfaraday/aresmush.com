@@ -15,7 +15,7 @@ tags:
 
 All commands need a help file.  It's useful to make the helpfile first because it lets you think about what the commands are actually supposed to do _before_ you code them.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** In this tutorial, we're going to start by creating the final file, and then take it apart to see how it all goes together.
+{% include note.html content="In this tutorial, we're going to start by creating the final file, and then take it apart to see how it all goes together." %}
 
 ## Create the Help File
 
@@ -60,4 +60,4 @@ The metadata is in YAML format, which is a simple markup language using a `field
 
 After the metadata (which is set off by `---` lines) comes the actual help text.  Like a lot of Ares text, this uses [Markdown](https://daringfireball.net/projects/markdown/syntax) format.  Markdown is nice because it can be shown in both text-only format (for the MU client) and web format (for the web portal).  If you've ever used web forum or wiki formatting codes, you've probably used Markdown.
 
-> <i class="fa fa-info-circle"></i> **Tip:** The tick marks around \`goals\` are the standard way to highlight command text in help files.
+{% include tip.html content="The tick marks around \ <code>goals\</code>  are the standard way to highlight command text in help files." %}

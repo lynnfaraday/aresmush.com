@@ -21,7 +21,7 @@ The very first time you log in (using any of the methods described below), you'l
 
 As part of the game installation, it will create an "ares" user and password.  Use the "ares" user for day-to-day operations and save the "root" user for things that require special permissions.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** All of the command line tools you use once the game is set up, like starting the game and doing upgrades, are designed to be run as the **ares** user.  You'll need to either log in as that user or `su - ares` to switch to them with a privileged account.  Otherwise things won't work right.
+{% include note.html content="All of the command line tools you use once the game is set up, like starting the game and doing upgrades, are designed to be run as the **ares** user.  You'll need to either log in as that user or `su - ares` to switch to them with a privileged account.  Otherwise things won't work right." %}
 
 ## How to Connect
 

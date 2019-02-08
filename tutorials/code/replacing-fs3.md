@@ -11,7 +11,7 @@ tags:
 Although many identify [FS3](/fs3) and AresMUSH as being a conjoined pair, they really aren't.  FS3 is a plugin, the same as any other, and you can create any skill system you want for Ares.   
 The article provides tips if you want to replace FS3 with a custom system.
 
-> <i class="fa fa-info-circle"></i> **Tip:** FS3 is not the only skills system that Ares natively supports.  Other systems are available as [Extras](/tutorials/code/extras.html) and can be installed very easily.  This article doesn't apply to those systems.  It's about designing your own.
+{% include tip.html content="FS3 is not the only skills system that Ares natively supports.  Other systems are available as [Extras](/tutorials/code/extras.html) and can be installed very easily.  This article doesn't apply to those systems.  It's about designing your own." %}
 
 <div id="inline_toc" markdown="1">
 **Table of Contents**
@@ -30,7 +30,7 @@ It is recommended that you've done the all of the [basic Ares coding tutorials](
 
 Both the FS3 Skills and FS3 Combat plugins are optional plugins that can easily be disabled as explained in [Enabling and Disabling Plugins](/tutorials/config/plugins.html).  The code will still be there, but it just won't be accessible in any meaningful way.
 
-> <i class="fa fa-info-circle"></i> **Tip:** It's advised that you leave the actual FS3 code in your game and just disable them.  There are various dependencies scattered throughout the code, and excising all of them requires some code surgery that's frankly more trouble than it's worth.  Just disable the plugins and you won't have to worry about it.
+{% include tip.html content="It's advised that you leave the actual FS3 code in your game and just disable them.  There are various dependencies scattered throughout the code, and excising all of them requires some code surgery that's frankly more trouble than it's worth.  Just disable the plugins and you won't have to worry about it." %}
 
 ## Customizing Chargen
 

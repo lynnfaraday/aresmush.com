@@ -220,9 +220,10 @@
 
 <p>There are some other advanced command options, but for now let’s focus on the basics.</p>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> The root ignores prefixes, so if the player types ‘where’, ‘+where’, or ‘@where’ the root will be ‘where’.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>The root ignores prefixes, so if the player types 'where', '+where', or '@where' the root will be 'where'.</p>
+</div>
 
 <h2 id="accessing-command-parameters">Accessing Command Parameters</h2>
 
@@ -239,9 +240,10 @@
 <span class="n">cmd</span><span class="p">.</span><span class="nf">root_is?</span><span class="p">(</span><span class="s2">"someroot"</span><span class="p">)</span>
 </code></pre></div></div>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> In Ruby code, it’s common to put a ? on the end when naming methods that return true or false.  You’ll see this a lot in Ares code, like <code class="language-ruby highlighter-rouge"><span class="n">enactor</span><span class="p">.</span><span class="nf">is_approved?</span></code>.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>In Ruby code, it's common to put a ? on the end when naming methods that return true or false.  You'll see this a lot in Ares code, like  <code>enactor.is_approved?</code> .</p>
+</div>
 
 <h2 id="try-it---adding-a-switch">Try It! - Adding a Switch</h2>
 
@@ -262,9 +264,10 @@
 
 <p>Try out the command with different switches:  <code class="language-ruby highlighter-rouge"><span class="n">tinker</span><span class="o">/</span><span class="n">one</span></code>, <code class="language-ruby highlighter-rouge"><span class="n">tinker</span><span class="o">/</span><span class="n">two</span></code>, <code class="language-ruby highlighter-rouge"><span class="n">tinker</span><span class="o">/</span><span class="n">three</span></code>.  Observe how the output changes.</p>
 
-<blockquote>
-  <p><i class="fa fa-info-circle"></i> <strong>Tip:</strong> It’s good practice to actually break up different switches into different command handlers living in different files.  Otherwise for many commands the <code class="language-ruby highlighter-rouge"><span class="n">handle</span></code> method would get gigantic and overly complicated.  This is similar to the way that MUSH softcode would use different attributes like &amp;CMD-BBS-READ and &amp;CMD-BBS-POST.   Since we’re just doing some simple tinkering here, we’ll keep everything together for now.</p>
-</blockquote>
+<div class="alert alert-success">
+<p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
+<p>It's good practice to actually break up different switches into different command handlers living in different files.  Otherwise for many commands the  <code>handle</code>  method would get gigantic and overly complicated.  This is similar to the way that MUSH softcode would use different attributes like &amp;CMD-BBS-READ and &amp;CMD-BBS-POST.   Since we're just doing some simple tinkering here, we'll keep everything together for now.</p>
+</div>
 
 <h2 id="try-it---adding-an-argument">Try It! - Adding an Argument</h2>
 

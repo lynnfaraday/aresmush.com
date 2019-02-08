@@ -33,7 +33,7 @@ To restore the database:
 2. Copy the `dump.rdb` file from your back copy into the database data path.  Typically this is `/var/lib/redis/dump.rdb`.   If you get a permission error, run `sudo chmod g+rwx /var/lib/redis/dump.rdb` from the server shell.  Sometimes redis resets the file permissions.
 3. Restart the database service by typing `sudo service redis-server start` in the server shell.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** If you used a non-standard installation, your database commands and file path may be different than what's shown above.
+{% include note.html content="If you used a non-standard installation, your database commands and file path may be different than what's shown above." %}
 
 ## Restoring Code
 

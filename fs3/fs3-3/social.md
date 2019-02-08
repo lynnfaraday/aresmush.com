@@ -16,7 +16,7 @@ The general flow to resolving social conflicts is:
 2. If the defender wants to resist, the attacker and defender discuss what leverage applies in that situation and make the necessary rolls to determine who wins the contest.  This is described in detail described below.
 3. Based on the winner, the defender poses their response.
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** If at any point during this process, the players cannot reach an agreement on what leverage or resolution is reasonable, a staff member may be called in to help arbitrate.
+{% include note.html content="If at any point during this process, the players cannot reach an agreement on what leverage or resolution is reasonable, a staff member may be called in to help arbitrate." %}
 
 Here’s an example of how this would work:
 
@@ -77,7 +77,7 @@ Leverage is calculated by considering several key areas: Obligation, Background,
 
 Each area may contribute either a vulnerability ⚔ (in favor of the attacker), a resistance ◈ (in favor of the defender) or nothing (neutral) to the overall total.  
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** Note: An area cannot be counted more than once, even if multiple factors from that area might apply.
+{% include note.html content="An area cannot be counted more than once, even if multiple factors from that area might apply." %}
 
 Once you’ve figured out what leverage applies, consult the following table to determine how to resolve the conflict.  Find the row corresponding to the number of resistances and the column corresponding to the number of vulnerabilities, and it will tell you what kind of contest applies.
 
@@ -100,7 +100,7 @@ Social contests are resolved using several opposed skill rolls. The basic roll i
 | Contest favoring attacker. | Make three rolls.  The attacker only needs to win **one of the three** rolls to win the contest. | 
 | Contest favoring defender. | Make three rolls.  The defender only needs to win one of the three rolls to win the contest. |
 
-> <i class="fa fa-exclamation-triangle"></i> **Note:** If there is no clear winner (e.g. in an even contest where it was Attacker-win, Defender-win, Draw), then the tie goes to the defender.
+{% include note.html content="If there is no clear winner (e.g. in an even contest where it was Attacker-win, Defender-win, Draw), then the tie goes to the defender." %}
 
 ## Gaining Leverage
 
