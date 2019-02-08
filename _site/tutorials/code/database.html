@@ -301,9 +301,10 @@
 <span class="no">Demographics</span><span class="p">.</span><span class="nf">set_group</span><span class="p">(</span><span class="n">char</span><span class="p">,</span> <span class="s2">"Faction"</span><span class="p">,</span> <span class="s2">"Navy"</span><span class="p">)</span>
 </code></pre></div></div>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Important:</strong> Do not attempt to change database properties just by updating the object (e.g. <code class="language-ruby highlighter-rouge"><span class="n">char</span><span class="p">.</span><span class="nf">name</span> <span class="o">=</span> <span class="s2">"Harry"</span></code>)  This changes the property on the <strong>object</strong> but does not actually update the database.   You can legitimately use this method to change multiple properties as a batch, but you have to do <code class="language-ruby highlighter-rouge"><span class="n">char</span><span class="p">.</span><span class="nf">save</span></code> at the end to commit the changes to the database.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>Do not attempt to change database properties just by updating the object (e.g. <code>char.name = "Harry"</code>)  This changes the property on the <b>object</b> but does not actually update the database.   You can legitimately use this method to change multiple properties as a batch, but you have to do <code>char.save</code> at the end to commit the changes to the database.</p>
+</div>
 
 <h2 id="finder-helpers">Finder Helpers</h2>
 

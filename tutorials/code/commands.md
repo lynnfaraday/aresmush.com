@@ -104,7 +104,7 @@ To utilize the `CommandHandler` functionality, just include it in your command c
 
 By default, Ares logs all non-sensitive commands.  This aids in troubleshooting and also is a security safeguard to track who did what.
 
-> <i class="fa fa-exclamation-triangle"></i> **Important:** Ares does not log pages, mails, poses or passwords for privacy reasons.
+{% include note.html content="Ares does not log pages, mails, poses or passwords for privacy reasons." %}
 
 For sensitive commands, you can disable logging in your command handler just by overriding the log method.  For example, the mail command just logs the fact that you sent mail - it doesn't log the contents of the message.
 

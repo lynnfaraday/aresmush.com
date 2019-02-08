@@ -30,7 +30,7 @@ Whenever it gets one of these dispatches, it goes through all the plugins to see
 
 A plugin specifies what dispatches it handles through pre-defined methods that the Dispatcher knows to call:  `get_cmd_handler`, `get_event_handler` and `get_web_request_handler`.   Each of these methods may either return a handler class (like `TinkerCmd`) or nil if the plugin doesn't care about the dispatch.
 
-> **Important**:  Never ever call EventMachine methods directly - always go through the Dispatcher.  If you don't have appropriate error checking and something goes wrong, you can crash the entire game.
+{% include note.html content="Never ever call EventMachine methods directly - always go through the Dispatcher.  If you don't have appropriate error checking and something goes wrong, you can crash the entire game." %}
 
 ## Spawns
 
@@ -42,7 +42,7 @@ For example:
             ... perform backup code ...
         end
 
-> <i class="fa fa-exclamation-triangle"></i> **Important:** Exercise caution when using spawns.  Most Ares code is threadsafe because it's stand-alone helper methods and command classes created on demand, but you can cause weird effects if your spawned task starts changing database fields on a character while other commands are still running.
+{% include note.html content="Exercise caution when using spawns.  Most Ares code is threadsafe because it's stand-alone helper methods and command classes created on demand, but you can cause weird effects if your spawned task starts changing database fields on a character while other commands are still running." %}
 
 ## Timers
 

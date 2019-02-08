@@ -260,9 +260,10 @@
 
 <p>Everything in your <code class="language-ruby highlighter-rouge"><span class="n">aresmush</span><span class="o">/</span><span class="n">game</span></code> folder is custom for your game.  This includes your connect screen, configuration files, and Web Portal file uploads.</p>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Important:</strong> Ares’ automated backup tools do not include source code.  It’s assumed that you’re either using <a href="/tutorials/code/git.html">GitHub</a> (which is an awesome way to protect your code that provides other benefits too) or that you’re making changes on your local computer and uploading them through FTP.  Making code changes directly through the server shell without version control is not advisable.  If you choose to do so, you’ll need to decide on your own backup strategy.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>Ares' automated backup tools do not include source code.  It's assumed that you're either using GitHub (which is an awesome way to protect your code that provides other benefits too) or that you're making changes on your local computer and uploading them through FTP.  Making code changes directly through the server shell without version control is not advisable.  If you choose to do so, you'll need to decide on your own backup strategy.</p>
+</div>
 
 <h2 id="backup-options">Backup Options</h2>
 
@@ -278,9 +279,10 @@
 
 <p>AresMUSH can automatically perform daily backups to Amazon’s S3 storage service for a safe, off-site storage solution.</p>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Important:</strong> AWS is a great backup option, but AWS’ menu options can be overwhelming for novice server admins.  Make sure you’re familiar with their cost tiers.  Most games <strong>should</strong> fit comfortably into their ‘free tier’ and cost you nothing; however, it’s your responsibility to understand their pricing tiers and know what you’re signing up for.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>AWS is a great backup option, but AWS' menu options can be overwhelming for novice server admins.  Make sure you're familiar with their cost tiers.  Most games <b>should</b> fit comfortably into their 'free tier' and cost you nothing; however, it's your responsibility to understand their pricing tiers and know what you're signing up for.</p>
+</div>
 
 <h4 id="setting-up-s3">Setting up S3</h4>
 
@@ -294,9 +296,10 @@
 
 <p>You’ll need to follow the Amazon tutorials, particularly <a href="http://docs.aws.amazon.com/AmazonS3/latest/gsg/AmazonS3Basics.html">Getting Started With S3</a> and <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/intro-managing-access-s3-resources.html">Managing Access to S3</a>.</p>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Important:</strong> Even if you use S3 for other things, create a separate bucket just for your AresMUSH backups.  Ares will delete older files to make room for new backups, and you don’t want it to accidentally delete anything important!</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>Even if you use S3 for other things, create a separate bucket just for your AresMUSH backups.  Ares will delete older files to make room for new backups, and you don't want it to accidentally delete anything important!</p>
+</div>
 
 <h4 id="configuring-the-game-to-use-s3">Configuring the Game to Use S3</h4>
 

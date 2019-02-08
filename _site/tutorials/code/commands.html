@@ -378,9 +378,10 @@
 
 <p>By default, Ares logs all non-sensitive commands.  This aids in troubleshooting and also is a security safeguard to track who did what.</p>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Important:</strong> Ares does not log pages, mails, poses or passwords for privacy reasons.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>Ares does not log pages, mails, poses or passwords for privacy reasons.</p>
+</div>
 
 <p>For sensitive commands, you can disable logging in your command handler just by overriding the log method.  For example, the mail command just logs the fact that you sent mail - it doesn’t log the contents of the message.</p>
 

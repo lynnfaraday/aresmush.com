@@ -75,7 +75,7 @@ Many database properties have specialized update methods because their data stor
     char = Character.find_one_by_name("Bob")
     Demographics.set_group(char, "Faction", "Navy")
 
-> <i class="fa fa-exclamation-triangle"></i> **Important:** Do not attempt to change database properties just by updating the object (e.g. `char.name = "Harry"`)  This changes the property on the **object** but does not actually update the database.   You can legitimately use this method to change multiple properties as a batch, but you have to do `char.save` at the end to commit the changes to the database.
+{% include note.html content="Do not attempt to change database properties just by updating the object (e.g. <code>char.name = \"Harry\"</code>)  This changes the property on the <b>object</b> but does not actually update the database.   You can legitimately use this method to change multiple properties as a batch, but you have to do <code>char.save</code> at the end to commit the changes to the database." %}
 
 ## Finder Helpers
 

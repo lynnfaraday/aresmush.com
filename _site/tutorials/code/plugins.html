@@ -230,9 +230,10 @@
 
 <p>Each plugin has its own folder inside aresmush/plugins. The name of the folder is the name of the plugin.</p>
 
-<blockquote>
-  <p><strong>Important Convention:</strong> The folder name must be one word, all lowercase, with no special characters.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>The folder name must be one word, all lowercase, with no special characters.</p>
+</div>
 
 <p>There’s a standard organization to a plugin folder.</p>
 
@@ -258,21 +259,13 @@
 <span class="k">end</span>
 </code></pre></div></div>
 
-<blockquote>
-  <p><strong>Important Conventions:</strong></p>
+<p><strong>Important Conventions:</strong></p>
 
-  <ol>
-    <li>
-      <p>The module must be defined in a file matching your plugin folder name, located in the top level of your plugin folder.</p>
-    </li>
-    <li>
-      <p>The module must be nested within the main AresMUSH module.</p>
-    </li>
-    <li>
-      <p>The name of the Ruby module must match the name of the plugin folder when converted to lowercase.  In other words, it’s okay to have a module FS3Skills and a folder fs3skills.</p>
-    </li>
-  </ol>
-</blockquote>
+<ol>
+  <li>The module must be defined in a file matching your plugin folder name, located in the top level of your plugin folder.</li>
+  <li>The module must be nested within the main AresMUSH module.</li>
+  <li>The name of the Ruby module must match the name of the plugin folder when converted to lowercase.  In other words, it’s okay to have a module FS3Skills and a folder fs3skills.</li>
+</ol>
 
 <p>The plugin module must define a single method:  <code class="language-ruby highlighter-rouge"><span class="n">plugin_dir</span></code> that always returns the current folder.  For example:</p>
 

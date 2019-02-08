@@ -536,16 +536,15 @@ span.clear { clear: left; display: block; }
     padding: 10px;
 }
 
-.alert {
-	margin-left: 35px;
-        width: 80%;
-	padding: 10px;
+div.highlighter-rouge, .alert, blockquote {
+  margin-left: 35px;
+  width: 80%;
 }
-
+.alert {
+  padding: 10px;
+}
 blockquote{
-	margin-left: 35px;
-        width: 80%;
-	padding: 10px;
+    padding: 10px;
     font-size: 1em;
 	/* background-color: #8CAEAE; 
 color: white;
@@ -750,5 +749,11 @@ figure {
     .fs3-shortcut {
         display: block;
     }
+    
+    div.highlighter-rouge, .alert, blockquote {
+      margin-left: 15px;
+      width: 95%;
+    }
+    
 
 }

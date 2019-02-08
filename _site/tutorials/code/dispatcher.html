@@ -243,9 +243,10 @@
 
 <p>A plugin specifies what dispatches it handles through pre-defined methods that the Dispatcher knows to call:  <code class="language-ruby highlighter-rouge"><span class="n">get_cmd_handler</span></code>, <code class="language-ruby highlighter-rouge"><span class="n">get_event_handler</span></code> and <code class="language-ruby highlighter-rouge"><span class="n">get_web_request_handler</span></code>.   Each of these methods may either return a handler class (like <code class="language-ruby highlighter-rouge"><span class="no">TinkerCmd</span></code>) or nil if the plugin doesn’t care about the dispatch.</p>
 
-<blockquote>
-  <p><strong>Important</strong>:  Never ever call EventMachine methods directly - always go through the Dispatcher.  If you don’t have appropriate error checking and something goes wrong, you can crash the entire game.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>Never ever call EventMachine methods directly - always go through the Dispatcher.  If you don't have appropriate error checking and something goes wrong, you can crash the entire game.</p>
+</div>
 
 <h2 id="spawns">Spawns</h2>
 
@@ -258,9 +259,10 @@
     <span class="k">end</span>
 </code></pre></div></div>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Important:</strong> Exercise caution when using spawns.  Most Ares code is threadsafe because it’s stand-alone helper methods and command classes created on demand, but you can cause weird effects if your spawned task starts changing database fields on a character while other commands are still running.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>Exercise caution when using spawns.  Most Ares code is threadsafe because it's stand-alone helper methods and command classes created on demand, but you can cause weird effects if your spawned task starts changing database fields on a character while other commands are still running.</p>
+</div>
 
 <h2 id="timers">Timers</h2>
 

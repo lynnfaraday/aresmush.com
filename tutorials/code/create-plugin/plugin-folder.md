@@ -18,7 +18,7 @@ Plugins use a convention-based structure.  That means the game engine is going t
 
 Your plugin must live in a folder under `aresmush/plugins/<your plugin name>`.  
 
-> **Important Convention:** The folder name must be one word, all lowercase, containing only letters and numbers.
+{% include note.html content="The folder name must be one word, all lowercase, containing only letters and numbers." %}
 
 We can use the create plugin script to create our plugin directory structure:
 

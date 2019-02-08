@@ -20,7 +20,7 @@ Ares supports a robust **Plugin** system, with its features separated into plugi
 
 Each plugin has its own folder inside aresmush/plugins. The name of the folder is the name of the plugin.
 
-> **Important Convention:** The folder name must be one word, all lowercase, with no special characters.
+{% include note.html content="The folder name must be one word, all lowercase, with no special characters." %}
 
 There's a standard organization to a plugin folder.
 
@@ -44,13 +44,11 @@ All plugin code lives in its own Ruby module - inside the main AresMUSH module -
        end
     end
 
-> **Important Conventions:** 
->
-> 1. The module must be defined in a file matching your plugin folder name, located in the top level of your plugin folder.
-> 
-> 2. The module must be nested within the main AresMUSH module.
-> 
-> 3. The name of the Ruby module must match the name of the plugin folder when converted to lowercase.  In other words, it's okay to have a module FS3Skills and a folder fs3skills.
+**Important Conventions:** 
+
+1. The module must be defined in a file matching your plugin folder name, located in the top level of your plugin folder.
+2. The module must be nested within the main AresMUSH module.
+3. The name of the Ruby module must match the name of the plugin folder when converted to lowercase.  In other words, it's okay to have a module FS3Skills and a folder fs3skills.
 
 The plugin module must define a single method:  `plugin_dir` that always returns the current folder.  For example:
 

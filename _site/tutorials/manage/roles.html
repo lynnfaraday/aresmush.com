@@ -217,8 +217,6 @@
   <li><a href="#default-roles" id="markdown-toc-default-roles">Default Roles</a></li>
   <li><a href="#permissions" id="markdown-toc-permissions">Permissions</a></li>
   <li><a href="#creating-a-new-role---app-staff" id="markdown-toc-creating-a-new-role---app-staff">Creating a New Role - App Staff</a></li>
-  <li><a href="#using-permissions-in-code" id="markdown-toc-using-permissions-in-code">Using Permissions in Code</a></li>
-  <li><a href="#default-permissions" id="markdown-toc-default-permissions">Default Permissions</a></li>
 </ul>
 
 </div>
@@ -246,9 +244,10 @@
 
 <p>Additionally, there is a special character - the master admin (default name Headwiz).  The master admin has both the admin and coder roles, and is the only one that can assign those roles.</p>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Important:</strong> Coders essentially have the keys to the kingdom.  They can do anything to the database, including changing the master admin password.  Make sure you trust your coders!</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>Coders essentially have the keys to the kingdom.  They can do anything to the database, including changing the master admin password.  Make sure you trust your coders!</p>
+</div>
 
 <h2 id="permissions">Permissions</h2>
 
@@ -274,25 +273,24 @@
   <li>Set permissions on the Apps forum using <code class="language-ruby highlighter-rouge"><span class="n">forum</span><span class="o">/</span><span class="n">readroles</span> <span class="o">&lt;</span><span class="n">roles</span><span class="o">&gt;</span></code> and <code class="language-ruby highlighter-rouge"><span class="n">forum</span><span class="o">/</span><span class="n">writeroles</span> <span class="o">&lt;</span><span class="n">roles</span><span class="o">&gt;</span></code>.</li>
 </ol>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Important:</strong> Numerous commands are locked to characters with the ‘approved’ role as a defense against trolls. Full-fledged admins automatically count as approved, but you’ll need to assign the ‘approved’ role to your other staff manually using <code class="language-ruby highlighter-rouge"><span class="n">role</span><span class="o">/</span><span class="n">add</span> <span class="o">&lt;</span><span class="nb">name</span><span class="o">&gt;=</span><span class="n">approved</span></code>.  You should also mark them as player bits with the <code class="language-ruby highlighter-rouge"><span class="n">playerbit</span></code> command so they don’t show up on the character gallery.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>Numerous commands are locked to characters with the 'approved' role as a defense against trolls. Full-fledged admins automatically count as approved, but you'll need to assign the 'approved' role to your other staff manually using <code>role/add <name>=approved&lt;/code&gt;.  You should also mark them as player bits with the <code>playerbit</code> command so they don’t show up on the character gallery.&lt;/p&gt;
+&lt;/div&gt;
+  
+## Using Permissions in Code
 
-<h2 id="using-permissions-in-code">Using Permissions in Code</h2>
+In your code, permissions can restrict who can use commands.  For example, if you wanted to lock the 'home' command to only people who have the 'go_home' permission, you would add the following error checker in the home command handler.
 
-<p>In your code, permissions can restrict who can use commands.  For example, if you wanted to lock the ‘home’ command to only people who have the ‘go_home’ permission, you would add the following error checker in the home command handler.</p>
+      def check_can_go_home
+        return "You are not allowed to do that." if !enactor.has_permission?("go_home")
+        return nil
+      end
 
-<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">def</span> <span class="nf">check_can_go_home</span>
-    <span class="k">return</span> <span class="s2">"You are not allowed to do that."</span> <span class="k">if</span> <span class="o">!</span><span class="n">enactor</span><span class="p">.</span><span class="nf">has_permission?</span><span class="p">(</span><span class="s2">"go_home"</span><span class="p">)</span>
-    <span class="k">return</span> <span class="kp">nil</span>
-  <span class="k">end</span>
-</code></pre></div></div>
+Many plugins have helper methods to check for the necessary permission.  For example:
 
-<p>Many plugins have helper methods to check for the necessary permission.  For example:</p>
-
-<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Rooms</span><span class="p">.</span><span class="nf">can_go_home?</span><span class="p">(</span><span class="n">enactor</span><span class="p">)</span>
-<span class="no">Chargen</span><span class="p">.</span><span class="nf">can_approve?</span><span class="p">(</span><span class="n">enactor</span><span class="p">)</span>
-</code></pre></div></div>
+    Rooms.can_go_home?(enactor)
+    Chargen.can_approve?(enactor)
 
 <div class="alert alert-success">
 <p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
@@ -304,132 +302,44 @@
 <p>Remember that characters with the 'admin' role automatically have all permissions.</p>
 </div>
 
-<h2 id="default-permissions">Default Permissions</h2>
+## Default Permissions
 
 <div class="alert alert-success">
 <p><i class="fa fa-info-circle"></i> <b>Tip</b></p>
 <p>If you want to know exactly which commands are accessible with these permissions, use the 'search' feature of help files to look for help files referencing these permissions.  You'll see a statement like  "These commands require the Admin role or the permission: whatever_permission".</p>
 </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Role</th>
-      <th>Notes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>access_jobs</td>
-      <td>Characters with the admin role have access to all job categories, but you have to edit the <a href="/tutorials/config/jobs.html">jobs configuration</a> to give access to other roles.</td>
-    </tr>
-    <tr>
-      <td>announce</td>
-      <td>By default this is given to all approved characters so storytellers can announce the start of events.</td>
-    </tr>
-    <tr>
-      <td>boot</td>
-      <td>By default this is given to all approved characters as part of the tools for <a href="/tutorials/manage/trolls.html">managing trolls</a>.</td>
-    </tr>
-    <tr>
-      <td>build</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>desc_anything</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>desc_places</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>go_home</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>login</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>manage_achievements</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>manage_abilities</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>manage_apps</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>manage_channels</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>manage_combat</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>manage_demographics</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>manage_events</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>manage_forum</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>manage_idle</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>manage_login</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>manage_notes</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>manage_ranks</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>manage_roster</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>manage_scenes</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>manage_weather</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>set_duty</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>teleport</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>view_bgs</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>view_sheets</td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
+| Role | Notes |
+| ---- |
+| access_jobs | Characters with the admin role have access to all job categories, but you have to edit the [jobs configuration](/tutorials/config/jobs.html) to give access to other roles. |
+| announce | By default this is given to all approved characters so storytellers can announce the start of events. |
+| boot | By default this is given to all approved characters as part of the tools for [managing trolls](/tutorials/manage/trolls.html). |
+| build | |
+| desc_anything | |
+| desc_places | | 
+| go_home | |
+| login | |
+| manage_achievements | |
+| manage_abilities | |
+| manage_apps | |
+| manage_channels | |
+| manage_combat | |
+| manage_demographics | |
+| manage_events | |
+| manage_forum | |
+| manage_idle | |
+| manage_login | |
+| manage_notes | |
+| manage_ranks | |
+| manage_roster | |
+| manage_scenes | |
+| manage_weather | |
+| set_duty | |
+| teleport | |
+| view_bgs | |
+| view_sheets | |
 
+</name></code></p></div>
 
              </div>             
                            </div>

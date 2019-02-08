@@ -263,9 +263,10 @@
 <span class="k">end</span>
 </code></pre></div></div>
 
-<blockquote>
-  <p><i class="fa fa-exclamation-triangle"></i> <strong>Important:</strong> Just setting the class attribute (like <code class="language-ruby highlighter-rouge"><span class="n">char</span><span class="p">.</span><span class="nf">alias</span> <span class="o">=</span> <span class="s1">'guest'</span></code>) will change the local copy of the object, but it doesn’t update the database.  Always call <code class="language-ruby highlighter-rouge"><span class="n">update</span></code> to save database changes.</p>
-</blockquote>
+<div class="alert alert-info">
+<p><i class="fa fa-exclamation-triangle"></i> <b>Note</b></p>
+<p>ust setting the class attribute (like <code>char.alias = 'guest'</code>) will change the local copy of the object, but it doesn't update the database.  Always call <code>update</code> to save database changes.</p>
+</div>
 
 
 

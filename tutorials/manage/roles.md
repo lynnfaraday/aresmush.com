@@ -34,7 +34,7 @@ The default Ares database comes with several roles:
 
 Additionally, there is a special character - the master admin (default name Headwiz).  The master admin has both the admin and coder roles, and is the only one that can assign those roles.
 
-> <i class="fa fa-exclamation-triangle"></i> **Important:** Coders essentially have the keys to the kingdom.  They can do anything to the database, including changing the master admin password.  Make sure you trust your coders!
+{% include note.html content="Coders essentially have the keys to the kingdom.  They can do anything to the database, including changing the master admin password.  Make sure you trust your coders!" %}
 
 ## Permissions
 
@@ -55,7 +55,7 @@ Let's say you wanted to create a more limited admin role for apps staff.  You wa
 3. Update the jobs config to add the `app_staff` role to the APP category.  See the [jobs configuration tutorial](/tutorials/config/jobs.html) for details.
 4. Set permissions on the Apps forum using `forum/readroles <roles>` and `forum/writeroles <roles>`.
 
-> <i class="fa fa-exclamation-triangle"></i> **Important:** Numerous commands are locked to characters with the 'approved' role as a defense against trolls. Full-fledged admins automatically count as approved, but you'll need to assign the 'approved' role to your other staff manually using `role/add <name>=approved`.  You should also mark them as player bits with the `playerbit` command so they don’t show up on the character gallery.
+{% include note.html content="Numerous commands are locked to characters with the 'approved' role as a defense against trolls. Full-fledged admins automatically count as approved, but you'll need to assign the 'approved' role to your other staff manually using <code>role/add <name>=approved</code>.  You should also mark them as player bits with the <code>playerbit</code> command so they don’t show up on the character gallery." %}
   
 ## Using Permissions in Code
 
