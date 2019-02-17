@@ -1,3 +1,5 @@
+_site
+_algolia_api_key
 publish.rb
 publish_all.sh
 share_this.js

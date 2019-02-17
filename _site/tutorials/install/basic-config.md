@@ -1,1 +1,0 @@
-See [Installing the Game](/tutorials/install/install-game.html).

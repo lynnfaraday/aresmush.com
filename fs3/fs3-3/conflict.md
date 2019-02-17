@@ -50,11 +50,18 @@ If a task does not fall under an ability listed on your character sheet, you may
 * Use a semi-related skill at -3.  For instance, if you lack a Vet skill you could default to Medicine-3 to treat a hurt dog.
 * Use the Everyman rating to fall back on 'common knowledge'.  This effectively rolls Attribute + 1.
 
+## General Skills versus Specific Skills
+
+Sometimes games will have general skills for things like Athletics or Education, which may overlap with more specific background skills like Basketball or Geography.  Someone with the specific skill should have an advantage, especially if characters are going head-to-head in opposed rolls.
+
+* For a general task (e.g. Athletics vs. Running), give the character with the specialized skill a +3 modifier for their more applicable knowledge.
+* For a task requiring more specialized knowledge (e.g. Athletics vs. Ice Hockey), give the character with the general skill a -3 modifier for defaulting.
+
 <a name="specialties"/>
 
 # Specialties
 
-Specialties restrict what your character can do with an ability.  If you use a skill outside of one of your specialized ares, apply a -3 modifier the same as if you were defaulting.  
+Specialties restrict what your character can do with an ability.  If you use a skill outside of one of your specialized areas, apply a -3 modifier the same as if you were defaulting.  
 
 If the task is too far outside your specialty (like a paramedic attempting brain surgery or a helicopter pilot trying to fly a space shuttle), then you shouldn't roll at all unless the Storyteller is allowing a Hail Mary.
 

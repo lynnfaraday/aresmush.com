@@ -164,8 +164,7 @@ Before we start, a few things you should know:
 
 > <i class="fa fa-exclamation-triangle"></i> **Note:** 
 > 1. Be super-sure you're running this with the **arestest** user.  
-> 2. For configuring the game, you don't need a new host name.  You can just use the IP address of the droplet.  
-> 3. Use different ports for everything, **especially** the database port.  This will initialize the database fresh, and you don't want to wipe out your main game's database.
+> 2. Make sure you have a backup of your actual game database first, just in case.
 
         curl https://raw.githubusercontent.com/aresmush/aresmush/master/bin/setup_test_game > setup_test_game  
     
@@ -175,6 +174,19 @@ Before we start, a few things you should know:
 
         export NVM_DIR="$HOME/.nvm"
         [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
+
+6. Assuming everything installed correctly, **log out then back in again**.
+
+7. Then execute the following commands:
+
+> <i class="fa fa-exclamation-triangle"></i> **Note:** 
+> 3. For configuring the game, you don't need a new host name.  You can just use the IP address of the droplet.  
+> 4. Use different ports for everything, **especially** the database port.  This will initialize the database fresh, and you don't want to wipe out your main game's database.
+
+        bin/configure
+        bin/wipedb
+
+To start your game:
 
 The game will not be running 24/7 like your main game.  When you want to start it, you'll need to open three separate terminal shells and do:
 

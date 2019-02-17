@@ -25,6 +25,10 @@ You can turn the roster system on or off by setting `use_roster` to true or fals
 
 You can configure how long someone has to be idle (e.g. not logged in) before they appear on the idle sweep.
 
+## idle_warn_msg
+
+The mail message sent to someone when they are given an idle warning.
+
 ## idle_exempt_roles
 
 Since special characters may not log in often, you can exempt certain roles from the idle sweep.  There are two ways to do this.  The first way is to list a number of roles.  For example, this would make everyone with the builder, admin or guest role exempt from the idle sweep:

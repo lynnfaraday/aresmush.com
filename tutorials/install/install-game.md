@@ -29,13 +29,13 @@ Next we'll configure some basic information about your game.  These settings det
         export NVM_DIR="$HOME/.nvm"
         [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
 
-{% include note.html content="If you already have a GitHub fork, you can pass the HTTPS clone urls to the install script: `./install <game code clone URL> <Web Portal clone URL>`   If you don't have a GitHub fork (or don't know what that even means) then just leave off those URLs." %}
-
 3.  Enter your ares password when prompted.
 
 4.  Enter the information about your game, as explained below.
 
 This will take several minutes.  There will be a lot of spam, but eventually it will say it's done.
+
+{% include note.html content="If you already have a GitHub fork, you can pass the HTTPS clone urls to the install script: `./install &lt;game code clone URL> &lt;Web Portal clone URL>`   If you don't have a GitHub fork (or don't know what that even means) then just leave off those URLs." %}
 
 ## Game Settings
 

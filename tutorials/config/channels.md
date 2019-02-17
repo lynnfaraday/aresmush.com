@@ -58,3 +58,7 @@ Linking a channel to the OOC lounge/Offstage room ensures that all chit-chat in 
 Messages in channel recall will be automatically deleted after the specified timeout, in days.  This helps keep the recall reasonably current for someone looking at the channel history - particularly on the web portal.
 
 The clearing happens on the timetable specified by the cron config.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/code/cron.html) for help if you want to change this.
+
+## recall_buffer_size
+
+Sets the number of messages available in the channel recall (and thus the web portal chat) for all channels.

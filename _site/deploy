@@ -1,1 +1,0 @@
-scp -r _site/* ares@www.aresmush.com:/www/www.aresmush.com

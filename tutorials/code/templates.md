@@ -18,49 +18,61 @@ Templates are a special code class that handle complex information display.  The
 
 ## The Template Engine
 
-Templates use the Ruby [ERB Template system](http://www.stuartellis.name/articles/erb/), which mingles text with embedded Ruby code.  (Similar to embedded Python for those familiar with that.)
+A template consists of two parts:
 
-Here's an example of a simple ERB template for a character description:
+1. The **Template Renderer**, which sets up the template and contains methods to help format everything.
+2. The **ERB Template**, which uses Ruby's [ERB Template system](http://www.stuartellis.name/articles/erb/) to mingle text with embedded Ruby code to control the actual display. (Similar to embedded Python for those familiar with that.)
 
-    <%= header %>
-    %xh<%= char.name %>%xn
-    <%= military_name(char) %>
-    <%= divider %>
-    <%= char.description %>
-    <%= divider %>
-    %xhPlayed By:%xn <%= char.actor %>
-    <%= footer %>
+{% include tip.html content="Template files are located in a 'templates' folder within each plugin - for example <code>aresmush/plugins/describe/templates/character.erb</code>." %}
 
-Anything inside `<%= %>` brackets is evaluated as code by the template engine.   Here's what that would look like in a MU client:
+For example, here is a sample of the ERB file for the character description template:
 
-    +==~~~~~====~~~~====~~~~====~~~~=====~~~~=====~~~~====~~~~====~~~~====~~~~~==+
-    Stirling
-    Major Nyssa "Whisper" Stirling
-    ------------------------------------------------------------------------------
-    Fiery red hair falls down past this woman's shoulders, usually bound in a sensible braid. Her average height and lithe build aren't very remarkable, but they belie a well-toned muscular form. She's wearing standard-issue green fatigues, the pins showing a rank of Major.
-    ------------------------------------------------------------------------------
-    Played By: Jessica Chastain
-    +==~~~~~====~~~~====~~~~====~~~~=====~~~~=====~~~~====~~~~====~~~~====~~~~~==+
+```text
+<%= header %>
+%xh<%= char.name %>%xn
+<%= military_name(char) %>
+<%= divider %>
+<%= char.description %>
+<%= divider %>
+%xhPlayed By:%xn <%= char.actor %>
+<%= footer %>
+```
 
-## Customizing a Template
+{% include tip.html content="Anything inside <code><%= %></code> brackets is evaluated as code by the template engine." %}
 
-A few templates will automatically be customized based on your game configuration.  The 'who' template lets you pick fields and the 'profile' template automatically shows whatever demographics you've configured.
+Here's what that would look like in a MU client:
 
-You can customize other templates too - it just requires you to change the template code.  Just edit the ERB file directly.  Usually they are located in a `templates` folder within each plugin - for example `aresmush/plugins/describe/templates/character.erb`.   In our desc template above, for example, you might remove the "military_name" line if you just wanted to show the character's basic name instead of their full name plus rank.
+```text
++==~~~~~====~~~~====~~~~====~~~~=====~~~~=====~~~~====~~~~====~~~~====~~~~~==+
+Stirling
+Major Nyssa "Whisper" Stirling
+------------------------------------------------------------------------------
+Fiery red hair falls down past this woman's shoulders, usually bound in a sensible braid. Her average height and lithe build aren't very remarkable, but they belie a well-toned muscular form. She's wearing standard-issue green fatigues, the pins showing a rank of Major.
+------------------------------------------------------------------------------
+Played By: Jessica Chastain
++==~~~~~====~~~~====~~~~====~~~~=====~~~~=====~~~~====~~~~====~~~~====~~~~~==+
+```
 
-## Template Renderer
+And here is a snippet of the template renderer class.
 
-Templates use a "renderer" class to help decide what to show.  *Technically* you could put all the code logic into the ERB file itself, but that gets really ugly really fast.  It's better to keep the decision-making in a separate file.
+```ruby
+class CharacterTemplate < ErbTemplateRenderer
+  attr_accessor :char
+  def initialize(char)
+    @char = char
+    super File.dirname(__FILE__) + "/character.erb"        
+  end
+  
+  # Fullname with rank and callsign, if set.  (e.g. Commander William "Husker" Adama)
+  def military_name(char)
+    Ranks.military_name(char)
+  end
+end
+```
 
-All template renderers have some common helpers.   The `<%= header %>`, `<%= footer %>` and `<%= divider %>` we saw in the example above are helpers that use the lines defined in the game's [Skin Configuration](/tutorials/config/skin.html).  There are also left/right/center methods for justifying text.  They are used like so: `left(text, width, padding_char)`, `center(text, width, padding_char)`, etc.
+Notice how it provides the 'char' accessor so the template can do things like `<%= char.actor %>`.  It also provides the military name helper to enable `<%= military_name(char) %>`.
 
-A template can also define its own custom helpers.  These helpers are located in the same folder as the ERB file, named similarly but with a 'rb' extension instead of 'erb'.  For example:  `aresmush/plugins/describe/templates/character_template.rb` contains the `military_name` helper used in the description example.
-
-    def military_name(char)
-      Ranks.military_name(char)
-    end
-
-{% include tip.html content="Some of the template renderers share common helpers with another template.  You'll see this when the renderer has a line like  <code>include CharDescTemplateFields</code>  near the top of the file.  For example, the description and glance templates share some helpers from  <code>plugins/describe/char_desc_template_fields.rb</code> .  If you don't see the helper you're looking for (e.g. military_name), look for a shared helper file." %}
+{% include tip.html content="You <i>can</i> put code directly into the ERB file, but it gets very messy very quickly.  It's often best to leave anything complicated into a helper." %}
 
 ## Using Templates
 
@@ -71,20 +83,95 @@ To use a template, you simply instantiate the renderer class and call the render
 
 Many renderers expect some parameters passed in - a character, a room, or - in this case - the list of characters who are currently online.  Templates handle _how_ to display data, but other code should figure out _what_ to show.
 
-## Common Templates
+### Common Templates
 
 Ares provides a few common templates in the Utils plugin that are used everywhere.  The two most common are `BorderedDisplayTemplate` and `BorderedListTemplate`:
 
+```text
     ------------------------------
               Title
               SubTitle
     Text
     SubFooter
     ------------------------------
+```
 
 {% include tip.html content="Everything except the text/list is optional, so you can customize the display as desired." %}
 
 There's also a table, a line with text in the middle, and a standard page footer for multi-page commands.  See the code in `aresmush/plugins/utils/templates` for details.
+
+## Customizing Templates
+
+A few templates will automatically be customized based on your game configuration.  The 'who' template lets you pick fields and the 'profile' template automatically shows whatever demographics you've configured.
+
+You can customize other templates too - it just requires you to change the template code - either the ERB or the template renderer, or both.
+
+For example, if you don't like showing the "played by" or "military name" stuff on descs and want to show some basic demographics instead, you could modify the ERB template like so:
+
+```text
+<%= header %>
+%xh<%= char.name %>%xn
+<%= char.age %> year old <%= gender(char) %> with <%= hair(char) %> hair
+<%= divider %>
+<%= char.description %>
+<%= footer %>
+```
+
+And then add gender and hair helpers to the template renderer:
+
+    class CharacterTemplate < ErbTemplateRenderer
+      ...
+      def gender(char)
+        Demographics.gender_noun(char)
+      end
+      def hair(char)
+        char.demographic(:hair) || "no"
+      end
+    end
+
+## Creating a Template
+
+To create your own new template, here are the pieces you need:
+
+Create the ERB file. (e.g. plugins/custom/templates/foo.erb)
+
+```text
+This is my template. Hello <%= char.name %>
+```
+
+Create the template renderer.  (e.g. plugins/custom/templates/foo_template.rb)
+
+    class FooTemplate < ErbTemplateRenderer
+      attr_accessor :char 
+      
+      def initialize(char)
+        @char = char
+        super File.dirname(__FILE__) + "/foo.erb"        
+      end
+
+Use the template
+
+    template = FooTemplate.new(enactor)
+    client.emit template.render
+
+{% include tip.html content="In this example, our template needs only a single character, but other templates may need other parameters.  Just make sure that the list you define in your template renderer's initialize method matches what you pass in the <code>new</code> call when you create it." %}
+
+## Common Formatting Helpers
+
+All template renderers have some common formatting helpers available.
+
+* header - Header line, aka %lh (`<%= header %>`)
+* footer - Footer line, aka %lf (`<%= footer %>`)
+* divider - Divider line, aka %ld (`<%= divider %>`)
+* left - Left-justifies and trims text (`<%= left(text, width, padding_char) %>`)
+* right - Right-justifies and trims text (`<%= right(text, width, padding_char) %>`)
+* center - Center-justifies and trims text (`<%= center(text, width, padding_char) %>`)
+
+{% include tip.html content="The padding char is optional in left/right/center, and defaults to a space." %}
+
+Some of the template renderers share common helpers with another template.  You'll see this when the renderer has a line like  <code>include CharDescTemplateFields</code>  near the top of the file.  For example, the description and glance templates share some helpers from  <code>plugins/describe/char_desc_template_fields.rb</code> .  
+
+{% include tip.html content="If you don't see the helper you're looking for in the template renderer, look for a shared helper file." %}
 
 ## The One-Line Trick
 
