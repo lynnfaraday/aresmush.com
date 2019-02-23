@@ -45,3 +45,20 @@ You might wonder why you'd want to disable a plugin instead of just excising its
 The main reason is that *other* Ares code is designed to look for these plugins.  For example, the profile code might say "If the ranks system is enabled, show their rank."  If you remove the ranks plugin completely, that code will break.
 
 Also, removing existing code will cause you some version control headaches if you later want to upgrade to a new Ares version.
+
+## Advanced Config
+
+To configure advanced plugin settings:
+
+1. Select Admin -> Setup.
+2. Edit `plugins.yml`
+
+### config_help_links
+
+When you're editing a config file, there's a link at the top to the help for those configuration settings.  Usually this links to the default arescentral config tutorial.  For your own custom-made plugins, you might want to point the help somewhere else - perhaps a wiki page or a README file on your github repo.  Just set this up to be a hash with the name of the plugin and the help link.  For example:
+
+    ffg: https://github.com/AresMUSH/ares-extras/tree/master/plugins/ffg
+    fate: https://github.com/AresMUSH/ares-extras/tree/master/plugins/fate
+    cortex: https://github.com/AresMUSH/ares-extras/tree/master/plugins/cortex
+    prefs: https://github.com/AresMUSH/ares-extras/tree/master/plugins/prefs
+    traits: https://github.com/AresMUSH/ares-extras/tree/master/plugins/traits

@@ -12,7 +12,7 @@ To configure the game secrets:
 1. Select Admin -> Setup
 2. Edit `secrets.yml` 
 
-For more information about configuring the Database see [Configuring the Database System](/tutorials/config/db.html).
+For more information about configuring the Database see [Configuring the Database System](/tutorials/config/database.html).
 
 For more information about configuring Recaptcha, see [Configuring the Website](/tutorials/config/website.html).
 

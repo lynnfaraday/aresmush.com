@@ -37,7 +37,7 @@ Ares configuration files use YAML, so you should check out the [Understanding YA
 
 These are settings that pretty much every game will want to configure.
 
-* [Configuring the Game Directory Info](/tutorials/config/game_dir.html)
+* [Configuring the Game Directory Info](/tutorials/config/game.html)
 * [Configuring the Web Portal](/tutorials/config/website.html)
 * [Configuring the Game Skin (Lines)](/tutorials/config/skin.html)
 * [Configuring Demographics](/tutorials/config/demographics.html)
@@ -81,12 +81,12 @@ These are advanced customization settings that most games won't need to alter.
 
 A variety of other settings exist, but the defaults will work well for most games.
 
-* [Configuring Banned and Suspect Sites](/tutorials/config/ban.html)
+* [Configuring Banned and Suspect Sites](/tutorials/config/sites.html)
 * [Configuring the Achievements System](/tutorials/config/achievements.html)
 * [Configuring the Channel System](/tutorials/config/channels.html)
 * [Configuring the Cookie System](/tutorials/config/cookies.html)
 * [Configuring Chargen](/tutorials/config/chargen.html)
-* [Configuring Date and Time Formats](/tutorials/config/date.html)
+* [Configuring Date and Time Formats](/tutorials/config/datetime.html)
 * [Configuring the Description System](/tutorials/config/describe.html)
 * [Configuring the Events System](/tutorials/config/events.html)
 * [Configuring the Forum System](/tutorials/config/forum.html)
@@ -111,7 +111,7 @@ A variety of other settings exist, but the defaults will work well for most game
 
 These configuration options will probably not need to be changed unless your server or database changes.
 
-* [Configuring the Database](/tutorials/config/db.html)
+* [Configuring the Database](/tutorials/config/database.html)
 * [Configuring the Server Info](/tutorials/config/server.html)
 * [Configuring AresCentral](/tutorials/config/arescentral.html)
 * [Using the API Proxy](/tutorials/config/api-proxy.html).html)

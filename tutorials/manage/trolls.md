@@ -57,7 +57,7 @@ Most game-altering commands (building, posting to forums, sending mails, startin
 
 ### Banning Trolls
 
-In the [Web Portal banned/suspect sites configuration](/tutorials/config/ban.html), you can designate certain IP addresses and/or hostnames as suspect or banned sites.  
+In the [Web Portal banned/suspect sites configuration](/tutorials/config/sites.html), you can designate certain IP addresses and/or hostnames as suspect or banned sites.  
 
 Banning a site prevents players from logging in at all from that site.
 
@@ -69,7 +69,7 @@ _Developed with assistance from Ashen Shugar@RhostMUSH._
 
 If someone is using a proxy server, banning them can be like playing whack-a-mole as they keep switching IPs.  An extreme measure is to ban all known proxy sites.  This can make things more difficult for a troll, but at a risk of blocking users who are running a proxy server for legitimate reasons.  We recommend not enabling this feature unless you're having trouble with a proxy troll.
 
-To ban proxy sites, simply enable the option in the [Web Portal banned/suspect sites configuration](/tutorials/config/ban.html)
+To ban proxy sites, simply enable the option in the [Web Portal banned/suspect sites configuration](/tutorials/config/sites.html)
 
 {% include note.html content=" There are thousands of proxy IPs on the Internet, and the list is constantly changing.  Blocking them all is impossible, but blocking some can sometimes be better than nothing." %}
 

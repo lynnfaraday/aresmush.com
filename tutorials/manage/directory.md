@@ -11,7 +11,7 @@ tags:
 
 ## Game Info
 
-The general information shown in the directory comes from your [Game Directory Config](/tutorials/config/game_dir.html).
+The general information shown in the directory comes from your [Game Directory Config](/tutorials/config/game.html).
 
 ## Registration
 

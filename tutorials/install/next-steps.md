@@ -45,7 +45,7 @@ The Headwiz character is special, and should be reserved for special occasions. 
 
 ## Game Directory Information
 
-The game information you entered will not show up in the [AresCentral Game Directory](http://arescentral.aresmush.com/games) until you mark your game as open.  See [Configuring the Game Directory](/tutorials/config/game_dir.html) to do that.
+The game information you entered will not show up in the [AresCentral Game Directory](http://arescentral.aresmush.com/games) until you mark your game as open.  See [Configuring the Game Directory](/tutorials/config/game.html) to do that.
 
 ## Tutorials
 
