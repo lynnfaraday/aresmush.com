@@ -13,7 +13,9 @@ To configure the database:
 2. Edit`database.yml` to edit the database URL -or- `secrets.yml` to edit the password.
 3. Shut down and restart the game.  (See the tutorials at [aresmush.com](http://www.aresmush.com) if you need help doing this.)
 
-{% include note.html content="Database configuration changes will not take effect until the game is restarted." %}
+{% note %} 
+Database configuration changes will not take effect until the game is restarted.
+{% endnote %}
 
 ## url
 

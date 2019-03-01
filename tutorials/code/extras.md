@@ -37,7 +37,9 @@ If the game is shut down, from your server shell, change to the aresmush folder 
 
 Once the plugin is installed, you'll need to do `load all` to load the game code and `website/deploy` to update the website.
 
-{% include note.html content="The automated installation just copies the plugin's files into place.  There may be other code or configuration changes required.  See the plugin's README file in the ares-extras repository to see if any extra steps are needed." %}
+{% note %} 
+The automated installation just copies the plugin's files into place.  There may be other code or configuration changes required.  See the plugin's README file in the ares-extras repository to see if any extra steps are needed.
+{% endnote %}
 
 ## Updating Plugins
 
@@ -45,7 +47,9 @@ As long as you haven't modified the plugin's source code, you can upgrade it jus
 
 > <i class="fa fa-exclamation-triangle"></i> **Warning:** Do not attempt to run the upgrade script if you've got custom code modifications (other than configuration files). The upgrade will overwrite your changes.  You'll have to do the upgrade by hand.  GitHub's version compare tools can help you figure out what changed.  Feel free to ask for help.
 
-{% include tip.html content="If a plugin has been installed previously, adding it again will **not** overwrite your configuration files.  You should check the plugin configuration notes to see if any new options are available and add them manually to your configuration." %}
+{% tip %} 
+If a plugin has been installed previously, adding it again will **not** overwrite your configuration files.  You should check the plugin configuration notes to see if any new options are available and add them manually to your configuration.
+{% endtip %}
 
 ## Contributions
 

@@ -35,7 +35,9 @@ The game will periodically clear scene sets and scenes from empty rooms.
 
 There is a cron job to control when this happens.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/code/cron.html) for help if you want to change this.
 
-{% include note.html content="Scenes in temp rooms will remain open as long as there are characters still in the room - even if they're logged off.  Scenes in grid rooms will stop after everyone logs off." %}
+{% note %} 
+Scenes in temp rooms will remain open as long as there are characters still in the room - even if they're logged off.  Scenes in grid rooms will stop after everyone logs off.
+{% endnote %}
 
 ## include_pose_separator
 

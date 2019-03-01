@@ -26,18 +26,35 @@ Basic features will work no matter which client you use, but there are two thing
 
 Here are instructions for setting up your favorite MUSH client to work with Ares.
 
-* [Potato](/clients.html#potato)
 * [Atlantis](/clients.html#atlantis)
-* [MUSHClient](/clients.html#mushclient)
-* [SimpleMU](/clients.html#simplemu)
 * [DuckClient](/clients.html#duckclient)
+* [BeipMU](/clients.html#beipmu)
+* [MUSHClient](/clients.html#mushclient)
+* [Potato](/clients.html#potato)
+* [SimpleMU](/clients.html#simplemu)
 * [Other](/clients.html#other)
+
+<a name="beipmu"/>
+
+## Setting up BeipMU
+
+[Download BeipMU](http://www.potatomushclient.com/) for Windows.
+
+### Character Encoding
+
+BeipMU won't do auto-detection of character encoding, so you'll have to set it up manually.
+
+Connection --> Connect --> highlight the world --> Text Encoding --> UTF-8
+
+### Editing
+
+??? Please let me know if someone figures out how to set this up.
 
 <a name="potato" />
 
 ## Setting up Potato
 
-[Download Potato](http://www.potatomushclient.com/) for Windows, Mac and Linux
+[Download Potato](http://www.potatomushclient.com/) for Windows and Linux.  It's broken on Mac at the time of this writing and doesn't seem likely to be fixed.
 
 ### Character Encoding
 
@@ -49,7 +66,9 @@ If you have Atlantis set to do character encoding auto-detection, it should auto
 4. Find the 'Starting Encoding' dropdown.
 5. Select 'UTF-8'.
 
-{% include note.html content="This setting will take effect for any new worlds.  For existing worlds, you'll have to adjust the same setting under Address Book -> Edit World -> Connection -> Starting Encoding." %}
+{% note %} 
+This setting will take effect for any new worlds.  For existing worlds, you'll have to adjust the same setting under Address Book -> Edit World -> Connection -> Starting Encoding.
+{% endnote %}
 
 ### Editing
 

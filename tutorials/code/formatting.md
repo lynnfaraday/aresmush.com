@@ -23,7 +23,9 @@ Ares allows the use of ansi color codes in virtually all text.  The game support
 
 You can use ansi codes in game text by using `%x` or `%c` followed by the ansi color code.  For example, `%xb` is blue, and `%x33` is an aqua color.  The following images show the available colors.   
 
-{% include note.html content="The exact appearance of colors can vary in different MU clients." %}
+{% note %} 
+The exact appearance of colors can vary in different MU clients.
+{% endnote %}
 
 {% include pretty_image.html file='colors/1.png' %}
 

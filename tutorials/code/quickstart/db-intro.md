@@ -64,5 +64,7 @@ Once you have the database object, you can use the `update` method to change its
       client.emit "Done!"
     end
 
-{% include note.html content="Just setting the class attribute (like <code>char.alias = 'guest'</code>) will change the local copy of the object, but it doesn't update the database.  Always call <code>update</code> to save database changes." %}
+{% note %} 
+Just setting the class attribute (like <code>char.alias = 'guest'</code>) will change the local copy of the object, but it doesn't update the database.  Always call <code>update</code> to save database changes.
+{% endnote %}
 

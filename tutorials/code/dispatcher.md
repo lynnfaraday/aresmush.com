@@ -30,7 +30,9 @@ Whenever it gets one of these dispatches, it goes through all the plugins to see
 
 A plugin specifies what dispatches it handles through pre-defined methods that the Dispatcher knows to call:  `get_cmd_handler`, `get_event_handler` and `get_web_request_handler`.   Each of these methods may either return a handler class (like `TinkerCmd`) or nil if the plugin doesn't care about the dispatch.
 
-{% include note.html content="Never ever call EventMachine methods directly - always go through the Dispatcher.  If you don't have appropriate error checking and something goes wrong, you can crash the entire game." %}
+{% note %} 
+Never ever call EventMachine methods directly - always go through the Dispatcher.  If you don't have appropriate error checking and something goes wrong, you can crash the entire game.
+{% endnote %}
 
 ## Spawns
 
@@ -42,7 +44,9 @@ For example:
             ... perform backup code ...
         end
 
-{% include note.html content="Exercise caution when using spawns.  Most Ares code is threadsafe because it's stand-alone helper methods and command classes created on demand, but you can cause weird effects if your spawned task starts changing database fields on a character while other commands are still running." %}
+{% note %} 
+Exercise caution when using spawns.  Most Ares code is threadsafe because it's stand-alone helper methods and command classes created on demand, but you can cause weird effects if your spawned task starts changing database fields on a character while other commands are still running.
+{% endnote %}
 
 ## Timers
 
@@ -52,7 +56,9 @@ A timer delays code until some time has elapsed.  The code will be processed in 
           client.emit_success t('login.guest_name', :name => guest.name)
         end
 
-{% include tip.html content="Ares timers do not have stopwatch precision.  The code will wait for *at least* the specified time, but it may take a little longer depending on how busy the system is." %}
+{% tip %} 
+Ares timers do not have stopwatch precision.  The code will wait for *at least* the specified time, but it may take a little longer depending on how busy the system is.
+{% endtip %}
 
 ## Queue
 

@@ -23,7 +23,9 @@ A template consists of two parts:
 1. The **Template Renderer**, which sets up the template and contains methods to help format everything.
 2. The **ERB Template**, which uses Ruby's [ERB Template system](http://www.stuartellis.name/articles/erb/) to mingle text with embedded Ruby code to control the actual display. (Similar to embedded Python for those familiar with that.)
 
-{% include tip.html content="Template files are located in a 'templates' folder within each plugin - for example <code>aresmush/plugins/describe/templates/character.erb</code>." %}
+{% tip %} 
+Template files are located in a 'templates' folder within each plugin - for example <code>aresmush/plugins/describe/templates/character.erb</code>.
+{% endtip %}
 
 For example, here is a sample of the ERB file for the character description template:
 
@@ -38,7 +40,9 @@ For example, here is a sample of the ERB file for the character description temp
 <%= footer %>
 ```
 
-{% include tip.html content="Anything inside <code><%= %></code> brackets is evaluated as code by the template engine." %}
+{% tip %} 
+Anything inside <code><%= %></code> brackets is evaluated as code by the template engine.
+{% endtip %}
 
 Here's what that would look like in a MU client:
 
@@ -72,7 +76,9 @@ end
 
 Notice how it provides the 'char' accessor so the template can do things like `<%= char.actor %>`.  It also provides the military name helper to enable `<%= military_name(char) %>`.
 
-{% include tip.html content="You <i>can</i> put code directly into the ERB file, but it gets very messy very quickly.  It's often best to leave anything complicated into a helper." %}
+{% tip %} 
+You <i>can</i> put code directly into the ERB file, but it gets very messy very quickly.  It's often best to leave anything complicated into a helper.
+{% endtip %}
 
 ## Using Templates
 
@@ -96,7 +102,9 @@ Ares provides a few common templates in the Utils plugin that are used everywher
     ------------------------------
 ```
 
-{% include tip.html content="Everything except the text/list is optional, so you can customize the display as desired." %}
+{% tip %} 
+Everything except the text/list is optional, so you can customize the display as desired.
+{% endtip %}
 
 There's also a table, a line with text in the middle, and a standard page footer for multi-page commands.  See the code in `aresmush/plugins/utils/templates` for details.
 
@@ -154,7 +162,9 @@ Use the template
     template = FooTemplate.new(enactor)
     client.emit template.render
 
-{% include tip.html content="In this example, our template needs only a single character, but other templates may need other parameters.  Just make sure that the list you define in your template renderer's initialize method matches what you pass in the <code>new</code> call when you create it." %}
+{% tip %} 
+In this example, our template needs only a single character, but other templates may need other parameters.  Just make sure that the list you define in your template renderer's initialize method matches what you pass in the <code>new</code> call when you create it.
+{% endtip %}
 
 ## Common Formatting Helpers
 
@@ -167,11 +177,15 @@ All template renderers have some common formatting helpers available.
 * right - Right-justifies and trims text (`<%= right(text, width, padding_char) %>`)
 * center - Center-justifies and trims text (`<%= center(text, width, padding_char) %>`)
 
-{% include tip.html content="The padding char is optional in left/right/center, and defaults to a space." %}
+{% tip %} 
+The padding char is optional in left/right/center, and defaults to a space.
+{% endtip %}
 
 Some of the template renderers share common helpers with another template.  You'll see this when the renderer has a line like  <code>include CharDescTemplateFields</code>  near the top of the file.  For example, the description and glance templates share some helpers from  <code>plugins/describe/char_desc_template_fields.rb</code> .  
 
-{% include tip.html content="If you don't see the helper you're looking for in the template renderer, look for a shared helper file." %}
+{% tip %} 
+If you don't see the helper you're looking for in the template renderer, look for a shared helper file.
+{% endtip %}
 
 ## The One-Line Trick
 

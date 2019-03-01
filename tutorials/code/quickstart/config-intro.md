@@ -23,7 +23,9 @@ Go to the Admin -> Setup menu in the Web Portal and edit the `tinker.yml` config
 
 Change the tinker handle method as shown below:
 
-{% include tip.html content="You can click the Reset button on the tinker screen to put the tinker code back to the default values and remove all the piggy processing we did in prior exercises." %}
+{% tip %} 
+You can click the Reset button on the tinker screen to put the tinker code back to the default values and remove all the piggy processing we did in prior exercises.
+{% endtip %}
 
     def handle
       color = Global.read_config("tinker", "example")
@@ -36,4 +38,6 @@ Save the code and run the tinker command.  Notice that the color is blue, the co
 
 Change the configuration file to use a different color code (like "%xg" for green) and run the command again.  Notice how the color changed without you needing to touch the code.
 
-{% include tip.html content="Configuration sections generally correspond to their filenames ( <code>tinker.yml</code>  for the tinker section), but sometimes sections are spread out across multiple config files for readability." %}
+{% tip %} 
+Configuration sections generally correspond to their filenames ( <code>tinker.yml</code>  for the tinker section), but sometimes sections are spread out across multiple config files for readability.
+{% endtip %}

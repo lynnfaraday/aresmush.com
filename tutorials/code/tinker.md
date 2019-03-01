@@ -9,7 +9,9 @@ tags:
 
 Ares doesn't allow you to alter the game code from the MU client window, but sometimes you need to do things that aren't covered by an existing command - find all characters over 30 years old, update the faction on a bunch of people at once, etc.  There's no need to create specific commands for this sort of tinkering, especially if you're unlikely to do that specific task ever again.  In Ares, you can use the `ruby` command to execute simple code blocks, or the `tinker` command to perform more involved processing.
 
-{% include tip.html content="Not all admins can use the tinker/ruby commands - only characters with the  <code>coder</code>  role.  This is a security feature, because giving someone access to run arbitrary code essentially gives them the keys to the kingdom.  They could do literally anything with the database." %}
+{% tip %} 
+Not all admins can use the tinker/ruby commands - only characters with the  <code>coder</code>  role.  This is a security feature, because giving someone access to run arbitrary code essentially gives them the keys to the kingdom.  They could do literally anything with the database.
+{% endtip %}
 
 <div id="inline_toc" markdown="1">
 **Table of Contents**
@@ -34,13 +36,17 @@ Tinkering involves three steps:
 2. Edit the code to do what you want and save it.
 3. Type `tinker` in-game to run the code.
 
-{% include tip.html content="Coders who prefer to edit code in the server shell can edit  <code>aresmush/plugins/tinker/commands/tinker_cmd.rb</code>  then reload the code using  <code>load tinker</code>  in-game." %}
+{% tip %} 
+Coders who prefer to edit code in the server shell can edit  <code>aresmush/plugins/tinker/commands/tinker_cmd.rb</code>  then reload the code using  <code>load tinker</code>  in-game.
+{% endtip %}
 
 ## Tinkering Examples
 
 Let's say you wanted to write a quick code snippet to find all the characters who are 30 years or older.  All you need to do is modify the `handle` method to find those characters and emit their names to you.  
 
-{% include note.html content="This example only shows the handle method, but you still need all the rest of the code in the file too." %}
+{% note %} 
+This example only shows the handle method, but you still need all the rest of the code in the file too.
+{% endnote %}
 
 For example:
 
@@ -49,7 +55,9 @@ For example:
         client.emit_success "Done!"
       end
 
-{% include tip.html content="When doing a database query, make sure to do the 'map' at the end so you don't spam yourself with full database objects when all you really want is their name (or in this case, name + age)." %}
+{% tip %} 
+When doing a database query, make sure to do the 'map' at the end so you don't spam yourself with full database objects when all you really want is their name (or in this case, name + age).
+{% endtip %}
 
 You can also use the tinker command to update things in the database.  For example, if you wanted to change Bob's hair color (and didn't want to use the demographic/set command because that would be too easy):
 

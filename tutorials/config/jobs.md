@@ -21,7 +21,9 @@ To configure the Jobs plugin:
 
 The jobs system comes with a set of default categories, but you can add more.
 
-{% include note.html content="Adding categories is fine.  If you change or delete categories, you need to update any code that was using the old category name.  For example, the chargen code uses the \"APP\" category when an application is submitted." %}
+{% note %} 
+Adding categories is fine.  If you change or delete categories, you need to update any code that was using the old category name.  For example, the chargen code uses the \"APP\" category when an application is submitted.
+{% endnote %}
 
 * APP - Character applications
 * BUILD - Build requests.
@@ -78,7 +80,9 @@ NEW -> OPEN -> HOLD (if necessary to pause a job) -> DONE
 
 You can add more status steps to your workflow.
 
-{% include note.html content="Adding new status values is fine.  If you change or delete existing status values, you need to check to see if any code is using the old status.  For example, the chargen system allows you to configure which status a job goes to when an application is rejected or re-submitted." %}
+{% note %} 
+Adding new status values is fine.  If you change or delete existing status values, you need to check to see if any code is using the old status.  For example, the chargen system allows you to configure which status a job goes to when an application is rejected or re-submitted.
+{% endnote %}
 
 ### Status Color
 

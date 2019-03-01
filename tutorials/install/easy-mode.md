@@ -46,13 +46,17 @@ Create an account on [Digital Ocean](http://www.digitalocean.com/?refcode=5c0717
 * A name and description for your game.  (You can change this later.)
 * Your desired hostname (yourgame.somewhere.com).  You can request an aresmush.com hostname or [register your own](/tutorials/install/getting-a-hostname.html).
 
-{% include note.html content="Your email is needed to transfer the server snapshot image to you.   It must match the email you used for your Digital Ocean account.  I pledge not to do anything nefarious with your email.  See our [privacy policy](/privacy.html) for details." %}
+{% note %} 
+Your email is needed to transfer the server snapshot image to you.   It must match the email you used for your Digital Ocean account.  I pledge not to do anything nefarious with your email.  See our [privacy policy](/privacy.html) for details.
+{% endnote %}
 
 ## Clone Your Server
 
 I will transfer a Digital Ocean snapshot image to your account. This image has everything you need to clone a droplet (aka server) with Ares installed on Ubuntu Linux.
 
-{% include note.html content="You have seven days to accept the transfer otherwise the request will be aborted.  You are responsible for the server costs once you accept the transfer." %}
+{% note %} 
+You have seven days to accept the transfer otherwise the request will be aborted.  You are responsible for the server costs once you accept the transfer.
+{% endnote %}
 
 1. Log into your Digital Ocean account.  
 2. Go to 'Images' and you should see a pending snapshot transfer request.  Click 'Accept'.
@@ -70,7 +74,9 @@ If you're using an aresmush.com hostname, simply [contact me](/feedback.html) wi
 
 If you're using your own custom host name, you'll need to set up the DNS through your domain provider.
 
-{% include note.html content="The hostname may take up to 24 hours to be recognized.  " %}
+{% note %} 
+The hostname may take up to 24 hours to be recognized.  
+{% endnote %}
 
 You can tell that the hostname is working when you're able to see the web portal when you go to `http://yourmushaddress`.  Once this happens, you'll need to [restart the game](/tutorials/manage/shutdown.html) for everything to start working. 
 

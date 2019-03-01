@@ -22,7 +22,9 @@ For example:
 
 There are some other advanced command options, but for now let's focus on the basics.
 
-{% include tip.html content="The root ignores prefixes, so if the player types 'where', '+where', or '@where' the root will be 'where'." %}
+{% tip %} 
+The root ignores prefixes, so if the player types 'where', '+where', or '@where' the root will be 'where'.
+{% endtip %}
 
 ## Accessing Command Parameters
 
@@ -37,7 +39,9 @@ There are also two methods for easily determining if a root or switch matches so
     cmd.switch_is?("someswitch")
     cmd.root_is?("someroot")
 
-{% include tip.html content="In Ruby code, it's common to put a ? on the end when naming methods that return true or false.  You'll see this a lot in Ares code, like  <code>enactor.is_approved?</code> ." %}
+{% tip %} 
+In Ruby code, it's common to put a ? on the end when naming methods that return true or false.  You'll see this a lot in Ares code, like  <code>enactor.is_approved?</code> .
+{% endtip %}
 
 ## Try It! - Adding a Switch
 
@@ -57,7 +61,9 @@ Let's try a switch first.  Edit the tinker handle method as shown and save it.
 
 Try out the command with different switches:  `tinker/one`, `tinker/two`, `tinker/three`.  Observe how the output changes.
 
-{% include tip.html content="It's good practice to actually break up different switches into different command handlers living in different files.  Otherwise for many commands the  <code>handle</code>  method would get gigantic and overly complicated.  This is similar to the way that MUSH softcode would use different attributes like &CMD-BBS-READ and &CMD-BBS-POST.   Since we're just doing some simple tinkering here, we'll keep everything together for now." %}
+{% tip %} 
+It's good practice to actually break up different switches into different command handlers living in different files.  Otherwise for many commands the  <code>handle</code>  method would get gigantic and overly complicated.  This is similar to the way that MUSH softcode would use different attributes like &CMD-BBS-READ and &CMD-BBS-POST.   Since we're just doing some simple tinkering here, we'll keep everything together for now.
+{% endtip %}
 
 ## Try It! - Adding an Argument
 

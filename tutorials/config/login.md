@@ -27,7 +27,9 @@ The connect screen can contain all the usual MUSH formatting codes (including co
 
 By default, the game will present a Terms of Service file to new users.  You can disable this by setting `use_terms_of_service`, as explained below.
 
-{% include tip.html content="If your TOS is long, it's recommended that you just link to a wiki/web page rather than spamming new players with a giant wall of text." %}
+{% tip %} 
+If your TOS is long, it's recommended that you just link to a wiki/web page rather than spamming new players with a giant wall of text.
+{% endtip %}
 
 To configure the Terms of Service:
 
@@ -36,7 +38,9 @@ To configure the Terms of Service:
 
 The TOS can contain all the usual MUSH formatting codes, but you don't need to put in %r for linebreaks.  The game will respect what's in the file.
 
-{% include tip.html content="If you ever make important changes to the terms of service, you probably want to force existing characters to read them again.  To do this, use the  <code>tos/reset</code>  command in-game.  Everyone will be forced to acknowledge the new terms of service the next time they log in." %}
+{% tip %} 
+If you ever make important changes to the terms of service, you probably want to force existing characters to read them again.  To do this, use the  <code>tos/reset</code>  command in-game.  Everyone will be forced to acknowledge the new terms of service the next time they log in.
+{% endtip %}
 
 ## Other Configuration
 
@@ -49,7 +53,9 @@ To configure the rest of the Login plugin:
 
 The default behavior allows players to create their characters right from the login screen.  You might want to disable this if you have a roster-only game or require email registration or an invitation.
 
-{% include note.html content="Allowing creation from the web portal is a different setting, `allow_web_registration`, described below." %}
+{% note %} 
+Allowing creation from the web portal is a different setting, `allow_web_registration`, described below.
+{% endnote %}
 
 To disable character creation from the login screen:
 

@@ -27,7 +27,9 @@ When a code module triggers an event, several things happen:
 3. If a plugin returns an event handler object, the Dispatcher will call `on_event` in the handler.  It then continues on to the next plugin and does the same.
 4. If no plugins handle the event, the Dispatcher will ignore it.
 
-{% include tip.html content="Multiple plugins may handle a single event." %}
+{% tip %} 
+Multiple plugins may handle a single event.
+{% endtip %}
 
 ## Handling Events
 
@@ -88,7 +90,9 @@ You can find details about the data in these events by looking in the code file 
       attr_accessor :client, :char_id
     end
 
-{% include tip.html content="Event objects always pass database **ids**, not actual database objects to avoid race conditions.  You can look up the character in the handler using  <code>Character[event.char_id]</code> ." %}
+{% tip %} 
+Event objects always pass database **ids**, not actual database objects to avoid race conditions.  You can look up the character in the handler using  <code>Character[event.char_id]</code> .
+{% endtip %}
 
 ## Plugin Events
 

@@ -61,4 +61,6 @@ Ares is designed with international games in mind, supporting translations and s
 
 If you are interested in sharing your translations, please [contact us](/feedback.html).
 
-{% include note.html content="The Web Portal is not fully localized, but if there's sufficient interest it will be considered." %}
+{% note %} 
+The Web Portal is not fully localized, but if there's sufficient interest it will be considered.
+{% endnote %}

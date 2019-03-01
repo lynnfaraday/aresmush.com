@@ -20,7 +20,9 @@ Ares supports a robust **Plugin** system, with its features separated into plugi
 
 Each plugin has its own folder inside aresmush/plugins. The name of the folder is the name of the plugin.
 
-{% include note.html content="The folder name must be one word, all lowercase, with no special characters." %}
+{% note %} 
+The folder name must be one word, all lowercase, with no special characters.
+{% endnote %}
 
 There's a standard organization to a plugin folder.
 

@@ -100,4 +100,6 @@ In cortex_attributes.yml:
 
 And so on.
 
-{% include tip.html content="Notice that the list of specialties is just a string, but the list of steps for assets/complications is an actual list.  That's because specialties are free-form.  The listed values are just suggestions and you can create your own.  Steps on the other hand are fixed.  You can only get a trait at one of the available steps." %}
+{% tip %} 
+Notice that the list of specialties is just a string, but the list of steps for assets/complications is an actual list.  That's because specialties are free-form.  The listed values are just suggestions and you can create your own.  Steps on the other hand are fixed.  You can only get a trait at one of the available steps.
+{% endtip %}

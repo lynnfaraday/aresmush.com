@@ -37,7 +37,9 @@ For help using GitHub, including GitHub desktop, see the [Git tutorial](/tutoria
 
 It's helpful to have a place to test your code that *isn't* your main game.  That way you can make sure everything works right before unleashing it on your players.  
 
-{% include note.html content="It's strongly recommended that you follow the standard [installation instructions](/tutorials/install) for your very first Ares game.  For just a few bucks, less than the price of a grande coffee, you can spin up a droplet for a couple weeks and get your feet wet.  That way you're not trying to learn both Ares code and Ares server setup at the same time!  Once you have a little more experience with Ares, you can explore these other options for setting up a game for development purposes." %}
+{% note %} 
+It's strongly recommended that you follow the standard [installation instructions](/tutorials/install) for your very first Ares game.  For just a few bucks, less than the price of a grande coffee, you can spin up a droplet for a couple weeks and get your feet wet.  That way you're not trying to learn both Ares code and Ares server setup at the same time!  Once you have a little more experience with Ares, you can explore these other options for setting up a game for development purposes.
+{% endnote %}
 
 There are several options available to you.
 
@@ -47,7 +49,9 @@ The simplest and quickest way to set up a test game is to just get a second drop
 
 You don't need a separate host name for the test game; you can just use the droplet's IP address as the host name.
 
-{% include tip.html content="All of the other test game setups require some degree of sever administration fiddling.  If that's not your thing, then dual droplets is probably the best solution for you." %}
+{% tip %} 
+All of the other test game setups require some degree of sever administration fiddling.  If that's not your thing, then dual droplets is probably the best solution for you.
+{% endtip %}
 
 ### Installing on Your Local Mac
 

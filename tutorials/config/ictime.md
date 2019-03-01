@@ -54,7 +54,9 @@ For example, if it's June 1, 2017 and you want the date to be 200 years and 6 mo
 
 June 1, 2017 would then become roughly Dec 1, 2217. 
 
-{% include tip.html content="The exact day it shifts ahead to will vary due to months having different lengths.  Just keep adjusting the day offset until you get the starting date you want.  From there it will advance normally as time passes." %}
+{% tip %} 
+The exact day it shifts ahead to will vary due to months having different lengths.  Just keep adjusting the day offset until you get the starting date you want.  From there it will advance normally as time passes.
+{% endtip %}
 
 ## month_names and day_names
 

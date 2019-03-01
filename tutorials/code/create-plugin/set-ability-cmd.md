@@ -40,7 +40,9 @@ We can tell the difference between the two versions of the command based on whet
          end
       end
 
-{% include tip.html content="We use titlecase for the target name so it'll be pretty when we display it later.  Titlecase is also important for the ability name, so it's always consistent.  You don't want someone to have one rating in Guns and another in GUNS.  We use downcase for the die step because 'd2' is a more standard way of writing it than 'D2'." %}
+{% tip %} 
+We use titlecase for the target name so it'll be pretty when we display it later.  Titlecase is also important for the ability name, so it's always consistent.  You don't want someone to have one rating in Guns and another in GUNS.  We use downcase for the die step because 'd2' is a more standard way of writing it than 'D2'.
+{% endtip %}
 
 ## Error Checking
 
@@ -57,7 +59,9 @@ Then we check that the die step is valid.  We can use one of the helper methods 
         return nil
       end
 
-{% include tip.html content="Methods that return true/false often have a ? on the end, like  <code>is_valid_die_step?</code> .  This is not universal, but you'll see it a lot." %}
+{% tip %} 
+Methods that return true/false often have a ? on the end, like  <code>is_valid_die_step?</code> .  This is not universal, but you'll see it a lot.
+{% endtip %}
 
 There's a similar check to make sure the attribute name is valid, since Cortex has a fixed list.
 
@@ -81,7 +85,9 @@ Finally we make sure that their character is unlocked.  The character gets locke
         Chargen.check_chargen_locked(enactor)
       end
 
-{% include tip.html content="The fact that the permissions check came up in a number of commands is the reason why it was turned into a helper method.  Helpers let you use a chunk of code all over without repeating yourself." %}
+{% tip %} 
+The fact that the permissions check came up in a number of commands is the reason why it was turned into a helper method.  Helpers let you use a chunk of code all over without repeating yourself.
+{% endtip %}
 
 ## Handling
 

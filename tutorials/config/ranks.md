@@ -20,7 +20,9 @@ You list the ranks for each group in order of seniority (least senior to most se
 
 There are types within a group - typically this would be for Officer/Enlisted ranks or Patrol/Detective or something like that.  Types are used for display within the ranks list.  Even if you only have one rank type per faction, you still need a subsection.  Just make it "All".
 
-{% include tip.html content="If you aren't using Officer/Enlisted as your types, you'll also need to switch the ranks template as explained in the next section." %}
+{% tip %} 
+If you aren't using Officer/Enlisted as your types, you'll also need to switch the ranks template as explained in the next section.
+{% endtip %}
 
     Navy:
         Officer:

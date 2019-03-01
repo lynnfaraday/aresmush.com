@@ -19,10 +19,12 @@ To connect to a MUSH, you'll need a MUSH client - an app that lets you access MU
 
 There are many MUSH clients around.  Popular MUSH clients include:
 
-* [Potato](http://www.potatomushclient.com/) (Windows/Linux - it's broken on Mac at the time of this writing)
+* [BeipMU](https://beipdev.github.io/BeipMU/) (Windows)
 * [Atlantis](http://www.riverdark.net/atlantis/) (Mac) 
-* [MUSHClient](http://www.gammon.com.au/mushclient/mushclient.htm) (Windows)
+* [Cheese WebMU](http://www.cheesesoftware.com/MUCon/) (Any Browser)
 * [Duck Client](http://duckclient.com/) (Any Chrome browser - including Chromebook)
+* [Potato](http://www.potatomushclient.com/) (Windows/Linux - it's broken on Mac at the time of this writing)
+* [MUSHClient](http://www.gammon.com.au/mushclient/mushclient.htm) (Windows)
 
 ## Finding a Game
 
@@ -34,5 +36,3 @@ Here are some places you can look for games:
 * [Evennia Game Index](http://www.evennia.com/)
 * [Mu Soapbox](http://musoapbox.net/topic/2342/a-mildly-complete-list-of-current-games) - Contains advertisements and a curated list of some current games.
 * [Ares Demo Game](http://mush.aresmush.com) - You can stop by to see if there are any advertisements for recent games, or people who can share recommendations.
-* [MudConnector](http://mudconnector.com) - Be aware that listings here are often out of date and include other types of online games besides MUSHes.
-

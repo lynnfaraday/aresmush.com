@@ -9,7 +9,9 @@ tags:
 
 [YAML](http://www.yaml.org/start.html) is the data format used for Ares' configuration files.  It is similar to other formats like JSON and XML, but is designed to be more human-readable.
 
-{% include tip.html content="Indentation is super-important in YAML files.  Always make sure things are lined up with each other." %}
+{% tip %} 
+Indentation is super-important in YAML files.  Always make sure things are lined up with each other.
+{% endtip %}
 
 <div id="inline_toc" markdown="1">
 **Table of Contents**

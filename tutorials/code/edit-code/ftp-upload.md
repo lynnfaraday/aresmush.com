@@ -21,4 +21,6 @@ For links to the code editors mentioned in the tutorial, check out [Code Editors
 
 *[Link to video](https://www.youtube.com/embed/EkIC-8UJGPw)*
 
-{% include note.html content="Be careful when uploading config files through FTP from Windows, as sometimes it can change the line endings on the file and mess up the YAML formatting." %}
+{% note %} 
+Be careful when uploading config files through FTP from Windows, as sometimes it can change the line endings on the file and mess up the YAML formatting.
+{% endnote %}

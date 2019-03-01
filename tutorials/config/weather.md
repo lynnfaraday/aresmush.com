@@ -32,7 +32,9 @@ Every time the weather cron job runs, there's a chance the weather will change. 
 
 When the weather does change, the system will select a random temperature and condition from the seasonal list.  By default, there are 10 entries in the list, meaning each entry has a 10% chance of occurring.  You can make some entries more likely than others by repeating them multiple times.  In the spring example above, there's a 30% chance of clear skies, 30% chance of fair weather, 20% chance of drizzling, 10% overcast, 10% raining.
 
-{% include tip.html content="You are not limited to ten entries.  That's just convenient for understanding that each entry represents a 10% chance.  You could have 20 entries (5% chance each) or even 100 entries (1% chance each) to fine-tune the weather as much as you want." %}
+{% tip %} 
+You are not limited to ten entries.  That's just convenient for understanding that each entry represents a 10% chance.  You could have 20 entries (5% chance each) or even 100 entries (1% chance each) to fine-tune the weather as much as you want.
+{% endtip %}
 
 Seasons follow the RL northern hemisphere dates based on the IC time.  In other words, January would be winter and July summer.  If you want to make this more sophisticated (like accounting for different seasons on different planets, or months like November which are half winter and half fall), you'll have to change the code.
 

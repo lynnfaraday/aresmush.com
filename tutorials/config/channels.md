@@ -30,7 +30,9 @@ You can configure the characters that appears at the beginning and end of the ch
 
 Start and end markers can include ansi color and other formatting codes.
 
-{% include note.html content=" Since < and > are reserved HTML characters, be sure to put them in quotes in the configuration." %}
+{% note %} 
+ Since < and > are reserved HTML characters, be sure to put them in quotes in the configuration.
+{% endnote %}
 
 ## default_channels
 
@@ -41,7 +43,9 @@ This should be a list.  For example:
     - Questions
     - Chat
 
-{% include note.html content=" Make sure these channels don't have permissions that would restrict their use by unapproved/guest characters." %}
+{% note %} 
+ Make sure these channels don't have permissions that would restrict their use by unapproved/guest characters.
+{% endnote %}
 
 ## approved_channels
 

@@ -34,7 +34,9 @@ The default Ares database comes with several roles:
 
 Additionally, there is a special character - the master admin (default name Headwiz).  The master admin has both the admin and coder roles, and is the only one that can assign those roles.
 
-{% include note.html content="Coders essentially have the keys to the kingdom.  They can do anything to the database, including changing the master admin password.  Make sure you trust your coders!" %}
+{% note %} 
+Coders essentially have the keys to the kingdom.  They can do anything to the database, including changing the master admin password.  Make sure you trust your coders!
+{% endnote %}
 
 ## Permissions
 
@@ -44,7 +46,9 @@ You cannot assign individual permissions to characters.  Permissions may only be
 
 Characters with the Admin role automatically have access to **all** permissions.
 
-{% include tip.html content="A list of the default permissions can be found below." %}
+{% tip %} 
+A list of the default permissions can be found below.
+{% endtip %}
 
 ## Creating a New Role - App Staff
 
@@ -55,7 +59,9 @@ Let's say you wanted to create a more limited admin role for apps staff.  You wa
 3. Update the jobs config to add the `app_staff` role to the APP category.  See the [jobs configuration tutorial](/tutorials/config/jobs.html) for details.
 4. Set permissions on the Apps forum using `forum/readroles <roles>` and `forum/writeroles <roles>`.
 
-{% include note.html content="Numerous commands are locked to characters with the 'approved' role as a defense against trolls. Full-fledged admins automatically count as approved, but you'll need to assign the 'approved' role to your other staff manually using <code>role/add &lt;name&gt;=approved</code>.  You should also mark them as player bits with the <code>playerbit</code> command so they don’t show up on the character gallery." %}
+{% note %} 
+Numerous commands are locked to characters with the 'approved' role as a defense against trolls. Full-fledged admins automatically count as approved, but you'll need to assign the 'approved' role to your other staff manually using <code>role/add &lt;name&gt;=approved</code>.  You should also mark them as player bits with the <code>playerbit</code> command so they don’t show up on the character gallery.
+{% endnote %}
   
 ## Using Permissions in Code
 
@@ -71,13 +77,19 @@ Many plugins have helper methods to check for the necessary permission.  For exa
     Rooms.can_go_home?(enactor)
     Chargen.can_approve?(enactor)
 
-{% include tip.html content="It's preferable to use the helper methods instead of the permission names so you only have to update one place if the permission ever changes." %}
+{% tip %} 
+It's preferable to use the helper methods instead of the permission names so you only have to update one place if the permission ever changes.
+{% endtip %}
 
-{% include tip.html content="Remember that characters with the 'admin' role automatically have all permissions." %}
+{% tip %} 
+Remember that characters with the 'admin' role automatically have all permissions.
+{% endtip %}
 
 ## Default Permissions
 
-{% include tip.html content="If you want to know exactly which commands are accessible with these permissions, use the 'search' feature of help files to look for help files referencing these permissions.  You'll see a statement like  \"These commands require the Admin role or the permission: whatever_permission\"." %}
+{% tip %} 
+If you want to know exactly which commands are accessible with these permissions, use the 'search' feature of help files to look for help files referencing these permissions.  You'll see a statement like  \"These commands require the Admin role or the permission: whatever_permission\".
+{% endtip %}
 
 | Role | Notes |
 | ---- |

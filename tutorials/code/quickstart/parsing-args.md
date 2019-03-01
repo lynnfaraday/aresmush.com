@@ -31,7 +31,9 @@ We'll start with the `integer_arg` helper, which will help us turn our number of
 
 Try tinkering with different numbers of piggies and see how the message changes when you have a small or large number.
 
-{% include note.html content="If you leave off the argument and just use `tinker` by itself, you'll get an error.  We'll talk about why this is and how to fix it in the next exercise." %}
+{% note %} 
+If you leave off the argument and just use `tinker` by itself, you'll get an error.  We'll talk about why this is and how to fix it in the next exercise.
+{% endnote %}
 
 ## Try It! - Arg Parsers
 

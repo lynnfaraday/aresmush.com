@@ -34,7 +34,9 @@ You can configure the list of Attributes, specifying a name and description for 
 
 This is the Attribute used by default when someone rolls a Background or Language skill and doesn't specify an Attribute.  For example, if you set this to 'Wits' then someone rolling Basketweaving will really be rolling 'Basketweaving+Wits'.
 
-{% include note.html content="This only applies to Background and Language Skills.  Action Skills all specifiy their own linked Attribute." %}
+{% note %} 
+This only applies to Background and Language Skills.  Action Skills all specifiy their own linked Attribute.
+{% endnote %}
 
 ## attributes_blurb
 
@@ -83,7 +85,9 @@ You can specify the languages that everyone should start the game Fluent at.  Li
 
     - Standard
 
-{% include tip.html content="Make sure you allocate enough free language points in chargen to cover rating 3 (Fluent) in each starting language, otherwise the languages will count towards a character's Ability Point total." %}
+{% tip %} 
+Make sure you allocate enough free language points in chargen to cover rating 3 (Fluent) in each starting language, otherwise the languages will count towards a character's Ability Point total.
+{% endtip %}
 
 ## Advantages
 

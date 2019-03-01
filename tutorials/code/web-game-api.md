@@ -31,7 +31,9 @@ For example:
         return aj.requestOne('events');
     },
 
-{% include tip.html content="Many requests you might think are lists actually use  <code>requestOne</code>  because they get back a composite object.  The events request, for example, returns a model that contains events _and_ the calendar URL." %}
+{% tip %} 
+Many requests you might think are lists actually use  <code>requestOne</code>  because they get back a composite object.  The events request, for example, returns a model that contains events _and_ the calendar URL.
+{% endtip %}
 
 ## Request Parameters
 

@@ -23,7 +23,9 @@ Plugin APIs are always found in the file `plugins/<plugin>/public/<plugin>_api.r
 
 You'll find these APIs used throughout the Ares codebase.  The channel plugin creates a job when someone reports channel abuse.  The idle plugin creates a job when it's time to do the idle purge.  The chargen plugin creates a job when someone submits their app.  And so on.
 
-{% include tip.html content="APIs generally expect that permissions will be checked by the calling command handler." %}
+{% tip %} 
+APIs generally expect that permissions will be checked by the calling command handler.
+{% endtip %}
 
 ## Try It!
 

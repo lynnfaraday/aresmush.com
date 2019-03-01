@@ -28,7 +28,9 @@ You can also emit to everyone in a room if you have a room object.  In commands,
 * `enactor_room.emit_failure`
 * `enactor_room.emit_raw`
 
-{% include tip.html content="You can actually emit to any client or any room, not just your own.  We'll learn more about that later." %}
+{% tip %} 
+You can actually emit to any client or any room, not just your own.  We'll learn more about that later.
+{% endtip %}
 
 ## Try It!
 
@@ -44,6 +46,8 @@ Let's see what those different formats look like.  Change the tinker code as sho
 
 The last emit shows how you can use [Formatting Codes](/tutorials/code/formatting.html) in an emit, including ansi and linebreaks.
 
-{% include tip.html content="It's highly recommended that you use the standard emit_ooc / emit_success / emit_failure methods in any custom code you write.  This provides a consistent look-and-feel for all game commands and enable log editors to easily filter out these messages." %}
+{% tip %} 
+It's highly recommended that you use the standard emit_ooc / emit_success / emit_failure methods in any custom code you write.  This provides a consistent look-and-feel for all game commands and enable log editors to easily filter out these messages.
+{% endtip %}
 
 There are also some more advanced ways to emit to people and rooms, which you can learn about in the [Emitting](/tutorials/code/emitting.html) tutorial when you're ready.

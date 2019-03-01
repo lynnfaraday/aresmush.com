@@ -9,7 +9,9 @@ tags:
 
 AresMUSH provides shortcuts for commands. Shortcuts let you use shorter versions (ex for examine) as well as aliases for commands that might have alternate names (finger --> profile, or outfit/remove --> outfit/delete).
 
-{% include note.html content="Players can create their own personal shortcuts in-game with the `shortcuts` command." %}
+{% note %} 
+Players can create their own personal shortcuts in-game with the `shortcuts` command.
+{% endnote %}
 
 Usually you won't need to mess with the shortcuts, but if you are annoyed by something not being named the way you expect, you can add one.   
 
@@ -22,7 +24,9 @@ Each plugin has its own shortcuts.  Here's an example of what shortcut config fo
 
 The main command is "cg" and it normally supports "cg/next" and "cg/prev" commands.  Our shortcuts will turn "chargen" --> "cg" and "cg/back" --> "cg/prev".
 
-{% include tip.html content="To avoid merge conflicts, you can add your own custom shortcuts to the  <code>custom.yml</code>  configuration file.  " %}
+{% tip %} 
+To avoid merge conflicts, you can add your own custom shortcuts to the  <code>custom.yml</code>  configuration file.  
+{% endtip %}
 
 ## Chaining Shortcuts
 

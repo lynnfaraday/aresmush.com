@@ -49,7 +49,9 @@ Here are the available colors:
 * Border color - Boxes and lines around things.
 * Faded text color - Hints and subtle headings, like the sidebar headings.
 
-{% include note.html content="After changing the colors, you'll usually need to do a force-refresh on your browser to make it reload the page.  This is a browser thing, not an Ares thing." %}
+{% note %} 
+After changing the colors, you'll usually need to do a force-refresh on your browser to make it reload the page.  This is a browser thing, not an Ares thing.
+{% endnote %}
 
 ## Images
 
@@ -63,7 +65,9 @@ There are three main images used by the website.  You can upload new versions on
 * box-bg.png - Used as a background behind the character profile and log pages.
 * jumbotron.png - Home page image.
 
-{% include note.html content="Some browsers (notably Chrome) are stubborn about reloading theme images right away.  You may need to clear your image cache or try viewing it in private/incognito mode to see your images right after you've uploaded them." %}
+{% note %} 
+Some browsers (notably Chrome) are stubborn about reloading theme images right away.  You may need to clear your image cache or try viewing it in private/incognito mode to see your images right after you've uploaded them.
+{% endnote %}
 
 You can use [Custom CSS](#custom-css-style), explained below, to change which images are used in each section.  For example, if you want to use different backgrounds for the profile and log pages, or a JPG instead of a PNG for the title background.
 
@@ -134,7 +138,9 @@ Beyond the colors, you can add custom CSS styles that will override the Web Port
 1. Select Admin -> Setup
 2. Edit `custom_style.scss`.
 
-{% include note.html content="After changing the custom CSS style, you'll usually need to do a force-refresh on your browser to make it reload the page.  This is a browser thing, not an Ares thing." %}
+{% note %} 
+After changing the custom CSS style, you'll usually need to do a force-refresh on your browser to make it reload the page.  This is a browser thing, not an Ares thing.
+{% endnote %}
 
 ### Changing the Font
 
@@ -149,7 +155,9 @@ Many games want to change the text font.  You can easily use a Google font by ad
 
 The web portal uses the [Bootstrap](hhttps://getbootstrap.com/docs/3.3/css/#less) website layout and the [Ember Power Select](http://ember-power-select.com/docs/styles) addon for dropdown menus.  Although you _can_ style these things with regular CSS by modifying `custom_style.scss`, it might be easier to use their own built-in variable names.  
 
-{% include note.html content="Bootstrap and Power Select variables are **not** editable through the Ares `colors.scss` file.  You have to modify the code file `ares-webportal/app/styles/advanced-colors.scss` and then re-deploy the portal." %}
+{% note %} 
+Bootstrap and Power Select variables are **not** editable through the Ares `colors.scss` file.  You have to modify the code file `ares-webportal/app/styles/advanced-colors.scss` and then re-deploy the portal.
+{% endnote %}
 
 Here are some examples of how you can set Bootstrap and Power Select styles:
 
@@ -208,7 +216,9 @@ This setting lets you customize the top navigation bar.  The home, account and a
 
 You control what appears in the CUSTOM NAV section.
 
-{% include note.html content="If you mess up your custom navigation configuration, you can cause your web portal to not load properly.  When in doubt, [ask for help](/feedback.html)." %}
+{% note %} 
+If you mess up your custom navigation configuration, you can cause your web portal to not load properly.  When in doubt, [ask for help](/feedback.html).
+{% endnote %}
 
 The basic format is:
 
@@ -233,7 +243,9 @@ For an internal page, list the page route, a display title, and an *optional* id
       title: Getting Started
       id: getting_started
 
-{% include note.html content="The 'page' entries must match Ember page routes **not** regular URLs (e.g. `wiki-page` not `/wiki/page`, or `characters` not `/chars`).  You'll find most of the routes you need already listed in the default top_navbar configuration.  If the one you want isn't listed, just [ask for help](/feedback.html)." %}
+{% note %} 
+The 'page' entries must match Ember page routes **not** regular URLs (e.g. `wiki-page` not `/wiki/page`, or `characters` not `/chars`).  You'll find most of the routes you need already listed in the default top_navbar configuration.  If the one you want isn't listed, just [ask for help](/feedback.html).
+{% endnote %}
 
 For an external page, list the URL, a display title, and an *optional* [browser tab target](https://www.w3schools.com/tags/att_a_target.asp).  For example:
 

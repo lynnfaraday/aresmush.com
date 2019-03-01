@@ -11,7 +11,9 @@ A few plugins, however, are designed to be optional.  These can be enabled and d
 
 {% include pretty_image.html file='code/plugins.png' %}
 
-{% include note.html content="Even if a plugin is not listed as optional, it's still possible to remove or replace it.  It'll just require some [code surgery](/tutorials/code/plugins.html) rather than a mouse click.  Do not attempt to remove a plugin simply by deleting its code folder.  That will most likely cause unexpected code errors." %}
+{% note %} 
+Even if a plugin is not listed as optional, it's still possible to remove or replace it.  It'll just require some [code surgery](/tutorials/code/plugins.html) rather than a mouse click.  Do not attempt to remove a plugin simply by deleting its code folder.  That will most likely cause unexpected code errors.
+{% endnote %}
 
 To enable or disable optional plugins:
 

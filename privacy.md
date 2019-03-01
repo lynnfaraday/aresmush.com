@@ -18,4 +18,6 @@ Public account information (your public profile, friends list, linked characters
 
 For the forseeable future, the AresMUSH technical staff is just Faraday.  If that ever changes, that will be announced.
 
-{% include note.html content="We have no control over what individual AresMUSH games do with information you enter <i>on their game</i>.  Game staff can see your IP address and all information you type when you connect to their game server.  We can only guard the information on AresCentral itself." %}
+{% note %} 
+We have no control over what individual AresMUSH games do with information you enter <i>on their game</i>.  Game staff can see your IP address and all information you type when you connect to their game server.  We can only guard the information on AresCentral itself.
+{% endnote %}

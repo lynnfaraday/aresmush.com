@@ -40,27 +40,37 @@ If you don't want a limit, just set them to 0 and 99 respectively.
 
 You are able to specify all of the demographics you're going to use.  
 
-{% include tip.html content="Use all-lowercase names!  These are going to be converted into code variables, and lowercase is important." %}
+{% tip %} 
+Use all-lowercase names!  These are going to be converted into code variables, and lowercase is important.
+{% endtip %}
 
-{% include tip.html content="Don't use demographic names that conflict with other commands (like 'job')." %}
+{% tip %} 
+Don't use demographic names that conflict with other commands (like 'job').
+{% endtip %}
  
 ### required_properties
 
 Any demographics you list in `required_properties` are mandatory in chargen.  
 
-{% include tip.html content="The names here must exactly match the names in the demographics list." %}
+{% tip %} 
+The names here must exactly match the names in the demographics list.
+{% endtip %}
 
 ### editable_properties
 
 Any demographics you list in `editable_properties` may be changed after chargen.  You want to allow mutable things like hair color to change, but probably not birthdate or eye color.
 
-{% include tip.html content="The names here must exactly match the names in the demographics list." %}
+{% tip %} 
+The names here must exactly match the names in the demographics list.
+{% endtip %}
 
 ### private_properties
 
 Any demographics you list in `private_properties` are secret.  They will only show up when viewed by staff or by the character themselves.
 
-{% include tip.html content="The names here must exactly match the names in the demographics list." %}
+{% tip %} 
+The names here must exactly match the names in the demographics list.
+{% endtip %}
 
 
 ## nickname_field and nickname_format
@@ -91,9 +101,13 @@ If you omit the values, the group will be freeform, allowing the player to speci
             Navy: "Join the fleet, see the worlds."
             Marines: "Semper fi."
 
-{% include tip.html content="The group names must use the capitalization you want in-game.  For example, \"Navy\" or \"CIA\"." %}
+{% tip %} 
+The group names must use the capitalization you want in-game.  For example, \"Navy\" or \"CIA\".
+{% endtip %}
 
-{% include tip.html content="Don't use group names that conflict with other commands (like 'job')." %}
+{% tip %} 
+Don't use group names that conflict with other commands (like 'job').
+{% endtip %}
 
 ## Group Shortcuts
 

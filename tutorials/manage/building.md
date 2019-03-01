@@ -11,7 +11,9 @@ tags:
 
 Scenes have to take place *somewhere*.   The Ares scene system lets you start scenes in temporary rooms, which can stand in for any location you can imagine.  You can even start a scene purely on the Web Portal, with no room at all.  But the majority of MUSH players still prefer to have a **grid** - a tangible set of **rooms** linked by **exits** for them to explore and play in.  This article describes some of the building concepts unique to Ares.  For more detailed information on specific commands, see `help building` in-game.
 
-{% include tip.html content="Despite the historical name, a Room doesn't have to represent a single room.  It's more like a virtual 'chatroom' - a place where people gather for roleplay." %}
+{% tip %} 
+Despite the historical name, a Room doesn't have to represent a single room.  It's more like a virtual 'chatroom' - a place where people gather for roleplay.
+{% endtip %}
 
 <div id="inline_toc" markdown="1">
 **Table of Contents**
@@ -48,7 +50,9 @@ You can set up areas in a parent/child hierarchy.  For example:
   * The Bronx
 * Offstage
 
-{% include tip.html content="Although there will probably be multiple IC areas on your grid, you'll usually have only one OOC area.  In the default database, it's just called \"Offstage\"." %}
+{% tip %} 
+Although there will probably be multiple IC areas on your grid, you'll usually have only one OOC area.  In the default database, it's just called \"Offstage\".
+{% endtip %}
 
 ## Special Rooms
 

@@ -14,7 +14,9 @@ tags:
 
 The first step is to get the data from the game to the website.  This is done through a *Web Request*.
 
-{% include note.html content="You can manually set character goals for testing using `ruby Character.find_one_by_name(\"Someone\").update(goals: \"Test goals\")`." %}
+{% note %} 
+You can manually set character goals for testing using `ruby Character.find_one_by_name(\"Someone\").update(goals: \"Test goals\")`.
+{% endnote %}
 
 
 For goals, we can modify the exiting character profile web request, found in `aresmush/plugins/profile/web/character_request_handler.rb`.  At the end of the file, you'll see the return value is a big hash containing all the profile data:
@@ -56,4 +58,6 @@ One more catch:  We may want our goals to be private.  That's up to you, really.
 
 Once the goals are added, type `load profile` from the game to reload the code.
 
-{% include note.html content="You won't be able to see any changes yet because we haven't modified the website itself.  We'll do that in the next step." %}
+{% note %} 
+You won't be able to see any changes yet because we haven't modified the website itself.  We'll do that in the next step.
+{% endnote %}

@@ -39,4 +39,6 @@ Ruby lets you *extend* classes in multiple files.  Even though the Character cla
 
 Database fields can take many forms - strings, numbers, lists, hashes, etc.  Fields are strings unless otherwise specified, so in the example above we've defined a string field named "goals".
 
-{% include tip.html content=" Since database fields can be defined across multiple files, most plugins prefix their db fields with the plugin name (e.g. fs3_skills) to avoid name collisions.  " %}
+{% tip %} 
+ Since database fields can be defined across multiple files, most plugins prefix their db fields with the plugin name (e.g. fs3_skills) to avoid name collisions.  
+{% endtip %}

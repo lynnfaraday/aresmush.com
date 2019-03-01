@@ -9,7 +9,9 @@ tags:
 
 Emitting messages is the most basic way that your code will communicate with the players.  Pretty much every single command will emit something to someone.
 
-{% include tip.html content="All emits accept [Formatting Codes](/tutorials/code/formatting.html)." %}
+{% tip %} 
+All emits accept [Formatting Codes](/tutorials/code/formatting.html).
+{% endtip %}
 
 <div id="inline_toc" markdown="1">
 **Table of Contents**
@@ -27,13 +29,17 @@ The **client** object allows you to emit a message to a player.  Most commonly, 
 * `client.emit_success "A message"` - Success notices show up in green.
 * `client.emit_failure "A message"` - Failure/error alerts show up in red.
 
-{% include tip.html content="A 'client' in this context means a traditional MUSH client, including telnet-based client apps or the web portal's Play screen.   Regular emits are not sent to people just browsing around the web portal.  If you want to notify them of something (like to tell them that they've received a new mail message), see Notifying Web Clients below." %}
+{% tip %} 
+A 'client' in this context means a traditional MUSH client, including telnet-based client apps or the web portal's Play screen.   Regular emits are not sent to people just browsing around the web portal.  If you want to notify them of something (like to tell them that they've received a new mail message), see Notifying Web Clients below.
+{% endtip %}
 
 ## Emitting to a Different Character's Client
 
 Sometimes you'll need to emit to a different client - for example, the *target* of a command.
 
-{% include tip.html content="You can only emit to clients, not characters.  A character is just a database object; it can't receive messages." %}
+{% tip %} 
+You can only emit to clients, not characters.  A character is just a database object; it can't receive messages.
+{% endtip %}
 
 There are a few utility methods that let emit to a client associated with a character, as long as that character is logged in:
 

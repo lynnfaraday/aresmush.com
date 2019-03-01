@@ -35,7 +35,9 @@ The channel/report command allows you to report someone being abusive on channel
 
 Individual players can activate a personal log to monitor pages from a player who's harassing them.  The page/report command can then be used to lodge a complaint, automatically including the logged pages.  See `help page` in-game.
 
-{% include tip.html content="For privacy reasons, the page log is **off** by default, and it will only log pages to/from players you specify.  It won't help with a one-time offender, but if someone is repeatedly harassing you, you can activate the log and then report them the next time." %}
+{% tip %} 
+For privacy reasons, the page log is **off** by default, and it will only log pages to/from players you specify.  It won't help with a one-time offender, but if someone is repeatedly harassing you, you can activate the log and then report them the next time.
+{% endtip %}
 
 ### Reporting Offensive Mails
 
@@ -71,7 +73,9 @@ If someone is using a proxy server, banning them can be like playing whack-a-mol
 
 To ban proxy sites, simply enable the option in the [Web Portal banned/suspect sites configuration](/tutorials/config/sites.html)
 
-{% include note.html content=" There are thousands of proxy IPs on the Internet, and the list is constantly changing.  Blocking them all is impossible, but blocking some can sometimes be better than nothing." %}
+{% note %} 
+ There are thousands of proxy IPs on the Internet, and the list is constantly changing.  Blocking them all is impossible, but blocking some can sometimes be better than nothing.
+{% endnote %}
 
 ### Monitoring Trolls
 

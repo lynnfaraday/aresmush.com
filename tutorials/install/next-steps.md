@@ -41,7 +41,9 @@ The Headwiz character is special, and should be reserved for special occasions. 
 3. Log in with Headwiz in another window.
 4. Use `role/add <your character>=admin` to grant your character admin privileges.
 
-{% include tip.html content="You can also grant the 'coder' role to let someone access the tinker command to change the code.  Just be careful, because there's no limit to what someone can do once you give them access to the code (and thus the database).  See the [roles tutorial](/tutorials/manage/roles.html) for more information." %}
+{% tip %} 
+You can also grant the 'coder' role to let someone access the tinker command to change the code.  Just be careful, because there's no limit to what someone can do once you give them access to the code (and thus the database).  See the [roles tutorial](/tutorials/manage/roles.html) for more information.
+{% endtip %}
 
 ## Game Directory Information
 

@@ -22,7 +22,9 @@ To configure the server:
 2. Edit `server.yml`.
 4. Shutdown and restart the game. (See the tutorials at [aresmush.com](http://www.aresmush.com) if you need help doing this.)
 
-{% include note.html content="Server setting changes will not take effect until the game is restarted." %}
+{% note %} 
+Server setting changes will not take effect until the game is restarted.
+{% endnote %}
 
 ## Advanced Server Options
 
@@ -65,9 +67,15 @@ You will need to use the same YOURSITE value in a moment.
 
 6. Do a force-refresh in the browser to reload the web portal.
 
+{% note %} 
+The `bin/devstart` command to run the game in dev mode will not work if HTTPS is enabled.  Instead you must run the start command manually: `bundle exec rake startares`
+{% endnote %}
+
 ### bind_address
 
 When hosting a game on a host with separate public/private IP addresses (commonly found with AWS) you'll need to tell the server to start up on the private IP.  Do this by setting the `bind_address` config option to the private IP.
 
-{% include note.html content="Remember to restart the game engine after changing this setting." %}
+{% note %} 
+Remember to restart the game engine after changing this setting.
+{% endnote %}
 

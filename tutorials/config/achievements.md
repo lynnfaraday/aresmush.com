@@ -25,7 +25,9 @@ By default, announcements are only shown to the person who received them.  You c
 
 You can configure what achievement types exist and what their icon is.  Standard types include things like community, story, and portal.  Icons come from the [Font Awesome](https://fontawesome.com/?from=io) icon library, so you'll see codes like `fa-globe` and `fa-users`.
 
-{% include tip.html content="Don't erase the existing types, because they're used by various plugins.  You can change their icons, though, and add new types." %}
+{% tip %} 
+Don't erase the existing types, because they're used by various plugins.  You can change their icons, though, and add new types.
+{% endtip %}
 
 ## custom_achievements
 
@@ -48,6 +50,8 @@ If you want some piece of code to award a custom achievement automatically, just
 
     Achievements.award_achievement(enactor, "something_special")
 
-{% include tip.html content="You don't have to check to see if the person already has the award; the Achievements plugin does that automatically." %}
+{% tip %} 
+You don't have to check to see if the person already has the award; the Achievements plugin does that automatically.
+{% endtip %}
 
 Each achievement can only be received one time, though you can define different 'levels' of the achievement with different names.  For example, joining combats has several levels: `fs3_joined_combat_1`, `fs3_joined_combat_10`, etc.

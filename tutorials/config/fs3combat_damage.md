@@ -27,7 +27,9 @@ For context, remember that -3 is a very significant modifier - it can take a Gre
 
 You can configure a bonus to give PCs on their knockout rolls.  Make this 0 if PCs have no advantage over NPCs.  
 
-{% include tip.html content="Be careful making this too high.  PCs are already harder to knock out in combat because they (generally) have higher composure scores and have luck points to burn.  Give them too much of a bonus and you can make them nigh-invincible." %}
+{% tip %} 
+Be careful making this too high.  PCs are already harder to knock out in combat because they (generally) have higher composure scores and have luck points to burn.  Give them too much of a bonus and you can make them nigh-invincible.
+{% endtip %}
 
 ## damage_table
 

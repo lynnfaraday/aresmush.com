@@ -52,7 +52,9 @@ FS3 is designed to be configured for individual games without needing to modify 
 
 FS3 has a slew of shared helper methods, in separate files organized by topic:  rolls, chargen, xp, etc.   The helpers actually contain the meat of the system.  Most of the commands are actually prety bare-bones, doing little more than parsing args and calling helpers.
 
-{% include tip.html content="Having so many helper methods may be overwhelming at first, but dig into it a bit and hopefully you'll find that having short, focused helpers makes the code easier to understand. " %}
+{% tip %} 
+Having so many helper methods may be overwhelming at first, but dig into it a bit and hopefully you'll find that having short, focused helpers makes the code easier to understand. 
+{% endtip %}
 
 ### Ability Types
 
@@ -98,7 +100,9 @@ Less commonly, you might want to emit only to the combat organizer (like when se
     FS3Combat.emit_to_organizer(combat, message, npcmaster_text)
     FS3Combat.emit_to_combatant(combatant, message)
 
-{% include tip.html content="Since combatants may be NPCs or PCs offline, it's generally better to show the messages to everyone in combat rather than individual combatants." %}
+{% tip %} 
+Since combatants may be NPCs or PCs offline, it's generally better to show the messages to everyone in combat rather than individual combatants.
+{% endtip %}
 
 
 ### Database Models
@@ -126,7 +130,9 @@ Each action must implement several methods:
 * `print_action_short` - Prints the intended action in a short format suitable for the combat HUD.
 * `resolve` - Resolves the attack when a new turn is triggered.  Does damage, updates ammo, imposes penalties, or whatever other effects the action has.  Returns an array of messages with the results of the action.  These will be emitted to the combat.
 
-{% include tip.html content="In addition to being called when the action is first set,  <code>prepare</code>  is called whenever the combat HUD is viewed and when the action is performed.  If at any time the character's action is no longer valid, the system will reset it." %}
+{% tip %} 
+In addition to being called when the action is first set,  <code>prepare</code>  is called whenever the combat HUD is viewed and when the action is performed.  If at any time the character's action is no longer valid, the system will reset it.
+{% endtip %}
 
 #### Action Example
 

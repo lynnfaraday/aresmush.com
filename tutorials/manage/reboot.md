@@ -17,7 +17,9 @@ In the game:
 
 > Your operating system is indicating that your server needs to be rebooted - probably to finish installing automatic updates.  Please restart the server (not just the game) as soon as you can.  You may encounter performance or memory issues until this is done.
 
-{% include note.html content="It is highly recommended that you reboot your system as soon as possible when you see this message.  Not only will this get you the necessary security updates faster, but it will avoid lag and other performance issues." %}
+{% note %} 
+It is highly recommended that you reboot your system as soon as possible when you see this message.  Not only will this get you the necessary security updates faster, but it will avoid lag and other performance issues.
+{% endnote %}
 
 ## How to Reboot
 
