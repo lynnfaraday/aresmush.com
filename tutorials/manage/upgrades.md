@@ -19,10 +19,6 @@ At some point there will be a new version of Ares code available and you'll want
 {:toc}
 </div>
 
-## Important Note About Downgrades
-
-{% include note.html content="Ares has a lot of support for **upgrades** but not for *downgrades*.  If you ever find yourself needing to revert back to a previous version, you may need to make some custom code tweaks to prevent data loss (since database fields may be different between versions).  Unless you're super-comfortable with the code, it's probably best to [ask for help](/feedback.html) before attempting this. " %}
-
 ## Updating Your Own Fork
 
 If you are making custom code changes and have your own GitHub fork, you'll need to update your fork to get the latest code from the main Ares repository. See [upgrading forks](/tutorials/code/git.html#upgrade).
@@ -33,10 +29,10 @@ Many version upgrades can be done while the game is still running.
 
 {% include tip.html content="The version's release notes will advise you if a restart is required.  If so, follow the instructions in **Upgrade With a Restart** instead." %}
 
-1. Type `upgrade` to commit any local changes and get the latest game code from GitHub.  If you see any CONFLICT notices from the upgrade, you'll need to edit the code on the server shell as explained in Resolving Conflicts below.
-2. Type `load all`  to reload the code and configuration.
-3. Type `migrate` to run any database updates.
-4. Type `website/deploy` to re-deploy the website.
+1. Type `upgrade` in-game to commit any local changes and get the latest game code from GitHub.  If you see any CONFLICT notices from the upgrade, you'll need to edit the code on the server shell as explained in Resolving Conflicts below.
+2. Once any conflicts have been resolved, type `upgrade/finish` in-game to complete the upgrade.
+
+{% include tip.html content="The <code>upgrade/finish</code> command runs <code>load all</code> (to reload the code modules), <code>migrate</code> (to update your database and configuration files to the latest versions), and <code>website/deploy</code> (to update the website).  You can also run these three commands independently. "}
 
 ## Upgrade With a Restart
 
@@ -45,8 +41,13 @@ Some version upgrades require a game restart, particularly if game engine change
 1. [Shut down the game](/tutorials/manage/shutdown.html) using the `shutdown` command in-game or the web portal admin screen.
 2. Connect to the [server shell](/tutorials/install/server-shell.html) and change to the `aresmush` folder.
 3. Use git commands or the `bin/upgrade` script to commit any local changes and get the latest game code from GitHub.  If you see any CONFLICT notices from the upgrade, see Resolving Conflicts below.
-4. Type `bin/migrate` to perform any necessary database migrations.
-5. Type `bin/startares` to restart the game.
+4. Type `bin/startares` to restart the game.
+
+
+## Important Note About Downgrades
+
+{% include note.html content="Ares has a lot of support for **upgrades** but not for *downgrades*.  If you ever find yourself needing to revert back to a previous version, you may need to make some custom code tweaks to prevent data loss (since database fields may be different between versions).  Unless you're super-comfortable with the code, it's probably best to [ask for help](/feedback.html) before attempting this. " %}
+
 
 ## Resolving Conflicts
 

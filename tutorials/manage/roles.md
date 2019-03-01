@@ -55,7 +55,7 @@ Let's say you wanted to create a more limited admin role for apps staff.  You wa
 3. Update the jobs config to add the `app_staff` role to the APP category.  See the [jobs configuration tutorial](/tutorials/config/jobs.html) for details.
 4. Set permissions on the Apps forum using `forum/readroles <roles>` and `forum/writeroles <roles>`.
 
-{% include note.html content="Numerous commands are locked to characters with the 'approved' role as a defense against trolls. Full-fledged admins automatically count as approved, but you'll need to assign the 'approved' role to your other staff manually using <code>role/add <name>=approved</code>.  You should also mark them as player bits with the <code>playerbit</code> command so they don’t show up on the character gallery." %}
+{% include note.html content="Numerous commands are locked to characters with the 'approved' role as a defense against trolls. Full-fledged admins automatically count as approved, but you'll need to assign the 'approved' role to your other staff manually using <code>role/add &lt;name&gt;=approved</code>.  You should also mark them as player bits with the <code>playerbit</code> command so they don’t show up on the character gallery." %}
   
 ## Using Permissions in Code
 
