@@ -25,7 +25,7 @@ Each plugin has its own shortcuts.  Here's an example of what shortcut config fo
 The main command is "cg" and it normally supports "cg/next" and "cg/prev" commands.  Our shortcuts will turn "chargen" --> "cg" and "cg/back" --> "cg/prev".
 
 {% tip %} 
-To avoid merge conflicts, you can add your own custom shortcuts to the  <code>custom.yml</code>  configuration file.  
+To avoid merge conflicts, you can add your own custom shortcuts to the  `custom.yml`  configuration file.  
 {% endtip %}
 
 ## Chaining Shortcuts

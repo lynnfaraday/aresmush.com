@@ -60,7 +60,7 @@ Then we check that the die step is valid.  We can use one of the helper methods 
       end
 
 {% tip %} 
-Methods that return true/false often have a ? on the end, like  <code>is_valid_die_step?</code> .  This is not universal, but you'll see it a lot.
+Methods that return true/false often have a ? on the end, like  `is_valid_die_step?` .  This is not universal, but you'll see it a lot.
 {% endtip %}
 
 There's a similar check to make sure the attribute name is valid, since Cortex has a fixed list.

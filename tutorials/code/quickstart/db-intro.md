@@ -65,6 +65,6 @@ Once you have the database object, you can use the `update` method to change its
     end
 
 {% note %} 
-Just setting the class attribute (like <code>char.alias = 'guest'</code>) will change the local copy of the object, but it doesn't update the database.  Always call <code>update</code> to save database changes.
+Just setting the class attribute (like `char.alias = 'guest'`) will change the local copy of the object, but it doesn't update the database.  Always call `update` to save database changes.
 {% endnote %}
 

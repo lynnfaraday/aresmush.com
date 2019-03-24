@@ -32,7 +32,7 @@ Whereas this version will only notify people who are on the mail message's "to" 
       end
 
 {% tip %} 
-If you're selecting particular characters, it's best to always check  <code>char && </code>  before your actual selection.  Remember that there can be clients without a character if they're sitting on the login screen or not logged into the Web Portal.   You don't want to get nil exceptions.
+If you're selecting particular characters, it's best to always check  `char && `  before your actual selection.  Remember that there can be clients without a character if they're sitting on the login screen or not logged into the Web Portal.   You don't want to get nil exceptions.
 {% endtip %}
 
 ## Event Types

@@ -33,7 +33,7 @@ There are a variety of ways to connect to the server shell depending on your OS 
 
 On Windows 10 and up, you can connect using Windows Powershell:
 
-1. Open a Powershell prompt.
+1. Open a Powershell window.  (You can use the Windows search to find the Powershell application.)
 2. Type `ssh user@yourgame.somewhere.com`.
 
 ### Using Mac Terminal

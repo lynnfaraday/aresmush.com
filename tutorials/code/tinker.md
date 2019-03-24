@@ -10,7 +10,7 @@ tags:
 Ares doesn't allow you to alter the game code from the MU client window, but sometimes you need to do things that aren't covered by an existing command - find all characters over 30 years old, update the faction on a bunch of people at once, etc.  There's no need to create specific commands for this sort of tinkering, especially if you're unlikely to do that specific task ever again.  In Ares, you can use the `ruby` command to execute simple code blocks, or the `tinker` command to perform more involved processing.
 
 {% tip %} 
-Not all admins can use the tinker/ruby commands - only characters with the  <code>coder</code>  role.  This is a security feature, because giving someone access to run arbitrary code essentially gives them the keys to the kingdom.  They could do literally anything with the database.
+Not all admins can use the tinker/ruby commands - only characters with the  `coder`  role.  This is a security feature, because giving someone access to run arbitrary code essentially gives them the keys to the kingdom.  They could do literally anything with the database.
 {% endtip %}
 
 <div id="inline_toc" markdown="1">
@@ -37,7 +37,7 @@ Tinkering involves three steps:
 3. Type `tinker` in-game to run the code.
 
 {% tip %} 
-Coders who prefer to edit code in the server shell can edit  <code>aresmush/plugins/tinker/commands/tinker_cmd.rb</code>  then reload the code using  <code>load tinker</code>  in-game.
+Coders who prefer to edit code in the server shell can edit  `aresmush/plugins/tinker/commands/tinker_cmd.rb`  then reload the code using  `load tinker`  in-game.
 {% endtip %}
 
 ## Tinkering Examples

@@ -60,7 +60,7 @@ Let's say you wanted to create a more limited admin role for apps staff.  You wa
 4. Set permissions on the Apps forum using `forum/readroles <roles>` and `forum/writeroles <roles>`.
 
 {% note %} 
-Numerous commands are locked to characters with the 'approved' role as a defense against trolls. Full-fledged admins automatically count as approved, but you'll need to assign the 'approved' role to your other staff manually using <code>role/add &lt;name&gt;=approved</code>.  You should also mark them as player bits with the <code>playerbit</code> command so they don’t show up on the character gallery.
+Numerous commands are locked to characters with the 'approved' role as a defense against trolls. Full-fledged admins automatically count as approved, but you'll need to assign the 'approved' role to your other staff manually using `role/add <name>=approved`.  You should also mark them as player bits with the `playerbit` command so they don’t show up on the character gallery.
 {% endnote %}
   
 ## Using Permissions in Code

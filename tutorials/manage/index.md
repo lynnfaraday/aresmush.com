@@ -9,7 +9,7 @@ These articles will help you administer/manage an Ares game.  It assumes your ga
 {% include tutorial_warning.html %}
 
 {% tip %} 
-In addition to these overview articles, you'll find help files on specific admin commands in-game under the  <code>~admin~</code>  sections of the help files.  For example:   <code>help manage apps</code> .
+In addition to these overview articles, you'll find help files on specific admin commands in-game under the  `~admin~`  sections of the help files.  For example:   `help manage apps` .
 {% endtip %}
 
 ## Game Administration

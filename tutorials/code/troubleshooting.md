@@ -76,3 +76,10 @@ Most of the time, problems on the web portal are actually problems in the web re
 
 * Try a [force-refresh](https://en.wikipedia.org/wiki/Wikipedia:Bypass_your_cache) in your web browser.  
 * Troubleshoot using the web browser's debugging tools.  In Chrome, for instance, you can open `View -> Developer -> Developer Tools` to see the Javascript console, which will tell you the error.
+
+## Web Sockets Not Working
+
+If you get a warning saying "The website is not receiving live updates from the game", it means that the websocket connection allowing real-time updates between the web page and the game isn't working.  Regular page requests will be fine, but 'live' updates like scene poses or alerts about new mail messages won't come through.
+
+* Try a [force-refresh](https://en.wikipedia.org/wiki/Wikipedia:Bypass_your_cache) in your web browser.  
+* Troubleshoot using the web browser's debugging tools.  In Chrome, for instance, you can open `View -> Developer -> Developer Tools` to see the Javascript console, which will tell you the error.

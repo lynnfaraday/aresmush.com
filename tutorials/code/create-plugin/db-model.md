@@ -44,7 +44,7 @@ First we have the class definition.  Inheriting from `Ohm::Model` is what makes 
     end
 
 {% tip %} 
-Ohm is the database library that helps us talk to the database, and  <code>< Ohm::Model</code>  is a special bit of Ruby code that lets us do things like  <code>attribute :name</code>  to define a database field.  We didn't see Ohm::Model in the previous examples because we were adding to an existing model class (Character) defined by the engine.  Here, though, we're creating a brand new one.  You can learn more about the Ohm library in the [advanced database tutorial](/tutorials/code/database.html) when you're ready.  
+Ohm is the database library that helps us talk to the database, and  `< Ohm::Model`  is a special bit of Ruby code that lets us do things like  `attribute :name`  to define a database field.  We didn't see Ohm::Model in the previous examples because we were adding to an existing model class (Character) defined by the engine.  Here, though, we're creating a brand new one.  You can learn more about the Ohm library in the [advanced database tutorial](/tutorials/code/database.html) when you're ready.  
 {% endtip %}
 
 ### Model Attributes

@@ -49,7 +49,7 @@ If your database isn't gigantic, you can also use the Ruby `select` statement to
     end
 
 {% tip %} 
-It is common to use  <code>select</code>  and  <code>map</code>  together like this.  Select will find a bunch of database objects, and map will get just the field you need from them (in this case the name).
+It is common to use  `select`  and  `map`  together like this.  Select will find a bunch of database objects, and map will get just the field you need from them (in this case the name).
 {% endtip %}
 
 ### Game Model
@@ -78,7 +78,7 @@ Many database properties have specialized update methods because their data stor
     Demographics.set_group(char, "Faction", "Navy")
 
 {% note %} 
-Do not attempt to change database properties just by updating the object (e.g. <code>char.name = \"Harry\"</code>)  This changes the property on the <b>object</b> but does not actually update the database.   You can legitimately use this method to change multiple properties as a batch, but you have to do <code>char.save</code> at the end to commit the changes to the database.
+Do not attempt to change database properties just by updating the object (e.g. `char.name = \"Harry\"`)  This changes the property on the <b>object</b> but does not actually update the database.   You can legitimately use this method to change multiple properties as a batch, but you have to do `char.save` at the end to commit the changes to the database.
 {% endnote %}
 
 ## Finder Helpers
@@ -130,7 +130,7 @@ The MailMessage model has a `reference` to its recipient:
     end
 
 {% tip %} 
-Notice that you need to specify the class name that the reference refers to, including the full module name, e.g.   <code>AresMUSH::ModelClassName</code> .
+Notice that you need to specify the class name that the reference refers to, including the full module name, e.g.   `AresMUSH::ModelClassName` .
 {% endtip %}
 
 If you want to be able to easily get all mail for a characer, you also need a corresponding reference on the character model.  Because there can be multiple mail messages for a character, we use a `collection`:
@@ -150,7 +150,7 @@ It's also possible to have a 1:1 relationship between database models.  For exam
     end
 
 {% tip %} 
-Collections are linked automatically, so  <code>MailMessage.new(character: some_char)</code>  will automatically add that message to the character's mail collection.  1:1 references must be manually set both ways; e.g.:
+Collections are linked automatically, so  `MailMessage.new(character: some_char)`  will automatically add that message to the character's mail collection.  1:1 references must be manually set both ways; e.g.:
 {% endtip %}
 
     log = SceneLog.new(scene: some_scene)

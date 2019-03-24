@@ -39,5 +39,5 @@ After saving, go back to your MUSH client (logged in with your coder character) 
 We're going to continue using the tinker command for the remaining exercises in this tutorial.  There's a more in-depth [Tinkering Tutorial](/tutorials/code/tinker.html) if you want to learn more about tinkering when you've finished with the Quickstart.
 
 {% tip %} 
-If you get an error when saving or executing your code, check to make sure you've typed it exactly as indicated in each exercise.  Usually errors result from misplaced braces  <code>{}</code>  or missing  <code>end</code>  statements.
+If you get an error when saving or executing your code, check to make sure you've typed it exactly as indicated in each exercise.  Usually errors result from misplaced braces  `{}`  or missing  `end`  statements.
 {% endtip %}

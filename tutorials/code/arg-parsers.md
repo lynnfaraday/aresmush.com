@@ -31,7 +31,7 @@ Arg converters alter the format of the argument string - changing it to a number
 * `titlecase_list_arg` - Splits an argument into an array and strips spaces and formats each entry like a title.  Splits on spaces by default, but you can pass any delimeter.
 
 {% tip %} 
-All of the arg converters are safe to use even if the arg is <code>nil</code>.  They will just return <code>nil</code>.
+All of the arg converters are safe to use even if the arg is `nil`.  They will just return `nil`.
 {% endtip %}
 
     def parse_args

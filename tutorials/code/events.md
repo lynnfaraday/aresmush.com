@@ -91,7 +91,7 @@ You can find details about the data in these events by looking in the code file 
     end
 
 {% tip %} 
-Event objects always pass database **ids**, not actual database objects to avoid race conditions.  You can look up the character in the handler using  <code>Character[event.char_id]</code> .
+Event objects always pass database **ids**, not actual database objects to avoid race conditions.  You can look up the character in the handler using  `Character[event.char_id]` .
 {% endtip %}
 
 ## Plugin Events

@@ -37,7 +37,7 @@ The version's release notes will advise you if a restart is required.  If so, fo
 2. Once any conflicts have been resolved, type `upgrade/finish` in-game to complete the upgrade.
 
 {% tip %}
-The <code>upgrade/finish</code> command runs <code>load all</code> (to reload the code modules), <code>migrate</code> (to update your database and configuration files to the latest versions), and <code>website/deploy</code> (to update the website).  You can also run these three commands independently.
+The `upgrade/finish` command runs `load all` (to reload the code modules), `migrate` (to update your database and configuration files to the latest versions), and `website/deploy` (to update the website).  You can also run these three commands independently.
 {% endtip %}
 
 ## Upgrade With a Restart

@@ -131,7 +131,7 @@ Each action must implement several methods:
 * `resolve` - Resolves the attack when a new turn is triggered.  Does damage, updates ammo, imposes penalties, or whatever other effects the action has.  Returns an array of messages with the results of the action.  These will be emitted to the combat.
 
 {% tip %} 
-In addition to being called when the action is first set,  <code>prepare</code>  is called whenever the combat HUD is viewed and when the action is performed.  If at any time the character's action is no longer valid, the system will reset it.
+In addition to being called when the action is first set,  `prepare`  is called whenever the combat HUD is viewed and when the action is performed.  If at any time the character's action is no longer valid, the system will reset it.
 {% endtip %}
 
 #### Action Example

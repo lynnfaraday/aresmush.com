@@ -38,7 +38,7 @@ You should use the 'ares' user for everything from now on, reserving the root us
 This will take several minutes.  There will be a lot of spam, but eventually it will say it's done.
 
 {% note %} 
-If you already have a GitHub fork, you can pass the HTTPS clone urls to the install script: `./install &lt;game code clone URL> &lt;Web Portal clone URL>`   If you don't have a GitHub fork (or don't know what that even means) then just leave off those URLs.
+If you already have a GitHub fork, you can pass the HTTPS clone urls to the install script: `./install <game code clone URL> <Web Portal clone URL>`   If you don't have a GitHub fork (or don't know what that even means) then just leave off those URLs.
 {% endnote %}
 
 ## Game Settings

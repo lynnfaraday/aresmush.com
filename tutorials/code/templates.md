@@ -24,7 +24,7 @@ A template consists of two parts:
 2. The **ERB Template**, which uses Ruby's [ERB Template system](http://www.stuartellis.name/articles/erb/) to mingle text with embedded Ruby code to control the actual display. (Similar to embedded Python for those familiar with that.)
 
 {% tip %} 
-Template files are located in a 'templates' folder within each plugin - for example <code>aresmush/plugins/describe/templates/character.erb</code>.
+Template files are located in a 'templates' folder within each plugin - for example `aresmush/plugins/describe/templates/character.erb`.
 {% endtip %}
 
 For example, here is a sample of the ERB file for the character description template:
@@ -41,7 +41,7 @@ For example, here is a sample of the ERB file for the character description temp
 ```
 
 {% tip %} 
-Anything inside <code><%= %></code> brackets is evaluated as code by the template engine.
+Anything inside `<%= %>` brackets is evaluated as code by the template engine.
 {% endtip %}
 
 Here's what that would look like in a MU client:
@@ -163,7 +163,7 @@ Use the template
     client.emit template.render
 
 {% tip %} 
-In this example, our template needs only a single character, but other templates may need other parameters.  Just make sure that the list you define in your template renderer's initialize method matches what you pass in the <code>new</code> call when you create it.
+In this example, our template needs only a single character, but other templates may need other parameters.  Just make sure that the list you define in your template renderer's initialize method matches what you pass in the `new` call when you create it.
 {% endtip %}
 
 ## Common Formatting Helpers
@@ -181,7 +181,7 @@ All template renderers have some common formatting helpers available.
 The padding char is optional in left/right/center, and defaults to a space.
 {% endtip %}
 
-Some of the template renderers share common helpers with another template.  You'll see this when the renderer has a line like  <code>include CharDescTemplateFields</code>  near the top of the file.  For example, the description and glance templates share some helpers from  <code>plugins/describe/char_desc_template_fields.rb</code> .  
+Some of the template renderers share common helpers with another template.  You'll see this when the renderer has a line like  `include CharDescTemplateFields`  near the top of the file.  For example, the description and glance templates share some helpers from  `plugins/describe/char_desc_template_fields.rb` .  
 
 {% tip %} 
 If you don't see the helper you're looking for in the template renderer, look for a shared helper file.

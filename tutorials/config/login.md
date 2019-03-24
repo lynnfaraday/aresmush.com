@@ -39,7 +39,7 @@ To configure the Terms of Service:
 The TOS can contain all the usual MUSH formatting codes, but you don't need to put in %r for linebreaks.  The game will respect what's in the file.
 
 {% tip %} 
-If you ever make important changes to the terms of service, you probably want to force existing characters to read them again.  To do this, use the  <code>tos/reset</code>  command in-game.  Everyone will be forced to acknowledge the new terms of service the next time they log in.
+If you ever make important changes to the terms of service, you probably want to force existing characters to read them again.  To do this, use the  `tos/reset`  command in-game.  Everyone will be forced to acknowledge the new terms of service the next time they log in.
 {% endtip %}
 
 ## Other Configuration

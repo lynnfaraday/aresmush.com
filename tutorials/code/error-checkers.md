@@ -64,7 +64,7 @@ The first universal error checker makes sure that all required args are specifie
     end
 
 {% tip %} 
-You can have some args be required and others not; just change which ones appear in the required_args list.  If none are required, you may omit  <code>required_args</code>  entirely.
+You can have some args be required and others not; just change which ones appear in the required_args list.  If none are required, you may omit  `required_args`  entirely.
 {% endtip %}
 
 ### Login Checker

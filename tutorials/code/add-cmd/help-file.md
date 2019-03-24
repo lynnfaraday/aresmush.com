@@ -63,5 +63,5 @@ The metadata is in YAML format, which is a simple markup language using a `field
 After the metadata (which is set off by `---` lines) comes the actual help text.  Like a lot of Ares text, this uses [Markdown](https://daringfireball.net/projects/markdown/syntax) format.  Markdown is nice because it can be shown in both text-only format (for the MU client) and web format (for the web portal).  If you've ever used web forum or wiki formatting codes, you've probably used Markdown.
 
 {% tip %} 
-The tick marks around \ <code>goals\</code>  are the standard way to highlight command text in help files.
+The tick marks around \ `goals\`  are the standard way to highlight command text in help files.
 {% endtip %}

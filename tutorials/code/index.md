@@ -133,7 +133,7 @@ It's suggested that you refer to these as you need them rather than trying to le
 
 ### Web Portal
 
-* [Web Portal Overview](/tutorials/code/web-portal)
+* [Web Portal Overview](/tutorials/code/web-portal.html)
 * [Web Portal Routes](/tutorials/code/web-routes.html)
 * [Web Portal Templates](/tutorials/code/web-templates.html)
 * [Web Portal Controllers](/tutorials/code/web-controllers.html)
@@ -165,3 +165,4 @@ It's suggested that you refer to these as you need them rather than trying to le
 * [Using Git](/tutorials/code/git.html) - Using the GitHub version control system to manage your code.
 * [Setting up a Development System](/tutorials/code/dev-tools.html) - Setting up a system to code and test.
 * [Running Tests](/tutorials/code/tests.html) - Running the automated unit tests.
+* [Telnet Extensions](/tutorials/code/telnet.html) - About telnet extensions and MCP.

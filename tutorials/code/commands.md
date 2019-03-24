@@ -56,7 +56,7 @@ Most plugins have a case statement based on the root command, and ten a second c
     end
 
 {% tip %} 
-A few commands check the args too, especially commands that use a shortcut to make both singular and plural versions of the commands work the same.  In the example above, there's a shortcut (not shown) that converts events -> event.  So if the command root is  <code>event</code>  and there are no arguments, it uses EventsCmd to show the events list.  If there is an argument, then it assumes you're doing <code>event 1</code>.
+A few commands check the args too, especially commands that use a shortcut to make both singular and plural versions of the commands work the same.  In the example above, there's a shortcut (not shown) that converts events -> event.  So if the command root is  `event`  and there are no arguments, it uses EventsCmd to show the events list.  If there is an argument, then it assumes you're doing `event 1`.
 {% endtip %}
 
 ## Command Class

@@ -44,11 +44,36 @@ Here are instructions for setting up your favorite MUSH client to work with Ares
 
 BeipMU won't do auto-detection of character encoding, so you'll have to set it up manually.
 
-Connection --> Connect --> highlight the world --> Text Encoding --> UTF-8
+Connection -> Connect -> highlight the world -> Text Encoding -> UTF-8
 
 ### Editing
 
-??? Please let me know if someone figures out how to set this up.
+To enable the editing feature, you'll need to set up a trigger like the following under Options->Triggers.
+
+```
+Version=281
+Connections
+{
+  Triggers
+  {
+    {
+      Description="FugueEdit / AresMUSH edit catcher"
+      FindString
+      {
+        MatchText="^FugueEdit > (.+)"
+        RegularExpression=true
+        StartsWith=true
+      }
+      Gag.Active=true
+      Send
+      {
+        Active=true
+        Send="/setinput \\1"
+      }
+    }
+  }
+}
+```
 
 <a name="potato" />
 

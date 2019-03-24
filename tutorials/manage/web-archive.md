@@ -21,5 +21,5 @@ To run the exporter, go to the `aresmush` folder on the Server Shell and type:
 This generates raw HTML files in the `wiki_export` folder.  You can use FTP to download the files and browse them on your local PC.  You can even host it on a static web server, or create a ZIP file and put it somewhere for your players to download for their future reading enjoyment.
 
 {% tip %} 
-If you've made extensive changes to the web portal styles and/or templates, you may need to tweak the code in  <code>aresmush/plugins/website/wiki_exporter.rb</code>  to get the exported files to look similar to your web portal.
+If you've made extensive changes to the web portal styles and/or templates, you may need to tweak the code in  `aresmush/plugins/website/wiki_exporter.rb`  to get the exported files to look similar to your web portal.
 {% endtip %}

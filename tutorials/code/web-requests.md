@@ -30,7 +30,7 @@ Only one plugin may handle a web request.
 
 ## Handling Web Requests
 
-If a plugin wants to handle a web request, it must implement the `get_web_requst_handler` method in its plugin module.  This method is given a request object and  and can return either nil (if the plugin doesn't want the request) or a request handler class (if it does).
+If a plugin wants to handle a web request, it must implement the `get_web_request_handler` method in its plugin module.  This method is given a request object and  and can return either nil (if the plugin doesn't want the request) or a request handler class (if it does).
 
     def self.get_web_request_handler(request)
        case request.cmd

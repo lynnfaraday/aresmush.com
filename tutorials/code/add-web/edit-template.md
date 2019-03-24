@@ -43,5 +43,5 @@ The controller has as `buildQueryDataForChar` method that gets activated when th
             }
 
 {% tip %} 
-This controller uses a helper method to build its data, which is common when the data is complex.  In simpler controllers, you might see the data plugged right into the  <code>save</code>  action function.
+This controller uses a helper method to build its data, which is common when the data is complex.  In simpler controllers, you might see the data plugged right into the  `save`  action function.
 {% endtip %}
