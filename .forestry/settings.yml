@@ -5,7 +5,7 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: includes
+  path: _includes
   label: Includes
   create: documents
   match: "**/*"
