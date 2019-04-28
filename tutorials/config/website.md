@@ -64,6 +64,7 @@ There are three main images used by the website.  You can upload new versions on
 * background.png - Used as a background image across the page title/header area.
 * box-bg.png - Used as a background behind the character profile and log pages.
 * jumbotron.png - Home page image.
+* favicon.ico and favicon-active.ico - The little icon that appears in a browser tab to identify the site.  There are a number of [free generators](https://favikon.com/) that can make one from your image of choice.  The 'active' version should either change colors or have a little indicator on it to indicate new activity.  If you need help doing that, feel free to [ask](/feedback.html).
 
 {% note %} 
 Some browsers (notably Chrome) are stubborn about reloading theme images right away.  You may need to clear your image cache or try viewing it in private/incognito mode to see your images right after you've uploaded them.
@@ -150,6 +151,11 @@ Many games want to change the text font.  You can easily use a Google font by ad
     body {    
       font-family: 'Roboto', sans-serif;
     }
+    
+
+### Using a Dark Theme
+
+The default Ares theme is designed for dark text on a light background.  If you want to use a light-on-dark theme for your web portal, you will need to adjust the CSS for various controls.  You can find some styles to get you started in the file `aresmush/install/game.distr/styles/dark_theme.scss`.  Just copy those styles to your `custom_style.scss` file and set the base colors at the top of the file.  Then adjust as desired.
 
 ### Advanced Color Variables
 
@@ -217,7 +223,7 @@ This setting lets you customize the top navigation bar.  The home, account and a
 You control what appears in the CUSTOM NAV section.
 
 {% note %} 
-If you mess up your custom navigation configuration, you can cause your web portal to not load properly.  When in doubt, [ask for help](/feedback.html).
+If you mess up your custom navbar, your web portal will not load properly.  You can restore it to the defaults using the `config/restore website.yml` command in-game.  When in doubt, [ask for help](/feedback.html).
 {% endnote %}
 
 The basic format is:

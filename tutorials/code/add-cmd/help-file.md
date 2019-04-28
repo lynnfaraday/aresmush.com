@@ -23,17 +23,17 @@ In this tutorial, we're going to start by creating the final file, and then take
 
 Create a file in `aresmush/plugins/custom/help/en` named `goals.md`.  Give it the following text:
 
-      ---
-      toc: Character Creation
-      summary: Setting goals.
-      ---
-      # Goals
-      This command lets you record your character's goals.  Goals are only visible to yourself and staff, and may be changed at any time.
+    ---
+    toc: Character Creation
+    summary: Setting goals.
+    ---
+    # Goals
+    This command lets you record your character's goals.  Goals are only visible to yourself and staff, and may be changed at any time.
     
-      `goals` - Show you own goals.
-      `goals/set <goals>` - Sets your goals.
+    `goals` - Show you own goals.
+    `goals/set <goals>` - Sets your goals.
     
-      Characters with the "view_bgs" permission can view goals using `goals <name>`.
+    Characters with the "view_bgs" permission can view goals using `goals <name>`.
 
 Type `load custom` in game to reload the custom plugin and register the new help file.
 

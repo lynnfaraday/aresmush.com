@@ -48,32 +48,8 @@ Connection -> Connect -> highlight the world -> Text Encoding -> UTF-8
 
 ### Editing
 
-To enable the editing feature, you'll need to set up a trigger like the following under Options->Triggers.
+To enable the editing feature, you'll need to go to Options->Triggers and import the following file as an edit trigger: [Beip Edit Trigger](/beip_edit.txt).
 
-```
-Version=281
-Connections
-{
-  Triggers
-  {
-    {
-      Description="FugueEdit / AresMUSH edit catcher"
-      FindString
-      {
-        MatchText="^FugueEdit > (.+)"
-        RegularExpression=true
-        StartsWith=true
-      }
-      Gag.Active=true
-      Send
-      {
-        Active=true
-        Send="/setinput \\1"
-      }
-    }
-  }
-}
-```
 
 <a name="potato" />
 

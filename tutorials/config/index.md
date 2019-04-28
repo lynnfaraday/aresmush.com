@@ -78,7 +78,6 @@ These are advanced customization settings that most games won't need to alter.
 * [Configuring FS3 Combat Damage](/tutorials/config/fs3combat_damage.html)
 * [Configuring FS3 Combat NPCs](/tutorials/config/fs3combat_npcs.html)
 
-
 ## Other Config
 
 A variety of other settings exist, but the defaults will work well for most games.
@@ -95,6 +94,7 @@ A variety of other settings exist, but the defaults will work well for most game
 * [Configuring the Idle System](/tutorials/config/idle.html)
 * [Configuring the Jobs System](/tutorials/config/jobs.html)
 * [Configuring the Login System](/tutorials/config/login.html)
+* [Configuring the Mail System](/tutorials/config/mail.html)
 * [Configuring the OOC Time System](/tutorials/config/ooctime.html)
 * [Configuring the Page System](/tutorials/config/page.html)
 * [Configuring the Places System](/tutorials/config/places.html)
@@ -123,3 +123,4 @@ These configuration options will probably not need to be changed unless your ser
 * [Configuring Cron Jobs](/tutorials/code/cron.html) - Setting up tasks to run periodically.
 * [Understanding YAML](/tutorials/code/yaml.html) - All about YAML configuration files.
 * [Troubleshooting YAML](/tutorials/code/troubleshooting-yaml.html) - Dealing with YAML configuration problems.
+* [Recovering from Config Errors](/tutorials/config/config-errors.html) - Rolling back defaults if your config gets messed up.

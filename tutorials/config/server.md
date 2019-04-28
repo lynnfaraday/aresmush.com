@@ -32,6 +32,10 @@ These advanced server options will not be needed by every game.
 
 ### HTTPS Web Portal
 
+{% warning %} 
+These instructions apply to games **installed from** Beta 45 and higher.  If your game was installed pre-45 (even if it's been upgraded since), [contact Faraday](/feedback.html) for a few extra steps you'll need.
+{% endwarning %}
+
 If you want to have your web portal use HTTPS instead of HTTP, you will need to first install a security certificate.  [CertBot](https://certbot.eff.org/) is a really easy way to do this.  
 
 If you're using the Ares default setup of Ubuntu/nginx, go to CertBot's website and select 'nginx' and your server's version of Ubuntu (usually either 16.04 or 18.04; you will see the version printed in your server shell when you log in.) 
@@ -61,14 +65,16 @@ You will need to use the same YOURSITE value in a moment.
   - Set `certificate_file_path` to `/home/ares/certs/fullchain.pem`.
   - Set `private_key_file_path` to `/home/ares/certs/privkey.pem`.
 
-4. Restart the game engine.  See [Shutting Down the Game](/tutorials/manage/shutdown.html).
+4. Reboot the server.  See [Rebooting the Server](/tutorials/manage/reboot.html).
 
-5. Restart the website with `sudo service nginx restart`.
-
-6. Do a force-refresh in the browser to reload the web portal.
+5. It may take a few minutes for the server to reboot.  When it does, test out the web portal (you probably need a force-refresh in your browser) and the game.
 
 {% note %} 
 The `bin/devstart` command to run the game in dev mode will not work if HTTPS is enabled.  Instead you must run the start command manually: `bundle exec rake startares`
+{% endnote %}
+
+{% note %} 
+Ares does not currently support a SSL connection through standard MU clients.  If this is a feature you think would be valuable, please provide [Feedback](/feedback.html).
 {% endnote %}
 
 ### bind_address

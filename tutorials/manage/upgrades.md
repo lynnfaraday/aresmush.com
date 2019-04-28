@@ -37,7 +37,7 @@ The version's release notes will advise you if a restart is required.  If so, fo
 2. Once any conflicts have been resolved, type `upgrade/finish` in-game to complete the upgrade.
 
 {% tip %}
-The `upgrade/finish` command runs `load all` (to reload the code modules), `migrate` (to update your database and configuration files to the latest versions), and `website/deploy` (to update the website).  You can also run these three commands independently.
+The `upgrade/finish` command runs `load all` (to reload the code modules), `migrate` (to update your database and configuration files to the latest versions), and `website/deploy` (to update the website).  You can also run these three commands independently.  You will need to run the commands manually if your Ares version is older than Beta 44, since the upgrade/finish command doesn't exist.
 {% endtip %}
 
 ## Upgrade With a Restart

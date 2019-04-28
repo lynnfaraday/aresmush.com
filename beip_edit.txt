@@ -1,0 +1,22 @@
+Version=281
+Connections
+{
+  Triggers
+  {
+    {
+      Description="FugueEdit / AresMUSH edit catcher"
+      FindString
+      {
+        MatchText="^FugueEdit > (.+)"
+        RegularExpression=true
+        StartsWith=true
+      }
+      Gag.Active=true
+      Send
+      {
+        Active=true
+        Send="/setinput \\1"
+      }
+    }
+  }
+}

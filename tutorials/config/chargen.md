@@ -24,7 +24,7 @@ You can configure the messages that are put into the approval job when character
 * `approval_message` - This message is sent when they're approved.
 * `rejection_message` - This message is sent when they're rejected.
 * `post_approval_message` - The system will also create a job *after* someone is approved, to remind the game admin to do any ancillary tasks, like adding them to lists, or making sure they have a log icon.  You can configure the todo list in the job message.
-* `welcome_message` - This message is posted to the forum when a character is approved.  You can use %{name} in the message where you want the char's name to go.  You can also use any group.  For example:  `"Welcome %{name} - the newest %{position} in %{faction}."`
+* `welcome_message` - This message is posted to the forum when a character is approved.  You can use %{name} in the message where you want the char's name to go.  You can also use any group.  For example:  `"Welcome %{name} - the newest %{position} in %{faction}."`  Make sure the group actually exists, or you'll get an error when you try to approve someone.
 
 ## Web Chargen Blurbs
 
@@ -80,3 +80,68 @@ For example, the first stage in the sample configuration below will show the 'ch
         tutorial: 'chargen.md'
     sheet:
         help: 'sheet'
+
+## Custom App Review
+
+The standard chargen ensures that values are _set_, but doesn't do much to see if the values _make sense_ (i.e. that only nobles can be knights).  Doing these kinds of checks requires custom code, but there's a built-in hook where you can put that code.  Open `aresmush/plugins/chargen/custom_app_review.rb` and make the `custom_app_review` method do whatever checks you want.
+
+{% tip %} 
+Custom app review doesn't actually _prevent_ someone from choosing stupid values, it just flags it on the app review screen.
+{% endtip %}
+
+For example, if we wanted to restrict the 'knight' position to nobles, we could do:
+
+    def self.custom_app_review(char)
+      faction = char.group("Faction")
+      position = char.group("Position")
+      
+      if (position == "Knight" && faction != "Noble")
+        msg = "%xrOnly nobles can be knights.%xn"
+      else
+        msg = t('chargen.ok')
+      end
+      
+      return Chargen.format_review_status "Checking groups.", msg
+    end
+
+
+Notice how we're using the `format_review_status` helper.  This is how most of the lines in the app review are formatted.  It will display like this:
+
+    Checking groups.                                   Only nobles can be knights.
+
+The Chargen helper has several built-in status values:
+
+**Green (OK)**
+
+    t('chargen.ok')  --> < OK! >
+
+**Yellow (Warnings)**
+
+    t('chargen.missing')       < Missing %{missing} >
+
+**Red (Errors)**
+
+    t('chargen.too_many')      < Too Many! >
+    t('chargen.not_enough')    < Not Enough! >
+    t('chargen.not_set')       < Not set! >
+    t('chargen.oops_missing')  < Oops! Missing %{missing} >
+
+You are not limited to these, of course, but using the standard that people are familiar with will help players to understand your system.
+
+## Custom Approval Steps
+
+In addition to having custom app review steps, you can also have custom code that's triggered when a character is approved.  Open `aresmush/plugins/chargen/custom_approval.rb` and make the `custom_approval` method do whatever you want to do when someone is approved.  Common examples include:
+
+* Setting starting location based on a group value (e.g. home world, faction).
+* Assigning a role or adding to a channel based on a group value (e.g. faction-based roles/channels).
+* etc.
+
+Here's an example of how to assign a role based on the character's faction (assuming you've already created the roles using `role/create` ahead of time).
+
+    def self.custom_approval(char)
+      faction = char.group("Faction")
+      role = Role.find_by_name(faction)
+      if (role)
+        char.roles.add role
+      end
+    end

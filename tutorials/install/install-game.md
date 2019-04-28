@@ -69,7 +69,7 @@ If you do not plan on using GitHub for version control, you can make these dummy
 
 ### Ports
 
-Whereas the old MUSH servers you might be useful have only one port (mush.somewhere.com port 1234) Ares actually uses several.  You can use any port that isn't already in use.  On a VPS server, ports greater than **1024** are typically open.
+Whereas the old MUSH servers you might be used to have only one port (mush.somewhere.com port 1234) Ares actually uses several.  You can use any port that isn't already in use.  On a VPS server, ports greater than **1024** are typically open.
 
 The **Telnet Port** is the general one that regular MU clients connect to.  (default 4201)
 

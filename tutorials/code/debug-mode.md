@@ -12,11 +12,15 @@ Both the game and the web portal have a **debug mode** that is helpful when deve
 
 To start the game in debug mode, run `bin/devstart` from the aresmush directory.  Debug mode is helpful because it prints error messages directly to the server shell window.  When something goes wrong, you can flip over to the shell and see the problem immediately without needing to browse through log files.
 
-The debug game will run until you close the server shell or hit CTRL-C.
+The debug game will run until you close the server shell or hit CTRL-C.  You can restart the game using `bin/startares` once you're done.
 
 {% note %} 
-The game must be shut down before you can run it in debug mode.  Otherwise you'll get a 'port already in use' error.  You can restart the game using `bin/startares` once you're done.
+The game must be shut down before you can run it in debug mode.  Otherwise you'll get a 'port already in use' error.
 {% endnote %}
+
+### Debugging with HTTPS
+
+The regular 'devstart' is not compatible with HTTPS.  If your game is using HTTPS, you'll need to start debug mode using `bundle exec rake startares`.
 
 ## Web Portal Debug Mode
 

@@ -109,6 +109,11 @@ The group names must use the capitalization you want in-game.  For example, \"Na
 Don't use group names that conflict with other commands (like 'job').
 {% endtip %}
 
+
+{% note %} 
+There are a couple of other config options that reference groups, including [FS3 Chargen Starting Skills](/tutorials/config/fs3skills_chargen.html#starting_skills), [Chargen Welcome Messages](/tutorials/config/chargen.html#messages), [Ranks](/tutorials/config/ranks.html#rank_group), and the [Web Portal Character Gallery](/tutorials/config/website.html#character_gallery_group-and-character_gallery_subgroup).  Be sure to make those options reference valid groups, or you will get errors.
+{% endnote %}
+
 ## Group Shortcuts
 
 Ares will automatically create shortcuts for your group names - a singular one to set the group (e.g. `faction <value>` for `group/set <value>`) and a plural one to list the values (e.g. `factions` for `group faction`).  If you have irregularly-spelled groups, you can add a custom value to the `shortcuts` setting in the demographics config:

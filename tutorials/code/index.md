@@ -93,6 +93,7 @@ It's suggested that you refer to these as you need them rather than trying to le
 * [Understanding YAML](/tutorials/code/yaml.html)
 * [Troubleshooting YAML](/tutorials/code/troubleshooting-yaml.html)
 * [Shortcuts](/tutorials/code/shortcuts.html)
+* [Recovering from Config Errors](/tutorials/config/config-errors.html) - Rolling back defaults if your config gets messed up.
 
 ### Engine
 
