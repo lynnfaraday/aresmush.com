@@ -1,12 +1,12 @@
 ---
 title: Creating a Plugin Tutorial Overview
-description:
+description: 
 layout: tutorial
 createPluginTutorial: true
 tutorialName: Creating a Plugin
 tutorialIndex: tutorials/code/create-plugin
 nextstep: plugin-folder
-tags: 
+tags:
 - code
 - plugins
 ---

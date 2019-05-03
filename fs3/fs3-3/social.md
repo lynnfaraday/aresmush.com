@@ -1,6 +1,6 @@
 ---
 title: FS3.3 - Social Combat DRAFT
-description:
+description: 
 layout: fs3
 ---
 

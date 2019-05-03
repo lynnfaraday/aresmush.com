@@ -4,6 +4,7 @@ layout: page
 tags:
 - config
 ---
+
 # Configuring AresCentral
 
 > You probably won't ever need to change the AresCentral configuration.

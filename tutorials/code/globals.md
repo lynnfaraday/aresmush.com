@@ -1,8 +1,8 @@
 ---
 title: Engine Globals
-description:
+description: 
 layout: page
-tags: 
+tags:
 - code
 - engine
 - config

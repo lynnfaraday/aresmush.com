@@ -1,8 +1,8 @@
 ---
 title: Ares Concepts
-description:
+description: 
 layout: page
-tags: 
+tags:
 - code
 ---
 

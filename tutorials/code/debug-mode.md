@@ -1,8 +1,8 @@
 ---
 title: Debug Mode
-description:
+description: 
 layout: page
-tags: 
+tags:
 - code
 ---
 

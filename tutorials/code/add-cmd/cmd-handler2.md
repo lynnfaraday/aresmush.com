@@ -1,13 +1,13 @@
 ---
 title: Create Another Command Handler
-description:
+description: 
 layout: tutorial
 prevstep: cmd-handler
 nextstep: removing-cmd
 tutorialIndex: tutorials/code/add-cmd
 addCmdTutorial: true
 tutorialName: Adding a Command
-tags: 
+tags:
 - code
 - plugins
 - commands

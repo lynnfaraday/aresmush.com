@@ -1,6 +1,6 @@
 ---
 title: Next Steps
-description:
+description: 
 layout: tutorial
 createPluginTutorial: true
 tutorialName: Creating a Plugin

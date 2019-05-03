@@ -1,8 +1,8 @@
 ---
 title: Chopping Block
-description:
+description: 
 layout: page
-tags: 
+tags:
 - code
 - features
 ---

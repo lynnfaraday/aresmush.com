@@ -1,12 +1,12 @@
 ---
 title: Adding a Command Overview
-description:
+description: 
 layout: tutorial
 nextstep: custom-plugin
 tutorialIndex: tutorials/code/add-cmd
 addCmdTutorial: true
 tutorialName: Adding a Command
-tags: 
+tags:
 - code
 ---
 

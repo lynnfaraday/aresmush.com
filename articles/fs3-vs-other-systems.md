@@ -1,6 +1,6 @@
 ---
 title: FS3 vs Other Systems
-description: "A comparison of FS3 with other RPGs."
+description: A comparison of FS3 with other RPGs.
 layout: story
 author: Linda Naughton ("Faraday")
 ---

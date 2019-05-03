@@ -1,13 +1,13 @@
 ---
 title: Create a Database Field
-description:
+description: 
 layout: tutorial
 createPluginTutorial: true
 tutorialName: Creating a Plugin
 tutorialIndex: tutorials/code/create-plugin
 prevstep: help-file
 nextstep: abilities-cmd
-tags: 
+tags:
 - code
 - plugins
 - database

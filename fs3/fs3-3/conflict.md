@@ -1,6 +1,6 @@
 ---
 title: FS3.3 - Conflict Resolution
-description:
+description: 
 layout: fs3
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Markdown Formatting
-description:
+description: 
 layout: page
 ---
 

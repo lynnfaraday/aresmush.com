@@ -1,13 +1,13 @@
 ---
 title: Modifying the Edit Request
-description:
+description: 
 layout: tutorial
 nextstep: edit-template
 prevstep: get-template
 tutorialIndex: tutorials/code/add-web
 addWebTutorial: true
 tutorialName: Modifying the Web Portal
-tags: 
+tags:
 - code
 - website
 ---

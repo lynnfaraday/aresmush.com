@@ -1,9 +1,8 @@
 ---
 title: License
-description:
+description: 
 layout: page
 ---
-
 
 <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">AresMUSH and the FS3 System</span>  are copyright 2007 by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.aresmush.com" property="cc:attributionName" rel="cc:attributionURL">Linda Naughton (aka Faraday)</a> and are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 

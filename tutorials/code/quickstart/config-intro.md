@@ -1,13 +1,13 @@
 ---
 title: Configuration
-description:
+description: 
 layout: tutorial
 quickstartTutorial: true
 tutorialName: Code Quickstart
 tutorialIndex: tutorials/code/quickstart
 prevstep: command-errors
 nextstep: localization-intro
-tags: 
+tags:
 - code
 - code-quickstart
 - config

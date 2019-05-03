@@ -1,9 +1,8 @@
 ---
 title: Code
-description:
+description: 
 layout: page
 ---
-
 
 The Ares source code can be found on [GitHub](https://github.com/AresMUSH).  There are three main repositories:
 

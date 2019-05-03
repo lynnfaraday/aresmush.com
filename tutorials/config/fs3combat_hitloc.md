@@ -3,7 +3,7 @@ title: Configuring FS3 Combat - Hit Locations
 layout: page
 tags:
 - config
---- 
+---
 
 To configure the FS3 hit location tables:
 

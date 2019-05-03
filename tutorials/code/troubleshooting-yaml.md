@@ -1,8 +1,8 @@
 ---
 title: Troubleshooting YAML
-description:
+description: 
 layout: page
-tags: 
+tags:
 - config
 - yaml
 ---

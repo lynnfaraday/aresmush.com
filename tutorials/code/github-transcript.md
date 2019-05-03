@@ -1,7 +1,7 @@
 ---
 title: Using GitHub (Transcript)
-description:
-tags: 
+description: 
+tags:
 - code
 ---
 

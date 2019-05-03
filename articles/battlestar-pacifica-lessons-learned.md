@@ -1,6 +1,6 @@
 ---
 title: Battlestar Pacifica - Lessons Learned
-description: "A retrospective on running a game based on the Battlestar Galactica theme."
+description: A retrospective on running a game based on the Battlestar Galactica theme.
 layout: story
 author: Linda Naughton ("Faraday")
 ---

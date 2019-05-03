@@ -1,12 +1,12 @@
 ---
 title: Editing Code Tutorial
-description:
+description: 
 layout: tutorial
 editCodeTutorial: true
 tutorialName: Editing Code
 tutorialIndex: tutorials/code/edit-code
 prevstep: ftp-upload
-tags: 
+tags:
 - code
 ---
 

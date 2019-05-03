@@ -1,13 +1,13 @@
 ---
 title: Create a Command Handler
-description:
+description: 
 layout: tutorial
 prevstep: db-field
 nextstep: cmd-handler2
 tutorialIndex: tutorials/code/add-cmd
 addCmdTutorial: true
 tutorialName: Adding a Command
-tags: 
+tags:
 - code
 - plugins
 - commands

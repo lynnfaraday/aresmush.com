@@ -1,8 +1,8 @@
 ---
 title: Event Handling
-description:
+description: 
 layout: page
-tags: 
+tags:
 - code
 - plugins
 - events

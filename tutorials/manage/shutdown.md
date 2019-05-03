@@ -1,8 +1,8 @@
 ---
 title: Shutting Down the Game
-description:
+description: 
 layout: page
-tags: 
+tags:
 - manage
 - restart
 - shutdown

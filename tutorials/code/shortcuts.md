@@ -1,8 +1,8 @@
 ---
 title: Shortcuts
-description:
+description: 
 layout: page
-tags: 
+tags:
 - code
 - shortcuts
 ---

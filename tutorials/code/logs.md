@@ -1,8 +1,8 @@
 ---
 title: Using Log Files
-description:
+description: 
 layout: page
-tags: 
+tags:
 - logs
 - troubleshooting
 ---

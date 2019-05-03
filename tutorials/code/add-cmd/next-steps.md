@@ -1,6 +1,6 @@
 ---
 title: Next Steps
-description:
+description: 
 layout: tutorial
 prevstep: removing-cmd
 tutorialIndex: tutorials/code/add-cmd

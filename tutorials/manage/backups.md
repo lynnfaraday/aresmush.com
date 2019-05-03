@@ -1,8 +1,8 @@
 ---
 title: Backing Up the Game
-description:
+description: 
 layout: page
-tags: 
+tags:
 - manage
 - database
 - backup

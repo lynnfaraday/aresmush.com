@@ -1,13 +1,13 @@
 ---
 title: Emits
-description:
+description: 
 layout: tutorial
 quickstartTutorial: true
 tutorialName: Code Quickstart
 tutorialIndex: tutorials/code/quickstart
 prevstep: command-handlers
 nextstep: templates-intro
-tags: 
+tags:
 - code
 - code-quickstart
 ---

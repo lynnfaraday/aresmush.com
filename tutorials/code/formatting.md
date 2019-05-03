@@ -1,8 +1,8 @@
 ---
 title: Using Formatting Codes
-description:
+description: 
 layout: page
-tags: 
+tags:
 - ansi
 - colors
 ---

@@ -1,8 +1,8 @@
 ---
 title: Restart After Reboot
-description:
+description: 
 layout: page
-tags: 
+tags:
 - manage
 - restart
 - reboot

@@ -1,12 +1,12 @@
 ---
 title: MUSH 101 - A Game of Words
-description:
+description: 
 layout: tutorial
 tutorialName: MUSH 101
 mush101Tutorial: true
 tutorialIndex: mush-101
 nextstep: before-you-start
-tags: 
+tags:
 - storytelling
 ---
 

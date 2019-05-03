@@ -1,6 +1,6 @@
 ---
 title: FS3.3 - System Basics
-description:
+description: 
 layout: fs3
 ---
 

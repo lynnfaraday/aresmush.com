@@ -1,12 +1,12 @@
 ---
 title: Setting up the Data
-description:
+description: 
 layout: tutorial
 nextstep: get-request
 tutorialIndex: tutorials/code/add-web
 addWebTutorial: true
 tutorialName: Modifying the Web Portal
-tags: 
+tags:
 - code
 - website
 ---

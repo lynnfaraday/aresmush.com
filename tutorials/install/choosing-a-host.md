@@ -1,12 +1,12 @@
 ---
 title: Choosing a Host
-description:
+description: 
 layout: tutorial
 installTutorial: true
 tutorialName: Installing AresMUSH
 tutorialIndex: tutorials/install
 nextstep: digital-ocean
-tags: 
+tags:
 - install
 - hosting
 ---

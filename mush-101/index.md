@@ -1,6 +1,6 @@
 ---
 title: MUSH 101 - An Introduction to MUSHing
-description:
+description: 
 layout: tutorial
 mush101Tutorial: true
 tutorialName: MUSH 101

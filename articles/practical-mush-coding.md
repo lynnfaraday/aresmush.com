@@ -1,6 +1,6 @@
 ---
 title: Practical MUSH Coding
-description: "A guide to MUSH Coding intended for mid-level coders."
+description: A guide to MUSH Coding intended for mid-level coders.
 layout: story
 author: Linda Naughton ("Faraday")
 ---

@@ -1,13 +1,13 @@
 ---
 title: MUSH 101 - Telling Your Story
-description:
+description: 
 layout: tutorial
 tutorialName: MUSH 101
 mush101Tutorial: true
 tutorialIndex: mush-101
 prevstep: play-webportal
 nextstep: time-and-space
-tags: 
+tags:
 - roleplay
 - plots
 ---

@@ -1,6 +1,6 @@
 ---
 title: Battlestar Pacifica - Video Blog
-description: "A pretend video blog involving the BSP 'cast'."
+description: A pretend video blog involving the BSP 'cast'.
 layout: story
 author: Krieger @ BSP MUSH
 ---

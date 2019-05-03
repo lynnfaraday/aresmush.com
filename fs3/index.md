@@ -1,8 +1,8 @@
 ---
 title: FS3
-description:
+description: 
 layout: page
-tags: 
+tags:
 - fs3
 - combat
 - skills

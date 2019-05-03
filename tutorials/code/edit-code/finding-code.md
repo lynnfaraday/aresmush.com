@@ -1,12 +1,12 @@
 ---
 title: Finding Code
-description:
+description: 
 layout: tutorial
 editCodeTutorial: true
 tutorialName: Editing Code
 tutorialIndex: tutorials/code/edit-code
 nextstep: direct-edit
-tags: 
+tags:
 - code
 ---
 

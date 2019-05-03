@@ -1,6 +1,6 @@
 ---
 title: Playing Ares
-description:
+description: 
 layout: page
 ---
 

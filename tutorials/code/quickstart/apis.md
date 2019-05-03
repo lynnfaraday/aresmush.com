@@ -1,13 +1,13 @@
 ---
 title: Common APIs
-description:
+description: 
 layout: tutorial
 quickstartTutorial: true
 tutorialName: Code Quickstart
 tutorialIndex: tutorials/code/quickstart
 prevstep: db-intro
 nextstep: next-steps
-tags: 
+tags:
 - code
 - code-quickstart
 - api
