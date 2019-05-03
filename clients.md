@@ -38,7 +38,7 @@ Here are instructions for setting up your favorite MUSH client to work with Ares
 
 ## Setting up BeipMU
 
-[Download BeipMU](http://www.potatomushclient.com/) for Windows.
+[Download BeipMU](https://beipdev.github.io/BeipMU/) for Windows.
 
 ### Character Encoding
 
