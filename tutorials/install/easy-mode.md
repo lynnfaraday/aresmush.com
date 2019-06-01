@@ -42,9 +42,9 @@ Create an account on [Digital Ocean](http://www.digitalocean.com/?refcode=5c0717
 
 * The email address associated with your Digital Ocean account.
 * Your desired game port number. (Must be > 1024; default is 4201.)
-* Which region you want the server hosted in.  (Default is US East Coast.  You may also select US West Coast or one of Digital Ocean's global regions.)
 * A name and description for your game.  (You can change this later.)
 * Your desired hostname (yourgame.somewhere.com).  You can request an aresmush.com hostname or [register your own](/tutorials/install/getting-a-hostname.html).
+* If you want me to install a security certificate for your web portal.  This is highly recommended to ensure security and enable browser notifications.  Setting up HTTPS will require me using your email to register the certificate with https://letsencrypt.org/.
 
 {% note %} 
 Your email is needed to transfer the server snapshot image to you.   It must match the email you used for your Digital Ocean account.  I pledge not to do anything nefarious with your email.  See our [privacy policy](/privacy.html) for details.

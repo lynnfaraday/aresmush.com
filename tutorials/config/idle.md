@@ -70,3 +70,17 @@ You can configure the contents of a mail message sent to a new player when they 
 ## default_contact
 
 If a character on the roster doesn't have a specific contact person (for questions about the character), this will used.  It defaults to "Admin" but you could make it a specific person or something like "App Staff".
+
+## roster_fields
+
+You can configure which fields appear on the roster list.  For each field, you can specify the column title, width, and where to get the data.  For example, this config makes two columns (25 wide and 15 wide) showing name and position.
+
+    - field: name
+      width: 25
+      title: Name
+    - field: group
+      value: position
+      width: 15
+      title: Position
+
+A complete description of all available fields - and how to create custom fields - can be found in the "who_fields" option in the [Who/Where Configuration](/tutorials/config/who.html).

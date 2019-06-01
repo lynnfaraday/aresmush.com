@@ -4,7 +4,11 @@ description:
 layout: fs3
 ---
 
-FS3 Core is the game configuration that comes with the default FS3 installation.  It is intended for near-future sci-fi combat games, such as Batlestar Galactica.  See [Tweaking FS3](/fs3/fs3-3/tweaking-fs3.html) for help adapting it to other settings.
+Every game will configure FS3 differently, so you should consult your specific game policies for details.  
+
+**FS3 Core** is the game configuration that comes with the default FS3 installation.  It is intended for near-future sci-fi combat games, such as Battlestar Galactica.  It is provided here as an example of how FS3 can be set up.
+
+If you are a game designer looking to adapt FS3 Core to your own setting, see [Tweaking FS3](/fs3/fs3-3/tweaking-fs3.html).
 
 ## AP Limits
 
@@ -20,6 +24,8 @@ Maximum: 45 AP
 | Grit | Willpower and determination. |
 | Perception | Senses and general awareness. |
 | Presence | Charisma and beauty. |
+
+You may spend at most **14 APs** on Attributes.  You may not have more than **2 Attributes rated 4**.
 
 ## Action Skills
 
@@ -37,6 +43,8 @@ Maximum: 45 AP
 |Stealth |Reflexes |Being sneaky.|
 |Technician|Wits|General mechanics/electronics and fixing things.|
 
+You may have at most **3 Action Skills rated 5+**, **2 rated 6+** and **1 rated 7+**.  These limits apply to the total number of skills, so if you have a 6 and a 7, that counts as both 1 at 7+ and 2 at 6+.
+
 ## Background Skills
 
 Background Skills are free-form, so there is no specific list.  You can pick anything from Singing to Underwater Basketweaving. Here are some sample Background Skills appropriate for **[FS3 Core](/fs3/fs3-3/core.html)**.
@@ -52,6 +60,8 @@ Background Skills are free-form, so there is no specific list.  You can pick any
 * An **unusual interest** - detective novels, game show hosts, etc.
 
 > <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** You are assumed to have basic common knowledge (equivalent to the Everyman rating) in any Background Skill not listed on your character sheet. So even if you don't take the "football" skill, you've still probably played it a few times in gym class in school, watched it on TV, etc.
+
+You must take **at least 1** Background Skill.  You can have up to **6 rating points** of Background Skills for free. 
 
 ## Language Skills
 

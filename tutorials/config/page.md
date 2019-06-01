@@ -24,3 +24,9 @@ You can configure the default page color.  Players can customize this either in-
 ## page_start_marker and page_end_marker
 
 You can configure the markers used in the `<PM>` tag at the beginning of pages, to make them mirror your channel format.
+  
+## page_deletion_days and page_deletion_cron
+
+The system will clear out old pages, mostly to prevent database bloat.  You can control how long pages are kept.  By default it's 60 days.
+
+There is a cron job to control when pages are cleared.  By default it runs once a week in the middle of the night.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/code/cron.html) for help if you want to change this.

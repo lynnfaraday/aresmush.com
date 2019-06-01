@@ -24,3 +24,5 @@ For links to the code editors mentioned in the tutorial, check out [Code Editors
 {% note %} 
 Be careful when uploading config files through FTP from Windows, as sometimes it can change the line endings on the file and mess up the YAML formatting.
 {% endnote %}
+
+Editor's Note: The video mentions the "next tutorial" being about GitHub, but that's not true any more.  You can learn about [using GitHub](/tutorials/code/git.html) after you've learned a bit more about Ares Code.

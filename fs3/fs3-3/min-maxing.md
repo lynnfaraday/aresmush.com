@@ -30,7 +30,7 @@ When you have a 1-1 point/rating and exponential XP cost, you see behaviors like
 
 This min-maxing is a natural and forseeable consequence of the system, so what's the big deal?
 
-Consider two characers:  Bob and Jane.
+Consider two characers:  Bob and Mary.
 
 Bob plays the min-max game and starts with Firearms:6, Melee:5 and 4 points in lower-rated secondary skills.  He doesn't bother putting points into anything he thinks he can get by without.
 

@@ -1,5 +1,6 @@
 ---
 title: Using GitHub (Transcript)
+layout: page
 description:
 tags: 
 - code

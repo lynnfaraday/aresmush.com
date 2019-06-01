@@ -53,3 +53,5 @@ So that’s how we can edit files locally on our PC and then upload them to the 
 Some people will prefer the simplicity of FTP, and that's perfectly fine.  But there’s an even better way of managing your code.  In the next tutorial, we’ll look at how to use GitHub source control to synchronize the code between your local PC and your game. 
 
 For now, though, that concludes this tutorial.  Thanks for listening.
+
+Editor's Note: The video mentions the "next tutorial" being about GitHub, but that's not true any more.  You can learn about [using GitHub](/tutorials/code/git.html) after you've learned a bit more about Ares Code.

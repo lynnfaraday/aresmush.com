@@ -32,50 +32,42 @@ These advanced server options will not be needed by every game.
 
 ### HTTPS Web Portal
 
-{% warning %} 
-These instructions apply to games **installed from** Beta 45 and higher.  If your game was installed pre-45 (even if it's been upgraded since), [contact Faraday](/feedback.html) for a few extra steps you'll need.
-{% endwarning %}
-
 If you want to have your web portal use HTTPS instead of HTTP, you will need to first install a security certificate.  [CertBot](https://certbot.eff.org/) is a really easy way to do this.  
 
-If you're using the Ares default setup of Ubuntu/nginx, go to CertBot's website and select 'nginx' and your server's version of Ubuntu (usually either 16.04 or 18.04; you will see the version printed in your server shell when you log in.) 
+{% warning %} 
+These instructions only apply to the default Ares installation, and to games **installed from** Beta 45 (late March 2019) and higher.  If your game was installed pre-45 (even if it's been upgraded since), [contact Faraday](/feedback.html) for a few extra steps you'll need.
+{% endwarning %}
 
-CertBot will give you the commands you need.  Run those commands in the game's server shell to set up the certificate.  Allow it to update your nginx configuration for you.
+1. Go to the [CertBot](https://certbot.eff.org/) website.  Select 'nginx' for your web server and your server's version of Ubuntu (usually either 16.04 or 18.04; you will see the version printed in your server shell when you log in.)  This will give you the necessary steps to install CertBot.
 
-Once you have that installed, you'll need to set a couple advanced server options.
+2. Run the CertBot instructions from the game's server shell to set up the security certificate.  There are some apt-get things you install first, and then you run `sudo certbot --nginx`.
+  - Be sure to make the certificate name exactly the same as your MUSH hostname.  (e.g. yourgame.somewhere.com)
+  - Allow it to update your nginx config.
+  - Allow it to redirect HTTP traffic to HTTPS.
 
-1. Run `sudo certbot certificates` to get your certificate info.  It will look something like this:
+3. From the aresmush directory, run `bin/certs YOURHOSTNAME`.  Again, make sure that the domain name exactly matches the certificate name/MUSH hostname.
 
-            Certificate Name: YOURSITE
-
-              Domains: YOURSITE
-
-              Expiry Date: whenever
-
-              Certificate Path: /etc/letsencrypt/live/YOURSITE/fullchain.pem
-
-              Private Key Path: /etc/letsencrypt/live/YOURSITE/privkey.pem
-
-You will need to use the same YOURSITE value in a moment.
-
-2. From the aresmush directory, run `bin/certs YOURSITE`.
-
-3. Edit `server.yml` in the game configuration:
+4. Edit `server.yml` in the game configuration:
   - Set `use_https` to true.
   - Set `certificate_file_path` to `/home/ares/certs/fullchain.pem`.
   - Set `private_key_file_path` to `/home/ares/certs/privkey.pem`.
 
-4. Reboot the server.  See [Rebooting the Server](/tutorials/manage/reboot.html).
+5. Reboot the server.  See [Rebooting the Server](/tutorials/manage/reboot.html).
 
-5. It may take a few minutes for the server to reboot.  When it does, test out the web portal (you probably need a force-refresh in your browser) and the game.
+6. It may take a few minutes for the server to reboot.  When it does, test out the web portal (you probably need a force-refresh in your browser) and the game.
 
-{% note %} 
+#### Certificate Renewal
+
+Security certificates expire after 90 days.  If all went well with your install, CertBot should automatically renew your certificates when they expire.  If you get a security warning saying that your certificate is invalid when viewing the web portal, you may need to [reboot the server](/tutorials/manage/reboot.html) so that the game and web portal recognize the renewed certificate.
+
+#### Devstart and HTTPS
+
 The `bin/devstart` command to run the game in dev mode will not work if HTTPS is enabled.  Instead you must run the start command manually: `bundle exec rake startares`
-{% endnote %}
 
-{% note %} 
-Ares does not currently support a SSL connection through standard MU clients.  If this is a feature you think would be valuable, please provide [Feedback](/feedback.html).
-{% endnote %}
+#### MUSH Client SSL
+
+This feature only applies to the web portal.  Ares does not currently support a SSL connection through standard MU clients.
+
 
 ### bind_address
 

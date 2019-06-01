@@ -37,6 +37,7 @@ Disabling a plugin does **NOT**:
 * Remove its code.  Everything is still loaded.
 * Remove fields from the database.  All the data is still stored.
 * Remove its web pages.  You can still access them if you manually type in the address.
+* Remove it from the web portal menu.  You must [edit your menu configuration](/tutorials/config/website.html#changing-the-navbar) yourself.
 
 In other words, the plugin is still there - it's just hidden from casual inspection.
 

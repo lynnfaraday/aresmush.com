@@ -33,6 +33,9 @@ You can also configure the character creation instructions that appear in the We
 * `bg_blurb` - Background instructions.
 * `hooks_blurb` - RP Hook instructions.
 * `desc_blurb` - Description instructions.
+* `groups_blurb` - Group instructions.
+* `demographics_blurb` - Demographics instructions.
+* `rank_blurb` - Description of the rank field.
 
 {% tip %} 
 Abilities instructions are set up in the [FS3Skills Chargen Config](/tutorials/config/fs3skills_chargen.html).

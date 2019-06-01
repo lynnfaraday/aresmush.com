@@ -94,14 +94,60 @@ And in narrow browsers, including mobile, the height will be scaled down to be 2
 
 You can pick a different focal point (other than center) with custom CSS, as explained in the [W3Schools](https://www.w3schools.com/css/css_background.asp) tutorial on background positioning.  See below for information on custom CSS styles.
 
-## Changing the Navigation Bars
+## Changing the Navbar
 
-A few of the navigation bar settings are configurable, described in Advanced Configuration below.
+The `top_navbar` setting lets you customize your web portal's navigation bar.  The home, account and admin links are always fixed, so the navbar goes:
 
-* Whether the sidebar appears on the left or right.  (`left_sidebar`)
-* What pages to show on the top navbar.  (`top_navbar`)
+    Home | Account (on small browsers) | CUSTOM NAV | Admin
 
-Changing what's on the sidebar requires a change to the website code.  See [Web Navigation](/tutorials/code/web-nav.html) for details.
+You control what appears in the CUSTOM NAV section, adding internal pages, external pages, and dividers. For example:
+
+    - title: First Dropdown Menu Title
+      menu:
+         - route: some-ember-route
+           title: First Page Title
+         - route: another-ember-route
+           title: Second Page Title
+    - title: Second Dropdown Menu Title
+      menu:
+         - route: random-ember-route
+           title: Third Page Title
+         - divider: true
+         - url: http://somewhere.com
+           title: Some Outside Page Title
+
+### Internal Pages
+
+For an internal page, list the page **route** and display title.  For example:
+
+    - title: Characters
+      route: characters
+
+{% note %} 
+The route must match the **internal coded route name** used by the web portal.  This is often **not** the same as the URL you see in the browser. For example, the character gallery is http://somegame.com/chars but the route is named 'characters'.
+{% endnote %}
+
+You can get a complete list of routes by going to http://YOUR_WEB_PORTAL/routes.  If the one you want isn't listed, just [ask for help](/feedback.html).
+
+Some routes, notably help-topic and wiki-page, require you to specify an identifier matching the help topic name or wiki page name.  For example:
+
+    - title: Getting Started
+      route: wiki-page
+      id: getting_started
+
+### External URLs
+
+You can also link to an external URL outside the web portal.  List the URL, a display title, and an *optional* [browser tab target](https://www.w3schools.com/tags/att_a_target.asp).  For example:
+
+    - target: blank
+      title: Interactive Combat Walkthrough <i class="fa fa-external-link-alt" aria-hidden="true">
+      url: http://aresmush.com/fs3/fs3-3/combat-walkthrough
+
+### Dividers
+
+For a dividing line, just use:
+
+    - divider: true
 
 ## Configuring Recaptca
 
@@ -175,14 +221,6 @@ Here are some examples of how you can set Bootstrap and Power Select styles:
 
 [FontAwesome](http://fontawesome.io/icons/) icons are used throughout the site and available for your use in custom HTML.
 
-### Custom Images
-
-You can use custom CSS to change which images are used in each section.  For example, to use the jumbotron image for the scene log background, override the 'background-image' property of the `log-wrap` class:
-
-    .log-wrap {
-      background-image: url('/game/uploads/theme_images/jumbotron.png');
-    }
-
 ## Wiki Options
 
 See [Configuring the Wiki](/tutorials/config/wiki.html).
@@ -214,54 +252,6 @@ By default, the character gallery page shows characters organized into tabs by F
 
 If set to true, the sidebar appears on the left instead of the default right.
 
-### top_navbar
-
-This setting lets you customize the top navigation bar.  The home, account and admin links are always fixed, so the navbar goes:
-
-    Home | Account (on small browsers) | CUSTOM NAV | Admin
-
-You control what appears in the CUSTOM NAV section.
-
-{% note %} 
-If you mess up your custom navbar, your web portal will not load properly.  You can restore it to the defaults using the `config/restore website.yml` command in-game.  When in doubt, [ask for help](/feedback.html).
-{% endnote %}
-
-The basic format is:
-
-    - title: First Menu Title
-      menu:
-         - page: some-ember-page
-           title: First Page Title
-         - page: another-ember-page
-           title: Second Page Title
-    - title: Second Menu Title
-      menu:
-         - page: random-ember-page
-           title: Third Page Title
-         - page: other-ember-page
-           title: Fourth Page Title
-
-Within each `menu` config, you can list internal pages, external pages, and a divider.
-
-For an internal page, list the page route, a display title, and an *optional* id.  Some routes, notably help-topic and wiki-page, require you to specify an identifier matching the help topic name or wiki page name.  For example:
-
-    - page: wiki-page
-      title: Getting Started
-      id: getting_started
-
-{% note %} 
-The 'page' entries must match Ember page routes **not** regular URLs (e.g. `wiki-page` not `/wiki/page`, or `characters` not `/chars`).  You'll find most of the routes you need already listed in the default top_navbar configuration.  If the one you want isn't listed, just [ask for help](/feedback.html).
-{% endnote %}
-
-For an external page, list the URL, a display title, and an *optional* [browser tab target](https://www.w3schools.com/tags/att_a_target.asp).  For example:
-
-    - target: blank
-      title: Interactive Combat Walkthrough <i class="fa fa-external-link-alt" aria-hidden="true">
-      url: http://aresmush.com/fs3/fs3-3/combat-walkthrough
-
-For a dividing line, just use:
-
-    - divider: true
 
 ### HTTPS Web Portal
 

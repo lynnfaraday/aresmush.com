@@ -97,9 +97,12 @@ If you omit the values, the group will be freeform, allowing the player to speci
 
     Faction:
         desc: "Military faction."
+        wiki: some-page
         values:
             Navy: "Join the fleet, see the worlds."
             Marines: "Semper fi."
+
+The wiki page is optional, and the group directory will automatically link to that wiki page.
 
 {% tip %} 
 The group names must use the capitalization you want in-game.  For example, \"Navy\" or \"CIA\".

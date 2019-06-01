@@ -125,16 +125,6 @@ Starting skills are group-based, so you'll see multiple entries for different gr
 
 A Navy Pilot would start with Swimming: 2 and Piloting: 3, whereas a Marine Pilot would start with Melee: 2 and Piloting: 3.  The system will take the highest rating out of all applicable groups, so a Marine Rifleman would start with Melee: 3 and Firearms: 3.
 
-### Skill Notes
-
-Sometimes you may want to prompt the player with a note about their skills.  You can do this with the optional 'notes' field.  For example, the following configuration will give a Combat Engineer Demolitions: 2 and prompt them to either raise it to 3 or add Technician at 3.
-
-    Combat Engineer:
-        notes: "A combat engineer should also take a 3 or higher in either Demo or Tech."
-        skills:
-            Demolitions: 2
-            Firearms: 3
-
 ### Everyone Skills
 
 Sometimes you may want to give a skill to everybody.  Instead of duplicating the information in each group, you can use the special "Everyone" group.   For example, to make everyone start with Alertness 2:
