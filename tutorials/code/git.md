@@ -50,24 +50,14 @@ The first step in using GitHub for your own game code is to create your own semi
 
 ## Making the Game Use the Fork
 
-GitHub will pull from whatever repository you cloned when you set the game up. By default this is the main Ares code, but you can specify your personal fork in the install options.
-
-    ./install <game clone URL> <Web Portal clone URL>
-
-If you need to add the fork after the game is installed, you’ll need to re-point the GitHub “origin” to your forked repository instead of the main one.
-
-In GitHub desktop:
-
-1. Open the repo.
-2. Go to Repository -> Repository Settings -> Primary Remote Repository.
-3. Enter your fork’s clone URL.
-4. Repeat for the web portal repo.
+GitHub will pull from whatever repository you cloned when you set the game up. If you need to add the fork after the game is installed, you’ll need to re-point the GitHub “origin” to your forked repository instead of the main one.
 
 In the server shell:
 
 1. Go to the aresmush directory.
 2. Type `git remote set-url origin <Your Clone URL>`
-3. Repeat for the web portal directory.
+3. Type `git pull`.
+4. Repeat steps 2 and 3 for the web portal directory.
 
 Now your game will be set up to get code updates from your fork instead of from the main Ares repository.
 
@@ -75,15 +65,20 @@ Now your game will be set up to get code updates from your fork instead of from 
 
 By default, the AresMUSH repository does not contain configuration files.  This prevents conflicts between the default configuration and your game's configuration when you're doing updates.
 
-You may wish to add your game's configuration files to source control, though, just to have a record of what changed and when.  This is especially useful if you're trying to synchronize changes between a test game and the real game.
+You *can* add your config files to source control, but there are a few caveats:
 
-To add your config files to source control, just modify the .gitignore file in your Ares fork.  **Remove** the final line that excludes the entire game directory:
+* You'll have to be careful *not* to push changes to server.yml between your test game and real game, or it can mess up your server settings.
+* If your test game is missing roles, forum categories, etc. that are in your real game and used in your config files, you may get errors or unexpected behavior.
+
+If you still want to add your config files to source control, here's how.
+
+Modify the .gitignore file in your Ares fork.  **Remove** the final line that excludes the entire game directory:
 
     # Game directory
     # -----------------------------
     /game/
 
-The next time you add files to git, it will include your configuration changes.  
+Whenever you make changes to your game config, use `git commit -am <message>` and then `git push` on the game server to push your config changes to GitHub.
 
 {% tip %} 
 Git will still ignore other parts of the game directory, including uploads, logs, and the secrets.yml config file (to keep your secret codes secret).

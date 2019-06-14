@@ -42,7 +42,7 @@ Here are instructions for setting up your favorite MUSH client to work with Ares
 
 ### Character Encoding
 
-BeipMU won't do auto-detection of character encoding, so you'll have to set it up manually.
+BeipMU should auto-detect the character encoding, but you can also set it manually through:
 
 Connection -> Connect -> highlight the world -> Text Encoding -> UTF-8
 

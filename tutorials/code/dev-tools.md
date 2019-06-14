@@ -43,15 +43,16 @@ It's strongly recommended that you follow the standard [installation instruction
 
 There are several options available to you.
 
+
+{% tip %} 
+Dual Droplets is the only easy test game setup.  All the rest require some degree of sever administration fiddling.  If that's not your thing, then dual droplets is probably the best solution for you.
+{% endtip %}
+
 ### Dual Droplets
 
 The simplest and quickest way to set up a test game is to just get a second droplet and install a new copy of the game using the standard [installation instructions](/tutorials/install).
 
 You don't need a separate host name for the test game; you can just use the droplet's IP address as the host name.
-
-{% tip %} 
-All of the other test game setups require some degree of sever administration fiddling.  If that's not your thing, then dual droplets is probably the best solution for you.
-{% endtip %}
 
 ### Installing on Your Local Mac
 
@@ -96,7 +97,7 @@ AresMUSH won't run on Windows due to a limitation in the database driver, but yo
   * version: Ubuntu
   * memory: 512MB
   * hard disk: 10GB virtual memory hard disk (VirtualBox Disk Image, fixed size)
-4. Download the Ubuntu **Server Install Image**.  The current version is [here](http://releases.ubuntu.com/18.04/ubuntu-18.04.1-live-server-amd64.iso), but this may change over time.
+4. Download the Ubuntu **Server Install Image**.  The current version is [here](http://releases.ubuntu.com/bionic/ubuntu-18.04.2-live-server-amd64.iso), but this may change over time.  You want the latest 18.04 "server install image".  If you have trouble getting the 64-bit version to work (which apparently can happen on some versions of Windows), you can try the 32-bit "server install image" of 16.04 instead.
 5. Start the VM.
 6. When asked for the startup disk, browse to and select the Ubuntu ISO image you downloaded.
 7. Run through the Ubuntu setup using the default options.  Create an ares user and save its password.

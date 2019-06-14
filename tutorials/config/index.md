@@ -85,7 +85,6 @@ A variety of other settings exist, but the defaults will work well for most game
 * [Configuring Banned and Suspect Sites](/tutorials/config/sites.html)
 * [Configuring the Achievements System](/tutorials/config/achievements.html)
 * [Configuring the Channel System](/tutorials/config/channels.html)
-* [Configuring the Cookie System](/tutorials/config/cookies.html)
 * [Configuring Chargen](/tutorials/config/chargen.html)
 * [Configuring Date and Time Formats](/tutorials/config/datetime.html)
 * [Configuring the Description System](/tutorials/config/describe.html)

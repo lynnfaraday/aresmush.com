@@ -41,11 +41,9 @@ If you don't want a limit, just set them to 0 and 99 respectively.
 You are able to specify all of the demographics you're going to use.  
 
 {% tip %} 
-Use all-lowercase names!  These are going to be converted into code variables, and lowercase is important.
-{% endtip %}
-
-{% tip %} 
-Don't use demographic names that conflict with other commands (like 'job').
+* Use all-lowercase names!  These are going to be converted into code variables, and lowercase is important.
+* Don't use demographic names that conflict with other commands (like 'job').
+* Demographics will be displayed in character profiles in the order you enter them.
 {% endtip %}
  
 ### required_properties
