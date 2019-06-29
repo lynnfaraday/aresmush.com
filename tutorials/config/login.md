@@ -92,3 +92,7 @@ This cron job controls when the login activity tracker is updated.  By default i
 ### blacklist_cron
 
 This cron job controls how often the site blacklist is updated.  By default it's bi-monthly.  You shouldn't need to change this.
+
+### notice_cleanup_cron and notice_timeout_days
+
+This cron job controls how often the old notifications are cleared out.  By default it's monthly.  You shouldn't need to change this. You can also configure how long old notifications are kept before they're deleted.
