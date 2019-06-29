@@ -19,7 +19,7 @@ If the game is already running and you want to *restart* it, see [Shutting Down 
 Always wait about 10 seconds or so between shutting the game down and restarting it.  This ensures that everything has a chance to shut down fully and cleanly.
 {% endtip %}
 
-To ensure the game automatically restarts when the server is rebooted, see [Auto-Restart After Server Reboot](/tutorials/manage/restart-after-reboot.html).
+Your game should also automatically restart when the server is rebooted.  If that doesn't happen for some reason, see [Auto-Restart After Server Reboot](/tutorials/manage/restart-after-reboot.html).
 
 ## Debug Mode
 

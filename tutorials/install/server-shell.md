@@ -34,29 +34,26 @@ There are a variety of ways to connect to the server shell depending on your OS 
 On Windows 10 and up, you can connect using Windows Powershell:
 
 1. Open a Powershell window.  (You can use the Windows search to find the Powershell application.)
-2. Type `ssh user@yourgame.somewhere.com`.
+2. Type `ssh ares@yourgame.somewhere.com`.
 
 ### Using Mac Terminal
 
 On MacOSX, you can connect using the Terminal app:
 
 1. Open a Terminal window.  (It's usually under "Utilities" in the Applications menu.)
-2. Type `ssh user@yourgame.somewhere.com`.
+2. Type `ssh ares@yourgame.somewhere.com`.
 
 ### Using a Desktop Client
 
 There are many SSH clients available.  A popular one is PuTTY, available for  [Windows](http://www.putty.org/) [Mac](https://www.ssh.com/ssh/putty/mac/).  Once installed, you can add your game to PuTTY's address book.
 
+{% note %} 
+When using a desktop client, it may ask you for a port number.  You'll want to use the default SSH port number, and **not** your MUSH's game port number.
+{% endnote %}
+
 ### Connecting through Digital Ocean
 
-If you used the [Digital Ocean](/tutorials/install/digital-ocean.html) setup instructions, you can connect directly to your droplet using the Digital Ocean control panel.  The console is rudimentary and annoying, but it's a safe fallback if nothing else works for you.
-
-1. Log into your Digital Ocean account and select "Droplets" from the top menu.
-2. Select your droplet.
-3. Select "Access".
-4. Click "Launch Console".
-{% include pretty_image.html file='/install-ares/droplet-connect.png' %}
-4. Log in.
+If you used the [Digital Ocean](/tutorials/install/digital-ocean.html) setup instructions, you can connect directly to your droplet using the Digital Ocean control panel.  The console is rudimentary and annoying, but it's a safe fallback if nothing else works for you.  Log into your Digital Ocean account and go to Access->Launch Console.
 
 ## Directories
 

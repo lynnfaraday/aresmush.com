@@ -1,5 +1,5 @@
 ---
-title: Shutting Down the Game
+title: Shutting Down and Restarting the Game
 description:
 layout: page
 tags: 
@@ -16,9 +16,17 @@ If that doesn't work, you can:
 2. Go to Admin -> Manage.
 3. Click "Shutdown".
 
+If that _still_ doesn't work, see "Hard Kill" below.
+
 ## Restarting the Game
 
-Once the game is shut down, see [Starting the Game](/tutorials/manage/start.html) to restart it.
+Once the game is shut down, you can restart it from the server shell:
+
+1. Log into the [Server Shell](/tutorials/install/server-shell.html).
+2. Type `cd aresmush`.
+3. Type `bin/startares`.
+
+See [Starting the Game](/tutorials/manage/start.html) for help.
 
 {% tip %} 
 Always wait about 10 seconds or so between shutting the game down and restarting it.  This ensures that everything has a chance to shut down fully and cleanly.
@@ -26,7 +34,7 @@ Always wait about 10 seconds or so between shutting the game down and restarting
 
 ## Hard Kill
 
-As a last resort, if none of the above steps work, you can kill the server process.  
+As a last resort, if none of the above steps work to shut down the game, you can kill the server process.  
 
 1. Log into your [Server Shell](/tutorials/install/server-shell.html).
 2. Change into the aresmush folder using `cd aresmush`.
