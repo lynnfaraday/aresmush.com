@@ -1,8 +1,8 @@
 ---
 title: Wiki Extensions
-description:
+description: 
 layout: page
-tags: 
+tags:
 - code
 - webportal
 ---

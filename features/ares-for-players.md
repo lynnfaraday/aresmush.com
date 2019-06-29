@@ -1,8 +1,8 @@
 ---
 title: Ares for Players
-description:
+description: 
 layout: page
-tags: 
+tags:
 - features
 ---
 

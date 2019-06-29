@@ -1,8 +1,8 @@
 ---
 title: Reset the Master Admin Password
-description:
+description: 
 layout: page
-tags: 
+tags:
 - manage
 - password
 - headwiz

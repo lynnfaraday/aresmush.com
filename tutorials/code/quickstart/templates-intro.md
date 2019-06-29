@@ -1,13 +1,13 @@
 ---
 title: Templates
-description:
+description: 
 layout: tutorial
 quickstartTutorial: true
 tutorialName: Code Quickstart
 tutorialIndex: tutorials/code/quickstart
 prevstep: emits
 nextstep: command-args
-tags: 
+tags:
 - code
 - code-quickstart
 - templates

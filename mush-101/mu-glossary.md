@@ -1,13 +1,13 @@
 ---
 title: MUSH 101 - MUSH Glossary
-description:
+description: 
 layout: tutorial
 tutorialName: MUSH 101
 mush101Tutorial: true
 tutorialIndex: mush-101
 prevstep: telling-your-story
 nextstep: learn-more
-tags: 
+tags:
 - roleplay
 - characters
 ---

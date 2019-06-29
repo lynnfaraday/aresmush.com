@@ -1,8 +1,8 @@
 ---
 title: Multi-Page Output (Paginator)
-description:
+description: 
 layout: page
-tags: 
+tags:
 - code
 - plugins
 - commands

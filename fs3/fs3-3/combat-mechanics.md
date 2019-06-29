@@ -1,6 +1,6 @@
 ---
 title: FS3.3 - Combat Mechanics
-description:
+description: 
 layout: fs3
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Custom Code
 layout: page
-tags: 
+tags:
 - code
 - shortcuts
 - plugins

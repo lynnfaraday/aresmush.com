@@ -1,8 +1,8 @@
 ---
 title: Learning EmberJS
-description:
+description: 
 layout: page
-tags: 
+tags:
 - code
 - ember
 ---

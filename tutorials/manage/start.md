@@ -1,8 +1,8 @@
 ---
 title: Start the Game
-description:
+description: 
 layout: page
-tags: 
+tags:
 - manage
 - restart
 ---

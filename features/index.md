@@ -1,8 +1,8 @@
 ---
 title: Why AresMUSH?
-description:
+description: 
 layout: page
-tags: 
+tags:
 - features
 ---
 

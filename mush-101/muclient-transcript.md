@@ -1,13 +1,13 @@
 ---
 title: MUSH 101 - Playing from a MUSH Client (Transcript)
-description:
+description: 
 layout: tutorial
 mush101Tutorial: true
 tutorialName: MUSH 101
 tutorialIndex: mush-101
 prevstep: before-you-start
 nextstep: play-webportal
-tags: 
+tags:
 - clients
 - commands
 ---

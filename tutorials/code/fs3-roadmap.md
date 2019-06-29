@@ -1,8 +1,8 @@
 ---
 title: FS3 Code Roadmap
-description:
+description: 
 layout: page
-tags: 
+tags:
 - code
 - fs3
 - chargen

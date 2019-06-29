@@ -1,8 +1,8 @@
 ---
 title: Setting up Guests
-description:
+description: 
 layout: page
-tags: 
+tags:
 - customization
 - guests
 ---

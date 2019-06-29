@@ -1,13 +1,12 @@
 ---
 title: Formatting
-description:
+description: 
 layout: page
-tags: 
+tags:
 - code
 - plugins
 - commands
 ---
-
 
 Ansi formatting and substitutions like %r/%b are handled by the emit methods automatically, but there are a few other formatters that can be used in commands.
 

@@ -1,8 +1,8 @@
 ---
 title: Ares Architecture
-description:
+description: 
 layout: page
-tags: 
+tags:
 - code
 - engine
 - plugins

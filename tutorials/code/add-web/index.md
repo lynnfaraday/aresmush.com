@@ -1,12 +1,12 @@
 ---
 title: Modifying the Web Portal Overview
-description:
+description: 
 layout: tutorial
 nextstep: data
 tutorialIndex: tutorials/code/add-web
 addWebTutorial: true
 tutorialName: Modifying the Web Portal
-tags: 
+tags:
 - code
 - website
 ---

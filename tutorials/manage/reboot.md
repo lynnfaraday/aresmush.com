@@ -1,8 +1,8 @@
 ---
 title: Rebooting the Server
-description:
+description: 
 layout: page
-tags: 
+tags:
 - reboot
 - upgrade
 ---

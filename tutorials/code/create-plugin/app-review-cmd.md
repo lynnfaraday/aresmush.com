@@ -1,13 +1,13 @@
 ---
 title: App Review Command
-description:
+description: 
 layout: tutorial
 createPluginTutorial: true
 tutorialName: Creating a Plugin
 tutorialIndex: tutorials/code/create-plugin
 prevstep: sheet-cmd
 nextstep: roll-cmd
-tags: 
+tags:
 - code
 - plugins
 ---

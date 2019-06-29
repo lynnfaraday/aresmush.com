@@ -1,12 +1,12 @@
 ---
 title: Code Quickstart Tutorial Overview
-description:
+description: 
 layout: tutorial
 quickstartTutorial: true
 tutorialName: Code Quickstart
 tutorialIndex: tutorials/code/quickstart
 nextstep: try-ruby
-tags: 
+tags:
 - code
 - code-quickstart
 ---

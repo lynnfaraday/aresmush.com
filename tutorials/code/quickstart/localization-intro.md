@@ -1,13 +1,13 @@
 ---
 title: Localization
-description:
+description: 
 layout: tutorial
 quickstartTutorial: true
 tutorialName: Code Quickstart
 tutorialIndex: tutorials/code/quickstart
 prevstep: config-intro
 nextstep: db-intro
-tags: 
+tags:
 - code
 - code-quickstart
 - localization

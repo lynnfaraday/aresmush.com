@@ -1,6 +1,6 @@
 ---
 title: Ares for Vets
-description:
+description: 
 layout: page
 ---
 

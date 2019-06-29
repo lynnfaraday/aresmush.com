@@ -1,8 +1,8 @@
 ---
 title: Restoring the Database
-description:
+description: 
 layout: page
-tags: 
+tags:
 - manage
 - database
 - backup

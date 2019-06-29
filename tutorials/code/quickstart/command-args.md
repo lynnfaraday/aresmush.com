@@ -1,13 +1,13 @@
 ---
 title: Command Switches and Args
-description:
+description: 
 layout: tutorial
 quickstartTutorial: true
 tutorialName: Code Quickstart
 tutorialIndex: tutorials/code/quickstart
 prevstep: templates-intro
 nextstep: parsing-args
-tags: 
+tags:
 - code
 - code-quickstart
 ---

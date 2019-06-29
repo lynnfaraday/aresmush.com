@@ -1,6 +1,6 @@
 ---
 title: Next Steps
-description:
+description: 
 layout: tutorial
 quickstartTutorial: true
 tutorialName: Code Quickstart

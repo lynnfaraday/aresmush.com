@@ -1,13 +1,13 @@
 ---
 title: Installing Ares
-description:
+description: 
 layout: tutorial
 installTutorial: true
 tutorialName: Installing AresMUSH
 tutorialIndex: tutorials/install
 nextstep: choosing-a-host
 installSidebar: true
-tags: 
+tags:
 - install
 ---
 

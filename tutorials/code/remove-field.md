@@ -1,8 +1,8 @@
 ---
 title: Removing a Database Field
-description:
+description: 
 layout: page
-tags: 
+tags:
 - code
 - database
 ---

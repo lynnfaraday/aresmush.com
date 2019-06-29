@@ -1,6 +1,6 @@
 ---
 title: FS3.3 - Luck Points
-description:
+description: 
 layout: fs3
 ---
 

@@ -1,13 +1,13 @@
 ---
 title: Parsing Args
-description:
+description: 
 layout: tutorial
 quickstartTutorial: true
 tutorialName: Code Quickstart
 tutorialIndex: tutorials/code/quickstart
 prevstep: command-args
 nextstep: command-errors
-tags: 
+tags:
 - code
 - code-quickstart
 ---

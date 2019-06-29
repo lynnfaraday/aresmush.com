@@ -1,6 +1,6 @@
 ---
 title: IC vs RL Time
-description: "Comparison of various time ratios."
+description: Comparison of various time ratios.
 layout: story
 author: Linda Naughton ("Faraday")
 ---

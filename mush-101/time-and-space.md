@@ -1,13 +1,13 @@
 ---
 title: MUSH 101 - Time and Space
-description:
+description: 
 layout: tutorial
 tutorialName: MUSH 101
 mush101Tutorial: true
 tutorialIndex: mush-101
 prevstep: telling-your-story
 nextstep: mu-glossary
-tags: 
+tags:
 - rooms
 - ictime
 ---

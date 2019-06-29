@@ -1,8 +1,8 @@
 ---
 title: Managing the Game Directory
-description:
+description: 
 layout: page
-tags: 
+tags:
 - arescentral
 - directory
 ---

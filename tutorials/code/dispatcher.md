@@ -1,8 +1,8 @@
 ---
 title: Dispatcher
-description:
+description: 
 layout: page
-tags: 
+tags:
 - code
 - plugins
 - dispatcher

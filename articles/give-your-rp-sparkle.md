@@ -1,6 +1,6 @@
 ---
 title: Give Your RP Sparkle
-description: "Delivering RP that sparkles."
+description: Delivering RP that sparkles.
 layout: story
 author: Rane
 ---

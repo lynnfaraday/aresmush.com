@@ -1,6 +1,6 @@
 ---
 title: FS3.3 - Combat
-description:
+description: 
 layout: fs3
 ---
 

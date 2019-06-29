@@ -1,6 +1,6 @@
 ---
 title: Learn More
-description:
+description: 
 layout: tutorial
 tutorialName: MUSH 101
 mush101Tutorial: true

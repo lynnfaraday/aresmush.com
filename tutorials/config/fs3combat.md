@@ -1,8 +1,8 @@
 ---
 title: Configuring FS3Combat
-description:
+description: 
 layout: page
-tags: 
+tags:
 - config
 ---
 

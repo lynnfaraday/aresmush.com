@@ -1,8 +1,8 @@
 ---
 title: Tinkering With Code
-description:
+description: 
 layout: page
-tags: 
+tags:
 - code
 - tinker
 ---

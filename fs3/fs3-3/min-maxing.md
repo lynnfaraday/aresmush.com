@@ -1,6 +1,6 @@
 ---
 title: FS3.3 - Managing Min-Maxing
-description:
+description: 
 layout: fs3
 ---
 

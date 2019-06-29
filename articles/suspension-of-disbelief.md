@@ -1,6 +1,6 @@
 ---
 title: Suspension of Disbelief
-description: "Reality and MUSHing."
+description: Reality and MUSHing.
 layout: story
 author: Linda Naughton ("Faraday")
 ---

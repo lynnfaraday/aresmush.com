@@ -1,8 +1,8 @@
 ---
 title: Ares for Coders
-description:
+description: 
 layout: page
-tags: 
+tags:
 - features
 ---
 

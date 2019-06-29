@@ -1,6 +1,6 @@
 ---
 title: Building the Perfect MUSH
-description: "Tips and things to consider when creating a MUSH."
+description: Tips and things to consider when creating a MUSH.
 layout: story
 author: Linda Naughton ("Faraday")
 ---

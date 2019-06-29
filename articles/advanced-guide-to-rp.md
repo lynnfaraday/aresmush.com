@@ -1,6 +1,6 @@
 ---
 title: Advanced Guide to RP
-description: "A guide to adding depth to your roleplay."
+description: A guide to adding depth to your roleplay.
 layout: story
 author: cosmo@socketis.net
 ---

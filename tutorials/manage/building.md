@@ -1,8 +1,8 @@
 ---
 title: Building the Grid
-description:
+description: 
 layout: page
-tags: 
+tags:
 - manage
 - building
 - locations

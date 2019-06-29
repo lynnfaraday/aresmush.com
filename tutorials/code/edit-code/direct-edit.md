@@ -1,13 +1,13 @@
 ---
 title: Direct Editing
-description:
+description: 
 layout: tutorial
 editCodeTutorial: true
 tutorialName: Editing Code
 tutorialIndex: tutorials/code/edit-code
 nextstep: ftp-upload
 prevstep: finding-code
-tags: 
+tags:
 - code
 ---
 

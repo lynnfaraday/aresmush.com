@@ -1,6 +1,6 @@
 ---
 title: Joys of Tinyplotting
-description: "How to run a MUSH plot."
+description: How to run a MUSH plot.
 layout: story
 author: V. Briceland
 ---

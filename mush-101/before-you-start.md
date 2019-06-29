@@ -1,13 +1,13 @@
 ---
 title: MUSH 101 - Before You Start
-description:
+description: 
 layout: tutorial
 mush101Tutorial: true
 tutorialName: MUSH 101
 tutorialIndex: mush-101
 prevstep: game-of-words
 nextstep: play-muclient
-tags: 
+tags:
 - games
 ---
 

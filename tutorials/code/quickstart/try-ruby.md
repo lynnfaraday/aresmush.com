@@ -1,13 +1,13 @@
 ---
 title: Try Ruby
-description:
+description: 
 layout: tutorial
 quickstartTutorial: true
 tutorialName: Code Quickstart
 tutorialIndex: tutorials/code/quickstart
 nextstep: hello-mush
 prevstep: 
-tags: 
+tags:
 - code
 - code-quickstart
 ---

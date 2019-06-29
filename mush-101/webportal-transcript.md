@@ -1,13 +1,13 @@
 ---
 title: MUSH 101 - Playing from the Web Portal (Transcript)
-description:
+description: 
 layout: tutorial
 mush101Tutorial: true
 tutorialName: MUSH 101
 tutorialIndex: mush-101
 prevstep: play-muclient
 nextstep: telling-your-story
-tags: 
+tags:
 - webportal
 ---
 

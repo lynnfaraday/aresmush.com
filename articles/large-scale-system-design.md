@@ -1,6 +1,6 @@
 ---
 title: Large Scale System Design
-description: "A guide for building large-scale MUSH softcode systems."
+description: A guide for building large-scale MUSH softcode systems.
 layout: story
 author: Linda Naughton ("Faraday")
 ---

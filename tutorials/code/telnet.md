@@ -1,6 +1,6 @@
 ---
 title: Telnet Extensions
-description:
+description: 
 layout: page
 ---
 

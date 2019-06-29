@@ -1,13 +1,13 @@
 ---
 title: FTP Upload
-description:
+description: 
 layout: tutorial
 editCodeTutorial: true
 tutorialName: Editing Code
 tutorialIndex: tutorials/code/edit-code
 prevstep: direct-edit
 nextstep: next-steps
-tags: 
+tags:
 - code
 ---
 

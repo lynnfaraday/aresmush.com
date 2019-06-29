@@ -1,6 +1,6 @@
 ---
 title: It's Only A Flesh Wound
-description: "Commentary on injuries and MUSHes."
+description: Commentary on injuries and MUSHes.
 layout: story
 author: Linda Naughton ("Faraday")
 ---

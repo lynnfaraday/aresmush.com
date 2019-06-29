@@ -1,13 +1,13 @@
 ---
 title: Modifying the Character Template
-description:
+description: 
 layout: tutorial
 nextstep: edit-request
 prevstep: get-request
 tutorialIndex: tutorials/code/add-web
 addWebTutorial: true
 tutorialName: Modifying the Web Portal
-tags: 
+tags:
 - code
 - website
 ---

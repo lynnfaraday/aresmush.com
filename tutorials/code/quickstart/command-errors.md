@@ -1,13 +1,13 @@
 ---
 title: Command Errors
-description:
+description: 
 layout: tutorial
 quickstartTutorial: true
 tutorialName: Code Quickstart
 tutorialIndex: tutorials/code/quickstart
 prevstep: parsing-args
 nextstep: config-intro
-tags: 
+tags:
 - code
 - code-quickstart
 ---

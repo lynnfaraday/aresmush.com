@@ -1,6 +1,6 @@
 ---
 title: FS3 - Old Editions
-description:
+description: 
 layout: fs3
 ---
 

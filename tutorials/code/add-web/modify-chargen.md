@@ -1,13 +1,13 @@
 ---
 title: Modifying Chargen
-description:
+description: 
 layout: tutorial
 prevstep: edit-template
 nextstep: next-steps
 tutorialIndex: tutorials/code/add-web
 addWebTutorial: true
 tutorialName: Modifying the Web Portal
-tags: 
+tags:
 - code
 - website
 ---

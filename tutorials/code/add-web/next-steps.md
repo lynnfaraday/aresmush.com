@@ -1,12 +1,12 @@
 ---
 title: Next Steps
-description:
+description: 
 layout: tutorial
 prevstep: modify-chargen
 tutorialIndex: tutorials/code/add-web
 addWebTutorial: true
 tutorialName: Modifying the Web Portal
-tags: 
+tags:
 - code
 - website
 ---

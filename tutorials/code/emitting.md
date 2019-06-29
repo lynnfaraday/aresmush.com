@@ -1,8 +1,8 @@
 ---
 title: Emitting
-description:
+description: 
 layout: page
-tags: 
+tags:
 - code
 - emit
 ---

@@ -1,8 +1,8 @@
 ---
 title: Troubleshooting Issues
-description:
+description: 
 layout: page
-tags: 
+tags:
 - code
 - troubleshooting
 ---

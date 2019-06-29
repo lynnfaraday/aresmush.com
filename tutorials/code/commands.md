@@ -1,8 +1,8 @@
 ---
 title: Command Handling
-description:
+description: 
 layout: page
-tags: 
+tags:
 - code
 - plugins
 - commands

@@ -1,6 +1,6 @@
 ---
 title: FS3.3 - Choosing FS3
-description:
+description: 
 layout: fs3
 ---
 

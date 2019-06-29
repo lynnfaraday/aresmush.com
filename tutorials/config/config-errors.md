@@ -1,8 +1,8 @@
 ---
 title: Recovering from Config Errors
-description:
+description: 
 layout: page
-tags: 
+tags:
 - manage
 - config
 - yaml

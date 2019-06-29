@@ -1,12 +1,12 @@
 ---
 title: Next Steps
-description:
+description: 
 layout: tutorial
 installTutorial: true
 tutorialName: Installing AresMUSH
 tutorialIndex: tutorials/install
 prevstep: install-game
-tags: 
+tags:
 - install
 - customization
 - headwiz

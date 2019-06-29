@@ -1,13 +1,13 @@
 ---
 title: Create a Help File
-description:
+description: 
 layout: tutorial
 prevstep: custom-plugin
 nextstep: db-field
 tutorialIndex: tutorials/code/add-cmd
 addCmdTutorial: true
 tutorialName: Adding a Command
-tags: 
+tags:
 - code
 - plugins
 - help

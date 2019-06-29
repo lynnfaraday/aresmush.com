@@ -1,6 +1,6 @@
 ---
 title: Coding for Ares
-description:
+description: 
 layout: page
 ---
 

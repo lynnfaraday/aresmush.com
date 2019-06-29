@@ -1,7 +1,7 @@
 ---
 title: Configuring Banned and Suspect Sites
 layout: page
-tags: 
+tags:
 - siteban
 - suspect
 - trouble

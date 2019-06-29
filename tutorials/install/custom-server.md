@@ -1,13 +1,13 @@
 ---
 title: Custom Server
-description:
+description: 
 layout: tutorial
 installTutorial: true
 tutorialName: Installing AresMUSH
 tutorialIndex: tutorials/install
 prevstep: choosing-a-host
 nextstep: getting-a-hostname
-tags: 
+tags:
 - install
 ---
 

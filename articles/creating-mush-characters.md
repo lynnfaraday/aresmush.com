@@ -1,6 +1,6 @@
 ---
 title: Creating MUSH Characters
-description: "A guide to help you flesh out your MUSH characters."
+description: A guide to help you flesh out your MUSH characters.
 layout: story
 author: Linda Naughton ("Faraday")
 ---

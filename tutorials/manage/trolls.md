@@ -1,14 +1,13 @@
 ---
 title: Dealing with Trolls
-description:
+description: 
 layout: page
-tags: 
+tags:
 - manage
 - trouble
 - trolls
 - boot
 ---
-
 
 Unfortunately, you will sometimes have troublesome players trolling you or your game.  There are a variety of commands for players and admin to deal with them.
 

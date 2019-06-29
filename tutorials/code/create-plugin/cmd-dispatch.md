@@ -1,13 +1,13 @@
 ---
 title: Dispatching
-description:
+description: 
 layout: tutorial
 createPluginTutorial: true
 tutorialName: Creating a Plugin
 tutorialIndex: tutorials/code/create-plugin
 prevstep: locale-file
 nextstep: next-steps
-tags: 
+tags:
 - code
 - plugins
 - dispatcher

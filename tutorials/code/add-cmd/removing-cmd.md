@@ -1,13 +1,13 @@
 ---
 title: Removing the Commands
-description:
+description: 
 layout: tutorial
 prevstep: cmd-handler2
 nextstep: next-steps
 tutorialIndex: tutorials/code/add-cmd
 addCmdTutorial: true
 tutorialName: Adding a Command
-tags: 
+tags:
 - code
 - plugins
 - database

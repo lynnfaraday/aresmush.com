@@ -1,8 +1,8 @@
 ---
 title: Replacing FS3
-description:
+description: 
 layout: page
-tags: 
+tags:
 - code
 - fs3
 - chargen

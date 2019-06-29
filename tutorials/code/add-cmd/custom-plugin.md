@@ -1,12 +1,12 @@
 ---
 title: Custom Plugin
-description:
+description: 
 layout: tutorial
 nextstep: help-file
 tutorialIndex: tutorials/code/add-cmd
 addCmdTutorial: true
 tutorialName: Adding a Command
-tags: 
+tags:
 - code
 - plugins
 - database

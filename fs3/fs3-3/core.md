@@ -1,6 +1,6 @@
 ---
 title: FS3.3 - FS3 Core
-description:
+description: 
 layout: fs3
 ---
 

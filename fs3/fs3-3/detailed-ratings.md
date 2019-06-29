@@ -1,6 +1,6 @@
 ---
 title: FS3.3 - Detailed Ratings
-description:
+description: 
 layout: fs3
 ---
 

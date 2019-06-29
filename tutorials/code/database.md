@@ -1,8 +1,8 @@
 ---
 title: Using the Database
-description:
+description: 
 layout: page
-tags: 
+tags:
 - code
 - database
 ---

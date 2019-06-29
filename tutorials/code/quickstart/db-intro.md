@@ -1,13 +1,13 @@
 ---
 title: Database Queries and Updates
-description:
+description: 
 layout: tutorial
 quickstartTutorial: true
 tutorialName: Code Quickstart
 tutorialIndex: tutorials/code/quickstart
 prevstep: localization-intro
 nextstep: apis
-tags: 
+tags:
 - code
 - code-quickstart
 - database

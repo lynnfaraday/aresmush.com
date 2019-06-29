@@ -1,8 +1,8 @@
 ---
 title: Using GitHub
-description:
+description: 
 layout: page
-tags: 
+tags:
 - code
 - git
 ---

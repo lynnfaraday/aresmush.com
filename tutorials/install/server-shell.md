@@ -1,13 +1,13 @@
 ---
 title: Connecting to the Server Shell
-description:
+description: 
 layout: tutorial
 installTutorial: true
 tutorialName: Installing AresMUSH
 tutorialIndex: tutorials/install
 prevstep: getting-a-hostname
 nextstep: setup-server
-tags: 
+tags:
 - install
 - hosting
 - manage
