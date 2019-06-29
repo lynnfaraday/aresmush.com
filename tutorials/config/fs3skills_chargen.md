@@ -44,6 +44,8 @@ If you are using Advantages, you can configure the cost.  The default is 2 point
 
 FS3 Attributes are rated from 1-5 (with 5 being Exceptional) and Skills are rated from 1-8 (with 8 being Legendary).  Some games may not want to allow characters at the top end of the spectrum by setting these values lower than the maximum possible ratings.
 
+Note: This limit applies only to Chargen.  If you want to prevent people from advancing beyond a certain rating with XP, you'll need to set that up in your [XP configuration](/tutorials/config/fs3skills_xp.html).
+
 ## allow_unskilled_action_skills
 
 The Unskilled level might not be necessary in every setting.  See [everyman vs. unskilled](/fs3/fs3-3/chargen.html#unskilled) for details.  To avoid confusion in chargen, the 'Unskilled' level is disabled by default.  You can enable it by setting this setting to true.
@@ -62,11 +64,11 @@ This is the maximum Ability Points a character can spend.  Free skills and attri
 
 ### max_points_on_attrs and max_points_on_action
 
-This is the maximum number of chargen points a character can spend on attributes and action skills.  Ratings 1-2 (for attributes) and 1 (for action skills) are not counted towards the total.   
+This is the maximum number of chargen points a character can spend on attributes and action skills.  Ratings 1-2 (for attributes) and 1 (for action skills) are **not** counted towards the total.   
 
-Attributes cost 2 points per dot and skills cost 1 point per dot.  For exmple - setting `max_points_on_attrs` to 10 would allow you to buy 5 attribute dots above level 1-2.
+Attributes cost 2 points per dot and skills cost 1 point per dot.  For exmple - setting `max_points_on_attrs` to 10 would allow you to buy 5 attribute dots above level 2.
 
-Note: These limits also apply to XP spent after chargen, unless modified by the `dots_beyond_chargen_max` setting (see [Configuring FS3 XP](/tutorials/config/fs3skills_xp.html)).
+Note: These limits also apply to XP spent after chargen, unless modified by the XP settings (see [Configuring FS3 XP](/tutorials/config/fs3skills_xp.html)).
 
 ### max_skills_at_or_above and max_attrs_at_or_above
 
