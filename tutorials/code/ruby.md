@@ -16,7 +16,7 @@ There are a lot of Ruby tutorials out there, plus books on the subject. Here are
 * Udemy and Plursalsight also have modestly-priced Ruby tutorials, but I haven't tried it.
 
 {% note %} 
-Some tutorials will be about \"Ruby on Rails\". Rails is just a website development framework that uses Ruby. Learning Rails isn't necessarily bad - you'll find some similar concepts in Ares - but Ares uses EmberJS instead of Rails. It's safe to skip the Rails stuff.
+Some tutorials will be about "Ruby on Rails". Rails is just a website development framework that uses Ruby. Learning Rails isn't necessarily bad - you'll find some similar concepts in Ares - but Ares uses EmberJS instead of Rails. It's safe to skip the Rails stuff.
 {% endnote %}
 
 Don't forget you can always [ask for help](/feedback.html). 

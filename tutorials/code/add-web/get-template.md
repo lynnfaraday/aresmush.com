@@ -48,7 +48,7 @@ Then we can add the goals themselves down below as a tab-pane div.  For example:
      &lt;/div>
 </pre>
 
-Here we're using the ansi-format helper because the goals can contain fancy formatting.   For a raw text field we could have just used `&#x7b;&#x7b;&#x7b;char.goals}}`.
+Here we're using the ansi-format helper because the goals can contain fancy formatting.   For a raw text field we could have just used char.goals by itself.
 
 Re-deploy the website using the `website/deploy` command.  This will take a few minutes.  Then you can test it!
 

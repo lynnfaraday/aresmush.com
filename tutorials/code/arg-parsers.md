@@ -55,7 +55,7 @@ There are a variety of common parsers available, described in more detail below.
 Under the hood, a parsers like `ArgParser.arg1_equals_arg2` is just a fancy regular expression that matches the pieces of the commands and assigns names to them (arg1 and arg2 in this case).  `cmd.parse_args` is a method that uses one of those fancy regexes and stores the results in an easily-accessed hash (args).
 
 {% note %} 
-By default, <b>all</b> args will end up as `nil` if the command string doesn't match the intended format.  In the example above, both property and value would be nil if you just passed \"set x\" instead of \"set x=y\".   However, some of the arg parsers expressly allow optional args.
+By default, <b>all</b> args will end up as `nil` if the command string doesn't match the intended format.  In the example above, both property and value would be nil if you just passed "set x" instead of "set x=y".   However, some of the arg parsers expressly allow optional args.
 {% endnote %}
 
 ## arg1_equals_arg2

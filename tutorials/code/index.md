@@ -110,6 +110,8 @@ It's suggested that you refer to these as you need them rather than trying to le
 ### Database
 
 * [Database](/tutorials/code/database.html)
+* [Database Relationships](/tutorials/code/db-relationships.html)
+* [Database Indices](/tutorials/code/db-indices.html)
 * [Editing the Database](/tutorials/code/edit-database.html)
 * [Removing a Database Field](/tutorials/code/remove-field.html)
 * [Database Migrations](/tutorials/code/db-migration.html)

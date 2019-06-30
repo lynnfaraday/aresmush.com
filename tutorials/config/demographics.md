@@ -103,7 +103,7 @@ If you omit the values, the group will be freeform, allowing the player to speci
 The wiki page is optional, and the group directory will automatically link to that wiki page.
 
 {% tip %} 
-The group names must use the capitalization you want in-game.  For example, \"Navy\" or \"CIA\".
+The group names must use the capitalization you want in-game.  For example, "Navy" or "CIA".
 {% endtip %}
 
 {% tip %} 

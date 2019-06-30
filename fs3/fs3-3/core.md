@@ -101,7 +101,6 @@ You may only save up to 2 XP.  Remember you spend XP as you get it, resulting in
 | Fair / Beginner | 4 XP |
 | Good / Conversational  | 8 XP |
 
-
 ## Luck
 
 Everyone starts with 1 Luck Point.  You gain more from other players through the cookie RP reward system.  Every cookie translates into a fraction of a luck point.

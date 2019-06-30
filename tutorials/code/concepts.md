@@ -20,7 +20,7 @@ This article describes some core concepts in Ares code.   It assumes you've alre
 When someone connects to the game with their MU client, Ares calls that connection a **Client**.  The Client class provides information about the connection, like the IP address and idle time.  It handles input from the MU client and turns it into a Command (explained below).  
 
 {% note %} 
-Clients represent connections from actual MUSH clients and the Ares Web Portal's \"Play\" screen (which acts like a MUSH client).  Other Web Portal connections are handled differently, as explained below.
+Clients represent connections from actual MUSH clients and the Ares Web Portal's "Play" screen (which acts like a MUSH client).  Other Web Portal connections are handled differently, as explained below.
 {% endnote %}
 
 The Client class also provides utilities to easily send messages (**emit**) to the MU client.  Throughout the Ares code, you'll see things like:

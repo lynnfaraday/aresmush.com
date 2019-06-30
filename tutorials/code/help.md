@@ -22,7 +22,7 @@ Ares contains a robust help system that can be accessed from the game (via the `
 Help files live in a `help\<language code>` folder under the plugin folder.  This supports having help files in multiple languages, based on the game's locale.
 
 {% tip %} 
-\"en\" is the language code for English, so help files will typically be in the  `help/en`  folder.
+"en" is the language code for English, so help files will typically be in the  `help/en`  folder.
 {% endtip %}
 
 Help files use [Markdown Text](https://daringfireball.net/projects/markdown/syntax).  This lets you use formatting and hyperlinks that will show up nicely on the Web Portal and also in-game.

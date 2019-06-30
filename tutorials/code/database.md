@@ -78,7 +78,7 @@ Many database properties have specialized update methods because their data stor
     Demographics.set_group(char, "Faction", "Navy")
 
 {% note %} 
-Do not attempt to change database properties just by updating the object (e.g. `char.name = \"Harry\"`)  This changes the property on the <b>object</b> but does not actually update the database.   You can legitimately use this method to change multiple properties as a batch, but you have to do `char.save` at the end to commit the changes to the database.
+Do not attempt to change database properties just by updating the object (e.g. `char.name = "Harry"`)  This changes the property on the <b>object</b> but does not actually update the database.   You can legitimately use this method to change multiple properties as a batch, but you have to do `char.save` at the end to commit the changes to the database.
 {% endnote %}
 
 ## Finder Helpers
@@ -118,66 +118,6 @@ Some database models use **Callbacks** - methods that are triggered in response 
 * `before_delete` -  If an object has any references, you may want to delete them before the object itself is deleted.  For example, a room might delete all of its exits when it's getting deleted.
 * `before_save` - If an object has special fields, you may set them before the object is saved.   For example, if you store the uppercase version of the object name for fast lookups, you want to update that to match the object name every time the object is saved.
 
-## Relationships (References and Collections)
+## Relationships - References, Sets and Collections
 
-Often you'll have relationships between database models - for example, a mail message has a connection to its recipient.  The way Ohm does that is through `references` and `collections`.  You can read all about them in the [Ohm](http://ohm.keyvalue.org/) reference guides.  Here's a quick example:
-
-The MailMessage model has a `reference` to its recipient:
-
-    class MailMessage < Ohm::Model
-      reference :character, "AresMUSH::Character"
-      ... other fields ...
-    end
-
-{% tip %} 
-Notice that you need to specify the class name that the reference refers to, including the full module name, e.g.   `AresMUSH::ModelClassName` .
-{% endtip %}
-
-If you want to be able to easily get all mail for a characer, you also need a corresponding reference on the character model.  Because there can be multiple mail messages for a character, we use a `collection`:
-
-    class Character < Ohm::Model
-      collection :mail, "AresMUSH::MailMessage"
-    end
-
-It's also possible to have a 1:1 relationship between database models.  For example: a Scene has one and only one SceneLog, so its models look like this:
-
-    class Scene < Ohm::Model
-      reference :scene_log, "AresMUSH::SceneLog"
-    end
-    
-    class SceneLog < Ohm::Model
-      reference :scene, "AresMUSH::Scene"
-    end
-
-{% tip %} 
-Collections are linked automatically, so  `MailMessage.new(character: some_char)`  will automatically add that message to the character's mail collection.  1:1 references must be manually set both ways; e.g.:
-{% endtip %}
-
-    log = SceneLog.new(scene: some_scene)
-    some_scene.update(scene_log: Log)
-
-## Index Fields
-
-Ohm lets you define an index field to make queries faster.  For example, the Character class defines `name_upcase` as an index, because we quite frequently look up characters by name.
-
-Defining an index lets you use the built-in Ohm `find` method on that field.  For example: `Character.find(name_upcase: "BOB")`.
-
-If you try to use `find` on a field that isn't indexed, you'll get a `Ohm::IndexNotFound` error.
-
-{% tip %} 
-Most Ares fields are _not_ indexed for various reasons, but you can always do a regular Ruby select.  For example:  `Character.all.select { |c| c.some_field == 'some_value' }`.
-{% endtip %}
-
-### Collection Indices
-
-Collections do some auto-magic indexing for you, so you can also get the `Ohm::IndexNotFound` error when the name of the collection and reference don't match.  For example:
-
-    class Photo < Ohm::Model
-      reference :photo_album, "PhotoAlbum"
-    end
-    
-    class PhotoAlbum < Ohm::Model
-      collection :photos, "Photo"
-    end
-
-The reference above needs to be named `photo_album` for the auto-indexing to work right, because that matches the name of the other class (PhotoAlbum).  If you just name it `album`, you'll get the index error.
+Although Redis is not a relational database like SQL, we still need to define _relationships_ between our objects. A mail message has an author and recipients (all characters), a scene is attached to a room, etc.  Ohm provides some built in concepts that let us manage these relationships.  See [Database Relationships](/tutorials/code/db-relationships.html).

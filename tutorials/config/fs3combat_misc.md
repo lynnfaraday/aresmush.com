@@ -22,7 +22,7 @@ This topic describes some miscellaneous combat options you can configure.
 Combatant types in FS3 let you specify different kinds of soldiers, pilots, aliens, etc.  Each combatant type can have a different weapon, skills and armor.  
 
 {% note %} 
-The \"Observer\" type is special and cannot be changed.  The rest can be configured as you desire.  
+The "Observer" type is special and cannot be changed.  The rest can be configured as you desire.  
 {% endnote %}
 
 For example, this BSG config sets up a Soldier type for ground marines and a Viper type for a viper pilot.  The soldier starts with a rifle and armor, and the pilot starts off piloting a Viper.

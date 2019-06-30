@@ -88,7 +88,7 @@ Remember that characters with the 'admin' role automatically have all permission
 ## Default Permissions
 
 {% tip %} 
-If you want to know exactly which commands are accessible with these permissions, use the 'search' feature of help files to look for help files referencing these permissions.  You'll see a statement like  \"These commands require the Admin role or the permission: whatever_permission\".
+If you want to know exactly which commands are accessible with these permissions, use the 'search' feature of help files to look for help files referencing these permissions.  You'll see a statement like  "These commands require the Admin role or the permission: whatever_permission".
 {% endtip %}
 
 | Role | Notes |

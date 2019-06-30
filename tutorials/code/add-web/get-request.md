@@ -15,7 +15,7 @@ tags:
 The first step is to get the data from the game to the website.  This is done through a *Web Request*.
 
 {% note %} 
-You can manually set character goals for testing using `ruby Character.find_one_by_name(\"Someone\").update(goals: \"Test goals\")`.
+You can manually set character goals for testing using `ruby Character.find_one_by_name("Someone").update(goals: "Test goals")`.
 {% endnote %}
 
 

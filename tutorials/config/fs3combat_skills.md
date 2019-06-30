@@ -22,6 +22,6 @@ The combat rules require you to determine which abilities are used for the follo
 - `strength_skill` (default = Brawn) - Used for augmenting melee weapon damage.
 
 {% tip %} 
-Although they're named \"skills\", you can use attributes instead.  Most of them are skill-based, but things like strength and recovery don't really have any _skill_ involved so they use raw attributes.  Just be aware that if they're only rolling an attribute they've got fewer dice on average.
+Although they're named "skills", you can use attributes instead.  Most of them are skill-based, but things like strength and recovery don't really have any _skill_ involved so they use raw attributes.  Just be aware that if they're only rolling an attribute they've got fewer dice on average.
 {% endtip %}
 

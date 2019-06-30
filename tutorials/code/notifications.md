@@ -7,34 +7,53 @@ tags:
 - engine
 ---
 
-The Notifier helps you to notify characters whether they are logged into the game engine (through the telnet port) or to the Web Portal. 
+There are lots of different ways to tell players about stuff happening on the game.
 
-Most places don't use the Notifier.  If the player typed a command or generated a web request, the game knows to send the response to either the game engine or Web Portal, as appropriate.
+<div id="inline_toc" markdown="1">
+**Table of Contents**
 
-The Notifier is for broader notifications that go to **both** the game engine and the Web Portal.  For example - an event being scheduled or a mail message arriving.
+* TOC
+{:toc}
+</div>
+
+## Emits
+
+Emits go only to characters logged into the game through a MUSH client, and are commonly used as command output. See [Emitting](/tutorials/code/emitting.html) for all the different ways you can emit messages.
+
+## Global Notifier
+
+The global notifier sends a simple notification to characters on the game (by way of an emit) _and_ characters logged into the web portal.  The basic version looks like this:
+
+        Global.notifier.notify_ooc(:shutdown, message) do |char|
+          true
+        end
+
+You can put conditions into the block to limit the notification to only certain characters.  Here the notification is limited to those characters who can read a forum category:
+
+      Global.notifier.notify_ooc(type, message) do |char|
+        Forum.can_read_category?(char, category)
+      end
 
 {% include pretty_image.html file='notifications.png' %}
 
-## Character Selection
+## Web Client Notifications
 
-Even those broad messages don't necessarily go to _everyone_, so the notifier has a way to let you choose who can see them.  You pass a helper block to the notify method.  If the helper returns true for a client, it gets the message. 
+You can also notify characters logged into the web portal _without_ emitting to the game.  This is normally used to update something on the web portal, like adding a pose to a scene or a chat message to a channel.
 
-For example, this one always returns true so it will notify _everybody_ of the event being scheduled:
+As with the global notifier, we can limit the notification to only certain characters.  Here we're only sending it to characters on a channel:
 
-      Global.notifier.notify_ooc(:event_created, message) do |char|
-        true
+      web_message = "#{channel.name.downcase}|#{channel.name}|#{Website.format_markdown_for_html(formatted_msg)}"
+      Global.client_monitor.notify_web_clients(:new_chat, web_message) do |char|
+        char && Channels.is_on_channel?(char, channel)
       end
 
-Whereas this version will only notify people who are on the mail message's "to" list:
+Notice that we're sending a bunch of data here (separated by | delimiters). Many web client notifications contain data and not just a simple message for display.  The type (`:new_chat`) tells the web portal how to interpret the data.
 
-      Global.notifier.notify_ooc(:new_mail, message) do |char|
-        char && recipients.include?(char) && char != author
-      end
+## Login Notices
 
-{% tip %} 
-If you're selecting particular characters, it's best to always check  `char && `  before your actual selection.  Remember that there can be clients without a character if they're sitting on the login screen or not logged into the Web Portal.   You don't want to get nil exceptions.
-{% endtip %}
+Lastly we have the personal notifications, which trigger an update of the 'bell' icon on the web portal, and show up in the 'notifications' page. These are sent to a specific character and are saved to the database so they don't miss anything.
 
-## Event Types
+    Login.notify(recipient, :mail, message, delivery.id)
 
-Each notification has an event type - `:event_created` or `:new_mail` in the examples above.  These control special effects on the Web Portal.  For example, new scene activity activates a flag on the status panel, and new mail updates the mail counter in the top right.
+The type (`:mail`) and the data (`delivery.id`) help the portal direct the player to the proper page to read the item.
+

@@ -51,7 +51,7 @@ You can set up areas in a parent/child hierarchy.  For example:
 * Offstage
 
 {% tip %} 
-Although there will probably be multiple IC areas on your grid, you'll usually have only one OOC area.  In the default database, it's just called \"Offstage\".
+Although there will probably be multiple IC areas on your grid, you'll usually have only one OOC area.  In the default database, it's just called "Offstage".
 {% endtip %}
 
 ## Special Rooms

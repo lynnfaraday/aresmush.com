@@ -20,6 +20,6 @@ XP represents incremental learning or practice.  You spend XP as you get it, res
 
 ## Limits on Learning
 
-Right after chargen, and after spending XP to learn an ability, you have to wait some time before you can spend XP on that ability again.  You can still spend XP on other abilities while you're waiting.
+Right after chargen, and after spending XP to learn an ability, you have to wait some time before you can spend XP on that ability again.  You can still spend XP on other abilities while you're waiting.  Games may also limit the absolute maximum number of ability rating points you can have, even with experience.
 
 XP awards, limits and costs vary from game to game.  For an example, see **[FS3 Core](/fs3/fs3-3/core.html)**.
