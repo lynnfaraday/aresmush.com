@@ -10,12 +10,7 @@ tags:
 
 It's important to make backups of your game database and files.  There are many ways to do this, a few of which are discussed here.  
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## What Do I Need to Back Up?
 
@@ -23,7 +18,7 @@ Here are the things that you need to back up in order to protect your game from 
 
 ### The Database
 
-The Redis database periodically dumps your database to a file on the server.  If you used the standard install scripts on Digital Ocean, your database file should be located in `/var/lib/redis/dump.rdb`.   Otherwise, you probably installed redis yourself so hopefully you know where you installed it!
+The Redis database periodically dumps your database to a file on the server.  If you used the standard install scripts on Digital Ocean, your database file should be located in `/var/lib/redis/dump.rdb`.   If you installed redis yourself, hopefully you know where you put it!
 
 ### Game Files
 

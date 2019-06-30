@@ -12,12 +12,7 @@ You can register certain IPs or hostnames as banned or suspect to block/alert yo
 
 To learn more about how banned and suspect sites work and what other options you have, see the [Dealing with Trolls](/tutorials/manage/trolls.html) tutorial.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Banned and Suspect Sites
 

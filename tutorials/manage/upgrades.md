@@ -15,12 +15,7 @@ Ares has a lot of support for **upgrades** but not for *downgrades*.  In the unl
 {% endnote %}
 
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 
 ## Basic Upgrades

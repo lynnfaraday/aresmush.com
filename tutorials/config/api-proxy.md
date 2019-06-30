@@ -12,12 +12,7 @@ The web portal uses a special forwarding feature of the web server to make it ea
  Be aware that without this feature, it may cause some people with strict work/school firewalls to be unable to connect to the web portal.
 {% endnote %}
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Setting Up the Proxy
 

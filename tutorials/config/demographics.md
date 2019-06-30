@@ -10,12 +10,7 @@ To configure the Demographics plugin:
 1. Select Admin -> Setup.
 2. Edit `demographics.yml`
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Demographics vs Groups
 
@@ -38,13 +33,11 @@ If you don't want a limit, just set them to 0 and 99 respectively.
 
 ## demographics
 
-You are able to specify all of the demographics you're going to use.  
+You are able to specify all of the demographics you're going to use.  Some tips:
 
-{% tip %} 
 * Use all-lowercase names!  These are going to be converted into code variables, and lowercase is important.
 * Don't use demographic names that conflict with other commands (like 'job').
 * Demographics will be displayed in character profiles in the order you enter them.
-{% endtip %}
  
 ### required_properties
 
@@ -84,8 +77,8 @@ If you're using the nickname field, you can control how the name and nickname ar
 
 Since demographics are so flexible, the help file refers players to the `demographics` command to list the available demographic commands.  If you want more detailed instructions, you can configure it as shown below.  Any demographics not listed will show the standard help (e.g. `hair <value>`).
 
-    help_text:
-        physique: '%xcphysique <build/body type>%xn - athletic, wiry, slim, pudgy, etc.'
+    physique: '%xcphysique <build/body type>%xn - athletic, wiry, slim, pudgy, etc.'
+    gender: '%xcgender <male/female/other>%xn'
 
 ## groups
 

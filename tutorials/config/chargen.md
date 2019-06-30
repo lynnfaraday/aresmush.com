@@ -10,12 +10,7 @@ To configure the Chargen plugin:
 1. Select Admin -> Setup.
 2. Edit `chargen.yml`
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Messages
 

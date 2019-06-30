@@ -5,12 +5,7 @@ tags:
 - config
 ---
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 Your server host and port information are set up during installation.  If they ever change, you'll need to update the configuration.
 

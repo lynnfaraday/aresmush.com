@@ -10,12 +10,7 @@ tags:
 
 Setting up [automatic backups](/tutorials/manage/backups.html) of your game is important.  In the unlikely event that disaster strikes, you'll have a backup copy of your game's database and files. This article describes how to restore the game from a backup.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Restoring from a Digital Ocean Weekly Backup
 

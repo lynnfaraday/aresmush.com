@@ -15,12 +15,7 @@ Handles have an @-sign in front (like @Faraday) to distinguish them from regular
 
 Why use handles?  We've all seen posts like "Looking for SoAndSo from SuchAndSuchMUSH."  Games close, people drift.  Handles provide tools to help you keep in touch with your friends, and keep track of who's who.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## How do I get a handle?
 

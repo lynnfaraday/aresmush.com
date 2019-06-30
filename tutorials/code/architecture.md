@@ -15,12 +15,7 @@ The following image shows all the different Ares components and how they fit tog
 
 {% include pretty_image.html file='architecture.png' %}
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Clients
 

@@ -13,12 +13,7 @@ tags:
 Indentation is super-important in YAML files.  Always make sure things are lined up with each other.
 {% endtip %}
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Example YAML
 

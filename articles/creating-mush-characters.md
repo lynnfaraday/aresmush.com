@@ -11,12 +11,7 @@ Creating a character on a MUSH can be a complex, challenging, and fascinating ta
 
 No background is ever truly complete. As you play your character, you will constantly think of new angles, new tidbits of past history. But the more you know about your character when you begin playing, the better you will be able to portray that person in a consistent and realistic manner. This guide is meant to aid you in fleshing out your character.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## FAMILY
 

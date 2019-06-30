@@ -9,12 +9,7 @@ tags:
 
 Cron Jobs are game events that run on a set schedule, such as daily healing or weekly cookie awards. 
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Cron Event
 

@@ -11,12 +11,7 @@ tags:
 
 The Dispatcher is the beating heart of Ares.  Using an [EventMachine](https://github.com/eventmachine/eventmachine) reactor library, it ensures that commands and events are queued up and handled in an orderly fashion.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Dispatches
 

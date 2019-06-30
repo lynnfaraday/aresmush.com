@@ -10,12 +10,7 @@ Achievements is an optional plugin that lets you set up in-game achievements for
 1. Select Admin -> Setup.
 2. Edit `achievements.yml`
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## announce_channel
 

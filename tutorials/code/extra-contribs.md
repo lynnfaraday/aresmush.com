@@ -17,12 +17,7 @@ Extras may include:
 * Theme styles or configuration settings (e.g. a medieval FS3 setup).
 * Basically anything else you think might be useful to the Ares community.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Submitting Extras
 

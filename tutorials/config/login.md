@@ -7,12 +7,7 @@ tags:
 
 There are several things you can configure about character logins.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Connect Screen
 

@@ -14,12 +14,7 @@ tags:
 
 In this part of the MUSH 101 tutorial, we'll go over rooms and time, two features that make MUSHes unique compared to other types of online roleplaying.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Rooms
 

@@ -12,12 +12,7 @@ To configure the IC Time plugin:
 1. Select Admin -> Setup.
 2. Edit `ictime.yml`
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## How It Works
 

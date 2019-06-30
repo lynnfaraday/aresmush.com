@@ -15,12 +15,7 @@ Scenes have to take place *somewhere*.   The Ares scene system lets you start sc
 Despite the historical name, a Room doesn't have to represent a single room.  It's more like a virtual 'chatroom' - a place where people gather for roleplay.
 {% endtip %}
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Room Type
 

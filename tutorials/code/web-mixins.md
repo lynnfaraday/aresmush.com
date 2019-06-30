@@ -13,12 +13,7 @@ Like the `include CommandHandler` statement on the game engine side, which allow
 Instead of `include`, the Ember terminology is to `extend` a Mixin.
 {% endnote %}
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Route Authentication
 

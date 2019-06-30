@@ -11,12 +11,7 @@ The wiki supports a number of Markdown extensions designed to replicate Wikidot 
 
 Wiki extensions live in the `aresmush/plugins/website/wiki_markdown` folder.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Markdown Processing
 

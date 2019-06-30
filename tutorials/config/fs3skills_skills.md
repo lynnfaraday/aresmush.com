@@ -10,12 +10,7 @@ To configure the FS3 Skills List:
 1. Select Admin -> Setup.
 2. Edit `fs3skills_action.yml`, `fs3skills_attrs.yml`, `fs3skills_bg.yml`, `fs3skills_langs.yml` and `fs3skills_advantages.yml`.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Before You Start
 
@@ -68,7 +63,7 @@ This is the instructional blurb used in the abilities screen and in chargen help
 
 ## Languages
 
-You can configure the list of Langauges, specifying a name and description for each.
+You can configure the list of Languages, specifying a name and description for each.
 
     - name: Standard
       desc: Spoken across the colonies.

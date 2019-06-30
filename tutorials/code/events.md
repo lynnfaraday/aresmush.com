@@ -11,12 +11,7 @@ tags:
 
 Where command handling is triggered by a player typing something, Events are triggered by the game itself in response to something happening.  There are events for characters connecting and disconnecting, characters being created, the game starting, and more.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Event Dispatching
 

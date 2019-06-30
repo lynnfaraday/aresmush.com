@@ -15,12 +15,7 @@ Because AresMUSH has different needs than Penn or Tiny, most dedicated "MUSH Hos
 
 This article details the system requirements to help you find the right server and get everything set up.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Supported Environment
 

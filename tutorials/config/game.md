@@ -17,7 +17,7 @@ To configure the game preferencse:
 This information includes:
 
 * Name - Your game's name.
-* Description - A short blurb about your game (optional).
+* Description - A short blurb about your game.
 * Website - URL for your game (optional; if not specified it will just use your web portal URL).
 * Category - Pick which category best describes your MUSH for the AresCentral games directory: Social, Historical, Sci-Fi, Fantasy, Modern, Supernatural, or Other.
 * Public Game - Check the box if you want your game shown on AresCentral's game directory.

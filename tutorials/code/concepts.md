@@ -8,12 +8,7 @@ tags:
 
 This article describes some core concepts in Ares code.   It assumes you've already read about the [Ares Architecture](/tutorials/code/architecture.html).
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Clients
 

@@ -14,12 +14,7 @@ tags:
 
 In this part of the MUSH 101 tutorial, we will cover how to create a character and start telling stories.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Joining the Cast
 

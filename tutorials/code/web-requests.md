@@ -21,12 +21,7 @@ When the Web Portal sends a JSON-based request to the game engine API port, seve
 Only one plugin may handle a web request.
 {% endtip %}
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Handling Web Requests
 

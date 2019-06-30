@@ -10,12 +10,7 @@ tags:
 
 An important part of [command handling](/tutorials/code/commands.html) is handling errors.  The command handler framework gives you an easy way to insert error handling into your code.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Error Checkers
 

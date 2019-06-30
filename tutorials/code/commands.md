@@ -21,12 +21,7 @@ When a MU client sends text to the game's telnet port, several things happen:
 Only one plugin may handle a command.
 {% endtip %}
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Handling Commands
 

@@ -15,12 +15,7 @@ This is not a beginner's coding manual. It assumes that you have some basic know
 
 What you'll find in this guide is a (hopefully) practical demonstration of what I like to call "journeyman-level psychocoding". It's meant to bridge the gap between a "casual" coder and a true "psychocoder"; to give you enough familiarity with how to do things that you can use these principles in your own coding projects. I hope you find it useful.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Reinventing the Wheel
 

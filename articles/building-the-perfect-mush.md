@@ -11,12 +11,7 @@ So what's the ultimate solution for the 'Perfect MUSH'? I don't think it exists.
 
 When creating a MUSH, there are a lot of things to consider. This document is meant to highlight certain issues/problems with MUSHes in general, and makes some recommendations on each. I'll say one thing up front -- these ideas won't work for everybody and there are some cases where things mentioned here don't fit at all. To each his own. But hopefully this document might allow you to see some alternate viewpoints so you can come up with YOUR own solutions for your own MUSH.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Man This Joint Is Jumping
 

@@ -10,12 +10,7 @@ AresMUSH is ready to go out of the box with a default configuration based on a B
 
 {% include tutorial_warning.html %}
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Configuration Files
 
@@ -29,11 +24,54 @@ Clicking on any config file will present you with a screen where you can edit th
 
 {% include pretty_image.html file='web-portal/config.png' %}
 
-Ares configuration files use YAML, so you should check out the [Understanding YAML](/tutorials/code/yaml.html) tutorial before diving into the advanced configuration.
 
 {% tip %} 
 Coders can also edit the config files in the server shell, but you'll need to ue the  `load config`  command afterwards to reload the configuration.  The Web Portal automatically reloads the config, so that step is not necessary when using the web editor.
 {% endtip %}
+
+## Using YAML
+
+Ares config files use YAML, a simple formatting language.  You can see the [Understanding YAML](/tutorials/code/yaml.html) tutorial for details and troubleshooting help, but here's a quick overview.
+
+Many config options are just numbers or strings, so you can edit them just by putting a value into the edit box.  For example:
+
+{% include pretty_image.html file='config/string-param.png' %}
+
+{% include pretty_image.html file='config/number-param.png' %}
+
+
+{% tip %} 
+You may need quotes around your string values if they contain special characters.  Do not use quotes around number values.
+{% endtip %}
+
+
+Some config options are lists.  List the values, one per line, with a hyphen in front of each line.
+
+{% include pretty_image.html file='config/list-param.png' %}
+
+{% note %} 
+If you don't want any values in the list, replace the list with `[]`. Do **not** just leave it empty or your game will have an error when it tries to use the list.
+{% endnote %}
+
+The most complex config options are multi-field data structures called hashes.
+
+{% include pretty_image.html file='config/hash-param.png' %}
+
+The simplest hashes are just a set of name/value pairs, like this one listing demographic names and their corresponding command syntax:
+
+```
+physique: '%xcphysique <build/body type>%xn - athletic, wiry, slim, pudgy, etc.'
+gender: '%xcgender <male/female/other>%xn'
+```
+
+But many hashes have more complex, nested data, like the demographics groups shown in the screenshot above. This hash is in the form group name:group config, but each group config is _itself_ a hash with `desc` and `values` fields.  And the values are _also_ a hash, listing value names and descriptions.
+
+Hashes can be tricky to edit.  Make sure your indentation lines up and you have values for all required fields.
+
+{% note %} 
+If you ever want an empty hash, replace it with `{}`. Do **not** just leave it empty or your game will have an error when it tries to use the hash.
+{% endnote %}
+
 
 ## Essential Config
 
@@ -115,7 +153,7 @@ These configuration options will probably not need to be changed unless your ser
 * [Configuring the Database](/tutorials/config/database.html)
 * [Configuring the Server Info](/tutorials/config/server.html)
 * [Configuring AresCentral](/tutorials/config/arescentral.html)
-* [Using the API Proxy](/tutorials/config/api-proxy.html).html)
+* [Using the API Proxy](/tutorials/config/api-proxy.html)
 
 ## General Config Topics
 

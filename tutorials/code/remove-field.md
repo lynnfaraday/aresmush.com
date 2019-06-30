@@ -9,12 +9,7 @@ tags:
 
 Ares uses the [Ohm](http://ohm.keyvalue.org/) database library to access fields in the Redis database.  Adding new fields to Ohm database models is very easy.  Removing them requires a little more work.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Why Removing is Tricky
 

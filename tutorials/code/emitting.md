@@ -13,12 +13,7 @@ Emitting messages is the most basic way that your code will communicate with the
 All emits accept [Formatting Codes](/tutorials/code/formatting.html).
 {% endtip %}
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Basic Emits
 

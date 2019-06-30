@@ -9,12 +9,7 @@ tags:
 
 This article lists some tools that you'll probably want to get if you're doing Ares coding.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Code Editors
 

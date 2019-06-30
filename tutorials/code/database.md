@@ -9,12 +9,7 @@ tags:
 
 Most commands will need to read data from or save data to the database.  Ares uses an off-the-shelf database tool called Redis.  The [Ohm](http://ohm.keyvalue.org/) database library lets you interact with the database directly from Ruby code.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Models and Fields
 

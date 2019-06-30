@@ -15,12 +15,7 @@ The article provides tips if you want to replace FS3 with a custom system.
 FS3 is not the only skills system that Ares natively supports.  Other systems are available as [Extras](/tutorials/code/extras.html) and can be installed very easily.  This article doesn't apply to those systems.  It's about designing your own.
 {% endtip %}
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Before You Begin
 

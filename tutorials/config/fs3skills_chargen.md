@@ -10,12 +10,7 @@ To configure the FS3 Chargen Limits:
 1. Select Admin -> Setup.
 2. Edit `fs3skills_chargen.yml`
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Before You Start
 
@@ -85,8 +80,11 @@ You can set break points for attributes and skills to limit how many a character
 Remember that these limits are at *or above*.  So given the max skills example above:
 
 > 1 at 6, 1 at 7 --> OK
+>
 > 2 at 6 --> OK
+>
 > 2 at 7 --> *NOT* OK  (even though you can have 2 above 6, only 1 of them may be at or above 7)
+>
 > 2 at 6, 1 at 7 --> *NOT* OK (you can only have 2 skills total at or above 6)
 
 ## starting_skills

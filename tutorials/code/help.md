@@ -10,12 +10,7 @@ tags:
 
 Ares contains a robust help system that can be accessed from the game (via the `help` command) or through the Web Portal.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Help Files
 

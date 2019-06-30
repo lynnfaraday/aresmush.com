@@ -10,12 +10,7 @@ tags:
 
 An important part of [command handling](/tutorials/code/commands.html) is parsing arguments.  Arguments coming out of the `Command` class are raw strings.  Ares provides a variety of argument parsing utilities to handle command args that are intended to be interpreted as numbers, lists, or even complex sequences like "name=subject/message".
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Arg Converters
 

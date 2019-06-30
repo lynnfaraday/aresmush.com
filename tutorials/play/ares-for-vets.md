@@ -10,12 +10,7 @@ This tutorial will go over the major differences between Ares and Penn/Tiny.
 
 If you have any questions or suggestions, feel free to [contact me](/feedback.html).
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Getting Help
 

@@ -10,12 +10,7 @@ This topic describes some miscellaneous combat options you can configure.
 1. Select Admin -> Setup.
 2. Edit `fs3combat_misc.yml` 
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## combatant_types
 

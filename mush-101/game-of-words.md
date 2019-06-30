@@ -16,12 +16,7 @@ Virtual reality and 3D games may be the next big thing, but for almost thirty ye
 
 A **MUSH** is a multi-player online game that blends creative writing, improv acting and role-playing into a unique interactive storytelling experience.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## A Story and a Game in One
 

@@ -6,12 +6,7 @@ layout: page
 
 Most text blocks in the web portal accept [Markdown formatting](https://daringfireball.net/projects/markdown/syntax).  Markdown is a markup language that is designed to be readable even when displayed in plain text, making it ideal for text that can also be viewed on the MUSH itself.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Basic Markdown
 

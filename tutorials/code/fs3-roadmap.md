@@ -10,12 +10,7 @@ tags:
 
 Whether you're modifying FS3 for your own house rules or using it as a pattern for your own skill system, it may help you to understand the key code blocks that make up the FS3 codebase.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## FS3 Plugins
 

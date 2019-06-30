@@ -11,12 +11,7 @@ Sometimes things go wrong, and you'll get the "Sorry! The code lost its mind whi
 
 If the information below doesn't help you, you can always ask for help on the [Ares Forums](/feedback.html).
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Log Files
 

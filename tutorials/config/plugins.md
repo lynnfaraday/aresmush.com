@@ -12,7 +12,7 @@ A few plugins, however, are designed to be optional.  These can be enabled and d
 {% include pretty_image.html file='code/plugins.png' %}
 
 {% note %} 
-Even if a plugin is not listed as optional, it's still possible to remove or replace it.  It'll just require some [code surgery](/tutorials/code/plugins.html) rather than a mouse click.  Do not attempt to remove a plugin simply by deleting its code folder.  That will most likely cause unexpected code errors.
+Even if a plugin is not listed as optional, it's still possible to remove or replace it.  It'll just require some [code surgery](/tutorials/code/plugins.html) rather than a mouse click.  Do not attempt to remove a plugin simply by deleting its code folder.  That will cause unexpected code errors.
 {% endnote %}
 
 To enable or disable optional plugins:
@@ -36,10 +36,10 @@ Disabling a plugin does **NOT**:
 
 * Remove its code.  Everything is still loaded.
 * Remove fields from the database.  All the data is still stored.
-* Remove its web pages.  You can still access them if you manually type in the address.
+* Remove its web pages.  You can still access them if you manually type in the address.  (But they won't do anything useful.)
 * Remove it from the web portal menu.  You must [edit your menu configuration](/tutorials/config/website.html#changing-the-navbar) yourself.
 
-In other words, the plugin is still there - it's just hidden from casual inspection.
+In other words, the plugin is still there - it's just hidden and can't really do anything.
 
 ## Why is it Better to Disable?
 

@@ -11,12 +11,7 @@ On the whole, I think Battlestar Pacifica is a pretty cool game. We have a bunch
 
 That said, it is not without its problems. There are a number of things that I would do differently if I had the chance. I figured I'd jot some of them down in the hopes that these 'lessons learned' might be useful to somebody somewhere.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Have a Vision
 

@@ -7,12 +7,7 @@ tags:
 
 There are a variety of things you can configure about the Web Portal.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Home Page Text
 
@@ -25,11 +20,7 @@ The home page text can contain [Markdown formatting](https://daringfireball.net/
 
 ## Changing the Colors
 
-You can configure the colors on the Web Portal.
-
-The Web Portal uses SCSS, which is an enhanced version of CSS that - among other things - lets you set up variables so you can change a color in one spot and have it take effect in many styles. Changing the primary color will affect both headings and table headers, for example.
-
-To change the colors:
+To change the colors on the web portal:
 
 1. Select Admin -> Setup
 2. Select Edit Theme Colors.
@@ -55,16 +46,18 @@ After changing the colors, you'll usually need to do a force-refresh on your bro
 
 ## Images
 
-There are three main images used by the website.  You can upload new versions on the website.
-
-1. Select Directory -> Files.
-2. Upload new versions for any files in the `theme_images` folder.  This folder is locked to admins.
-3. Be sure to check the 'overwrite' box to overwrite the existing version.
+There are three main images used by the website.  
 
 * background.png - Used as a background image across the page title/header area.
 * box-bg.png - Used as a background behind the character profile and log pages.
 * jumbotron.png - Home page image.
 * favicon.ico and favicon-active.ico - The little icon that appears in a browser tab to identify the site.  There are a number of [free generators](https://favikon.com/) that can make one from your image of choice.  The 'active' version should either change colors or have a little indicator on it to indicate new activity.  If you need help doing that, feel free to [ask](/feedback.html).
+
+You can upload new versions on the website.
+
+1. Select Directory -> Files.
+2. Upload new versions for any files in the `theme_images` folder.  This folder is locked to admins.
+3. Be sure to check the 'overwrite' box to overwrite the existing version.
 
 {% note %} 
 Some browsers (notably Chrome) are stubborn about reloading theme images right away.  You may need to clear your image cache or try viewing it in private/incognito mode to see your images right after you've uploaded them.
@@ -92,7 +85,7 @@ And in narrow browsers, including mobile, the height will be scaled down to be 2
 
 {% include pretty_image.html file='web-portal/background-narrow.jpg' %}
 
-You can pick a different focal point (other than center) with custom CSS, as explained in the [W3Schools](https://www.w3schools.com/css/css_background.asp) tutorial on background positioning.  See below for information on custom CSS styles.
+You can pick a different focal point (other than center) and scale the image in different ways, as explained in the [W3Schools](https://www.w3schools.com/css/css_background.asp) tutorial on background positioning.  This can be done using [Custom CSS](#custom-css-style), explained below.
 
 ## Changing the Navbar
 
@@ -124,10 +117,8 @@ For an internal page, list the page **route** and display title.  For example:
       route: characters
 
 {% note %} 
-The route must match the **internal coded route name** used by the web portal.  This is often **not** the same as the URL you see in the browser. For example, the character gallery is http://somegame.com/chars but the route is named 'characters'.
+The route must match the **internal coded route name** used by the web portal.  This is often **not** the same as the URL you see in the browser. For example, the character gallery is http://somegame.com/chars but the route is named 'characters'. You can get a complete list of routes by going to http://YOUR_WEB_PORTAL/routes.  If the one you want isn't listed, just [ask for help](/feedback.html).
 {% endnote %}
-
-You can get a complete list of routes by going to http://YOUR_WEB_PORTAL/routes.  If the one you want isn't listed, just [ask for help](/feedback.html).
 
 Some routes, notably help-topic and wiki-page, require you to specify an identifier matching the help topic name or wiki page name.  For example:
 
@@ -153,7 +144,7 @@ For a dividing line, just use:
 
 You can use Google's [Recaptcha](https://www.google.com/recaptcha/intro/) to keep bots from creating accounts.  This is optional, but if you don't turn it on you should disable `allow_web_registration`.  Otherwise you'll get bot accounts for sure.
 
-Sign up for your own Recaptcha key by clicking "Get Recaptcha" from that website.
+Sign up for your own Recaptcha key by clicking "Get Recaptcha" from the [Recaptcha site](https://www.google.com/recaptcha/intro/).
 
 1. Create a new "Recaptcha v2" key.
 2. List your game's website domain under the domains list.  You can also list 'localhost' if you're doing local testing.
@@ -180,7 +171,7 @@ Enter the Recaptcha Site and Secret you got from the code snippet above.
 
 ## Custom CSS Style
 
-Beyond the colors, you can add custom CSS styles that will override the Web Portal style to your heart's content.
+Beyond the colors, you can add custom CSS styles that will override the Web Portal style to your heart's content. The Web Portal uses SCSS, which is an enhanced version of CSS that lets you use variables and advanced style settings.
 
 1. Select Admin -> Setup
 2. Edit `custom_style.scss`.
@@ -203,20 +194,6 @@ Many games want to change the text font.  You can easily use a Google font by ad
 
 The default Ares theme is designed for dark text on a light background.  If you want to use a light-on-dark theme for your web portal, you will need to adjust the CSS for various controls.  You can find some styles to get you started in the file `aresmush/install/game.distr/styles/dark_theme.scss`.  Just copy those styles to your `custom_style.scss` file and set the base colors at the top of the file.  Then adjust as desired.
 
-### Advanced Color Variables
-
-The web portal uses the [Bootstrap](hhttps://getbootstrap.com/docs/3.3/css/#less) website layout and the [Ember Power Select](http://ember-power-select.com/docs/styles) addon for dropdown menus.  Although you _can_ style these things with regular CSS by modifying `custom_style.scss`, it might be easier to use their own built-in variable names.  
-
-{% note %} 
-Bootstrap and Power Select variables are **not** editable through the Ares `colors.scss` file.  You have to modify the code file `ares-webportal/app/styles/advanced-colors.scss` and then re-deploy the portal.
-{% endnote %}
-
-Here are some examples of how you can set Bootstrap and Power Select styles:
-
-    $ember-power-select-border-color: orange;
-    $state-info-bg:  yellow;
-    $brand-success: blue;
-
 ### Icons
 
 [FontAwesome](http://fontawesome.io/icons/) icons are used throughout the site and available for your use in custom HTML.
@@ -224,6 +201,10 @@ Here are some examples of how you can set Bootstrap and Power Select styles:
 ## Wiki Options
 
 See [Configuring the Wiki](/tutorials/config/wiki.html).
+
+## HTTPS Web Portal
+
+If you want your web portal to use HTTPS for security, it requires some advanced server setup.  See [HTTPS Web Portal Setup](/tutorials/config/server.html#https-web-portal).
 
 ## Advanced Options
 
@@ -251,8 +232,3 @@ By default, the character gallery page shows characters organized into tabs by F
 ### left_sidebar
 
 If set to true, the sidebar appears on the left instead of the default right.
-
-
-### HTTPS Web Portal
-
-If you want your web portal to use HTTPS for security, it requires some advanced server setup.  See [HTTPS Web Portal Setup](/tutorials/config/server.html#https-web-portal).

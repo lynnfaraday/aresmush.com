@@ -10,6 +10,8 @@ To configure the FS3 Skills List:
 1. Select Admin -> Setup.
 2. Edit `fs3skills.yml`
 
+{% include toc.html %}
+
 ## roll_channel
 
 FS3 can optionally output rolls to a channel in addition to the room where the roll is made.  This can help staff call for rolls from afar.  Remove this entry if you don't want to use a rolls channel.

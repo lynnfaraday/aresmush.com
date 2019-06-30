@@ -11,12 +11,7 @@ AresMUSH features a fully-integrated **Web Portal** that allows you to interact 
 
 {% include pretty_image.html file='web-portal/webportal.png' %}
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Video Guide
 

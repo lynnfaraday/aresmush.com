@@ -10,12 +10,7 @@ Choosing the right server for your MUSH is important, and Ares may not be the be
 
 Obviously this is biased a bit from my perspective, but I have done my best to be fair and accurate in representing the other servers.  If you see any discrepancies, please [let me know](/feedback.html).
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Server Comparison
 

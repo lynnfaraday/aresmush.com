@@ -15,12 +15,7 @@ To configure the mounts list:
 1. Select Admin -> Setup.
 2. Edit `fs3combat_mounts.yml`
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Vehicle Types
 

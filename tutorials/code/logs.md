@@ -9,12 +9,7 @@ tags:
 
 Ares has an internal logging system (log4r) to help diagnose code issues.  The log includes error messages, important game events, and every command executed on the game *except* those omitted for player privacy (pages, poses, channel chat, and passwords).
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## Logging in Code
 

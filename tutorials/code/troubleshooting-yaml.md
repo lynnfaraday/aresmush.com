@@ -9,12 +9,7 @@ tags:
 
 YAML is the data format used for Ares' configuration files.  For general information about how to use YAML, see [Understanding YAML](/tutorials/code/yaml.html).  This article will help you troubleshoot issues with your YAML files.
 
-<div id="inline_toc" markdown="1">
-**Table of Contents**
-
-* TOC
-{:toc}
-</div>
+{% include toc.html %}
 
 ## YAML Errors
 
