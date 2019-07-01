@@ -66,16 +66,13 @@ You can configure whether RP hooks must be set in chargen or not.
 
 ## stages
 
-Character creation is done as a series of 'stages'.  For each stage, you can choose to display either a help file, a tutorial file, or both.
+Character creation is done as a series of 'stages'.  For each stage, you can choose to display either a help file, a title and text, or both.
 
-{% tip %} 
-Tutorial files should be stored in the  `chargen/templates`  folder.
-{% endtip %}
-
-For example, the first stage in the sample configuration below will show the 'chargen.md' tutorial file and the second stage will show the 'sheet' help file.
+For example, the first stage in the sample configuration below will show some text and the second stage will show the 'sheet' help file.
 
     start:
-        tutorial: 'chargen.md'
+        title: "A Title"
+        text: "Some text."
     sheet:
         help: 'sheet'
 

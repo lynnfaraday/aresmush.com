@@ -4,7 +4,7 @@ description:
 layout: page
 ---
 
-Ares has a robust and flexible roles/permissions system.  This article describes how you can utilize roles on your game.
+Ares has a robust and flexible roles/permissions system.  This article describes how you can utilize roles on your game. For specific command syntax, see the "Roles" help topic in-game.
 
 {% include toc.html %}
 
@@ -24,13 +24,13 @@ The default Ares database comes with several roles:
 * **Coder** gives access to the [tinker command](/tutorials/code/tinker.html) (which lets them execute arbitrary code) and commands to reload the game code.
 * **Builder** gives access to building commands, the ability to describe rooms, and the ability to teleport around.
 * **Guest** doesn't give any permissions, but the role is used to identify guest characters so the game can choose one when someone tries to log in as a guest.
-* **Approved** grants some basic permissions that are available to approved characters, such as the ability to use the 'home' command.
+* **Approved** grants some basic permissions that are available to approved characters, such as the ability to use the 'home' command and post to the forum.
 * **Everyone** is a default role granted to all characters, approved or not.
 
 Additionally, there is a special character - the master admin (default name Headwiz).  The master admin has both the admin and coder roles, and is the only one that can assign those roles.
 
 {% note %} 
-Coders essentially have the keys to the kingdom.  They can do anything to the database, including changing the master admin password.  Make sure you trust your coders!
+Coders essentially have the keys to the kingdom.  They can do anything to the database, including changing the master admin password, editing roles, etc.  Make sure you trust your coders!
 {% endnote %}
 
 ## Permissions
@@ -51,8 +51,8 @@ Let's say you wanted to create a more limited admin role for apps staff.  You wa
 
 1. Create the role using `role/create app_staff`.
 2. Assign permissions using `role/addpermission app_staff=<permission>`.   You probably want to give them things like `manage_apps`, `view_sheets` and `access_jobs`.
-3. Update the jobs config to add the `app_staff` role to the APP category.  See the [jobs configuration tutorial](/tutorials/config/jobs.html) for details.
-4. Set permissions on the Apps forum using `forum/readroles <roles>` and `forum/writeroles <roles>`.
+3. Set permissions on the Apps job category using `job/categoryroles <category>=<roles>`
+4. Set permissions on the Apps forum using `forum/readroles <forum>=<roles>` and `forum/writeroles <forum>=<roles>`.
 
 {% note %} 
 Numerous commands are locked to characters with the 'approved' role as a defense against trolls. Full-fledged admins automatically count as approved, but you'll need to assign the 'approved' role to your other staff manually using `role/add <name>=approved`.  You should also mark them as player bits with the `playerbit` command so they don’t show up on the character gallery.

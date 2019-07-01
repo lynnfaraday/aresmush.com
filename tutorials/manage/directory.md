@@ -20,7 +20,7 @@ It is presumed that most games 'In Development' aren't ready to be listed on the
 You *can* register a private game, but you must do so manually.  With an admin character, type `game/register` in-game.
 
 {% note %} 
-You cannot link character to player handles until your game is registered.  This is a big reason why you might want to register a private game.
+You cannot link character to player handles until your game is registered.  This is the main reason why you might want to register a private game.
 {% endnote %}
 
 ## Status

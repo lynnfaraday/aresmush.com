@@ -9,17 +9,31 @@ These articles will help you administer/manage an Ares game.  It assumes your ga
 {% include tutorial_warning.html %}
 
 {% tip %} 
-In addition to these overview articles, you'll find help files on specific admin commands in-game under the  `~admin~`  sections of the help files.  For example:   `help manage apps` .
+These articles give a general overview of the various game systems.  For specific in-game commands, see the game help files. For example: `help manage apps` tells you all about the application commands.
 {% endtip %}
 
 ## Game Administration
 
-* [Building the Grid](/tutorials/manage/building.html) - Setting up the game's locations.
-* [Using Roles and Permissions](/tutorials/manage/roles.html) - Fine-tuning what staff can do.
-* [Dealing with Trolls](/tutorials/manage/trolls.html) - Tools for handling trolls and harassment.
-* [Setting up Guests](/tutorials/manage/guests.html) - Adding/changing guest characters.
-* [Adding Plugins](/tutorials/code/extras.html) - Finding and using community plugins.
-* [Managing the Game Directory](/tutorials/manage/directory.html) - Advertising your game.
+### Getting Started
+
+* [Getting Started as an Admin](/tutorials/manage/started.html)
+
+### Major Systems
+
+* [Building the Grid](/tutorials/manage/building.html)
+* [Reviewing Character Apps](/tutorials/manage/apps.html)
+* [Using Roles and Permissions](/tutorials/manage/roles.html)
+* [Using Jobs and Requests](/tutorials/manage/jobs.html)
+
+### Periodic Tasks
+
+* [Sweeping Idle Characters](/tutorials/manage/roles.html)
+* [Dealing with Trolls](/tutorials/manage/trolls.html)
+* [Adding Plugins](/tutorials/code/extras.html)
+* [Managing the Game Directory](/tutorials/manage/directory.html)
+* [Setting up Guests](/tutorials/manage/guests.html)
+* [Troubleshooting Issues](/tutorials/code/troubleshooting.html)
+* [Upgrading the Code](/tutorials/manage/upgrades.html)
 
 ## Database Tools
 
@@ -29,14 +43,12 @@ In addition to these overview articles, you'll find help files on specific admin
 
 ## Server Management
 
-* [Troubleshooting Issues](/tutorials/code/troubleshooting.html)
 * [Connect to the Server Shell](/tutorials/install/server-shell.html)
 * [Starting the Game](/tutorials/manage/start.html)
 * [Shutting Down the Game](/tutorials/manage/shutdown.html)
 * [Rebooting the Server](/tutorials/manage/reboot.html)
 * [Changing the Server Timezone](/tutorials/manage/server-timezone.html)
 * [Setup Auto-Restart After Reboot](/tutorials/manage/restart-after-reboot.html)
-* [Upgrading the Code](/tutorials/manage/upgrades.html)
 * [Archiving the Web Portal](/tutorials/manage/web-archive.html)
 
 ## Admin Guides

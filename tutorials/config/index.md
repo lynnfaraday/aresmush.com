@@ -26,7 +26,7 @@ Clicking on any config file will present you with a screen where you can edit th
 
 
 {% tip %} 
-Coders can also edit the config files in the server shell, but you'll need to ue the  `load config`  command afterwards to reload the configuration.  The Web Portal automatically reloads the config, so that step is not necessary when using the web editor.
+Coders can also edit the config files in the server shell, but they'll need to use the  `load config`  command afterwards to reload the configuration.  The Web Portal automatically reloads the config, so that step is not necessary when using the web editor.
 {% endtip %}
 
 ## Using YAML
@@ -39,11 +39,9 @@ Many config options are just numbers or strings, so you can edit them just by pu
 
 {% include pretty_image.html file='config/number-param.png' %}
 
-
 {% tip %} 
 You may need quotes around your string values if they contain special characters.  Do not use quotes around number values.
 {% endtip %}
-
 
 Some config options are lists.  List the values, one per line, with a hyphen in front of each line.
 
@@ -72,18 +70,16 @@ Hashes can be tricky to edit.  Make sure your indentation lines up and you have 
 If you ever want an empty hash, replace it with `{}`. Do **not** just leave it empty or your game will have an error when it tries to use the hash.
 {% endnote %}
 
-
 ## Essential Config
 
 These are settings that pretty much every game will want to configure.
 
-* [Configuring the Game Directory Info](/tutorials/config/game.html)
 * [Configuring the Web Portal](/tutorials/config/website.html)
-* [Configuring the Game Skin (Lines)](/tutorials/config/skin.html)
 * [Configuring Demographics](/tutorials/config/demographics.html)
 * [Configuring the IC Time System](/tutorials/config/ictime.html)
 * [Enabling and Disabling Plugins](/tutorials/config/plugins.html)
 * [Setting Up Backups](/tutorials/manage/backups.html)
+* [Configuring the Game Directory Info](/tutorials/config/game.html)
 
 ## FS3 Config
 
@@ -128,6 +124,7 @@ A variety of other settings exist, but the defaults will work well for most game
 * [Configuring the Description System](/tutorials/config/describe.html)
 * [Configuring the Events System](/tutorials/config/events.html)
 * [Configuring the Forum System](/tutorials/config/forum.html)
+* [Configuring the Game Skin (Lines)](/tutorials/config/skin.html)
 * [Configuring the Idle System](/tutorials/config/idle.html)
 * [Configuring the Jobs System](/tutorials/config/jobs.html)
 * [Configuring the Login System](/tutorials/config/login.html)

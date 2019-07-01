@@ -2,7 +2,7 @@
 title: Battlestar Pacifica - Lessons Learned
 description: A retrospective on running a game based on the Battlestar Galactica theme.
 layout: story
-author: Linda Naughton ("Faraday")
+author: "Linda Naughton ('Faraday')"
 ---
 
 A little over a year ago, I saw a post by Zarquon seeking out staff for a Battlestar Galactica game he was building. I love BSG, and Zarquon had some really cool ideas for the game. I was very excited, and signed on to be their coder. Eventually, Zarquon's RL reared its head and he stepped down, leaving me as headwiz.

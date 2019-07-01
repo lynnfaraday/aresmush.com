@@ -30,30 +30,12 @@ There's also a "builder" character:
     Username: Builder
     Password: change_me!
 
-You can rename them if you like.  Be sure to log them in and change their passwords.
+You can rename them if you like.  
 
-## Your Own Admin
+{% note %}
+Be sure to log them in and change their passwords (`password <oldpassword>=<newpassword>`) immediately!
+{% endnote %}
 
-The Headwiz character is special, and should be reserved for special occasions.  You should create your own personal admin character to use for everyday game activities.
+## Getting Started as an Admin
 
-1. Create a character from the login screen.
-2. Log in and accept the terms of service.
-3. Log in with Headwiz in another window.
-4. Use `role/add <your character>=admin` to grant your character admin privileges.
-
-{% tip %} 
-You can also grant the 'coder' role to let someone access the tinker command to change the code.  Just be careful, because there's no limit to what someone can do once you give them access to the code (and thus the database).  See the [roles tutorial](/tutorials/manage/roles.html) for more information.
-{% endtip %}
-
-## Game Directory Information
-
-The game information you entered will not show up in the [AresCentral Game Directory](http://arescentral.aresmush.com/games) until you mark your game as open.  See [Configuring the Game Directory](/tutorials/config/game.html) to do that.
-
-## Tutorials
-
-Ares works out of the box, but there are a lot of things you can configure to make the game your own.  You can even alter the code to add custom functionality.  A rich suite of tutorials are available to help you on your way, including:
-
-* [Playing Ares](/tutorials/play) - What's different between Ares and other game servers, including the web portal and player handles.
-* [Configuring Ares](/tutorials/config) - Learn all about how you can configure Ares' appearance and behavior.
-* [Managing Ares](/tutorials/manage) - All about running an Ares game, including building, setting up staff roles, and performing basic server maintenance.
-* [Coding for Ares](/tutorials/code) - Learn Ares code from the ground up.
+Ares works out of the box, but there are a lot of things you can configure to make the game your own.  You can even alter the code to add custom functionality.  A rich suite of [tutorials](/tutorials) are available to help you on your way.  We suggest you start with [Getting Started as an Admin](/tutorials/manage/started.html), as it will guide you in getting your game set up.

@@ -8,7 +8,7 @@ tags:
 - extras
 ---
 
-"Extras" are various things that are not part of the main Ares release.  There are tinker snippets (like a sample import from Wikidot), community-authored plugins, and other tidbits.
+"Extras" are various things that are not part of the main Ares release.  There are tinker snippets, community-authored plugins, and other tidbits.
 
 {% include toc.html %}
 

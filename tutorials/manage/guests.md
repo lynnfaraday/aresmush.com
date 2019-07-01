@@ -11,6 +11,10 @@ The default Ares database includes several guest characters, Guest-1 through Gue
 
 You can rename these guests to whatever you like. The game looks for the 'guest' role, not specific names.
 
+## Adding Guests
+
 Four guests should be sufficient, but if you find yourself needing more, you can add new ones simply by assigning a character the 'guest' role. See [Roles tutorial](/tutorials/manage/roles.html) for more information.
 
-If you remove the 'guest' role from all the guests, you can effectively disable guest logins, but this would be pretty extreme.
+## Disabling Guests
+
+If you want to disable guest logins completely, you can change the `guest_role` option in the login config to a non-existent role.
