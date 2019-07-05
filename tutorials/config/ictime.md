@@ -66,7 +66,7 @@ You can change this ratio to make IC time pass slower or faster.
 * To make time pass faster, set the ratio greater than 1.  Making the ratio 2 would mean that 2 IC days pass for every 1 day in RL.
 * To make time pass slower, set the ratio less than 1.  Making the ratio 0.33 would mean that 1 IC day passes for every **3** days in RL.
 
-To make this work, you also need to set `game_start_date`, which is the RL date that the clock starts running.  
+To make this work, you also need to set `game_start_date`, which is the RL date that the clock starts running.  This should be a RL date in mm/dd/yyyy format.
 
 For example:  Assume your game started on 6/1/2018.  It is now June 10th 2018 in RL, meaning 10 days have passed since the game started.   If your time ratio was 2, the IC date would be June 20th.  If your time ratio was 0.5, the IC date would be June 5th.
 

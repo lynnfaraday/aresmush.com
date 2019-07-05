@@ -18,6 +18,14 @@ You can configure the welcome text on the Web Portal's home page.
 
 The home page text can contain [Markdown formatting](https://daringfireball.net/projects/markdown/syntax) and ansi formatting codes.
 
+## Selecting a Theme
+
+Ares comes with a default theme.  There are others available as [Ares Extras](https://github.com/aresmush/ares-extras/themes), including a dark one and several community contributions. You can install one of the other themes simply by using the in-game command `theme/install <theme name>`.
+  
+To restore the default theme, use `theme/install default`.
+
+Once you've selected a theme (or if you keep the default one) you can customize it a great deal using the settings described below.
+
 ## Changing the Colors
 
 To change the colors on the web portal:
@@ -187,12 +195,7 @@ Many games want to change the text font.  You can easily use a Google font by ad
     @import url('https://fonts.googleapis.com/css?family=Roboto');
     body {    
       font-family: 'Roboto', sans-serif;
-    }
-    
-
-### Using a Dark Theme
-
-The default Ares theme is designed for dark text on a light background.  If you want to use a light-on-dark theme for your web portal, you will need to adjust the CSS for various controls.  You can find some styles to get you started in the file `aresmush/install/game.distr/styles/dark_theme.scss`.  Just copy those styles to your `custom_style.scss` file and set the base colors at the top of the file.  Then adjust as desired.
+    }    
 
 ### Icons
 

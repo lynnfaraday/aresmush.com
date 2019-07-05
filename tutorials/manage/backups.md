@@ -16,29 +16,34 @@ It's important to make backups of your game database and files.  There are many 
 
 Here are the things that you need to back up in order to protect your game from disaster:
 
-### The Database
+* The database, located in `/var/lib/redis/dump.rdb`.
+* The game files, located in `/home/ares/aresmush/game`. This includes your config, styles and web portal file uploads.
 
-The Redis database periodically dumps your database to a file on the server.  If you used the standard install scripts on Digital Ocean, your database file should be located in `/var/lib/redis/dump.rdb`.   If you installed redis yourself, hopefully you know where you put it!
-
-### Game Files
-
-Everything in your `aresmush/game` folder is custom for your game.  This includes your connect screen, configuration files, and Web Portal file uploads.
+The file locations above assume you used the automated install. If you did a custom installation, hopefully you know where you put things.
 
 {% note %} 
-Ares' automated backup tools do not include source code.  It's assumed that you're either using GitHub (which is an awesome way to protect your code that provides other benefits too) or that you're making changes on your local computer and uploading them through FTP.  Making code changes directly through the server shell without version control is not advisable.  If you choose to do so, you'll need to decide on your own backup strategy.
+Ares' automated backup tools do not include source code.  It's assumed you're either using GitHub for source control or uploading things from your local computer.
 {% endnote %}
 
 ## Backup Options
 
-The next few sections will give you different options for backing up your game, listed in order from **most reliable** to least reliable.
+Ares has several backup options available to you, each with their own pros and cons.
 
-### Option 1: Digital Ocean Automatic Backups
+### Local Backups
+
+By default, Ares is configured to perform nightly backups, stored in the `/home/ares/aresmush/backups` directory. It will keep the last few days of backups.
+
+This offers you some protection against someone messing up your database or accidentally deleting some files, but it doesn't help you if your server suffers a catastrophic failure or if you want a backup from a month ago.
+
+For added backup security, you can FTP these files to your PC's hard drive; you just need to remember to do so.
+
+## Digital Ocean Automatic Backups
 
 If you are using a Digital Ocean droplet, you can use their [Automatic Backup](https://www.digitalocean.com/community/tutorials/an-introduction-to-digitalocean-backups) feature to create a weekly backup of your entire server.  This includes the database, the code, the server config - everything.  
 
 This is the most robust form of backup strategy, but it costs a little extra.  As of 2/18, automated weekly backups of the standard Ares droplet size cost $1/month.
 
-### Option 2: Configuring Automatic Backups with S3
+## Configuring Automatic Backups with S3
 
 AresMUSH can automatically perform daily backups to Amazon's S3 storage service for a safe, off-site storage solution. 
 
@@ -74,17 +79,6 @@ Enter your AWS access key, bucket name and the code for the region your bucket i
 
 There are many moving parts in the AWS backup process.  Once you have it all set up, we recommend that you test it once using the manual `dbbackup` command.  Make sure that the database file ends up in your S3 bucket successfully before relying on the automatic daily backups.
 
-### Option 3: Automated Local Backups
-
-AresMUSH will periodically back up your database and game folder to the local server.  This isn't a great backup strategy (since your backups will be toast if anything happens to the server itself) but it's better than nothing.  Edit the backup type (explained below) to 'local' to enable automated local backups.
-
-Backups are stored in your `aresmush/backups` folder.
-
-### Option 4: Manual FTP
-
-You can manually FTP the database dump file and game files to your local hard drive for a simple backup.  The catch is you need to remember to do this periodically!
-
-
 ## General Backup Configuration
 
 For the automated backup strategies (local or AWS), there are a few things you'll want to configure.
@@ -113,8 +107,6 @@ If you used the standard install scripts, the game should already be configured 
 2. Select 'Setup'.
 3. Select `database.yml`.
 4. Enter the path to redis' dump file.
-
-
 
 ## Restoring Backups
 

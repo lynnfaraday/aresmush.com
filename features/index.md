@@ -35,10 +35,13 @@ Learn more at [Ares for Admins](/features/ares-for-admins.html.
 
 ## Make it Easier to Code
 
-Some games will need advanced customizations or theme-specific code. Traditional MUSH softcode is hard to learn and work with, and the server hardcode is difficult or impossible to change. Ares code is easier to work with.
+Some games will need advanced customizations or theme-specific code. Traditional MUSH softcode is hard to learn and work with, and the server hardcode is impractical to change. Ares code offers some advantages:
 
-* Mainstream languages - Ruby (for the server) and JavaScript (for the web portal)- that are easier to learn and get help with.
+* Mainstream languages - Ruby (for the server) and JavaScript (for the web portal) - and tools.
 * A robust plugin system that makes it easy to change core functionality.
+* Extensive tutorials to teach you Ares coding from the ground up.
+
+That is not to say that learning to code in Ares is *easy*. Coding is hard in any language. If you're starting from scratch with no prior coding experience, it's still going to take time and effort to learn (especially for the web portal code).
 
 Learn more at [Ares for Coders](/features/ares-for-coders.html.
 

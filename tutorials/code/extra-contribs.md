@@ -14,7 +14,8 @@ Extras may include:
 
 * Complete stand-alone Plugins.
 * Snippets of code and/or other files to show somebody how to implement something.
-* Theme styles or configuration settings (e.g. a medieval FS3 setup).
+* Theme styles for the web portal.
+* Configuration settings (e.g. a medieval FS3 setup).
 * Basically anything else you think might be useful to the Ares community.
 
 {% include toc.html %}
@@ -26,12 +27,11 @@ There are two ways to make a submission.
 1. Send the files [directly](/feedback.html).
 2. Fork the [Ares Extras repository](https://github.com/AresMUSH/ares-extras) and submit a GitHub Pull Request.
 
-Some guidelines for the code itself:
+Some important notes:
 
-* Include a README.md file with an overview of the extra and what configuration options are available.
+* Include a README.md file with an overview of the extra and what configuration options are available. Be sure to give yourself credit in the README.
+* All extras must be submitted under the same [code license](/license.html) as Ares itself.
 * Make your code clean and readable.  Basically, if nobody can make heads or tails of your code, it won't make the cut.
-
-> All extras must be submitted under the AresMUSH [code license](/license.html).
 
 If you have any questions, just [ask for help](/feedback.html).
 
@@ -57,6 +57,13 @@ For example:
 {% note %} 
 All folders are optional, so just omit any that don't apply to your plugin.
 {% endnote %}
+
+## Submitting Themes
+
+You can submit a web portal theme.  The folder structure for a theme includes:
+
+* A `styles` folder with `custom_style.scss` and `colors.scss`.
+* An optional `images` folder with the [theme images](/tutorials/config/website.html) needed by the portal. You can supply all, any, or none of the images.
 
 ## Submitting Patches
 
