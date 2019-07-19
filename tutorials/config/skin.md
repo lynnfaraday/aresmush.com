@@ -10,6 +10,8 @@ To configure the game skin:
 1. Select Admin -> Setup
 2. Edit `skin.yml` 
 
+{% include toc.html %}
+
 ## Border Lines
 
 You can configure the border lines that are used in almost every command.  Ares lets you define four different lines.  Each of the lines can contain ansi codes and linebreaks (%r).

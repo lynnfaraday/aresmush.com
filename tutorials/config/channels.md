@@ -5,12 +5,12 @@ tags:
 - config
 ---
 
-{% include toc.html %}
-
 To configure the Channels plugin:
 
 1. Select Admin -> Setup.
 2. Edit `channels.yml`
+
+{% include toc.html %}
 
 ## Creating Channels
 
@@ -47,6 +47,10 @@ This should be a list.  For example:
 You can also configure which channels characters join when they are approved.  Like `default_channels`, this should be a list.  For example:
 
     - RP Requests
+
+## announce_channel
+
+This is the channel where various OOC game announcements will go, like who records being broken or events starting.
 
 ## ooc_lounge_channel
 

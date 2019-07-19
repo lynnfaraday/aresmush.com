@@ -11,13 +11,16 @@ There are lots of different ways to tell players about stuff happening on the ga
 
 {% include toc.html %}
 
-## Emits
-
-Emits go only to characters logged into the game through a MUSH client, and are commonly used as command output. See [Emitting](/tutorials/code/emitting.html) for all the different ways you can emit messages.
+{% tip %}
+It is quite common for a single update to use multiple notification channels. For example, if an event is updated it will announce the update to the Game channel, and notify anyone who's signed up for the event with a login notice.
+{% endtip }
 
 ## Global Notifier
 
-The global notifier sends a simple notification to characters on the game (by way of an emit) _and_ characters logged into the web portal.  The basic version looks like this:
+The global notifier sends a message to characters on the game (by way of an emit) _and_ characters logged into the web portal (by way of a browser notification).  The basic version looks like this:
+
+{% tip %}
+Global notifications are spammy and distracting, so they are limited to important things that might need immediate attention (i.e. announcements about the game shutting down or a new mail/forum/job message). 
 
         Global.notifier.notify_ooc(:shutdown, message) do |char|
           true
@@ -33,7 +36,7 @@ You can put conditions into the block to limit the notification to only certain 
 
 ## Web Client Notifications
 
-You can also notify characters logged into the web portal _without_ emitting to the game.  This is normally used to update something on the web portal, like adding a pose to a scene or a chat message to a channel.
+Web client notifications are used to update info on the web portal _without_ emitting to the game, like adding a pose to a scene or a chat message to a channel.
 
 As with the global notifier, we can limit the notification to only certain characters.  Here we're only sending it to characters on a channel:
 
@@ -44,11 +47,16 @@ As with the global notifier, we can limit the notification to only certain chara
 
 Notice that we're sending a bunch of data here (separated by | delimiters). Many web client notifications contain data and not just a simple message for display.  The type (`:new_chat`) tells the web portal how to interpret the data.
 
-## Login Notices
+## Game Channel
+
+General game events are sent to the Game channel by default (though you can configure which channel). This includes miscellaneous updates like the who record being broken, and event starting, and so on.  Using a channel versus a global emit lets people mute these notifications when they're RPing and catch up on them later.
+
+    Channels.announce_notification(message)
+
+## Personal Notifications
 
 Lastly we have the personal notifications, which trigger an update of the 'bell' icon on the web portal, and show up in the 'notifications' page. These are sent to a specific character and are saved to the database so they don't miss anything.
 
     Login.notify(recipient, :mail, message, delivery.id)
 
 The type (`:mail`) and the data (`delivery.id`) help the portal direct the player to the proper page to read the item.
-

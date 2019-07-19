@@ -42,6 +42,6 @@ As a last resort, if none of the above steps work to shut down the game, you can
 
 If for some reason the process ID isn't there or the kill command doesn't work, you'll need to figure out the game process.  On most servers, you can execute the command `ps -aux | grep startares` and see something like this:
 
-    lynn     **25742**  0.0  6.5 233656 69084 ?        Sl   06:29   0:04 ruby /home/lynn/.rvm/gems/ruby-2.1.5/bin/rake startares
+    ares     25742  0.0  6.5 233656 69084 ?        Sl   06:29   0:04 ruby /home/ares/.rvm/gems/ruby-2.1.5/bin/rake startares
 
 The bold number in the second column is the process ID (25742). You can then do `kill -9 <process ID>`.

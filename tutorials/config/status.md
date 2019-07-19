@@ -10,6 +10,8 @@ To configure the Status plugin:
 1. Select Admin -> Setup.
 2. Edit `status.yml`
 
+{% include toc.html %}
+
 ## minutes_before_idle and minutes_before_idle_disconnect
 
 You can configure how long someone must be idle before they are automatically considered AFK and how long someone must be idle before they are automatically disconnected from the game. 

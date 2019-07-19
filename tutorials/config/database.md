@@ -17,6 +17,8 @@ To configure the database:
 Database configuration changes will not take effect until the game is restarted.
 {% endnote %}
 
+{% include toc.html %}
+
 ## url
 
 This is the URL and port number to access the database.

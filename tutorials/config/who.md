@@ -10,6 +10,8 @@ To configure the Who/Where plugin:
 1. Select Admin -> Setup.
 2. Edit `who.yml`
 
+{% include toc.html %}
+
 ## who_fields
 
 You can configure which fields are shown in columns on the who list.  For each field, you can specify the field name, the column width, the column title, and sometimes a value to control the specifics.  For example, this config makes two columns (25 wide and 15 wide) showing name and position.

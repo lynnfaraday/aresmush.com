@@ -54,7 +54,13 @@ XP in Third Edition works a little differently than you might be used to.  Inste
 High skills take a long time to improve, but since you earn XP each week, you still have extra to spread around on other abilities while you're waiting.
 {% endtip %}
 
-When you have spent the total number of XP needed for the new ability rating, your rating rises.  The first rating point (e.g. "Everyman" or "Interest") always costs 1XP and raises immediately.  You can configure how many XP are needed for subsequent levels.
+When you have spent the total number of XP needed for the new ability rating, your rating rises.  
+
+{% note %} 
+The first rating point (e.g. "Everyman" or "Interest") always costs 1XP and raises immediately.  You cannot change this.
+{% endnote %}
+
+You can configure how many XP are needed for subsequent ratings after the first.
 
 Consider the following example configuration: 
 

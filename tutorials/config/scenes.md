@@ -5,12 +5,12 @@ tags:
 - config
 ---
 
-{% include toc.html %}
-
 To configure the Scenes plugin:
 
 1. Select Admin -> Setup.
 2. Edit `scenes.yml`
+
+{% include toc.html %}
 
 ## scene_types
 

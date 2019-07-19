@@ -10,6 +10,8 @@ To configure the OOC Time plugin:
 1. Select Admin -> Setup.
 2. Edit `ooctime.yml`
 
+{% include toc.html %}
+
 ## default_timezone
 
 New players are assigned a timezone by default when they are first created.  They can change this themselves, either directly in-game or through their handle profile.

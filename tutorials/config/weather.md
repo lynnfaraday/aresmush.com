@@ -10,6 +10,12 @@ To configure the Weather plugin:
 1. Select Admin -> Setup.
 2. Edit `weather.yml`
 
+{% tip %}
+After changing the weather config, you should do `weather/reset` in-game to refresh the weather in all locations.
+{% endtip %}
+
+{% include toc.html %}
+
 ## How Weather Works
 
 Ares has a fairly simplistic weather system.  You can define **climates** with different weather patterns available by **season**.  Each weather pattern consists of a **temperature** and a **condition**.

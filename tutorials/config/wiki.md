@@ -10,6 +10,8 @@ The Web Portal wiki has a number of configuration options.  To set them:
 1. Select Admin -> Setup
 2. Edit `website.yml`.
 
+{% include toc.html %}
+
 ## wiki_nav
 
 You can provide a list of wiki pages to show in the Wiki dropdown menu.  Just give the page names one by one as a list.  For example:

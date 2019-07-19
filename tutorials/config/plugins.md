@@ -21,6 +21,9 @@ To enable or disable optional plugins:
 2. Select Enable or Disable Plugins.
 2. Check or uncheck plugins to enable/disable them.
 
+{% include toc.html %}
+
+
 ## What Does Disabling a Plugin Do?
 
 Disabling a plugin will: 

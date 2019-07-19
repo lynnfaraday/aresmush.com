@@ -10,6 +10,8 @@ To configure the Roles plugin:
 1. Select Admin -> Setup.
 2. Edit `roles.yml`
 
+{% include toc.html %}
+
 ## Before You Start
 
 Read the [roles](/tutorials/manage/roles.html) tutorial to find out how AresMUSH uses roles and permissions work.

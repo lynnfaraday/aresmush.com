@@ -25,11 +25,19 @@ For tricky issues - especially during development - it can be helpful to run the
 
 The configuration files use YAML, and there are several common issues that can result from trouble with your game configuration.  Often you'll see an error message like "Error reading YAML from fs3combat.yml...", but any error that happens right after you changed your game configuration should make you suspect a YAML problem.  See [Troubleshooting YAML](/tutorials/code/troubleshooting-yaml.html) for more details.
 
+## Port In Use
+
+Sometimes you'll see an error in the logs like "Couldn't start the game: error=no acceptor (port is in use or requires root privileges)".  This usually means:
+
+1. Your game is already started.  Maybe it auto-started after a reboot and you're unnecessarily trying to start it again.
+2. Some other application is using the port you want to use.  This is unlikely if you're using a high port number (>1024).
+3. You have a collision in your Ares port configuration. Remember that Ares needs multiple ports, and they all have to be different.  You can't use the same port number for both your telnet server and engine API, for instance.
+
 ## Server Won't Start
 
 Sometimes you'll get a 'connection refused' error in your MU client or a 'This site can't be reached' error in your web browser.  When this happens, there are a few things to check:
 
-* Make sure your hostname is correct and your DNS is set up.  Ares can't start if the hostname is inaccessible, and you'll see an error in the logs like "no acceptor (port is in use or requires root privileges)".
+* Make sure your hostname is correct and your DNS is set up.  Ares can't start if the hostname is inaccessible
 * Try starting the game in debug mode using `bin/devstart` instead of startares.  This will run until you hit CTRL-C, and you will see log messages live on your screen.
 * Try changing your hostname (in server.yml) to 'localhost' or the machine's IP address to rule out DNS issues.
 * If you have a firewall running, make sure that all four Ares server ports are allowed through the firewall.  (Not just the port you connect to with a MUSH client, but the back-end ports for web portal communication as well.)

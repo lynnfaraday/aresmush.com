@@ -7,7 +7,7 @@ tags:
 
 You can configure basic information about your game.  This information is used in the [AresCentral games directory](http://arescentral.aresmush.com).  See [Managing the Game Directory](/tutorials/manage/directory.html) for more information.
 
-To configure the game preferencse:
+To configure the game preferences:
 
 1. Select Admin -> Setup.
 2. Select 'Game Info' under Basic Information.

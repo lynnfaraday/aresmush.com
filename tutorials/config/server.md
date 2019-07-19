@@ -5,7 +5,6 @@ tags:
 - config
 ---
 
-{% include toc.html %}
 
 Your server host and port information are set up during installation.  If they ever change, you'll need to update the configuration.
 
@@ -20,6 +19,8 @@ To configure the server:
 {% note %} 
 Server setting changes will not take effect until the game is restarted.
 {% endnote %}
+
+{% include toc.html %}
 
 ## Advanced Server Options
 

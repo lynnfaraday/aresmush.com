@@ -117,7 +117,7 @@ Look up the roll value on the following table to determine the result:
 | 2-3 | Armor slows considerably. Armor reduces damage lethality by 50-99. | 
 | <1 | Armor stops the attack completely; no damage is done.|
 
-The table below shows some suggested protection and penetration based on the modern world.
+The table below shows some suggested protection and penetration based on the modern world.  Note that if the protection/penetration values are more than 5 apart, they're severely mismatched.  A light cannon (Pen 10) will cut like butter through kevlar armor (Protect 5), while a rifle (pen 6) has no chance against an APC (Protect 12).  Kevlar and small arms are evenly matched (5-6 vs. 7-8) so the armor has a good chance of at least slowing the bullet down or even stopping it completely.
 
 | Weapon / Armor| Penetration / Protection Value | 
 | ---- | 
@@ -125,9 +125,9 @@ The table below shows some suggested protection and penetration based on the mod
 |Knife|4| 
 |Solid wood furniture|5| 
 |Anti-Personnel Shrapnel|5| 
-|Light body armor (undershirt vest)|5| 
+|Light body armor (undershirt vest)|5-6| 
 |Light small arms (pistols, SMGs)|5| 
-|Military body armor (kevlar vest)|6| 
+|Military body armor (kevlar vest)|7-8| 
 |Medium small arms (rifles)|6| 
 |Car door|4| 
 |Brick wall|7| 

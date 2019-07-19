@@ -31,6 +31,7 @@ You can also configure the character creation instructions that appear in the We
 * `groups_blurb` - Group instructions.
 * `demographics_blurb` - Demographics instructions.
 * `rank_blurb` - Description of the rank field.
+* `icon_blurb` - Instructions for uploading a profile icon.
 
 {% tip %} 
 Abilities instructions are set up in the [FS3Skills Chargen Config](/tutorials/config/fs3skills_chargen.html).
@@ -68,13 +69,20 @@ You can configure whether RP hooks must be set in chargen or not.
 
 Character creation is done as a series of 'stages'.  For each stage, you can choose to display either a help file, a title and text, or both.
 
-For example, the first stage in the sample configuration below will show some text and the second stage will show the 'sheet' help file.
+For example, the following config will show custom text for the first stage, a help file for the second, and both text and a help file for the third.
 
     start:
         title: "A Title"
-        text: "Some text."
+        text: "Some text about starting chargen."
     sheet:
         help: 'sheet'
+    demographics:
+        help: 'demographics'
+        text: 'Some extra help text you want to say about demographics.'
+
+{% tip %} 
+Make sure the help file actually exists. It should exactly match the help file name (without the .md extension).
+{% endtip %}
 
 ## Custom App Review
 

@@ -10,6 +10,8 @@ To configure the Ranks plugin:
 1. Select Admin -> Setup.
 2. Edit `ranks.yml`
 
+{% include toc.html %}
+
 ## rank_group
 
 The ranks system is designed so that one group setting controls what ranks are available to you.  The default configuration bases ranks on Faction, so each faction will have a different rank system.
