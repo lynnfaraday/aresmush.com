@@ -5,7 +5,6 @@ tags:
 - config
 ---
 
-
 Your server host and port information are set up during installation.  If they ever change, you'll need to update the configuration.
 
 For more info on server configuration options, see [Installing the Game](/tutorials/install/install-game.html).
