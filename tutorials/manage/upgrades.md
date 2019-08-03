@@ -38,6 +38,10 @@ From the game:
 1. Type `upgrade/start` to begin the upgrade.
 2. Type `upgrade/finish` to complete the upgrade.
 
+{% tip %}
+You may see messages like  "Your branch is ahead by 4 commits."  You can ignore those.
+{% endtip %}
+
 ## Upgrade With a Restart
 
 Some upgrades affect the core game engine and require that the game be shut down and restarted.  The release notes or the upgrade process will tell you when a restart is required.

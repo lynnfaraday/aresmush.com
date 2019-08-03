@@ -86,3 +86,9 @@ If you get a warning saying "The website is not receiving live updates from the 
 
 * Try a [force-refresh](https://en.wikipedia.org/wiki/Wikipedia:Bypass_your_cache) in your web browser.  
 * Troubleshoot using the web browser's debugging tools.  In Chrome, for instance, you can open `View -> Developer -> Developer Tools` to see the Javascript console, which will tell you the error.
+
+## Watchman
+
+The web portal will always warn you:  "Could not start watchman".
+
+It doesn't matter.  It's a stupid ember thing.

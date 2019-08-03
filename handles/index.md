@@ -41,7 +41,7 @@ Linking is a two-step process requiring you to log in on both AresCentral and th
 
 1. Log in to AresCentral and go to `My Account -> Manage Characters`.
 2. Click `Get A New Link Code` and copy the code it gives you.
-3. Log into an AresMUSH game with the character you wish to link and type the command: `handle/link <handle name>=<code>`.
+3. Log into an AresMUSH game with the character you wish to link. Enter this information in the Account page on the game's web portal, or type the command: `handle/link <handle name>=<code>`.
 
 ## Features
 
@@ -81,6 +81,8 @@ Certain preferences you set on AresCentral will automatically carry over across 
 
 * Timezone
 * Autospace
+* Page and pose colors
+* Client settings
 
 ### Alt Mail Notification
 

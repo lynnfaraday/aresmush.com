@@ -34,19 +34,20 @@ If you want to have your web portal use HTTPS instead of HTTP, you will need to 
 These instructions only apply to the default Ares installation, and to games **installed from** Beta 45 (late March 2019) and higher.  If your game was installed pre-45 (even if it's been upgraded since), [contact Faraday](/feedback.html) for a few extra steps you'll need.
 {% endwarning %}
 
-1. Go to the [CertBot](https://certbot.eff.org/) website.  Select 'nginx' for your web server and your server's version of Ubuntu (usually either 16.04 or 18.04; you will see the version printed in your server shell when you log in.)  This will give you the necessary steps to install CertBot.
 
-2. Run the CertBot instructions from the game's server shell to set up the security certificate.  There are some apt-get things you install first, and then you run `sudo certbot --nginx`.
+1. Edit `server.yml` in the game configuration:
+  - Set `use_https` to true.
+  - Set `certificate_file_path` to `/home/ares/certs/fullchain.pem`.
+  - Set `private_key_file_path` to `/home/ares/certs/privkey.pem`.
+
+2. Go to the [CertBot](https://certbot.eff.org/) website.  Select 'nginx' for your web server and your server's version of Ubuntu (usually either 16.04 or 18.04; you will see the version printed in your server shell when you log in.)  This will give you the necessary steps to install CertBot.
+
+3. Run the CertBot instructions from the game's server shell to set up the security certificate.  There are some apt-get things you install first, and then you run `sudo certbot --nginx`.
   - Be sure to make the certificate name exactly the same as your MUSH hostname.  (e.g. yourgame.somewhere.com)
   - Allow it to update your nginx config.
   - Allow it to redirect HTTP traffic to HTTPS.
 
-3. From the aresmush directory, run `bin/certs YOURHOSTNAME`.  Again, make sure that the domain name exactly matches the certificate name/MUSH hostname.
-
-4. Edit `server.yml` in the game configuration:
-  - Set `use_https` to true.
-  - Set `certificate_file_path` to `/home/ares/certs/fullchain.pem`.
-  - Set `private_key_file_path` to `/home/ares/certs/privkey.pem`.
+4. From the aresmush directory, run `bin/certs YOURHOSTNAME`.  Again, make sure that the domain name exactly matches the certificate name/MUSH hostname.
 
 5. Reboot the server.  See [Rebooting the Server](/tutorials/manage/reboot.html).
 

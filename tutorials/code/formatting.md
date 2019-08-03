@@ -21,10 +21,16 @@ Ares provides a number of formatting codes, which can be used pretty much anywhe
 
 Ares allows the use of ansi color codes in virtually all text.  The game supports the FANSI 256 color standard, and colors will be converted back to standard ansi for players who indicate they don't want FANSI.  
 
-You can use ansi codes in game text by using `%x` or `%c` followed by the ansi color code.  For example, `%xb` is blue, and `%x33` is an aqua color.  The following images show the available colors.   
+You can use ansi codes in game text by using `%x` or `%c` followed by the ansi color code.  For example, `%xb` is blue, and `%x33` is an aqua color.  
+
+Color will stay on until you turn it off.  Always use the normal color `%xn` or `%cn` at the end of your colored string to return the color to normal.  For example:
+
+    This is my %xbblue%xn text.
+
+The following images show the available colors.   
 
 {% note %} 
-The exact appearance of colors can vary in different MU clients.
+The exact appearance of colors can vary in different MU clients. If you use FANSI colors (any of the colors with a number in them) and the client doesn't support FANSI, the closest approximate ANSI color will be used instead.
 {% endnote %}
 
 {% include pretty_image.html file='colors/1.png' %}

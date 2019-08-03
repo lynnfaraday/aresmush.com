@@ -16,6 +16,10 @@ To configure the FS3 armor types:
 
 Read **[How Armor Works](http://aresmush.com/fs3/fs3-3/combat-mechanics.html#armor)** to understand how the armor mechanic works in FS3.
 
+{% tip %}
+You should use the `gear/check` command after changing the FS3 gear configuration.  It will warn you about several common *possible* configuration problems.  You can review them to see if they're intentional or not.  It doesn't catch everything, though.
+{% endtip %}
+
 ## Armor Types
 
 You can define as many kinds of armor as you want.  FS3 armor types have the following stats, explained below:

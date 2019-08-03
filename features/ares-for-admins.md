@@ -14,7 +14,7 @@ Setting up an Ares server is designed to be as painless as possible. The tutoria
 
 ## MUSH in a Box
 
-The basic Ares installation includes not only the server itself (like Penn and Tiny) but also a rich suite of [Plugins](/features/ares-for-coders.html. The standard plugins cover everything from channels to chargen, so you should have everything you need for a typical game.
+The basic Ares installation includes not only the server itself (like Penn and Tiny) but also a rich suite of [Plugins](/features/ares-for-coders.html). The standard plugins cover everything from channels to chargen, so you should have everything you need for a typical game.
 
 Here are just a few of the plugins that come with every Ares install:
 

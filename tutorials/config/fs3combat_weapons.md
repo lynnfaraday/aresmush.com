@@ -16,6 +16,12 @@ To configure the FS3 Weapons List:
 
 Consider whether you really want to make up different models of weapons (M16 Assault Rifle, AK47 Assault Rifle, etc.) or just lump everything into a generic category (Assault Rifle). It can be tedious creating all the statistics, and having too many weapons to pick from can either be overwhelming or cool depending on your player base.
 
+{% tip %}
+You should use the `gear/check` command after changing the FS3 gear configuration.  It will warn you about several common *possible* configuration problems.  You can review them to see if they're intentional or not.  It doesn't catch everything, though.  
+
+Warnings about Flash Grenade accuracy, Shrapnel attack skill and HMG recoil in the default config are intentional, so you can safely ignore those.
+{% endtip %}
+
 ## Weapon Types
 
 FS3 lets you set up as many weapon types as you want.  FS3 weapons have the following stats, explained below:

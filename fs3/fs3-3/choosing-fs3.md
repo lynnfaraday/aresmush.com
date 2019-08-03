@@ -20,7 +20,7 @@ FS3 adapts very well to historical setting and low-tech sci-fi.  Higher sci-fi t
 
 Non-magical fantasy/medieval settings work pretty well.  There aren't as many attack options, but FS3 Third Edition fixes many of the issues that made FS3 a poor fit for fantasy.
 
-FS3 is not designed for superhero/supernatural/magical games.  It simply has no concept of "powers" or "spells", and the rating system is not designed to accommodate superhuman abilities. 
+FS3 is not designed for superhero/supernatural/magical games.  It simply has no concept of "powers" or "spells", and the rating system is not designed to accommodate superhuman abilities. There is a detailed analysis of why the mechanics don't scale well to beyond-human abilities in [Scaling FS3](https://aresmush.wordpress.com/2019/07/18/scaling-in-fs3/).
 
 # Lightly-Coded
 

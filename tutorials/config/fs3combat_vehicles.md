@@ -17,6 +17,10 @@ To configure the mounts list:
 
 {% include toc.html %}
 
+{% tip %}
+You should use the `gear/check` command after changing the FS3 gear configuration.  It will warn you about several common *possible* configuration problems.  You can review them to see if they're intentional or not.  It doesn't catch everything, though.
+{% endtip %}
+
 ## Vehicle Types
 
 You can specify as many different kinds of vehicles as you like.  They each have a number of statistics, explained below:

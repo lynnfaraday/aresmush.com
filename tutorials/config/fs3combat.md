@@ -29,3 +29,8 @@ These are advanced customization settings that most games won't need to alter.
 * [Configuring FS3 - Luck and Miscellaneous](/tutorials/config/fs3skills_misc.html)
 * [Configuring FS3 Combat Damage](/tutorials/config/fs3combat_damage.html)
 * [Configuring FS3 Combat NPCs](/tutorials/config/fs3combat_npcs.html)
+
+
+### Extending the Combat System
+
+If you want to add more actions to the combat system, you should see the [FS3 Roadmap tutorial](/tutorials/code/fs3-roadmap.html) for behind-the-scenes info about how the combat system works and how to add to it.

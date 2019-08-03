@@ -744,6 +744,10 @@ figure {
   max-width: 100%;
 }
 
+pre.prettyprint {
+  color: #eee;
+}
+
 @media (max-width:800px)  { 
 
     .fs3-shortcut {

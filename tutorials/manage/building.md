@@ -11,13 +11,16 @@ tags:
 
 Scenes have to take place *somewhere*.   The Ares scene system lets you start scenes in temporary rooms, which can stand in for any location you can imagine.  You can even start a scene purely on the Web Portal, with no room at all.  But the majority of MUSH players still prefer to have a **grid** - a tangible set of **rooms** linked by **exits** for them to explore and play in.  
 
-This article gives a general overview of the building concepts unique to Ares. For specific command syntax, see the "Building" help topic in-game.
 
 {% tip %} 
 Despite the historical name, a Room doesn't have to represent a single room.  It's more like a virtual 'chatroom' - a place where people gather for roleplay.
 {% endtip %}
 
 {% include toc.html %}
+
+## Building Commands
+
+This article gives a general overview of the building concepts unique to Ares. For specific command syntax, see `help building` in-game.
 
 ## Room Type
 
@@ -27,7 +30,9 @@ There are three types of rooms in Ares:
 * OOC - The backstage areas where people hang out when they're not playing, or official business takes place.
 * Roleplay Room (RPR) - A hybrid of the two; it's not technically part of the onstage grid, but roleplay takes place here.  RP Rooms could be supplanted by the scene system, but some people still find them easier to use for private RP.
 
-The status system is based off the room type.  If you're in an offstage room, you're considered OOC.  If you're in an onstage or RP room, you're considered IC.
+The status system is based off the room type.  If you're in an OOC room, you're considered OOC.  If you're in an IC or RP room, you're considered IC.
+
+There is a special OOC room named "Offstage" that serves as a player lounge. The `offstage` command will return you there, and `onstage` command will take you back to the last IC room you visited. If you've never been IC before, it will take you to the special IC starting room.  See 'Special Rooms' below for more information.
 
 ## Areas
 

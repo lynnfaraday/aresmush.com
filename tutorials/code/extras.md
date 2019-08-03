@@ -32,9 +32,9 @@ You can easily install new themes for your web portal by using `theme/install <t
 
 ## Updating Plugins
 
-As long as you haven't modified the plugin's source code, you can upgrade it just by using the `bin/addplugin` script again, as described above.
+As long as you haven't modified the plugin's source code, you can upgrade it just by using the `plugin/install <name>` script again.  This will replace the code files with the newest ones.  Your configuration will not be affected.  The release notes will tell you if you need to make any additional config or code changes by hand after the upgrade.
 
-> <i class="fa fa-exclamation-triangle"></i> **Warning:** Do not attempt to run the upgrade script if you've got custom code modifications (other than configuration files). The upgrade will overwrite your changes.  You'll have to do the upgrade by hand.  GitHub's version compare tools can help you figure out what changed.  Feel free to ask for help.
+> <i class="fa fa-exclamation-triangle"></i> **Warning:** Do not attempt to run the upgrade script if you've got custom code modifications.  You'll have to do the upgrade by hand.  GitHub's version compare tools can help you figure out what changed.  Feel free to ask for help.
 
 ## Contributions
 

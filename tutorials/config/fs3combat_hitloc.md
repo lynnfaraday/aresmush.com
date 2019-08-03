@@ -16,6 +16,10 @@ To configure the FS3 hit location tables:
 
 FS3 uses a somewhat unique hit location system.  See **[How Hit Location Works](http://aresmush.com/fs3/fs3-3/combat-mechanics.html#hit-location)** for more info on how it works.
 
+{% tip %}
+You should use the `gear/check` command after changing the FS3 gear configuration.  It will warn you about several common *possible* configuration problems.  You can review them to see if they're intentional or not.  It doesn't catch everything, though.
+{% endtip %}
+
 ## Hit Location Types
 
 FS3 lets you define different hit location tables for different combatant types.  Usually you'll have one for humanoids and one for each distinct kind of vehicle, but you can do more than that.  Maybe your game needs one for "alien quadraped" or "horse" too.

@@ -178,9 +178,32 @@ Other types of actions may initiate attacks (using `FS3Combat.attack_target`), t
 
 Finally, it's worth noting that many combat properties get reset at the end of a turn.  The aim target, for instance, is cleared if you end a turn with an action other than 'aim' set.  This is all handled in the `FS3Combat.reset_for_new_turn` method.
 
+### Custom Hooks
+
+There are two places in the combat code where you can hook in your custom changes without touching the main code and potentially running into merge conflicts.
+
 #### Adding a New Action
 
-If you create a brand new combat action, you'll need to register it with the `find_action_klass` method in `plugins/fs3combat/helpers/actions_helper.rb`.  This is essentially a mini dispatcher for combat action commands.
+You can register your own custom combat actions in `plugins/fs3combat/custom_hooks.rb` in the `custom_actions` method. This acts as a sort of mini dispatcher for combat actions.  
+
+For example, to add a new action named 'combat/mindtrick' with an action class named `MindTrickAction`, you would do:
+
+    def self.custom_actions
+       {
+          'mindtrick' => MindTrickAction
+       }
+
+#### Turn Reset Hook
+
+If you need things to happen at the end of a turn - resetting effects or counters - you can tie into the turn reset hook in `plugins/fs3combat/custom_hooks.rb` in the `custom_new_turn_reset` method.
+
+For example, if you had a flag to represent whether someone was under a 'mind trick' influence, you might reset that at the end of the turn.
+
+    def self.custom_new_turn_reset(combatant)
+       if (combatant.is_mind_tricked?)
+          combatant.update(mind_tricked: false)
+       end
+    end
 
 ## Web Portal
 
