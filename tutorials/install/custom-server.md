@@ -13,6 +13,10 @@ tags:
 
 Because AresMUSH has different needs than Penn or Tiny, most dedicated "MUSH Hosting" plans won't work.  They won't have enough resources or the right software packages.  Instead, you'll want to get a Virtual Private Server (VPS) or similar sort of setup that will let you install the software you need.
 
+{% warning %} 
+The automated install scripts **only** work on the supported environment - a stand-alone Digital Ocean droplet with only a single MUSH running on it.  If you're using a different environment, **do not** try to run the install scripts directly.  Refer to them as a guide for what needs to be done, and adjust the specific steps needed for your environment.
+{% endwarning %}
+
 This article details the system requirements to help you find the right server and get everything set up.
 
 {% include toc.html %}
@@ -28,7 +32,7 @@ The supported environment for Ares is:
 
 Of course you are welcome to use other environments.  However, support for custom setups is limited.  If something isn't working, you may be on your own.  Using a custom environment is only recommended for people with server admin experience (or a server admin buddy).
 
-## Software Packages
+## Installation
 
 There are several software packages that Ares requires, and you'll need to make sure they're installed on your server.
 
@@ -43,31 +47,19 @@ The [`setup_server`](https://github.com/AresMUSH/aresmush/blob/master/bin/setup_
 * Yarn and Node Package Manager (NPM) - installs dependencies for the web portal code.
 * Git - updates the code to new versions.
 
-You can use the [`setup_server`](https://github.com/AresMUSH/aresmush/blob/master/bin/setup_server) script as a guide for how to install the necessary software packages on your server.  Go through the script line by line and decide whether that step applies to your environment or needs to be modified.  
+You can use the [`setup_server`](https://github.com/AresMUSH/aresmush/blob/master/bin/setup_server) and [`install`](https://github.com/AresMUSH/aresmush/blob/master/bin/setup_server) scripts as a **guide** for how to install the necessary software packages on your server, but **do not attempt to run these scripts directly on anything other than the supported environment**.  
 
-For example, this line in `setup_server` installs the web server (nginx):
+Go through the scripts line by line and decide what to do for your server.  For example, this line installs the web server (nginx):
 
     echo -e "${ARES_INSTALL_TEXT} Nginx for web server."
     apt-get install -y nginx
 
-You could change that to a different web server (e.g. apache).  You might need a different package management command (e.g. yum instead of apt-get) or just download the installer manually.  You might skip this completely if you already have a web server installed (or only plan on running the game in test mode).
+You might want to install Apache instead.  Your system might need to use a different package management command (e.g. yum instead of apt-get).  You might already have nginx installed.
 
-Be advised that changing a step may affect subsequent steps too, so keep a sharp eye out.  If you change the web server to apache, you'll also need to change a later step that sets up the default nginx web server configuration.
+This line creates a symbolic link from your ares game directory to your web directory.  Either of these directories may be different in a custom environment.
 
-## Installing the Game
+    echo -e "${ARES_INSTALL_TEXT} Create a symbolic link so the web portal can easily read game files."
+    cd /var/www/html/
+    ln -s "${HOME_DIR}/aresmush/game" game
 
-Once you have all the necessary software packages set up, you'll need to install the game.  
-
-{% note %} 
-The [`install`](https://github.com/AresMUSH/aresmush/blob/master/bin/install) script will install the game automatically in the Supported Environment listed above, but it will not work on most custom environments.
-{% endnote %}
-
-The basic installation steps include:
-
-* Get the code from GitHub.
-* Copy the default game configuration from `aresmush/install/game.distr` to `aresmush/game`.
-* Run `bin/configure` to set up game options like the hostname and port.
-* Run `bin/wipedb` to initialize the database.
-* Run `bin/startares` to start the game.
-
-The [`install`](https://github.com/AresMUSH/aresmush/blob/master/bin/install) script also sets up a few server environment things that need to be done with the ares game user and not the root user.  You should use that script as a guide to ensure that everything is wired up correctly.
+Ultimately, you need to figure out what's needed in each step based on what's right for your environment.

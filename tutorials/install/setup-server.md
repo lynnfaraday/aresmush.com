@@ -14,9 +14,9 @@ tags:
 
 Ares needs a few things installed on the server.   For your convenience, a set of install scripts help to automate the necessary setup.
 
-{% note %} 
-The automated install scripts **only** work on the supported environment - a stand-alone Digital Ocean droplet with only a single MUSH running on it.  If you're using a different environment, **do not** try to run the install scripts directly.  Use them as a reference for what needs to be done, and adjust as needed for your specific environment.
-{% endnote %}
+{% warning %} 
+The automated install scripts **only** work on the supported environment - a stand-alone Digital Ocean droplet with only a single MUSH running on it.  If you're using a different environment, **do not** try to run the install scripts directly.  Refer to them as a guide for what needs to be done, and adjust the specific steps needed for your environment.
+{% endwarning %}
 
 1. Log into your [Server Shell](/tutorials/install/server-shell.html).
 

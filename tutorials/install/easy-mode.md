@@ -25,7 +25,7 @@ Here's how it works:
 
 These steps are described in more detail in the next few sections.
 
-> **Full Disclosure:** I get a referral bonus from Digital Ocean if you sign up using [this referral link](http://www.digitalocean.com/?refcode=5c07173bc1f2), but so do you!  You get $10 in credit, and the referral bonus helps keep the doors at [AresCentral](/arescentral.html) open.  Using the referral is not required for Easy Mode, but it is appreciated.
+> **Full Disclosure:** I get a referral bonus from Digital Ocean if you sign up using [this referral link](http://www.digitalocean.com/?refcode=5c07173bc1f2), but so do you!  You get starter credit (basically a month free), and the referral bonus helps keep the doors at [AresCentral](/arescentral.html) open.  Using the referral is not required for Easy Mode, but it is appreciated.
 
 ## Disclaimers
 

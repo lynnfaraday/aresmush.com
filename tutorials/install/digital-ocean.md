@@ -22,7 +22,7 @@ These instructions were correct at the time of writing, but Digital Ocean can ch
 
 First you'll need to [sign up](http://www.digitalocean.com/?refcode=5c07173bc1f2) for an account.
 
-> **Full Disclosure:** I get a referral bonus from Digital Ocean if you sign up using [this referral link](http://www.digitalocean.com/?refcode=5c07173bc1f2), but so do you!  You get $10 in credit, and the referral bonus helps keep the doors at [AresCentral](/arescentral.html) open.
+> **Full Disclosure:** I get a referral bonus from Digital Ocean if you sign up using [this referral link](http://www.digitalocean.com/?refcode=5c07173bc1f2), but so do you!  You get starter credit (basically a month free), and the referral bonus helps keep the doors at [AresCentral](/arescentral.html) open.
 
 Digital Ocean's pricing lists both a monthly and hourly rate.  A MUSH server will be up 24/7 all month long, so it uses the monthly rate.
 
