@@ -22,9 +22,10 @@ You can provide a list of wiki pages to show in the Wiki dropdown menu.  Just gi
 
 ## restricted_pages
 
-You can lock down certain pages on the wiki so they can only be edited by people with the `manage_wiki` permission.  Just list the page names one by one in list format:
+You can lock down certain pages on the wiki so they can only be edited by people with the `manage_wiki` permission.  Just list the page names one by one in list format.  You can also use `category:*` to restrict an entire category.  For example:
 
     - home
+    - theme:*
 
 ## wiki_aliases
 

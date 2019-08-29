@@ -58,6 +58,14 @@ When characters are taken off the roster, an arrival announcement is also posted
 
 You can configure which category this goes to by setting `arrivals_category`.  As with the Idle announcement, you can make it a non-existent forum to disable the post.
 
+### roster_arrival_msg
+
+You can configure the contents of the arrival announcement.  You can use `%{name}` in the message where you want the char's name to go.  You can also use `%{rp_hooks}` for their RP Hooks, or any group name.  For example:  `"Welcome %{name} - the newest %{position} in %{faction}.\n\nRP Hooks:\n%{rp_hooks}"`  (The quotes there are important.)
+
+{% tip %}
+Make sure the groups used in the message actually exist, or you'll get an error when you try to approve someone. 
+{% endtip %}
+
 ### roster_welcome_msg
 
 You can configure the contents of a mail message sent to a new player when they are taken off the roster.  You might use this to tell them the wiki password or any special instructions for getting started.
