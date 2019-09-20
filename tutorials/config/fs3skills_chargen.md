@@ -41,9 +41,9 @@ FS3 Attributes are rated from 1-5 (with 5 being Exceptional) and Skills are rate
 
 Note: This limit applies only to Chargen.  If you want to prevent people from advancing beyond a certain rating with XP, you'll need to set that up in your [XP configuration](/tutorials/config/fs3skills_xp.html).
 
-## allow_unskilled_action_skills
+## allow_incapable_action_skills
 
-The Unskilled level might not be necessary in every setting.  See [everyman vs. unskilled](/fs3/fs3-3/chargen.html#unskilled) for details.  To avoid confusion in chargen, the 'Unskilled' level is disabled by default.  You can enable it by setting this setting to true.
+The Incapable level might not be necessary in every setting.  See [Everyman vs. Incapable](/fs3/fs3-3/chargen.html#unskilled) for details.  To avoid confusion in chargen, the 'Incapable' level is disabled by default.  You can enable it by setting this setting to true.
 
 ## Guiding Maximums
 

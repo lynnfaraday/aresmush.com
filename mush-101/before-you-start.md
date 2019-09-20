@@ -32,7 +32,7 @@ When it comes to traditional video games, you can visit your local game store or
 
 Here are some places you can look for games:
 
-* [AresCentral Game Directory](http://arescentral.aresmush.com/)
+* [AresCentral Game Directory](https://arescentral.aresmush.com/)
 * [Evennia Game Index](http://www.evennia.com/)
 * [Mu Soapbox](http://musoapbox.net/topic/2342/a-mildly-complete-list-of-current-games) - Contains advertisements and a curated list of some current games.
 * [Ares Demo Game](http://mush.aresmush.com) - You can stop by to see if there are any advertisements for recent games, or people who can share recommendations.

@@ -8,7 +8,7 @@ Skill ratings in FS3 are deliberately broad.  What exactly is "Good" or "Great"?
 
 # Firearms
 
-| 0 (Unskilled) | You're just as likely to shoot yourself in the foot as shoot your target. |
+| 0 (Incapable) | You come from a society without guns and you have no idea how they work.  Boomstick? |
 | 1 (Everyman) | It's just like the movies, right?  Point and shoot.  You might even remember to turn the safety off. |
 | 2 (Fair)| You're a casual target range shooter or hunter. |
 | 3 (Competent)| You're a serious gun enthusiast or someone who's completed basic military/police firearm qualification. |
@@ -21,7 +21,7 @@ Skill ratings in FS3 are deliberately broad.  What exactly is "Good" or "Great"?
 
 # Medicine
 
-| 0 (Unskilled) | Better call 911. |
+| 0 (Incapable) | You come from a society without any medical knowledge. |
 | 1 (Everyman)| You know to put ice on a sprain and take aspirin for a cold. |
 | 2 (Fair)| You've taken a first aid class or read a few books. |
 | 3 (Competent)| You're a medical/nursing student or junior EMT. |
@@ -33,7 +33,7 @@ Skill ratings in FS3 are deliberately broad.  What exactly is "Good" or "Great"?
 
 # Piloting
 
-| 0 (Unskilled)| You have no idea how aircraft controls work. |
+| 0 (Incapable)| You come from a society without aircraft, so you have no idea how they work. |
 | 1 (Everyman)| Pull back on the stick to go up, right? |
 | 2 (Fair)| You've taken some flying lessons. |
 | 3 (Competent)| You are a qualified pilot but still lacking a lot of experience. |

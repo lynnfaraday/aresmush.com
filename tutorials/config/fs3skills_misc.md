@@ -8,7 +8,7 @@ tags:
 To configure the FS3 Skills List:
 
 1. Select Admin -> Setup.
-2. Edit `fs3skills.yml`
+2. Edit `fs3skills_misc.yml`
 
 {% include toc.html %}
 

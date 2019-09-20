@@ -11,7 +11,7 @@ Ares supports basic [Telnet Negotiation](http://mud-dev.wikidot.com/telnet:negot
 
 ## MUD Extensions (MSSP/MCP/GMCP)
 
-Ares does not support [MUD Server Status Protocol (MSSP)](https://tintin.sourceforge.io/protocols/mssp/). It has its own, more robust, game status reporting system used to build the [AresCentral Game Directory](http://arescentral.aresmush.com/), and I do not see a lot of value in supporting MSSP for MUD directories.
+Ares does not support [MUD Server Status Protocol (MSSP)](https://tintin.sourceforge.io/protocols/mssp/). It has its own, more robust, game status reporting system used to build the [AresCentral Game Directory](https://arescentral.aresmush.com/), and I do not see a lot of value in supporting MSSP for MUD directories.
 
 Similarly, Ares does not support [MUD Client Protocol (MCP)](https://www.moo.mud.org/mcp/) or [Generic MUD Communication Protocol (GMCP)](https://www.gammon.com.au/gmcp).  Ares is designed for MUSHes, not MUDs, and these protocols are not in widespread use among the MUSH community to the best of my knowledge.  Planned changes to Ares will enable next-gen clients to communicate directly with the game via a standard protocol someday, but it will not be overlaid on telnet as MCP/GMCP are.
 

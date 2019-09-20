@@ -46,12 +46,13 @@ Manually-awarded achievements are defined in the `achievements.yml` config file.
 
 For example, in the `forum.yml` config file, we define the forum-related achievements:
 
-    forum_reply:
-      type: community
-      message: Replied to a forum post.
-    forum_post:
-      type: community
-      message: Created a forum post.
+    achievements:
+      forum_reply:
+        type: community
+        message: Replied to a forum post.
+      forum_post:
+        type: community
+        message: Created a forum post.
 
 ### Registering Achievements with the Plugin Manager
 

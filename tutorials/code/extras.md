@@ -23,7 +23,8 @@ Each plugin will contain its own README file with instructions on how you use it
 You can install a plugin directly from the game using `plugin/install <name>`.
 
 {% note %} 
-Many plugins require some additional manual install steps.  Be sure to check the README file in each plugin's folder for detailed information on installation and configuration.
+1. Make sure the plugin is compatible with your version of AresMUSH.  Most require the latest version.
+2. Many plugins require some additional manual install steps.  Be sure to check the README file in each plugin's folder for detailed information on installation and configuration.
 {% endnote %}
 
 ## Installing Themes

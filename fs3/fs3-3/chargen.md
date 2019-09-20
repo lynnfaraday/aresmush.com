@@ -79,7 +79,7 @@ Action Skills are rated from 0 to 8, based on your training and experience.
 
 | Rating | Summary | Description |
 | ---- |
-|0 |Unskilled|You grew up in a cave or something and know absolutely nothing about this. |
+|0 |Incapable|You grew up in a cave or something and know absolutely nothing about this. |
 |1 |Everyman|You know what the average inhabitant of the game world would know.   |
 |2 |Fair|You've still got a lot to learn, but you can handle easy stuff. |
 |3 |Competent|You have competence at a junior-professional level, but lack finesse or experience.|
@@ -101,17 +101,28 @@ Your skills should generally match your background and experience.  While some v
 
 <a name="unskilled"/>
 
-### Everyman vs. Unskilled
+### Everyman vs. Incapable
 
-The 'Everyman' rating covers the average layperson's ability.  Even for a specialty skill like medicine or piloting, that's going to mean _some_ amount of knowledge.   Someone with Everyman piloting probably knows to pull back on the stick to make the plane go up.  Everyman medicine means knowing to put ice on a bruise and how much aspirin to take.
+The 'Everyman' rating covers the knowledge/ability of the **Average Adult Layperson** in the game world.  They don't have any specific training, but they still have _some_ amount of knowledge.   
 
-Unskilled is when you're really hopeless - worse that average.    For example, in the 100 universe there are people from a space station interacting with people from a post-apocalyptic Earth.  The Grounders know nothing about technology, so it would make sense for them to have Unskilled in tech skills and firearms.  Similarly, most of the Arkers from the space station are Unskilled in Earth-based survival skills.
+> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:**  In a modern setting, the 'average adult layperson' has attended high school, can drive, can use a computer and other basic technology, etc.  If you're in a different theme, it's important for the game admin to set a baseline for what 'Everyman' represents. 
 
-Most settings will not need to distinguish between Unskilled and Everyman.
+* Everyman Piloting:  You know that pulling back on the stick makes the plane go up.  You *might* have a chance of being talked through a landing over the radio without killing everyone.
+* Everyman Medicine: You know to put ice on a bruise and pressure to stop bleeding.  You know common medications, like aspirin.  You've seen CPR in the movies enough to be talked through it by a 911 dispatcher.
+* Everyman Athletics: You can run and jump and climb and throw a ball.  You probably played some little league or intramural sports when you were younger.
+* Everyman Firearms:  You know how to point and shoot a gun. You might even remember to take the safety off.
+
+'Incapable', on the other hand, is a special rating reserved for someone who knows **far less** than the average layperson.  Typically you will only encounter this disparity on games that have mixed tech levels, significant cultural differences, or skills that require some special prerequisite to even learn.  For example:
+
+* In Star Trek, a character from a primitive planet might have 'Incapable' for many modern skills, like guns and computers.
+* In Star Wars, a non-jedi might have 'Incapable' for force-related skills.
+* In a medieval setting, a commoner might have 'Incapable' in courtly skills like politics or religion.
 
 ### Specialties
 
-Some Action Skills are so broad that you need to pick a specialty.  For instance, your paramedic's "Medicine" skill might be really good, but it doesn't cover brain surgery.  If you take a specialized ability higher than Fair, you must choose a specialty.
+Some Action Skills are so broad that you need to pick a specialty.  For instance, your paramedic's "Medicine" skill might be really good, but it doesn't cover brain surgery.  
+
+If you take a specialized ability higher than **Fair**, you must choose a specialty.  Ratings below Fair do not have a specialty, because the foundations of things like piloting and medicine are the same no matter the specialty.
 
 ### Buying Action Skills
 

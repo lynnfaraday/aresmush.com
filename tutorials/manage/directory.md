@@ -7,7 +7,7 @@ tags:
 - directory
 ---
 
-[AresCentral](http://arescentral.aresmush.com) has an automatic game directory that lists all active Ares games.  You can control how your game shows up there.
+[AresCentral](https://arescentral.aresmush.com) has an automatic game directory that lists all active Ares games.  You can control how your game shows up there.
 
 ## Game Info
 

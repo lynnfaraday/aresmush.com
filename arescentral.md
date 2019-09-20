@@ -6,7 +6,7 @@ layout: page
 
 **AresCentral** is a social hub for AresMUSH. You can see a directory of all other Ares games and manage your OOC Player Handle.  
 
-<a href="http://arescentral.aresmush.com">http://arescentral.aresmush.com</a>
+<a href="https://arescentral.aresmush.com">https://arescentral.aresmush.com</a>
 
 You can also see AresMUSH in action on our demo server.  Look for me there as Faraday:
 
