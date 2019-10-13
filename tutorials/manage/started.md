@@ -35,15 +35,7 @@ If you're new to Ares, it's probably good to understand how it differs from more
 
 ## Configuring Ares
 
-Your next step will probably be doing some basic game configuration. See [Configuring Ares](/tutorials/config) for instructions on editing your game configuration. Here are a couple key settings to get you started:
-
-1. Set up the [web portal colors](/tutorials/config/website.html#changing-the-colors).
-2. Upload some [images](/tutorials/config/website.html#images) for the web portal home page.
-3. Set up your [demographics and groups](/tutorials/config/demographics.html) for character creation.
-4. Choose your [IC Time](/tutorials/config/ictime.html) settings, if you want IC time to be different from OOC time.
-5. If you're using the FS3 skills system, tweak the [abilities and chargen limits](/tutorials/config/#basic-fs3-config).
-6. If you're *not* using FS3, [disable it](/tutorials/config/plugins.html) and get a different [skills plugin](/tutorials/code/extras.html) instead.
-7. When you're ready to go live, be sure to edit your [game directory info](/tutorials/config/game.html) and mark your game 'public' so others can find it.
+The [Essential Config](/tutorials/config/config-basics) tutorial will guide you through basic game setup.
 
 As you continue to build your game, you'll probably find other [config settings](/tutorials/config) you want to tweak.
 

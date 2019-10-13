@@ -8,7 +8,7 @@ Every game will configure FS3 differently, so you should consult your specific g
 
 **FS3 Core** is the game configuration that comes with the default FS3 installation.  It is intended for near-future sci-fi combat games, such as Battlestar Galactica.  It is provided here as an example of how FS3 can be set up.
 
-If you are a game designer looking to adapt FS3 Core to your own setting, see [Tweaking FS3](/fs3/fs3-3/tweaking-fs3.html).
+If you are a game designer looking to adapt FS3 Core to your own setting, see [Customizing FS3](/fs3/fs3-3/tweaking-fs3.html).
 
 ## AP Limits
 

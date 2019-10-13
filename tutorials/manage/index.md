@@ -27,12 +27,11 @@ These articles give a general overview of the various game systems.  For specifi
 
 ### Periodic Tasks
 
+* [Troubleshooting Errors](/tutorials/code/troubleshooting.html)
 * [Sweeping Idle Characters](/tutorials/manage/roles.html)
 * [Dealing with Trolls](/tutorials/manage/trolls.html)
 * [Adding Plugins](/tutorials/code/extras.html)
-* [Managing the Game Directory](/tutorials/manage/directory.html)
 * [Setting up Guests](/tutorials/manage/guests.html)
-* [Troubleshooting Issues](/tutorials/code/troubleshooting.html)
 * [Upgrading the Code](/tutorials/manage/upgrades.html)
 
 ## Database Tools

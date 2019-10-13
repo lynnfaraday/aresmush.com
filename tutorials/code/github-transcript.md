@@ -83,7 +83,7 @@ Once it's saved, we need to do a commit manually.  We don't have GitHub desktop 
 
 At some point, you'll want to grab the latest code from the main AresMUSH repository so you have all the latest features and bugfixes in your own game that exist in the latest aresmush release.
 
-It's recommended that you do this operation every time there's a code release announced for AresMUSH, which you can find out about through either the forum or the Facebook page.  Just trust me - doing frequent, smaller updates will be way easier than waiting ages and trying to do some massive updates.
+It's recommended that you do this operation every time there's a code release announced for AresMUSH, which you can find out about through either the forum or the Discord.  Just trust me - doing frequent, smaller updates will be way easier than waiting ages and trying to do some massive updates.
 
 
 The way we do an update is a GitHub operation called an upstream pull.  Upstream is the place we forked from.  Your Ares repository is a fork from the main Ares repository, so that's your upstream.  Pull is because it's the same basic operation we use when we pull the code from GitHub into our game server - except in this place we're pulling from a different place (the main Ares repository) into our local PC.

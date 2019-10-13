@@ -33,11 +33,6 @@ Using the Digital Ocean [referral bonus](/tutorials/install/digital-ocean.html),
 
 If that's not a viable option for you, there are instructions for how to set up an Ares test game on your [local PC or Mac](/tutorials/code/dev-tools.html) for development purposes.  
 
-
 ## Getting Help
 
 If at any point you run into trouble, you can [Get Help](/feedback.html).
-
-## Tutorial
-
-{% include quickstart_tutorial.html %}

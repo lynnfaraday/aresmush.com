@@ -1,10 +1,10 @@
 ---
-title: FS3.3 - Tweaking FS3
+title: FS3.3 - Customizing FS3
 description: 
 layout: fs3
 ---
 
-This article gives some tips to game designers for customizing and tweaking FS3.
+This article gives some tips to game designers for customizing and Customizing FS3.
 
 # Attributes
 
@@ -30,11 +30,19 @@ Specialties are there when it's really important to divide up a skill.  Don't ad
 
 # Advantages
 
-Advantages can be used for things that aren't skills, but that you want people to spend points on in chargen.  Common things you might use this for:
+Advantages can be used for things that aren't skills, but that you want people to spend points on in chargen.  
 
-* WoD-esque backgrounds (Resources, Connections, Rank, etc.) 
-* Merits/Advantages (Ambidexterity, Internal Compass, etc.)
+Common things you might use this for:
+
+* Resources
+* Connections
+* Rank
+* Cyberware
 * Powers/Spells - although be careful, because FS3 isn't inherently geared towards fantasy/superhero settings.
+
+Advantages are more akin to the old Storyteller system Backgrounds than they are to things like CofD merits/flaws, Cortex assets/complications, or Shadowrun positive/negative qualities.  You can't have different costs/limits for different advantages.  They're all rated 1-3 and they all cost the same.
+
+They basically work exactly like background skills, but they're in a separate category because they're... not skills.
 
 The advantage rating descriptions are pretty vague (Fair/Good/Exceptional), so you should be sure to elaborate on what exactly those ratings mean in your system.  What is "Fair" rank, for example.
 

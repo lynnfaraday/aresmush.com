@@ -146,7 +146,7 @@ The system will tell you where an attack landed.  You can use some creative lice
 
 # Cover and Armor
 
-Both cover and armor have a chance of reducing the damage done by an attack.  You will see a message like:  "Graze (Reduced by Cover)" or "Flesh Wound (Reduced by Armor)" to indicate when this happens, so you can roleplay accordingly.
+Armor can reduce damage from an attack or even stop it completely.  If a character is in cover, the attack might hit the cover instead of them.  You will see messages like "reduced by armor", "stopped by armor", or "hits the cover they're behind" to indicate when this happens, so you can roleplay accordingly.
 
 <a name="damage"/>
 
@@ -189,7 +189,7 @@ Each turn, you may spend a luck point to get a +3 bonus to ONE of the following:
  
 These bonuses last only a turn, so don’t waste them. 
 
-You can also spend a luck point to recover immediately from a Knockout using the `combat/hero` command.  This allows you to keep going despite your wounds.  You still suffer the same wound penalties, so you might want to think twice about using this if you're too injured to be effective.
+You can also spend a luck point to recover immediately from a Knockout using the `combat/hero` command.  This allows you to keep going despite your wounds.  It doesn't have a big impact on your wound penalties, so you might want to think twice about using this if you're too injured to be effective.
 
 <a name="healing"/>
 

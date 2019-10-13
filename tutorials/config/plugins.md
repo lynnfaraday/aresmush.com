@@ -5,21 +5,20 @@ tags:
 - config
 ---
 
-The Ares plugin system allows you to easily plug IN new code modules.  Taking them OUT is trickier because many plugins rely on each other.
-
-A few plugins, however, are designed to be optional.  These can be enabled and disabled in the admin Web Portal.
-
-{% include pretty_image.html file='code/plugins.png' %}
-
-{% note %} 
-Even if a plugin is not listed as optional, it's still possible to remove or replace it.  It'll just require some [code surgery](/tutorials/code/plugins.html) rather than a mouse click.  Do not attempt to remove a plugin simply by deleting its code folder.  That will cause unexpected code errors.
-{% endnote %}
+A few Ares plugins are designed to be optional so you can easily disable them if you don't need them for your game.
 
 To enable or disable optional plugins:
 
 1. Select Admin -> Setup. 
-2. Select Enable or Disable Plugins.
+2. Select "Enable or Disable Plugins".
 2. Check or uncheck plugins to enable/disable them.
+
+{% note %} 
+Even if a plugin is not listed as optional, it's still possible to remove or replace it.  It'll just require some [code surgery](/tutorials/code/plugins.html) rather than a mouse click.  Do not attempt to remove a plugin simply by deleting its code folder.  That will cause code errors.
+{% endnote %}
+
+{% include pretty_image.html file='web-portal/plugins.png' %}
+
 
 {% include toc.html %}
 

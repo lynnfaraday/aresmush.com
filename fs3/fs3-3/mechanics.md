@@ -6,36 +6,60 @@ layout: fs3
 
 For those who care about the nitty-gritty about what the Ability Ratings actually mean in terms of chance of success, this article is for you.
 
+{% include toc.html %}
+
 ## Base Mechanic
 
 The basic FS3 mechanic is Attribute + Skill number of 8-sided dice against a target number of 6.
 
-## Routine Roll
+## Chance of Success
 
-On a routine roll (no modifiers), here is the chance of getting at least one success at various Ability Ratings.
+On a routine roll, here is the chance of getting various numbers of successes based on the **total** number of dice (attribute + skill).
 
-| Total Dice | Chance of Getting at Least 1 Success |
-| ---- |
-|1|37%|
-|2|60%|
-|3|75%|
-|4|84%|
-|5|90%|
-|6|94%|
-|7|96%|
-|8|97%|
-|9|98%|
-|10|99%|
+> <i class="fa fa-cubes" aria-hidden="true"></i>  Most tasks in FS3 require only a single success, so even modest skill ratings (Competent or higher) give you a good chance of success on average rolls.  Higher ratings give you more of an edge in opposed rolls and difficult tasks.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i>  Notice that it doesn't take many dice to get a high chance of success.  You might wonder why one would even bother to raise a skill higher than that.   Here's why...
+| Total Dice | 1+ Success | 2+ Success | 3+ Success | 
+| ---- |---- |---- |---- |---- |
+|3|76%| 32% | 5% | 
+|4|85%| 48% | 15% |
+|5|90%| 62% | 28% | 
+|6|94%| 73% | 40% | 
+|7|96%| 81% | 52% | 
+|8|98%| 86% | 63% | 
+|9|99%| 91% | 72% | 
+|10|99%| 94% | 79% | 
+
+{% include pretty_image.html file='fs3/fs3-multiple-success.png' %}
+
+## Expected Successes
+
+Technically the _possible_ number of successes is always 0 up to the total number of dice.  But in practice, some results are extraordinarily unlikely.  This chart shows you how many successes are actually _practical_.
+
+* Average Successes = Mathematical average number of successes.
+* Expected Range = Excluding results that are less than 5% likely, what is the actual range of successes you can expect.
+
+| Total Dice | Average Successes | Expected Range |
+| ---- |---- |---- |
+| 3 |1 | 0-2 |
+| 4 | 1.5 | 0-3 |
+| 5|1.875 | 0-4 |
+| 6|2.25 | 0-4 |
+| 7|2.625 | 0-5 |
+| 8|3 | 1-5 |
+| 9|3.375 | 1-6 |
+| 10|3.75 | 1-7 |
+
+{% include pretty_image.html file='fs3/fs3-average-success.png' %}
 
 ## Hard Roll
 
 With a -2 modifier, things get very different.
 
+> <i class="fa fa-cubes" aria-hidden="true"></i>  Higher ratings insulate you against modifiers, letting you have a good chance of success even when the going gets tough.
+
 | Total Dice | Chance of Getting at Least 1 Success |
 | ---- |
-|1-3|37%|
+|3|37%|
 |4|60%|
 |5|75%|
 |6|84%|
@@ -44,26 +68,6 @@ With a -2 modifier, things get very different.
 |9|96%|
 |10|97%|
 
-> <i class="fa fa-cubes" aria-hidden="true"></i>  Higher ratings insulate you against modifiers, letting you have a good chance of success even when the going gets tough.
-
-## Multiple Successes
-
-Also consider the chance of getting 2 or more successes (a "Good Success") on the roll at various ratings.
-
-| Total Dice | Chance of Getting at Least 2 Successes |
-| ---- |
-|1|0%|
-|2|14%|
-|3|31%|
-|4|48%|
-|5|61%|
-|6|72%|
-|7|80%|
-|8|86%|
-|9|~90%|
-|10|~96%|
-
-> <i class="fa fa-cubes" aria-hidden="true"></i>  Higher ratings give you a better chance of getting multiple successes, which is particularly important when you start dealing with opposed rolls.
 
 ## Opposed Roll
 

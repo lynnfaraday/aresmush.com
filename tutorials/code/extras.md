@@ -37,6 +37,16 @@ As long as you haven't modified the plugin's source code, you can upgrade it jus
 
 > <i class="fa fa-exclamation-triangle"></i> **Warning:** Do not attempt to run the upgrade script if you've got custom code modifications.  You'll have to do the upgrade by hand.  GitHub's version compare tools can help you figure out what changed.  Feel free to ask for help.
 
+## Uninstalling Plugins
+
+Unfortunately due to the way the database code works, uninstalling a plugin is not as straightforward as installing one.  You have to: 
+
+1. [Remove the database fields](/tutorials/code/remove-field.htm) and any associated database objects.
+2. Unload the plugin using the in-game command `unload <plugin name>`.
+3. Remove the code files.  You may remove the config files too, but you don't have to.
+
+If you're not sure how to do this and need help, [just ask](/feedback.html).
+
 ## Contributions
 
 See [Submitting Contributions](/tutorials/code/extra-contribs.html) if you want to contribute your own extras or community plugins.

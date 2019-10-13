@@ -111,6 +111,7 @@ If you want to know exactly which commands are accessible with these permissions
 | manage_roster | |
 | manage_scenes | |
 | manage_weather | |
+| manage_wiki | |
 | set_comtitle | |
 | set_duty | |
 | teleport | |

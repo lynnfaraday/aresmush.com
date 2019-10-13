@@ -38,4 +38,9 @@ Be sure to log them in and change their passwords (`password <oldpassword>=<newp
 
 ## Getting Started as an Admin
 
-Ares works out of the box, but there are a lot of things you can configure to make the game your own.  You can even alter the code to add custom functionality.  A rich suite of [tutorials](/tutorials) are available to help you on your way.  We suggest you start with [Getting Started as an Admin](/tutorials/manage/started.html), as it will guide you in getting your game set up.
+Ares works out of the box, but there are a lot of things you can configure to make the game your own.  You can even alter the code to add custom functionality.  A rich suite of [tutorials](/tutorials) are available to help you on your way.  
+
+Two to start with are:
+
+* [Getting Started as an Admin](/tutorials/manage/started.html) - general help setting up your own admin character and doing basic administrative tasks.
+* [Essential Configuration](/tutorials/config/config-basics) - customizing your game's settings.

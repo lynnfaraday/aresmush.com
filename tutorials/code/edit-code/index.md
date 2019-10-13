@@ -24,7 +24,3 @@ This is primarily an explanatory/video-based tutorial.  It's helpful (but not re
 ## Getting Help
 
 If at any point you run into trouble, you can [Get Help](/feedback.html).
-
-## Tutorial
-
-{% include edit_code_tutorial.html %}

@@ -1,11 +1,11 @@
 ---
-title: Configuration Basics Overview
+title: Essential Config Overview
 description: 
 layout: tutorial
-nextstep: custom-plugin
+nextstep: game-dir
 tutorialIndex: tutorials/config/config-basics
-configBasicsTutorial: true
-tutorialName: Configuration Basics
+essentialConfigTutorial: true
+tutorialName: Essential Config
 tags:
 - config
 ---
@@ -16,12 +16,8 @@ This tutorial will walk you through some of the basic configuration options you'
 
 ## What You'll Need
 
-This tutorial is interactive, so you'll need the Headwiz character or [coder permissions](/tutorials/manage/roles.html) on an actual Ares game.
+This assumes you have admin permissions on an actual Ares game you want to configure.
 
 ## Getting Help
 
 If at any point you run into trouble, you can [Get Help](/feedback.html).
-
-## Tutorial
-
-{% include config_basics_tutorial.html %}

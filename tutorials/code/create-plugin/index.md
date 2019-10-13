@@ -30,7 +30,3 @@ Unlike the other two, this is not a "Try It!" tutorial.  It's more of a walk-thr
 ## Getting Help
 
 If at any point you run into trouble, you can [Get Help](/feedback.html).
-
-## Tutorial
-
-{% include create_plugin_tutorial.html %}

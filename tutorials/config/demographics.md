@@ -36,6 +36,7 @@ If you don't want a limit, just set them to 0 and 99 respectively.
 You are able to specify all of the demographics you're going to use.  Some tips:
 
 * Use all-lowercase names!  These are going to be converted into code variables, and lowercase is important.
+* You may use multi-word names (e.g. 'played by'), but their shortcut command will become one word  (`playedby Clint Eastwood`).
 * Don't use demographic names that conflict with other commands (like 'job').
 * Demographics will be displayed in character profiles in the order you enter them.
  
@@ -44,7 +45,7 @@ You are able to specify all of the demographics you're going to use.  Some tips:
 Any demographics you list in `required_properties` are mandatory in chargen.  
 
 {% tip %} 
-The names here must exactly match the names in the demographics list.
+The names here must exactly match the names in the demographics list, including capitalization and spacing.
 {% endtip %}
 
 ### editable_properties
@@ -52,7 +53,7 @@ The names here must exactly match the names in the demographics list.
 Any demographics you list in `editable_properties` may be changed after chargen.  You want to allow mutable things like hair color to change, but probably not birthdate or eye color.
 
 {% tip %} 
-The names here must exactly match the names in the demographics list.
+The names here must exactly match the names in the demographics list, including capitalization and spacing.
 {% endtip %}
 
 ### private_properties
@@ -60,7 +61,7 @@ The names here must exactly match the names in the demographics list.
 Any demographics you list in `private_properties` are secret.  They will only show up when viewed by staff or by the character themselves.
 
 {% tip %} 
-The names here must exactly match the names in the demographics list.
+The names here must exactly match the names in the demographics list, including capitalization and spacing.
 {% endtip %}
 
 
@@ -79,6 +80,11 @@ Since demographics are so flexible, the help file refers players to the `demogra
 
     physique: '%xcphysique <build/body type>%xn - athletic, wiry, slim, pudgy, etc.'
     gender: '%xcgender <male/female/other>%xn'
+
+
+{% tip %} 
+The names here must exactly match the names in the demographics list, including capitalization and spacing.
+{% endtip %}
 
 ## groups
 
@@ -131,3 +137,13 @@ You can configure which fields appear on the full census screen.  For each field
       title: Position
 
 A complete description of all available fields - and how to create custom fields - can be found in the "who_fields" option in the [Who/Where Configuration](/tutorials/config/who.html).
+
+## genders
+
+The list of genders is configurable.  For each gender, you need to specify the various pronouns and a noun, which may be used in coded commands.
+
+    Male:
+      possessive_pronoun: his
+      subjective_pronoun: he
+      objective_pronoun: him
+      noun: man 

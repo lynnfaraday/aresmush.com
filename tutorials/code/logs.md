@@ -9,6 +9,10 @@ tags:
 
 Ares has an internal logging system (log4r) to help diagnose code issues.  The log includes error messages, important game events, and every command executed on the game *except* those omitted for player privacy (pages, poses, channel chat, and passwords).
 
+{% note %}
+This article is about how to use the logger in code.  For help reading the actual log files, see [Troubleshooting Issues](/tutorials/code/troubleshooting.html).
+{% endnote %}
+
 {% include toc.html %}
 
 ## Logging in Code
@@ -23,14 +27,6 @@ This writes a statement to the log file.  You can use string interpolation (e.g.
 
 Ares by default will maintain up to ten log files, switching when each one gets too big.  The log files are numbered sequentially (log1.txt, log2.txt, etc.)   Log files are stored on the server in the `aresmush/game/logs` folder.
 
-## Reading Log Files
-
-The easiest way to browse log files is from the Web Portal.  Go to Admin -> Logs.  The newest log file will be at the top of the list.  Log entries are timestamped.  The Web Portal will show log entries in reverse chronological order, so the newest ones are listed first.
-
-    2018-02-20 13:08:44 DEBUG - AresMUSH::Who::WhereCmd: ID=229 Enactor=Faraday Cmd=+where 
-    2018-02-20 13:08:25 DEBUG - Emptying trash for John. 
-    2018-02-20 13:08:25 INFO - Character Disconnected: John 
-
 ## Log Levels
 
 There are four different levels of logging statements:  
@@ -39,6 +35,12 @@ There are four different levels of logging statements:
 * **Warning** - Unusual issues that did not cause a big problem, but might indicate an unexpected condition.  `Global.logger.warn("Attempted to post to a forum that doesn't exist.")`
 * **Info** - Important informational messages that help you keep track of what's happening in the game. `Global.logger.info("Client connected from #{ip_address}.")`
 * **Debug** - Nitty-gritty details that are helpful for troubleshooting but not necessariy of general interest.  `Global.logger.debug "Reading help file #{topic_key}"`
+
+&nbsp;
+
+    2018-02-20 13:08:44 DEBUG - AresMUSH::Who::WhereCmd: ID=229 Enactor=Faraday Cmd=+where 
+    2018-02-20 13:08:25 DEBUG - Emptying trash for John. 
+    2018-02-20 13:08:25 INFO - Character Disconnected: John 
 
 ## Debugging With Stack Traces
 

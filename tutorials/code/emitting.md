@@ -9,9 +9,10 @@ tags:
 
 Emitting messages is the most basic way that your code will communicate with the players.  Pretty much every single command will emit something to someone.
 
-{% tip %} 
-All emits accept [Formatting Codes](/tutorials/code/formatting.html).
-{% endtip %}
+{% note %} 
+Players logged into the web portal are **not** notified of emits. They are generally used in response to commands you've typed from the client, and don't apply to web players.  To alert web players, see [notifications](/tutorials/code/notifications.html).
+{% endnote %}
+
 
 {% include toc.html %}
 
@@ -25,7 +26,7 @@ The **client** object allows you to emit a message to a player.  Most commonly, 
 * `client.emit_failure "A message"` - Failure/error alerts show up in red.
 
 {% tip %} 
-A 'client' in this context means a traditional MUSH client, including telnet-based client apps or the web portal's Play screen.   Regular emits are not sent to people just browsing around the web portal.  If you want to notify them of something (like to tell them that they've received a new mail message), see Notifying Web Clients below.
+All emits accept [Formatting Codes](/tutorials/code/formatting.html).
 {% endtip %}
 
 ## Emitting to a Different Character's Client
@@ -62,24 +63,6 @@ You can emit to all connected characters through the Client Monitor, which keeps
 
     Global.client_monitor.emit_all "A message."
     Global.client_monitor.emit_all_ooc "A message."
-
-## Notifying Web Clients
-
-By default, characters logged into the web portal are **not** notified of emits.  Most of them are simply irrelevant when you're just browsing the website.  
-
-If you want to send a notification to someone - no matter whether they're on the web portal or a MU client - you can use the Notifier.  The Notifier accepts an *event type*, which may trigger special handling on the web portal, and a *block* that tells it which clients it should emit to.
-
-To emit to everyone, the block can simply return 'true': 
-
-    Global.notifier.notify_ooc(:event_created, message) do |char|
-      true
-    end
-
-The notification for a new forum post might only go to people who can actually see the post:
-
-    Global.notifier.notify_ooc(:forum_edited, notification) do |char|
-       Forum.can_read_category?(char, category)
-    end
 
 ## Raw Emits
 

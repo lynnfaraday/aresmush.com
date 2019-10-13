@@ -465,6 +465,8 @@ h2
         color: #CF895D;
         border-bottom:1px solid #CF895D;
         font-weight: normal;
+        padding-top: 15px;
+        padding-bottom: 5px;
 }
 
 h3, h4, h5, h6
@@ -645,7 +647,7 @@ li {
 .tutorial-nav {
     padding: 10px;
     border: 1px dotted #aaa;
-    margin: 10px;
+    margin-top: 20px;
     overflow: auto;
     
 }

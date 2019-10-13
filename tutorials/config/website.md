@@ -63,12 +63,16 @@ There are three main images used by the website.
 
 You can upload new versions on the website.
 
-1. Select Directory -> Files.
-2. Upload new versions for any files in the `theme_images` folder.  This folder is locked to admins.
-3. Be sure to check the 'overwrite' box to overwrite the existing version.
+1. Go to Directory -> Files.
+2. Select the `theme_images` directory.
+3. Select an image you wish to change.
+4. Select "Upload Files".
+5. Browse to find your new image on your PC.
+6. Make sure that the file is named **exactly the same** as the original (e.g. background.png) and the "**Overwrite**" box is checked.
+7. Click the upload button.
 
 {% note %} 
-Some browsers (notably Chrome) are stubborn about reloading theme images right away.  You may need to clear your image cache or try viewing it in private/incognito mode to see your images right after you've uploaded them.
+Some browsers (notably Chrome) are stubborn about reloading theme images right away due to image caching.  Try viewing it in private/incognito mode to see your new images.
 {% endnote %}
 
 You can use [Custom CSS](#custom-css-style), explained below, to change which images are used in each section.  For example, if you want to use different backgrounds for the profile and log pages, or a JPG instead of a PNG for the title background.
@@ -220,9 +224,9 @@ The Web Portal has a number of configuration options.  To set them:
 
 Many of the Web Portal pages allow players to enter [Markdown](https://daringfireball.net/projects/markdown/syntax).  By default, Ares allows HTML in its Markdown text.  This gives players a great deal of flexibility for embedding images, youtube videos, or custom styles.  However, it *could* be used to run malicious or annoying javascript code.  If you run into trouble, you can tell Ares to run Markdown in safe mode by disabling HTML.
 
-### max_upload_size_kb
+### max_upload_size_kb and max_folder_size_kb
 
-You can configure the maximum file upload size.  By default it is 5000 kB (5 MB).
+You can configure the maximum sizes for an individual file upload, and an entire character's folder.  By default these are 300kb (per file) and 2000 kb (for the entire folder).  Wiki admins are not subject to these restrictions.
 
 ### website_code_path
 

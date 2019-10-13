@@ -5,7 +5,7 @@ tags:
 - config
 ---
 
-You can configure basic information about your game.  This information is used in the [AresCentral games directory](https://arescentral.aresmush.com).  See [Managing the Game Directory](/tutorials/manage/directory.html) for more information.
+[AresCentral](https://arescentral.aresmush.com) has an automatic game directory that lists all active Ares games.  You can control how your game shows up there.
 
 To configure the game preferences:
 
@@ -14,11 +14,17 @@ To configure the game preferences:
 
 {% include pretty_image.html file='web-portal/game-info.png' %}
 
-This information includes:
+## Game Information
+
+These are the fields you can configure about your game.
 
 * Name - Your game's name.
 * Description - A short blurb about your game.
 * Website - URL for your game (optional; if not specified it will just use your web portal URL).
-* Category - Pick which category best describes your MUSH for the AresCentral games directory: Social, Historical, Sci-Fi, Fantasy, Modern, Supernatural, or Other.
+* Category - Pick which category best describes your MUSH for the AresCentral games directory: Social, Historical, Sci-Fi, Fantasy, Modern, Supernatural, Comic, or Other.
 * Public Game - Check the box if you want your game shown on AresCentral's game directory.
-* Status - Pick a status that best describes your game.
+* Status - Pick a status that best describes your game: Sandbox, In Development, Alpha, Beta, Open or Closed.
+
+{% tip %}
+You will not be able to link player handles on your game until you _either_ check the "Public Game" box _or_ run the `game/register` command to register your game manually.
+{% endtip %}

@@ -24,7 +24,3 @@ This tutorial is interactive, so you'll need the Headwiz character or [coder per
 ## Getting Help
 
 If at any point you run into trouble, you can [Get Help](/feedback.html).
-
-## Tutorial
-
-{% include add_web_tutorial.html %}

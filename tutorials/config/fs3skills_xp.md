@@ -14,7 +14,7 @@ To configure the FS3 Skills List:
 
 ## Before You Start
 
-You should read the article [Tweaking FS3](http://aresmush.com/fs3/fs3-3/tweaking-fs3.html), which contains important information to help guide you in customizing your game.
+You should read the article [Customizing FS3](http://aresmush.com/fs3/fs3-3/tweaking-fs3.html), which contains important information to help guide you in customizing your game.
 
 ## periodic_xp
 

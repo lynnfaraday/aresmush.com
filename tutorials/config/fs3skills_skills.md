@@ -14,7 +14,7 @@ To configure the FS3 Skills List:
 
 ## Before You Start
 
-You should read the article [Tweaking FS3](http://aresmush.com/fs3/fs3-3/tweaking-fs3.html), which contains important information to help guide you in customizing your game.
+You should read the article [Customizing FS3](http://aresmush.com/fs3/fs3-3/tweaking-fs3.html), which contains important information to help guide you in customizing your game.
 
 ## Attributes
 
@@ -86,7 +86,15 @@ Make sure you allocate enough free language points in chargen to cover rating 3 
 
 ## Advantages
 
-Advantages are an optional part of the system.  You can use them for things that aren't skills, but that you want people to pay points for in chargen - rank, resources, powers, etc.   You can configure the list of Advantages, specifying a name and description for each.
+Advantages are an optional part of the system.  You can use them for things that aren't skills, but that you want people to pay points for in chargen - rank, resources, powers, etc.   
+
+{% note %}
+Advantages are more akin to the old Storyteller system Backgrounds than they are to things like CofD merits/flaws, Cortex assets/complications, or Shadowrun positive/negative qualities.  You can't have different costs/limits for different advantages.  They're all rated 1-3 and they all cost the same.
+
+They basically work exactly like background skills, but they're in a separate category because they're... not skills.
+{% endnote %}
+
+You can configure the list of Advantages, specifying a name and description for each.
 
     - name: Resources
       desc: Wealth and other tangible possessions.

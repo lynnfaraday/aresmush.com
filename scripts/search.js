@@ -1,7 +1,5 @@
-var ce_baseurl;
-
 const searchHitTemplate = function(hit) {
-  let url = `${ce_baseurl}${hit.url}#${hit.anchor}`;
+  let url = `${hit.url}#${hit.anchor}`;
 
   const title = hit._highlightResult.title.value;
 
@@ -34,7 +32,7 @@ const initializeSearch = function(app_id, api_key, index, base_url) {
       }
   });
   
-  ce_baseurl = base_url;
+  ares_baseurl = base_url;
   
 
 

@@ -85,6 +85,10 @@ If you have MacOS installed on your home PC, you can actually install your own c
 
 AresMUSH won't run on Windows due to a limitation in the database driver, but you can install Ares using a Virtual Machine (VM).  A VM is like a computer within a computer.  Once your VM is installed and configured, you can connect to it just as you would a server in the cloud.
 
+{% tip %}
+Mudpuppy@AresCentral has contributed an automatic installer using [Ansible](https://forum.aresmush.com/t/ansible-installer/509).  This method is not officially supported, but you're still welcome to give it a try and see if it works for you.
+{% endtip %}
+
 1. Download and install [Oracle VirtualBox](https://www.virtualbox.org/).
 2. Install the VirtualBox Extension Pack (available from the same downloads page as VirtualBox itself).
 3. Create a VM in VirtualBox.  Use the following options:
