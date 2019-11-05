@@ -41,7 +41,7 @@ As you continue to build your game, you'll probably find other [config settings]
 
 ## Building the Grid
 
-A full grid is not strictly required for Ares games, since scenes can take place in temp rooms via the scene system. Most games will want to build one, though, and for that you can see the [Building the Grid](/tutorials/manage/building.html) tutorial.
+A full grid is not strictly required for Ares games, since scenes can take place in temp rooms via the scene system. Most games will want to build one, though, and for that you can see the `help building tutorial` in your game.
 
 ## Setting Up Staff Roles
 

@@ -1,5 +1,5 @@
 ---
-title: Essential Config - Web Poral Theme
+title: Essential Config - Web Portal Theme
 description: 
 layout: tutorial
 nextstep: config-files

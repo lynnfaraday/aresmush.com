@@ -92,6 +92,7 @@ If you want to know exactly which commands are accessible with these permissions
 | announce | By default this is given to all approved characters so storytellers can announce the start of events. |
 | boot | By default this is given to all approved characters as part of the tools for [managing trolls](/tutorials/manage/trolls.html). |
 | build | |
+| control_npcs | Pose from NPCs in scenes. |
 | desc_anything | |
 | desc_places | | 
 | go_home | |

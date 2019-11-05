@@ -137,7 +137,7 @@ You are not limited to these, of course, but using the standard that people are 
 
 ## Custom Approval Steps
 
-In addition to having custom app review steps, you can also have custom code that's triggered when a character is approved.  Open `aresmush/plugins/chargen/custom_approval.rb` and make the `custom_approval` method do whatever you want to do when someone is approved.  Common examples include:
+In addition to having custom app review steps, you can also have custom code that's triggered when a character is approved.  Edit `aresmush/plugins/chargen/custom_approval.rb` and make the `custom_approval` method do whatever you want to do when someone is approved.  Common examples include:
 
 * Setting starting location based on a group value (e.g. home world, faction).
 * Assigning a role or adding to a channel based on a group value (e.g. faction-based roles/channels).

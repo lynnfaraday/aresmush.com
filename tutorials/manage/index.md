@@ -18,17 +18,10 @@ These articles give a general overview of the various game systems.  For specifi
 
 * [Getting Started as an Admin](/tutorials/manage/started.html)
 
-### Major Systems
-
-* [Building the Grid](/tutorials/manage/building.html)
-* [Reviewing Character Apps](/tutorials/manage/apps.html)
-* [Using Roles and Permissions](/tutorials/manage/roles.html)
-* [Using Jobs and Requests](/tutorials/manage/jobs.html)
-
-### Periodic Tasks
+### General Tasks
 
 * [Troubleshooting Errors](/tutorials/code/troubleshooting.html)
-* [Sweeping Idle Characters](/tutorials/manage/roles.html)
+* [Using Roles and Permissions](/tutorials/manage/roles.html)
 * [Dealing with Trolls](/tutorials/manage/trolls.html)
 * [Adding Plugins](/tutorials/code/extras.html)
 * [Setting up Guests](/tutorials/manage/guests.html)

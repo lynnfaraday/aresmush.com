@@ -89,10 +89,10 @@ Remember that these limits are at *or above*.  So given the max skills example a
 
 ## starting_skills
 
-FS3 lets you assign starting skills and specialties for different groups.  For example, you may want to ensure that people from a certain colony all start with a particular language, or that people in a certain position start with certain professional skills.
+FS3 lets you assign starting skills and specialties for different groups.  For example, you may want to ensure that people from a certain colony all start with a particular language, or that people in a certain position start with certain professional skills. As with the rating limits, these are soft targets.  The app command status will have a warning if any starting skills are missing or too low.
 
 {% note %} 
-As with the rating limits, these are soft targets.  The app command status will have a warning if any starting skills are missing or too low.
+If you don't want any starting skills, set this to an empty hash value: `{}`.  Don't just leave it blank.
 {% endnote %}
 
 {% tip %} 
@@ -127,11 +127,16 @@ A Navy Pilot would start with Swimming: 2 and Piloting: 3, whereas a Marine Pilo
 
 ### Everyone Skills
 
-Sometimes you may want to give a skill to everybody.  Instead of duplicating the information in each group, you can use the special "Everyone" group.   For example, to make everyone start with Alertness 2:
+Sometimes you may want to give a skill to everybody.  Instead of duplicating the information in each group, you can use the special "Everyone" group.   For example, to make everyone start with Alertness 2 and fluent English:
 
     Everyone:
         skills:
             Alertness: 2
+            English: 3
+
+{% tip %} 
+You probably want to make sure everyone starts out as fluent (3) in whatever the game's common language is.
+{% endtip %}
 
 ## unusual_skills
 

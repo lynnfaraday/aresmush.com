@@ -33,13 +33,13 @@ From the web portal (in v0.54 and higher):
 1. Go to Admin -> Manage -> Upgrade.
 2. Select 'Upgrade'.
 
-From the game:
+**-or-** From the game (in your usual MU client):
 
 1. Type `upgrade/start` to begin the upgrade.
 2. Type `upgrade/finish` to complete the upgrade.
 
 {% tip %}
-You may see messages like  "Your branch is ahead by 4 commits."  You can ignore those.
+You may see messages like  "Your branch is ahead by 4 commits."  You can ignore those.  If you see any other weird messages or errors, [ask for help](/feedback.html).
 {% endtip %}
 
 ## Upgrade With a Restart

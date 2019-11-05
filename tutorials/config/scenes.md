@@ -61,6 +61,32 @@ You can configure how long to wait before deleting unshared scenes.  For example
 
 Whenever the unshared scene cron job runs, it will warn participants in unshared scenes that were completed more than 13 days ago.  It will delete unshared scenes that were completed more than 20 days ago - effectively giving a 7-day grace period after the warning.
 
-### trending_scenes_cron and trending_scenes_category
+## trending_scenes_cron and trending_scenes_category
 
 The game will post trending scenes (i.e. recent scenes with the most 'likes' on the web portal) to a forum.  By default this happens once a week, and you can control the timing with `trending_scenes_cron`.  You can also control which forum it posts to with `trending_scenes_category`.  Leave the category blank to disable the post.
+
+## use_custom_char_cards
+
+Character cards are mini-profiles that are shown when you click on a character's icon next to their pose.  You can design your own custom character cards with custom code.  There are three steps to this:
+
+1. Set `use_custom_char_cards` to true in the configuration.
+2. Implement the web template for your card display in `ares-webportal/app/templates/components/char-card-custom.hbs`.
+3. If you need extra data beyond what's already provided, implement custom fields in the `custom_char_card_fields` method of `aresmush/plugins/scenes/custom_char_card.rb`
+
+For example, say we wanted to show traits.  In the custom fields you could set the traits:
+
+    def self.custom_char_card_fields(char, viewer)
+      {
+         traits: char.traits.map { |k, v| { name: k, description: v } }
+      }
+    end
+
+And then in the web template here's a simple display.
+
+    {{#each char.custom.traits as |trait|}}
+    <p><b>{{trait.name}}:</b> {{trait.description}}</p>
+    {{/each}}
+
+{% note %} 
+Your custom fields will be under `char.custom`.  You can also use any of the basic fields.  Use the `char-card.hbs` for reference.
+{% endnote %}
