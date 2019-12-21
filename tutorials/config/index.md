@@ -37,6 +37,7 @@ These articles detail all of the config settings available in the game.
 * [Configuring the Forum System](/tutorials/config/forum.html)
 * [Configuring the Game Directory Info](/tutorials/config/game.html)
 * [Configuring the Game Skin (Lines)](/tutorials/config/skin.html)
+* [Configuring the Help System](/tutorials/config/help.html)
 * [Configuring the IC Time System](/tutorials/config/ictime.html)
 * [Configuring the Idle System](/tutorials/config/idle.html)
 * [Configuring the Jobs System](/tutorials/config/jobs.html)

@@ -23,7 +23,7 @@ These articles give a general overview of the various game systems.  For specifi
 * [Troubleshooting Errors](/tutorials/code/troubleshooting.html)
 * [Using Roles and Permissions](/tutorials/manage/roles.html)
 * [Dealing with Trolls](/tutorials/manage/trolls.html)
-* [Adding Plugins](/tutorials/code/extras.html)
+* [Adding "Ares Extras" Plugins](/tutorials/code/extras.html)
 * [Setting up Guests](/tutorials/manage/guests.html)
 * [Upgrading the Code](/tutorials/manage/upgrades.html)
 
@@ -37,11 +37,12 @@ These articles give a general overview of the various game systems.  For specifi
 
 * [Connect to the Server Shell](/tutorials/install/server-shell.html)
 * [Starting the Game](/tutorials/manage/start.html)
-* [Shutting Down the Game](/tutorials/manage/shutdown.html)
+* [Shutting Down and Restarting the Game](/tutorials/manage/shutdown.html)
 * [Rebooting the Server](/tutorials/manage/reboot.html)
 * [Changing the Server Timezone](/tutorials/manage/server-timezone.html)
 * [Setup Auto-Restart After Reboot](/tutorials/manage/restart-after-reboot.html)
 * [Archiving the Web Portal](/tutorials/manage/web-archive.html)
+* [Changing the Domain Name](/tutorials/manage/change-domain.html)
 
 ## Admin Guides
 

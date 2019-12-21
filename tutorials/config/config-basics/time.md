@@ -19,9 +19,25 @@ Your server's timezone depends on what region it's in.  Since many OOC times are
 
 From the server shell, run the command `sudo dpkg-reconfigure tzdata` and follow the prompts.
 
+You then need to tell the players what timezone the server is in, since it's not always obvious.  
+
+1. Go to Admin -> Setup in the web portal.
+2. Edit `datetime.yml`.
+3. Set `server_timezone` to whatever timezone the server time is in.
+
+{% note %}
+Setting the server timezone in the config file doesn't actually _change_ the server's timezone.  Only the server shell command can do that.  The config file is just a signal to players so they know what the server timezone actually is.
+{% endnote %}
+
 ## OOC Timezone
 
-You then need to tell the players what timezone the server is in, since it's not always obvious.  
+Ares will automatically convert server times into local times based on the player's timezone.  For instance, you might see an event listing like so:
+
+    1   Special Event       Fri Nov 15, 2019  4:00pm (2:00pm Mountain)
+
+The server is in Mountain time, so the event is at 2pm Mountain time, but that's 4pm my time.
+
+Players can change their own local timezones using the `timezone` command.  (see `help timezone` in game).  The default if they don't change anything is EST, but you can change that to server time or to whatever other default makes sense for your game.
 
 1. Go to Admin -> Setup in the web portal.
 2. Edit `ooctime.yml`.

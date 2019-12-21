@@ -106,7 +106,6 @@ Ares does not have an @decompile like Penn and Tiny, but there are other tools y
 * There's a `backup` command that works similarly to decompile to let you log a backup of your character.
 * There's an in-game `notes` command that lets you save notes for yourself.
 
-
 ## Objects and Details
 
 Ares does not have generic objects - like @created rings occupying peoples' inventories or signs left in rooms.  Instead, you can add details to yourself or rooms you own, which store supplemental description information.  Details are fully integrated into the description system, they work as part of the look command, for example: `look me/ring`.
@@ -120,3 +119,11 @@ Your IC/OOC status is controlled solely by what room you're in.  To get between 
 AFK status is just a flag; you can set it no matter where you are and it doesn't take you to a special room or anything.  You can also set a custom AFK message, which shows up in room descs and also in pages.  `afk Getting dinner - be back around 8pm EST`.  
 
 There's an automatically notice sent in pages if someone pages you while you're many hours idle.
+
+## Personal Code
+
+You can't set attributes on yourself like you can in other MU servers.  There's a virtual notepad for recording notes (see `help notes`), but everything else you need to set has specific commands.  For example, you don't use `&finger-quote me=Some snazzy quote.`, you would use the profile commands (`help profile`) to set up a custom section on your profile display with your snazzy quote.
+
+This also means you can't have personal code.  If you find yourself sorely missing some widget you liked, submit a [feature request](/feedback.html).  If you're a coder, you can even submit the code yourself with the [Ares Extras](/tutorials/code/extras.html) project, and then request that your favorite game install it.
+
+Because code works differently, you also don't need to worry about @lock-ing or setting any special flags on yourself.

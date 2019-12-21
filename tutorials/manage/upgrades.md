@@ -98,3 +98,16 @@ Edit the file manually to choose which version you want, and get rid of all the 
 Sometimes, rather than dealing with the conflict it's easier to just copy/paste the code for that file from [GitHub](http://github.com/aresmush/aresmush) and start fresh.  Once you have the new main Ares version, you can redo your custom changes.
 
 If you run into trouble resolving conflicts, don't be shy about [asking for help](/feedback.html).
+
+## Upgrading Extras
+
+Sometimes contributors will release a new version or patch for an existing Ares Extra plugin.  These are upgraded independently from the main code.  See [Upgrading Extras](/tutorials/code/extras.html#updating-plugins).
+
+## Upgrade Trouble FAQs
+
+Here are some common issues people report when upgrading.
+
+### Game Won't Start
+
+After an upgrade, the game won't start.  
+

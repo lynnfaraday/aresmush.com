@@ -88,3 +88,7 @@ So now we know where and why the error is happening.  Let's add an error check t
     end
 
 Now if we fail to specify an argument, we'll get an error message and the handler will return (aka stop handling the command.)
+
+{% tip %}
+`if (!piggies)` is a common syntax in error handling.  It basically just means: "Do this if piggies is `nil` - i.e. wasn't set."  You may also see `if (piggies.blank?)` for string arguments, which means "Do this if piggies is `nil` *or* an empty string."
+{% endtip %}

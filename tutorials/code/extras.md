@@ -41,7 +41,7 @@ As long as you haven't modified the plugin's source code, you can upgrade it jus
 
 Unfortunately due to the way the database code works, uninstalling a plugin is not as straightforward as installing one.  You have to: 
 
-1. [Remove the database fields](/tutorials/code/remove-field.htm) and any associated database objects.
+1. [Remove the database fields](/tutorials/code/remove-field.html) and any associated database objects.
 2. Unload the plugin using the in-game command `unload <plugin name>`.
 3. Remove the code files.  You may remove the config files too, but you don't have to.
 4. Remove the plugin from the extras list in the `plugins.yml` config file.

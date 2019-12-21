@@ -82,7 +82,7 @@ Sometimes you'll get a Sad Picard message saying the web portal can't connect to
 * Make sure the game is actually running and you can connect to it with a MU client.
 * Make sure there's a symbolic link from your web portal directory to your game directory.  If you do `ls -l` in your `/var/www/html` directory, you should see an entry like this: 
 
-    ares ares   24 Apr  2 01:01 game -> /home/ares/aresmush/game
+        ares ares   24 Apr  2 01:01 game -> /home/ares/aresmush/game
 
 ### Web Portal Sad Picard
 
@@ -105,13 +105,47 @@ If you get a warning saying "The website is not receiving live updates from the 
 If you are using HTTPS for your web portal, a common reason for getting "The website is not receiving live updates from the game" is that your security certificate has expired.  If this happens, you will see a `ERR_CERT_DATE_INVALID` in the browser developer tools.
 
 Shutting down and restarting the game engine usually fixes this.  If not, just go to the aresmush directory and re-run `bin/certs <your domain name>`.
+  
+### Web Portal Stuck on Old Version
+
+Sometimes you'll do an upgrade and you'll see mismatched versions between the game and the web portal (on the bottom of all portal pages):
+
+    AresMUSH game v0.70, portal v0.69
+
+This indicates that something went wrong on your web portal upgrade.  The web portal and game engine always have to have the same version.  If they don't, you will get unpredictable errors.
+
+Here's what you can do:
+
+1. Try a force-refresh in your browser, and/or open the web portal in a private/incognito browser window.  This will rule out any javascript cache issues.
+2. Try to re-deploy the website using the `website/deploy` command in-game or by running `bin/deploy` from the ares-webportal directory on the server shell.   Make sure there were no weird errors on the deploy.
+3. If your own private code fork, make sure you updated the webportal code too.  Sometimes folks forget and only update the game engine code.
+
+A successful website deploy will end with a list of files, like this:
+
+```
+Built project successfully. Stored in "dist/".
+File sizes:
+ - dist/assets/ares-webportal-5d9f5985e1460779a552cf47f222971d.css: 143.77 KB (23.25 KB gzipped)
+ - dist/assets/ares-webportal-7d7c53430414e59c856937e57e284827.js: 894.15 KB (98.25 KB gzipped)
+etc.
+```
+## Watchman
+
+When deploying the web portal, you'll see this warning:  "Could not start watchman".
+
+This can safely be ignored.
+
+Why? Watchman is a tool for local debugging; it doesn't apply to your server.
+
+## NPM Audit Warnings
+
+You'll often see this warning when deploying the web portal:  'found 69 vulnerabilities (11 low, 26 moderate, 32 high)'
+
+This can safely be ignored.
+
+Why? Like most web applications, Ares' web portal relies on a slew of external javascript libraries but only uses a fraction of their functionality.  Most of the vulnerabilities just don't apply to us.
 
 ## Debug Mode
 
 For tricky issues - especially during development - it can be helpful to run the game in [Debug Mode](/tutorials/code/debug-mode.html).
 
-## Watchman
-
-The web portal will always warn you:  "Could not start watchman".
-
-It doesn't matter.  It's a stupid ember thing.

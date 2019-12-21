@@ -165,6 +165,7 @@ It's suggested that you refer to these as you need them rather than trying to le
 ## Miscellaneous
 
 * [Chopping Block](/tutorials/code/chopping-block.html) - Code that didn't make the cut.
+* [Custom Code Hooks](/tutorials/code/custom-hooks.html) - Places where you can easily tie in your custom code.
 * [Using Git](/tutorials/code/git.html) - Using the GitHub version control system to manage your code.
 * [Setting up a Development System](/tutorials/code/dev-tools.html) - Setting up a system to code and test.
 * [Running Tests](/tutorials/code/tests.html) - Running the automated unit tests.

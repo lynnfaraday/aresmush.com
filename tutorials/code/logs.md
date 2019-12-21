@@ -23,6 +23,25 @@ Throughout the code, you'll see statements like:
 
 This writes a statement to the log file.  You can use string interpolation (e.g. `#{file}` to pass variables into the log statements.)
 
+## Avoiding Private Command Logging
+
+Ares by default will log all commands to the debug log.  This greatly aids in debugging an error because you can see the commands that preceded it.
+
+However, some things don't belong in log files, like passwords and conversations.  If you have a custom command that falls into this category, add a custom `log_command` method to your command handler.
+
+You might choose to log nothing:
+
+      def log_command
+        # Don't log poses
+      end
+
+Or a limited subset of information instead of the full command text:
+
+      def log_command
+        # Don't log full command for password privacy
+        Global.logger.debug("#{self.class.name} #{client}")
+      end
+
 ## Log Files
 
 Ares by default will maintain up to ten log files, switching when each one gets too big.  The log files are numbered sequentially (log1.txt, log2.txt, etc.)   Log files are stored on the server in the `aresmush/game/logs` folder.
@@ -57,7 +76,7 @@ The root problem is that we tried to call `select` on a nil class.  This happene
 
 ## Changing the Log Level
 
-By default, the Ares log file will include all four levels of log messages.  If your game is stable and you find the logs too spammy, you can change the minimum log level from DEBUG to INFO (or even to WARN or ERROR though that's not advisable).
+By default, the Ares log file will include all four levels of log messages.  If your game is stable and you find the logs too spammy, you can change the minimum log level from DEBUG to INFO (or even to WARN or ERROR but that's not advisable).
 
 Edit `logger.yml`: 
 
