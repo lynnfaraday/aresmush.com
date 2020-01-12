@@ -23,19 +23,19 @@ If someone is causing a ruckus, you can forcibly disconnect them using the boot 
 
 ### Reporting Channel Abuse
 
-The channel/report command allows you to report someone being abusive on channel.  It will create an admin job with the channel recall buffer automatically included.  See `help channels` in-game.
+You can report abusive channel conversations using the `channel/report` command or the "Report Abuse" menu option in the web portal chat screen.  This will create an admin job with the channel recall buffer automatically included.
 
 ### Monitoring and Reporting Harassing Pages
 
-Individual players can activate a personal log to monitor pages from a player who's harassing them.  The page/report command can then be used to lodge a complaint, automatically including the logged pages.  See `help page` in-game.
-
-{% tip %} 
-For privacy reasons, the page log is **off** by default, and it will only log pages to/from players you specify.  It won't help with a one-time offender, but if someone is repeatedly harassing you, you can activate the log and then report them the next time.
-{% endtip %}
+You can report abusive PM/page conversations using the `page/report` command or the "Report Abuse" menu option in the web portal chat screen.  This will create an admin job with the conversation automatically included.
 
 ### Reporting Offensive Mails
 
-You can use the mail commands to forward an offensive mail to the game admin.  See `help mail` in-game.
+You can report abusive mail messages using the `mail/fwd` command or the "Forward" button in the web portal mail screen.
+
+### Reporting Offensive Scene Behavior
+
+You can report abusive scene behavior using the `scene/report` command or the "Report Abuse" menu option in the web portal scene screen.  This will create an admin job with the scene log automatically included.
 
 ## Admin Commands
 

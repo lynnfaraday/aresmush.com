@@ -71,13 +71,14 @@ The web portal character gallery uses groups to organize characters.  By default
 3. Set `character_gallery_group` to the group (e.g. Faction, Nationality) you want for your primary tabs on the character gallery.
 4. Set `character_gallery_subgroup` to a different group if you want the characters sub-sorted within the tabs.  You can leave it blank if you don't want to sub-sort.
 
-## Updating the Welcome Message
+## Updating the Welcome Messages
 
-The chargen welcome message uses groups to give an overview of the character.  If you're using custom groups, you'll need to change this or you'll get an error when you approve characters.
+The chargen and roster welcome messages uses group to give an overview of the character.  If you're using custom groups, you'll need to change this or you'll get an error.
 
 1. Go to Admin -> Setup in the web portal.
 2. Edit `chargen.yml`.
 3. Edit `welcome_message` to ensure it doesn't reference groups that don't exist.
+4. Do the same for `roster_arrival_message` in `idle.yml`.
 
 For example, the default is:  `Please welcome %{name}, our latest %{position} to be approved!`
 

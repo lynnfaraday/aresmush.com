@@ -38,9 +38,9 @@ In short: Ares lets you create lock code for specific purposes, rather than atte
 
 ## Multiple Connections
 
-"How do I boot my extra connection?" is a common refrain on MUSHes.  Zombie connections, reconnects - it's a pain in the butt.  Ares doesn't do any of that.  When you reconnect, it kills your old connection.  This is generally helpful because it keeps dead connections from lingering around.
+"How do I boot my extra connection?" is a common refrain on MUSHes.  Zombie connections, reconnects - it's a pain in the butt.  Ares doesn't do any of that.  When you reconnect, it kills your old connection.  This is generally helpful because it keeps dead connections from lingering around, but it means you can't leave yourself logged in from multiple places at the same time.  
 
-As a consequence, though, you can't leave yourself logged in from multiple places at the same time.  I understand some people use this feature so they won't miss anything while they're switching computers, but they are decidedly in the minority.  Allowing simultaneous connections adds a lot of complexity to the codebase (and to a lesser extent the player commands).
+However, Ares has other features that make the need for multiple connections pretty moot.  Scene logs are stored server side.  You can start a scene at home, check in on it on your ride to work using the web portal, and pick it up on your lunch break - all without missing out on a single pose.  Channels have a built-in recall buffer.  Private messages (pages) can be sent while offline and reviewed later.  So the lack of multiple connections shouldn't really be an obstacle.
 
 ## Dolist
 
@@ -58,7 +58,7 @@ Ares commands are designed to work on lists where it makes sense, eliminating th
 
 You can't go dark on Ares.  Why not?  Because I find the idea of lurking admins to be creepy, and very big-brother-ish.
 
-If you don't want to be bothered, there's a 'duty' command to mark yourself as off-duty.  You can also use the 'do not distrub' feature on pages.
+If you don't want to be bothered, there's a 'duty' command to mark yourself as off-duty.  You can also use the 'do not distrub' feature on pages/PMs.
 
 ## Force
 
@@ -68,12 +68,9 @@ In Ares, admins cannot force players to execute commands, again because I think 
 
 Ares has no "Thing" object type.  That means no rings, no notepads, no blaster pistols, no Viper fighter craft to climb into, etc.   Why?  All of those things are done in different ways.
 
-Things that were cosmetic have been supplanted by a more robust 'detail' system that works on players as well as rooms.  If you want a special desc for your ring or the family photo on your wall, add a detail.
+* Cosmetic Items have been supplanted by a more robust 'detail' system that works on characters as well as rooms.  If you want a special desc for your ring or the family photo on your wall, add a detail.
+* Code Storage Items don't exist because code in Ares is not associated with a database object.  Code lives on the server and there is no player-side code scripting.  Many player utilities like notes and multi-descers are build into the core code.
+* Vehicles can be done as rooms with custom code to move the in/out exits around.
+* Inventory Tracking can be done with custom code for a virtual inventory system. Specialized data fields/models would keep track of what gear a player had, rather than just generic @-created objects.
 
-Things that stored code don't exist because Ares doesn't associate code with objects at all.  Code lives on the server.  There is no player-side code scripting.  Notepad and multi-descer code is built into the game as globals.
-
-Things that were used as vehicles to drive around in don't exist because frankly I find them kind of useless.  If you really needed to model a vehicle or elevator or whatnot, you could utilize a room for the interior and create some vehicle control code that re-linked the exits in/out of the vehicle and generated some emits based on where the vehicle moved.
-
-Things that were used for inventory tracking (weapons, armor, etc.) don't exist in the standard codebase because FS3 Combat uses a freeform inventory.  It's the combat organizer's job to police characters who arm themselves with nonsensical weapons.  If you wanted to code a different system that kept track of what gear a player had, you'd create specific database fields to track the gear, not generic @created objects.  Virtual inventory is the way even modern econoy systems on Penn/Tiny have leaned.
-
-If you have trouble philosophically adapating an old-style MUSH system to Ares' Thing-less world, just [ask for help](/feedback.html).
+If you have trouble philosophically adapting an old-style MUSH system to Ares' Thing-less world, just [ask for help](/feedback.html).

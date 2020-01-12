@@ -67,13 +67,13 @@ Hostnames are linked to IP addresses, so you can't fully set them up until you h
 
 If you're using an aresmush.com hostname, simply [contact me](/feedback.html) with your droplet's IP address (visible on the 'Droplets' screen in your Digital Ocean account).  
 
-If you're using your own custom host name, you'll need to set up the DNS through your domain provider.
+If you're using your own custom host name, you'll need to set up the DNS yourself. The steps will vary depending on the domain provider. See [Setting Up Domain Hosting With Namecheap](/tutorials/install/setting-up-dns.html) for an example.
 
 {% note %} 
 The hostname may take up to 24 hours to be recognized.  
 {% endnote %}
 
-You can tell that the hostname is working when you're able to see the web portal when you go to `http://yourmushaddress`.  Once this happens, you'll need to [restart the game](/tutorials/manage/shutdown.html) for everything to start working. 
+You can tell that the hostname is working when you're able to see the web portal when you go to `http://yourmushaddress`.  (There will be a Sad Picard error message, but that's OK for now.)  Once this happens, you'll need to [restart the game](/tutorials/manage/shutdown.html) for everything to start working. 
 
 ## Next Steps
 

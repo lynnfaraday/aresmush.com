@@ -129,23 +129,55 @@ File sizes:
  - dist/assets/ares-webportal-7d7c53430414e59c856937e57e284827.js: 894.15 KB (98.25 KB gzipped)
 etc.
 ```
-## Watchman
 
-When deploying the web portal, you'll see this warning:  "Could not start watchman".
+### Key Not Found Error on Approval or Roster Claim
 
-This can safely be ignored.
+You may see the approval welcome message or roster claim message not appearing, and a key error in the log:
 
-Why? Watchman is a tool for local debugging; it doesn't apply to your server.
+    error=key{position} not found
+    error=key{faction} not found
 
-## NPM Audit Warnings
+This means your welcome messages are configured to use a group that doesn't exist.  Probably you changed your groups from the default (position/faction) and just need to update the messages in [idle config](https://aresmush.com/tutorials/config/idle.html#roster_welcome_msg) and [chargen config](https://aresmush.com/tutorials/config/chargen.html#messages).  
+  
+## Web Portal Warnings
 
-You'll often see this warning when deploying the web portal:  'found 69 vulnerabilities (11 low, 26 moderate, 32 high)'
+When you deploy the web portal, you may see any or all of the following warnings that you can safely ignore.
 
-This can safely be ignored.
+### fsevents
 
-Why? Like most web applications, Ares' web portal relies on a slew of external javascript libraries but only uses a fraction of their functionality.  Most of the vulnerabilities just don't apply to us.
+```
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+```
+
+fsevents is an optional dependency for one of the javascript libraries we use.  Its absence doesn't affect anything.
+
+### Watchman
+
+```
+Could not start watchman
+```
+
+Watchman is an optional tool for local debugging; it doesn't apply to your server.
+
+### Node Version Untested
+
+```
+WARNING: Node v11.0.0 is not tested against Ember CLI on your platform. We recommend that you use the most-recent "Active LTS" version of Node.js. See https://git.io/v7S5n for details.
+```
+
+If you're using 11.0, it's been extensively tested for Ares and works just fine.  If you've got some other weird version of node you might want to use 12.x, which is the LTS version.
+
+### NPM Audit
+
+```
+audited 218632 packages in 30.459s
+found 69 vulnerabilities (11 low, 26 moderate, 32 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+```
+
+The NPM audit warnings come from off-the-shelf javascript libraries.  They either apply to features that Ares doesn't use, or are obscure enough edge cases that we're not going to worry about it.  (Seriously - MUSH clients use open unsecured telnet to connect; someone hacking some wacky javascript vulnerability is the least of your security issues.)
 
 ## Debug Mode
 
 For tricky issues - especially during development - it can be helpful to run the game in [Debug Mode](/tutorials/code/debug-mode.html).
-

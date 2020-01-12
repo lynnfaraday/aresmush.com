@@ -20,6 +20,8 @@ The [Essential Config Tutorial](/tutorials/config/config-basics) will walk you t
 It is strongly suggested that you follow the Essential Config tutorial step by step in order to perform the initial setup of your game.
 {% endwarning %}
 
+* [Essential Config Tutorial](/tutorials/config/config-basics)
+
 ## General Config
 
 These articles detail all of the config settings available in the game.
@@ -57,6 +59,15 @@ These articles detail all of the config settings available in the game.
 * [Configuring the Who/Where System](/tutorials/config/who.html)
 * [Configuring the Wiki](/tutorials/config/wiki.html)
 
+### Uncommon Config
+
+These configuration options will probably not need to be changed unless your server or database changes.
+
+* [Configuring the Database](/tutorials/config/database.html)
+* [Configuring the Server Info](/tutorials/config/server.html)
+* [Configuring AresCentral](/tutorials/config/arescentral.html)
+* [Using the API Proxy](/tutorials/config/api-proxy.html)
+
 ## FS3 Config
 
 If you intend to use the FS3 skills/combat systems, you'll want to review these settings.
@@ -88,14 +99,6 @@ These are advanced customization settings that most games won't need to alter.
 * [Configuring FS3 Combat Damage](/tutorials/config/fs3combat_damage.html)
 * [Configuring FS3 Combat NPCs](/tutorials/config/fs3combat_npcs.html)
 
-### Uncommon Config
-
-These configuration options will probably not need to be changed unless your server or database changes.
-
-* [Configuring the Database](/tutorials/config/database.html)
-* [Configuring the Server Info](/tutorials/config/server.html)
-* [Configuring AresCentral](/tutorials/config/arescentral.html)
-* [Using the API Proxy](/tutorials/config/api-proxy.html)
 
 ## General Config Topics
 

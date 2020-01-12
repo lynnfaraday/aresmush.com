@@ -14,7 +14,7 @@ tags:
 
 Host names are optional - you can always connect to a game using its IP address.  But it's nice to have a host name (like yourmush.somemuhost.com) so people can remember your game address more easily.
 
-Most VPS servers don't include a host name. If you want a name, you'll have to set it up.
+Most VPS servers (including Digital Ocean) don't include a host name. If you want a name, you'll have to set one up separately.
 
 ## AresMUSH Domain
 
@@ -22,4 +22,4 @@ You can request an AresMUSH sub-domain (yourmush.aresmush.com) by [contacting me
 
 ## Custom Domain
 
-You can also register a custom domain name (yourmush.com) for just a few dollars a year through sites like [NameCheap](https://www.namecheap.com/).  Once you have a domain, you can point it at the IP address of your droplet.  The steps will vary depending on the domain provider.
+You can also register a custom domain name (yourmush.com) for just a few dollars a year.  Once you have a domain, you will need to create an "A Record" DNS entry and point it at the IP address of your droplet.  The steps will vary depending on the domain provider. See [Setting Up Domain Hosting With Namecheap](/tutorials/install/setting-up-dns.html) for an example.

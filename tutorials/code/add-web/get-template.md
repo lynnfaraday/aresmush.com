@@ -14,15 +14,7 @@ tags:
 
 Now that we have our data being sent from the game to the website, we can actually show it on the web profile.
 
-The actual profile template is located in `ares-webportal/app/templates/char.hbs`, but it leverages Ember components for the various pieces of the profile.  This makes the code a bit cleaner.  For example, all of the demographics information is located in a component named profile-demographics:
-
-<pre>
-   &lt;div class="row profile-wrap">
-    &#x7b;&#x7b;profile-demographics char=model.char}}
-   &lt;/div>
-</pre>
-
-You can find the components under `ares-webportal/app/templates/components/<name>.hbs`.
+The actual profile template is located in `ares-webportal/app/templates/char.hbs`, but it leverages Ember components for the various pieces of the profile.  This makes the code a bit cleaner.  You can find the components under `ares-webportal/app/templates/components/<name>.hbs`.
   
 For this example, we're going to put goals into the "System" section near character sheet and RP hooks.  That file lives here:  `ares-webportal/app/templates/components/profile-system.hbs`.
 

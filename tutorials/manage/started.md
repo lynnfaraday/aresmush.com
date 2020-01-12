@@ -14,7 +14,7 @@ Ares is fully-functional right out of the box.  People can hop on and begin play
 
 ## Your Own Admin
 
-The Headwiz character is special, and should be reserved for special occasions.  Your first step should be creating your own personal admin character to use for everyday game activities.
+The [Headwiz character](/tutorials/install/next-steps.html#default-characters) is special, and should be reserved for rare occasions.  Your first step should be creating your own personal admin character to use for everyday game activities.
 
 1. Create a character from the login screen.
 2. Log in and accept the terms of service.
