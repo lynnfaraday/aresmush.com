@@ -9,39 +9,23 @@ tags:
 
 Normally, modifying the base Ares code exposes you to *merge conflicts*.  This is an annoying process that forces you to reconcile your changes with the base code changes whenever you upgrade.
 
-There are, however, several places that are designed with **custom code hooks**, which let you hook in custom code without exposing yourself to merge conflicts.
+There are, however, several places that are designed with **custom code hooks**, which let you hook in custom code without actually touching the core code.
 
 {% include toc.html %}
 
-## Chargen App Review
+## Chargen Hooks
 
-You can define custom [app review](/tutorials/config/chargen.html#custom-app-review) checks.  For example, if you want to warn people if they choose a nonsensical combination of group settings, or if you want to limit certain abilities to certain groups.
+* [Chargen App Review](/tutorials/code/hooks/app-review.html) - Character fields checked on the app review screen, like making sure their groups make sense or a custom chargen field is set.
+* [Chargen Approval Triggers](/tutorials/code/hooks/approval-triggers.html) - Actions taken after approval, like assigning roles or adding characters to channels based on their groups.
+* [IC Starting Location](/tutorials/code/hooks/starting-location.html) - If you want people from different factions/homeworlds/etc. to start in different places, you can use the custom IC starting location hook.
+* [Character Fields](/tutorials/code/hooks/char-fields.html) - New character fields added to profiles and/or chargen.
 
-## Chargen Post-Approval Steps
+## Scene Hooks
 
-You can trigger custom [post-approval](/tutorials/config/chargen.html#custom-approval-steps) steps in chargen.  Commonly this is used to assign roles or add people to channels based on their groups.
+* [Scene Buttons](/tutorials/code/hooks/scene-buttons.html) - Actions added to the Play menu or pose buttons on active scenes.
+* [Character Cards](/tutorials/code/hooks/char-cards.html) - Custom appearance for the mini character profiles that show up during active scenes when you select a character's icon.
 
-## IC Starting Location
+## FS3 Combat Hooks
 
-The default code has a single IC starting location.  If you want to start people from different factions/homeworlds/etc. in different places, you can design a custom [IC starting location](/tutorials/config/status.html#custom-ic-start-locations) selection.
-
-## Live Scene Controls
-
-In the web portal, you can add custom menu items and buttons to the controls.  This is useful for plugin extras.  For example, the text message plugin extra adds an "Add Txt" button, and the cookies plugin extra adds a "Give Cookies" button to the "Play" menu.
-
-* [Scene pose](/tutorials/config/scenes.html#custom-scene-pose-buttons) buttons interact with the pose box.
-* [Scene menu](/tutorials/config/scenes.html#custom-scene-menu-buttons) option show up in the live scene "Play" menu.
-
-## Character Profile System Tabs
-
-You can add custom tabs that appear in the "System" section of the [character profile](/tutorials/config/profile.html#custom-system-tabs).
-
-## Character Cards
-
-It's possible to customize the [character cards](/tutorials/config/scenes.html#custom-character-cards) (mini profiles) that show up when you click someone's icon next to their pose during live web portal scenes.
-
-## FS3 Combat Actions and New Turn Events
-
-Creating your own combat actions takes a fair amount of custom code.  But once you have them, you can easily [register them](https://aresmush.com/tutorials/code/fs3-roadmap.html#adding-a-new-action) with the combat system.
-
-If you have custom combat actions, you may also have some processing that needs to happen at the end of each turn.  Resetting flags, handling special kinds of damage, etc.  There's a place for you to [tie those in](https://aresmush.com/tutorials/code/fs3-roadmap.html#turn-reset-hook) as well.
+* [Combat Actions](/tutorials/code/hooks/fs3-actions.html) - Adding new combat actions to FS3.
+* [New Turn Triggers](/tutorials/code/hooks/fs3-new-turn.html) - Actions to be taken at the end of each turn, like resetting flags or handling special kinds of damage.

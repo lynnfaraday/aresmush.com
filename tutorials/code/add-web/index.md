@@ -15,7 +15,7 @@ This is the fifth in the basic series of Ares coding tutorials.
 
 ## What We'll Cover
 
-In this tutorial, we'll add character goals to the web portal.
+This tutorial shows you how to add a custom character field to the game.  In our case, we're going to add the web portal side of the [Goals command](/tutorials/code/add-cmd) we added in a previous tutorial.
 
 ## What You'll Need
 

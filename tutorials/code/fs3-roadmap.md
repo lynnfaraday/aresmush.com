@@ -182,28 +182,8 @@ Finally, it's worth noting that many combat properties get reset at the end of a
 
 There are two places in the combat code where you can hook in your custom changes without touching the main code and potentially running into merge conflicts.
 
-#### Adding a New Action
-
-You can register your own custom combat actions in `plugins/fs3combat/custom_hooks.rb` in the `custom_actions` method. This acts as a sort of mini dispatcher for combat actions.  
-
-For example, to add a new action named 'combat/mindtrick' with an action class named `MindTrickAction`, you would do:
-
-    def self.custom_actions
-       {
-          'mindtrick' => MindTrickAction
-       }
-
-#### Turn Reset Hook
-
-If you need things to happen at the end of a turn - resetting effects or counters - you can tie into the turn reset hook in `plugins/fs3combat/custom_hooks.rb` in the `custom_new_turn_reset` method.
-
-For example, if you had a flag to represent whether someone was under a 'mind trick' influence, you might reset that at the end of the turn.
-
-    def self.custom_new_turn_reset(combatant)
-       if (combatant.is_mind_tricked?)
-          combatant.update(mind_tricked: false)
-       end
-    end
+* [Combat Actions](/tutorials/code/hooks/fs3-actions.html) - Adding new combat actions to FS3.
+* [New Turn Triggers](/tutorials/code/hooks/fs3-new-turn.html) - Actions to be taken at the end of each turn, like resetting flags or handling special kinds of damage.
 
 ## Web Portal
 

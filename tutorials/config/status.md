@@ -31,21 +31,4 @@ The game will periodically check for idle players and mark them AFK automaticall
 
 ## Custom IC Start Locations
 
-The first time a character goes onstage, they will start in the designated "IC Start Location".  By default this is the room named "Onstage", though most games will rename that to something appropriate to their theme--Downtown, Docking Bay, Town Square, etc.
-
-At any time, you can change the IC starting location to a different room using the `icstart` command.  However, some games may want to have characters start at different locations based on faction/homeworld/etc.
-
-You can create custom code to vary the IC starting location.  Edit `aresmush/plugins/status/custom_status.rb` and make the `custom_ic_start_location` method choose a room based on the character.  For example, this would make everyone from the "Martian" faction start off in the Mars Promenade and everyone else start in the Geneva Starport:
-
-    def self.custom_ic_start_location(char)
-      faction = char.group("Faction")
-      if (faction == "Martian")
-        return Room.named("Mars Promenade")
-      else
-        return Room.named("Geneva Starport")
-      end
-    end
-
-{% note %} 
-`Room.named` only works if the room name you're searching for is unique.  If it isn't, you'll need to do a more sophisticated search.  Make sure the room actually exists and that you don't delete it.
-{% endnote %}
+If you want people from different factions/homeworlds/etc. to start in different places, you can use the [custom IC starting location hook](/tutorials/code/hooks/starting-location.html).

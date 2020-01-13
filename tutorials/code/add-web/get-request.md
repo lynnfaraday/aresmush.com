@@ -14,50 +14,14 @@ tags:
 
 The first step is to get the data from the game to the website.  This is done through a *Web Request*.
 
-{% note %} 
-You can manually set character goals for testing using `ruby Character.find_one_by_name("Someone").update(goals: "Test goals")`.
-{% endnote %}
+The actual web request can be found in `aresmush/plugins/profile/web/character_request_handler.rb`, but since there's a custom code hook available we don't need to modify that file directly.
 
+Instead we edit `aresmush/plugins/profile/custom_char_fields.rb` and modify the `get_fields_for_viewing` method.
 
-For goals, we can modify the exiting character profile web request, found in `aresmush/plugins/profile/web/character_request_handler.rb`.  At the end of the file, you'll see the return value is a big hash containing all the profile data:
+      def self.get_fields_for_viewing(char, viewer)
+        return { goals: Website.format_markdown_for_html(char.goals) }
+      end
 
-    {
-          id: char.id,
-          name: char.name,
-          ...
-    }
+Here we're using the `format_markdown_for_html` helper method to turn ansi, carriage returns and other formatting codes into HTML-friendly equivalents for display on the web portal.
 
-
-All we need to do is modify this hash to include the goals:
-
-    {
-          id: char.id,
-          name: char.name,
-          goals: char.goals,
-          ...
-    }
-
-There's one catch though.  Using just `char.goals` by itself will return a plain string.  That's fine if the goals don't contain any formatting codes, but it's quite likely that someone would use ansi or carriage returns in their goals.  We'll want to format it more nicely.  Fortunately there's a helper method to do that for us:
-
-    {
-          id: char.id,
-          name: char.name,
-          goals: Website.format_markdown_for_html(char.goals),
-          ...
-    }
-
-One more catch:  We may want our goals to be private.  That's up to you, really.  With the code shown above, goals will be visible to everyone.  You can restrict it using code similar to what's done for backgrounds.  For example, the profile request supplies background only if the character is on the roster, the player has expressly shared their background, or the enactor has permission to see it.  Otherwise the background will be `nil`.
-
-    show_background = (char.on_roster? || char.bg_shared || Chargen.can_view_bgs?(enactor)) && !char.background.blank?
-    {
-          id: char.id,
-          name: char.name,
-          background: show_background ? Website.format_markdown_for_html(char.background) : nil,
-          ...
-    }
-
-Once the goals are added, type `load profile` from the game to reload the code.
-
-{% note %} 
-You won't be able to see any changes yet because we haven't modified the website itself.  We'll do that in the next step.
-{% endnote %}
+Note that this code makes goals visible to everybody.  You could optionally use the `viewer` parameter to limit who can see them.

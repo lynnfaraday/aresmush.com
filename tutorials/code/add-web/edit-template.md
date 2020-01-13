@@ -12,36 +12,34 @@ tags:
 - website
 ---
 
-Finally, we modify the web portal to let us enter some goals.  The template lives here:  `ares-webportal/app/templates/char-edit.hbs`.
+Finally, we modify the web portal to let us enter some goals. A custom code hook lets us add new tabs to the character edit screen without touching the core code.
 
-We can add a section right after the RP hooks to let us edit the goals.  As with the profile show template, we must add a tab reference and then tab content.
+## Define the Tab Navigation
 
-        <li><a data-toggle="tab" href="#hooks">RP Hooks</a></li>
+First we're going to define the tab navigation control.  Edit `ares-webportal/app/templates/components/char-edit-custom-tabs.hbs` and add:
+
         <li><a data-toggle="tab" href="#goals">Goals</a></li>
 
+## Define the Tab Contents
+
+Next we'll define the contents of the tab.  This lives in a _different file_, so edit `ares-webportal/app/templates/components/char-edit-custom.hbs` and add:
+
 <pre>
-        &lt;div id="hooks" class="tab-pane fade in">
-          &#x7b;&#x7b;markdown-editor text=model.rp_hooks}}
-        &lt;/div>
-        
         &lt;div id="goals" class="tab-pane fade in">
-          &#x7b;&#x7b;markdown-editor text=model.goals}}
+          &#x7b;&#x7b;markdown-editor text=char.custom.goals}}
         &lt;/div>
 </pre>
 
-The markdown-editor helper lets players easily edit and preview markdown text.
-
-This lets us *enter* the data.  To actually *send* the data to the game, there's one more place we need to wire up: the edit controller.  That lives here: `ares-webportal/app/controllers/char-edit.js`
-
-The controller has as `buildQueryDataForChar` method that gets activated when the player clicks the 'save' button.  In there it sets up a hash with all the profile data the player entered.  We'll modify it to add our goals.
-
-    return { 
-            id: this.get('model.id'),
-            rp_hooks: this.get('model.rp_hooks'),
-            goals: this.get('model.goals'),
-            ...
-            }
-
-{% tip %} 
-This controller uses a helper method to build its data, which is common when the data is complex.  In simpler controllers, you might see the data plugged right into the  `save`  action function.
+{% tip %}
+The name in `id=goals` must match the name you used in the tab navigation control, but _without_ the # in front. This name must be unique across the entire character edit template, so it's suggested that you use something like `myplugin-tabname`.
 {% endtip %}
+
+The markdown-editor control lets players easily edit and preview markdown text.
+
+## Send the Data
+
+The controls above let us *enter* the data.  To actually *send* the data to the game, there's one more place we need to wire up: the edit controller.  That lives here: `ares-webportal/app/components/char-edit-custom.js`
+
+The controller has as an `onUpdate` method that gets activated when the player clicks the 'save' button.  In there it sets up a hash with all the profile data the player entered.  We'll add our goals to it.
+
+    return { goals: this.get('char.custom.goals') }

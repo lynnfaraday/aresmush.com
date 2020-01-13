@@ -90,65 +90,12 @@ Make sure the help file actually exists. It should exactly match the help file n
 
 ## Custom App Review
 
-The standard chargen ensures that values are _set_, but doesn't do much to see if the values _make sense_ (i.e. that only nobles can be knights).  Doing these kinds of checks requires custom code, but there's a built-in hook where you can put that code.  Open `aresmush/plugins/chargen/custom_app_review.rb` and make the `custom_app_review` method do whatever checks you want.
+With custom code, you can add extra automated system checks on the App Review screen in chargen, like making sure their groups make sense.  See [Custom Chargen App Review](/tutorials/code/hooks/app-review.html).
 
-{% tip %} 
-Custom app review doesn't actually _prevent_ someone from choosing stupid values, it just flags it on the app review screen.
-{% endtip %}
+## Custom Approval Triggers
 
-For example, if we wanted to restrict the 'knight' position to nobles, we could do:
+With custom code, you can automate certain actions to be taken when a character is approved, like adding people to channels or roles.  See [Custom Chargen Approval Triggers](/tutorials/code/hooks/approval-triggers.html).
 
-    def self.custom_app_review(char)
-      faction = char.group("Faction")
-      position = char.group("Position")
-      
-      if (position == "Knight" && faction != "Noble")
-        msg = "%xrOnly nobles can be knights.%xn"
-      else
-        msg = t('chargen.ok')
-      end
-      
-      return Chargen.format_review_status "Checking groups.", msg
-    end
+## Custom Character Fields
 
-
-Notice how we're using the `format_review_status` helper.  This is how most of the lines in the app review are formatted.  It will display like this:
-
-    Checking groups.                                   Only nobles can be knights.
-
-The Chargen helper has several built-in status values:
-
-**Green (OK)**
-
-    t('chargen.ok')  --> < OK! >
-
-**Yellow (Warnings)**
-
-    t('chargen.missing')       < Missing %{missing} >
-
-**Red (Errors)**
-
-    t('chargen.too_many')      < Too Many! >
-    t('chargen.not_enough')    < Not Enough! >
-    t('chargen.not_set')       < Not set! >
-    t('chargen.oops_missing')  < Oops! Missing %{missing} >
-
-You are not limited to these, of course, but using the standard that people are familiar with will help players to understand your system.
-
-## Custom Approval Steps
-
-In addition to having custom app review steps, you can also have custom code that's triggered when a character is approved.  Edit `aresmush/plugins/chargen/custom_approval.rb` and make the `custom_approval` method do whatever you want to do when someone is approved.  Common examples include:
-
-* Setting starting location based on a group value (e.g. home world, faction).
-* Assigning a role or adding to a channel based on a group value (e.g. faction-based roles/channels).
-* etc.
-
-Here's an example of how to assign a role based on the character's faction (assuming you've already created the roles using `role/create` ahead of time).
-
-    def self.custom_approval(char)
-      faction = char.group("Faction")
-      role = Role.find_by_name(faction)
-      if (role)
-        char.roles.add role
-      end
-    end
+With custom code, you can add new fields to the character profile and/or chargen.  See [Custom Character Fields](/tutorials/code/hooks/char-fields.html).

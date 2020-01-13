@@ -65,44 +65,15 @@ Whenever the unshared scene cron job runs, it will warn participants in unshared
 
 The game will post trending scenes (i.e. recent scenes with the most 'likes' on the web portal) to a forum.  By default this happens once a week, and you can control the timing with `trending_scenes_cron`.  You can also control which forum it posts to with `trending_scenes_category`.  Leave the category blank to disable the post.
 
+## use_custom_char_cards
+
+Character cards are mini-profiles that are shown when you click on a character's icon next to their pose. If you enable this setting, the game will use your own custom code for the character cards instead of the built-in ones.  See [Custom Character Cards](/tutorials/code/hooks/char-cards.html).
+
 ## Custom Scene Pose Buttons
 
-Below the pose editor in a live scene is a row of buttons including "Add Pose" and "Add OOC".  With custom code, you can add custom buttons here that make use of the contents of the scene pose window--for instance, for sending a text message.
-
-Add the button itself to `ares-webportal/app/templates/components/live-scene-custom-scenepose.hbs`.  
-To handle the button action, add code to `ares-webportal/app/components/live-scene-custom-scenepose.js`.
+Below the pose editor in a live scene is a row of buttons including "Add Pose" and "Add OOC".  With custom code, you can add custom buttons here that make use of the contents of the scene pose window--for instance, for sending a text message. See [Custom Scene Buttons](/tutorials/code/hooks/scene-buttons.html).
 
 ## Custom Scene Menu Buttons
 
-You can also add new menu items to the live scene's "Play" menu with custom code. You might do this if you're designing a new "extra" for a skill system, for instance.
+You can also add new menu items to the live scene's "Play" menu with custom code. You might do this if you're designing a new "extra" for a skill system, for instance.  See [Custom Scene Buttons](/tutorials/code/hooks/scene-buttons.html).
 
-Add the menu item itself to `ares-webportal/app/templates/components/live-scene-custom-play.hbs`.  
-To handle the menu action, add code to `ares-webportal/app/components/live-scene-custom-play.js`.
-
-## Custom Character Cards
-
-Character cards are mini-profiles that are shown when you click on a character's icon next to their pose.  You can design your own custom character cards with custom code.  There are three steps to this:
-
-1. Set `use_custom_char_cards` to true in the scenes configuration.
-2. Implement the web template for your card display in `ares-webportal/app/templates/components/char-card-custom.hbs`.
-3. If you need extra data beyond what's already provided, implement custom fields in the `custom_char_card_fields` method of `aresmush/plugins/scenes/custom_char_card.rb`
-
-For example, say we wanted to show traits.  In the custom fields you could set the traits:
-
-    def self.custom_char_card_fields(char, viewer)
-      {
-         traits: char.traits.map { |k, v| { name: k, description: v } }
-      }
-    end
-
-And then in the web template here's a simple display.
-
-<pre>
-    &#x7b;&#x7b;#each char.custom.traits as |trait|}}
-    &lt;p>&lt;b>&#x7b;&#x7b;trait.name}}:</b> &#x7b;&#x7b;trait.description}}&lt;/p>
-    &#x7b;&#x7b;/each}}
-</pre>
-
-{% note %} 
-Your custom fields will be under `char.custom`.  You can also use any of the basic fields.  Use the `char-card.hbs` for reference.
-{% endnote %}
