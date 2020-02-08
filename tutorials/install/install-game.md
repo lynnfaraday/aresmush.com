@@ -14,9 +14,7 @@ tags:
 
 Next we'll configure some basic information about your game.  These settings determine how you connect to the game.  When your game opens, the MU* description, website, etc. will appear in the AresMUSH games folder.
 
-{% warning %} 
-The automated install scripts **only** work on the supported environment - a stand-alone Digital Ocean droplet with only a single MUSH running on it.  If you're using a different environment, **do not** try to run the install scripts directly.  Use them as a reference for what needs to be done, and adjust as needed for your specific environment.
-{% endwarning %}
+{% include custom_install_warning.md %}
 
 {% note %} 
 You should use the 'ares' user for everything from now on, reserving the root user for rare server admin operations requiring root access.  The `setup_server` script should have created the ares user for you automatically and printed the password.  You should be able to scroll back if you missed it.

@@ -65,7 +65,7 @@ All components except the root are optional, so valid commands might include:
 |input|prefix|root|page|switch|args |
 | ---- |
 |mail Faraday=Subj/Msg||mail|||Faraday=Subj/Msg|
-|actors2||actors|2|||
+|help2||help|2|||
 |bbs/new||bbs||new||
 |+ch Hiya.|+|ch|||Hiya.|
 |+bbs/post 1=Subj/Msg|+|bbs||post|1=Subj/Msg|

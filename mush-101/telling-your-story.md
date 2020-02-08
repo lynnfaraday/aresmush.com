@@ -84,8 +84,6 @@ Here are a few poses that continued the scene after the set in the previous para
 >
 > A perplexed expression creases Cate's brow when she hears the motorcycle, which turns to one of mild surprise when Cole drives up. She raises a hand briefly to return the wave, then pulls the earbuds out. "And he has a motorcycle too," she comments lightly. "You're really working the 'bad boy' image there. Hi," she adds, as almost an afterthought.
 
-{% include pretty_image.html file='postpics/ari-motorcycle.jpg' max-width='400px' caption='We imagine Adam Levine playing Ari in our dream cast.  Did I mention MUSHes were fantasy?' %}
-
 A few tips about posing:
 
 * MUSHes are traditionally written in third-person, present tense.  ("Cate walks down the ramp.")

@@ -26,7 +26,7 @@ Here are just a few of the plugins that come with every Ares install:
 * FS3 Skills, Chargen and Combat*
 * and more
 
-(*) FS3 can be replaced easily, and several other RPG systems are available as Ares plugins.
+(*) FS3 can be replaced easily, and several other RPG systems are available for easy installation.
 
 ## Easy Configuration
 
@@ -34,7 +34,7 @@ There's no need to mess around with coded attributes and objects to configure yo
 
 ## Web Portal
 
-The AresMUSH [Web Portal](/web-portal) lets you handle jobs, review apps, configure your game and perform other common admin tasks with a nice web UI.  This means you can take care of administrative stuff whenever it's convenient, maximizing your effectiveness.
+The AresMUSH [Web Portal](/web-portal) lets you handle jobs, review apps, configure your game and perform other common admin tasks with a nice web UI.  This means you can take care of administrative stuff whenever and wherever it's convenient.
 
 ## RPG Systems
 
@@ -53,7 +53,7 @@ Ares uses Redis, a fast and lightweight database system. Using a standard databa
 
 ## Built-In Advertising
 
-No more spamming ads on bulletin boards.  With the AresCentral game directory, your game's information will be available to everyone.  
+No more spamming ads on bulletin boards.  With the [AresCentral game directory](https://arescentral.aresmush.com), your game's information will be available to everyone.  
 
 ## International Support
 

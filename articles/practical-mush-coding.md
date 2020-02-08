@@ -2,7 +2,7 @@
 title: Practical MUSH Coding
 description: A guide to MUSH Coding intended for mid-level coders.
 layout: story
-author: Linda Naughton ("Faraday")
+author: Faraday
 ---
 
 When I began coding on Star Wars MUSH in 1993, I was armed with Amberyl's MUSH Manual and a copy of the PennMUSH help files, painstakingly printed out on my dot-matrix printer. I fancied myself a pretty decent coder after a few weeks; I could code a Falcon controller with the best of them, and even tried my hand at a hovercar object. I remember being so proud when I completed my first real project - a little datapad object that let you store, remove, and edit files. But when I stumbled into my first wizard position, on a fledgling MUSH that needed coders, I had the opportunity to work alongside a true "Master Psychocoder". I realized then just how little about MUSH coding I actually knew.

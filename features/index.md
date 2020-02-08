@@ -17,7 +17,7 @@ Ares makes it easier to play for new and veteran MUSHers alike.
 * Player handles, which bring a taste of social media to MUSHes.
 * A ground-up focus on making a pleasant user experience.
 
-Ares is designed to offer a familiar experience to both Penn and TinyMUX players, so experienced players will feel right at home. At the same time, a fully-integrated  and streamlined commands make the game easier to play for new players and old alike.
+Ares is designed to offer a familiar experience to both Penn and TinyMUX players, so experienced players will feel right at home. At the same time, a fully-integrated web portal and streamlined commands make the game easier to play for new players and old alike.
 
 Learn more at [Ares for Players](/features/ares-for-players.html).
 
@@ -35,13 +35,11 @@ Learn more at [Ares for Admins](/features/ares-for-admins.html).
 
 ## Make it Easier to Code
 
-Some games will need advanced customizations or theme-specific code. Traditional MUSH softcode is hard to learn and work with, and the server hardcode is impractical to change. Ares code offers some advantages:
+Coding is hard in any language, especially if you've never done it before.  However, Ares code offers some advantages over traditional MUSH softcode:
 
-* Mainstream languages - Ruby (for the server) and JavaScript (for the web portal) - and tools.
+* Mainstream languages - Ruby (for the server) and Ember JavaScript (for the web portal) with robust community support.
 * A robust plugin system that makes it easy to change core functionality.
 * Extensive tutorials to teach you Ares coding from the ground up.
-
-That is not to say that learning to code in Ares is *easy*. Coding is hard in any language. If you're starting from scratch with no prior coding experience, it's still going to take time and effort to learn (especially for the web portal code).
 
 Learn more at [Ares for Coders](/features/ares-for-coders.html).
 

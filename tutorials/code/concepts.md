@@ -63,11 +63,11 @@ When a client sends some text to the game, it is converted into a **Command** ob
 
     (prefix)root/switch args
 
-For example:  `+actor/set Faraday=Helen Mirren` would be broken up as:
+For example:  `combat/join Faraday=123` would be broken up as:
 
 |prefix|root|switch|args |
 | ---- |
-|+ |actor |set |Faraday=Helen Mirren |
+|+ |combat |join |Faraday=123 |
 
 {% tip %} 
 Ares ignores the prefix except for a few rare circumstances.  So +who, who, @who and /who all end up being handled as simply 'who'.

@@ -3,7 +3,7 @@ module Jekyll
 
     def render(context)
       text = super
-      return "<div markdown='span' class='alert alert-success' role='alert'><i class='fa fa-check-square-o'></i> <b>Tip</b><br/>#{text}</div>"
+      return "<div markdown='span' class='alert alert-success' role='alert'><i class=\"fas fa-check-square\"></i> <b>Tip</b><br/>#{text}</div>"
     end
 
   end

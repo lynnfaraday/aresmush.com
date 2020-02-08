@@ -2,7 +2,7 @@
 title: FS3 vs Other Systems
 description: A comparison of FS3 with other RPGs.
 layout: story
-author: Linda Naughton ("Faraday")
+author: Faraday
 ---
 
 In order to help people who may be familiar with other RPG systems, I have done a little comparison between some of the more popular systems and FS3 to show how the dice work.   This research was inspired by a [nice article comparing D20 and 3D6](http://www.criticalmiss.com/issue8/bitaboutd201.html).

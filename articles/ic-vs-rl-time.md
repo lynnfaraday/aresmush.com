@@ -2,7 +2,7 @@
 title: IC vs RL Time
 description: Comparison of various time ratios.
 layout: story
-author: Linda Naughton ("Faraday")
+author: Faraday
 ---
 
 One of the coolest things about MUSHes, IMHO, is the fact that time passes. Things change, characters grow, and you can look back over the IC history and see how the current situation developed. But the concept of "IC Time Scale" can also present a number of maddening challenges. This editorial examines some of the benefits and drawbacks of various time scales.

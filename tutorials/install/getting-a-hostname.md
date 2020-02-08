@@ -18,7 +18,7 @@ Most VPS servers (including Digital Ocean) don't include a host name. If you wan
 
 ## AresMUSH Domain
 
-You can request an AresMUSH sub-domain (yourmush.aresmush.com) by [contacting me directly](/feedback.html).  AresMUSH sub-domains are given out at my sole discretion, and at no charge.
+You can request an AresMUSH sub-domain (yourmush.aresmush.com). See [Subdomain Terms of Service](/subdomain-tos.html) for details.
 
 ## Custom Domain
 

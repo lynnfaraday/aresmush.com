@@ -31,7 +31,6 @@ For example, here is a sample of the ERB file for the character description temp
 <%= divider %>
 <%= char.description %>
 <%= divider %>
-%xhPlayed By:%xn <%= char.actor %>
 <%= footer %>
 ```
 
@@ -47,8 +46,6 @@ Stirling
 Major Nyssa "Whisper" Stirling
 ------------------------------------------------------------------------------
 Fiery red hair falls down past this woman's shoulders, usually bound in a sensible braid. Her average height and lithe build aren't very remarkable, but they belie a well-toned muscular form. She's wearing standard-issue green fatigues, the pins showing a rank of Major.
-------------------------------------------------------------------------------
-Played By: Jessica Chastain
 +==~~~~~====~~~~====~~~~====~~~~=====~~~~=====~~~~====~~~~====~~~~====~~~~~==+
 ```
 
@@ -69,7 +66,7 @@ class CharacterTemplate < ErbTemplateRenderer
 end
 ```
 
-Notice how it provides the 'char' accessor so the template can do things like `<%= char.actor %>`.  It also provides the military name helper to enable `<%= military_name(char) %>`.
+Notice how it provides the 'char' accessor so the template can do things like `<%= char.name %>`.  It also provides the military name helper to enable `<%= military_name(char) %>`.
 
 {% tip %} 
 You <i>can</i> put code directly into the ERB file, but it gets very messy very quickly.  It's often best to leave anything complicated into a helper.
@@ -109,7 +106,7 @@ A few templates will automatically be customized based on your game configuratio
 
 You can customize other templates too - it just requires you to change the template code - either the ERB or the template renderer, or both.
 
-For example, if you don't like showing the "played by" or "military name" stuff on descs and want to show some basic demographics instead, you could modify the ERB template like so:
+For example, if you don't like showing the "military name" stuff on descs and want to show some basic demographics instead, you could modify the ERB template like so:
 
 ```text
 <%= header %>

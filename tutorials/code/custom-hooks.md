@@ -29,3 +29,7 @@ There are, however, several places that are designed with **custom code hooks**,
 
 * [Combat Actions](/tutorials/code/hooks/fs3-actions.html) - Adding new combat actions to FS3.
 * [New Turn Triggers](/tutorials/code/hooks/fs3-new-turn.html) - Actions to be taken at the end of each turn, like resetting flags or handling special kinds of damage.
+
+## Web Portal Hooks
+
+* [Custom Routes](/tutorials/code/hooks/custom-routes.html) - Adding custom routes (pages) to the web portal.

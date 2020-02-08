@@ -42,7 +42,7 @@ Create a file named `set_goals_cmd.rb` in `aresmush/plugins/custom`.  Give it th
       end
     end
 
-Then modify the `get_cmd_handler` method in `aresmush/plugins/custom.rb` to wire up the command handler:
+Then modify the `get_cmd_handler` method in `aresmush/plugins/custom/custom.rb` to wire up the command handler:
 
     def self.get_cmd_handler(client, cmd, enactor)
       case cmd.root

@@ -746,6 +746,11 @@ figure {
   max-width: 100%;
 }
 
+p img {
+  width: 700px;
+  max-width: 100%;
+}
+
 pre.prettyprint {
   color: #eee;
 }

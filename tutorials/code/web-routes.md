@@ -49,10 +49,12 @@ The GameApi service lets you communicate with the game.  See [Web Portal Game Ap
 
 ## Router
 
-All routes must be defined in the Ember `Router` class.  You must specify whether the router accepts parameters as part of its URL or not.  For example:
+All routes must be defined in the Ember `Router` class.  The core ares routes are found in `ares-webportal/app/router.js` but you can add your own in `ares-webportal/app/custom-routes.js`.
 
-    this.route('events');
-    this.route('event', { path: '/event/:event_id'} );
+You must specify whether the router accepts parameters as part of its URL or not.  For example:
+
+    router.route('events');
+    router.route('event', { path: '/event/:event_id'} );
 
 Here, the Event URL will be `/event/<event id>` and the Event route class will be able to access the desired event ID in its model method using `params['event_id']`.
   
@@ -60,7 +62,11 @@ Here, the Event URL will be `/event/<event id>` and the Event route class will b
 
 To add a new page, you'll need to add a route for it and several other bits and pieces:
 
-1. Router - The [router](#router) needs a definition for the route. (`ares-webportal/app/router.js`).
+1. Router - The [router](#router) needs a definition for the route. (`ares-webportal/app/custom-routes.js`).
 2. Route - The route needs a route handler. The main thing this needs to define is the [model function](#route-models).  (for example: `ares-webportal/app/routes/events.js`)
 3. Template - The [template](/tutorials/code/web-templates.html) defines the page appearance for the route. (for example: `ares-webportal/app/templates/events.hbs`)
 4. Controller (optional) - [controller](/tutorials/code/web-controllers.html) handles any button clicks or other actions, and can build some composite display properties from the model data. (for example: `ares-webportal/app/controllers/events.js` shows a composite property, and `ares-webportal/app/controllers/event.js` shows some button-click actions)
+
+{% note %}
+Route names must be unique, so make sure your name doesn't conflict with any core code or an 'extra' you're using.
+{% endnote %}

@@ -1,0 +1,3 @@
+{% warning %} 
+The automated install scripts **only** work on the supported environment (a [stand-alone Digital Ocean droplet ](/tutorials/install/digital-ocean.html) or VPS meeting all of the [system requirements](https://aresmush.com/tutorials/install/custom-server.html#supported-environment)).  **Do not** run the install scripts in an unsupported environment.  They will not work right, and may even adversely affect your environment.  Instead, refer to them as a guide for what needs to be done, and tailor the installation for your environment.
+{% endwarning %}

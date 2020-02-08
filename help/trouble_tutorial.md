@@ -1,9 +1,9 @@
 ---
-layout: help_page
+layout: page
 toc: Community
 summary: Dealing with harassment and abuse.
 tutorial: true
-title: Dealing with Harassment and Abuse
+title: Harassment and Abuse
 aliases:
 - trouble
 - ban
@@ -13,12 +13,10 @@ aliases:
 - harassing
 - harass
 - abuse
-- trouble
 - harassed
 - troll
-- trolling
 ---
-# Dealing with Harassment and Abuse
+# Dealing With Trouble
 
 Unfortunately, you will sometimes have troublesome players who are trolling, harassing, or otherwise abusing you or other players.  There are a variety of commands for players and admin to deal with them.
 

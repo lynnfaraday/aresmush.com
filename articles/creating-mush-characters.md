@@ -2,7 +2,7 @@
 title: Creating MUSH Characters
 description: A guide to help you flesh out your MUSH characters.
 layout: story
-author: Linda Naughton ("Faraday")
+author: Faraday
 ---
 
 > "Characters must be true to their own past and their beliefs, not shoved about simply in service of plot." Christina Skye, Building Believable Characters

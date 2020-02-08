@@ -18,10 +18,6 @@ AresMUSH features a fully-integrated [Web Portal](/web-portal) that allows you t
 
 Commands in Ares are designed to be simpler and more approachable to new players, while at the same time preserving shortcuts for experienced players used to commands working a certain way.  Where possible, it supports both Tiny and Penn syntax for things like mail and channels.
 
-## FS3 Third Edition
-
-Ares features a [new edition](/fs3/fs3-3) of the FS3 skills and combat system, which streamlines skills, adds new combat options, and offers various other improvements over prior editions.
-
 ## Handles
 
 [Player Handles](/handles) bring a little taste of social media to MUSHing. A handle is your OOC identity, used across all Ares games. Through your handle, people can identify you as a player, not just as a character.

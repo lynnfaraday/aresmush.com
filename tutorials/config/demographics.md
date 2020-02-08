@@ -36,7 +36,7 @@ If you don't want a limit, just set them to 0 and 99 respectively.
 You are able to specify all of the demographics you're going to use.  Some tips:
 
 * Use all-lowercase names!  These are going to be converted into code variables, and lowercase is important.
-* You may use multi-word names (e.g. 'played by'), but their shortcut command will become one word  (`playedby Clint Eastwood`).
+* You may use multi-word names (e.g. 'full name'), but their shortcut command will become one word  (`fullname John Smith`).
 * Don't use demographic names that conflict with other commands (like 'job').
 * Demographics will be displayed in character profiles in the order you enter them.
  

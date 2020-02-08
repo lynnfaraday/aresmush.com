@@ -27,19 +27,26 @@ These steps are described in more detail in the next few sections.
 
 > **Full Disclosure:** I get a referral bonus from Digital Ocean if you sign up using [this referral link](http://www.digitalocean.com/?refcode=5c07173bc1f2), but so do you!  You get starter credit (basically a month free), and the referral bonus helps keep the doors at [AresCentral](/arescentral.html) open.  Using the referral is not required for Easy Mode, but it is appreciated.
 
-## Disclaimers
+## Easy Mode Terms of Service
 
-There is NO WARRANTY for the server provided via Easy Mode, express or implied. You accept it as-is, and agree that the AresMUSH staff is not responsible for any defects in operation or harm to the game, server, or anything else.  You are responsible for maintaining the server after initial setup, including software upgrades, security patches, and all associated hosting fees.
+**THERE IS NO WARRANTY FOR THIS SERVICE, EXPRESS OR IMPLIED.  YOU AGREE THAT THE AUTHOR (Faraday) IS NOT RESPONSIBLE FOR ANY DEFECTS IN OPERATION, HARM TO THE GAME OR SERVER, OR ANY OTHER CLAIM, DAMAGES OR LIABILITY RESULTING FROM THE USE OF THIS SERVICE.**
+
+You are responsible for maintaining the server after initial setup, including any software upgrades, security patches, and all associated hosting fees.  
+
+You are also responsible for complying with the game software's [License Agreement](/license.html).
+
+If requesting an AresMUSH.com subdomain, you must also agree to the [AresMUSH Subdomain Terms of Service](/subdomain-tos.html).
 
 ## Submit a Request
 
 Create an account on [Digital Ocean](http://www.digitalocean.com/?refcode=5c07173bc1f2) if you don't already have one.  Then [contact me](/feedback.html) and provide the following information:
 
-* The email address associated with your Digital Ocean account.
-* Your desired game port number. (Must be > 1024; default is 4201.)
-* A name and description for your game.  (You can change this later.)
-* Your desired hostname (yourgame.somewhere.com).  You can request an aresmush.com hostname or [register your own](/tutorials/install/getting-a-hostname.html).
-* If you want me to install a security certificate for your web portal.  This is highly recommended to ensure security and enable browser notifications.  Setting up HTTPS will require me using your email to register the certificate with https://letsencrypt.org/.
+1. The email address associated with your Digital Ocean account.
+2. Your desired game port number. (Must be > 1024; default is 4201.)
+3. A name and description for your game.  (You can change this later.)
+4. Your desired hostname (yourgame.somewhere.com).  You can request an aresmush.com hostname or [register your own](/tutorials/install/getting-a-hostname.html).
+5. If you want me to install a security certificate for your web portal.  This is highly recommended to ensure security and enable browser notifications.  Setting up HTTPS will require me using your email to register the certificate with https://letsencrypt.org/.
+6. A statement affirming: "I have read and understood the Easy Mode terms of service, AresMUSH license agreement, and (if applicable) the AresMUSH subdomain terms of service."
 
 {% note %} 
 Your email is needed to transfer the server snapshot image to you.   It must match the email you used for your Digital Ocean account.  I pledge not to do anything nefarious with your email.  See our [privacy policy](/privacy.html) for details.

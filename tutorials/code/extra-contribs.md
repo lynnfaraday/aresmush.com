@@ -48,6 +48,7 @@ The folder structure for a plugin includes:
 * A `plugin` folder containing files organized into sub-folders matching the [Plugin Folder Conventions](/tutorials/code/plugins.html) (help, locales, etc.)
 * A `webportal` folder containing files organized into sub-folders matching the web portal's `app` folder (templates, components, etc.)
 * A `game` folder containing files organized into sub-folders matching the aresmush `game` folder (config, text, etc.)
+* A `README.md` file explaining what the plugin does and how to use it.  You can find a template [here](https://github.com/AresMUSH/ares-extras/blob/master/plugins/plugin_readme_template.md).
 * The installer ignores any other folders, so you can use them for examples, documentation, or whatever you want.
 
 For example:

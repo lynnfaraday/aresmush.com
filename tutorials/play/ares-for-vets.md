@@ -58,15 +58,13 @@ Find a missing shortcut?  Give [Feedback](/feedback.html)!
 Commands that show multiple pages of data will have a **"page 1 of x"** style footer at the bottom telling you there are more pages available.  You can access those pages simply by putting the page number after the commands (without a space).
 
     ==============================================================================
-    Actors
-    
-    Amber                     Mila Kunis
-    ...
-    Georgia                   Rachel Mcadams
-    --------------------------------(page 1 of 3)---------------------------------
+    Beginner - Learn how a MUSH is played.
+    Vets - Ares highlights for veteran MUSHers.
+    Help Tutorial - Learn about the help system.
+    -----[   page 1 of 3   ]------------------------------------------------------
     ==============================================================================
 
-For example:   actors, actors2, actors3 will access the various pages of the actors command.  This works with commands that have switches too, so you can do requests2/all.
+For example:   help, help2, help3 will access the various pages of the help command.  This works with commands that have switches too, so you can do requests2/all.
 
 ## Channels
 

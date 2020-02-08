@@ -22,7 +22,7 @@ These articles give a general overview of the various game systems.  For specifi
 
 * [Troubleshooting Errors](/tutorials/code/troubleshooting.html)
 * [Using Roles and Permissions](/tutorials/manage/roles.html)
-* [Dealing with Trolls](/tutorials/manage/trolls.html)
+* [Dealing with Harassment and Abuse](/tutorials/manage/trolls.html)
 * [Adding "Ares Extras" Plugins](/tutorials/code/extras.html)
 * [Setting up Guests](/tutorials/manage/guests.html)
 * [Upgrading the Code](/tutorials/manage/upgrades.html)

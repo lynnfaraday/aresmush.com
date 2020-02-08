@@ -23,7 +23,7 @@ Handles are created and managed through [AresCentral](/arescentral.html), the so
 
 ## What does a handle do?
 
-Having a handle does nothing until you **link** a character to it.  This basically tells everyone that you play that character.  It also allows access to handle features from that character.  More on that in a moment.
+Having a handle does nothing until you **link** a character to it.  This basically tells everyone that you play that character and allows you to access handle features from that character.  More on that in a moment.
 
 You can also mark other handles as your friends, and these friendships carry over across all AresMUSH games.
 
