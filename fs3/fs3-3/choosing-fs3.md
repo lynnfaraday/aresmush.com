@@ -4,28 +4,34 @@ description:
 layout: fs3
 ---
 
-FS3 grew out of the FUDGE-based +combat system first used on Battlestar Pacifica MUSH, so it was optimized for that setting.  It's customizable enough to work in other games, but it works best with ones that have similar roots:  **cooperative**, **near-modern**, and **lightly-coded**.  This article will discuss those three points and why they're important when considering whether FS3 is a good choice for your game.
+With just a few tweaks to fit the setting, FS3 can be used for anything from Wild West to Battlestar.  In this way, it is similar to generic RPG frameworks like D20 or FATE.
+
+However, FS3 is *designed and optimized for* games that are:
+
+* **Near-Modern** - Regular humans in a tech level not too unlike our own (no magic, super powers, augmentation, energy shields or death rays).
+* **Cooperative** - Players who are on the same team (PvE).
+* **Focused** - A narrow focus on what action mechanics can be detailed and/or automated through code.
+
+This article will discuss those three points and why they're important when considering whether FS3 is a good choice for your game.
 
 # Cooperative
 
-Because FS3 supports disparate power level characters, it works best when those players work *together* against a common enemy.  When one character can be a Navy SEAL and another a raw recruit, is it really fair to pit them against each other?   When they work together, you can still have competition but it takes a back seat to the greater goal.
+FS3 allows players to start out at different power levels.  Thus it works best when players work *together* against a common enemy.  When one character can be a Navy SEAL and another a raw recruit, it's not really fair to pit them against each other.
 
-FS3 also has very "soft" mechanics.  It is a lightweight conflict resolution system designed for cooperative-storytelling games.  It deliberately leaves a lot open to player interpretation.   If you've got an environment where folks are constantly at odds, you're going to end up with a lot of disputes.
+FS3 also has very "soft" mechanics.  It is a lightweight conflict resolution system designed for cooperative-storytelling games, and it deliberately leaves a lot open to player interpretation.  If you've got an environment where folks are constantly at odds, you're going to end up with a lot of disputes.
 
 # Near-Modern
 
-The combat system was designed for a near-modern technology level.  Ballistic weapons are the focus.  Explosives, vehicles and armor are all designed with near-modern tech in mind.
+The combat system was designed for a near-modern technology level (mid-1800s to present).  Ballistic weapons are the focus.  Explosives, vehicles and armor are all designed with modern tech in mind. 
 
-FS3 adapts very well to historical setting and low-tech sci-fi.  Higher sci-fi tech levels can work too, as long as you don't want blasters/lasers to work too differently than ballistic guns.  
+Near-future sci-fi works, as long as your weapons and armor can be modeled similarly to modern guns. Battlestar works great because it's basically WWII in space with armored humanoid robots.  Star Wars is more problematic due to lightsabers and energy shields.
 
-Non-magical fantasy/medieval settings work pretty well.  There aren't as many attack options, but FS3 Third Edition fixes many of the issues that made FS3 a poor fit for fantasy.
+Medieval settings work just fine, though there are fewer combat options available. You don't have burst fire, explosions, suppression, etc. to add variety to the fights.
 
-FS3 is not designed for superhero/supernatural/magical games.  It simply has no concept of "powers" or "spells", and the rating system is not designed to accommodate superhuman abilities. There is a detailed analysis of why the mechanics don't scale well to beyond-human abilities in [Scaling FS3](https://aresmush.wordpress.com/2019/07/18/scaling-in-fs3/).
+FS3 is not designed for superhero/supernatural/magical games.  It simply has no concept of "powers" or "spells", and the rating system breaks down when you start rolling superhuman abilities.  There have been many a game that thought they had a "Big Bad" beastie ready to give the PCs a hard time, only to have it felled in a single turn.  The numbers *just don't scale* for beyond-human abilities.
 
-# Lightly-Coded
+# Focused
 
-It may seem ironic to say that a coded skills/combat system is intended for "lightly-coded" game, but it's true.  As mentioned previously, FS3 is a "soft" system.  Since Background Skills are free-form, any skill that the code relies on would need to be an Action Skill.  
+FS3 works best with a small (~10-12 skills) Action Skill list.  More than that and you start to dilute the distinction between Action Skills and Background Skills, and you lose the fast-and-easy character creation.  Keeping your skill list small requires a narrow focus on what action mechanics you're going to detail and/or automate.
 
-For instance, if you wanted a coded crafting system, all your craft skills would be Action Skills.  Coded economy?  Now your business/professional skills need to be, too.   Pretty soon you end up subverting the very idea of Action Skills, ballooning the skill list, and throwing monkey wrenches into the streamlined Chargen process.
-
-So FS3 works best when you have a very narrow focus of what "action" mechanics need to be automated.
+The default FS3 configuration utilizes about 6 skills related to the combat mechanics.  Now imagine adding to that another half-dozen skills for a detailed crafting system, and another half-dozen for your social/political system, and another half-dozen for a research/knowledge system, and... you get the idea.  The more systems you have, the more Action Skills you need.  FS3 just isn't built for that.

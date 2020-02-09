@@ -6,13 +6,15 @@ layout: fs3
 
 For those who care about the nitty-gritty about how the combat system works, this article is for you.
 
+{% include toc.html %}
+
 <a name="attacks">
 
 # Initiative
 
-Initiative is a based on a simple roll of whatever is configured as the initiative stat (Alertness by default, which represents situational awareness).   Most successes goes first.  Ties are broken by a random die roll. 
+Initiative is a based on a simple roll of whatever is configured as the initiative stat (Alertness by default, which represents situational awareness).  Most successes goes first.  Ties are broken by a random die roll. 
 
-You can get 3 extra initiative dice by spending luck.   You also get 3 dice for subdue, suppress or distract actions.  Since their main effects expire at the end of the turn, this initiative bonus helps them to be more relevant.
+You can get 3 extra initiative dice by spending luck.  You also get 3 dice for subdue, suppress or distract actions.  Since their main effects expire at the end of the turn, this initiative bonus helps them to be more relevant.
 
 # Attacks
 
@@ -78,7 +80,7 @@ The defense skill used against an attack is determined by the following chart:
 | Defender and attacker both have melee weapons | Use the skill for the *defender's* weapon. |
 | Otherwise | Use the "defense" skill for the defender's combatant type. |
 
-For example:  Erson is fighting Britt.  Erson has a sword (skill: Blades) and Britt has a staff (skill: Staves).  Erson uses the Blades skill for attack, but Britt uses her Staves skill for defense.   When it's Britt's turn, she attacks with Staves and Erson defens with Blades.
+For example:  Erson is fighting Britt.  Erson has a sword (skill: Blades) and Britt has a staff (skill: Staves).  Erson uses the Blades skill for attack, but Britt uses her Staves skill for defense.  When it's Britt's turn, she attacks with Staves and Erson defens with Blades.
 
 Another example:  This time Gray is attacking Britt.  He has a rifle and she has her staff.  Even though Britt has a melee weapon, she doesn't get to use it against a firearm.  She defends with the base defense skill (typically Reflexes).  He also uses the base defense skill when she attacks him back.
 
@@ -233,6 +235,6 @@ If a vehicle is hit in a crew compartment, each passenger may receive shrapnel w
 
 Mounts are similar to vehicles, but simpler.  The game configuration defines types of mounts (e.g. Horse, War Horse, Elephant).  Each type of mount provides a bonus to attack against unmounted opponents.  When an unmounted opponent attacks the rider, that bonus is _subtracted from_ the attack roll (making it harder for someone on the ground to hit a mounted rider).
 
-When a mounted opponent is hit, there's a chance the hit will hit the mount instead of the rider.   If the attacker gets 3+ net successes, he automatically hits the rider.  Otherwise, there's a 20% chance of hitting the mount if the attacker is also mounted, and 40% if he's unmounted.  You can also target the mount specifically, giving you a 90% chance of hitting the mount.
+When a mounted opponent is hit, there's a chance the hit will hit the mount instead of the rider.  If the attacker gets 3+ net successes, he automatically hits the rider.  Otherwise, there's a 20% chance of hitting the mount if the attacker is also mounted, and 40% if he's unmounted.  You can also target the mount specifically, giving you a 90% chance of hitting the mount.
 
-Every time a mount is hit, it gets a knockout roll with a number of dice equal to the mount's toughness rating.  You can use toughness to reflect the mount's size and/or armor.   If a mount fails it's KO roll, it's taken out and the rider becomes unmounted and takes some fall damage.  Otherwise the mount is only injured.  This is just a RP effect; damage isn't tracked for mounts.
+Every time a mount is hit, it gets a knockout roll with a number of dice equal to the mount's toughness rating.  You can use toughness to reflect the mount's size and/or armor.  If a mount fails it's KO roll, it's taken out and the rider becomes unmounted and takes some fall damage.  Otherwise the mount is only injured.  This is just a RP effect; damage isn't tracked for mounts.

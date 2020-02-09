@@ -23,7 +23,9 @@ Say the new Ares code has added a new field for `relationships`.  If we do nothi
 
     Character.all.each { |c| c.update(relationships: {} )}
 
-> **Tip::** Setting up a default value is most common with arrays and hashes, because usually it's more convenient for them to default to 'empty' instead of 'nil'.
+{% tip %}
+Setting up a default value is most common with arrays and hashes, because usually it's more convenient for them to default to 'empty' instead of 'nil'.
+{% endtip %}
 
 ### Moving Fields
 

@@ -25,4 +25,4 @@ You can also spend Luck Points to affect the outcome of plots. For example: you 
 
 ## Getting Lucky
 
-How you gain luck will vary from game to game.  See **[FS3 Core](/fs3/fs3-3/core.html)** for an example.
+Everyone starts with 1 Luck Point.  You gain more from RPing with other players.  Individual games may also offer luck as a reward for OOC actions that help the game (running plots, building, etc.) 

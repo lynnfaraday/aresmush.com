@@ -28,7 +28,7 @@ There are more tips for organizers in [Running Combats](/fs3/fs3-3/running-comba
 
 You need to know the combat number to join it.  Usually the organizer will tell you, or you can find it with `combat/all`
 
-If a game supports multiple combatant types, these are shortcuts that will set you up with the appropriate weapon, vehicle and armor automatically.  Otherwise you default to being a soldier.   `combat/types` will show you the options.
+If a game supports multiple combatant types, these are shortcuts that will set you up with the appropriate weapon, vehicle and armor automatically.  Otherwise you default to being a soldier.  `combat/types` will show you the options.
 
 If you ever need to leave combat, use `combat/leave`.
 
@@ -42,17 +42,14 @@ The combat Heads-Up Display is your summary of the combat status.
     +==~~~~~====~~~~====~~~~====~~~~=====~~~~=====~~~~====~~~~====~~~~====~~~~~==+
     Combat 8                                                  Organized by Faraday
     ------------------------------------------------------------------------------
-    Combatant      Damage  Weapon(ammo)   Vehicle          Action(stance)
+    Combatant           Damage    Weapon(ammo)             Action(stance)
     -- Team 1 --
-    Cate           X---    Cannon         Fighter-D2(Plt)  ---- 
+    Cate                X---      Cannon                   ---- (plt)
     -- Team 2 --
-    Bob            ----    Rifle (15)                      Attack Cate  (COV)
+    Bob                 ----      Rifle (15)               Attack Cate  (COV)
     ------------------------------------------------------------------------------
     Observers
     Faraday
-    
-    Vehicle List
-    Fighter-D2
     +==~~~~~====~~~~====~~~~====~~~~=====~~~~=====~~~~====~~~~====~~~~====~~~~~==+
 
 ## Choosing Gear
@@ -61,7 +58,7 @@ The combat Heads-Up Display is your summary of the combat status.
 
 `combat/armor <armor>`
 
-The system will pick default gear for you, but you can change it if you need to.   Use `weapons` and `armor` to see available gear.
+The system will pick default gear for you, but you can change it if you need to.  Use `weapons` and `armor` to see available gear.
 
 ## Choosing Stance
 
@@ -90,11 +87,15 @@ The organizer will trigger each new turn.  You will then:
 
 When everyone has posed and chosen their actions, the organizer will trigger a new turn.  The system will spit out the results of the last turn, and the cycle repeats.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:**  Because the system spits out all results at the same time, it is not necessary to follow a pose order during combat scenes. Everyone is reacting to the same events, so poses can happen in parallel.
+{% fs3tip %}
+Because the system spits out all results at the same time, it is not necessary to follow a pose order during combat scenes. Everyone is reacting to the same events, so poses can happen in parallel.
+{% endfs3tip %}
 
 ## Choosing an Action
 
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:**  Your selected action will carry over from one turn to the next until you switch weapons or you or your target are knocked out.
+{% fs3tip %}
+Your selected action will carry over from one turn to the next until you switch weapons or you or your target are knocked out.
+{% endfs3tip %}
 
 ### Attack 
 
@@ -112,7 +113,9 @@ When everyone has posed and chosen their actions, the organizer will trigger a n
 
 The basic attack makes a single strike with your equipped weapon.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:**  You can combine multiple attack options with commas (e.g. combat/attack Bob=mod:2,burst).  You cannnot combine a called shot and a burst.
+{% fs3tip %}
+You can combine multiple attack options with commas (e.g. combat/attack Bob=mod:2,burst).  You cannnot combine a called shot and a burst.
+{% endfs3tip %}
 
 ### Full-Auto
 
@@ -160,7 +163,7 @@ Instead of attacking, you can bide your time and take careful aim.  This will gi
 
 `combat/treat <name>`
 
-Treat tends to a a wounded character.  You can treat one wound per action.  The system chooses the worst one automatically.  A treated wound has less of a wound modifier, and has a chance to awaken a knocked out character.   Rally also attempts to rouse a KO'd character, but without first aid.
+Treat tends to a a wounded character.  You can treat one wound per action.  The system chooses the worst one automatically.  A treated wound has less of a wound modifier, and has a chance to awaken a knocked out character.  Rally also attempts to rouse a KO'd character, but without first aid.
 
 
 ### Misc
@@ -178,7 +181,9 @@ Treat tends to a a wounded character.  You can treat one wound per action.  The 
 
 You can spend luck to get a single-turn bonus on attack, defense or initiative.  This only lasts a turn, so don't waste it.  You can also spend a luck point to heroically recover from a knockout.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** If there's a medic on your team, they might be able to revive you with a combat/treat action.  Or someone else could rally you.  Consider those options before spending luck points. 
+{% fs3tip %}
+If there's a medic on your team, they might be able to revive you with a combat/treat action.  Or someone else could rally you.  Consider those options before spending luck points. 
+{% endfs3tip %}
 
 
 ## Watching and Controlling NPCs

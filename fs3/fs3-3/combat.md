@@ -8,7 +8,9 @@ Any combat situation could be resolved either through consent or a set of simple
 
 It helps to have a system to quickly, fairly, and consistently determine the outcome of the combat. That's where the FS3 combat system comes in.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** Always remember that the purpose of a MUSH is to roleplay. The combat system is designed to support roleplay, not replace it.  If the combat system spits out stupid results - ignore them!
+{% fs3tip %}
+Always remember that the purpose of a MUSH is to roleplay. The combat system is designed to support roleplay, not replace it.  If the combat system gives nonsensical results--ignore them!
+{% endfs3tip %}
 
 <a name="turns"/>
 
@@ -22,7 +24,10 @@ Combat is organized into turns. Turns generally represent about 5-10 seconds.  E
 4. The system rolls the necessary (virtual) dice to figure out what happened, and spits out a summary.
 5. Rinse and repeat until the combat is over. 
 
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:**  Because the system spits out **all** results at the same time, it is not necessary to follow a pose order during combat scenes.  Everyone is reacting to the same events, so poses can happen in parallel.
+{% fs3tip %}
+Because the system spits out **all** results at the same time, it is not necessary to follow a pose order during combat scenes.  Everyone is reacting to the same events, so poses can happen in parallel.
+{% endfs3tip %}
+
 
 <a name="actions"/>
 
@@ -34,13 +39,14 @@ Each turn, you can take a single action.
 
 * **Attack** – Use a weapon.  The basic attack command hits at a single target with your currently equipped weapon. Special options to the basic attack command allow you to shoot a burst (if the weapon allows) or make a called shot.  A called shot has a greater chance of hitting your intended hit location, but also has a higher chance of missing completely.
 * **Aim** – Take careful aim at a target to increase your chance to hit next turn. Aiming with a melee weapon is allowed; it represents sizing up your opponent and waiting for your opening.
-* **Suppress** – You can perform suppressive fire to keep a target’s head down.  You won't hit them, but you'll impose a greater suppression modifier upon them than if you just targeted them directly.  Fully automatic weapons can suppress multiple targets at once.   Some electronic weapons (like the ECM system on a BSG Raptor) can also suppress targets.  Suppression with a melee weapon is allowed; it represents feints or other distracting moves to keep someone occupied.
-* **Reload** – Reload a weapon that has run out of ammo.  Some weapons may take multiple turns to reload. 
+* **Suppress** – You can perform suppressive fire to keep a target’s head down.  You won't hit them, but you'll impose a greater suppression modifier upon them than if you just targeted them directly.  Fully automatic weapons can suppress multiple targets at once.  Some electronic weapons (like the ECM system on a BSG Raptor) can also suppress targets.  Suppression with a melee weapon is allowed; it represents feints or other distracting moves to keep someone occupied.
+* **Reload** – Reload a weapon that has run out of ammo.
 
 ## Special Attacks
 
 * **Subdue** – Subdue is a melee attack that does no damage but has a chance of subduing the target.  Subdued targets may not act until they successfully escape or the attacker stops subduing them. 
 * **Escape** – If you have been subdued, you can attempt to escape during your action.
+* **Distract** - Similar to suppress, this attack does no damage but imposes a distraction modifier to the target.
 
 ## Supportive Actions
 
@@ -52,7 +58,7 @@ Both treat and rally should only be used when appropriate.  You can't treat some
 
 ## Creative Actions
 
-Don't feel restricted by the combat system.  If what you want to do isn't precisely reflected by the available actions, you can get creative - like using Subdue to model a disarm, or Suppress to see if you can distract an enemy who's attacking your buddy.  If nothing fits at all, just use a **Pass** action and figure out the results manually.
+Don't feel restricted by the combat system.  If what you want to do isn't precisely reflected by the available actions, you can get creative--like using Subdue to model a disarm.  If nothing fits at all, just use a **Pass** action and figure out the results manually.
   
 ## Free Actions
 
@@ -67,7 +73,7 @@ Don't feel restricted by the combat system.  If what you want to do isn't precis
 
 # Initiative
 
-Actions within a turn are resolved in order based on an Ability Roll for initiative. The game determines which ability is used for initiative.  For an example, see **[FS3 Core](/fs3/fs3-3/core.html)**.  The number of Successes determines the order of actions, with higher results going first.
+Actions within a turn are resolved in order based on an Ability Roll for initiative. The game determines which ability is used for initiative (Alertness by default).  The number of Successes determines the order of actions, with higher results going first.
 
 Wound modifiers take effect as soon as they happen, but Knockout rolls (see **Knockout** below) are done at the end. This means that a character still gets a chance for a dying gasp even as he’s being taken out.
 
@@ -87,7 +93,9 @@ As a free action, a character may change their Stance. Stance reflects your gene
 * **Cover** - You are attacking from behind hard cover, like a tree or wall.  There is no modifier to attack, but hits aimed at you have a chance of hitting the cover instead.
 * **Hidden** - You are out of sight, but can still attack as normal. This stance just exists so that NPCs don't auto-target you when they can't see you. It is mostly used for snipers.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:**  Always be sure that your RP mirrors your stance.  You can't be defensive while sitting in a car, or take cover on an open plain.  Use common sense. 
+{% fs3tip %}
+Always be sure that your RP mirrors your stance. It's tough to be reckless while sitting in a car, or take cover on an open plain.  Use common sense. 
+{% endfs3tip %}
 
 <a name="vehicles"/>
 
@@ -95,19 +103,25 @@ As a free action, a character may change their Stance. Stance reflects your gene
 
 The combat system supports characters in vehicles.  A character can join a vehicle as either a **Pilot** or a **Passenger**.  Any time someone in a vehicle is targeted, the vehicle itself takes the damage.  Vehicles have different hit locations than people.  If a passenger compartment is hit, the people inside may take damage too.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:**  If you use the "crew" special option on your attack, you can target a crew member inside a vehicle directly (e.g. shooting through a window).  Otherwise an atack against either the pilot or a passenger is considered to be an attack against the vehicle.
+{% fs3tip %}
+If you use the "crew" special option on your attack, you can target a crew member inside a vehicle directly (e.g. shooting through a window).  Otherwise an atack against either the pilot or a passenger is considered to be an attack against the vehicle.
+{% endfs3tip %}
 
 # Mounts
  
 In addition to vehicles, the system supports mounts.  A character can specify their type of mount, which can give them certain bonuses against unmounted targets.  When someone attacks a rider, there's a chance of hitting the mount instead.  An injured mount has no game effect; it's just for RP purposes.  If your mount is taken out, though, you'll become dismounted and suffer fall damage.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:**  If you use the "mount" special option on your attack, you can target the mount instead of the rider.
+{% fs3tip %}
+If you use the "mount" special option on your attack, you can target the mount instead of the rider.
+{% endfs3tip %}
 
 <a name="attack-resolution"/>
 
 # Attack Resolution
 
-Many combat actions result in an “attack” of some sort. The basic steps for resolving an attack are outlined below and described further in subsequent sections:
+Many combat actions result in an “attack” of some sort. The system will take care of resolving attacks for you, but it can be helpful to understand the basics of how it works.  If you want more nitty-gritty details, see [Combat Mechanics](/fs3/fs3-3/combat-mechanics.html).
+
+The basic steps for resolving an attack are outlined below and described further in subsequent sections:
 
 1. Determine whether the attack hit, missed, or was dodged.
 2. Determine hit location.
@@ -163,17 +177,19 @@ There are no hit points in FS3. Wounds are tracked individually, and each wound'
 
 Characters are free to roleplay wounds creatively; they are deliberately vague to give freedom for interpretation based on the circumstances at hand.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** The system assumes that there are no long-term effects from damage; no broken bones, severed arteries or internal organs damaged.  If you're going to impose more serious effects, you'll need to manually adjust your [Healing](/fs3/fs3-3/combat.html#healing).
+{% fs3tip %}
+The system assumes that there are no long-term effects from damage; no broken bones, severed arteries or internal organs damaged.  If you're going to impose more serious effects, you'll need to manually adjust your [Healing](/fs3/fs3-3/combat.html#healing).
+{% endfs3tip %}
 
 <a name="knockout"/>
 
 # Knockout
 
-There is no death in FS3, except at the admin or player’s discretion. The worst result of combat is a knockout, which means you have been taken out of the fight.
+There is no death in FS3 combat, except at the admin or player’s discretion. The worst result of combat is a knockout, which means you have been taken out of the fight.
 
-Knockout does **not** literally mean you are knocked unconscious, although that is an easy interpretation.  You could be out cold, writhing in pain, subdued, panicked, sitting in a disabled vehicle, killed, or any other appropriate result – as long as you’re no longer fighting.
+Knockout does **not** literally mean you are knocked unconscious, although that is an easy interpretation.  You could be out cold, writhing in pain, subdued, panicked, sitting in a disabled vehicle, killed, or any other appropriate result--as long as you’re no longer fighting.
 
-At the end of any turn in which you took damage and your total Wound Modifier is 1 or more, you must make a Knockout Roll, modified by your total wound modifier.  Each game determines which ability is used for the Knockout Roll.  For an example, see **[FS3 Core](/fs3/fs3-3/core.html)**.
+At the end of any turn in which you took damage and your total Wound Modifier is 1 or more, you must make a Knockout Roll (using Composure by default), modified by your total wound modifier. 
 
 <a name="luck"/>
 
@@ -189,7 +205,7 @@ Each turn, you may spend a luck point to get a +3 bonus to ONE of the following:
  
 These bonuses last only a turn, so don’t waste them. 
 
-You can also spend a luck point to recover immediately from a Knockout using the `combat/hero` command.  This allows you to keep going despite your wounds.  It doesn't have a big impact on your wound penalties, so you might want to think twice about using this if you're too injured to be effective.
+You can also spend a luck point to recover immediately from a Knockout.  This allows you to keep going despite your wounds.  Although recovering from a knockout does *reduce* wound penalties, it doesn't eliminate them.  You might want to think twice about spending a luck point if you're too injured to be effective.
 
 <a name="healing"/>
 
@@ -207,10 +223,10 @@ For physical wounds, each day you accumulate **Healing Points**.  When you have 
 | Impaired | 10 |
 | Incapacitated | 5 |
 
-Normally you gain 1 healing point per day.  You get a bonus point if you're in a hospital **or** under the care of a PC doctor (via the `heal` command) **or** make a successful Recovery Roll.  Each game will configure the ability used for Recovery.  For an example, see **[FS3 Core](/fs3/fs3-3/core.html)**.  
+Normally you gain 1 healing point per day.  You get a bonus point if you're in a hospital **or** under the care of a PC doctor **or** make a successful Recovery Roll (using Brawn by default).
 
 Once a wound begins healing, the Wound Modifier is reduced by 1/3rd.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** The system assumes that there are no long-term effects from damage; no broken bones, severed arteries or internal organs damaged.  If you're going to impose more serious effects, you'll need to take that into account manually.  For example, if you assume you've got a broken arm, the system may tell you that you're "healed" in a week but you'd still need a cast for a month or so after that.
-
-
+{% fs3tip %}
+The system assumes that there are no long-term effects from damage; no broken bones, severed arteries or internal organs damaged.  If you're going to impose more serious effects, you'll need to take that into account manually.  For example, if you assume you've got a broken arm, the system may tell you that you're "healed" in a week but you'd still need a cast for a month or so after that.
+{% endfs3tip %}

@@ -38,7 +38,7 @@
           screen: `+==~~~~~====~~~~====~~~~====~~~~=====~~~~=====~~~~====~~~~====~~~~====~~~~~==+
 Combat 9                                                  Organized by Faraday
 ------------------------------------------------------------------------------
-Combatant      Damage  Weapon(ammo)   Vehicle          Action(stance)
+Combatant      Damage  Weapon(ammo)                   Action(stance)
 -- Team 1 --
 Jane           ----    Rifle+Ap (20)                   ---- 
 -- Team 2 --
@@ -83,7 +83,7 @@ Vehicle List
           screen: `+==~~~~~====~~~~====~~~~====~~~~=====~~~~=====~~~~====~~~~====~~~~====~~~~~==+
 Combat 9                                                  Organized by Faraday
 ------------------------------------------------------------------------------
-Combatant      Damage  Weapon(ammo)   Vehicle          Action(stance)
+Combatant      Damage  Weapon(ammo)                   Action(stance)
 -- Team 1 --
 Jane           X---    Rifle+Ap (19)                   Attack Cylon1  
 -- Team 2 --
@@ -130,21 +130,18 @@ Vehicle List
 +==~~~~~====~~~~====~~~~====~~~~=====~~~~=====~~~~====~~~~====~~~~====~~~~~==+
 Combat 9                                                  Organized by Faraday
 ------------------------------------------------------------------------------
-Combatant      Damage  Weapon(ammo)   Vehicle          Action(stance)
+Combatant           Damage    Weapon(ammo)             Action(stance)
 -- Team 1 --
-Jane           X---    Kew            Viper-D5(Plt)    ---- 
-Jigger         ----    Kew            Viper-A3(Plt)    ---- 
+Jane                X---      Kew                      ---- 
+Jigger              ----      Kew                      ---- (plt)
 -- Team 2 --
-Raider1        ----    Kew            Raider-D4(Plt)   ---- 
-Raider1        ----    Kew            Raider-B6(Plt)   ---- 
+Raider1             ----      Kew                      ---- (plt)
+Raider1             ----      Kew                      ---- (plt)
 ------------------------------------------------------------------------------
 Observers
 Faraday
-
-Vehicle List
-Viper-A3 Raider-D4 Viper-D5 Raider-B6
 +==~~~~~====~~~~====~~~~====~~~~=====~~~~=====~~~~====~~~~====~~~~====~~~~~==+`,
-              text: "<p>Notice how the combat HUD now shows a vehicle by Jane's name.  We've also added some other pilots to the party.  Vehicles are assigned random call letters when they're created.  When the combat is over, the vehicle is recycled.</p><p>For the most part, actions in a vehicle are the same as actions in personal combat.  Attacking with your vehicle weapon still uses the attack command.</p>",
+              text: "<p>Notice how the combat HUD now shows (plt) by Jane's stance.  We've also added some other pilots to the party.  You can use combat/vehicles to see what vehicle everyone is in if you care, but all targeting commands take the name of the pilot, not the name of the vehicle.  When the combat is over, vehicles are recycled.</p><p>For the most part, actions in a vehicle are the same as actions in personal combat.  Attacking with your vehicle weapon still uses the attack command.</p>",
               prompt: "Type <b>combat/attack Raider1</b>",
               expected: "combat/attack Raider1"
           },
@@ -158,7 +155,8 @@ Viper-A3 Raider-D4 Viper-D5 Raider-B6
 &lt;FS3Combat&gt; Jane attacks Raider1 with Kew and HITS!  Incapacitated wound to Body. (Reduced by ARMOR)
 &lt;FS3Combat&gt; Jigger attacks Raider1 with Kew.  Stopped by ARMOR on Body.
 &lt;FS3Combat&gt; Raider2 attacks Jigger with Rifle+Ap and HITS!  Impaired wound to Cockpit. (Reduced by ARMOR)
-&lt;FS3Combat&gt; CREW HIT! attacks Jigger with Shrapnel and HITS!  Impaired wound to Right Leg. &lt;FS3Combat&gt; Raider1 attacks Jane with Kew and HITS!  Flesh wound to Wing.
+&lt;FS3Combat&gt; CREW HIT! attacks Jigger with Shrapnel and HITS!  Impaired wound to Right Leg. 
+&lt;FS3Combat&gt; Raider1 attacks Jane with Kew and HITS!  Flesh wound to Wing.
 &lt;FS3Combat&gt; Raider1 has been **KO'd**!
 &lt;FS3Combat&gt; Faraday has started a new turn!  Pose and pick your actions.`,
               text: "<p>Notice how the hit locations are different in vehicle combat.  Jane's Viper was hit in the Wing.  Jigger's Viper was hit in the Cockpit, but because it was a cockpit hit he also took some personal damage to his leg.</p><p>Vehicles are knocked out the same as people.  Again, you are free to interpret that as you see fit - spinning out of control, electrical failure, ejecting, or the pilot actually being knocked out.</p><p>To finish off the combat, let's have Jane go all-out against the Raider by changing her <b>stance</b>.  Stances reflect your general attitude in combat - such as aggressive, defensive, or in cover.  A full list of stances is available in the <a href=\"http://aresmush.com/fs3/fs3-3/combat-quickref/\" target=\"_\">Combat Quick Reference Guide</a>",

@@ -4,13 +4,15 @@ description:
 layout: fs3
 ---
 
-Character creation in FS3 is meant to be quick and easy.
+FS3 takes a simple approach to abilities and highlights skills that are relevant to gameplay.  The goal is to get players through character creation and reviewed as quickly and easily as possible.
+
+{% include toc.html %}
 
 <a name="concept"/>
 
 # Concept
 
-**Who are you?**  This is the most important question when designing a FS3 character.  It drives every Ability you take.  A disconnect between your concept and your skills is the fastest way to raise a red flag when your character is reviewed.
+FS3 takes a narrative approach to character creation, emphasizing description over mechanics.  This works best when you have a clear idea of who your character is before you begin.  Only then will you be able to decide what skills they _should_ have given their background and experience.
 
 <a name="ability-points"/>
 
@@ -18,35 +20,79 @@ Character creation in FS3 is meant to be quick and easy.
 
 **Ability Points (AP)** are a way of measuring the sum total of your character's abilities.  Every ability you pick and every rating you choose contributes toward your total AP rating.
 
-Different kinds of abilities cost different number of AP, as explained in **Choosing Abilities** below.  Action-oriented things are given more weight than background things, simply because they're far more likely to come up during the course of the game.
+The system is designed so that abilities central to the game's "action" cost more than other abilities.  A Navy SEAL will probably have more action-oriented skills than a master cook (unless the cook is also Stephen Seagal or your game is centered around baking).  They're both great at what they do--one just needs more AP to get there because their skills are likely to be more useful in clutch situations.
 
 ## Point Restrictions
 
-You don't start off with a fixed pool of AP.  Instead, the system counts **up** how much you've spent to give you an AP total.  
+Each game will determine the maximum AP you can spend.  There may also be limits on how many abilities you can have at high levels, and how many skills you're required to take.
 
-A game may restrict the maximum allowable AP by alt, by faction or any other criteria.  There may also be limits on how many abilities you can have at high levels, and how many skills you're required to take.  Consult your local game policies for details.
+Think of AP as an upper bound, not a "pool" of points that you _should_ spend.  It's perfectly fine--common, even--to finish character creation without spending all possible AP.  This is especially true for young, inexperienced, or non-action-oriented characters.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** If your character uses too many AP, ask staff for help.  They may be able to help you adjust your points or re-work your concept to one that better fits the theme.  Avoid shaving essential skills just to save points.  A character missing essential skills is as much of a red flag as an overpowered character.
+{% fs3tip %}
+If your character uses too many AP, it may be necessary to rework your concept to one less badass.  Avoid shaving essential skills just to save points.  A character with nonsensical skill gaps can be just as bad as an overpowered one.
+{% endfs3tip %}
 
 ## AP Disparities
 
-Some characters will have higher AP totals than others.   Is that fair?  Sure it is, as long you realize that it's the player's choice.  Characters in FS3 have equal *opportunity*, but ultimately you pick what you want to play.   
+Some characters will end up with higher AP totals than others. That's okay.  Characters in FS3 have equal *opportunity*, but ultimately you choose what kind of character you want to play.  
 
-The system is designed so that abilities central to the game's "action" cost more than other abilities.  A Navy SEAL will obviously have more action-oriented skills than a master cook (unless the cook is also Stephen Seagal).  They're both great at what they do - one just needs more AP to get there.
+Why would you want to play a lower-powered character?   Why not maximize your allowable AP rating?
 
-But why would you want to play a lower-powered character in the first place?   Why not maximize your allowable AP rating?
+Dice are fun, but *story* is the most important thing.  Telling a story about a wide-eyed young recruit or sidekick can be fun. John McClane in *Die Hard* wasn't particularly powerful, but he's one of the most badass action heroes ever.
 
-Dice are fun, but *story* is the most important thing.  Telling a story about a wide-eyed young recruit or sidekick can be fun.   And John McClane in *Die Hard* wasn't particularly powerful, but he's one of the most badass action heroes ever.  In the right story, everyone can have a chance to shine.
+FS3 is designed so that you don't have to be awesome to succeed.  Even characters with modest ratings can still contribute to the story.
+
+# Ratings
+
+Abilities are assigned a rating.  The higher the rating, the better the character is at that ability.  Different types of abilities use different rating systems, which are explained in the following sections. 
+
+Action Skills, for instance, have a wide range (1-8) to allow more fine-grained comparisons between characters.  Background Skills, which are less critical to the story, have a narrower range (1-3) for simplicity.
+
+For skills, FS3 has two special ability ratings, named **Everyman** and **Incapable**.  If you have one of these ratings in a skill, it means your character is untrained and you are limited in how you can use that skill.
+
+<a name="everyman"/>
+<a name="unskilled"/>
+
+## Incapable
+
+If your rating is **Incapable**, that means you are completely incapable and/or ignorant in the subject.  Typically you will only encounter this on games that have mixed tech levels, significant cultural differences, or abilities that require some kind of innate trait to use.  For example:
+
+* In Star Trek, a character on a primitive planet might have Incapable for a tech-related ability.  They lack the context to even know what a computer _is_, let alone how to use one.
+* In Star Wars, a character might have Incapable for force-related abilities if they're not force sensitive.  They just can't use the force, period.
+
+If an ability is rated Incapable, you cannot use/roll it _at all_.  
+
+## Everyman
+
+Often, an untrained person still has at least _some_ basic knowledge in a subject, even if it's just from basic schooling and/or popular culture.  This is represented by the **Everyman** rating. Everyman reflects the knowledge/ability of the **Average Adult Layperson** in the game world.  For example:
+
+* Everyman Athletics: You can run and jump and climb and throw a ball.  You probably played some little league or intramural sports when you were younger.
+* Everyman Firearms:  You know how to point and shoot a gun. You might even remember to take the safety off.
+* Everyman Medicine: You know to put ice on a sprained ankle and apply pressure to stop bleeding.  You know some basic drug facts (antibiotics, narcotics, etc.) You could mimic CPR from the movies.
+* Everyman Demolitions: You know what TNT and C4 are and understand the basic principles of how a pipe bomb works.
+
+If an ability is rated Everyman, you can use/roll it _as long as it makes sense_ for a layperson to have a chance of performing the task. Doing CPR?  Sure.  Brain surgery?  No.  Just no.
+
+{% fs3tip %}
+For original settings or settings with multiple tech levels, it's best to be explicit about what exactly Everyman represents in common skills.
+{% endfs3tip %}
 
 # Choosing Abilities
 
 The following sections will guide you in determining your Abilities.
 
+{% fs3tip %}
+The ability lists and limits given here are just examples from the default FS3 configuration.  Individual games will customize these.
+{% endfs3tip %}
+
+
 <a name="attributes"/>
 
 ## Attributes
 
-Attributes represent basic abilities that everyone has to some extent.  Attributes boost related skills, and come into play when no skill directly applies.  See [Conflict Resolution](/fs3/fs3-3/conflict.html) for details.
+Attributes represent basic abilities that everyone has to some extent.  Attributes give a boost to related skills when making ability rolls.  Someone with Reflexes:3 would get an extra die on all reflexes-related rolls compared to someone with Reflexes:2.
+
+Attributes also come into play when you don't have a skill on your sheet.  You can assume that your character has an Everyman rating, which gives Attribute+1 dice to roll.
 
 ### Attribute Ratings
 
@@ -56,22 +102,34 @@ Attributes are rated from 1-4.
 | ---- |
 |1|Poor|You are below average.  (less than 40th percentile)|
 |2|Average |You are about average.  (40-60th percentile)|
-|3|Good|You’re better than average.   (60-80th percentile)|
+|3|Good|You’re better than average.  (60-80th percentile)|
 |4|Exceptional|You’re considerably above average. (more than 80th percentile)|
+
+### Sample Attributes
+
+| Attribute | Description |
+| ---- |
+| Reflexes | Reflexes, dexterity, and hand-eye coordination. |
+| Brawn | Physical strength and toughness. |
+| Wits | Practical intelligence, inventiveness and creativity. |
+| Grit | Willpower and determination. |
+| Perception | Senses and general awareness. |
+| Presence | Charisma and beauty. |
 
 ### Buying Attributes
 
-The specific list of Attributes will vary from game to game.  For an example, see **[FS3 Core](/fs3/fs3-3/core.html)**.
+You receive *Average* in all Attributes for free.  Each additional rating costs **2 APs**.  You don't gain any points back for taking a rating 1 in an Attribute.
 
-You receive *Average* in all Attributes for free.  Each additional rating costs **2 APs**.
+You may spend at most **12 APs** on Attributes.  You may not have more than **2 Attributes rated 4**.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** You don't gain any points for taking a rating 1 in an Attribute.  It costs the same as rating 2.  Rating 1 is there solely for roleplay flavor if you want to denote a disadvantage.
 
 <a name="action-skills"/>
 
 ## Action Skills
 
-Action Skills represent your training/knowledge in areas that are likely to come up in action/conflict situations during the game.  For more details about using skills, see [Conflict Resolution](/fs3/fs3-3/conflict.html).
+Action Skills represent your training/knowledge in areas that are likely to come up in action/conflict situations during the game.
+
+The Action Skills list is a social contract between the the game admins and the players. The admins are saying: "These are the skills important to the game." That doesn't mean other skills are _useless_.  You never know when your character's knowledge of 18th century literature might crack open a mystery, or your rock climbing skill might get you out of a jam.  It's just probably not going to come up on a regular basis.
 
 ### Action Skill Ratings
 
@@ -80,7 +138,7 @@ Action Skills are rated from 0 to 8, based on your training and experience.
 | Rating | Summary | Description |
 | ---- |
 |0 |Incapable|You grew up in a cave or something and know absolutely nothing about this. |
-|1 |Everyman|You know what the average inhabitant of the game world would know.   |
+|1 |Everyman|You know what the *Average Adult Layperson* in the game world would know. See [Ratings](#everyman) for details. |
 |2 |Fair|You've still got a lot to learn, but you can handle easy stuff. |
 |3 |Competent|You have competence at a junior-professional level, but lack finesse or experience.|
 |4 |Good|You are thoroughly competent at a general professional level. |
@@ -91,48 +149,42 @@ Action Skills are rated from 0 to 8, based on your training and experience.
 
 If the descriptions in the rating table above aren't enough, you can use the [Detailed Ratings](/fs3/fs3-3/detailed-ratings.html) as a guide.  
 
-### Selecting Action Skills
+{% fs3tip %}
+You don't have to be amazing to succeed in FS3. Ratings 6+ are exceptional. Competent/Good/Great are professional skill levels, so most of your job-related skills should be in this range.
+{% endfs3tip %}
 
-Action Skills are likely to come up in the game in critical situations, so you should take any that you think your character would logically have.
 
-Your skills should generally match your background and experience.  While some variation is allowed for talent (or lack thereof), be careful not to stray too far.  A brand-new pilot with an Amazing piloting skill isn't going to fly (pun intended). Competent/Good/Great are professional skill levels, so most of your job-related skills should be in this range.
+### Sample Action Skills
 
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** You don't have to be amazing to succeed in FS3.  Ratings 6+ are exceptional.
-
-<a name="unskilled"/>
-
-### Everyman vs. Incapable
-
-The 'Everyman' rating covers the knowledge/ability of the **Average Adult Layperson** in the game world.  They don't have any specific training, but they still have _some_ amount of knowledge.   
-
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:**  In a modern setting, the 'average adult layperson' has attended high school, can drive, can use a computer and other basic technology, etc.  If you're in a different theme, it's important for the game admin to set a baseline for what 'Everyman' represents. 
-
-* Everyman Piloting:  You know that pulling back on the stick makes the plane go up.  You *might* have a chance of being talked through a landing over the radio without killing everyone.
-* Everyman Medicine: You know to put ice on a bruise and pressure to stop bleeding.  You know common medications, like aspirin.  You've seen CPR in the movies enough to be talked through it by a 911 dispatcher.
-* Everyman Athletics: You can run and jump and climb and throw a ball.  You probably played some little league or intramural sports when you were younger.
-* Everyman Firearms:  You know how to point and shoot a gun. You might even remember to take the safety off.
-
-'Incapable', on the other hand, is a special rating reserved for someone who knows **far less** than the average layperson.  Typically you will only encounter this disparity on games that have mixed tech levels, significant cultural differences, or skills that require some special prerequisite to even learn.  For example:
-
-* In Star Trek, a character from a primitive planet might have 'Incapable' for many modern skills, like guns and computers.
-* In Star Wars, a non-jedi might have 'Incapable' for force-related skills.
-* In a medieval setting, a commoner might have 'Incapable' in courtly skills like politics or religion.
+| Action Skill | Linked Attribute | Description |
+| ---- |
+|Alertness|Perception|Noticing things and being aware of your surroundings|
+|Athletics|Brawn|General running, jumping, climbing, etc.|
+|Composure|Grit|Coolness under pressure.|
+|Demolitions |Wits |Blowing stuff up. |
+|Firearms |Reflexes |Shooting guns. | 
+|Gunnery |Reflexes |Vehicle and heavy weapons. |
+|Medicine|Wits |Tending to the ill and injured.  Requires Specialty:  Doctor, Surgeon, Nurse, Medic, Other|
+|Melee |Brawn |Fighting with fists, knives, and hand-to-hand weapons.|
+|Piloting|Reflexes |Flying aircraft.|
+|Stealth |Reflexes |Being sneaky.|
+|Technician|Wits|General mechanics/electronics and fixing things.|
 
 ### Specialties
 
 Some Action Skills are so broad that you need to pick a specialty.  For instance, your paramedic's "Medicine" skill might be really good, but it doesn't cover brain surgery.  
 
-If you take a specialized ability higher than **Fair**, you must choose a specialty.  Ratings below Fair do not have a specialty, because the foundations of things like piloting and medicine are the same no matter the specialty.
+If you take a specialized ability higher than **Fair**, you must choose a specialty.  Ratings below Fair do not have a specialty, because the foundations of those skills are the same no matter the specialty (otherwise they would be separate skills).
 
 ### Buying Action Skills
 
-The specific list of Action Skills will vary from game to game.  For an example, see **[FS3 Core](/fs3/fs3-3/core.html)**.
-
-You automatically get the *Everyman* rating in each Action Skill for free.  Each additional rating costs **1 AP**.
+You automatically get the *Everyman* rating in each Action Skill for free.  Each additional rating costs **1 AP**. You don't gain any points back for taking a rating 0 in an Action Skill.
 
 If you have a specialized ability higher than Fair, you must choose a specialty.  The first one is free.  Every additional specialty costs **1 AP**.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** You don't gain any points for taking a rating 0 in an Action Skill.  It costs the same as rating 1.  Rating 0 is there solely for roleplay flavor if you want to denote a disadvantage.  Bear in mind that this disadvantage is significant.  "Everyman" represents your average person.  For example - Everyman in piloting is someone who maybe saw some movies and played a flight sim game.  Lower than that would be pretty low indeed.
+You may spend at most **40 APs** on Action Skills.  
+
+You may have at most **3 Action Skills rated 5+**, **2 rated 6+** and **1 rated 7+**.  These limits are cumulative, so if you have a 6 and a 7, that counts as both 1 at 7+ and 2 at 6+.
 
 <a name="background-skills"/>
 
@@ -140,27 +192,37 @@ If you have a specialized ability higher than Fair, you must choose a specialty.
 
 Background Skills represent arts, sports, hobbies, professions and any other skills your character possesses that are not already covered by Action Skills.  
 
+The Background Skills you choose for your character are a social contract between you and the game admin.  It's you saying: "These are the skills important to my character (that aren't already covered elsewhere)." Nobody's going to care if you say you played Little League even if you don't have the baseball skill.  You can just default to Everyman Athletics. But suddenly claiming to be an expert Egyptologist with nothing on your sheet to back that up is breaking the social contract.
+
 ### Background Skill Ratings
 
-Background Skills have a compressed rating system, so you don't have to fret about the specific number attached to your baseball hobby.
+Background Skills have a compressed rating system, so you don't have to fret about the specific number attached to your hobbies and interests.
 
-* **Fair** - Interests and casual studies.  For example: playing in a bar league, a hobby, some college or equivalent study that never went anywhere.
-* **Good** - Professional or semi-professional competentence.  For example: a minor league or college athlete, a serious hobbyist, a college degree with some professional experience.
-* **Exceptional** - Notable expertise in your field.  For example: a Major league athlete, an advanced degree, a renowned expert.
+* **Fair** - Interests and casual studies.  For example: a bar league or backyard athlete, a hobbyist, some college.
+* **Good** - Professional or semi-professional competence.  For example: a minor league or college athlete, a serious hobbyist, an advanced degree.
+* **Exceptional** - Notable expertise in your field.  For example: a Major league athlete, a renowned expert.
 
-### Selecting Background Skills
+{% fs3tip %}
+You are assumed to have the Everyman rating in any Background Skill not listed on your character sheet. So even if you don't take the "football" skill, you've still probably played it a few times in gym class in school, watched it on TV, etc.
+{% endfs3tip %}
 
-Don't feel obliged to list every single thing your character has ever done - focus on the things that are important to your background.
+### Sample Background Skills
 
 Background Skills can be broad, within reason.  "Electrical Engineering" is sufficient for a degree in engineering; you don't need to take individual skills for Math, Physics, Statistics, etc.  Just avoid super-broad things like "Art" or "Science".
 
-> <i class="fa fa-cubes" aria-hidden="true"></i> **Tip:** You are assumed to have the Everyman rating in any Background Skill not listed on your character sheet. So even if you don't take the "football" skill, you've still probably played it a few times in gym class in school, watched it on TV, etc.
+* A **science** - astronomy, biology, chemistry, geology, mathematics, physics, etc.
+* A **humanity** - history, literature, psychology, philosophy, poetry, etc.
+* A **profession or trade** - cook, waitress, bartender, accountant, programmer, carpenter, brewer, blacksmith, etc.
+* A **game** - chess, roleplaying, poker, etc.
+* An **art** - sculpting, painting, sketching, photography, etc.
+* A **form of expression** - acting, singing, dancing, playing an instrument, writing, etc.
+* A **sport** - baseball, football, gymnastics, etc.
+* A **craft or hobby** - gardening, basketweaving, knitting, etc.
+* An **unusual interest** - detective novels, game show hosts, etc.
 
 ### Buying Background Skills
-
-Valid Background Skills will vary from game to game.  For an example, see **[FS3 Core](/fs3/fs3-3/core.html)**.
-
-You get some number of Background Skill ratings for free, determined by your game.  Additional Background Skill ratings cost **1 AP** each.
+ 
+You must take **at least 1** Background Skill.  You can have up to **6 rating points** of Background Skills for free.  There is no maximum to how many Background Skills you may take.
 
 <a name="languages"/>
 
@@ -182,11 +244,11 @@ Your reading level is assumed to be on par with your speaking level, unless othe
 
 The specific list of Language Skills will vary from game to game.
 
-You get some number of Language Skill ratings for free, determined by your game.  Additional Language Skill ratings cost **1 AP** each.
+You get **3 rating points** in languages for free, which typically you'll use to buy Fluent in your character's native language.  Additional Language Skill ratings cost **1 AP** each.
 
 ## Advantages
 
-Advantages are used on some games to represent things a character has that are not skills - resources, rank, connections, etc.  Valid Advantages will vary from game to game.  Some games may not use them at all.
+Advantages are used on some games to represent things a character has that are not skills--resources, rank, connections, etc.  Valid Advantages will vary from game to game.  Some games may not use them at all.
 
 ### Advantage Ratings
 
@@ -198,4 +260,4 @@ Advantages have compressed ratings like languages and background skills.  The pr
 
 ### Buying Advantages
 
-Advantages cost **2 AP** per rating by default, but individual games can adjust this cost.
+Advantages cost **2 AP** per rating.

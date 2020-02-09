@@ -75,7 +75,9 @@ Weapons are classified as either Explosive, Ranged, Melee or Suppressive.  The t
 * Only explosive weapons can use the `combat/explode` action.
 * Suppressive weapons cannot attack; they can only use the `combat/suppress` action.  This is suitable for things like ECM jamming, or smoke/flashbang grenades.
 
-> **Tip** Even though anti-vehicle missiles technically "explode", they are designed more for armor piercing capability than hitting multiple targets or creating shrapnel.  The 'Ranged' type probably fits better for them.
+{% tip %}
+Even though anti-vehicle missiles technically "explode", they are designed more for armor piercing capability than hitting multiple targets or creating shrapnel.  The 'Ranged' type probably fits better for them.
+{% endtip %}
 
 ### is_automatic
 
