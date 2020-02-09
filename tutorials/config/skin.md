@@ -37,6 +37,6 @@ You can configure the color of this line and the main line symbol (-) using `lin
 
 ## random_colors
 
-The `%x!` code uses a random color.  This is a tradition from my old softcode system, which changed the colors of the border lines every half a minute.  If you find this too distracting, you can always change the ansi code in the border lines from `%x!` to a specific color.   You can also configure what colors are used when a random color is selected.  For example - if you have a red color pallette for your game, you might use only reds.
+The `%x!` code uses a random color.  This is a tradition from my old softcode system, which changed the colors of the border lines every half a minute.  If you find this too distracting, you can always change the ansi code in the border lines from `%x!` to a specific color.  You can also configure what colors are used when a random color is selected.  For example - if you have a red color pallette for your game, you might use only reds.
 
 To change what colors are used by the random selector, list ansi codes - one per line.

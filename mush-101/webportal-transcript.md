@@ -19,7 +19,7 @@ This is the text transcript from the [Playing from the Web Portal](/mush-101/pla
 
 Hi.  This is Faraday from AresMUSH and this is Part III of the MUSH 101 tutorial.  In this segment we’ll cover how to play the game using the web portal.
 
-Though most MUSHes have some sort of website or wiki, AresMUSH games are unique in having a complete, integrated web portal and wiki out of the box.   You can’t do everything on the web portal that you can do in the game itself, but you can do a lot. 
+Though most MUSHes have some sort of website or wiki, AresMUSH games are unique in having a complete, integrated web portal and wiki out of the box.  You can’t do everything on the web portal that you can do in the game itself, but you can do a lot. 
 
 A brief note before we begin: Individual games have a lot of customization options for their web portals, so not all features you see here may be available on all games.
 
@@ -61,13 +61,13 @@ The scenes directory lets you browse scenes of different types and even search b
 
 ## Playing from the Web
 
-The web portal offers a minimal web client that functions the same as a traditional MUSH client.   You can connect to the game and send commands like you normally would.
+The web portal offers a minimal web client that functions the same as a traditional MUSH client.  You can connect to the game and send commands like you normally would.
 
 You can also join scenes through the ‘Active Scenes’ page.  
 
 This will show you all the scenes that are currently in-progress.  Scenes may be marked private, meaning they require an invitation, or open - meaning anyone is welcome to join.
 
-If you click on a scene that's either open or that you've been invited to, you'll see the scene page.  This has the scene set and characters listed, along with any poses you've missed.   You can pose yourself in.   And when someone else poses, it will automatically appear along with an activity notice.
+If you click on a scene that's either open or that you've been invited to, you'll see the scene page.  This has the scene set and characters listed, along with any poses you've missed.  You can pose yourself in.  And when someone else poses, it will automatically appear along with an activity notice.
 
 You can switch between multiple scenes at the top, and it will show you any that have new scene activity.  
 
@@ -78,7 +78,7 @@ Active scenes can involve players both on the web portal and on the game.  You c
 
 Although the scene directory and character gallery replicate a lot of what you'll find on most game wikis, the web portal also has an integrated wiki for things like policy and theme information.
 
-Wiki pages use markdown text, which is similar to what you'll find on most other wikis.  It also has extensions for things like a music player, dynamic page lists, tabs, inclues and more.   Games have been able to fully replace their mediawiki or wikidot sites using only the web portal.
+Wiki pages use markdown text, which is similar to what you'll find on most other wikis.  It also has extensions for things like a music player, dynamic page lists, tabs, inclues and more.  Games have been able to fully replace their mediawiki or wikidot sites using only the web portal.
 
 ## Admin Features
 

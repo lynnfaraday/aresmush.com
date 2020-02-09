@@ -11,7 +11,7 @@ Ember **Routes** are the piece that ties a URL together with a screen.  For inst
 
 ## Route Models
 
-The most important thing the route does is to set up the **Model** - which is the data shown by the screen.   Most routes in Ares look like this:
+The most important thing the route does is to set up the **Model** - which is the data shown by the screen.  Most routes in Ares look like this:
 
     gameApi: service(),    
     model: function() {

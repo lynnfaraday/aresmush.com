@@ -35,7 +35,7 @@ Coders essentially have the keys to the kingdom.  They can do anything to the da
 
 ## Permissions
 
-Roles contain **permissions**, which control access to most commands.  For example, the 'home' command is limited to people with the "go_home" permission.  The ability to create and delete channels is limited to people with the "manage_channels" permission.   
+Roles contain **permissions**, which control access to most commands.  For example, the 'home' command is limited to people with the "go_home" permission.  The ability to create and delete channels is limited to people with the "manage_channels" permission.  
 
 You cannot assign individual permissions to characters.  Permissions may only be assigned to *roles*, which are in turn assigned to characters.
 
@@ -50,7 +50,7 @@ A list of the default permissions can be found below.
 Let's say you wanted to create a more limited admin role for apps staff.  You want them to have access to review and approve characters, access to read jobs in the APP category, and access to an Apps forum.
 
 1. Create the role using `role/create app_staff`.
-2. Assign permissions using `role/addpermission app_staff=<permission>`.   You probably want to give them things like `manage_apps`, `view_sheets` and `access_jobs`.
+2. Assign permissions using `role/addpermission app_staff=<permission>`.  You probably want to give them things like `manage_apps`, `view_sheets` and `access_jobs`.
 3. Set permissions on the Apps job category using `job/categoryroles <category>=<roles>`
 4. Set permissions on the Apps forum using `forum/readroles <forum>=<roles>` and `forum/writeroles <forum>=<roles>`.
 

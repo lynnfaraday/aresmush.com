@@ -75,4 +75,4 @@ You can even combine the two - a query and an update - to act on a list of chara
 
 ## Multiple Tinkerers
 
-Tinkering is set up with the assumption that only one person will be tinkering at a time, because frankly most games only have one coder.   In the remarkable event that you have multiple coders wanting to tinker at the same time, they'll just have to take turns or create their own personal tinker commands.
+Tinkering is set up with the assumption that only one person will be tinkering at a time, because frankly most games only have one coder.  In the remarkable event that you have multiple coders wanting to tinker at the same time, they'll just have to take turns or create their own personal tinker commands.

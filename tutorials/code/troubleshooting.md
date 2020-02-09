@@ -57,7 +57,7 @@ Sometimes you'll get a 'connection refused' error in your MU client or a 'This s
 
 If your game can't connect to the database you'll see an error like:  "Error connecting to database. Check your database configuration."   Here are a few things to try:
 
-* Check your database config file (database.yml) and make sure you have the correct URL and password.  You can compare these values to the 'port', 'bind' and 'requirepass' parameters in your redis configuration file.   In the standard install, this file is located at `/etc/redis/redis.conf`.
+* Check your database config file (database.yml) and make sure you have the correct URL and password.  You can compare these values to the 'port', 'bind' and 'requirepass' parameters in your redis configuration file.  In the standard install, this file is located at `/etc/redis/redis.conf`.
 * Make sure your database service is running.  You can use the server shell command `service redis-server status`.
 
 ### Multiple Copies of the Game
@@ -86,7 +86,7 @@ Sometimes you'll get a Sad Picard message saying the web portal can't connect to
 
 ### Web Portal Sad Picard
 
-Most of the time, problems on the web portal are actually problems in the web request on the game side.  You'll see those errors in the game log and troubleshoot them in the same way you would any other game error.   Occasionally, though, the problem will be in the web portal Javascript code.  
+Most of the time, problems on the web portal are actually problems in the web request on the game side.  You'll see those errors in the game log and troubleshoot them in the same way you would any other game error.  Occasionally, though, the problem will be in the web portal Javascript code.  
 
 * Try a [force-refresh](https://en.wikipedia.org/wiki/Wikipedia:Bypass_your_cache) in your web browser.  
 * Troubleshoot using the web browser's debugging tools.  In Chrome, for instance, you can open `View -> Developer -> Developer Tools` to see the Javascript console, which will tell you the error.
@@ -117,7 +117,7 @@ This indicates that something went wrong on your web portal upgrade.  The web po
 Here's what you can do:
 
 1. Try a force-refresh in your browser, and/or open the web portal in a private/incognito browser window.  This will rule out any javascript cache issues.
-2. Try to re-deploy the website using the `website/deploy` command in-game or by running `bin/deploy` from the ares-webportal directory on the server shell.   Make sure there were no weird errors on the deploy.
+2. Try to re-deploy the website using the `website/deploy` command in-game or by running `bin/deploy` from the ares-webportal directory on the server shell.  Make sure there were no weird errors on the deploy.
 3. If your own private code fork, make sure you updated the webportal code too.  Sometimes folks forget and only update the game engine code.
 
 A successful website deploy will end with a list of files, like this:

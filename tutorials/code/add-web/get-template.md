@@ -34,4 +34,4 @@ Next we'll define the contents of the tab.  This lives in a _different file_, so
 The name in `id=systemgoals` must match the name you used in the tab navigation control, but _without_ the # in front. This name must be unique across the entire character edit template, so it's suggested that you use something like `myplugin-tabname`.
 {% endtip %}
 
-Here we're using the ansi-format helper because the goals can contain fancy formatting.   For a raw text field we could have just used char.goals by itself.
+Here we're using the ansi-format helper because the goals can contain fancy formatting.  For a raw text field we could have just used char.goals by itself.

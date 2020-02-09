@@ -11,7 +11,7 @@ tags:
 - install
 ---
 
-If you're willing to use [Digital Ocean](http://www.digitalocean.com/?refcode=5c07173bc1f2) as your MU host, I'm happy to set up Ares for you.   
+If you're willing to use [Digital Ocean](http://www.digitalocean.com/?refcode=5c07173bc1f2) as your MU host, I'm happy to set up Ares for you.  
 
 {% include toc.html %}
 
@@ -49,7 +49,7 @@ Create an account on [Digital Ocean](http://www.digitalocean.com/?refcode=5c0717
 6. A statement affirming: "I have read and understood the Easy Mode terms of service, AresMUSH license agreement, and (if applicable) the AresMUSH subdomain terms of service."
 
 {% note %} 
-Your email is needed to transfer the server snapshot image to you.   It must match the email you used for your Digital Ocean account.  I pledge not to do anything nefarious with your email.  See our [privacy policy](/privacy.html) for details.
+Your email is needed to transfer the server snapshot image to you.  It must match the email you used for your Digital Ocean account.  I pledge not to do anything nefarious with your email.  See our [privacy policy](/privacy.html) for details.
 {% endnote %}
 
 ## Clone Your Server

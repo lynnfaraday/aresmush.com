@@ -59,7 +59,7 @@ This is the maximum Ability Points a character can spend.  Free skills and attri
 
 ### max_points_on_attrs and max_points_on_action
 
-This is the maximum number of chargen points a character can spend on attributes and action skills.  Ratings 1-2 (for attributes) and 1 (for action skills) are **not** counted towards the total.   
+This is the maximum number of chargen points a character can spend on attributes and action skills.  Ratings 1-2 (for attributes) and 1 (for action skills) are **not** counted towards the total.  
 
 Attributes cost 2 points per dot and skills cost 1 point per dot.  For exmple - setting `max_points_on_attrs` to 10 would allow you to buy 5 attribute dots above level 2.
 
@@ -127,7 +127,7 @@ A Navy Pilot would start with Swimming: 2 and Piloting: 3, whereas a Marine Pilo
 
 ### Everyone Skills
 
-Sometimes you may want to give a skill to everybody.  Instead of duplicating the information in each group, you can use the special "Everyone" group.   For example, to make everyone start with Alertness 2 and fluent English:
+Sometimes you may want to give a skill to everybody.  Instead of duplicating the information in each group, you can use the special "Everyone" group.  For example, to make everyone start with Alertness 2 and fluent English:
 
     Everyone:
         skills:

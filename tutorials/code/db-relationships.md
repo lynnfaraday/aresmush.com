@@ -24,7 +24,7 @@ References reflect a single relationship between two objects: A vehicle has a si
     client.emit "The driver is: #{vehicle.driver.name}."
 
 {% tip %} 
-You need to specify the class name that the reference refers to, including the full module name, e.g.   `AresMUSH::ModelClassName` .
+You need to specify the class name that the reference refers to, including the full module name, e.g.  `AresMUSH::ModelClassName` .
 {% endtip %}
 
 {% tip %}

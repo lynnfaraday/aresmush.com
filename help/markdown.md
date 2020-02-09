@@ -101,7 +101,7 @@ You can include a gallery of characters, a table of scenes, or a list of wiki pa
 `[[pagelist theme]]`
 `[[scenelist action]]`
 
-In all cases you can list multiple tags, separated by spaces.   
+In all cases you can list multiple tags, separated by spaces.  
 
 Tag names may be prefixed with a hyphen to exclude the tag.  By default, multiple tags use an "OR" operation, but you can make it an "AND" operation by including a + in front of the tag name. 
 

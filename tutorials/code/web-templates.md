@@ -44,7 +44,7 @@ In addition to the `model` data, templates can also access methods and propertie
 
 ## Ansi and Markdown Text
 
-Some of the text data coming back from the game is going to be blocks of ansi-formatted rendered Markdown - descriptions, backgrounds, help files, etc.   The proper way to display this in a template is with the ansi helper:
+Some of the text data coming back from the game is going to be blocks of ansi-formatted rendered Markdown - descriptions, backgrounds, help files, etc.  The proper way to display this in a template is with the ansi helper:
 
 <pre>
     &#x7b;&#x7b;&#x7b;ansi-format text=gameText&#x7d;&#x7d;&#x7d;

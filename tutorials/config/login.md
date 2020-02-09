@@ -59,7 +59,7 @@ To disable character creation from the login screen:
 
 ### allow_web_registration
 
-By default, players can create characters from the Web Portal.  If you wish to lock this down, you can set `allow_web_registration` to `false`.   If you allow web registration, be sure to configure Recapta to prevent bots, as explained below.
+By default, players can create characters from the Web Portal.  If you wish to lock this down, you can set `allow_web_registration` to `false`.  If you allow web registration, be sure to configure Recapta to prevent bots, as explained below.
 
 ### portal_requires_registration
 

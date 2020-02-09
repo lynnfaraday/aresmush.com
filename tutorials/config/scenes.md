@@ -36,7 +36,7 @@ Scenes in temp rooms will remain open as long as there are characters still in t
 
 ## include_pose_separator
 
-When you complete a scene and share the log, the default behavior is to compress all the poses together into a single narrative, like you'd find in a book.   You can alternately include a separator line between poses to make it more clear which pargarphs went together in a single pose.  This separator can be styled with custom CSS using the 'pose-divider' class.
+When you complete a scene and share the log, the default behavior is to compress all the poses together into a single narrative, like you'd find in a book.  You can alternately include a separator line between poses to make it more clear which pargarphs went together in a single pose.  This separator can be styled with custom CSS using the 'pose-divider' class.
 
 ## idle_scene_timeout_days
 
@@ -44,7 +44,7 @@ Scenes in grid rooms are automatically closed when there's nobody left in the ro
 
 ## delete_unshared_scenes
 
-There's also another cron job to periodically delete scenes that have been completed but not shared.  It also warns people about unshared scenes that are going to be deleted soon.   You can turn this feature on and off by setting `delete_unshared_scenes` to true or false.
+There's also another cron job to periodically delete scenes that have been completed but not shared.  It also warns people about unshared scenes that are going to be deleted soon.  You can turn this feature on and off by setting `delete_unshared_scenes` to true or false.
 
 If it's set to true, there are a few other things you can configure:
 

@@ -57,7 +57,7 @@ Let's try it.
       end
     end
 
-Calling `parse_args` will split our argument string into the "3" (arg1) and the "A B C" (arg2).   Then we use the other two arg helpers to interpret the 3 as a number and the names as a list.  
+Calling `parse_args` will split our argument string into the "3" (arg1) and the "A B C" (arg2).  Then we use the other two arg helpers to interpret the 3 as a number and the names as a list.  
 
 Now that we've converted our number of piggies to an actual number, we can use it in a numeric comparison to make sure we named all our piggies.
 

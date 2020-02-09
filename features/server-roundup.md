@@ -28,7 +28,7 @@ This chart shows what basic game commands/systems each server offers.
 
 > <i class="fa fa-check-square"></i> - The server comes with that functionality out of the box.
 > 
-> <i class="fa fa-user"></i> - A community contribution is available.  Community contributions usually require coding knowledge to install/configure, and may have limited support.   This list only includes well-known code packages like SGP, Myrddin's BBS, Anomaly Jobs, Faraday/Volund code suites, and approved Evennia/Ares contribs.
+> <i class="fa fa-user"></i> - A community contribution is available.  Community contributions usually require coding knowledge to install/configure, and may have limited support.  This list only includes well-known code packages like SGP, Myrddin's BBS, Anomaly Jobs, Faraday/Volund code suites, and approved Evennia/Ares contribs.
 
 
 |Feature |AresMUSH |Evennia |PennMUSH |TinyMUX |RhostMUSH |

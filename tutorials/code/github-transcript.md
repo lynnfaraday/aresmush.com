@@ -63,7 +63,7 @@ So the code's in GitHub - but how do we get it to the game itself?
 
 Assuming that you're ONLY doing changes through GitHub and not messing with the code on the server shell through direct editing or FTP, it's simple.
 
-With a coder character on the game, just use the command `git pull`.  This **pulls** the latest changes from GitHub to your game server.   Then - as usual - we need to reload the code we just changed by typing `load tinker`.   We can reload as many plugins as we touched, or just do 'load all' to cover all the bases.
+With a coder character on the game, just use the command `git pull`.  This **pulls** the latest changes from GitHub to your game server.  Then - as usual - we need to reload the code we just changed by typing `load tinker`.  We can reload as many plugins as we touched, or just do 'load all' to cover all the bases.
 
 If we've got conflicting changes or made some changes through FTP or direct editing, you'll need to log into the server shell and use the git command line.  That's a bit outside the scope of our tutorial, but there are lots of git tutorials out there.  Feel free to ask on the forums if you get stuck.
 
@@ -71,13 +71,13 @@ If we've got conflicting changes or made some changes through FTP or direct edit
 
 If we have made direct modifications on the server shell or in certain other unusual situations, we might get this sort of message when we do a git pull.  When this happens, we can't do it automatically through the game itself, and we need to go to the server shell to sort things out.  
 
-So we go to the server shell and do a git status.  We see here that both the game server - through direct code editing - and GitHub have both tried to modify the tinker command in different ways.   We have to go into that file, directly edit it, and sort out the conflict between the two.
+So we go to the server shell and do a git status.  We see here that both the game server - through direct code editing - and GitHub have both tried to modify the tinker command in different ways.  We have to go into that file, directly edit it, and sort out the conflict between the two.
 
 We can use nano.  We see these weird markers here.  This indicates a "merge conflict".  Basically - one version is what we had on the server before I did the git pull.  The other version is what we had in GitHub.  We have to figure out which version we want the code to be when all is said and done.  Sometimes we'll just take one section, sometimes you'll just take the other, or sometimes you'll have to combine them to get the proper version.
 
 In this case we're going to combine them.  We're going to take the emit that just says "Done" but we're also going to keep the test comment.  We don't have to - I'm just using this as an example.
 
-Once it's saved, we need to do a commit manually.  We don't have GitHub desktop on our server shell, so we have to use the command line.  The command we want to use is `git commit -am <commit message>`.   Now it's committed locally on the server shell, and now we need to push it back to GitHub to make everything right.
+Once it's saved, we need to do a commit manually.  We don't have GitHub desktop on our server shell, so we have to use the command line.  The command we want to use is `git commit -am <commit message>`.  Now it's committed locally on the server shell, and now we need to push it back to GitHub to make everything right.
 
 ## Getting Updates
 
@@ -90,7 +90,7 @@ The way we do an update is a GitHub operation called an upstream pull.  Upstream
 
 I can't show you the upstream pull operation using my Ares code because you need a fork for that.  My code isn't a fork - it's the original.  So I'm going to use a different repository that is a fork.  Even though it's different code, the commands I'm going to show you are the same commands you'll use for your Ares code.
 
-Normally we start out in the Changes area, but for this operation we're going to go over to the History area.  We select a branch to compare.  There may be many listed, but the one we're looking for is called "upstream/master" - upstream for where we came from, and master for the main branch.   Once we select that, we'll see that there are 217 commits that are in the upstream code that we don't have yet.  They've been busy.   To get them, all we do is click Merge into Master.  That will pull all of their code into my local copy.
+Normally we start out in the Changes area, but for this operation we're going to go over to the History area.  We select a branch to compare.  There may be many listed, but the one we're looking for is called "upstream/master" - upstream for where we came from, and master for the main branch.  Once we select that, we'll see that there are 217 commits that are in the upstream code that we don't have yet.  They've been busy.  To get them, all we do is click Merge into Master.  That will pull all of their code into my local copy.
 
 It didn't happen this time, but it is possible that if you changed a file that I also changed in the main Ares code, you'd get a notice here that there's a merge conflict.  Just like we saw in the previous example, you need to open up that file in your favorite text editor on your local PC and sort out the conflict.  Look for those funny merge markers and figure out which version you want to keep - your version, my version, or stitch them together into a combined version.
 

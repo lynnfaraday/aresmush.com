@@ -65,7 +65,7 @@ For example, the StartCollapsibleMarkdownExtension class matches text in the for
       
       def self.parse(matches, sinatra)
         button_text = matches[1]
-        ...      
+        ...     
       end
     end
 

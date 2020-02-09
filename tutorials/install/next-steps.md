@@ -14,7 +14,7 @@ tags:
 
 Congratulations! Your AresMUSH game should now be up and running.
 
-Try connecting to the game with your favorite MUSH client. Use the same hostname and port number you used in the server info configuration (e.g. mygame.somehost.com 4201).   Open the Web Portal in your browser (e.g. http://mygame.somehost.com). 
+Try connecting to the game with your favorite MUSH client. Use the same hostname and port number you used in the server info configuration (e.g. mygame.somehost.com 4201).  Open the Web Portal in your browser (e.g. http://mygame.somehost.com). 
 
 > If you can't connect, see the [troubleshooting tutorials](/tutorials/code) for help.  If you're stuck, you can [Ask for Help](/feedback.html) in a variety of ways.
 

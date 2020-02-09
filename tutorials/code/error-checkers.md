@@ -24,7 +24,7 @@ If an error is detected, the handler will emit a failure message to the player a
 
 ## Creating an Error Checker
 
-Any method in a command handler named with `check_` is considered an error checker.   Error checkers return `nil` if everything's okay, or an error message string if there was a problem.   If the return value is not nil, the command handler will emit a failure to the client and stop processing.  For example:
+Any method in a command handler named with `check_` is considered an error checker.  Error checkers return `nil` if everything's okay, or an error message string if there was a problem.  If the return value is not nil, the command handler will emit a failure to the client and stop processing.  For example:
 
     def check_can_view
        return nil if enactor.has_permission("view_bgs")
@@ -33,7 +33,7 @@ Any method in a command handler named with `check_` is considered an error check
 
 ## When *not* to Use Error Checkers
 
-Error check methods are designed to work on the enactor or the arguments - checking whether the enactor has permissions or the arguments are missing/invalid.   But sometimes you can't tell if an argument is valid until you've done some database queries (for example, verifying if the specified player actually exists).
+Error check methods are designed to work on the enactor or the arguments - checking whether the enactor has permissions or the arguments are missing/invalid.  But sometimes you can't tell if an argument is valid until you've done some database queries (for example, verifying if the specified player actually exists).
 
 You don't want to do database queries twice.  It's 100% appropriate to do error checking _inside_ the `handle` method when it's more efficient.  
 

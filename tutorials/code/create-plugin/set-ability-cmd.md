@@ -12,7 +12,7 @@ tags:
 - plugins
 ---
 
-Next up - we need a way to set character abilities.  The processing is slightly different for each type of ability.   We're only going to look at the attribute set command in detail.  There are two verisons of this command:
+Next up - we need a way to set character abilities.  The processing is slightly different for each type of ability.  We're only going to look at the attribute set command in detail.  There are two verisons of this command:
 
     attribute/set <ability name>=<die step>  (for players)
     attribute/set <char name>=<ability name>/<die step> (for admins)

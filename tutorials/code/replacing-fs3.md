@@ -8,7 +8,7 @@ tags:
 - chargen
 ---
 
-Although many identify [FS3](/fs3) and AresMUSH as being a conjoined pair, they really aren't.  FS3 is a plugin, the same as any other, and you can create any skill system you want for Ares.   
+Although many identify [FS3](/fs3) and AresMUSH as being a conjoined pair, they really aren't.  FS3 is a plugin, the same as any other, and you can create any skill system you want for Ares.  
 The article provides tips if you want to replace FS3 with a custom system.
 
 {% tip %} 
@@ -43,4 +43,4 @@ Feel free to [ask for help](/feedback.html).  I want Ares to enable many kinds o
 
 ## FS3 Code Overview
 
-If you're going to make your own system, it can be helpful to use the FS3 code as a guide.  Many skill systems share the same basic building blocks, after all.   The [FS3 Code Roadmap](/tutorials/code/fs3-roadmap.html) tutorial may help you there.
+If you're going to make your own system, it can be helpful to use the FS3 code as a guide.  Many skill systems share the same basic building blocks, after all.  The [FS3 Code Roadmap](/tutorials/code/fs3-roadmap.html) tutorial may help you there.

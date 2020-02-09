@@ -71,7 +71,7 @@ Penetration determines the weapon's chance of getting through armor.  You need t
 
 Weapons are classified as either Explosive, Ranged, Melee or Suppressive.  The type determines what combat actions are available and how defense works.
 
-* If **both** attacker and defender have melee weapons, the defender uses their weapon's skill instead of a regular defense roll.  In other words, if it's Axe vs. Sword, the axeman will attack with his axe skill and the swordsman will defend with his swords skill.   If it's Sword vs. Axe, the swordsman will attack with swords and the axeman will defend with axes.
+* If **both** attacker and defender have melee weapons, the defender uses their weapon's skill instead of a regular defense roll.  In other words, if it's Axe vs. Sword, the axeman will attack with his axe skill and the swordsman will defend with his swords skill.  If it's Sword vs. Axe, the swordsman will attack with swords and the axeman will defend with axes.
 * Only explosive weapons can use the `combat/explode` action.
 * Suppressive weapons cannot attack; they can only use the `combat/suppress` action.  This is suitable for things like ECM jamming, or smoke/flashbang grenades.
 
@@ -122,7 +122,7 @@ You can configure which weapon "specials" are available.  Specials are described
 
 ## Weapon Specials
 
-In addition to specifying the base weapon types, you can define "specials", which are accessories or different configurations that can augment a weapon's capabilities.   Some examples of weapon specials include:
+In addition to specifying the base weapon types, you can define "specials", which are accessories or different configurations that can augment a weapon's capabilities.  Some examples of weapon specials include:
 
 * Armor-piercing bullets
 * Sparring gear

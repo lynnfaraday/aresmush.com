@@ -15,7 +15,7 @@ tags:
 
 The Ares [config tutorials](/tutorials/config) explain all about how configuration files are set up and how to change them to set up your game.  But how does that all translate into code?  Let's find out.
 
-Go to the Admin -> Setup menu in the Web Portal and edit the `tinker.yml` config file.  You should see a single option named "example" with a value of "%xb".   We're going to use that in our code.  
+Go to the Admin -> Setup menu in the Web Portal and edit the `tinker.yml` config file.  You should see a single option named "example" with a value of "%xb".  We're going to use that in our code.  
 
 {% include pretty_image.html file='code/config.png' %}
 

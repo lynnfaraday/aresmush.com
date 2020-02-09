@@ -27,7 +27,7 @@ Color will stay on until you turn it off.  Always use the normal color `%xn` or 
 
     This is my %xbblue%xn text.
 
-The following images show the available colors.   
+The following images show the available colors.  
 
 {% note %} 
 The exact appearance of colors can vary in different MU clients. If you use FANSI colors (any of the colors with a number in them) and the client doesn't support FANSI, the closest approximate ANSI color will be used instead.

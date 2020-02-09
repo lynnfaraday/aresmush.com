@@ -19,7 +19,7 @@ Diving deep into the database is beyond the Quickstart Tutorial.  This is just a
 
 ## Models and Fields
 
-Ohm lets you define ruby classes that interact with the database.  These are called **Models**, and you can identify them by the fact that they inherit from `Ohm::Model`.   Model classes define attributes that correspond to fields in the database.  For example, the `Character` class defines a name and alias: 
+Ohm lets you define ruby classes that interact with the database.  These are called **Models**, and you can identify them by the fact that they inherit from `Ohm::Model`.  Model classes define attributes that correspond to fields in the database.  For example, the `Character` class defines a name and alias: 
 
     class Character < Ohm::Model
       attribute :name
@@ -31,7 +31,7 @@ We're already seen how we can utilize the name attribute in our code through exa
 
 ## Try It! - Queries
 
-There are a variety of ways to query (request) information from the database, but the most common one will be to find something by name.   Let's see how that works.   Change the tinker command as shown:
+There are a variety of ways to query (request) information from the database, but the most common one will be to find something by name.  Let's see how that works.  Change the tinker command as shown:
 
     def handle
       char = Character.all.select { |c| c.name == cmd.args }.first

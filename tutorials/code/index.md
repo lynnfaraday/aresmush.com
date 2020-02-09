@@ -4,7 +4,7 @@ description:
 layout: page
 ---
 
-These articles will teach you how to code for AresMUSH.   
+These articles will teach you how to code for AresMUSH.  
 
 {% include tutorial_warning.html %}
 

@@ -64,7 +64,7 @@ The Web Portal includes a fully-featured wiki that offers many of the same exten
 
 ## Character Profiles
 
-Web portal character profiles draw their information directly from the game, so your data is always in sync.  No more needing to update your wiki page just because your character got promoted or had a birthday.   Straightforward data entry fields mean you can edit your character's profile without needing to learn a bunch of complex wiki code.
+Web portal character profiles draw their information directly from the game, so your data is always in sync.  No more needing to update your wiki page just because your character got promoted or had a birthday.  Straightforward data entry fields mean you can edit your character's profile without needing to learn a bunch of complex wiki code.
 
 {% include pretty_image.html file='web-portal/characters.png' %}
 

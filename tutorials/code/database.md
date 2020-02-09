@@ -13,7 +13,7 @@ Most commands will need to read data from or save data to the database.  Ares us
 
 ## Models and Fields
 
-Ohm lets you define ruby classes that interact with the database.  These are called **Models**, and you can identify them by the fact that they inherit from `Ohm::Model`.   Model classes define attributes that correspond to fields in the database.  For example, the `Character` class defines a name and alias: 
+Ohm lets you define ruby classes that interact with the database.  These are called **Models**, and you can identify them by the fact that they inherit from `Ohm::Model`.  Model classes define attributes that correspond to fields in the database.  For example, the `Character` class defines a name and alias: 
 
     class Character < Ohm::Model
       attribute :name
@@ -73,7 +73,7 @@ Many database properties have specialized update methods because their data stor
     Demographics.set_group(char, "Faction", "Navy")
 
 {% note %} 
-Do not attempt to change database properties just by updating the object (e.g. `char.name = "Harry"`)  This changes the property on the <b>object</b> but does not actually update the database.   You can legitimately use this method to change multiple properties as a batch, but you have to do `char.save` at the end to commit the changes to the database.
+Do not attempt to change database properties just by updating the object (e.g. `char.name = "Harry"`)  This changes the property on the <b>object</b> but does not actually update the database.  You can legitimately use this method to change multiple properties as a batch, but you have to do `char.save` at the end to commit the changes to the database.
 {% endnote %}
 
 ## Finder Helpers
@@ -108,10 +108,10 @@ There's a similar helpers for `with_something_visible` and `with_online_chars`.
 
 ## Callback Methods
 
-Some database models use **Callbacks** - methods that are triggered in response to certain database events.   There are two possible callbacks in Ares, called before an object is deleted or before it's saved:
+Some database models use **Callbacks** - methods that are triggered in response to certain database events.  There are two possible callbacks in Ares, called before an object is deleted or before it's saved:
 
 * `before_delete` -  If an object has any references, you may want to delete them before the object itself is deleted.  For example, a room might delete all of its exits when it's getting deleted.
-* `before_save` - If an object has special fields, you may set them before the object is saved.   For example, if you store the uppercase version of the object name for fast lookups, you want to update that to match the object name every time the object is saved.
+* `before_save` - If an object has special fields, you may set them before the object is saved.  For example, if you store the uppercase version of the object name for fast lookups, you want to update that to match the object name every time the object is saved.
 
 ## Relationships - References, Sets and Collections
 

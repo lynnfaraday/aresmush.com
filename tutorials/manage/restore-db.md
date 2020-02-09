@@ -18,14 +18,14 @@ If you elected to use Digital Ocean's backup feature, see DO's [backups tutorial
 
 ## Restoring Game Files
 
-You can restore game configuration files, uploads, and everything else in the `aresmush/game` folder just by using a FTP client to upload files from your backup copy.   After the upload, run `load config` in-game to reload the configuration settings.
+You can restore game configuration files, uploads, and everything else in the `aresmush/game` folder just by using a FTP client to upload files from your backup copy.  After the upload, run `load config` in-game to reload the configuration settings.
 
 ## Restoring the Database
 
 To restore the database:
 
 1. Stop the database service.  In the [server shell](/tutorials/install/server-shell.html), type `sudo service redis-server stop`.
-2. Copy the `dump.rdb` file from your back copy into the database data path.  Typically this is `/var/lib/redis/dump.rdb`.   If you get a permission error, run `sudo chmod g+rwx /var/lib/redis/dump.rdb` from the server shell.  Sometimes redis resets the file permissions.
+2. Copy the `dump.rdb` file from your back copy into the database data path.  Typically this is `/var/lib/redis/dump.rdb`.  If you get a permission error, run `sudo chmod g+rwx /var/lib/redis/dump.rdb` from the server shell.  Sometimes redis resets the file permissions.
 3. Restart the database service by typing `sudo service redis-server start` in the server shell.
 
 {% note %} 

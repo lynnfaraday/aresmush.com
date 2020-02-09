@@ -23,7 +23,7 @@ Here is a snippet from the "Cookies" module configuration file:
         cookie_forum: "Cookie Awards"
         cookies_per_luck: 10
 
-This defines a configuration section (`cookies`) and two settings (`cookie_forum` and `cookies_per_luck`).  The setting names are called **keys**.   
+This defines a configuration section (`cookies`) and two settings (`cookie_forum` and `cookies_per_luck`).  The setting names are called **keys**.  
 
 
 ## Key Naming
@@ -32,7 +32,7 @@ Underscores and spaces are the only permitted special characters in key names.  
 
 ## Editing YAML Config
 
-You can edit the game's configuration through the Web Portal.  Go to Admin -> Setup and choose the configuration file you want to edit.  You'll be presented with a simple editor screen.   You don't have to worry about the config keys in the web editor, only their values.
+You can edit the game's configuration through the Web Portal.  Go to Admin -> Setup and choose the configuration file you want to edit.  You'll be presented with a simple editor screen.  You don't have to worry about the config keys in the web editor, only their values.
 
 {% include pretty_image.html file='web-portal/config.png' %}
 
@@ -52,7 +52,7 @@ Strings are specifed as `key:value`.  Quotes around the value are optional as lo
 
 ### Numbers
 
-Numbers are also specified as `key:value`.   Don't put quotes around values you want to be numbers, or they will be treated as strings instead.
+Numbers are also specified as `key:value`.  Don't put quotes around values you want to be numbers, or they will be treated as strings instead.
 
     cookies_per_luck: 10
 

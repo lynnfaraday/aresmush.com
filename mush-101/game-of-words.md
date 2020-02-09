@@ -46,7 +46,7 @@ Like a video game, a MUSH provides a virtual world for the characters to inhabit
 {% include pretty_image.html file='postpics/mush-room.png' %}
 <div class="caption">A MUSH room description.</div>
 
-You connect to the game using a special app called a **MUSH client**, which shows you the world and lets you communicate with other players.   You'll learn more about MUSH clients and connecting in [another part](/mush-101/play-muclient.html) of this tutorial.
+You connect to the game using a special app called a **MUSH client**, which shows you the world and lets you communicate with other players.  You'll learn more about MUSH clients and connecting in [another part](/mush-101/play-muclient.html) of this tutorial.
 
 ## Players on the Stage
 
@@ -60,7 +60,7 @@ The fun part is interacting with other characters played by other players.  MUSH
 
 In a MUSH scene, you and the other players take turns, round-robin style, each writing a paragraph from your character's point of view.  Each paragraph builds on what came before to further the overall story.  
 
-The catch is – this all happens "live" in real-time, and the story isn't decided in advance.  You start with a rough idea for a scene, based on whoever happens to be online at that moment, and just run with it.   Being forced to come up with plot and dialogue on the spot is a great way to hone your writing skills, and it can be fun to write a story collaboratively.
+The catch is – this all happens "live" in real-time, and the story isn't decided in advance.  You start with a rough idea for a scene, based on whoever happens to be online at that moment, and just run with it.  Being forced to come up with plot and dialogue on the spot is a great way to hone your writing skills, and it can be fun to write a story collaboratively.
 
 Some MUSHes, like *Sweetwater*, run for years.  Players come and go.  Characters develop their own personal story arcs, growing and changing.
 

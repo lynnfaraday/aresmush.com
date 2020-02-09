@@ -5,7 +5,7 @@ tags:
 layout: page
 ---
 
-Achievements is an optional plugin that lets you set up in-game achievements for characters to earn.   To configure the Achievements plugin:
+Achievements is an optional plugin that lets you set up in-game achievements for characters to earn.  To configure the Achievements plugin:
 
 1. Select Admin -> Setup.
 2. Edit `achievements.yml`

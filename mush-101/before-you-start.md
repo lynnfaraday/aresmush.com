@@ -15,7 +15,7 @@ In this part of the MUSH 101 Tutorial, we'll talk about some things you need to 
 
 ## Getting the App
 
-To connect to a MUSH, you'll need a MUSH client - an app that lets you access MUSH games, just like a web browser lets you access a website.   
+To connect to a MUSH, you'll need a MUSH client - an app that lets you access MUSH games, just like a web browser lets you access a website.  
 
 There are many MUSH clients around.  Popular MUSH clients include:
 

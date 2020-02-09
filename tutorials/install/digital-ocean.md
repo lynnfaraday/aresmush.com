@@ -28,7 +28,7 @@ Digital Ocean's pricing lists both a monthly and hourly rate.  A MUSH server wil
 
 ## Create a Droplet
 
-A "droplet" is just what DO calls a server.   To create a new droplet, log into your account and click **Create -> Droplet**.  
+A "droplet" is just what DO calls a server.  To create a new droplet, log into your account and click **Create -> Droplet**.  
 
 1. Select the Ubuntu distribution image.  (Ares has been fully tested on Ubuntu 16.04 and 18.04.  Newer versions are probably fine too.)  Just use the regular Ubuntu, not any other image.
 {% include pretty_image.html file='/install-ares/droplet.png' %}

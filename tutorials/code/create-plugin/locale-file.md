@@ -17,7 +17,7 @@ All of our commands have been using translation keys, such as `t('cortex.ability
 
 Locale files need to live in the `locales` folder under your plugin folder.  They need to be named `locale_<language code>.yml`.  'en' is the language code for English.
 
-Locale files use YAML format just like configuration files.   Each plugin has its own top-level locale section.  For example:
+Locale files use YAML format just like configuration files.  Each plugin has its own top-level locale section.  For example:
 
     en: 
       cortex:

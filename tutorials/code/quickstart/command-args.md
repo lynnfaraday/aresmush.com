@@ -62,7 +62,7 @@ Let's try a switch first.  Edit the tinker handle method as shown and save it.
 Try out the command with different switches:  `tinker/one`, `tinker/two`, `tinker/three`.  Observe how the output changes.
 
 {% tip %} 
-It's good practice to actually break up different switches into different command handlers living in different files.  Otherwise for many commands the  `handle`  method would get gigantic and overly complicated.  This is similar to the way that MUSH softcode would use different attributes like &CMD-BBS-READ and &CMD-BBS-POST.   Since we're just doing some simple tinkering here, we'll keep everything together for now.
+It's good practice to actually break up different switches into different command handlers living in different files.  Otherwise for many commands the  `handle`  method would get gigantic and overly complicated.  This is similar to the way that MUSH softcode would use different attributes like &CMD-BBS-READ and &CMD-BBS-POST.  Since we're just doing some simple tinkering here, we'll keep everything together for now.
 {% endtip %}
 
 ## Try It! - Adding an Argument

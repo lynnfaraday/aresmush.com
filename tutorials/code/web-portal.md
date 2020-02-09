@@ -9,7 +9,7 @@ tags:
 
 The Web Portal uses a completely different language (Javascript instead of Ruby) and framework (EmberJS) than the game engine/plugins/etc.  That's the bad news.
 
-The good news is that most games won't need to modify the Portal code.  The  Portal offers core functionality that is going to be common across most - if not all - games.   The style is highly configurable without even needing to touch the code at all.
+The good news is that most games won't need to modify the Portal code.  The  Portal offers core functionality that is going to be common across most - if not all - games.  The style is highly configurable without even needing to touch the code at all.
 
 ## Ember in a Nutshell
 

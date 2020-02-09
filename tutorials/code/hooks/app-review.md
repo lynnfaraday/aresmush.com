@@ -35,7 +35,7 @@ For example, if we wanted to restrict the 'knight' position to nobles, we could 
 
 Notice how we're using the `format_review_status` helper.  This is how most of the lines in the app review are formatted.  It will display like this:
 
-    Checking groups.                                   Only nobles can be knights.
+    Checking groups.                                  Only nobles can be knights.
 
 The Chargen helper has several built-in status values:
 

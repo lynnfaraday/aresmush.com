@@ -42,7 +42,7 @@ From here, we can move files back and forth by dragging and dropping them.  It's
 
 ## Loading Code
 
-As we mentioned in the previous tutorial, when we changed files manually on the server shell, we have to tell the game that they changed.  Otherwise it will just go on using the old code.  The way we do that is the 'load' command.   If we know we only changed a particular plugin, we can load just that plugin - like 'load tinker'.  If we're not sure what we changed, we can use 'load all' and reload everything.  It's a little less efficient, but not really a big deal.
+As we mentioned in the previous tutorial, when we changed files manually on the server shell, we have to tell the game that they changed.  Otherwise it will just go on using the old code.  The way we do that is the 'load' command.  If we know we only changed a particular plugin, we can load just that plugin - like 'load tinker'.  If we're not sure what we changed, we can use 'load all' and reload everything.  It's a little less efficient, but not really a big deal.
 
 Now that our code has been reloaded, we can execute any new commands and test them.
 

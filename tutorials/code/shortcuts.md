@@ -13,7 +13,7 @@ AresMUSH provides shortcuts for commands. Shortcuts let you use shorter versions
 Players can create their own personal shortcuts in-game with the `shortcuts` command.
 {% endnote %}
 
-Usually you won't need to mess with the shortcuts, but if you are annoyed by something not being named the way you expect, you can add one.   
+Usually you won't need to mess with the shortcuts, but if you are annoyed by something not being named the way you expect, you can add one.  
 
 ## Creating Shortcuts
 

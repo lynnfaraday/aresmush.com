@@ -11,7 +11,7 @@ Handles bring a little taste of social media to MUSHing. A handle is your OOC id
 
 Handles have an @-sign in front (like @Faraday) to distinguish them from regular player names.
 
-> With a handle, you essentially have TWO names:  the *character* name, on your local game, and the *handle* name, which is the same across all games.   These names *could* be the same (like if you have a staff character or OOC alt) but usually they will be different.
+> With a handle, you essentially have TWO names:  the *character* name, on your local game, and the *handle* name, which is the same across all games.  These names *could* be the same (like if you have a staff character or OOC alt) but usually they will be different.
 
 Why use handles?  We've all seen posts like "Looking for SoAndSo from SuchAndSuchMUSH."  Games close, people drift.  Handles provide tools to help you keep in touch with your friends, and keep track of who's who.
 
@@ -33,7 +33,7 @@ Handles are optional.  If you're really worried about privacy, simply don't crea
 
 You decide which characters are linked.  Don't want anyone knowing you're playing on KinkyMUSH?  Just don't link that character to your handle.
 
-> All linked characters are publicly visible.  Think of them them as cross-game public alts.   All friendships are also publicly visible, like on Facebook.
+> All linked characters are publicly visible.  Think of them them as cross-game public alts.  All friendships are also publicly visible, like on Facebook.
 
 ## How do I link characters?
 

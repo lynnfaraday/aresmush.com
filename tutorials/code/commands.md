@@ -137,7 +137,7 @@ The `parse_args` method is the place where you can parse the command string into
 
 ## Error Checking
 
-Error checkers allow you to detect errors before you begin handling the command.  They run after argument parsing but before the `handle` method.   There are several built-in error checkers that you'll see used throughout the Ares code, and you can make your own just by giving the method a name starting with `check_`.  For example:
+Error checkers allow you to detect errors before you begin handling the command.  They run after argument parsing but before the `handle` method.  There are several built-in error checkers that you'll see used throughout the Ares code, and you can make your own just by giving the method a name starting with `check_`.  For example:
 
     def check_can_view
        return nil if enactor.has_permission("view_bgs")

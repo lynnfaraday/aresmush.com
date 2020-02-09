@@ -14,7 +14,7 @@ If you have any questions or suggestions, feel free to [contact me](/feedback.ht
 
 ## Getting Help
 
-Ares doesn't have a separate +help system - there's just `help`.   Help files are organized by category rather than by name, hopefully making it easier to find what you're looking for.   Admin and builder help are built into the same system, so no more looking for help in multiple places.
+Ares doesn't have a separate +help system - there's just `help`.  Help files are organized by category rather than by name, hopefully making it easier to find what you're looking for.  Admin and builder help are built into the same system, so no more looking for help in multiple places.
 
 Ares help files are optimized for viewing on the game's Web Portal.  They are written more as guides than command references.
 
@@ -100,7 +100,7 @@ The [Handles](/handles) system lets you set up a player identity that can follow
 
 Ares does not have an @decompile like Penn and Tiny, but there are other tools you can use instead.  
 
-* Many commands take a /edit switch, which will grab the contents into your client's input buffer in the same way that @dec/tf or /grab would on Penn/Tiny.   For example, want to make a change to your desc?  Use `desc/edit`.  You may need to [configure your client](/clients.html) to make this work properly.
+* Many commands take a /edit switch, which will grab the contents into your client's input buffer in the same way that @dec/tf or /grab would on Penn/Tiny.  For example, want to make a change to your desc?  Use `desc/edit`.  You may need to [configure your client](/clients.html) to make this work properly.
 * There's a `backup` command that works similarly to decompile to let you log a backup of your character.
 * There's an in-game `notes` command that lets you save notes for yourself.
 

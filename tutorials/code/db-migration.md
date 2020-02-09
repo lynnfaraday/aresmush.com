@@ -7,7 +7,7 @@ tags:
 - database
 ---
 
-Many Ares version upgrades will come with an associated **Database Migration**.   This is just a fancy way of talking about some code that will make changes to your database (or configuration files) to bring it in line with the new version.   
+Many Ares version upgrades will come with an associated **Database Migration**.  This is just a fancy way of talking about some code that will make changes to your database (or configuration files) to bring it in line with the new version.  
 
 As part of a [code upgrade](/tutorials/manage/upgrades.html), the game will run any available database migrations.  This is an automated process, so you shouldn't need to worry about how it works under the hood.  This article can help you understand more about what's going on.
   
@@ -27,7 +27,7 @@ Say the new Ares code has added a new field for `relationships`.  If we do nothi
 
 ### Moving Fields
 
-Moving fields requires a little trickery.  You need to put the old field back temporarily so you can use it to set the new one.   Let's say we wanted to name the `rank` field to `military_rank`.   Assuming that the main Ares code had the new field (`military_rank`), we could do a migration like this:
+Moving fields requires a little trickery.  You need to put the old field back temporarily so you can use it to set the new one.  Let's say we wanted to name the `rank` field to `military_rank`.  Assuming that the main Ares code had the new field (`military_rank`), we could do a migration like this:
 
     class Character
       attribute :rank

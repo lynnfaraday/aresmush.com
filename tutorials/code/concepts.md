@@ -6,7 +6,7 @@ tags:
 - code
 ---
 
-This article describes some core concepts in Ares code.   It assumes you've already read about the [Ares Architecture](/tutorials/code/architecture.html).
+This article describes some core concepts in Ares code.  It assumes you've already read about the [Ares Architecture](/tutorials/code/architecture.html).
 
 {% include toc.html %}
 

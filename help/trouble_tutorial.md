@@ -54,7 +54,7 @@ Admins can forcibly disconnect characters using the `boot` command.
 
 ### Turning Trolls into Statues
 
-The `statue` command, similar to Rhost's FUBAR flag or MUX's @toad, can deter trolls whose goal is to be sitebanned.   When you turn a player into a statue, they will be unable to use any commands at all - not even to quit. 
+The `statue` command, similar to Rhost's FUBAR flag or MUX's @toad, can deter trolls whose goal is to be sitebanned.  When you turn a player into a statue, they will be unable to use any commands at all - not even to quit. 
 
 ### Unapproving Trolls
 

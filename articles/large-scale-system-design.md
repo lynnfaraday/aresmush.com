@@ -5,15 +5,15 @@ layout: story
 author: Faraday
 ---
 
-Awhile back, I wrote an article about how to design large-scale softcode systems.   It was based on the "Waterfall" model of software development.  Since then, I've come to learn a lot more about Agile software development practices, which are a much better way to go about doing things.   This new version of the article talk about how to adapt Agile practices to the design of large-scale MUSH systems.
+Awhile back, I wrote an article about how to design large-scale softcode systems.  It was based on the "Waterfall" model of software development.  Since then, I've come to learn a lot more about Agile software development practices, which are a much better way to go about doing things.  This new version of the article talk about how to adapt Agile practices to the design of large-scale MUSH systems.
 
 ## The Epic
 
-Usually you'll start with some pretty big ideas:  Skills.  Chargen.  Economy.  Rooms.   
+Usually you'll start with some pretty big ideas:  Skills.  Chargen.  Economy.  Rooms.  
 
 These are daunting tasks.  They're huge.  They're so huge they're *Epic*.
 
-Epics are a good place to start, but you're not going to do any concrete work at this level.  You need to break it down further into manageable chunks.   
+Epics are a good place to start, but you're not going to do any concrete work at this level.  You need to break it down further into manageable chunks.  
 
 Why have Epics at all?
 
@@ -23,13 +23,13 @@ Why have Epics at all?
 
 ## The Story
 
-*Stories* are a way to break your Epics into manageable chunks.   A story is written in the form:
+*Stories* are a way to break your Epics into manageable chunks.  A story is written in the form:
 
 > As a (type of customer) I need (something they need -- from THEIR perspective).
 
-I use "customer" loosely to refer to the players and staff of your game.   The idea is to get into the heads of your customers and understand what they're trying to accomplish.  Code exists to meet a need; it doesn't exist for its own sake.
+I use "customer" loosely to refer to the players and staff of your game.  The idea is to get into the heads of your customers and understand what they're trying to accomplish.  Code exists to meet a need; it doesn't exist for its own sake.
 
-Consider the Chargen epic.   It may spawn a bunch of stories:
+Consider the Chargen epic.  It may spawn a bunch of stories:
 
 * As a player, I need to set my character's demographic information.
 * As a player, I need to set my character's skills.
@@ -40,9 +40,9 @@ Consider the Chargen epic.   It may spawn a bunch of stories:
 
 ## The Details
 
-When you go to work on a story, you need to flesh it out a bit more.   Software engineers call this *acceptance criteria*, but that's just a fancy way of saying:  "What do we need to do before this story can be considered 'done'."  
+When you go to work on a story, you need to flesh it out a bit more.  Software engineers call this *acceptance criteria*, but that's just a fancy way of saying:  "What do we need to do before this story can be considered 'done'."  
 
-For a MUSH system, a good place to start is the help file.  Put yourself in the mind of the person using this system.   How will they interact with it?  What commands will there be?  What will those commands do?   How will the data be stored?
+For a MUSH system, a good place to start is the help file.  Put yourself in the mind of the person using this system.  How will they interact with it?  What commands will there be?  What will those commands do?   How will the data be stored?
 
 Consider the story:  "As a player, I need to set my character's demographic information."   Think about the help file in the chargen room:
 
@@ -54,7 +54,7 @@ Consider the story:  "As a player, I need to set my character's demographic info
 >         &SHORT_DESC me=<short desc> - Shows up in room list.
 >         +position <position> (freeform - pick your own)
 
-You can see here that we've made a few key assumptions, using built-in MUSH commands for @sex and @desc, using a plain old attribute for shortdesc.   
+You can see here that we've made a few key assumptions, using built-in MUSH commands for @sex and @desc, using a plain old attribute for shortdesc.  
 
 This is also the point at which we start thinking about limits.  Are there any limits on fullnames?  On ages?  On positions?
 
@@ -79,16 +79,16 @@ Two other things you'll want to consider during this Details phase are:
 
 In this example, the data storage is pretty simple - just a few attributes.  We don't need anything from other systems, but we might anticipate that other systems might need to get a character's demographic information and provide an easy way for them to do so.
 
-I'm a big fan of keeping systems independent of one another's details.  What do I mean?   Well, consider this:  +finger might want to display a character's birthdate.  Do you want it looking specifically at the BIRTHDATE attribute?  What if you decide to change the format of how the birthdate is stored?  What if you move it to a DATE_OF_BIRTH attribute?  Now you've got to change *both* the demographics commands and the +finger commands.   And anywhere else that displays an age.
+I'm a big fan of keeping systems independent of one another's details.  What do I mean?   Well, consider this:  +finger might want to display a character's birthdate.  Do you want it looking specifically at the BIRTHDATE attribute?  What if you decide to change the format of how the birthdate is stored?  What if you move it to a DATE_OF_BIRTH attribute?  Now you've got to change *both* the demographics commands and the +finger commands.  And anywhere else that displays an age.
 
-Instead, you can provide some global functions:  Age(), Birthdate(), Position(), etc.   Now it doesn't matter how the demographics system stores the data -- all the other systems can get the data in an easy, consistent manner.
+Instead, you can provide some global functions:  Age(), Birthdate(), Position(), etc.  Now it doesn't matter how the demographics system stores the data -- all the other systems can get the data in an easy, consistent manner.
 
 ## Test First
 
-One thing you'll commonly find in professional Agile development is a "test first" mentality.   You might think:  "How silly!  How can I test something when I haven't even written the code yet!?"  In MUSHcode it's very difficult.  The tools are not your friend.
+One thing you'll commonly find in professional Agile development is a "test first" mentality.  You might think:  "How silly!  How can I test something when I haven't even written the code yet!?"  In MUSHcode it's very difficult.  The tools are not your friend.
 
-But you can still apply some of the same principles by at least *thinking about* the tests ahead of time.   When you start to think about situations like:   What happens if the player types  +position COWBOY, or +position (space)(space)(space)Cowboy, or +position cowboy .... now you start to think about building handling for that into the code in the first place, rather than trying to bolt it on after the fact.
+But you can still apply some of the same principles by at least *thinking about* the tests ahead of time.  When you start to think about situations like:   What happens if the player types  +position COWBOY, or +position (space)(space)(space)Cowboy, or +position cowboy .... now you start to think about building handling for that into the code in the first place, rather than trying to bolt it on after the fact.
 
 ## Iterate
 
-So, now you've done one story.   Go and do the next, and the next, and the next.   Each time you'll have to revisit some of your old code, adding new functionality and changing some things under the hood.   But you'll be able to see things develop before you know it, and the end result will be pretty cool.
+So, now you've done one story.  Go and do the next, and the next, and the next.  Each time you'll have to revisit some of your old code, adding new functionality and changing some things under the hood.  But you'll be able to see things develop before you know it, and the end result will be pretty cool.

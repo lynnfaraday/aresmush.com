@@ -24,7 +24,7 @@ SHANNYN
 You loved every bloody minute of it.
 
 ALAN  
-Now, wait a minute... well yeah, you're right. Getting manhandled by Lucy Lawless is something I can cross off my list of things to do before I die.   
+Now, wait a minute... well yeah, you're right. Getting manhandled by Lucy Lawless is something I can cross off my list of things to do before I die.  
 (beat)   
 Next up: cliff diving.  
 
@@ -72,13 +72,13 @@ INT. SOUNDSTAGE ' RAPTOR MOCKUP
 ANNA PAQUIN watches as the prop crew clean up the fake blood from the Raptor deck. (SUPER: ANNA PAQUIN, 'LT. RAE 'GIGGLES' SUNHILDE')
 
 ANNA   
-So right now they're cleaning up... um, somebody's blood out of the Raptor. I can't tell you who in case you're watching this and haven't seen the episode yet.   
+So right now they're cleaning up... um, somebody's blood out of the Raptor. I can't tell you who in case you're watching this and haven't seen the episode yet.  
 (beat)   
-I can tell you he died really cool.   
+I can tell you he died really cool.  
 (beat)   
-Or she. Shh. Spoilers.   
+Or she. Shh. Spoilers.  
 (to the prop crew)   
-Are you saving any of that? I wanna sundae.   
+Are you saving any of that? I wanna sundae.  
 (looks back to camera, grins)
 
 INT. ' C.I.C. SET

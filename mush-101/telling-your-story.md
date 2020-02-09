@@ -28,23 +28,23 @@ A MUSH will have plots of different shapes and sizes, just like a TV show.
 
 There will be **major plots**, which stretch out for longer periods of time and involve large numbers of players.  On a zombie MUSH, you might have a plotline where the characters try to develop a zombie vaccine. 
 
-**Minor plots** are short (sometimes no more than a scene or two) and involve fewer players.   On a zombie MUSH, you might have a plot where a few people go out to hunt for food.
+**Minor plots** are short (sometimes no more than a scene or two) and involve fewer players.  On a zombie MUSH, you might have a plot where a few people go out to hunt for food.
 
-A lot of scenes are just **character development**.  These scenes usually involve one-off social encounters – drinks at the bar, a chat in the park, etc.  While they might seem less interesting than the bigger plots, these scenes are actually vital for developing your character and their relationships.   If you want to do a plotline where your character has to deal with their long lost father returning to town nobody's going to care unless you've first spent time building up connections with other characters.  And fighting the dragon is more fun when you're with friends (or enemies) and not complete strangers.
+A lot of scenes are just **character development**.  These scenes usually involve one-off social encounters – drinks at the bar, a chat in the park, etc.  While they might seem less interesting than the bigger plots, these scenes are actually vital for developing your character and their relationships.  If you want to do a plotline where your character has to deal with their long lost father returning to town nobody's going to care unless you've first spent time building up connections with other characters.  And fighting the dragon is more fun when you're with friends (or enemies) and not complete strangers.
 
 {% include pretty_image.html file='postpics/bar-scene.jpg' caption='Bars are popular hangouts on MUSHes, just like in real life.' %}
 
 ## Starting a Scene
 
-The primary storytelling element on a MUSH is the scene.  It's just like a scene in a novel or a TV show – a snapshot of the characters' lives.   There are several steps toward making a scene a successful.
+The primary storytelling element on a MUSH is the scene.  It's just like a scene in a novel or a TV show – a snapshot of the characters' lives.  There are several steps toward making a scene a successful.
 
 ### Organize
 
-It takes at least two people to play a scene, so you'll need to coordinate with someone else.   The easiest way to do this is simply to ask on the public chat system.
+It takes at least two people to play a scene, so you'll need to coordinate with someone else.  The easiest way to do this is simply to ask on the public chat system.
 
 > Don't be offended or discouraged if the answer at any particular moment is 'no'.  It's like any social activity – sometimes people are busy doing other things or just not in the mood.
 
-Figuring out what to play can be the hardest part.  Sometimes it will be obvious, like if your character is injured and the other character is a doctor.    Other times it can feel like the lead-in to a bad joke:  "So a schoolteacher, an outlaw and a barber walk into a bar…" Be creative!  Sometimes the best scenes come from the most random collection of characters.
+Figuring out what to play can be the hardest part.  Sometimes it will be obvious, like if your character is injured and the other character is a doctor.   Other times it can feel like the lead-in to a bad joke:  "So a schoolteacher, an outlaw and a barber walk into a bar…" Be creative!  Sometimes the best scenes come from the most random collection of characters.
 
 {% include pretty_image.html file='postpics/bar-joke.jpg' max-width='400px' caption='Image by Maury Aaseng' %}
 
@@ -52,7 +52,7 @@ Figuring out what to play can be the hardest part.  Sometimes it will be obvious
 
 A MUSH has an entire virtual world available.  Where is your scene going to be set?  The hospital?  The bar?  The woods outside of town? 
 
-The easiest scene to do on any MUSH is a 'meet and greet' at a public place, like a bar, a park, or the town square.  Once you get familiar with a MUSH, you'll learn where the popular hangouts are.   When you're new, don't be afraid to ask.
+The easiest scene to do on any MUSH is a 'meet and greet' at a public place, like a bar, a park, or the town square.  Once you get familiar with a MUSH, you'll learn where the popular hangouts are.  When you're new, don't be afraid to ask.
 
 ### Set the Scene
 
@@ -70,7 +70,7 @@ That can seem like a lot, but it can be distilled into a simple paragraph.  Here
 
 ### Strike a Pose 
 
-After the first person sets the scene, everyone takes turns writing a paragraph in round-robin fashion.   These are called **poses**.  (The name comes from the idea of 'striking a pose' with your character.)
+After the first person sets the scene, everyone takes turns writing a paragraph in round-robin fashion.  These are called **poses**.  (The name comes from the idea of 'striking a pose' with your character.)
 
 Your pose should include:
 
@@ -102,7 +102,7 @@ You only ever write actions for your own character. Don't pose other peoples' ac
 
 > Bad (Power-Posing):  Emma punches Kate in the nose, knocking her out.
 
-You can, however, include background Non-Player-Characters (NPCs) in your poses.  NPCs are like “extras” in a movie - the other random people who occupy the game world.  You won’t see them in the characters list of a room description, but usually it’s safe to assume they’re there.   They’re the other patrons in the bar, or people on the street, or the crewmen bustling around the hangar deck.  You can incorporate them into the action as appropriate.  
+You can, however, include background Non-Player-Characters (NPCs) in your poses.  NPCs are like “extras” in a movie - the other random people who occupy the game world.  You won’t see them in the characters list of a room description, but usually it’s safe to assume they’re there.  They’re the other patrons in the bar, or people on the street, or the crewmen bustling around the hangar deck.  You can incorporate them into the action as appropriate.  
 
 ### Yelling 'Cut'
 

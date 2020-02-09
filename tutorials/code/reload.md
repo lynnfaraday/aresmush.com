@@ -16,11 +16,11 @@ Changes to the Ares game engine require a [restart](/tutorials/manage/shutdown.h
 
 If you've only changed **plugins**, you can reload each plugin while the game is still running by using the `load <plugin name>` command in-game. 
 
-If all you've changed are **configuration files**, the `load config` command will read them.   The config is automatically reloaded when using the Web Portal config editor.
+If all you've changed are **configuration files**, the `load config` command will read them.  The config is automatically reloaded when using the Web Portal config editor.
 
 If you've changed the **Web Portal**, you'll need to re-deploy it through the Admin -> Manage menu on the Web Portal or the `website/deploy` command in-game. 
 
-If you've changed the **engine**, you'll need to actually [shutdown and restart](/tutorials/manage/shutdown.html) the game before the changes will take effect.   You probably shouldn't be changing the engine, though.
+If you've changed the **engine**, you'll need to actually [shutdown and restart](/tutorials/manage/shutdown.html) the game before the changes will take effect.  You probably shouldn't be changing the engine, though.
 
 ## How Code is Loaded
 
@@ -61,7 +61,7 @@ Let's say we change the command's behavior:
         end
     end
 
-When we reload the tinker plugin, Ares first _unloads_ the old one.  Anything in the `AresMUSH::Tinker` module is deleted from memory so we can start fresh.  When Ruby encounters the `module Tinker` line, it'll create a new `AresMUSH::Tinker` module containing the new code.   The next time someone uses the tinker command, they'll get the new behavior.
+When we reload the tinker plugin, Ares first _unloads_ the old one.  Anything in the `AresMUSH::Tinker` module is deleted from memory so we can start fresh.  When Ruby encounters the `module Tinker` line, it'll create a new `AresMUSH::Tinker` module containing the new code.  The next time someone uses the tinker command, they'll get the new behavior.
 
 ## Loading Pitfalls
 

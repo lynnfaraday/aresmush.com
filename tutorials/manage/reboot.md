@@ -25,7 +25,7 @@ It is highly recommended that you reboot your system as soon as possible when yo
 
 1. Shut down the game, either using the `shutdown` command or the Admin->Manage->Shutdown button on the Web Portal.
 2. Log into the [Server Shell](/tutorials/install/server-shell.html).
-3. Type `sudo reboot`.   (On older linux systems you may need to do `sudo shutdown -r now`.)
+3. Type `sudo reboot`.  (On older linux systems you may need to do `sudo shutdown -r now`.)
 4. Wait.  It could take up to 10 minutes to install updates.
 
 Your game should restart automatically after the server reboots. 

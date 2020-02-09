@@ -24,7 +24,7 @@ You can configure the maximum number of Luck Points a character can save up at a
 
 This controls how much luck a person gets for participating in a scene with another player, based on how often they've previously RPed with that person.  The more scenes they've done together, the less the luck award.
 
-For example, in the default config the base luck award is 0.1.  After 10 scenes together, the luck award reduced to 0.075.   After 25 scenes together, the luck award becomes 0.05, and so on.
+For example, in the default config the base luck award is 0.1.  After 10 scenes together, the luck award reduced to 0.075.  After 25 scenes together, the luck award becomes 0.05, and so on.
 
     0: 0.1
     10: 0.075

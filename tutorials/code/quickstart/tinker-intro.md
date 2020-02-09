@@ -12,7 +12,7 @@ tags:
 - code-quickstart
 ---
 
-The `ruby` command is handy, but often you'll want to run code that's too involved to write comfortably in a single line of text.  For that, we have the `tinker` command.   The `tinker` command lets you enter some code in a mini code editor on the web portal and then execute it in the game.
+The `ruby` command is handy, but often you'll want to run code that's too involved to write comfortably in a single line of text.  For that, we have the `tinker` command.  The `tinker` command lets you enter some code in a mini code editor on the web portal and then execute it in the game.
 
 To change the tinker code:
 

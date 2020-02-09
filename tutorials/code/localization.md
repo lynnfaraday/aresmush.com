@@ -14,7 +14,7 @@ Ares is designed for non-English games too.  All of the game code can be transla
 
 ## Locale Files
 
-Global locale files (which are shared across many plugins) live in the `aresmush/game/locales` folder.   Plugin-specific locale files live in their respective plugin folder under a `locales` sub-folder.
+Global locale files (which are shared across many plugins) live in the `aresmush/game/locales` folder.  Plugin-specific locale files live in their respective plugin folder under a `locales` sub-folder.
 
 A locale file looks something like this:
 
@@ -31,7 +31,7 @@ Like all YAML files, translation files require quotes around strings with specia
 
 ## Translation Keys
 
-A translation key is in the form `section.key_name`.  For example:  `dispatcher.huh` or `db.object_not_found`.   You can use translation keys in the globally-available translate method `t()` to get the actual text for that key in the current language.
+A translation key is in the form `section.key_name`.  For example:  `dispatcher.huh` or `db.object_not_found`.  You can use translation keys in the globally-available translate method `t()` to get the actual text for that key in the current language.
 
 For example:  `t('dispatcher.huh')` would return "Huh?  Unrecognized command." in English.  In German, it might be "Bitte?  Befehl ist nicht bekannt."
 

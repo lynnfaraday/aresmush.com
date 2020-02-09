@@ -8,7 +8,7 @@ tags:
 - webportal
 ---
 
-All games come to an end eventually, and when that happens you don't want to lose your entire website.  Ares allows you to export the key bits of the web portal to disk:  Characters, Scenes and Wiki.   
+All games come to an end eventually, and when that happens you don't want to lose your entire website.  Ares allows you to export the key bits of the web portal to disk:  Characters, Scenes and Wiki.  
 
 The exporter doesn't fully re-create the web portal, and it's not perfect.  Some internal links may not function right and may require manual tweaks if you want a pristine archive.  The exporter just does the heavy lifting for you.
 

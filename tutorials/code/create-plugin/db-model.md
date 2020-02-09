@@ -13,7 +13,7 @@ tags:
 - database
 ---
 
-We'll need to save character abilities to the database, which entails some new database fields.   
+We'll need to save character abilities to the database, which entails some new database fields.  
 
 ## Storing a Hash
 

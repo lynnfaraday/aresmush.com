@@ -45,7 +45,7 @@ FS3 is designed to be configured for individual games without needing to modify 
 
 ### Helpers
 
-FS3 has a slew of shared helper methods, in separate files organized by topic:  rolls, chargen, xp, etc.   The helpers actually contain the meat of the system.  Most of the commands are actually prety bare-bones, doing little more than parsing args and calling helpers.
+FS3 has a slew of shared helper methods, in separate files organized by topic:  rolls, chargen, xp, etc.  The helpers actually contain the meat of the system.  Most of the commands are actually prety bare-bones, doing little more than parsing args and calling helpers.
 
 {% tip %} 
 Having so many helper methods may be overwhelming at first, but dig into it a bit and hopefully you'll find that having short, focused helpers makes the code easier to understand. 
@@ -102,7 +102,7 @@ Since combatants may be NPCs or PCs offline, it's generally better to show the m
 
 ### Database Models
 
-Like the skills plugin, combat has its own set of database models.  The two at the core are `Combat` - representing a combat instance - and `Combatant` - representing someone involved in a combat.   
+Like the skills plugin, combat has its own set of database models.  The two at the core are `Combat` - representing a combat instance - and `Combatant` - representing someone involved in a combat.  
 
 The `Combatant` class can reference either a character object (for a PC or 'named' NPC) or a virtual NPC object that will be recycled when the combat is over.  It stores all the combat-specific information like ammunition, gear, action and stance.  Information that persists when a combat is over, like damage, has its own separate model.
 
@@ -116,7 +116,7 @@ Again, like the skills system, much of combat is encapsulated in short, focused 
 
 ### Actions
 
-All combat actions have a corresponding class that inherits from the `CombatAction` class.   The base `CombatAction` class provides some helpful utilities for parsing targets and some utility attributes like `combatant` and `name`.
+All combat actions have a corresponding class that inherits from the `CombatAction` class.  The base `CombatAction` class provides some helpful utilities for parsing targets and some utility attributes like `combatant` and `name`.
 
 Each action must implement several methods:
 
@@ -191,7 +191,7 @@ One of the really nice selling points of Ares is the web portal, so you'll want 
 
 ### Character Creation Abilities Tab
 
-Much of the web chargen is generic - demographics, background, groups, etc.  The FS3 bits are centered in the Abilities tab.  The `FS3Skills::ChargenCharRequestHandler` provides information driving this screen, representing the character's current abilities and specialties in hash form.   `FS3Skills::ChargenInfoRequestHandler` specifies the general information about what abilities are available and what skill limits are in effect.
+Much of the web chargen is generic - demographics, background, groups, etc.  The FS3 bits are centered in the Abilities tab.  The `FS3Skills::ChargenCharRequestHandler` provides information driving this screen, representing the character's current abilities and specialties in hash form.  `FS3Skills::ChargenInfoRequestHandler` specifies the general information about what abilities are available and what skill limits are in effect.
 
 On the Ember side, the `chargen.js` controller has a lot of logic to perform some client-side error checking.  This is not strictly necessary; everything will be fully error-checked by the server on the review screen.  But having the most commonly-encountered errors client-side makes a much more pleasant experience for the players.
 

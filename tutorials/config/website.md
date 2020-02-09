@@ -79,7 +79,7 @@ You can use [Custom CSS](#custom-css-style), explained below, to change which im
 
 ### Choosing a Header Background
 
-The default style positions the header background in a 200 pixel high area using `background-size: cover` and `background-position: center`.   
+The default style positions the header background in a 200 pixel high area using `background-size: cover` and `background-position: center`.  
 
 * **Cover** will either stretch or crop the image to make it cover the entire header area.  
 * **Center** always tries to keep the center of the image in view.
@@ -234,7 +234,7 @@ By default, Ares assumes that the website will be installed in your home folder 
 
 ### character_gallery_group and character_gallery_subgroup
 
-By default, the character gallery page shows characters organized into tabs by Faction and then into sub-groups by Position.  You can change this by editing the two character gallery settings to be any two groups.   For example, on BSG:U the gallery was organized by Department then Position.
+By default, the character gallery page shows characters organized into tabs by Faction and then into sub-groups by Position.  You can change this by editing the two character gallery settings to be any two groups.  For example, on BSG:U the gallery was organized by Department then Position.
 
 ### left_sidebar
 

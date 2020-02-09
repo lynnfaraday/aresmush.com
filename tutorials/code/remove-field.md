@@ -22,7 +22,7 @@ For example - let's say that you had an attribute named favorite_color on the Ch
 
 You make some code to set it, and now some characters have a favorite color.  
 
-Now you've decided you don't need favorite color after all.   You remove it from the class.  Everything seems fine, but then you start seeing all kinds of warning messages in the logs:
+Now you've decided you don't need favorite color after all.  You remove it from the class.  Everything seems fine, but then you start seeing all kinds of warning messages in the logs:
 
     WARN - Model AresMUSH::Character failed to respond to favorite_color undefined method `favorite_color='
 

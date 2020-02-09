@@ -11,7 +11,7 @@ The final piece of a screen is the **Controller**, which provides display proper
 
 ## Controller Actions
 
-The buttons, selectors or other action triggers on a screen are linked to **action** in the controller.   For example, consider the delete action on the Event controller:
+The buttons, selectors or other action triggers on a screen are linked to **action** in the controller.  For example, consider the delete action on the Event controller:
 
     actions: {
         delete: function() {

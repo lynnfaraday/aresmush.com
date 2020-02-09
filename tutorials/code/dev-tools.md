@@ -79,7 +79,7 @@ If you have MacOS installed on your home PC, you can actually install your own c
 
 8. Start the game using `bin/devstart` in the aresmush directory.
 
-9. Start the web portal using `bin/devportal` from the ares-webportal directory.   The development web portal runs on http://localhost:4200.
+9. Start the web portal using `bin/devportal` from the ares-webportal directory.  The development web portal runs on http://localhost:4200.
 
 ### Installing on Your Local PC
 

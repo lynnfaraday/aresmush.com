@@ -141,7 +141,7 @@ Try it:
 \#100
 
 \>think num(Joe)   
-I can't see that here.   
+I can't see that here.  
 \#-1
 
 
@@ -174,7 +174,7 @@ I'm not sure who you mean.
 \#1551
 
 \>think pmatch(gobbledygook)   
-No match.   
+No match.  
 \#-1
 
 
@@ -213,7 +213,7 @@ u(db#/attribute,param0,param1,param2,param3,etc.)
 
 Try It:
 
-\>&TEST_FUN1 #100=These are my notes,%rwhich have linebreaks to demonstrate%rxget() versus u().   
+\>&TEST_FUN1 #100=These are my notes,%rwhich have linebreaks to demonstrate%rxget() versus u().  
 Faraday's Test Object/TEST_FUN1 - Set.
 
 \>think u(#100/test_fun1)   

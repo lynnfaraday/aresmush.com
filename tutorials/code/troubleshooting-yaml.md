@@ -104,7 +104,7 @@ Often this error happens if you have the same config option defined in multiple 
        fs3combat:
           Foo: "B"
 
-Since "Foo" is defined twice in the fs3combat section in different files, the game tries to merge it together and can't - hence the error.   Just remove one of the duplicate entries.
+Since "Foo" is defined twice in the fs3combat section in different files, the game tries to merge it together and can't - hence the error.  Just remove one of the duplicate entries.
 
 {% tip %} 
 It's okay to have the same option defined in _different sections_, as sections are completely independent.  It also won't be an error if the option is defined twice in the same section if it's in the the _same file_.  The last entry "wins".

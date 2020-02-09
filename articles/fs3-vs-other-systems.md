@@ -5,7 +5,7 @@ layout: story
 author: Faraday
 ---
 
-In order to help people who may be familiar with other RPG systems, I have done a little comparison between some of the more popular systems and FS3 to show how the dice work.   This research was inspired by a [nice article comparing D20 and 3D6](http://www.criticalmiss.com/issue8/bitaboutd201.html).
+In order to help people who may be familiar with other RPG systems, I have done a little comparison between some of the more popular systems and FS3 to show how the dice work.  This research was inspired by a [nice article comparing D20 and 3D6](http://www.criticalmiss.com/issue8/bitaboutd201.html).
 
 {% include toc.html %}
 

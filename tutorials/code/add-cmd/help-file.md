@@ -51,7 +51,7 @@ The name of the help file will be the topic name.  For instance, if we name the 
 
 ### Help File Metadata
 
-The first few lines of the help file define important metadata used by the help system.   There are many help fields available (you can find a complete list in the Advanced Tutorial on [Help Files](/tutorials/code/help.html) later), but only two are required:
+The first few lines of the help file define important metadata used by the help system.  There are many help fields available (you can find a complete list in the Advanced Tutorial on [Help Files](/tutorials/code/help.html) later), but only two are required:
 
 * toc - Defines where the topic falls in the help table of contents.
 * summary - The summary text that shows up next to the topic in the help table of contents.

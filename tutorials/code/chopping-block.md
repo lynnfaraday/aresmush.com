@@ -32,7 +32,7 @@ For games that want to use names with spaces, you can use the optional ['nicknam
 
 Penn/Tiny exit locks could be infinitely complex.  You could lock an exit so it was only available to people whose name started with "B", or whose position was "Doctor", or even have a lock that was only opened on Tuesdays.
 
-This functionality seems inordinately complex and pretty useless, so it has been ditched from Ares.  Standard exit locks operate based solely on [roles](/tutorials/manage/roles.html).  There's also a temporary lock feature for privacy that applies to interior locks.   If you built an apartment system, you could add code so only people on the lock list could get in.  
+This functionality seems inordinately complex and pretty useless, so it has been ditched from Ares.  Standard exit locks operate based solely on [roles](/tutorials/manage/roles.html).  There's also a temporary lock feature for privacy that applies to interior locks.  If you built an apartment system, you could add code so only people on the lock list could get in.  
 
 In short: Ares lets you create lock code for specific purposes, rather than attempting to design a super-flexible lock scripting language.
 
@@ -66,7 +66,7 @@ In Ares, admins cannot force players to execute commands, again because I think 
 
 ## Thing Objects
 
-Ares has no "Thing" object type.  That means no rings, no notepads, no blaster pistols, no Viper fighter craft to climb into, etc.   Why?  All of those things are done in different ways.
+Ares has no "Thing" object type.  That means no rings, no notepads, no blaster pistols, no Viper fighter craft to climb into, etc.  Why?  All of those things are done in different ways.
 
 * Cosmetic Items have been supplanted by a more robust 'detail' system that works on characters as well as rooms.  If you want a special desc for your ring or the family photo on your wall, add a detail.
 * Code Storage Items don't exist because code in Ares is not associated with a database object.  Code lives on the server and there is no player-side code scripting.  Many player utilities like notes and multi-descers are build into the core code.

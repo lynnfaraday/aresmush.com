@@ -15,7 +15,7 @@ Cron Jobs are game events that run on a set schedule, such as daily healing or w
 
 The Engine's cron system sends out a `CronEvent` once a minute.  To implement a cron job, the plugin needs to handle this event as explained in [Event Handling](/tutorials/code/events.html).  
 
-Unless you want your cron job to run *every minute*, you'll need some code in the cron handler to make it run when desired.   Typically this is done with the `is_cron_match?` utility .  For example:
+Unless you want your cron job to run *every minute*, you'll need some code in the cron handler to make it run when desired.  Typically this is done with the `is_cron_match?` utility .  For example:
 
         config = Global.read_config("your_plugin", "your_cron_config")
         return if !Cron.is_cron_match?(config, event.time)

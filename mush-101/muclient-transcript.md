@@ -22,7 +22,7 @@ Hi.  This is Faraday from AresMUSH and this is Part II of the MUSH 101 tutorial.
 
 A MUSH client is a special kind of application that lets you to connect to MUSH servers in the same way a web browser lets you to connect to web servers.
 
-You can access some of the game’s features through the web, which we’ll cover in the next segment, but for the complete game experience you’ll need a MUSH client.   There are MUSH clients available for every operating system, and you can find links to some of them on aresmush.com.   The one I’m going to show you today is Atlantis, a popular client for MacOS.
+You can access some of the game’s features through the web, which we’ll cover in the next segment, but for the complete game experience you’ll need a MUSH client.  There are MUSH clients available for every operating system, and you can find links to some of them on aresmush.com.  The one I’m going to show you today is Atlantis, a popular client for MacOS.
 
 ## Adding Games
 
@@ -58,21 +58,21 @@ We don’t have a character on this game yet.  The way to get a character will v
 
 Most games, though, will have some shared “guest” characters you can borrow just to log in, look around, and talk to people.  To log in using one of these characters, you use “guest” for both the name and the password.  Let’s give it a try and type ‘connect guest guest’.
 
-We got spammed with a bunch of information, which we’ll ignore for now, and it’s telling us our temporary guest name is “Guest-1”.   If we look at the ‘who’ list again, we can see ourselves listed.
+We got spammed with a bunch of information, which we’ll ignore for now, and it’s telling us our temporary guest name is “Guest-1”.  If we look at the ‘who’ list again, we can see ourselves listed.
 
 ## Channels
 
-The next thing we’ll probably want to do is talk to people.  MUSHes have a public chat system.   There are channels for different subjects, kind of like chatrooms, and you can join them and talk to other interested players.  
+The next thing we’ll probably want to do is talk to people.  MUSHes have a public chat system.  There are channels for different subjects, kind of like chatrooms, and you can join them and talk to other interested players.  
 
-On AresMUSH games, you can see the list of available channels by typing ‘channels’.   For channels you’ve joined, this command will also tell you how to talk on them.
+On AresMUSH games, you can see the list of available channels by typing ‘channels’.  For channels you’ve joined, this command will also tell you how to talk on them.
 
-For example, to talk on the general chit-chat channel, we would type ‘cha’ and then the message we wanted to say.  For example:  ‘cha Hi there.’   Everyone on the channel would see us say hello, and hopefully someone would respond.   The markers at the front of the message indicate that this came from the chat system.
+For example, to talk on the general chit-chat channel, we would type ‘cha’ and then the message we wanted to say.  For example:  ‘cha Hi there.’   Everyone on the channel would see us say hello, and hopefully someone would respond.  The markers at the front of the message indicate that this came from the chat system.
 
 Channels are considered OOC communication - that means Out of Character.  Even though the message is tagged with your character’s name, it’s assumed that you’re speaking as the *player*, not the character.
 
 ## Pages
 
-Another way to talk to people is through a private message, known as a ‘page’ in MUSH lingo.   Like channels, pages are also OOC communication - a way for one player to talk to one another.
+Another way to talk to people is through a private message, known as a ‘page’ in MUSH lingo.  Like channels, pages are also OOC communication - a way for one player to talk to one another.
 
 Even though you’re talking OOC, the game only knows you by your character name, so that’s what you need to use to talk to each other.  To send a private page to Faraday, for instance, you would type: ‘page Faraday=Hello.  I’m new here.  Can you help me?’    And Faraday would hopefully respond with something like,   “Sure.  What do you need?”
 
@@ -82,9 +82,9 @@ The markers at the front of the message indicate that these are private pages.  
 
 MUSHes have a virtual map consisting of multiple locations (aka ‘rooms’ in MUSH lingo) connected by exits.
 
-Using a theater analogy, some of these locations represent offstage or out-of-character areas.  There might be a backstage player lounge or a welcome room.   Other locations represent onstage or in-character areas.
+Using a theater analogy, some of these locations represent offstage or out-of-character areas.  There might be a backstage player lounge or a welcome room.  Other locations represent onstage or in-character areas.
 
-To see where you are in the game, type ‘look’.   This will show you the description of the room you’re in, along with any other characters in the room with you, and a list of exits leading to other rooms.   Here we can see we’re in the Welcome Room.
+To see where you are in the game, type ‘look’.  This will show you the description of the room you’re in, along with any other characters in the room with you, and a list of exits leading to other rooms.  Here we can see we’re in the Welcome Room.
 
 The letter in brackets next to the exit is the command we type to go that way.  So to leave the Welcome Room and enter the Offstage area, we would type “O”.
 
@@ -94,7 +94,7 @@ Contrary to the name, a MUSH “room” doesn’t have to be just a single room.
 
 ## Going Onstage
 
-Once you’ve gotten a character of your own and you’ve been approved to play, you’ll be able to venture onstage.   Here the rooms represent the actual in-character areas of the game.  In this example here, we’re on the Hangar Deck of the Battlestar Galactica.
+Once you’ve gotten a character of your own and you’ve been approved to play, you’ll be able to venture onstage.  Here the rooms represent the actual in-character areas of the game.  In this example here, we’re on the Hangar Deck of the Battlestar Galactica.
 
 When we see other people onstage, it’s assumed that they’re available to play with - just as an actor would be in-character on a theater stage.  There are exceptions, so it doesn’t hurt to ask first.  You could either page them or use the “OOC” command to make an out-of-character remark to the people in the room with you.
 
@@ -106,7 +106,7 @@ Finally we get to the actual heart of the game - the roleplaying itself.  When t
 
 There are a few commands to do this.  The two most common ones are emit and pose.  Both will show your character's actions and dialogue to the other players in the room.  The only difference is how it's formatted.
 
-An emit is freeform.  You can put whatever text you want into it and it will be shown to the room exactly as you type it.   For example:  'emit A Raptor has just landed and Stirling strides down the ramp...'
+An emit is freeform.  You can put whatever text you want into it and it will be shown to the room exactly as you type it.  For example:  'emit A Raptor has just landed and Stirling strides down the ramp...'
 
 A pose, on the other hand, tacks your character's name on the front automatically as a shortcut.  For example:  ':strides down the ramp of a recently-landed Raptor.'
 

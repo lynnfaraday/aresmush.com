@@ -40,7 +40,7 @@ For example, assume it's currently 2017 in RL.  To make it 1817 you would set th
 
 ## day_offset
 
-You can also shift the game to be a number of days ahead of or behind RL.   You might want to do this if you had a particular starting date in mind (like you wanted to start a WWII game on D-Day even though it wasn't June in RL).
+You can also shift the game to be a number of days ahead of or behind RL.  You might want to do this if you had a particular starting date in mind (like you wanted to start a WWII game on D-Day even though it wasn't June in RL).
 
 For example, if it's June 1, 2017 and you want the date to be 200 years and 6 months ahead of RL, you can do:
 
@@ -68,7 +68,7 @@ You can change this ratio to make IC time pass slower or faster.
 
 To make this work, you also need to set `game_start_date`, which is the RL date that the clock starts running.  This should be a RL date in mm/dd/yyyy format.
 
-For example:  Assume your game started on 6/1/2018.  It is now June 10th 2018 in RL, meaning 10 days have passed since the game started.   If your time ratio was 2, the IC date would be June 20th.  If your time ratio was 0.5, the IC date would be June 5th.
+For example:  Assume your game started on 6/1/2018.  It is now June 10th 2018 in RL, meaning 10 days have passed since the game started.  If your time ratio was 2, the IC date would be June 20th.  If your time ratio was 0.5, the IC date would be June 5th.
 
 
 

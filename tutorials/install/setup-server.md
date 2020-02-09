@@ -12,7 +12,7 @@ tags:
 - code
 ---
 
-Ares needs a few things installed on the server.   For your convenience, a set of install scripts help to automate the necessary setup.
+Ares needs a few things installed on the server.  For your convenience, a set of install scripts help to automate the necessary setup.
 
 {% include custom_install_warning.md %}
 

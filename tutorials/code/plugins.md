@@ -87,7 +87,7 @@ You can place helpers anywhere, but the standard Ares code convention is to put 
 
 The plugins talk to each other through database fields and interface methods (api's).
 
-For example, the Scenes plugin provides the interface method `Scenes.add_to_scene()`, which is used by various utilities (like skills and combat) to add system messages to a scene.   The Ranks plugin provides a database model field so you can do `character.rank`.
+For example, the Scenes plugin provides the interface method `Scenes.add_to_scene()`, which is used by various utilities (like skills and combat) to add system messages to a scene.  The Ranks plugin provides a database model field so you can do `character.rank`.
 
 Methods that are intended to be used across plugins are by convention placed in the plugin's `public` folder.
 
@@ -101,6 +101,6 @@ Removing a plugin completely is another story.
 
 Some optional plugins can simply be disabled through the game configuration.  See [Enabling and Disabling Plugins](/tutorials/config/plugins.html).
 
-For others, though, it takes some code surgery.  You'll need to hunt through the code looking for all references to its models and interfaces.  You'd also have to [remove the fields](/tutorials/code/remove-field.html) from the database itself.   
+For others, though, it takes some code surgery.  You'll need to hunt through the code looking for all references to its models and interfaces.  You'd also have to [remove the fields](/tutorials/code/remove-field.html) from the database itself.  
 
 This can be a pain, yes, but such is the price for having a fully-integrated MUSH-in-a-box system.

@@ -39,7 +39,7 @@ The default demographics are set up for a Battlestar game just so you have an ex
 
 This is a [YAML Hash](/tutorials/config/config-basics/config-files.html#hash-values), with key:value pairs.
 
-The outer hash is just:  `Faction:FactionData`.   
+The outer hash is just:  `Faction:FactionData`.  
 
 FactionData is itself a hash, with key:value pairs of description, wiki page link (optional), and values.
 
