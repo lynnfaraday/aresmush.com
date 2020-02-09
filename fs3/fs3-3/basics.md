@@ -6,6 +6,8 @@ layout: fs3
 
 This article gives a quick introduction to FS3.  It has links to the other main articles.  You can also navigate using the navbar at the side/bottom.
 
+{% include toc.html %}
+
 ## What is FS3?
 
 FS3 (Faraday's Simple Skill System) is RPG system designed for MUSHes, currently in its **Third Edition**.  FS3 is:

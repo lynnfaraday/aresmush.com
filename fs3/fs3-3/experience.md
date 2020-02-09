@@ -10,6 +10,8 @@ Experience reflects the way a character grows and changes over time.
 The default FS3 configuration is geared toward a slower, more realistic progression than you might find in other RPGs.  You can pick up new skills at low-to-mid levels fairly quickly, but reaching the higher levels takes ages. Individual games may customize how fast experience is awarded, and/or how fast abilities can be improved.
 {% endfs3tip %}
 
+{% include toc.html %}
+
 ## Experience Points
 
 Experience Points (XP) are gained periodically to reflect what your character has been learning and/or practicing during that time.  You spend them to improve your abilities.  The number of XP needed to reach the next rating depends on the current rating, so higher skills take longer to learn.

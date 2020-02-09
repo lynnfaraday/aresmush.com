@@ -6,6 +6,8 @@ layout: fs3
 
 This is a quick-reference help file for FS3 ability roll commands.
 
+{% include toc.html %}
+
 ## Basic Rolls
 
 `roll <ability>`

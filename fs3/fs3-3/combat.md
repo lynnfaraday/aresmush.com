@@ -12,6 +12,8 @@ It helps to have a system to quickly, fairly, and consistently determine the out
 Always remember that the purpose of a MUSH is to roleplay. The combat system is designed to support roleplay, not replace it.  If the combat system gives nonsensical results--ignore them!
 {% endfs3tip %}
 
+{% include toc.html %}
+
 <a name="turns"/>
 
 # Turns

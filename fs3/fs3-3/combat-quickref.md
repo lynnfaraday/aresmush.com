@@ -6,6 +6,8 @@ layout: fs3
 
 This is a quick-reference help file for FS3 combat commands.  For full details on the combat system, see the [FS3 Combat Player's Guide](/fs3/fs3-3/combat.html).
 
+{% include toc.html %}
+
 ## Interactive Tutorial
 
 An interactive tutorial to introduce you to the basic combat commands is available [here](/fs3/fs3-3/combat-walkthrough.html).

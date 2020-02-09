@@ -6,6 +6,8 @@ layout: fs3
 
 Luck Points in FS3 are a way to give your character an edge from luck or fate.
 
+{% include toc.html %}
+
 ## Ability Rolls
 
 You can spend Luck Points in various ways to help your ability rolls.

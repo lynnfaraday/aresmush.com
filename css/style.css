@@ -755,6 +755,10 @@ pre.prettyprint {
   color: #eee;
 }
 
+.fs3-menu-toggle {
+  color: #3C8575;
+}
+
 @media (max-width:800px)  { 
 
     .fs3-shortcut {

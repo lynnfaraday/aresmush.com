@@ -14,6 +14,8 @@ However, FS3 is *designed and optimized for* games that are:
 
 This article will discuss those three points and why they're important when considering whether FS3 is a good choice for your game.
 
+{% include toc.html %}
+
 # Cooperative
 
 FS3 allows players to start out at different power levels.  Thus it works best when players work *together* against a common enemy.  When one character can be a Navy SEAL and another a raw recruit, it's not really fair to pit them against each other.

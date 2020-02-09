@@ -6,6 +6,8 @@ layout: fs3
 
 One of the common complaints with FS3 is that it encourages min-maxing because it has linear chargen costs and exponential XP costs.  This article addresses why it is this way and what you can do to ensure that it doesn't get taken to extremes.
 
+{% include toc.html %}
+
 ## Why is FS3 This Way?
 
 I've studied RPG systems for decades, and FS3 embodies elements from my favorite systems.  Two things that my favorite systems have in common:

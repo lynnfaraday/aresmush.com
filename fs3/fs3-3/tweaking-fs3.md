@@ -6,6 +6,8 @@ layout: fs3
 
 This article gives some tips to game designers for customizing and Customizing FS3.
 
+{% include toc.html %}
+
 # Attributes
 
 The six attributes are designed to cover the basic aspects of a character.  There are two for physical strength/finesse (Brawn and Reflexes), two for mental strength/finesse (Grit and Wits), and two that are a blend of physical and mental (Perception and Presence). 

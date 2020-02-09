@@ -6,6 +6,8 @@ layout: fs3
 
 This help file is aimed at people who are organizing FS3 Combat scenarios.  Typically this will be staff, but with FS3 anyone can run a combat.
 
+{% include toc.html %}
+
 # Joining People to Combat
 
 The organizer can force other people (PCs or NPCs) to join the combat.  For example: `combat/join Marine1 Marine2=123`.  Often this is faster/simpler than paging a bunch of people with the combat number and expecting them to do it.
