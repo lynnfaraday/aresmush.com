@@ -69,6 +69,10 @@ The game will post trending scenes (i.e. recent scenes with the most 'likes' on 
 
 Character cards are mini-profiles that are shown when you click on a character's icon next to their pose. If you enable this setting, the game will use your own custom code for the character cards instead of the built-in ones.  See [Custom Character Cards](/tutorials/code/hooks/char-cards.html).
 
+## related_scenes_filter_days
+
+The 'related scenes' dropdown doesn't show ALL scenes for performance reasons.  It will only show scenes that have been shared within a certain number of days.  You can configure that limit.
+
 ## Custom Scene Pose Buttons
 
 Below the pose editor in a live scene is a row of buttons including "Add Pose" and "Add OOC".  With custom code, you can add custom buttons here that make use of the contents of the scene pose window--for instance, for sending a text message. See [Custom Scene Buttons](/tutorials/code/hooks/scene-buttons.html).

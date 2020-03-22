@@ -30,7 +30,7 @@ Near-future sci-fi works, as long as your weapons and armor can be modeled simil
 
 Medieval settings work just fine, though there are fewer combat options available. You don't have burst fire, explosions, suppression, etc. to add variety to the fights.
 
-FS3 is not designed for superhero/supernatural/magical games.  It simply has no concept of "powers" or "spells", and the rating system breaks down when you start rolling superhuman abilities.  There have been many a game that thought they had a "Big Bad" beastie ready to give the PCs a hard time, only to have it felled in a single turn.  The numbers *just don't scale* for beyond-human abilities.
+FS3 is not designed for superhero/supernatural/magical games.  It simply has no concept of "powers" or "spells", and the rating system breaks down when you start rolling superhuman abilities.  Many a game has thought they had a "Big Bad" beastie ready to give the PCs a hard time, only to have it felled in a single turn.  The numbers *just don't scale* for beyond-human abilities.
 
 # Focused
 

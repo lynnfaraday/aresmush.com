@@ -35,3 +35,12 @@ The name in `id=systemgoals` must match the name you used in the tab navigation 
 {% endtip %}
 
 Here we're using the ansi-format helper because the goals can contain fancy formatting.  For a raw text field we could have just used char.goals by itself.
+
+If you ever want more tabs, add them the same way as the first.  Just make sure they all have unique IDs.
+
+## Test the Display
+
+You should have enough in place now to test the display component.  But first we need to tell the game to reload your new code.
+
+`load profile` - Loads the web request updates on the game side.
+`website/deploy` - Updates the templates on the web side.

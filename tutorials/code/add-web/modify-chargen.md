@@ -18,4 +18,8 @@ We addressed editing goals from the character profile page, but what about durin
 - Chargen template: `ares-webportal/app/templates/components/chargen-custom-tabs.hbs` and `ares-webportal/app/templates/components/chargen-custom.hbs`
 - Chargen controller: `ares-webportal/app/components/chargen-custom.js`
 
+{% note %}
+save_fields_from_chargen allows you to return error/warning messages.  Always return a list from that method--either `return []` if everything's OK, or a *list* of messages like `return [ "Something was bad." ]` or `return [ "Something was bad.", "Something else was also bad." ]`.
+{% endnote %}
+
 Don't forget, you can always [ask for help](/feedback.html) if you get stuck.

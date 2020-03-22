@@ -44,7 +44,7 @@ To configure the rest of the Login plugin:
 1. Select Admin -> Setup.
 2. Edit `login.yml`
 
-### Disabling Creating New Characters
+### allow_creation and creation_not_allowed_message
 
 The default behavior allows players to create their characters right from the login screen.  You might want to disable this if you have a roster-only game or require email registration or an invitation.
 

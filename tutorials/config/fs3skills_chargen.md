@@ -57,11 +57,11 @@ These are soft limits.  The system will let someone go over them, but a warning 
 
 This is the maximum Ability Points a character can spend.  Free skills and attributes don't count toward this total.
 
-### max_points_on_attrs and max_points_on_action
+### max_points_on_attrs, max_points_on_action, and max_points_on_advantages
 
-This is the maximum number of chargen points a character can spend on attributes and action skills.  Ratings 1-2 (for attributes) and 1 (for action skills) are **not** counted towards the total.  
+This is the maximum number of chargen points a character can spend on attributes, action skills and advantages.  Ratings 1-2 (for attributes) and 1 (for action skills) are **not** counted towards the total.  
 
-Attributes cost 2 points per dot and skills cost 1 point per dot.  For exmple - setting `max_points_on_attrs` to 10 would allow you to buy 5 attribute dots above level 2.
+Attributes cost 2 points per dot and skills cost 1 point per dot.  For example - setting `max_points_on_attrs` to 10 would allow you to buy 5 attribute dots above level 2.  The cost for advantages is configurable.
 
 Note: These limits also apply to XP spent after chargen, unless modified by the XP settings (see [Configuring FS3 XP](/tutorials/config/fs3skills_xp.html)).
 

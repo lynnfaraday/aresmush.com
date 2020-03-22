@@ -62,7 +62,7 @@ By default, the AresMUSH repository does not contain configuration files.  This 
 
 You *can* add your config files to source control, but there are a few caveats:
 
-* You'll have to be careful *not* to push changes to server.yml between your test game and real game, or it can mess up your server settings.
+* You'll have to be careful *not* to push changes to server.yml, secrets.yml and sites.yml between your test game and real game, or it can mess up your server settings or expose sensitive information.
 * If your test game is missing roles, forum categories, etc. that are in your real game and used in your config files, you may get errors or unexpected behavior.
 
 If you still want to add your config files to source control, here's how.

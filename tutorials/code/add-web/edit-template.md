@@ -43,3 +43,9 @@ The controls above let us *enter* the data.  To actually *send* the data to the 
 The controller has as an `onUpdate` method that gets activated when the player clicks the 'save' button.  In there it sets up a hash with all the profile data the player entered.  We'll add our goals to it.
 
     return { goals: this.get('char.custom.goals') }
+    
+{% tip %}
+If you ever need to support multiple custom fields, you have to combine them into a single return statement.
+
+`return { goals: xxx, other: xxx }`
+{% endtip %}

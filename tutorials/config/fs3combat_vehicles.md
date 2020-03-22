@@ -85,7 +85,7 @@ See **[mounts](http://aresmush.com/fs3/fs3-3/combat-mechanics.html#mounts)** to 
 
 ### toughness
 
-When a mount is hit, they roll this number of dice as a KO roll.  This is the total number of dice, so 4 would reflect an average value.
+When a mount is hit, they roll this number of dice as a KO roll.  This is the total number of dice NOT a modifier, so 4 would reflect an average value.
 
 ### unmounted_bonus
 

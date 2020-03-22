@@ -71,6 +71,20 @@ The jobs system has two special status values:
 * `active_statuses` - **This is a list**.  Jobs with these status values show up in the 'Active' jobs filter.
 * `closed_statuses` - **This is a list.** Jobs with these status values are assumed to be closed and do not show up on the current jobs list.  You need to use the jobs/all command to see them.  Includes "DONE" and "ARCHIVED" by default.
 
+### Status Filters
+
+There are several built-in status filters, like "ACTIVE", "UNREAD" and "ALL".  You may wish to define others depending on your status configuration.  Status filters consist of a name and a list of statuses included in that filter.  
+
+For example, we might want a 'TODO' filter for jobs that are new or on hold:
+
+    TODO:
+      - NEW
+      - HOLD
+
+{% tip %}
+You technically can define a filter for _each_ status value individually, but that may make for a spammy filter list.
+{% endtip %}
+
 ## archive_job_days and archive_cron
 
 Jobs are automatically archived a certain number of days after they're closed.  Archived jobs are not included in the basic jobs list, but can still be searched.  The delay between closing and archiving gives other staffers a chance to read the final job comment.

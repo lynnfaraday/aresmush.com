@@ -25,6 +25,7 @@ There are a few special conditions that require advanced upgrade procedures.
 * If you've made custom code changes, see [Upgrading With Custom Code Changes](#upgrading-with-custom-code-changes) below.
 * If you didn't use the standard install scripts and have a custom environment, see [Upgrading With a Custom Environment](#upgrading-with-a-custom-environment) below.
 * If the release notes say that a game restart is required, see [Upgrade With a Restart](#upgrade-with-a-restart) below.
+* If the release notes have any **special upgrade notes**, you may need to take additional steps as specified in the release notes.
 
 If none of those apply, upgrades are super easy.
 

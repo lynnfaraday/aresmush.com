@@ -36,13 +36,16 @@ The findsite command (help findsite) helps you to find the IP and host of a trou
 
 Only part of a site needs to match, so listing `verizon.net` would block 123.456.pool.verizon.net and 678.901.pool.verizon.net and so forth.  
 
+{% note %}
 This is a 'contains' search, so wildcards (like *) are not supported.
-
-{% tip %} 
 Be wary of making the match *too* broad.  You don't want to block an entire region of the country.
-{% endtip %}
+{% endnote %}
 
 ## Banning Proxy Sites
 
 To enable the proxy site ban, set `ban_proxies` to true.  
+
+{% note %}
+Enabling this feature requires either a game restart, or a coder character doing `ruby Login.update_blacklist` to initialize the proxy blacklist.  After the initial load, it will be periodically updated.
+{% endnote %}
 

@@ -25,3 +25,9 @@ Instead we edit `aresmush/plugins/profile/custom_char_fields.rb` and modify the 
 Here we're using the `format_markdown_for_html` helper method to turn ansi, carriage returns and other formatting codes into HTML-friendly equivalents for display on the web portal.
 
 Note that this code makes goals visible to everybody.  You could optionally use the `viewer` parameter to limit who can see them.
+
+{% tip %}
+If you ever need to support multiple custom fields, you have to combine them into a single return statement.
+
+`return { goals: xxx, other: xxx }`
+{% endtip %}

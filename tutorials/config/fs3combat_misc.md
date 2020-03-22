@@ -48,15 +48,25 @@ For combatants with vehicles, hit location is for the pilot, not the vehicle.  V
 
 ### weapon and weapon_specials
 
-(**Optional**) You may give the combatant a weapon and weapon specials.
+(**Optional**) You may give the combatant a weapon and weapon specials.  Weapon specials are specified separately as a list.  For example:
+
+    Soldier:
+      weapon: Rifle
+      weapon_specials:
+      - Ap
 
 {% note %} 
 For combatants with vehicles, they will select the vehicle's default weapon if you don't specify a combatant weapon.
 {% endnote %}
 
-### armor
+### armor and armor_specials
 
-(**Optional**) You may give the combatant armor.
+(**Optional**) You may give the combatant armor and armor specials.  Armor specials are specified separately as a list.  For example:
+
+    Swat:
+      armor: Police
+      armor_specials:
+      - Helmet
 
 {% note %} 
 For combatants with vehicles, armor is for the pilot, not the vehicle.  Vehicles automatically have their own hit armor.

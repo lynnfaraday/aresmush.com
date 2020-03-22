@@ -141,7 +141,7 @@ Both suppression and distract do no damage, but instead reduce the opponent's ef
 
 Suppressive fire keeps the target's heads down and applies negative modifiers to their attacks.  To attack multiple targets, you need either an explosive weapon or a fully automatic one (using an 8 round burst).
 
-Distractions can disorient a target.  This action applies less of a modifier than suppression, but it uses no ammo and applies to _both_ attacks and defense.
+Distractions can disorient a target, causing them to not be able to act for the rest of the turn.
 
 
 ### Subdue / Escape

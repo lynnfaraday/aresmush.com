@@ -48,7 +48,7 @@ Each turn, you can take a single action.
 
 * **Subdue** – Subdue is a melee attack that does no damage but has a chance of subduing the target.  Subdued targets may not act until they successfully escape or the attacker stops subduing them. 
 * **Escape** – If you have been subdued, you can attempt to escape during your action.
-* **Distract** - Similar to suppress, this attack does no damage but imposes a distraction modifier to the target.
+* **Distract** - This attack does no damage, but causes the target to not be able to act for the rest of the turn.
 
 ## Supportive Actions
 

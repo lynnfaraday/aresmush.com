@@ -14,7 +14,7 @@ For those who care about the nitty-gritty about how the combat system works, thi
 
 Initiative is a based on a simple roll of whatever is configured as the initiative stat (Alertness by default, which represents situational awareness).  Most successes goes first.  Ties are broken by a random die roll. 
 
-You can get 3 extra initiative dice by spending luck.  You also get 3 dice for subdue, suppress or distract actions.  Since their main effects expire at the end of the turn, this initiative bonus helps them to be more relevant.
+You can get 3 extra initiative dice by spending luck.  You also get 3 dice for subdue, suppress or distract actions.  Since their main effects expire at the end of the turn, this initiative bonus helps them to be effective.
 
 # Attacks
 
@@ -22,19 +22,21 @@ You can get 3 extra initiative dice by spending luck.  You also get 3 dice for s
 
 Aiming givs a +3 bonus to attack the next turn. Spending more than one turn aiming does not increase the modifier, and the modifier is lost if you switch targets.
 
-## Suppress and Distract
+## Suppress
 
-Suppression and distraction are both resolved by making an attack roll as normal, with a defense of a Composure Roll instead of the normal defense skill. If the attack “hits”, no damage is done but a penalty is applied.
+Suppression is resolved by making an attack roll as normal, with a defense of a Composure Roll instead of the normal defense skill. If the attack “hits”, no damage is done but a penalty is applied.
 
-For suppression, the penalty applies a number of stress points equal to 2 plus the difference between the attacker and defender’s roll results. 
+The penalty applies a number of stress points equal to 2 plus the difference between the attacker and defender’s roll results. 
 
 For example: Bruno fires his pistol to suppress Tom. Bruno rolls a 3 Hits and Tom rolls 1, giving a difference of 2. This inflicts 4 stress points on Tom.
 
 A fully automatic or explosive weapon can suppress up to 3 targets in a single turn. Each target requires a separate attack and defense roll.
 
-For distraction, there's a distract penalty (separate from suppression) equal to the difference between the attacker and defender’s roll results. 
+Suppression penalties apply to attacks only.
 
-Suppression penalties apply to attacks only.  Distraction penalties apply to both attacks _and_ defense. 
+## Distract
+
+The distract action can switch an attacker's action to 'pass', effectively causing them to lose a turn.  This is resolved by making an attack roll against the defender's Composure.  If the attack "hits", no damage is done but the target can take no other action for the rest of the turn.
 
 ## Subdue and Escape
 

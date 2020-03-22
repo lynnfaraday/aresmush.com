@@ -70,6 +70,10 @@ Make sure the groups used in the message actually exist, or you'll get an error 
 
 You can configure the contents of a mail message sent to a new player when they are taken off the roster.  You might use this to tell them the wiki password or any special instructions for getting started.
 
+## restrict_roster
+
+Set this to true if you want **all** characters on the roster to require an application.
+
 ## default_contact
 
 If a character on the roster doesn't have a specific contact person (for questions about the character), this will used.  It defaults to "Admin" but you could make it a specific person or something like "App Staff".
@@ -87,3 +91,11 @@ You can configure which fields appear on the roster list.  For each field, you c
       title: Position
 
 A complete description of all available fields - and how to create custom fields - can be found in the "who_fields" option in the [Who/Where Configuration](/tutorials/config/who.html).
+
+## roster_app_template
+
+You can use this field to tell players what information is required for a roster application.
+
+## roster_app_category
+
+Roster applications will use this job category.

@@ -65,3 +65,7 @@ The clearing happens on the timetable specified by the cron config.  See the [Cr
 ## recall_buffer_size
 
 Sets the number of messages available in the channel recall (and thus the web portal chat) for all channels.
+
+## discord_gravatar_style and discord_prefix
+
+These two options are used by the [Discord App](https://github.com/AresMUSH/ares-discord), an extension for AresMUSH that lets you connect your in-game chat channels to a Discord server.  If you don't have the app installed, they do nothing.

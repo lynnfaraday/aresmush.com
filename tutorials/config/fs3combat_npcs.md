@@ -16,6 +16,10 @@ You can configure the skill levels used by NPCs in FS3 combat.
 
 You can define the NPC types available in your game.  The standard ones are Goon, Henchman, Miniboss and Boss.
 
+### Big Bads
+
+Some games try to have a "big bad" type of NPC level with dice pools of 15+.  However, giving somebody a ton of dice to roll does NOT make them unstoppable by any stretch.  Many a game has thought they had a "Big Bad" beastie ready to give the PCs a hard time, only to have it felled in a single turn.  The numbers *just don't scale* for beyond-human abilities.
+
 ### default
 
 The default rating is what the NPC rolls for skills by default.
