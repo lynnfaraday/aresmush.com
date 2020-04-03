@@ -51,7 +51,7 @@ You don't need a separate host name for the test game; you can just use the drop
 
 ### Installing on Your Local Mac
 
-If you have MacOS installed on your home PC, you can actually install your own copy of Ares and run the code locally.  This makes testing a breeze.
+If you have MacOS installed on your home PC, you can actually install your own copy of Ares and run the code locally.
 
 1. Install [Homebrew](https://brew.sh/), Mac's package manager.
 
@@ -129,7 +129,6 @@ Your VM is now ready to use.  You can leave it powered off whenever you're not u
 
 To change the code on the VM, you can use any of the methods described in the [Editing Code](/tutorials/code/edit-code/) tutorial.  You can edit code directly through the SSH client, upload new code via FTP (the VM will accept SFTP on 127.0.0.1) or use GitHub to push code to the cloud and then pull it down to the server.
 
-
 ### Installing on Your Droplet
 
 If you're using the standard installation setup (on a droplet or other virtual private server), you can install a test game on the same droplet.
@@ -150,11 +149,12 @@ Before we start, a few things you should know:
 
 2. Log out and then log back in with the new arestest user using the password printed on-screen in step 1.
 
-3. **With the arestest user**, run the following commands to create a copy of the database configuration file and a place for your second database to live
+3. **With the arestest user**, run the following commands to create a copy of the database configuration file and a place for your second database to live. This will prompt you for your password.
 
-        cp /etc/redis/redis.conf redis.conf
+        sudo cp /etc/redis/redis.conf redis.conf
+        sudo chown arestest redis.conf
         mkdir redis
-        chgrp redis redis
+        sudo chgrp redis redis
  
 4. Edit the redis.conf file to make the following changes:
 
@@ -174,23 +174,33 @@ Before we start, a few things you should know:
     
         chmod +x setup_test_game
     
-        sudo ./setup_test_game
-
+        ./setup_test_game
+        
         export NVM_DIR="$HOME/.nvm"
         [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
 
 6. Assuming everything installed correctly, **log out then back in again**.
 
-7. Then execute the following commands:
+7. Execute this command.
 
 > <i class="fa fa-exclamation-triangle"></i> **Note:** 
-> 3. For configuring the game, you don't need a new host name.  You can just use the IP address of the droplet.  
-> 4. Use different ports for everything, **especially** the database port.  This will initialize the database fresh, and you don't want to wipe out your main game's database.
+> Use different ports for everything, **especially** the database port (which should be the port you used in step 4 above).  This will initialize the database fresh, and you don't want to wipe out your main game's database.
 
         bin/configure
+
+8. **DOUBLE CHECK** that the database port in `aresmush/game/config/database.yml` is the one for your test database, not your real database.
+
+9. Find your new database password from `aresmush/game/config/secrets.yml`.
+
+10. Edit your `redis.conf` file.  At the end is a line like: `requirepass "SOMEPASSWORD"`.  Replace the password with the one from the secrets file.
+
+11. In another terminal shell, run:   `redis-server /home/arestest/redis.conf`
+
+12. Run this command. It should tell you that your database has been initialized.
+
         bin/wipedb
 
-To start your game:
+#### Starting The Test Game
 
 The game will not be running 24/7 like your main game.  When you want to start it, you'll need to open three separate terminal shells and do:
 
@@ -202,6 +212,9 @@ The game will not be running 24/7 like your main game.  When you want to start i
         
         Third shell, from the ares-webportal directory:
           bin/devportal
+
+The web portal will be running on http://yourhost:4200   -- note the :4200 part
+The game will be running on whatever port you configured.
 
 ## Getting Code to the Test Game
 
@@ -217,3 +230,7 @@ You edit code on the test game the same way you do on the real game: through dir
 {% include pretty_image.html file='/code/git-test.png' %}
 
 For more help using GitHub, including GitHub desktop, see the [Git tutorial](/tutorials/code/git.html).
+
+{% warning %}
+Do not use the `upgrade` script or command on test games unless they're running on their own droplet.
+{% endwarning %}

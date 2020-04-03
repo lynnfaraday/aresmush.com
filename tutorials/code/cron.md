@@ -31,13 +31,13 @@ All of the built-in cron jobs allow you to configure when they run.  See the rel
 
 The `is_cron_match?` utility lets you specify when a cron job is supposed to run.  There are four components of the cron configuration:
 
-* date - What day(s) of the month it runs. 
+* day - What day(s) of the month it runs. 
 * day\_of\_week - What day(s) of the week it runs.  
 * hour - What hour(s) it runs.  Uses 24-hour time.
 * minute - What minute(s) of the hour it runs.
 
 {% tip %} 
-Avoid specifying both date *and* day of week, or you'll end up with a job that only runs on Tuesdays that happen to fall on the 1st of the month.
+Avoid specifying both day *and* day of week, or you'll end up with a job that only runs on Tuesdays that happen to fall on the 1st of the month.
 {% endtip %}
 
 {% tip %} 
@@ -52,7 +52,7 @@ If you don't care about a component, just leave it out.  Some common examples ar
 
 Runs on the 1st of every month at midnight (doesn't care what day of the week it is):
 
-    date: 
+    day: 
     - 1
     hour: 
     - 00

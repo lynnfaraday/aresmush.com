@@ -35,6 +35,7 @@ These articles detail all of the config settings available in the game.
 * [Configuring Date and Time Formats](/tutorials/config/datetime.html)
 * [Configuring Demographics](/tutorials/config/demographics.html)
 * [Configuring the Description System](/tutorials/config/describe.html)
+* [Configuring the Emoji](/tutorials/config/emoji.html)
 * [Configuring the Events System](/tutorials/config/events.html)
 * [Configuring the Forum System](/tutorials/config/forum.html)
 * [Configuring the Game Directory Info](/tutorials/config/game.html)
