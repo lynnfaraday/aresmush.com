@@ -45,7 +45,7 @@ The first step in using GitHub for your own game code is to create your own semi
 
 ## Making the Game Use the Fork
 
-GitHub will pull from whatever repository you cloned when you set the game up. If you need to add the fork after the game is installed, you’ll need to re-point the GitHub “origin” to your forked repository instead of the main one.
+GitHub will pull from the main ares repo when you set the game up. To use your own fork, you'll need to re-point the GitHub “origin” to your forked repository instead of the main one.
 
 In the server shell:
 
@@ -82,6 +82,11 @@ Git will still ignore other parts of the game directory, including uploads, logs
 ## Git from the Game
 
 You can actually execute selected `git` commands from within the game without needing to connect to the server shell.  See `help git` in-game.  This is handy if you're using GitHub to sync changes between a local PC and the server because you can push to GitHub from your PC and pull the code down from inside the game itself.
+
+You can't do commits or pushes from within the game (because they require some interaction with the shell), but you can do them from your server shell.  If you want to do this, you should configure your GitHub email and username in the shell.
+
+    git config --global user.email "YOUR_EMAIL"
+    git config --global user.name "YOUR_NAME"
 
 <a name="upgrade"></a>
 

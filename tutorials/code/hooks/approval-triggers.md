@@ -17,7 +17,7 @@ Here's an example of how to assign a role based on the character's faction (assu
 
     def self.custom_approval(char)
       faction = char.group("Faction")
-      role = Role.find_by_name(faction)
+      role = Role.find_one_by_name(faction)
       if (role)
         char.roles.add role
       end

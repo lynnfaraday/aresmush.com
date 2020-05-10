@@ -35,10 +35,6 @@ You should use the 'ares' user for everything from now on, reserving the root us
         export NVM_DIR="$HOME/.nvm"
         [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
 
-{% tip %} 
-If you already have a GitHub fork, you can pass the HTTPS clone urls to the install script: `./install <game code clone URL> <Web Portal clone URL>`   If you don't have a GitHub fork (or don't know what that even means) then just leave off those URLs.
-{% endtip %}
-
 {:start="3"}
 3.  Enter your ares password when prompted.
 
@@ -50,16 +46,14 @@ This will take several minutes.  There will be a lot of spam, but eventually it 
 
 These are the basic settings you'll need to enter:
 
-* **Database URL** - Where the database server lives.  If you're using the standard setup scripts, it's `127.0.0.1:6379`
-* **Server Hostname** - The the game's [host name](/tutorials/install/getting-a-hostname.html) or IP Address.  Use the actual IP or host name, not just "localhost".
+* **Server Hostname** - The the game's [host name](/tutorials/install/getting-a-hostname.html), like yourmush.aresmush.com or your custom domain.  If you don't have a domain name, you can just use your server's IP address.
 * **Server Telnet Port** - See ports, below.
 * **Server Websocket Port** - See ports, below.
 * **Server Web Portal Port** - See ports, below.
 * **MUSH Name** - Name your game.
-* **MUSH Description** - A short blurb about your game (optional).
-* **Category** - Pick which category best describes your MUSH for the Ares games directory.
-* **GitHub Email** - See GitHub, below.
-* **GitHub Name** - See GitHub, below.
+* **Database URL** - See ports, below.
+
+You can edit the MUSH name, description and other game directory details later in the [Game Directory settings](/tutorials/config/game.html).
 
 ### Ports
 
@@ -71,12 +65,8 @@ The **Websocket Port** and **Engine API Port** are behind-the-scenes ports that 
 
 The **Web Portal Port** is where your Web Portal is running. (default 80)  '80' works if the Web Portal is the only website running on the server.  Otherwise you'll need to pick a custom port and access the Web Portal through a URL like http://mush.somewhere.com:8081.
 
+The **Database URL** is the server/port for connecting to the database.  If you're using the supported environment, it's `127.0.0.1:6379`.
+
 {% note %} 
  Be aware that running the Web Portal on a port other than '80' may prevent some players from accessing it through their work/school firewalls.
 {% endnote %}
-
-### GitHub
-
-AresMUSH is stored in GitHub, a popular software version control system.  Sometimes you need to interact with GitHub to retrieve Ares code updates.  For this, GitHub needs to be configured with an email and a name.  
-
-If you plan to use GitHub to store [your own code changes](/tutorials/code/git.html), then you should use the email address associated with that GitHub account.  Otherwise, enter any email/name - even a dummy one.
