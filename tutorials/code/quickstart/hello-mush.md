@@ -25,5 +25,5 @@ In your MU client, type this:
 The game should respond by saying hello to you.
 
 {% tip %} 
-Wondering where client and enactor come from?  Stay tuned for details.  For now, just know that  `client`  lets you communicate with the MUSH client (like by sending an emit) and  `enactor`  is the character object running the command.
+Wondering where enactor came from?  Stay tuned for details.  For now, just know that `enactor`  is the character object running the command.
 {% endtip %}

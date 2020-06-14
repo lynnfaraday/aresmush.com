@@ -152,6 +152,15 @@ For a dividing line, just use:
 
     - divider: true
 
+## Search Box
+
+Ares comes with a rudimentary search engine for the web portal, but you can also set up [Google Custom  Search Engine](https://cse.google.com/cse/all).  Just log in with your Google account and add your site.  The GCSE control panel will tell you your search engine ID, which will be a string of numbers and letters like:  `123456:abcdef`. 
+
+1. Select Admin -> Setup
+2. Edit `secrets.yml`.
+
+Enter your search engine ID under the gcse option.
+
 ## Configuring Recaptca
 
 You can use Google's [Recaptcha](https://www.google.com/recaptcha/intro/) to keep bots from creating accounts.  This is optional, but if you don't turn it on you should disable `allow_web_registration`.  Otherwise you'll get bot accounts for sure.

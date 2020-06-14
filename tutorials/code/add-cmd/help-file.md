@@ -21,7 +21,7 @@ In this tutorial, we're going to start by creating the final file, and then take
 
 ## Create the Help File
 
-Create a file in `aresmush/plugins/custom/help/en` named `goals.md`.  Give it the following text:
+Create a file in `aresmush/plugins/custom/help/en` named `goals.md`.  The directory probably won't exist at first, so you'll need to create it by using `mkdir`.  Give the file the following text:
 
     ---
     toc: Character Creation

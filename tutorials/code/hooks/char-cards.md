@@ -11,26 +11,48 @@ tags:
 
 Character cards are mini-profiles that are shown when you click on a character's icon next to their pose.  You can design your own custom character cards with custom code.  There are three steps to this:
 
-1. Set `use_custom_char_cards` to true in the scenes configuration.
-2. Implement the web template for your card display in `ares-webportal/app/templates/components/char-card-custom.hbs`.
-3. If you need extra data beyond what's already provided, implement custom fields in the `custom_char_card_fields` method of `aresmush/plugins/scenes/custom_char_card.rb`
+## Enable Custom Cards
 
-For example, say we wanted to show traits.  In the custom fields you could set the traits:
+First you need to enable custom cards by setting `use_custom_char_cards` to `true` in the [scenes configuration](/tutorials/config/scenes.html)
+
+## Create Your Template
+
+Initially, your custom card will be blank.  To make it show something, you'll need to put some code into  `ares-webportal/app/templates/components/char-card-custom.hbs`.
+
+You'll probably want to start by copying the code from the [standard template](https://github.com/AresMUSH/ares-webportal/blob/master/app/templates/components/char-card.hbs) and pasting it into your custom card file.  You can then tweak it, add new styling, or completely change the look and feel.
+
+There are a number of character fields available for use in the template.  You use them like `char.name` or `char.description`.
+
+
+| Field | Description |
+|----|----|
+| `name` | Character name. |
+| `demographics` | A list of all demographics, each with `name` and `value` properties. |
+| `groups` | A list of group affiliations and rank, each with `name` and `value` properties. |
+| `all_fields` |  Contain group, demographic, and rank data in a form where you can easily look up specific values, like `char.all_fields.faction` or `char.all_fields.height`. |
+| `description` | Current description. |
+| `status_message` | Special status, like NPC. |
+| `is_ooc` | If the character is an OOC bit, like a staffer or playerbit. |
+| `icon` | Icon data. |
+| `custom` | Any custom fields you define, as explained in the next section. |
+
+## Add New Data
+
+If you want to show data that isn't already available, you'll have to add it in the custom fields section.  To do this, implement custom fields in the `custom_char_card_fields` method of `aresmush/plugins/scenes/custom_char_card.rb`
+
+For example, if you wanted to show RP Hooks you could do:
+
 
     def self.custom_char_card_fields(char, viewer)
       {
-         traits: char.traits.map { |k, v| { name: k, description: v } }
+         hooks: Website.format_markdown_for_html(char.rp_hooks)
       }
     end
 
-And then in the web template here's a simple display.
+You'll want to use the markdown formatter for freeform text that might include ansi or markdown codes.
+
+Once you've made the data available, use it in your web template like so:
 
 <pre>
-    &#x7b;&#x7b;#each char.custom.traits as |trait|}}
-    &lt;p>&lt;b>&#x7b;&#x7b;trait.name}}:</b> &#x7b;&#x7b;trait.description}}&lt;/p>
-    &#x7b;&#x7b;/each}}
+    &#x7b;&#x7b;char.custom.hooks}}
 </pre>
-
-{% note %} 
-Your custom fields will be under `char.custom`.  You can also use any of the basic fields.  Use the `char-card.hbs` for reference.
-{% endnote %}

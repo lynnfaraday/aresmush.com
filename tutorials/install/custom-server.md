@@ -23,15 +23,16 @@ This article details the system requirements to help you find the right server a
 
 The supported environment for the automated Ares installer is:
 
-* Ubuntu Linux. (Ares has been fully tested on Ubuntu 16.04 and 18.04.)
-* 1GB RAM.
-* A VPS server, such as a [Digital Ocean droplet](/tutorials/install/digital-ocean.html) or [Linode](https://www.linode.com/?r=80bc21df5f92ff5773de26419237b57a203623bd) with **nothing but the starter image** installed.  
+* A [Digital Ocean droplet](/tutorials/install/digital-ocean.html).
+* At least 1GB RAM (larger games may need the 2GB droplet).
+* Ubuntu Linux 16.04 or 18.04.
+* **Nothing but the starter image** installed.   
 
 Hard drive space is not generally a concern.  In testing, a database with 1000 rooms, exits and characters was about 2MB in size.  Considering most modern servers have multiple GB, the amount used by Ares is insignificant.
 
 ## Custom Environments
 
-Of course you are welcome to use your own custom environment.  Maybe you have your own existing server or favored cloud server provider.  Ares has run on OSX and could conceivably run on any linux variant.  
+Of course you are welcome to try your own custom environment.  Maybe you have your own existing server or favored cloud server provider.  Ares has run on OSX and could conceivably run on any linux variant.  
 
 {% tip %}
 Support for custom setups is limited.  You're welcome to ask for help but we may not be *able* to help you.  Using a custom environment is only recommended for people with server admin experience (or a server admin buddy).

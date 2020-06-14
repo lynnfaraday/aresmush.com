@@ -41,7 +41,7 @@ As you continue to build your game, you'll probably find other [config settings]
 
 ## Building the Grid
 
-A full grid is not strictly required for Ares games, since scenes can take place in temp rooms via the scene system. Most games will want to build one, though, and for that you can see the `help building tutorial` in your game.
+A full grid is not strictly required for Ares games, since scenes can take place in temp rooms via the scene system. Most games will want to build one, though.  For help, see 'Help -> Game Help -> Building Tutorial' in the web portal, or `help building tutorial` from the in-game commands.
 
 ## Setting Up Staff Roles
 
@@ -49,7 +49,7 @@ Ares is set up with only three staff roles by default: builder, coder and admin.
 
 ## Getting Help
 
-The aresmush.com tutorials are a good starting point, especially the system overviews in [Managing Ares](/tutorials/manage). For actual game command syntax, you'll want to see the in-game help files. (For example, `help manage apps` for application-related commands).  If you're ever stuck, don't hesitate to [ask for help](/feedback.html).
+The aresmush.com tutorials are a good starting point, especially the system overviews in [Managing Ares](/tutorials/manage). For actual game command syntax, you'll want to see the in-game help files, which are available through the web portal (under 'Help -> Game Help' or the `help` command).  If you're ever stuck, don't hesitate to [ask for help](/feedback.html).
 
 ## Custom Code
 

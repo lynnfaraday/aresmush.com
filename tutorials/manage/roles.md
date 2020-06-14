@@ -108,6 +108,7 @@ If you want to know exactly which commands are accessible with these permissions
 | manage_idle | |
 | manage_login | |
 | manage_notes | |
+| manage_profiles | |
 | manage_ranks | |
 | manage_roster | |
 | manage_scenes | |

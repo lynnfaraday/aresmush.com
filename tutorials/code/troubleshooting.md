@@ -41,8 +41,10 @@ The configuration files use YAML, and there are several common issues that can r
 Sometimes you'll see an error in the logs like "Couldn't start the game: error=no acceptor (port is in use or requires root privileges)".  This usually means:
 
 1. Your game is already started.  Maybe it auto-started after a reboot and you're unnecessarily trying to start it again.
-2. Some other application is using the port you want to use.  This is unlikely if you're using a high port number (>1024).
-3. You have a collision in your Ares port configuration. Remember that Ares needs multiple ports, and they all have to be different.  You can't use the same port number for both your telnet server and engine API, for instance.
+2. There is a problem with the IP or hostname you specified.  For an IP, make sure you gave the external IP and not just 'localhost'.  For a hostname, make sure that the DNS is properly configured and that `nslookup YOURHOSTNAME` returns the correct IP address.  It can take up to 24 hours for a new DNS record to be visible to the droplet, and Ares won't work until that happens.
+3. You have an issue with your Ares port configuration. Remember that Ares needs multiple ports, and they all have to be different.  You can't use the same port number for both your telnet server and engine API, for instance.
+
+It's almost always one of those three issues.  If none of that helps, [ask for help](/feedback.html).  There are some other weird errors possible, like another app trying to use your port, or a weird IP configuration that requires you to use a separate binding address.
 
 ### Server Won't Start
 

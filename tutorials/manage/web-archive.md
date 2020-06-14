@@ -28,6 +28,6 @@ This generates raw HTML files in the `wiki_export` folder.
 
 First, you'll want to use FTP to download the web archive to your local PC for safekeeping.  You can browse the files locally just by double-clicking on `index.html`.
 
-Your archive can be included in the [AresCentral game archive](https://arescentral.aresmush.com/wiki).  Just create a ZIP file of the exported files and [send it to Faraday](/feedback.html) using a file sharing service like Dropbox or Google Drive.
+You can also make a ZIP file and share it with your players using DropBox or another file-sharing service so they can download the archive for themselves.  Since it's web pages, you could even host the archive on a static web server (using [Amazon S3 static web hosting](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html) or a similar service).
 
-You can also share that ZIP file with your players so they can download the archive for themselves, or even host the archive on a static web server ([Amazon S3 static web hosting](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html) is one of many options).
+If you do have your archive available publicly, [contact Faraday](/feedback.html) to have it linked to the [AresCentral game archive](https://arescentral.aresmush.com/wiki).
