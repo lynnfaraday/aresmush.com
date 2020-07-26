@@ -83,7 +83,7 @@ Many renderers expect some parameters passed in - a character, a room, or - in t
 
 ### Common Templates
 
-Ares provides a few common templates in the Utils plugin that are used everywhere.  The two most common are `BorderedDisplayTemplate` and `BorderedListTemplate`:
+Ares provides a few common templates in the Globals plugin that are used everywhere.  The two most common are `BorderedDisplayTemplate` and `BorderedListTemplate`:
 
 ```text
     ------------------------------
@@ -98,7 +98,7 @@ Ares provides a few common templates in the Utils plugin that are used everywher
 Everything except the text/list is optional, so you can customize the display as desired.
 {% endtip %}
 
-There's also a table, a line with text in the middle, and a standard page footer for multi-page commands.  See the code in `aresmush/plugins/utils/templates` for details.
+There's also a table, a line with text in the middle, and a standard page footer for multi-page commands.  See the code in `aresmush/plugins/globals/templates` for details.
 
 ## Customizing Templates
 

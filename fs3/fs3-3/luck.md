@@ -2,6 +2,8 @@
 title: FS3.3 - Luck Points
 description: 
 layout: fs3
+prev-article: conflict.html
+next-article: experience.html
 ---
 
 Luck Points in FS3 are a way to give your character an edge from luck or fate.

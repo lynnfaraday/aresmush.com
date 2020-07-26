@@ -65,6 +65,9 @@ You can submit a web portal theme.  The folder structure for a theme includes:
 
 * A `styles` folder with `custom_style.scss` and `colors.scss`.
 * An optional `images` folder with the [theme images](/tutorials/config/website.html) needed by the portal. You can supply all, any, or none of the images.
+* A README file describing your theme.  You can include some screenshots of whatever screens you like, or I'll take some myself.
+
+Here's an example: [Ares Dark Theme](https://github.com/AresMUSH/ares-extras/tree/master/themes/ares-dark).
 
 ## Submitting Patches
 

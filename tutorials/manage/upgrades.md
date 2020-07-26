@@ -61,9 +61,10 @@ When you start making custom code changes, your upgrade process becomes more inv
 
 If you have your own GitHub fork, here's how you upgrade:
 
-1. [Update your fork](/tutorials/code/git.html#upgrade) to get the latest Ares code into your repository.  Make sure any conflicts are resolved, as described in 'Resolving Conflicts' below.
-2. Make sure your game is set up to pull code from your own fork.  See [Using GitHub](/tutorials/code/git.html#making-the-game-use-the-fork)
-3. Continue the normal upgrade process, using either the [Basic Upgrade](#basic-upgrades) or [Upgrade with a Restart](#upgrade-with-a-restart) depending on whether the upgrade requires a game restart.
+1. Update your fork to get the latest Ares code into your repository.  This will vary depending on what tool you're using, and you can find many GitHub tutorials online.  The [Using GitHub](/tutorials/code/git.html#video-tutorial) video tutorial gives an example walkthrough using GitHub Desktop.  
+2. Make sure any conflicts are resolved, as described in 'Resolving Conflicts' below. 
+3. Make sure your game is set up to pull code from your own fork.  See [Using GitHub](/tutorials/code/git.html#making-the-game-use-the-fork) if you 
+4. Continue the normal upgrade process, using either the [Basic Upgrade](#basic-upgrades) or [Upgrade with a Restart](#upgrade-with-a-restart) depending on whether the upgrade requires a game restart.
 
 ### Not Using GitHub
 

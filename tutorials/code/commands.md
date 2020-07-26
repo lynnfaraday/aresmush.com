@@ -13,7 +13,7 @@ When a MU client sends text to the game's telnet port, several things happen:
 
 1. The text is converted into a `Command` object.
 2. The `Command` object is added to the [Dispatcher's](/tutorials/code/dispatcher.html) dispatch queue.  
-3. When it gets to that command in the queue, the Dispatcher will ask each plugin if it's interested in that command.  
+3. When it gets to that command in the queue, the Dispatcher will ask each plugin (starting with Custom) if it's interested in that command.  
 4. If a plugin returns a command handler object, the Dispatcher will call `on_command` in the handler and then stop asking other plugins if they want the command.  
 5. If no plugins handle the command, the Dispatcher will emit the default "Huh?" message.
 
@@ -51,8 +51,36 @@ Most plugins have a case statement based on the root command, and ten a second c
     end
 
 {% tip %} 
-A few commands check the args too, especially commands that use a shortcut to make both singular and plural versions of the commands work the same.  In the example above, there's a shortcut (not shown) that converts events -> event.  So if the command root is  `event`  and there are no arguments, it uses EventsCmd to show the events list.  If there is an argument, then it assumes you're doing `event 1`.
+Many commands create a shortcut aliasing the plural version (events) to the singular (event) so you can type either one and get the same set of commands. For example, this lets a player type either job/comment or jobs/comment.  
 {% endtip %}
+
+## Extending and Overriding Commands
+
+If you want to extend or override commands, you can do so by modifying the command handler in the Custom plugin.  Commands are given to Custom before any other plugin, giving you the opportunity to inject a custom command handler.  For example, here we have overridden the "note" command with our own, and added a new switch to the "event" command.
+
+    module AresMUSH
+      module Custom
+        def self.get_cmd_handler(client, cmd, enactor)
+          case cmd.root
+          when "note"
+            return MyCustomNoteCmd
+          when "event"
+            case cmd.switch
+            when "limit"
+              return MyNewEventLimitCmd
+            else
+              return nil
+            end
+          end
+          nil
+        end
+      end
+    end
+    
+
+{% note %} 
+Be sure to return 'nil' from your custom handler for any commands and/or switches that you're not handling. Otherwise it will prevent the core commands from working.
+{% endnote %}
 
 ## Command Class
 

@@ -22,7 +22,7 @@ The very first time you log in (using any of the methods described below), you'l
 As part of the game installation, it will create an "ares" user and password.  Use the "ares" user for day-to-day operations and save the "root" user for things that require special permissions.
 
 {% note %} 
-All of the command line tools you use once the game is set up, like starting the game and doing upgrades, are designed to be run as the **ares** user.  You'll need to either log in as that user or `su - ares` to switch to them with a privileged account.  Otherwise things won't work right.
+All of the command line tools you use once the game is set up, like starting the game and doing upgrades, are designed to be run as the **ares** user.  You'll need to either log in as that user or things won't work right.
 {% endnote %}
 
 ## How to Connect
@@ -48,12 +48,12 @@ On MacOSX, you can connect using the Terminal app:
 There are many SSH clients available.  A popular one is PuTTY, available for  [Windows](http://www.putty.org/) [Mac](https://www.ssh.com/ssh/putty/mac/).  Once installed, you can add your game to PuTTY's address book.
 
 {% note %} 
-When using a desktop client, it may ask you for a port number.  You'll want to use the default SSH port number, and **not** your MUSH's game port number.
+When using a desktop client, it may ask you for a port number.  You'll want to use the default SSH port number (usually 22), and **not** your MUSH's game port number.
 {% endnote %}
 
 ### Connecting through Digital Ocean
 
-If you used the [Digital Ocean](/tutorials/install/digital-ocean.html) setup instructions, you can connect directly to your droplet using the Digital Ocean control panel.  The console is rudimentary and annoying, but it's a safe fallback if nothing else works for you.  Log into your Digital Ocean account and go to Access->Launch Console.
+If you used the [Digital Ocean](/tutorials/install/digital-ocean.html) setup instructions, you can connect directly to your droplet using the Digital Ocean control panel.  The console is rudimentary and annoying, but it's a safe fallback if nothing else works for you.  Log into your Digital Ocean account and go to "Access->Launch Console."
 
 ## Directories
 

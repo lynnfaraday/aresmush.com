@@ -57,6 +57,7 @@ These articles detail all of the config settings available in the game.
 * [Configuring Secret Codes](/tutorials/config/secrets.html)
 * [Configuring the Status System](/tutorials/config/status.html)
 * [Configuring the Weather System](/tutorials/config/weather.html)
+* [Configuring the Website](/tutorials/config/website.html)
 * [Configuring the Who/Where System](/tutorials/config/who.html)
 * [Configuring the Wiki](/tutorials/config/wiki.html)
 

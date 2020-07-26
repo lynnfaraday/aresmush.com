@@ -2,6 +2,8 @@
 title: FS3.3 - Experience
 description: 
 layout: fs3
+prev-article: luck.html
+next-article: combat.html
 ---
 
 Experience reflects the way a character grows and changes over time.  

@@ -52,9 +52,39 @@ In the server shell:
 1. Go to the aresmush directory.
 2. Type `git remote set-url origin <Your Clone URL>`
 3. Type `git pull`.
-4. Repeat steps 2 and 3 for the web portal directory.
+4. Change to the ares-webportal directory.
+5. Repeat steps 2 and 3 in the webportal directory with the webportal clone url.
 
 Now your game will be set up to get code updates from your fork instead of from the main Ares repository.
+
+## Git from the Game
+
+You can actually execute selected `git` commands from within the game without needing to connect to the server shell.  See `help git` in-game.  This is handy if you're using GitHub to sync changes between a local PC and the server because you can push to GitHub from your PC and pull the code down from inside the game itself.
+
+You can't do commits or pushes from within the game (because they require some interaction with the shell), but you can do them from your server shell.  If you want to do this, you should configure your GitHub email and username in the shell.
+
+    git config --global user.email "YOUR_EMAIL"
+    git config --global user.name "YOUR_NAME"
+
+<a name="upgrade"></a>
+
+## Updating Your Fork
+
+While you're changing your own copy of the code, there's also work going on in the main Ares repository. Whenever a new AresMUSH version is announced, you should update your fork.
+
+{% tip %} 
+It's recommended that you keep up with updates as they happen.  Not only does it ensure that you have the latest features and bugfixes at all times, but it's easier to do updates one at a time.  If you let them stack up and your code gets too far behind, the upgrade will be more difficult.
+{% endtip %}
+
+How you update your fork will vary depending on what tool you're using, and you can find many GitHub tutorials online.  The [Using GitHub](/tutorials/code/git.html#video-tutorial) video tutorial gives an example walkthrough using GitHub Desktop. 
+
+{% note %} 
+ Always remember to update **both** aresmush and ares-webportal when getting the latest code.
+{% endnote %}
+
+### Dealing with Conflicts
+
+There may be merge conflicts if both you and the Ares devs changed the same bits of code differently.  See [Upgrades - Resolving Conflicts](/tutorials/manage/upgrades.html#resolving-conflicts) for more information, and [ask for help](/feedback.html) if you get stuck.
 
 ## Controlling Your Config Files
 
@@ -79,35 +109,7 @@ Whenever you make changes to your game config, use `git commit -am <message>` an
 Git will still ignore other parts of the game directory, including uploads, logs, and the secrets.yml config file (to keep your secret codes secret).
 {% endtip %}
 
-## Git from the Game
-
-You can actually execute selected `git` commands from within the game without needing to connect to the server shell.  See `help git` in-game.  This is handy if you're using GitHub to sync changes between a local PC and the server because you can push to GitHub from your PC and pull the code down from inside the game itself.
-
-You can't do commits or pushes from within the game (because they require some interaction with the shell), but you can do them from your server shell.  If you want to do this, you should configure your GitHub email and username in the shell.
-
-    git config --global user.email "YOUR_EMAIL"
-    git config --global user.name "YOUR_NAME"
-
-<a name="upgrade"></a>
-
-## Updating Your Fork
-
-While you're changing your own copy of the code, there's also work going on in the main Ares repository. Whenever a new AresMUSH version is announced, you should update your fork.
-
-{% tip %} 
-It's recommended that you keep up with updates as they happen.  Not only does it ensure that you have the latest features and bugfixes at all times, but it's easier to do updates one at a time.  If you let them stack up and your code gets too far behind, the upgrade will be more difficult.
-{% endtip %}
-
-Follow the instructions in the [Using GitHub](/tutorials/code/git.html) tutorial to update your code.
-
-{% note %} 
- Always remember to update **both** aresmush and ares-webportal when getting the latest code.
-{% endnote %}
-
-### Dealing with Conflicts
-
-There may be merge conflicts if both you and the Ares devs changed the same bits of code differently.  See [Upgrades - Resolving Conflicts](/tutorials/manage/upgrades.html) for more information, and [ask for help](/feedback.html) if you get stuck.
-
 ## Advanced GitHub
 
 There are a plethora of good tutorials on the internet about using GitHub, including [Try Git](https://try.github.io)  and [Learn Enough Git To Be Dangerous](https://www.learnenough.com/git-tutorial).  There's also detailed guides on GitHub's own website, and the first couple chapters of the [Pro Git](https://git-scm.com/book/en/v2) ebook (later chapters go into gory details you won't need).
+

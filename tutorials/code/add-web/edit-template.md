@@ -2,8 +2,8 @@
 title: Modifying the Edit Template
 description: 
 layout: tutorial
-nextstep: modify-chargen
-prevstep: edit-request
+nextstep: edit-request
+prevstep: get-template
 tutorialIndex: tutorials/code/add-web
 addWebTutorial: true
 tutorialName: Modifying the Web Portal

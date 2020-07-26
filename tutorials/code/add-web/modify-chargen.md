@@ -2,7 +2,7 @@
 title: Modifying Chargen
 description: 
 layout: tutorial
-prevstep: edit-template
+prevstep: edit-request
 nextstep: next-steps
 tutorialIndex: tutorials/code/add-web
 addWebTutorial: true

@@ -2,7 +2,7 @@
 title: Modifying the Profile Template
 description: 
 layout: tutorial
-nextstep: edit-request
+nextstep: edit-template
 prevstep: get-request
 tutorialIndex: tutorials/code/add-web
 addWebTutorial: true

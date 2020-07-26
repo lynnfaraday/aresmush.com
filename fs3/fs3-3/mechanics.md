@@ -16,20 +16,52 @@ The basic FS3 mechanic is Attribute + Skill number of 8-sided dice against a tar
 
 On a routine roll, here is the chance of getting various numbers of successes based on the **total** number of dice (attribute + skill).
 
-> <i class="fa fa-cubes" aria-hidden="true"></i>  Most tasks in FS3 require only a single success, so even modest skill ratings (Competent or higher) give you a good chance of success on average rolls.  Higher ratings give you more of an edge in opposed rolls and difficult tasks.
+> <i class="fa fa-cubes" aria-hidden="true"></i>  Tasks in FS3 require only a single success, so even modest skill ratings (Competent or higher) give you a good chance of success on average rolls.  Higher ratings give you more of an edge in opposed rolls and difficult tasks.
 
 | Total Dice | 1+ Success | 2+ Success | 3+ Success | 
 | ---- |---- |---- |---- |---- |
-|3|76%| 32% | 5% | 
-|4|85%| 48% | 15% |
-|5|90%| 62% | 28% | 
-|6|94%| 73% | 40% | 
-|7|96%| 81% | 52% | 
-|8|98%| 86% | 63% | 
-|9|99%| 91% | 72% | 
-|10|99%| 94% | 79% | 
+|3 (Everyman)|76%| 32% | 5% | 
+|4 (Fair)|85%| 48% | 15% |
+|5 (Competent)|90%| 62% | 28% | 
+|6 (Good)|94%| 73% | 40% | 
+|7 (Great)|96%| 81% | 52% | 
+|8 (Extraordinary)|98%| 86% | 63% | 
+|9 (Amazing)|99%| 91% | 72% | 
+|10 (Legendary)|99%| 94% | 79% | 
 
 {% include pretty_image.html file='fs3/fs3-multiple-success.png' %}
+
+
+## Effect of Modifiers
+
+Higher skill ratings insulate you against modifiers, letting you have a good chance of success even when the going gets tough.  Modifiers do not equate to a raw % -- you cannot say that -1 is -10% or anything like that.  The effect of a modifier depends on their original skill, as shown in the chart below.
+
+| Total Dice | No Modifier | -1 Modifier | -2 Modifier | -3 Modifier |
+| ---- |
+|3 (Everyman)|76%|	60%|	37%|	37%|
+|4 (Fair)|85%|	76%|	60%|	37%|
+|5 (Competent)|90%|	85%|	76%|	60%|
+|6 (Good)|94%|	90%|	85%|	76%|
+|7 (Great)|96%|	94%|	90%|	85%|
+|8 (Extraordinary)|98%|	96%|	94%|	90%|
+|9 (Amazing)|99%|	98%|	96%|	94%|
+|10 (Legendary)|99%|	99%|	98%|	96%|
+
+Consider Competent Carla (3 skill + 2 attribute) vs. Extraordinary Edward (6 skill + 2 attribute).  If you give both a -3 modifier, Calra's chance just went from 90% to 60%, but Edward's was only reduced from 98% to 90%.  Edward, with his higher skill, is better able to adapt to the challenging circumstances.
+
+{% include pretty_image.html file='fs3/fs3-impact-modifiers.png' %}
+
+
+## Multiple Successes vs. Modifiers
+
+In FS3, a single success is enough to accomplish a task.  If a task is hard, applying a modifier is better than requiring multiple successes. Here is why it matters.  
+
+Consider Fair Frank (2 skill + 2 attribute) and Good Greta (4 skill + 2 attribute).  The chart below shows their original success chance, compared to the chance of success with a -2 modifier and the chance of success if you require a "Good Success" on the roll (3 successes).
+
+Notice that requiring a "Good Success" makes your chance of success _dramatically_ lower.  Poor Frank has almost no chance at all. In fact, you have to have a total die pool of 7 before you even have a 50/50 chance of getting a 'Good Success' on a roll.
+
+{% include pretty_image.html file='fs3/fs3-modifier-vs-success.png' %}
+
 
 ## Expected Successes
 
@@ -51,25 +83,27 @@ Technically the _possible_ number of successes is always 0 up to the total numbe
 
 {% include pretty_image.html file='fs3/fs3-average-success.png' %}
 
-## Hard Roll
+## Modifiers vs Opposed Rolls
 
-With a -2 modifier, things get very different.
+Opposed rolls are meant for _active_ challenges, like other characters.  Using opposed rolls, even with low skill levels, can have a far more dramatic impact on your chances of success than even significant modifiers.
 
-> <i class="fa fa-cubes" aria-hidden="true"></i>  Higher ratings insulate you against modifiers, letting you have a good chance of success even when the going gets tough.
+{% include pretty_image.html file='fs3/fs3-modifier-vs-opposed.png' %}
 
-| Total Dice | Chance of Getting at Least 1 Success |
-| ---- |
-|3|37%|
-|4|60%|
-|5|75%|
-|6|84%|
-|7|90%|
-|8|94%|
-|9|96%|
-|10|97%|
+## Big Bads / Superhuman Rolls
 
+FS3 does not scale for beyond-human abilities.  Games that want to have superhumans (mutants, jedi, wookiees, etc.) or "big bads" should be aware of this.  Here is a chart that illustrates the problem.
 
-## Opposed Roll
+The blue is a regular human rolling 7 dice.   On average he gets between 2-3 successes, but on a lucky roll he might get up to 7.
+
+The red is our Super rolling 20 dice.  On average they get between 7-8 successes, so yes - they will win most of the time.  The regular human can’t even touch their lucky rolls of 10+ successes.
+
+But sometimes the Super rolls that fistful of dice and ends up with only a few successes.  That’s the shaded section in the middle, and that’s where our regular human can win or tie.  It happens more often than you might think.
+
+There's a more in-depth discussion of this in the blog post [Scaling in FS3](https://aresmush.wordpress.com/2019/07/18/scaling-in-fs3/).
+
+{% include pretty_image.html file='fs3/fs3-scaling.png' %}
+
+## Opposed Rolls
 
 ### Chance of 'A' Winning or Drawing
 
@@ -88,23 +122,23 @@ With a -2 modifier, things get very different.
 |11||99.1|97.4|94.5|91.7|88.1|83.4|79.6|74.1|69.8|64.9|59.8|55.2|
 |12||99.2|97.9|95.9|92.9|90.2|86.9|82.2|78.3|73.6|69.1|64.1|58.9|
 
-### Chance of 'A' Getting a Solid Victory
+### Chance of 'A' Winning
+
 
 ||vs|B 1|2|3|4|5|6|7|8|9|10|11|12|
 |A||||
-|1||0|0|0|0|0|0|0|0|0|0|0|0|
-|2||0|0|0|0|0|0|0|0|0|0|0|0|
-|3||1.3|0.8|0.7|0.4|0.3|0.3|0.2|0.2|0.1|0.1|0.1|0.0|
-|4||3.8|3.2|2.3|1.7|1.3|1.1|0.7|0.6|0.4|0.3|0.3|0.3|
-|5||8.5|6.4|4.9|3.9|3.2|2.6|1.8|1.4|0.9|1.1|0.6|0.6|
-|6||13.5|10.7|8.9|7.1|6.2|4.5|3.8|3.0|2.2|1.9|1.2|1.1|
-|7||19.8|16.0|13.4|11.3|8.9|7.3|5.8|5.1|3.9|3.2|2.7|2.0|
-|8||26.6|22.8|18.7|15.6|13.1|10.5|8.7|7.8|5.9|4.4|3.9|3.0|
-|9||34.5|29.2|25.6|20.7|16.7|15.8|12.0|10.6|8.9|7.2|5.5|4.7|
-|10||41.0|36.0|31.0|26.4|22.4|19.3|16.4|13.9|12.1|8.7|8.4|6.5|
-|11||48.8|42.4|37.3|32.8|27.5|23.9|20.4|17.4|14.8|13.2|10.7|8.9|
-|12||55.2|49.0|43.2|38.3|33.1|29.3|24.6|21.8|18.3|16.3|14.0|11.8|
-
+|1||18.4|13.3|10.7|8.6|6.9|6|3.2|2.6|1.2|0.9|1|0.9|
+|2||33|26.2|21.5|16.2|13.7|10.6|7|5.9|5.2|3.3|3.1|1.4|
+|3||47|38.5|31.7|25.9|19.2|16.8|12.8|10.8|7.8|7.1|4.8|3.6|
+|4||57.7|48.4|41.1|33.5|26.1|24|18.1|16.4|11.9|10.1|8.5|6.9|
+|5||66.6|57.2|49|41.6|35.6|29.5|25.4|20.5|16.6|14.6|12.3|10.6|
+|6||73.4|63.9|57.1|48.4|42.5|36.9|32|27|22.6|20|16.1|13.6|
+|7||79.4|71.6|63.5|55.5|49.2|42.6|36.7|33.1|27.6|23.9|20.2|17.7|
+|8||82.7|77.1|69.8|63.9|55.3|49.2|43.8|38.2|33.8|28.4|25|23.1|
+|9||86.8|80.4|75.3|68.7|61.9|56.5|49.5|43.8|39.3|34.6|30|25.3|
+|10||89.3|84.6|78.8|72|66.6|62.4|55.1|50.4|45.1|39.7|34.9|32.2|
+|11||92|87.4|81.9|77.2|71.9|65.7|61.3|54.6|50.6|45.1|39.3|35.8|
+|12||93.8|89.9|85.8|80.5|74.8|70.8|65.3|59.8|54.6|49.7|45.4|40.3|
 
 ### Chance of a Draw
 
@@ -122,3 +156,21 @@ With a -2 modifier, things get very different.
 |10||9.3|11.8|14.6|17.5|18.5|19.4|20.8|20.7|21.1|20.3|20.3|18.2|
 |11||7.1|10.0|12.6|14.5|16.2|17.7|18.3|19.5|19.2|19.8|20.5|19.4|
 |12||5.4|8.0|10.1|12.4|15.4|16.1|16.9|18.5|19.0|19.4|18.7|18.6|
+
+
+### Chance of 'A' Getting a Solid Victory
+
+||vs|B 1|2|3|4|5|6|7|8|9|10|11|12|
+|A||||
+|1||0|0|0|0|0|0|0|0|0|0|0|0|
+|2||0|0|0|0|0|0|0|0|0|0|0|0|
+|3||1.3|0.8|0.7|0.4|0.3|0.3|0.2|0.2|0.1|0.1|0.1|0.0|
+|4||3.8|3.2|2.3|1.7|1.3|1.1|0.7|0.6|0.4|0.3|0.3|0.3|
+|5||8.5|6.4|4.9|3.9|3.2|2.6|1.8|1.4|0.9|1.1|0.6|0.6|
+|6||13.5|10.7|8.9|7.1|6.2|4.5|3.8|3.0|2.2|1.9|1.2|1.1|
+|7||19.8|16.0|13.4|11.3|8.9|7.3|5.8|5.1|3.9|3.2|2.7|2.0|
+|8||26.6|22.8|18.7|15.6|13.1|10.5|8.7|7.8|5.9|4.4|3.9|3.0|
+|9||34.5|29.2|25.6|20.7|16.7|15.8|12.0|10.6|8.9|7.2|5.5|4.7|
+|10||41.0|36.0|31.0|26.4|22.4|19.3|16.4|13.9|12.1|8.7|8.4|6.5|
+|11||48.8|42.4|37.3|32.8|27.5|23.9|20.4|17.4|14.8|13.2|10.7|8.9|
+|12||55.2|49.0|43.2|38.3|33.1|29.3|24.6|21.8|18.3|16.3|14.0|11.8|

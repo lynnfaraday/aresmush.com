@@ -2,6 +2,8 @@
 title: FS3.3 - Ability Rolls
 description: 
 layout: fs3
+prev-article: chargen.html
+next-article: luck.html
 ---
 
 An Ability Roll is used when you want to know if you succeed or fail at a given task using one of your Abilities.  You roll (virtual) dice based on how good you are, and the result determines the outcome.
@@ -87,7 +89,7 @@ If the task is too far outside your specialty (like a paramedic attempting brain
 
 # Success Level
 
-When you roll your ability dice, any die that is a 6 or higher is counted as a success.  It only takes one success to accomplish what you set out to do.  Extra successes mean you did really well.  You can think of success levels like letter grades on a school exam.  Did you scrape by with a passing grade or score top marks?
+When you roll your ability dice, any die that is a 6 or higher is counted as a success.  It only takes **one success** to accomplish what you set out to do.  Extra successes mean you did really well.  You can think of success levels like letter grades on a school exam.  Did you scrape by with a passing grade or score top marks?
 
 | Rating | Description |
 | ---- |
@@ -99,6 +101,8 @@ When you roll your ability dice, any die that is a 6 or higher is counted as a s
 |7+|Amazing Success|
 
 An Embarrassing Failure happens when more than half your dice are 1’s, even if you got some successes.  You don’t just fail, you fail is a spectacular and embarrassing fashion--like shooting your friend or falling flat on your face.
+
+
 
 <a name="modifiers"/>
 
@@ -188,3 +192,17 @@ Similarly, social skills like Persuasion and Con have a heavy performance aspect
 For example, Jamie might manage to fool Claire into believing that the koala he's holding is a vicious, dangerous koala cousin known as the "Drop Bear", but he's not going to convince her it's an *elephant* no matter how well he rolls.  At best he might befuddle her with his apparent sincerity.  Anthony might intimidate Ben into backing down from a fight, but he's not going to intimidate him into murdering his family with an ability roll.
 
 Longer-term manipulation should be more than a roll or even a series of rolls.
+
+# Storyteller Considerations
+
+Figuring out what players need to roll and then interpreting the results generally falls to the gamemaster/storyteller.  Here are a few things to keep in mind:
+
+FS3 is designed so that competent characters will succeed most of the time on routine rolls.  We don't expect folks to often fall flat during a 'roll Athletics', so often you can forego those kinds of random, straight-up rolls.  Rolls become interesting where there are challenges, usually in the form of modifiers or opposition.
+
+_One success_ is sufficient for accomplishing the essentials of a task.  Multiple successes can indicate relative success (a higher grade on a test, noticing more details in a perception check) or going above and beyond (it doesn't just function, it's prettier or more fuel-efficient). Requiring multiple successes to accomplish a task can crater someone's chance of succeeding.
+
+Opposed rolls are inherently more challenging than regular rolls, because the opponent is _actively_ resisting or challenging you.  For passive challenges (e.g., jumping a chasm, swimming in a storm, sneaking past a camera), it is better to use modifiers than opposed rolls.
+
+Finally, FS3 is not designed for beyond-human capabilities.  The dice simply don't scale as you might think for higher ratings, so don't expect a "big bad" with twenty dice to wipe the floor with regular PCs.
+
+For more information on how the dice work, see [Mechanics](/fs3/fs3-3/mechanics.html).

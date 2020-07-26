@@ -152,7 +152,7 @@ For a dividing line, just use:
 
     - divider: true
 
-## Search Box
+## Google Search
 
 Ares comes with a rudimentary search engine for the web portal, but you can also set up [Google Custom  Search Engine](https://cse.google.com/cse/all).  Just log in with your Google account and add your site.  The GCSE control panel will tell you your search engine ID, which will be a string of numbers and letters like:  `123456:abcdef`. 
 
@@ -160,6 +160,7 @@ Ares comes with a rudimentary search engine for the web portal, but you can also
 2. Edit `secrets.yml`.
 
 Enter your search engine ID under the gcse option.
+
 
 ## Configuring Recaptca
 
@@ -244,6 +245,8 @@ By default, Ares assumes that the website will be installed in your home folder 
 ### character_gallery_group and character_gallery_subgroup
 
 By default, the character gallery page shows characters organized into tabs by Faction and then into sub-groups by Position.  You can change this by editing the two character gallery settings to be any two groups.  For example, on BSG:U the gallery was organized by Department then Position.
+
+The main group is required, but you can set subgroup to an empty string (`""`) if you don't want to sub-sort.
 
 ### left_sidebar
 

@@ -2,6 +2,7 @@
 title: FS3 Third Edition (FS3.3)
 description: 
 layout: fs3
+next-article: basics.html
 ---
 
 {% include toc.html %}

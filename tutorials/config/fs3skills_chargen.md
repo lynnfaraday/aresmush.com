@@ -96,7 +96,7 @@ If you don't want any starting skills, set this to an empty hash value: `{}`.  D
 {% endnote %}
 
 {% tip %} 
-Despite the word 'skills' in the name, you can also include attributes and advantages in the skills list.  It's just intended mainly for skills.
+Despite the word 'skills' in the name, you can also include attributes and advantages under `skills`.
 {% endtip %}
 
 ### Group Skills
@@ -110,6 +110,7 @@ Starting skills are group-based, so you'll see multiple entries for different gr
         Marines:
             skills:
                 Melee: 2
+                Brawn: 3
     Position:
         Pilot:
             skills:

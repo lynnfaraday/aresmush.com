@@ -2,6 +2,7 @@
 title: FS3.3 - Combat
 description: 
 layout: fs3
+prev-article: experience.html
 ---
 
 Any combat situation could be resolved either through consent or a set of simple Ability Rolls, but both require a great deal of interpretation. If Harvey shoots Bob, what does he roll? If he gets a good success, what does it mean? If Jane also shoots Bob, how do you fairly determine whether Bob is taken out by the combination of the two wounds?  
@@ -225,7 +226,7 @@ For physical wounds, each day you accumulate **Healing Points**.  When you have 
 | Impaired | 10 |
 | Incapacitated | 5 |
 
-Normally you gain 1 healing point per day.  You get a bonus point if you're in a hospital **or** under the care of a PC doctor **or** make a successful Recovery Roll (using Brawn by default).
+Normally you gain 1 healing point per day.  You get a bonus point if you're under the care of a PC doctor **or** make a successful Recovery Roll (using Brawn by default).
 
 Once a wound begins healing, the Wound Modifier is reduced by 1/3rd.
 

@@ -1,5 +1,5 @@
 ---
-title: Undestanding YAML
+title: Understanding YAML
 description: 
 layout: page
 tags:

@@ -50,7 +50,7 @@ Now 0-39 is a graze, 40-59 is flesh, 60-99 is impaired, and 100+ is incap.  This
 
 You can configure the number of healing points required to lower a wound to the next damage level.  You can make damage either more realistic (higher numbers, slower healing) or more Hollywood-ish (lower numbers, faster healing).
 
-A character gets 1 healing point per day by default, and 2 if they're in a hospital, under a doctor's care, or successfully make a healing roll.  So if you set the healing time for IMPAIR to 7, it means that the character will heal from Impaired down to Flesh Wound in 4-7 days.
+A character gets 1 healing point per day by default, and 2 they're under a doctor's care, or successfully make a healing roll.  So if you set the healing time for IMPAIR to 7, it means that the character will heal from Impaired down to Flesh Wound in 4-7 days.
 
 ## healing_cron
 

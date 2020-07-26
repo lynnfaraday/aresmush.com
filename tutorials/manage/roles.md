@@ -105,6 +105,7 @@ If you want to know exactly which commands are accessible with these permissions
 | manage_demographics | |
 | manage_events | |
 | manage_forum | |
+| manage_game | Code and database-related tasks, including restarts and loads. |
 | manage_idle | |
 | manage_login | |
 | manage_notes | |
@@ -112,6 +113,7 @@ If you want to know exactly which commands are accessible with these permissions
 | manage_ranks | |
 | manage_roster | |
 | manage_scenes | |
+| manage_theme | Edit web portal CSS. |
 | manage_weather | |
 | manage_wiki | |
 | set_comtitle | |

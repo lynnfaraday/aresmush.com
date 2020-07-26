@@ -2,6 +2,8 @@
 title: FS3.3 - Introduction
 description: 
 layout: fs3
+prev-article: index.html
+next-article: chargen.html
 ---
 
 This article gives a quick introduction to FS3.  It has links to the other main articles.  You can also navigate using the navbar at the side/bottom.

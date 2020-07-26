@@ -2,6 +2,8 @@
 title: FS3.3 - Character Creation
 description: 
 layout: fs3
+prev-article: basics.html
+next-article: conflict.html
 ---
 
 FS3 takes a simple approach to abilities and highlights skills that are relevant to gameplay.  The goal is to get players through character creation and reviewed as quickly and easily as possible.

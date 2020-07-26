@@ -17,6 +17,16 @@ layout: default
 <h1>{{page.title}}</h1>
 
                  {{ content }}
+
+                 {%if page.prev-article %}
+                 <a href="/fs3/fs3-3/{{page.prev-article}}">&larr;  Previous</a>
+                 {% endif %}
+                 
+                 | 
+                 
+                 {%if page.next-article %}
+                 <a href="/fs3/fs3-3/{{page.next-article}}">Next &rarr; </a>
+                 {% endif %}
              </div>             
                            </div>
               
@@ -52,7 +62,6 @@ layout: default
                             
                               
                           </li>
-                          <li><a href="/fs3/fs3-3/experience.html">Experience</a></li>
                           <li><a data-toggle="collapse" data-target="#rolls-toggle" class="fs3-menu-toggle"><i class="fad fa-caret-square-right"></i> Ability Rolls</a>
 
                           <div id="rolls-toggle" class="collapse fs3-menu-collapse">
@@ -74,6 +83,7 @@ layout: default
                           </li>
                           
                           <li><a href="/fs3/fs3-3/luck.html">Luck Points</a></li>
+                          <li><a href="/fs3/fs3-3/experience.html">Experience</a></li>
                           <li><a data-toggle="collapse" data-target="#combat-toggle" class="fs3-menu-toggle"><i class="fad fa-caret-square-right"></i> Combat System</a>
 
                           <div id="combat-toggle" class="collapse fs3-menu-collapse">

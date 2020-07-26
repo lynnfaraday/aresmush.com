@@ -69,7 +69,7 @@ The web portal character gallery uses groups to organize characters.  By default
 1. Go to Admin -> Setup in the web portal.
 2. Edit `website.yml`.
 3. Set `character_gallery_group` to the group (e.g. Faction, Nationality) you want for your primary tabs on the character gallery.
-4. Set `character_gallery_subgroup` to a different group if you want the characters sub-sorted within the tabs.  You can leave it blank if you don't want to sub-sort.
+4. Set `character_gallery_subgroup` to a different group if you want the characters sub-sorted within the tabs.  You can set it to an empty string (`""`) if you don't want to sub-sort.
 
 ## Updating the Welcome Messages
 
