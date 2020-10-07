@@ -19,7 +19,7 @@ Arg converters alter the format of the argument string - changing it to a number
 * `trim_arg` - Strips leading and trailing spaces from an arg.
 * `titlecase_arg` - Capitalizes words (like a title).  Also strips spaces like trim_arg.
 * `upcase_arg` - Makes every letter uppercase.  Also strips spaces like trim_arg.
-* `upcase_arg` - Makes every letter lowercase.  Also strips spaces like trim_arg.
+* `downcase_arg` - Makes every letter lowercase.  Also strips spaces like trim_arg.
 * `integer_arg` - Interprets the arg as a number.  Returns 0 if you give it a non-numeric string.
 * `list_arg` - Splits an argument into an array.  Splits on spaces by default, but you can pass any delimeter.
 * `trimmed_list_arg` - Splits an argument into an array and strips spaces on each entry like trim_arg.  Splits on spaces by default, but you can pass any delimeter.

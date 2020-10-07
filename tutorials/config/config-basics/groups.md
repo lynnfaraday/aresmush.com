@@ -90,7 +90,7 @@ You can use any of your groups in the welcome message using `%{groupname}`.
 
 Ranks are based on faction by default--meaning that each faction gets its own rank chart.  If you don't have factions but still want to use ranks, you'll need to update your ranks config.  See [Configuring the Ranks System](/tutorials/config/ranks.html) for details.
 
-If you aren't using ranks, you can turn them off completely in the [Optional Plugins List](/tutorials/config/basic-config/plugins.html).
+If you aren't using ranks, you can turn them off completely in the [Optional Plugins List](/tutorials/config/config-basics/plugins.html).
 
 ## Updating the Character Lists
 

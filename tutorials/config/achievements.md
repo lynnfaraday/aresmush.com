@@ -12,10 +12,6 @@ Achievements is an optional plugin that lets you set up in-game achievements for
 
 {% include toc.html %}
 
-## announce_channel
-
-By default, announcements are only shown to the person who received them.  You can optionally have them announced on a channel.  Just set `announce_channel` to the name of the channel you wish to use.  Leave the setting blank to disable the announcement.
-
 ## types
 
 You can configure what achievement types exist and what their icon is.  Standard types include things like community, story, and portal.  Icons come from the [Font Awesome](https://fontawesome.com/?from=io) icon library, so you'll see codes like `fa-globe` and `fa-users`.

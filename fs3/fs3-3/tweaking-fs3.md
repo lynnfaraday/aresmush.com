@@ -26,11 +26,29 @@ Attributes aren't meant to be rolled by themselves; only in conjunction with a s
 
 # Specialties
 
-FS3 works best with broad Action Skills, because otherwise you end up with a gazillion of them.  Of course there are specialties within every Action Skill.  Firing a pistol is really not quite the same as using a rifle, nor is wielding a sword the quite the same as wielding an axe.  These are nonetheless lumped together for simplicity.  Remember - FS3 is "**Simple** Skill System".  (Also the coded combat system doesn't account for weapon specialties.)
+FS3 works best with broad Action Skills, because otherwise you end up with a gazillion of them.  Because they're broad, you could easily imagine lots of specialties within every Action Skill.
 
-Specialties are there when it's important to have some degree of oversight into what a character is able to do.  On a BSG game it might be important to know whether your pilot knows Vipers, Raptors or both.  On a modern game, does it really matter what kinds of planes they can fly?  Probably not.
+That doesn't mean you _need_ to add specialties for every skill.  It's just not necessary in most cases.  Specialties are meant to be used when you have a *common foundation* in a skill, with distinct, *specialized fields of study* once you get to advanced levels. 
 
-The way specialties work assumes that there is a *common foundation* for all specialties within a skill.  In Medicine, there is a common base of knowledge about anatomy, illness and injury no matter whether you're a family medicine doc, a surgeon, a nurse, or a paramedic.  They each have specialized skills *on top of that*, but the foundation is the same.  Similarly, all pilots basically start out on the same kind of trainers, even though they eventually branch off into their specialized aircraft.  When using specializations, make sure that this common foundation exists.  Otherwise you should use separate skills instead.
+{% tip %}
+Remember - having a specialty doesn't make you _better_ in that area, it makes you _worse_ in the others. When you're missing the required specialty for a task, you are at a significant penalty for your roll, and may not be able to even attempt it at all.
+{% endtip %}
+
+Medicine is a prime example. There is a common base of knowledge about anatomy, illness and injury no matter whether you're a family medicine doc, a surgeon, a nurse, or a paramedic. They then each have specialized skills on top of that foundation.  You don't want a paramedic doing surgery, and a surgeon would be equally out of their element on an ambulance, but both share a number of skills in common.
+
+Contrast that with skills like Firearms and Melee.  Sure there are differences in wielding a club vs. a sword, or firing a rifle vs. a pistol.  But they're not _that_ different.  If you're an expert with a pistol, you shouldn't lose half your dice just because you're firing a rifle instead.
+
+You should consider adding specialties to your Action Skills when:
+
+1. The skills are *similar enough* that you DON’T want to charge people the full cost of buying separate skills that have a common base of knowledge.
+2. The skills are *different enough* that you DO want to penalize people who are trying to use the skill outside of the areas that they have purchased.
+3. The differences are actually relevant to RP and worth keeping track of.
+
+For example: On a Battlestar game, Piloting meets all three criteria. All pilots basically start out on the same kind of trainers, but flying fighter crafts or larger ships requires additional specialized training. In that theme, it's important for RP to know who can fly what.
+
+{% tip %}
+The coded combat system doesn't account for weapon specialties, so even if you add them they will be minimally useful in practice.
+{% endtip %}
 
 # Advantages
 
@@ -57,7 +75,7 @@ The default limit of 40 AP in FS3 Core is designed to give you the "everybody ha
 
 If you have more skills or want people to start off more awesome, you should consider raising the bar accordingly.
 
-Don't be afraid to allow different levels of Ability Points based on faction, position, or some other criteria that makes sense in your game.  In 3rd Edition, Action Skills account for **way** more of the Ability Point total.  So action-oriented characters need more points than supporting characters.
+It's okay if not everybody spends all their points (that's why it's displayed as a warning if you go over, not as a 'you still have X points to spend').  Action-oriented characters will need more points than supporting characters to achieve the same degree of competence, because action skills cost more.
 
 See [Managing Min-Maxing](/fs3/fs3-3/min-maxing.html) for more information.
 

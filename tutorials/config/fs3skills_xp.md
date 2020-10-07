@@ -30,17 +30,17 @@ This is essentially a 'cooldown' between XP spends on a specific skill.
 
 ## attr_dots_beyond_chargen_max, action_dots_beyond_chargen_max and advantage_dots_beyond_chargen_max
 
-After chargen, `max_points_on_attrs`, `max_points_on_action` and `max_points_on_advantages` still control how many dots above average a character can have in attributes, action skills and advantages.  This prevents the dinosaur effect where someone can become awesome at everything given enough time and keeps veteran characters from getting too far ahead of new characters.
+The [chargen limits](/tutorials/config/fs3skills_chargen.html) of `max_points_on_attrs`, `max_points_on_action` and `max_points_on_advantages` are still in effect after chargen, controlling how far characters can raise their abilities above average.  This prevents the dinosaur effect where someone can become awesome at everything given enough time.  It keeps veteran characters from getting too far ahead of new characters.
 
-You may want to allow characters some room to grow a bit beyond the chargen maximum.  That's where the `attr_dots_beyond_chargen_max`, `action_dots_beyond_chargen_max` and `advantage_dots_beyond_chargen_max` settings come in.  These are added to the chargen maximums.
+Even so, you may want to allow someone who started at the chargen max to have a little room to grow.  The settings `attr_dots_beyond_chargen_max`, `action_dots_beyond_chargen_max` and `advantage_dots_beyond_chargen_max` are _added to_ the chargen maximums to control the absolute maximums that characters can achieve with XP.
 
-Example 1:  Let's say your game has 6 attributes, `max_points_on_attrs` set to 12, and `attr_dots_beyond_chargen_max` set to 3.
+For example:  Let's say your game has 6 attributes, `max_points_on_attrs` set to 12, and `attr_dots_beyond_chargen_max` set to 3.
 
 * Everyone gets rating 2 (average) for free.  That's 12 dots.
 * They can buy *up to* 12 points (6 dots) more in chargen.  That's a max of 18 dots.
 * They can buy up to 3 more dots *beyond that* with XP.  That's a max of 21 dots.
 
-Notice that these are absolute totals.  Someone who starts off lower will have more room to grow than someone who started with the max at chargen.  
+Notice that these are absolute limits.  Someone who starts off lower will have more room to grow than someone who started with the max at chargen.  
 
 ## allow_advantages_xp
 

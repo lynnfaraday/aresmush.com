@@ -37,7 +37,7 @@ If you are using Advantages, you can configure the cost.  The default is 2 point
 
 ## max_skill_rating and max_attr_rating
 
-FS3 Attributes are rated from 1-5 (with 5 being Exceptional) and Skills are rated from 1-8 (with 8 being Legendary).  Some games may not want to allow characters at the top end of the spectrum by setting these values lower than the maximum possible ratings.
+FS3 Attributes are rated from 1-4 (with 4 being Exceptional) and Skills are rated from 1-8 (with 8 being Legendary).  Some games may not want to allow characters at the top end of the spectrum by setting these values lower than the maximum possible ratings.
 
 Note: This limit applies only to Chargen.  If you want to prevent people from advancing beyond a certain rating with XP, you'll need to set that up in your [XP configuration](/tutorials/config/fs3skills_xp.html).
 
@@ -91,12 +91,12 @@ Remember that these limits are at *or above*.  So given the max skills example a
 
 FS3 lets you assign starting skills and specialties for different groups.  For example, you may want to ensure that people from a certain colony all start with a particular language, or that people in a certain position start with certain professional skills. As with the rating limits, these are soft targets.  The app command status will have a warning if any starting skills are missing or too low.
 
-{% note %} 
-If you don't want any starting skills, set this to an empty hash value: `{}`.  Don't just leave it blank.
-{% endnote %}
+{% tip %} 
+Despite the word 'skills' in the name, you can also include attributes, languages, and advantages under `skills`.
+{% endtip %}
 
 {% tip %} 
-Despite the word 'skills' in the name, you can also include attributes and advantages under `skills`.
+Make sure you allocate enough free language points in chargen to cover rating 3 (Fluent) in each starting language, otherwise the languages will count towards a character's Ability Point total.
 {% endtip %}
 
 ### Group Skills

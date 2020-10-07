@@ -26,7 +26,7 @@ In `aresmush/plugins/cortex/help/en/cortex.md`:
     # Cortex System
     
     This game uses a simplified implementation of the 
-    [Cortex System](http://www.drivethrurpg.com/product/58488/Cortex-Classic-System-Role-Playing-Game) used in 
+    [Cortex Classic RPG System](https://boardgamegeek.com/rpgsystem/2044/cortex-classic) used in 
     the Firefly and Leverage RPGs.
 
 In `aresmush/plugins/cortex/help/en/cortex_abilities.md`:

@@ -9,7 +9,7 @@ To configure the FS3 Combat Skills:
 
 1. Go to the Web Portal's Admin screen.
 2. Select 'Setup'.
-3. Edit `fs3skills_action.yml`
+3. Edit `fs3combat_skills.yml`
 
 The combat rules require you to determine which abilities are used for the following rolls:
 

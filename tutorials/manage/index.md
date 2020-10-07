@@ -43,6 +43,7 @@ These articles give a general overview of the various game systems.  For specifi
 * [Setup Auto-Restart After Reboot](/tutorials/manage/restart-after-reboot.html)
 * [Archiving the Web Portal](/tutorials/manage/web-archive.html)
 * [Changing the Domain Name](/tutorials/manage/change-domain.html)
+* [Upgrading the Server OS](/tutorials/manage/os-upgrades.html)
 
 ## Admin Guides
 

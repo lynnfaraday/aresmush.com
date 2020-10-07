@@ -125,3 +125,7 @@ You can't set attributes on yourself like you can in other MU servers.  There's 
 This also means you can't have personal code.  If you find yourself sorely missing some widget you liked, submit a [feature request](/feedback.html).  If you're a coder, you can even submit the code yourself with the [Ares Extras](/tutorials/code/extras.html) project, and then request that your favorite game install it.
 
 Because code works differently, you also don't need to worry about @lock-ing or setting any special flags on yourself.
+
+## Web Portal Highlight Triggers
+
+Some players have created event triggers on their MU clients that highlight their name or quotations in poses. These triggers should work for Ares as well when connected via a MU client.  When using the web portal, you can't use traditional triggers and highlights.  You may be able to accomplish similar things with browser extensions. For example, [Highlight This](https://chrome.google.com/webstore/detail/highlight-this-finds-and/fgmbnmjmbjenlhbefngfibmjkpbcljaj) has been used by some players to highlight their name in web portal poses.

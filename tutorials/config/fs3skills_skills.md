@@ -74,16 +74,6 @@ You can configure the list of Languages, specifying a name and description for e
 
 This is the instructional blurb used in the abilities screen and in chargen help.  It supports markdown text.
 
-### Starting Languages
-
-You can specify the languages that everyone should start the game Fluent at.  List one language per line, with dashes in front.  For example:
-
-    - Standard
-
-{% tip %} 
-Make sure you allocate enough free language points in chargen to cover rating 3 (Fluent) in each starting language, otherwise the languages will count towards a character's Ability Point total.
-{% endtip %}
-
 ## Advantages
 
 Advantages are an optional part of the system.  You can use them for things that aren't skills, but that you want people to pay points for in chargen - rank, resources, powers, etc.  

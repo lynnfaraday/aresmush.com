@@ -38,3 +38,7 @@ The configured luck award is doubled for someone you've never RPed with before, 
 ## public_sheets
 
 By default, players can view each others' sheets.  You can disable that by changing this setting to false.
+
+## job_on_luck_spend
+
+Whether to create a job when someone spends a luck point. Some games like to have this as a record for when a player uses luck for story reasons, but if you don't like the spam you can turn them off.

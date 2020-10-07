@@ -20,10 +20,6 @@ You can configure the available scene types.  By default they are "event", "soci
 
 You can configure the color that is used in OOC asides. You can use multiple color codes.  For example: %xh%xc
 
-## ooc_lounge_channel
-
-You can force people in the OOC lounge/offstage room to talk on a channel instead of in the room.  Just set `ooc_lounge_channel` to the channel you suggest they talk on instead.  This ensures that chatter can be accessible to all players - including ones on the web portal - and also subject to reporting with the Ares harassment tools.
-
 ## room_cleanup_cron
 
 The game will periodically clear scene sets and scenes from empty rooms.  

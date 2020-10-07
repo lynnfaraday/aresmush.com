@@ -52,7 +52,7 @@ GEM
       jekyll (~> 3.3)
     jekyll-watch (2.1.2)
       listen (~> 3.0)
-    json (2.2.0)
+    json (2.3.1)
     kramdown (1.17.0)
     liquid (4.0.1)
     listen (3.1.5)
@@ -91,8 +91,9 @@ DEPENDENCIES
   jekyll (~> 3.8.5)
   jekyll-algolia (~> 1.0)
   jekyll-feed (~> 0.6)
+  json (~> 2.3.1)
   minima (~> 2.0)
   tzinfo-data
 
 BUNDLED WITH
-   1.16.3
+   1.17.3

@@ -37,7 +37,7 @@ The findsite command (help findsite) helps you to find the IP and host of a trou
 Only part of a site needs to match, so listing `verizon.net` would block 123.456.pool.verizon.net and 678.901.pool.verizon.net and so forth.  
 
 {% note %}
-This is a 'contains' search, so wildcards (like *) are not supported.
+This is a 'contains' search, so wildcards (like \*) are not supported.
 Be wary of making the match *too* broad.  You don't want to block an entire region of the country.
 {% endnote %}
 

@@ -18,7 +18,7 @@ On a routine roll, here is the chance of getting various numbers of successes ba
 
 > <i class="fa fa-cubes" aria-hidden="true"></i>  Tasks in FS3 require only a single success, so even modest skill ratings (Competent or higher) give you a good chance of success on average rolls.  Higher ratings give you more of an edge in opposed rolls and difficult tasks.
 
-| Total Dice | 1+ Success | 2+ Success | 3+ Success | 
+| Total Dice (assuming avg. attr.) | 1+ Success | 2+ Success | 3+ Success | 
 | ---- |---- |---- |---- |---- |
 |3 (Everyman)|76%| 32% | 5% | 
 |4 (Fair)|85%| 48% | 15% |
@@ -36,7 +36,7 @@ On a routine roll, here is the chance of getting various numbers of successes ba
 
 Higher skill ratings insulate you against modifiers, letting you have a good chance of success even when the going gets tough.  Modifiers do not equate to a raw % -- you cannot say that -1 is -10% or anything like that.  The effect of a modifier depends on their original skill, as shown in the chart below.
 
-| Total Dice | No Modifier | -1 Modifier | -2 Modifier | -3 Modifier |
+| Total Dice (assuming avg. attr.)| No Modifier | -1 Modifier | -2 Modifier | -3 Modifier |
 | ---- |
 |3 (Everyman)|76%|	60%|	37%|	37%|
 |4 (Fair)|85%|	76%|	60%|	37%|
@@ -70,16 +70,16 @@ Technically the _possible_ number of successes is always 0 up to the total numbe
 * Average Successes = Mathematical average number of successes.
 * Expected Range = Excluding results that are less than 5% likely, what is the actual range of successes you can expect.
 
-| Total Dice | Average Successes | Expected Range |
+| Total Dice (assuming avg. attr.) | Average Successes | Expected Range |
 | ---- |---- |---- |
-| 3 |1 | 0-2 |
-| 4 | 1.5 | 0-3 |
-| 5|1.875 | 0-4 |
-| 6|2.25 | 0-4 |
-| 7|2.625 | 0-5 |
-| 8|3 | 1-5 |
-| 9|3.375 | 1-6 |
-| 10|3.75 | 1-7 |
+| 3 (Everyman) |1 | 0-2 |
+| 4 (Fair) | 1.5 | 0-3 |
+| 5 (Competent) |1.875 | 0-4 |
+| 6 (Good) |2.25 | 0-4 |
+| 7 (Great) |2.625 | 0-5 |
+| 8 (Extraordinary) |3 | 1-5 |
+| 9 (Amazing)|3.375 | 1-6 |
+| 10 (Legendary)|3.75 | 1-7 |
 
 {% include pretty_image.html file='fs3/fs3-average-success.png' %}
 
@@ -104,6 +104,19 @@ There's a more in-depth discussion of this in the blog post [Scaling in FS3](htt
 {% include pretty_image.html file='fs3/fs3-scaling.png' %}
 
 ## Opposed Rolls
+
+When considering the mechanics of opposed rolls, two important things to remember:
+
+1. It's not just win/lose, you can also draw.
+2. The more dice you roll, the more "randomized" your results get.
+
+What this means in practice is that opposed rolls don't line up quite as neatly as you might expect.  You'd think 3 vs 3 would have the same breakdown of win/lose/draw as 5 vs 5 because they're all evenly matched, but that's not true.  3 vs 3 has a higher chance of getting a draw than 5 vs 5 because there's more variance in # of successes with 5 dice.
+
+{% include pretty_image.html file='fs3/fs3-opposed-chances.png' %}
+
+{% note %}
+These numbers are based on actual roll results over a few thousand samples, not mathematical probabilities.  So you'll see tiny variances like 3 vs 5 is a fraction of a % different than 5 vs 3.
+{% endnote %}
 
 ### Chance of 'A' Winning or Drawing
 

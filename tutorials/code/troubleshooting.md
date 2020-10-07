@@ -141,6 +141,17 @@ You may see the approval welcome message or roster claim message not appearing, 
 
 This means your welcome messages are configured to use a group that doesn't exist.  Probably you changed your groups from the default (position/faction) and just need to update the messages in [idle config](https://aresmush.com/tutorials/config/idle.html#roster_welcome_msg) and [chargen config](https://aresmush.com/tutorials/config/chargen.html#messages).  
   
+
+### Error Using Includes
+
+When using includes, sometimes your wiki page will say: There was a problem including (some include page).  Make sure the page exists and all required variables are set.
+
+Mostly this is the result of a missing variable. The error message will hopefully give you a tip as to what variable is missing.
+
+Sometimes you get this strange error: Error loading include (some include page) : malformed format string - %;
+
+That means there's a stray "%" somewhere in your include page.  You need to make all raw %'s into %% so they are formatted appropriately.
+
 ## Web Portal Warnings
 
 When you deploy the web portal, you may see any or all of the following warnings that you can safely ignore.

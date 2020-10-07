@@ -16,7 +16,7 @@ Ansi formatting and substitutions like %r/%b are handled by the emit methods aut
 
 Given some text and the enactor's name, the `PoseFormatter` class will format the text in the same way that a pose would.
 
-    "Hello.  -->  Faraday says, "Hello.""
+    "Hello.  -->  Faraday says, "Hello."
     :waves.  -->  Faraday waves.
     etc.
 

@@ -105,11 +105,7 @@ If you run into trouble resolving conflicts, don't be shy about [asking for help
 
 Sometimes contributors will release a new version or patch for an existing Ares Extra plugin.  These are upgraded independently from the main code.  See [Upgrading Extras](/tutorials/code/extras.html#updating-plugins).
 
-## Upgrade Trouble FAQs
 
-Here are some common issues people report when upgrading.
+## Upgrading the Server OS
 
-### Game Won't Start
-
-After an upgrade, the game won't start.  
-
+See [Server OS Upgrades](/tutorials/manage/os-upgrades.html).

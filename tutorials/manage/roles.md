@@ -82,43 +82,4 @@ Remember that characters with the 'admin' role automatically have all permission
 
 ## Default Permissions
 
-{% tip %} 
-If you want to know exactly which commands are accessible with these permissions, use the 'search' feature of help files to look for help files referencing these permissions.  You'll see a statement like  "These commands require the Admin role or the permission: whatever_permission".
-{% endtip %}
-
-| Role | Notes |
-| ---- |
-| access_jobs | Characters with the admin role have access to all job categories, but you have to edit the [jobs configuration](/tutorials/config/jobs.html) to give access to other roles. |
-| announce | By default this is given to all approved characters so storytellers can announce the start of events. |
-| boot | By default this is given to all approved characters as part of the tools for [managing trolls](/tutorials/manage/trolls.html). |
-| build | |
-| control_npcs | Pose from NPCs in scenes. |
-| desc_anything | |
-| desc_places | | 
-| go_home | |
-| login | |
-| manage_achievements | |
-| manage_abilities | |
-| manage_apps | |
-| manage_channels | |
-| manage_combat | |
-| manage_demographics | |
-| manage_events | |
-| manage_forum | |
-| manage_game | Code and database-related tasks, including restarts and loads. |
-| manage_idle | |
-| manage_login | |
-| manage_notes | |
-| manage_profiles | |
-| manage_ranks | |
-| manage_roster | |
-| manage_scenes | |
-| manage_theme | Edit web portal CSS. |
-| manage_weather | |
-| manage_wiki | |
-| set_comtitle | |
-| set_duty | |
-| teleport | |
-| view_bgs | |
-| view_sheets | |
-
+Use the `permissions` command in-game to see a list of all permissions.
