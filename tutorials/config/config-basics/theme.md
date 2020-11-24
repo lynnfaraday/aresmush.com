@@ -19,7 +19,7 @@ Most games will want to customize the appearance of the web portal.
 
 Several pre-made themes are available - you can browse them in the [Ares Extras Theme Gallery](https://github.com/AresMUSH/ares-extras/tree/master/themes).
 
-To use one of these themes, just use the command `theme/install <name>` in your MU client.
+To use one of these themes, just use the command `theme/install <github url>` in your MU client. For example: `theme/install `
 
 To revert to the default theme, use `theme/install default`.
 

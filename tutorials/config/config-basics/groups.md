@@ -62,6 +62,8 @@ You have to define at least one group for your game, but don't despair.  Most ga
 * Alien Races
 * etc.
 
+If all else fails, you can always just make a bogus group with a single available value, like "Faction" / "Everyone".
+
 ## Updating the Character Gallery
 
 The web portal character gallery uses groups to organize characters.  By default, it organizes them into tabs by Faction, and then into sub-groups by Position.  If you're using custom groups, you'll want to change this.

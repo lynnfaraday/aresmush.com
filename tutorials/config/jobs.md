@@ -85,6 +85,15 @@ For example, we might want a 'TODO' filter for jobs that are new or on hold:
 You technically can define a filter for _each_ status value individually, but that may make for a spammy filter list.
 {% endtip %}
 
+## responses
+
+You can set up canned responses or response templates for your jobs. Each is given a name (shown on the list to choose from) and the template text (which may contain ansi and other format codes - just be sure to properly escape any special characters to avoid a YAML processing error).
+
+    - name: Received
+      text: Your job has been received. We'll get to it soon.
+    - name: Plot Approved
+      text: "Your plot is wonderful. Go for it."
+
 ## archive_job_days and archive_cron
 
 Jobs are automatically archived a certain number of days after they're closed.  Archived jobs are not included in the basic jobs list, but can still be searched.  The delay between closing and archiving gives other staffers a chance to read the final job comment.

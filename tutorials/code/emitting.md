@@ -69,3 +69,24 @@ You can emit to all connected characters through the Client Monitor, which keeps
 A 'raw' emit does not interpret formatting codes.  Pretty much the only time you'd use this is in the editing commands (like `desc/edit`) where you want to send the original, unformatted text to the client to be loaded into their input buffer.
 
 * `client.emit_raw "A message."`
+
+## Scene Emits
+
+All of the examples above just emit to characters connected via a MU client. Scenes are special, though, because you could have characters playing both via MU client and web portal. This is typically done through the scenes api:
+
+    Scenes.emit_pose(enactor, message, is_emit, is_ooc)
+
+Here you specify the person sending the message (enactor, which can be Game.master.system_character), the message itself, and a true/false flag indicating whether it's an emit or an OOC comment.  The system will then:
+
+* Emit the message to the characters in the room via MU client.
+* Add the pose to the scene log.
+* Notify web portal characters of new activity.
+* Update scene activity flags.
+    
+If you have a system that impacts RP (like magic or combat), you might want messages from that system to show up in RP logs as well.
+
+    Scenes.add_to_scene(scene, pose, character, is_setpose, is_ooc)
+
+{% note %}
+By default, `add_to_scene` does *not* emit to anyone connected via MU client, because sometimes systems want to emit different messages to different people. For example, FS3 combat formats messages specific to combatants to highlight their names in-game.  So if you want an emit, you'll need to add that yourself.
+{% endnote %}

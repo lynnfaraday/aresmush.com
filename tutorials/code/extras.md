@@ -8,19 +8,19 @@ tags:
 - extras
 ---
 
-"Extras" are various things that are not part of the main Ares release.  There are tinker snippets, community-authored plugins, and other tidbits.
+"Extras" are various things that are not part of the main Ares release: themes, plugins, and other tidbits.  Some extras are created by the community, others are just extra things that are not included by default.
 
 {% include toc.html %}
 
 ## Finding Extras
 
-You can find extras in the [Ares Extras repository](https://github.com/AresMUSH/ares-extras) in GitHub.  The main README will direct you to what plugins are available.
+You can find most extras in the [Ares Extras](https://github.com/AresMUSH/ares-extras) repository in GitHub.  The main README will direct you to what plugins are available.
 
-Each plugin will contain its own README file with instructions on how you use it.
+Each plugin or theme will contain its own README file with instructions on how you use it.
 
 ## Installing Plugins
 
-You can install a plugin directly from the game using `plugin/install <name>`.
+You can install a plugin directly from the game using `plugin/install <github url>`. For example:  `plugin/install https://github.com/AresMUSH/ares-prefs-plugin`.
 
 {% note %} 
 1. Make sure the plugin is compatible with your version of AresMUSH.  Most require the latest version.
@@ -29,17 +29,19 @@ You can install a plugin directly from the game using `plugin/install <name>`.
 
 ## Installing Themes
 
-You can easily install new themes for your web portal by using `theme/install <theme name>`.  To restore to the default theme, use `theme/install default`.
+You can easily install new themes for your web portal by using `theme/install <github url>`. For example: `theme/install https://github.com/AresMUSH/ares-dark-theme`.
+  
+To restore to the default theme, use `theme/install default`.
 
 ## Updating Plugins
 
-As long as you haven't modified the plugin's source code, you can upgrade it just by using the `plugin/install <name>` script again.  This will replace the code files with the newest ones.  Your configuration will not be affected.  The release notes will tell you if you need to make any additional config or code changes by hand after the upgrade.
+As long as you haven't modified the plugin's source code, you can upgrade it just by using the `plugin/install <github url>` script again.  This will replace the code files with the newest ones.  Your configuration will not be affected.  The release notes will tell you if you need to make any additional config or code changes by hand after the upgrade.
 
-> <i class="fa fa-exclamation-triangle"></i> **Warning:** Do not attempt to run the upgrade script if you've got custom code modifications.  You'll have to do the upgrade by hand.  GitHub's version compare tools can help you figure out what changed.  Feel free to ask for help.
+> <i class="fa fa-exclamation-triangle"></i> **Warning:** Do not attempt to run the upgrade script if you've got custom code modifications. You'll have to do the upgrade by hand.  GitHub's version compare tools can help you figure out what changed. You could even make your own 'fork' of the extra repo to manage your code changes and take advantage of GitHub's merging features. Feel free to ask for help.
 
 ## Uninstalling Plugins
 
-Unfortunately due to the way the database code works, uninstalling a plugin is not as straightforward as installing one.  You have to: 
+Unfortunately due to the way the database code works, uninstalling a plugin is not as straightforward as installing one.  You have to manually: 
 
 1. [Remove the database fields](/tutorials/code/remove-field.html) and any associated database objects.
 2. Unload the plugin using the in-game command `unload <plugin name>`.
@@ -50,4 +52,4 @@ If you're not sure how to do this and need help, [just ask](/feedback.html).
 
 ## Contributions
 
-See [Submitting Contributions](/tutorials/code/extra-contribs.html) if you want to contribute your own extras or community plugins.
+See [Submitting Contributions](/tutorials/code/extra-contribs.html) if you want to contribute your own extras or plugins.

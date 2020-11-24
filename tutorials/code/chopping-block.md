@@ -7,7 +7,7 @@ tags:
 - features
 ---
 
-While Ares attempts to recreate the PennMUSH/TinyMUX experience on the whole, a few features were deliberately left out for philosophical reasons.  If you find just can't live without them, please provide [Feedback](/feedback.html).  If enough people are desperate for the feature, it may be considered for a future version.
+While Ares attempts to recreate the PennMUSH/TinyMUX experience on the whole, a few features were deliberately left out for philosophical reasons.  If you find just can't live without them, please provide [Feedback](/feedback.html). There may be a workaround/alternative.
 
 {% include toc.html %}
 
