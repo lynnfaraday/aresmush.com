@@ -27,7 +27,7 @@ The latter two are really only useful with a fixed list, but the census should w
 
 ## min_age and max_age
 
-You can enforce minimum and maximum age limits in chargen with the `min_age` and `min_age` values.
+You can enforce minimum and maximum age limits in chargen with the `min_age` and `max_age` values.
 
 If you don't want a limit, just set them to 0 and 99 respectively.
 

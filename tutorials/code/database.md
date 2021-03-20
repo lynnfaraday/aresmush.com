@@ -25,6 +25,27 @@ You've probably seen database fields used throughout the code, in examples like 
 
 You'll need to look in the code to find out what database fields are available.
 
+## Model Modules
+
+All database models should live in the base AresMUSH module, not in individual plugins.
+
+**CORRECT**
+
+    module AresMUSH
+      class MyThing < Ohm::Model
+      end
+    end
+
+**INCORRECT**
+
+    module AresMUSH
+      module SomePlugin
+        class MyThing < Ohm::Model
+        end
+      end
+    end
+
+
 ## Queries
 
 The [Ohm](http://ohm.keyvalue.org/) database library provides a variety of ways to query for database models, but here are a few of the easiest:

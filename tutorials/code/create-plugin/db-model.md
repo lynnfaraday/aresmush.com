@@ -39,12 +39,16 @@ A better way is to use specialized database models.  The Cortex plugin define se
 
 First we have the class definition.  Inheriting from `Ohm::Model` is what makes it a database model -- a class capable of storing data to the database -- and including `ObjectModel` provides access to a number of useful standard Ares database utilities.
 
-    class CortexSkill < Ohm::Model
-      include ObjectModel
+    module AresMUSH
+      class CortexSkill < Ohm::Model
+        include ObjectModel
+      end
     end
 
 {% tip %} 
 Ohm is the database library that helps us talk to the database, and  `< Ohm::Model`  is a special bit of Ruby code that lets us do things like  `attribute :name`  to define a database field.  We didn't see Ohm::Model in the previous examples because we were adding to an existing model class (Character) defined by the engine.  Here, though, we're creating a brand new one.  You can learn more about the Ohm library in the [advanced database tutorial](/tutorials/code/database.html) when you're ready.  
+
+All database models should live in the base AresMUSH module, not in individual plugins.
 {% endtip %}
 
 ### Model Attributes

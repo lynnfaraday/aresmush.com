@@ -9,13 +9,17 @@ tags:
 
 Ares provides a number of formatting codes, which can be used pretty much anywhere: templates, poses, descriptions, and more.  
 
-## Format Codes
+## MUSH Format Codes
 
     %r - A linebreak
     %b - A single blank space
     %t - Five blank spaces (like a tab)
     %lh, %lf, %ld, %la - One of the border lines - header, footer, divider, alt-divider
     %x or %c - Ansi color.  See below.
+
+## Markdown
+
+Most text also supports [Markdown](/help/markdown.html), which is simple markup that can be rendered as text in the MUSH client (e.g., `**bold text**`) or as HTML on the web portal (**bold text**).
 
 ## Ansi Color
 

@@ -32,3 +32,8 @@ You can lock down certain pages on the wiki so they can only be edited by people
 You can create aliases for redirects or commonly-misspelled wiki page names to avoid broken links.  Just list the alias and the page you want it to go to.  In this example, someone linking to 'main' will be directed to 'home' instead:
 
     main: home
+    
+
+## uploadable_extensions
+
+Regular players who are not wiki admins can only upload images to the wiki by default.  You can configure the specific allowable file extensions with this setting.  They all must be in the format `*.jpg` or `*.png`.

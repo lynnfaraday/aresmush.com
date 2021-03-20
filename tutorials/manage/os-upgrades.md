@@ -24,8 +24,10 @@ If you do decide to upgrade your OS to the next major version, be aware that **i
 
 If you do decide to upgrade your server OS and run into trouble (like the game not starting or weird Ruby errors) here are a few things to try:
 
-* Use `rvm reinstall <ruby version>` to reinstall ruby. You may also need to remove and reinstall RVM entirely.
+* Use `rvm reinstall <ruby version>` to reinstall ruby. You may also need to do `rvm reload`. Worst case, you can remove and reinstall RVM entirely.
+* There may be new libraries you need to install, particularly `ruby-dev`.
 * Clear out your `tmp` and `node_modules` directories in the web portal.
 * Check your redis config file and ensure that the password matches the one the game’s using.
+* Sometimes Apache gets turned on automatically, which will prevent the Ares web server from starting. Disable Apache using `sudo systemctl disable apache2`.
 
 If you have questions, feel free to reach out and I’ll try my best to help. But since this is all at the OS level and not really Ares-specific, my ability to help may be limited.

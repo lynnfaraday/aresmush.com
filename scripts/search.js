@@ -1,10 +1,17 @@
 const searchHitTemplate = function(hit) {
   let url = `${hit.url}#${hit.anchor}`;
 
-  const title = hit._highlightResult.title.value;
-
-  const content = hit._highlightResult.html.value;
-
+  let result = hit._highlightResult;
+  var title;
+  var content;
+  if (result.title) {
+    title = result.title.value;
+    content = result.content.value;
+  } else {
+    title = result.headings ? result.headings[0].value : '';
+    content = result.content.value;
+  }
+  
   return `
     <div class="post-item">
       <h2><a class="post-link" href="${url}">${title}</a></h2>
@@ -41,7 +48,8 @@ const initializeSearch = function(app_id, api_key, index, base_url) {
     instantsearch.widgets.searchBox({
       container: '#search-box',
       placeholder: 'Search',
-      searchOnEnterKeyPressOnly: true
+      searchOnEnterKeyPressOnly: true,
+      poweredBy: true
     })
   );
 
@@ -67,11 +75,5 @@ const initializeSearch = function(app_id, api_key, index, base_url) {
   );
   
   search.start();
-  /* 
-  searchResetButton = document.getElementsByClassName("ais-search-box--reset-wrapper")[0];
-  if (searchResetButton) {
-    searchResetButton.onclick = function() {
-      search.helper.setQuery('').search();  
-    };
-  }*/
+
 }

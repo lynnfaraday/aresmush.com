@@ -5,7 +5,9 @@ layout: story
 author: Rane
 ---
 
-*Archived here because I love it so much and sometimes it moves around or vanishes on the Internet.*
+{% note %}
+This is not mine.  It's archived here because I love it so much and the original site I got it from no longer exists. --Faraday
+{% endnote %}
 
 If you hang around in this hobby long enough, you'll eventually run across two debates on RP style. The first is a debate around pose length: short, fast poses or long poses that scroll down half the screen? The second debate revolves around style: the narrative style in which it is ok to mention what your character is thinking, vs. the improvisational acting style, in which it's only alright to display dialogue and pure action.
 

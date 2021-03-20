@@ -114,13 +114,14 @@ Sometimes you'll do an upgrade and you'll see mismatched versions between the ga
 
     AresMUSH game v0.70, portal v0.69
 
-This indicates that something went wrong on your web portal upgrade.  The web portal and game engine always have to have the same version.  If they don't, you will get unpredictable errors.
+This is a problem because the web portal and game engine always have to have the same version.  If they don't, you will get unpredictable errors.
 
-Here's what you can do:
+There are several possible causes:
 
-1. Try a force-refresh in your browser, and/or open the web portal in a private/incognito browser window.  This will rule out any javascript cache issues.
-2. Try to re-deploy the website using the `website/deploy` command in-game or by running `bin/deploy` from the ares-webportal directory on the server shell.  Make sure there were no weird errors on the deploy.
-3. If your own private code fork, make sure you updated the webportal code too.  Sometimes folks forget and only update the game engine code.
+1. **Browser Cache** - Try a force-refresh in your browser, and/or open the web portal in a private/incognito browser window.  Sometimes your browser is stubbornly holding onto the old Javascript and needs a kick.
+2. **Deploy Failed** - Try to re-deploy the website using the `website/deploy` command in-game or by running `bin/deploy` from the ares-webportal directory on the server shell.  This will tell you if you missed any weird errors when the website was published.
+3. **Update Fork** - If your own private code fork, make sure you updated the webportal code too.  Sometimes folks forget and only update the game engine code.
+4. **Restart Server** - Try restarting your entire server as described [here](https://aresmush.com/tutorials/manage/reboot.html). Sometimes operating system updates hog so much memory that there isn't enough to deploy the web portal.
 
 A successful website deploy will end with a list of files, like this:
 

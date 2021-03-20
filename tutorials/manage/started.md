@@ -23,7 +23,7 @@ The [Headwiz character](/tutorials/install/next-steps.html#default-characters) i
 5. Use `role/add <your character>=coder` to grant your character coder privileges.
   
 {% tip %} 
-Be careful giving the *coder* role to others. It is the most powerful role in the game, because there's no limit to what someone can do once you give them access to the code (and thus the database).  See the [roles tutorial](/tutorials/manage/roles.html) for more information.
+Be careful giving the *coder* role to others. It is the most powerful role in the game, because there's no limit to what someone can do once you give them access to the code (and thus the database).  If you are not coding yourself, you may even want to reserve it for headwiz, or for a special coder admin char that's separate from the one you use for day to day operations. See the [roles tutorial](/tutorials/manage/roles.html) for more information.
 {% endtip %}
 
 ## Learning About Ares
@@ -41,15 +41,16 @@ As you continue to build your game, you'll probably find other [config settings]
 
 ## Building the Grid
 
-A full grid is not strictly required for Ares games, since scenes can take place in temp rooms via the scene system. Most games will want to build one, though.  For help, see 'Help -> Game Help -> Building Tutorial' in the web portal, or `help building tutorial` from the in-game commands.
-
-## Setting Up Staff Roles
-
-Ares is set up with only three staff roles by default: builder, coder and admin. If you want other staff with limited permissions (e.g. app or plot staff), see [Using Roles and Permissions](/tutorials/manage/roles.html) to set that up.
+Even though Ares has a full-fledged scene system using temporary rooms, most games will want to build a grid. Building commands are very similar to old-school MUSH servers. For help, see 'Help -> Game Help -> Building Tutorial' in the web portal, or `help building tutorial` from the in-game commands.
 
 ## Getting Help
 
-The aresmush.com tutorials are a good starting point, especially the system overviews in [Managing Ares](/tutorials/manage). For actual game command syntax, you'll want to see the in-game help files, which are available through the web portal (under 'Help -> Game Help' or the `help` command).  If you're ever stuck, don't hesitate to [ask for help](/feedback.html).
+There are two main places you'll find information:
+
+* The [Managing Ares](/tutorials/manage) tutorials give general overviews of admin tasks.
+* The in-game help system (available in the web portal's Help menu or the in-game `help` command) give detailed command help and syntax.
+ 
+If you're ever stuck, don't hesitate to [ask for help](/feedback.html).
 
 ## Custom Code
 

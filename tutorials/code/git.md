@@ -25,6 +25,10 @@ Here is a basic summary of the workflow:
 
 {% include pretty_image.html file='/code/git-pull.png' %}
 
+{% note %}
+This guide covers the standard workflow illustrated above: moving changes from your PC to GitHub and then to the game. You _can_ also do this in reverse (server->GitHub->PC), but that is an uncommon use case. See [Advanced GitHub](#advanced-github) for more information.
+{% endnote %}
+
 ## GitHub Desktop
 
 You can find the GitHub Desktop installer mentioned in the tutorial [here](https://desktop.github.com/).
@@ -33,7 +37,7 @@ You can find the GitHub Desktop installer mentioned in the tutorial [here](https
 
 The first step in using GitHub for your own game code is to create your own semi-independent version of Ares, called a ‘**fork**’ in GitHub lingo. 
 
-1. Create an account on [Github](https://www.github.com).
+1. Create an account on [GitHub](https://www.github.com).
 2. Browse to the main [AresMUSH repository](https://github.com/aresmush/aresmush).
     {% include pretty_image.html file='/code/git.png' %}
 3. Click the "Fork" button (near the top right).
@@ -60,11 +64,6 @@ Now your game will be set up to get code updates from your fork instead of from 
 ## Git from the Game
 
 You can actually execute selected `git` commands from within the game without needing to connect to the server shell.  See `help git` in-game.  This is handy if you're using GitHub to sync changes between a local PC and the server because you can push to GitHub from your PC and pull the code down from inside the game itself.
-
-You can't do commits or pushes from within the game (because they require some interaction with the shell), but you can do them from your server shell.  If you want to do this, you should configure your GitHub email and username in the shell.
-
-    git config --global user.email "YOUR_EMAIL"
-    git config --global user.name "YOUR_NAME"
 
 <a name="upgrade"></a>
 
@@ -103,7 +102,7 @@ Modify the .gitignore file in your Ares fork.  **Remove** the final line that ex
     # -----------------------------
     /game/
 
-Whenever you make changes to your game config, use `git commit -am <message>` and then `git push` on the game server to push your config changes to GitHub.
+Whenever you make changes to your game config, you'll have to use the git shell commands on the game server to push your config changes to GitHub. See [Advanced GitHub](#advanced-github).
 
 {% tip %} 
 Git will still ignore other parts of the game directory, including uploads, logs, and the secrets.yml config file (to keep your secret codes secret).

@@ -11,9 +11,10 @@ AresMUSH comes with the [FS3 Skills and Combat System](/fs3/fs3-3) built in, pro
 
 Other plugins for several off-the-shelf skills systems can easily be installed, including:
 
-* Fate
-* Cortex
-* FFG Genesys / Star Wars
-* Simple Traits (as found on many comic games)
+* [Fate](https://github.com/AresMUSH/ares-fate-plugin)
+* [Cortex](https://github.com/AresMUSH/ares-cortex-plugin)
+* [FFG](https://github.com/AresMUSH/ares-ffg-plugin) (Based on FFG's Genesys RPG, with decent--but not perfect--support for the FFG Star Wars RPGs)
+* [Simple Traits](https://github.com/AresMUSH/ares-traits-plugin) (as found on many comic games)
+* [GeneriC RPG](https://github.com/AresMUSH/ares-rpg-plugin) (generic TT RPG support with manual sheets, manual rolls)
 
 Learn more about Ares' [other features](/features).

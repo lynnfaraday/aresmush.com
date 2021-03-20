@@ -60,10 +60,20 @@ To configure advanced plugin settings:
 
 ### config_help_links
 
-When you're editing a config file, there's a link at the top to the help for those configuration settings.  Usually this links to the default arescentral config tutorial.  For your own custom-made plugins, you might want to point the help somewhere else - perhaps a wiki page or a README file on your github repo.  Just set this up to be a hash with the name of the plugin and the help link.  For example:
+When you're editing a config file, there's a link at the top to the help for those configuration settings.  Usually this links to the default arescentral config tutorial.  For your own custom-made plugins, you might want to point the help somewhere else - perhaps a wiki page or a README file on your github repo.  Just set this up to be a hash with the name of the plugin and the help link.
 
-    ffg: https://github.com/AresMUSH/ares-extras/tree/master/plugins/ffg
-    fate: https://github.com/AresMUSH/ares-extras/tree/master/plugins/fate
-    cortex: https://github.com/AresMUSH/ares-extras/tree/master/plugins/cortex
-    prefs: https://github.com/AresMUSH/ares-extras/tree/master/plugins/prefs
-    traits: https://github.com/AresMUSH/ares-extras/tree/master/plugins/traits
+### disabled_plugins
+
+This is set when you enable or disable plugins as described above. Don't update it manually.
+
+### extras
+
+This is set when you install extra plugins. You may need to manually edit it if you remove an extra.
+
+### optional_plugins
+
+For internal use only.
+
+### unlogged_events
+
+These are event names that are not logged when they're handled (for spam purposes).  If you add custom events and don't want them logged, add them here.  Cron and Pose events are unlogged no matter what you put here.

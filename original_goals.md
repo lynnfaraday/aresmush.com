@@ -5,11 +5,11 @@ title: The origins of AresMUSH (2007)
 tutorial: true
 ---
 
-FaraMUSH (working title; not the final name) is a brand new MUSH server in development.  From the player's perspective, it will be in the same family as PennMUSH and TinyMUX.  From the game administrator's perspective, it will be something completely different.
+AresMUSH is a brand new MUSH server in development.  From the player's perspective, it will be in the same family as PennMUSH and TinyMUX.  From the game administrator's perspective, it will be something completely different.
 
 ## Goals
 
-The goals of FaraMUSH are:
+The goals of AresMUSH are:
 
 1) Provide a modular and extensible MU "engine" using modern technology.
 
@@ -35,13 +35,13 @@ Target "Market"
 This project is targeted at new games.  There is probably not much here to compel someone to migrate over an existing game.
 
  
-## Tenets of FaraMUSH
+## Tenets of AresMUSH
 
-What makes FaraMUSH different from existing MU servers?
+What makes AresMUSH different from existing MU servers?
 
 1)  No "softcode"
 
-FaraMUSH uses a central 'engine' to handle basic (very basic) functionality.   Everything else – even things that are fairly standard, like poses and movement – is done using 'modules'.  Modules are object-oriented software packages that communicate with the engine and with each other using well-defined interfaces.  Modules can be replaced, modified or disabled so long as their interfaces are respected.  
+AresMUSH uses a central 'engine' to handle basic (very basic) functionality.   Everything else – even things that are fairly standard, like poses and movement – is done using 'modules'.  Modules are object-oriented software packages that communicate with the engine and with each other using well-defined interfaces.  Modules can be replaced, modified or disabled so long as their interfaces are respected.  
 
 For example:  TGG might swap out the movement system for one that restricts movement based on action points during combat.  SWS might swap out the description system with one that limits character descriptions based on what clothing items they had purchased.
 
@@ -54,7 +54,7 @@ Two notable implications of this decision:  Coders will require server access, a
 
 2)  A standard database
 
-FaraMUSH will require a SQL back-end.  Requiring SQL places limitations on the game host (though most support SQL anyway) but opens up a whole host of options with regards to integrating with web pages and other tools, not to mention the efficiencies inherent in using a standard database tool for storing data.
+AresMUSH will require a SQL back-end.  Requiring SQL places limitations on the game host (though most support SQL anyway) but opens up a whole host of options with regards to integrating with web pages and other tools, not to mention the efficiencies inherent in using a standard database tool for storing data.
 
 The core engine will maintain a set of base tables.  These tables contain only the minimum data set required for the engine.  Among this data is the "object ID", a unique identifier for each object.  Object IDs are not recycled, even when an object is no longer in use.
 
@@ -79,7 +79,7 @@ Although the intention is for modules to be "plug and play" to allow for lots of
 
 The "core" distinction is somewhat arbitrary.  Core modules are ones that you may want to tweak, but probably never want to disable. Technically you could have a game without a help system, but it's probably not a good idea.  
 
-More importantly, perhaps, the core modules are the ones that will come as part of the base FaraMUSH installation package.
+More importantly, perhaps, the core modules are the ones that will come as part of the base AresMUSH installation package.
 
 
 4) Skins and Customization

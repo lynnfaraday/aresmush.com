@@ -5,7 +5,9 @@ layout: story
 author: cosmo@socketis.net
 ---
 
-*Archived here because I love it so much and sometimes it moves around or vanishes on the Internet.*
+{% note %}
+This is not mine.  It's archived here because I love it so much and the original site I got it from no longer exists. --Faraday
+{% endnote %}
 
 ## Introduction
 

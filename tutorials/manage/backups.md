@@ -37,13 +37,13 @@ This offers you some protection against someone messing up your database or acci
 
 For added backup security, you can FTP these files to your PC's hard drive; you just need to remember to do so.
 
-## Digital Ocean Automatic Backups
+### Digital Ocean Automatic Backups
 
 If you are using a Digital Ocean droplet, you can use their [Automatic Backup](https://www.digitalocean.com/community/tutorials/an-introduction-to-digitalocean-backups) feature to create a weekly backup of your entire server.  This includes the database, the code, the server config - everything.  
 
 This is the most robust form of backup strategy, but it costs a little extra.  As of 2/18, automated weekly backups of the standard Ares droplet size cost $1/month.
 
-## Configuring Automatic Backups with S3
+### Automatic Backups with S3
 
 AresMUSH can automatically perform daily backups to Amazon's S3 storage service for a safe, off-site storage solution. 
 
@@ -93,7 +93,11 @@ Set the backup type to 'aws' for AWS backups and 'local' for local backups.
 
 #### Number of Backups
 
-You can configure the number of backups the game keeps.  By default this is 5.  Older backups are automatically deleted.
+You can configure the number of backups the game keeps.  By default this is 5.  The game will only keep this many backup files.
+
+{% note %}
+If you _reduce_ the number of backups from its previous value, you need to manually remove any extra backup files.
+{% endnote %}
 
 #### Backup Cron Job
 

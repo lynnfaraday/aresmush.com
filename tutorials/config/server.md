@@ -39,7 +39,7 @@ These instructions only apply to the default Ares installation, and to games **i
   - Set `certificate_file_path` to `/home/ares/certs/fullchain.pem`.
   - Set `private_key_file_path` to `/home/ares/certs/privkey.pem`.
 
-2. Go to the [CertBot](https://certbot.eff.org/) website.  Select 'nginx' for your web server and your server's version of Ubuntu (usually either 16.04 or 18.04; you will see the version printed in your server shell when you log in.)  This will give you the necessary steps to install CertBot.
+2. Go to the [CertBot](https://certbot.eff.org/) website.  Select 'nginx' for your web server and your server's version of Ubuntu (usually either 18.04 or 20.04; you will see the version printed in your server shell when you log in.)  This will give you the necessary steps to install CertBot.
 
 3. Run the CertBot instructions from the game's server shell to set up the security certificate.  There are some apt-get things you install first, and then you run `sudo certbot --nginx`.
   - Be sure to make the certificate name exactly the same as your MUSH hostname.  (e.g. yourgame.somewhere.com)

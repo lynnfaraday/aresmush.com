@@ -69,6 +69,10 @@ Character cards are mini-profiles that are shown when you click on a character's
 
 The 'related scenes' dropdown doesn't show ALL scenes for performance reasons.  It will only show scenes that have been shared within a certain number of days.  You can configure that limit.
 
+## content_warnings
+
+This is a list of pre-made content warnings that players can choose from the list when creating a scene. They can still enter their own no matter what you put here; this list just provides guidance for what sorts of things they should consider warning about.
+
 ## Custom Scene Pose Buttons
 
 Below the pose editor in a live scene is a row of buttons including "Add Pose" and "Add OOC".  With custom code, you can add custom buttons here that make use of the contents of the scene pose window--for instance, for sending a text message. See [Custom Scene Buttons](/tutorials/code/hooks/scene-buttons.html).

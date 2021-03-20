@@ -91,3 +91,7 @@ This cron job controls how often the site blacklist is updated.  By default it's
 ### notice_cleanup_cron and notice_timeout_days
 
 This cron job controls how often the old notifications are cleared out.  By default it's monthly.  You shouldn't need to change this. You can also configure how long old notifications are kept before they're deleted.
+
+### random_guest_selection
+
+By default, guests are assigned in alphabetical order, so Guest-1 logs on first, then Guest-2, etc. Changing this setting to 'true' causes them to be assigned in random order.  You might want this if you change your guest names to something else, like "Blue-Guest", "Red-Guest", etc.
