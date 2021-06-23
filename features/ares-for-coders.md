@@ -18,8 +18,8 @@ Ares offers a robust suite of [tutorials](/tutorials/code) to help you learn Are
 
 ## Plugins
 
-Every major system, from channels to combat, is implemented as a [Plugin](/features/ares-for-admins.html).  The real power of plugins is that you can add, modify or replace any plugin. 
+Ares supports a robust **Plugin** system, with its features separated into plugin modules.  Plugins provide all of the player commands - even core functionality like movement, help, descriptions, pages and channels.  They handle game events, responding to things like "character connected" or "game started".
 
-For example: A war MUSH might swap out the movement plugin for one that restricts movement based on action points during combat. A fantasy MUSH might swap out the description system with one that limits character descriptions based on what clothing items they had purchased. 
+Plugins are highly-configurable, allowing game owners to easily change their functionality just by editing the game configuration.  You can also add **new** commands and web screens with your own plugins, often without touching core code.
 
-These changes replace the standard plugins, so you don’t end up with a hardcoded “who” and a softcoded “+who” on top of it.
+You *can* change the core plugins--customizing them or even ripping them out completely and replacing them. For example, a fantasy MUSH might replace the outfits system with one that ties in with a crafting system. However, this is not for faint of heart. Some systems just do not mesh well with Ares' open, transparent RP architecture. Even for systems that are feasible, changing core code can impose significant design and maintenance challenges on the code staff. In many cases a [different MU server]({{site.baseurl}}/features/server-roundup.html) might be a better foundation than Ares.

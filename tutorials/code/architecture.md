@@ -29,7 +29,9 @@ The **Engine** is the heart of Ares.  It is the central server that everything e
 
 Ares supports a robust **Plugin** system, with its features separated into plugin modules.  Plugins provide all of the player commands - even core functionality like movement, help, descriptions, pages and channels.  They handle game events, responding to things like "character connected" or "game started".
 
-Plugins are highly-configurable, allowing game owners to easily change their functionality just by editing the game configuration.  If even more customization is desired, individual games can change the plugin code.  A fantasy MUSH might replace the outfits system with one that ties in with a crafting system. A war MUSH might replace the movement system with one that controls movement based on action points. The possibilities are endless.
+Plugins are highly-configurable, allowing game owners to easily change their functionality just by editing the game configuration.  You can also add **new** commands and web screens with your own plugins, often without touching core code.
+
+You *can* change the core plugins--customizing them or even ripping them out completely and replacing them. For example, a fantasy MUSH might replace the outfits system with one that ties in with a crafting system. However, this is not for faint of heart. Some systems just do not mesh well with Ares' open, transparent RP architecture. Even for systems that are feasible, changing core code can impose significant design and maintenance challenges on the code staff. In many cases a [different MU server]({{site.baseurl}}/features/server-roundup.html) might be a better foundation than Ares. 
 
 ## Database and Database Models
 

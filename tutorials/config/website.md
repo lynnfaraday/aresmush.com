@@ -251,3 +251,8 @@ The main group is required, but you can set subgroup to an empty string (`""`) i
 ### left_sidebar
 
 If set to true, the sidebar appears on the left instead of the default right.
+
+
+### auto_wiki_export
+
+The game automatically creates a downloadable export of the wiki and web portal scenes/characters/etc. for players to access offline. If you want to disable this, set the auto export to false.

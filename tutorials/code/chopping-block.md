@@ -66,11 +66,4 @@ In Ares, admins cannot force players to execute commands, again because I think 
 
 ## Thing Objects
 
-Ares has no "Thing" object type.  That means no rings, no notepads, no blaster pistols, no Viper fighter craft to climb into, etc.  Why?  All of those things are done in different ways.
-
-* Cosmetic Items have been supplanted by a more robust 'detail' system that works on characters as well as rooms.  If you want a special desc for your ring or the family photo on your wall, add a detail.
-* Code Storage Items don't exist because code in Ares is not associated with a database object.  Code lives on the server and there is no player-side code scripting.  Many player utilities like notes and multi-descers are build into the core code.
-* Vehicles can be done as rooms with custom code to move the in/out exits around.
-* Inventory Tracking can be done with custom code for a virtual inventory system. Specialized data fields/models would keep track of what gear a player had, rather than just generic @-created objects.
-
-If you have trouble philosophically adapting an old-style MUSH system to Ares' Thing-less world, just [ask for help](/feedback.html).
+Ares has no "Thing" object type.  That means no rings, no notepads, no blaster pistols, no Viper fighter craft to climb into, etc.  Why?  All of those things are done in different ways. See [thing objects]({{site.baseurl}}/features/things.html) for more details.

@@ -6,7 +6,7 @@ tags:
 - features
 ---
 
-AresMUSH is designed with three goals in mind:
+AresMUSH is designed with three key goals:
 
 ## Make it Easier to Play
 
@@ -43,6 +43,6 @@ Coding is hard in any language, especially if you've never done it before.  Howe
 
 Learn more at [Ares for Coders](/features/ares-for-coders.html).
 
-## Ares Compared To Other Servers
+## But Wait...
 
-You can also see a detailed comparison of Ares and other MU servers in [Server Roundup](/features/server-roundup.html).
+As cool as Ares is, it's not the right choice for every game. Before choosing Ares, be sure to check out our [server comparison]({{site.baseurl}}/features/server-roundup.html).

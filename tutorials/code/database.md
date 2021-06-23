@@ -109,7 +109,7 @@ There are a few convenient utilities to help with common searches.  All of these
 All of the finder helpers do the error handling necessary to translate multiple matches into a message like "I don't know which one you mean" and no matches into "I don't see that here".  They return a `FindResult` object containing a 'found' indication and **either** the target object **or** an error message.
 
     result = ClassTargetFinder.find(name, Character, searcher)
-    if (result.found)
+    if (result.found?)
         # Object was found - do something with result.target
     else
        # Object was not found - do something with result.error
@@ -126,6 +126,10 @@ Several of the more commonly-used target finders have another level of helper ut
 `with_a_character` will do the stuff in-between the `do` and the `end` if the character was found, using the variable `model` for the character it found. If the character was not found, it will emit the appropriate error message to the client.
 
 There's a similar helpers for `with_something_visible` and `with_online_chars`.
+
+{% tip %}
+These versions are generally superior to the basic helpers because they take care of the error messages for you.
+{% endtip %}
 
 ## Callback Methods
 
