@@ -122,6 +122,6 @@ There's an automatically notice sent in pages if someone pages you while you're 
 
 You can't set attributes on yourself like you can in other MU servers.  There's a virtual notepad for recording notes (see `help notes`), but everything else you need to set has specific commands.  For example, you don't use `&finger-quote me=Some snazzy quote.`, you would use the profile commands (`help profile`) to set up a custom section on your profile display with your snazzy quote.
 
-This also means you can't have personal code.  If you find yourself sorely missing some widget you liked, submit a [feature request](/feedback.html).  If you're a coder, you can even submit the code yourself with the [Ares Extras](/tutorials/code/extras.html) project, and then request that your favorite game install it.
+This also means you can't have personal code.  If you find yourself sorely missing some widget you liked, submit a [feature request](/feedback.html).  If you're a coder, you can even submit the code yourself as a [Community Contribution](/tutorials/code/contribs.html) project, and then request that your favorite game install it.
 
 Because code works differently, you also don't need to worry about @lock-ing or setting any special flags on yourself.

@@ -68,7 +68,7 @@ Make sure the groups used in the message actually exist, or you'll get an error 
 
 ### roster_welcome_msg
 
-You can configure the contents of a mail message sent to a new player when they are taken off the roster.  You might use this to tell them the wiki password or any special instructions for getting started.
+This message is mailed to a new player when they are taken off the roster.  You might use this to tell them any special instructions for getting started.
 
 ## restrict_roster
 

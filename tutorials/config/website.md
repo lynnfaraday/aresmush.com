@@ -20,7 +20,7 @@ The home page text can contain [Markdown formatting](https://daringfireball.net/
 
 ## Selecting a Theme
 
-Ares comes with a default theme.  There are others available as [Ares Extras](https://github.com/AresMUSH/ares-extras/tree/master/themes), including a dark one and several community contributions. You can install one of the other themes simply by using the in-game command `theme/install <github url>`. For example: `theme/install https://github.com/AresMUSH/ares-dark-theme`
+Ares comes with a default theme.  There are others available as [AresCentral Theme Directory](https://arescentral.aresmush.com/themes), including a dark one. You can install one of the other themes simply by using the in-game command `theme/install <github url>`. For example: `theme/install https://github.com/AresMUSH/ares-dark-theme`
   
 To restore the default theme, use `theme/install default`.
 

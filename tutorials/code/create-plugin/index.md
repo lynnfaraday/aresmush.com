@@ -17,10 +17,10 @@ This is the fourth in the series of basic Ares coding tutorials.
 
 In this tutorial, we'll examine the design of the Cortex plugin, a simplified implementation of the [Cortex Classic RPG System](https://boardgamegeek.com/rpgsystem/2044/cortex-classic) used in the Firefly and Leverage RPGs.
 
-You can find the full code for the Cortex plugin in the [Ares Extras](/tutorials/code/extras.html) repository.
+You can find the full code for the Cortex plugin in [GitHub](https://github.com/aresmush/ares-cortex-plugin).
 
 {% note %} 
-You don't need to do this tutorial if all you want to do is **use** the Cortex plugin.  Instead, follow the instructions in [Ares Extras](/tutorials/code/extras.html) to install the plugin.  This article is for coders who want to understand how the plugin was created.
+You don't need to do this tutorial if all you want to do is **use** the Cortex plugin.  Instead, follow the instructions in [Community Contributions](/tutorials/code/contribs.html) to install the plugin.  This article is for coders who want to understand how the plugin was created.
 {% endnote %}
 
 ## What You'll Need

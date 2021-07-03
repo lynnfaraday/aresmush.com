@@ -12,7 +12,7 @@ Although many identify [FS3](/fs3) and AresMUSH as being a conjoined pair, they 
 The article provides tips if you want to replace FS3 with a custom system.
 
 {% tip %} 
-FS3 is not the only skills system that Ares natively supports.  Other systems are available as [Extras](/tutorials/code/extras.html) and can be installed very easily.  This article doesn't apply to those systems.  It's about designing your own.
+FS3 is not the only skills system that Ares natively supports.  Other systems are available as [Community Contributions](/tutorials/code/contribs.html) and can be installed very easily.  This article doesn't apply to those systems.  It's about designing your own.
 {% endtip %}
 
 {% include toc.html %}

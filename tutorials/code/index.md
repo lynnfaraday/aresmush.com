@@ -157,10 +157,10 @@ It's suggested that you refer to these as you need them rather than trying to le
 * [FS3 Code Roadmap](/tutorials/code/fs3-roadmap.html) - Overview of the FS3 code.
 * [Replacing FS3](/tutorials/code/replacing-fs3.html) - Replacing FS3 with your own skills system.
 
-## Extras/Contributions
+## Contributions
 
-* [Extras](/tutorials/code/extras.html) - Using community plugins and code snippets.
-* [Submitting Contributions](/tutorials/code/extra-contribs.html) - Submitting extras.
+* [Community Contributions](/tutorials/code/contribs.html) - Using community plugins.
+* [Submitting Contributions](/tutorials/code/submit-contribs.html) - Submitting your own contribs.
 
 ## Miscellaneous
 

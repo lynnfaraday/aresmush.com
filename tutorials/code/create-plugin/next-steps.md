@@ -10,7 +10,7 @@ prevstep: cmd-dispatch
 
 Congratulations! You've completed the Create a Plugin tutorial.
 
-If you want to see the complete Cortex plugin code, you can find it in the [Ares Extras repository](https://github.com/AresMUSH/ares-extras).
+If you want to see the complete Cortex plugin code, you can find it in [GitHub](https://github.com/aresmush/ares-cortex-plugin).
 
 This was the fourth of the structured tutorials introducing Ares code.  The next is [Modifying the Web Portal](/tutorials/code/add-web).
 

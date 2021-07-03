@@ -101,9 +101,9 @@ Sometimes, rather than dealing with the conflict it's easier to just copy/paste 
 
 If you run into trouble resolving conflicts, don't be shy about [asking for help](/feedback.html).
 
-## Upgrading Extras
+## Upgrading Community Contribs
 
-Sometimes contributors will release a new version or patch for an existing Ares Extra plugin.  These are upgraded independently from the main code.  See [Upgrading Extras](/tutorials/code/extras.html#updating-plugins).
+Community contributions (plugins or themes) are upgraded independently from the main code.  See [Upgrading Plugins](/tutorials/code/contribs.html#updating-plugins).
 
 
 ## Upgrading the Server OS

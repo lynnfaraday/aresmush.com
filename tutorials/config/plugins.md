@@ -68,7 +68,7 @@ This is set when you enable or disable plugins as described above. Don't update 
 
 ### extras
 
-This is set when you install extra plugins. You may need to manually edit it if you remove an extra.
+This is set when you install extra plugins. You may need to manually edit it if you remove one.
 
 ### optional_plugins
 

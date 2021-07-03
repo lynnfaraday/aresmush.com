@@ -37,10 +37,9 @@ These are quick links to the game help files for the current version of AresMUSH
 
 ## 4 - Writing the Story
 
-* [Posing](https://mush.aresmush.com/help/posing)
 * [Scenes tutorial](https://mush.aresmush.com/help/scenes_tutorial)
 
-*Commands*: [Scenes](https://mush.aresmush.com/help/scenes) &bull; [Ooc](https://mush.aresmush.com/help/ooc) &bull; [Places](https://mush.aresmush.com/help/places) &bull; [Pose_format](https://mush.aresmush.com/help/pose_format) &bull; [Pose_order](https://mush.aresmush.com/help/pose_order)
+*Commands*: [Posing](https://mush.aresmush.com/help/posing) &bull; [Scenes](https://mush.aresmush.com/help/scenes) &bull; [Ooc](https://mush.aresmush.com/help/ooc) &bull; [Places](https://mush.aresmush.com/help/places) &bull; [Pose_format](https://mush.aresmush.com/help/pose_format) &bull; [Pose_order](https://mush.aresmush.com/help/pose_order)
 
 ## Community
 
@@ -53,6 +52,13 @@ These are quick links to the game help files for the current version of AresMUSH
 * [Wiki](https://mush.aresmush.com/help/wiki)
 
 *Commands*: [Achievements](https://mush.aresmush.com/help/achievements) &bull; [Admin](https://mush.aresmush.com/help/admin) &bull; [Census](https://mush.aresmush.com/help/census) &bull; [Events](https://mush.aresmush.com/help/events) &bull; [Friends](https://mush.aresmush.com/help/friends) &bull; [Handles](https://mush.aresmush.com/help/handles) &bull; [Icons](https://mush.aresmush.com/help/icons) &bull; [Profile](https://mush.aresmush.com/help/profile) &bull; [Relationships](https://mush.aresmush.com/help/relationships) &bull; [Who](https://mush.aresmush.com/help/who) &bull; [Whois](https://mush.aresmush.com/help/whois)
+
+## FS3 Skills and Combat
+
+* [Fs3](https://mush.aresmush.com/help/fs3)
+* [Fs3combat tutorial](https://mush.aresmush.com/help/fs3combat_tutorial)
+
+*Commands*: [Skills](https://mush.aresmush.com/help/skills) &bull; [Rolls](https://mush.aresmush.com/help/rolls) &bull; [Combat](https://mush.aresmush.com/help/combat) &bull; [Combat_org](https://mush.aresmush.com/help/combat_org) &bull; [Damage](https://mush.aresmush.com/help/damage) &bull; [Luck](https://mush.aresmush.com/help/luck) &bull; [Xp](https://mush.aresmush.com/help/xp)
 
 ## Formatting Text
 
@@ -74,19 +80,12 @@ These are quick links to the game help files for the current version of AresMUSH
 ## Setting Up Your Client
 
 
-*Commands*: [Accessibility](https://mush.aresmush.com/help/accessibility) &bull; [Ascii](https://mush.aresmush.com/help/ascii) &bull; [Beep](https://mush.aresmush.com/help/beep) &bull; [Clients](https://mush.aresmush.com/help/clients) &bull; [Edit](https://mush.aresmush.com/help/edit) &bull; [Keepalive](https://mush.aresmush.com/help/keepalive) &bull; [Onconnect](https://mush.aresmush.com/help/onconnect)
-
-## Using FS3
-
-* [Fs3](https://mush.aresmush.com/help/fs3)
-* [Fs3combat tutorial](https://mush.aresmush.com/help/fs3combat_tutorial)
-
-*Commands*: [Skills](https://mush.aresmush.com/help/skills) &bull; [Rolls](https://mush.aresmush.com/help/rolls) &bull; [Combat](https://mush.aresmush.com/help/combat) &bull; [Combat_org](https://mush.aresmush.com/help/combat_org) &bull; [Damage](https://mush.aresmush.com/help/damage) &bull; [Luck](https://mush.aresmush.com/help/luck) &bull; [Xp](https://mush.aresmush.com/help/xp)
+*Commands*: [Accessibility](https://mush.aresmush.com/help/accessibility) &bull; [Ascii](https://mush.aresmush.com/help/ascii) &bull; [Beep](https://mush.aresmush.com/help/beep) &bull; [Clients](https://mush.aresmush.com/help/clients) &bull; [Edit](https://mush.aresmush.com/help/edit) &bull; [Emoji](https://mush.aresmush.com/help/emoji) &bull; [Keepalive](https://mush.aresmush.com/help/keepalive) &bull; [Onconnect](https://mush.aresmush.com/help/onconnect)
 
 ## Utilities / Miscellaneous
 
 
-*Commands*: [Activity](https://mush.aresmush.com/help/activity) &bull; [Afk](https://mush.aresmush.com/help/afk) &bull; [Backup](https://mush.aresmush.com/help/backup) &bull; [Boot](https://mush.aresmush.com/help/boot) &bull; [Dice](https://mush.aresmush.com/help/dice) &bull; [Echo](https://mush.aresmush.com/help/echo) &bull; [Ic_time](https://mush.aresmush.com/help/ic_time) &bull; [Idle_out](https://mush.aresmush.com/help/idle_out) &bull; [Math](https://mush.aresmush.com/help/math) &bull; [Notes](https://mush.aresmush.com/help/notes) &bull; [Notices](https://mush.aresmush.com/help/notices) &bull; [Ooc_time](https://mush.aresmush.com/help/ooc_time) &bull; [Save](https://mush.aresmush.com/help/save) &bull; [Shortcuts](https://mush.aresmush.com/help/shortcuts) &bull; [Sweep](https://mush.aresmush.com/help/sweep) &bull; [Watch](https://mush.aresmush.com/help/watch)
+*Commands*: [Activity](https://mush.aresmush.com/help/activity) &bull; [Afk](https://mush.aresmush.com/help/afk) &bull; [Backup](https://mush.aresmush.com/help/backup) &bull; [Boot](https://mush.aresmush.com/help/boot) &bull; [Dice](https://mush.aresmush.com/help/dice) &bull; [Echo](https://mush.aresmush.com/help/echo) &bull; [Ic_time](https://mush.aresmush.com/help/ic_time) &bull; [Idle_out](https://mush.aresmush.com/help/idle_out) &bull; [Math](https://mush.aresmush.com/help/math) &bull; [Notes](https://mush.aresmush.com/help/notes) &bull; [Notices](https://mush.aresmush.com/help/notices) &bull; [Ooc_time](https://mush.aresmush.com/help/ooc_time) &bull; [Save](https://mush.aresmush.com/help/save) &bull; [Shortcuts](https://mush.aresmush.com/help/shortcuts) &bull; [Sweep](https://mush.aresmush.com/help/sweep) &bull; [Watch](https://mush.aresmush.com/help/watch) &bull; [Wiki_archive](https://mush.aresmush.com/help/wiki_archive)
 
 ## ~admin~ Building
 
@@ -97,9 +96,9 @@ These are quick links to the game help files for the current version of AresMUSH
 ## ~admin~ Coding
 
 
-*Commands*: [Config](https://mush.aresmush.com/help/config) &bull; [Debuglog](https://mush.aresmush.com/help/debuglog) &bull; [Deploy](https://mush.aresmush.com/help/deploy) &bull; [Extras](https://mush.aresmush.com/help/extras) &bull; [Git](https://mush.aresmush.com/help/git) &bull; [Plugins](https://mush.aresmush.com/help/plugins) &bull; [Ruby](https://mush.aresmush.com/help/ruby) &bull; [Tinker](https://mush.aresmush.com/help/tinker)
+*Commands*: [Community_contribs](https://mush.aresmush.com/help/community_contribs) &bull; [Config](https://mush.aresmush.com/help/config) &bull; [Debuglog](https://mush.aresmush.com/help/debuglog) &bull; [Deploy](https://mush.aresmush.com/help/deploy) &bull; [Git](https://mush.aresmush.com/help/git) &bull; [Plugins](https://mush.aresmush.com/help/plugins) &bull; [Ruby](https://mush.aresmush.com/help/ruby) &bull; [Setting_attributes](https://mush.aresmush.com/help/setting_attributes) &bull; [Tinker](https://mush.aresmush.com/help/tinker)
 
 ## ~admin~ Managing the Game
 
 
-*Commands*: [Announce](https://mush.aresmush.com/help/announce) &bull; [Database](https://mush.aresmush.com/help/database) &bull; [Duty](https://mush.aresmush.com/help/duty) &bull; [Findsite](https://mush.aresmush.com/help/findsite) &bull; [Game_directory](https://mush.aresmush.com/help/game_directory) &bull; [Idle_sweep](https://mush.aresmush.com/help/idle_sweep) &bull; [Jobs](https://mush.aresmush.com/help/jobs) &bull; [Manage_achievements](https://mush.aresmush.com/help/manage_achievements) &bull; [Manage_apps](https://mush.aresmush.com/help/manage_apps) &bull; [Manage_channels](https://mush.aresmush.com/help/manage_channels) &bull; [Manage_demographics](https://mush.aresmush.com/help/manage_demographics) &bull; [Manage_forum](https://mush.aresmush.com/help/manage_forum) &bull; [Manage_jobs](https://mush.aresmush.com/help/manage_jobs) &bull; [Manage_login](https://mush.aresmush.com/help/manage_login) &bull; [Manage_luck](https://mush.aresmush.com/help/manage_luck) &bull; [Manage_notes](https://mush.aresmush.com/help/manage_notes) &bull; [Manage_roster](https://mush.aresmush.com/help/manage_roster) &bull; [Manage_skills](https://mush.aresmush.com/help/manage_skills) &bull; [Manage_xp](https://mush.aresmush.com/help/manage_xp) &bull; [Npc](https://mush.aresmush.com/help/npc) &bull; [Roles](https://mush.aresmush.com/help/roles) &bull; [Server](https://mush.aresmush.com/help/server) &bull; [Shutdown](https://mush.aresmush.com/help/shutdown) &bull; [Statue](https://mush.aresmush.com/help/statue) &bull; [Upgrade](https://mush.aresmush.com/help/upgrade)
+*Commands*: [Announce](https://mush.aresmush.com/help/announce) &bull; [Ban](https://mush.aresmush.com/help/ban) &bull; [Database](https://mush.aresmush.com/help/database) &bull; [Duty](https://mush.aresmush.com/help/duty) &bull; [Findsite](https://mush.aresmush.com/help/findsite) &bull; [Game_directory](https://mush.aresmush.com/help/game_directory) &bull; [Idle_sweep](https://mush.aresmush.com/help/idle_sweep) &bull; [Jobs](https://mush.aresmush.com/help/jobs) &bull; [Manage_achievements](https://mush.aresmush.com/help/manage_achievements) &bull; [Manage_apps](https://mush.aresmush.com/help/manage_apps) &bull; [Manage_channels](https://mush.aresmush.com/help/manage_channels) &bull; [Manage_demographics](https://mush.aresmush.com/help/manage_demographics) &bull; [Manage_forum](https://mush.aresmush.com/help/manage_forum) &bull; [Manage_jobs](https://mush.aresmush.com/help/manage_jobs) &bull; [Manage_login](https://mush.aresmush.com/help/manage_login) &bull; [Manage_luck](https://mush.aresmush.com/help/manage_luck) &bull; [Manage_notes](https://mush.aresmush.com/help/manage_notes) &bull; [Manage_roster](https://mush.aresmush.com/help/manage_roster) &bull; [Manage_skills](https://mush.aresmush.com/help/manage_skills) &bull; [Manage_xp](https://mush.aresmush.com/help/manage_xp) &bull; [Npc](https://mush.aresmush.com/help/npc) &bull; [Roles](https://mush.aresmush.com/help/roles) &bull; [Server](https://mush.aresmush.com/help/server) &bull; [Shutdown](https://mush.aresmush.com/help/shutdown) &bull; [Statue](https://mush.aresmush.com/help/statue) &bull; [Upgrade](https://mush.aresmush.com/help/upgrade)
