@@ -22,7 +22,9 @@ layout: default
                  <a href="/fs3/fs3-3/{{page.prev-article}}">&larr;  Previous</a>
                  {% endif %}
                  
+                 {% if page.prev-article or page.next-article %}
                  | 
+                 {% endif %}
                  
                  {%if page.next-article %}
                  <a href="/fs3/fs3-3/{{page.next-article}}">Next &rarr; </a>
@@ -92,6 +94,7 @@ layout: default
                                 <li><a href="/fs3/fs3-3/combat.html">Combat Intro</a></li>
                                 <li><a href="/fs3/fs3-3/combat.html#turns">Turns</a></li>
                                 <li><a href="/fs3/fs3-3/combat.html#actions">Actions</a></li>
+                                <li><a href="/fs3/fs3-3/combat.html#modifiers">Modifiers</a></li>
                                 <li><a href="/fs3/fs3-3/combat.html#initiative">Initiative</a></li>
                                 <li><a href="/fs3/fs3-3/combat.html#stance">Stance</a></li>
                                 <li><a href="/fs3/fs3-3/combat.html#vehicles">Vehicles</a></li>

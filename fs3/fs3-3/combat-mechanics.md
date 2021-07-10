@@ -80,11 +80,13 @@ The defense skill used against an attack is determined by the following chart:
 
 | Defender in vehicle | Use vehicle pilot's piloting skill  |
 | Defender and attacker both have melee weapons | Use the skill for the *defender's* weapon. |
-| Otherwise | Use the "defense" skill for the defender's combatant type. |
+| Otherwise (including ranged/explosions) | Use the "defense" skill for the defender's combatant type. |
 
 For example:  Erson is fighting Britt.  Erson has a sword (skill: Blades) and Britt has a staff (skill: Staves).  Erson uses the Blades skill for attack, but Britt uses her Staves skill for defense.  When it's Britt's turn, she attacks with Staves and Erson defens with Blades.
 
 Another example:  This time Gray is attacking Britt.  He has a rifle and she has her staff.  Even though Britt has a melee weapon, she doesn't get to use it against a firearm.  She defends with the base defense skill (typically Reflexes).  He also uses the base defense skill when she attacks him back.
+
+The default "Defense" skill is Reflexes by default--an attribute rather than an actual skill. This is because there really isn't a skill to dodging bullets or shrapnel. The Reflexes roll is mostly just a randomizer.
 
 Note: No matter which passenger in a vehicle is targeted, the defense roll is always based on the *pilot's* piloting skill.
 

@@ -72,6 +72,11 @@ Don't feel restricted by the combat system.  If what you want to do isn't precis
 * Drawing or switching weapons (as long as they're easily accessible).
 * Changing stance (see **Stance** below).
 
+<a name="modifiers"/>
+# Modifiers
+
+Organizers may apply situational modifiers to characters based on things like darkness, rain, or what-have-you. See [Running Combats](/fs3/fs3-3/running-combat.html#modifiers) for more details.
+
 <a name="initiative"/>
 
 # Initiative

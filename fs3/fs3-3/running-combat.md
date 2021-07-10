@@ -65,7 +65,7 @@ KO’d NPCs are immediately removed from the combat. They cannot be treated, ral
 
 Teams are a convenient way of organizing combatants into smaller groups when they split up. PCs are automatically assigned to Team 1 and NPCs to Team 2.  Use `combat/team <name>=<team>` to switch teams.
 
-PCs pick their targets when they aim or attack. NPCs do so automatically. By default, NPCs on Team 1 will aim at Team 2, Team 2 will aim at Team 1, and NPCs on other teams will aim at anyone not on their team.  You can assign specific team targets with the `combat/target` command.
+PCs pick their targets when they aim or attack. NPCs do so automatically. By default, NPCs on Team 1 will aim at Team 2, Team 2 will aim at Team 1, and NPCs on other teams will aim at anyone not on their team.  You can assign specific team targets with the `combat/target` command. For example, you could use this to make Team 3 only select targets from Team 4.
 
 # Modifiers
 
@@ -91,6 +91,12 @@ You may have a situation where there is an "unmanned" attacker or defender, be i
  
 1. Just RP it. Have folks make some appropriate rolls and wing it. You can even manually inflict the damage using `damage/inflict` if it's important that it be in the combat system. 
 2. Put in a dummy NPC to reflect the thing... like a dummy soldier with a grenade to represent a booby trap.
+
+## Range
+
+FS3 assumes that everything is happening at sort of close-ish range where there are no special modifiers for distance.  It will usually be obvious from the context of the scene whether someone is close enough to engage in melee combat.
+
+Organizers can also use teams to group combatants according to location if they need help keeping track of who's where. For example: Team 1 is on the hill, Team 2 is at the edge of the village, etc.
 
 # Balancing Combat
 
